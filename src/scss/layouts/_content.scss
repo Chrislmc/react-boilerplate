@@ -1,0 +1,140 @@
+.site-content {
+    margin-top: 0.375rem;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    .content-container {
+        flex: 1;
+    }
+}
+
+.floating-icon-container {
+    position: fixed;
+    right: 0;
+    top: 25rem;
+    height: 4rem;
+    width: 3.75rem;
+    box-shadow: -0.1875rem 0.1875rem 0.375rem $shadow;
+    border-radius: 1.25rem 0 0 1.25rem;
+    background-color: #fff9;
+
+    &:hover {
+        background: none;
+        background-color: $white;
+    }
+
+    .floating-icon-btn {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .floating-icon {
+            height: 1.625rem;
+            width: 1.625rem;
+        }
+    }
+}
+
+.overlay-wrapper {
+    width: 31.25rem;
+    position: relative;
+
+    .floating-icon-overlay {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .floating-icon-image-container {
+            height: 18.75rem;
+            width: 100%;
+            position: relative;
+
+            &.image-only {
+                height: auto;
+            }
+
+            .floating-icon-image-button{
+                &.disabled {
+                    cursor: auto;
+                }
+                
+                .floating-icon-image {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    position: relative;
+                }
+            }
+        }
+
+        .floating-icon-content-container {
+            padding: 1.875rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .floating-icon-content-header {
+                font-size: 1.5rem;
+                font-weight: 700;
+                font-family: $font-secondary;
+                letter-spacing: 0.15rem;
+                color: $dark-300;
+                margin-bottom: 1.5rem;
+            }
+
+            .floating-icon-content-desc {
+                font-size: 1rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.1rem;
+                font-weight: 400;
+                color: $dark-300;
+                margin-bottom: 2.5rem;
+            }
+
+            .floating-icon-content-not-show-again {
+                font-size: 1rem;
+                line-height: 1.625rem;
+                letter-spacing: 0.05rem;
+                font-style: oblique;
+                color: $gray-600;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    backdrop-filter: blur(0.1875rem);
+    -webkit-backdrop-filter: blur(0.1875rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+    &.mod__active {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .overlay-background {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: $dark-300 0% 0% no-repeat padding-box;
+        opacity: 0.4;
+    }
+
+    .k4k-card {
+        height: auto;
+        position: relative;
+    }
+}

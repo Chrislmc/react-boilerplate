@@ -18,6 +18,7 @@
         "baseUrl": "./src",
         "paths": {
             "@/*": ["./*"],
+            "@app/*": ["./src/*"],
             "*": ["./../node_modules/*"]
         },
         "outDir": "tsc"
