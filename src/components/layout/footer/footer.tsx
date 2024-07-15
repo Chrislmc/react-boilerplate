@@ -12,7 +12,7 @@ export const Footer = () => {
                     <div className="site-footer-site-map-row">
                         <div className="site-footer-logo-column">
                             <div className="site-footer-logo-container">
-                                <p className="site-footer-logo">
+                                <div className="site-footer-logo">
                                     <p className="site-footer-logo-character">
                                         I
                                     </p>
@@ -22,7 +22,7 @@ export const Footer = () => {
                                     <p className="site-footer-logo-character">
                                         I
                                     </p>
-                                </p>
+                                </div>
 
                                 <div className="site-footer-logo-separator" />
 
@@ -30,10 +30,15 @@ export const Footer = () => {
                                     {t("footer.logoText")}
                                 </span>
                             </div>
-                            <span className="site-footer-logo-text">
-                                {t("footer.stayUpToDate")}
-                                {t("footer.stayUpToDateDesc")}
-                            </span>
+
+                            <div className="site-footer-stay-up-to-date-container">
+                                <h6 className="site-footer-stay-up-to-date-header">
+                                    {t("footer.stayUpToDate")}
+                                </h6>
+                                <p className="site-footer-stay-up-to-date-desc">
+                                    {t("footer.stayUpToDateDesc")}
+                                </p>
+                            </div>
                         </div>
                         <div className="site-footer-site-map-container">
                             {/* {menuList.map((menu, i) => (
