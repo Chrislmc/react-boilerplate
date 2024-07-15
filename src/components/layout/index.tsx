@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import "./_layout.scss";
 import { Content } from "./content/content";
 import { Footer } from "./footer/footer";
+import { Header } from "./header/header";
 
 type Props = React.FC;
 
@@ -13,11 +14,11 @@ export const Layout: Props = () => {
     return (
         <OverlayProvider>
             <div className="site-layout">
-                {/* {isMobile || isTablet || isSmallScreen ? (
-                <TabletHeader />
-            ) : (
-                <Header />
-            )} */}
+                {isMobile || isTablet || isSmallScreen ? (
+                    <Header />
+                ) : (
+                    <Header />
+                )}
                 <Content>
                     <div className="content-container">
                         <Outlet />

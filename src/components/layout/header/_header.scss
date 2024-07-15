@@ -1,0 +1,32 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.site-header {
+    width: 100%;
+    box-shadow: 0 -0.1875rem 0.375rem $shadow;
+
+    .site-header-content-container {
+        width: inherits;
+        height: 5rem;
+        background-color: $white;
+
+        .site-header-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            
+            .site-header-logo-container {
+                img {
+                    height: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .site-header-link-ribbon {
+        width: inherits;
+        height: 3.75rem;
+        background-color: $primary;
+    }
+}
