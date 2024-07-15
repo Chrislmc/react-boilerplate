@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ContainerX } from "../containerX";
+import "./_footer.scss";
 
 export const Footer = () => {
     // const translate = useTranslate();

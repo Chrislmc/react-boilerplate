@@ -1,2 +1,18 @@
-$font-primary: lato;
-$font-secondary: Arial;
+$font-secondary: lato;
+$font-primary: futura;
+
+@font-face {
+    font-family: 'futura';
+    src: url('@/assets/font/Futura Bold.otf') format('opentype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'futura';
+    src: url('@/assets/font/Futura Book font.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'futura';
+    src: url('@/assets/font/futura light bt.ttf') format('truetype');
+    font-weight: 300;
+}
