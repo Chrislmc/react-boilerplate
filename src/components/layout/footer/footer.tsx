@@ -1,6 +1,8 @@
+import { menuList } from "@/assets/constant/menuList";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { ContainerX } from "../containerX";
 import "./_footer.scss";
+import { SiteMap } from "./siteMap";
 
 export const Footer = () => {
     const t = i18nHelper("shared");
@@ -39,11 +41,15 @@ export const Footer = () => {
                                     {t("footer.stayUpToDateDesc")}
                                 </p>
                             </div>
+
+                            <div className="site-footer-subscribe-container">
+                                <p>Subscribe Placeholder</p>
+                            </div>
                         </div>
                         <div className="site-footer-site-map-container">
-                            {/* {menuList.map((menu, i) => (
+                            {menuList.map((menu, i) => (
                                 <SiteMap key={i} menuItem={menu} />
-                            ))} */}
+                            ))}
                         </div>
                     </div>
                 </ContainerX>

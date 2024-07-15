@@ -1,5 +1,20 @@
 {
-    "menuItem": {},
+    "menuItem": {
+        "practitioners": "Practitioners",
+        "meetOurPractitioners": "Meet our practitioners",
+        "services": "Services",
+        "naturopathicAndFunctionalMedicine": "Naturopathic & functional medicine",
+        "psychologyCounsellingAndCoaching": "Psychology, counselling & coaching",
+        "bodyworkAndEnergyMedicine": "Bodywork & energy medicine",
+        "labsIvAndConventionalMedicine": "Labs, IV & conventional medicine",
+        "shop": "Shop",
+        "imiSupplementOnline": "IMI supplement online",
+        "dispensary": "Dispensary",
+        "healthHub": "Health Hub",
+        "others": "Others",
+        "insurance": "Insurance",
+        "Lorem ipsum": "Lorem ipsum"
+    },
 
     "header": {
         "lang": {

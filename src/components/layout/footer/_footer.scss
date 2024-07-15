@@ -65,7 +65,7 @@
                 }
 
                 .site-footer-stay-up-to-date-container {
-                    margin: 3.625rem 0 1.875rem;
+                    margin: auto 0 1.875rem;
 
                     .site-footer-stay-up-to-date-header {
                         margin-bottom: 0.625rem;
@@ -84,41 +84,70 @@
                         color: $primary-300;
                     }
                 }
+
+                .site-footer-subscribe-container{
+                    height: 3.125rem;
+                    width: 100%;
+                    background-color: $gray;
+                    border-radius: 0.625rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+                        display: block;
+                    }
+                }
             }
 
             .site-footer-site-map-container {
-                padding-top: 3.125rem;
                 display: flex;
                 flex-direction: row;
-                gap: 3.75rem;
+                gap: 3.125rem;
+                align-items: baseline;
 
                 .site-footer-site-map-item-container {
                     max-width: 12.5rem;
                     text-align: left;
 
-                    .site-footer-site-map-item-header {
-                        margin-bottom: 3.125rem;
+                    button {
+                        background-color: $transparent;
+                        color: $white;
+                        border: none;
+                        cursor: pointer;
+                        padding: 0;
 
+                        &:disabled {
+                            cursor: unset;
+                        }
+                    }
+
+                    .site-footer-site-map-item-header {
+                        margin-bottom: 1.5625rem;
+                        
                         & h6 {
-                            font-weight: 900;
-                            line-height: 1.75rem;
-                            letter-spacing: 0.0688rem;
+                            font-size: 1.125rem;
+                            line-height: 1.625rem;
+                            font-weight: 700;
+                            letter-spacing: 0.05625rem;
                         }
                     }
 
                     .site-footer-site-map-sub-menu-item-container {
                         display: flex;
                         flex-direction: column;
-                        gap: 1.25rem;
+                        gap: 1rem;
                         align-items: flex-start;
 
                         .site-footer-site-map-sub-menu-item {
-                            line-height: 1.375rem;
-                            letter-spacing: 0.0563rem;
-
                             .site-footer-site-map-sub-menu-item-desc {
                                 display: block;
                                 text-align: left;
+                                font-family: $font-secondary;
+                                font-weight: 500;
+                                font-size: 1rem;
+                                line-height: 1.625rem;
+                                letter-spacing: 0.05rem;
                             }
                         }
                     }
