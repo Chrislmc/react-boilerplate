@@ -7,7 +7,7 @@ export const Footer = () => {
     // const t = i18nHelper(translate, "shared");
 
     return (
-        <div>
+        <div className="site-footer">
             <div className="site-footer-content-container">
                 <ContainerX>
                     <div className="site-footer-site-map-row">

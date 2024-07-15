@@ -1,6 +1,7 @@
 import { useLayoutEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
+import "./_content.scss";
 import { ISeo, defaultSeo, mapPathNameToSeo } from "./mapPathNameToSeo";
 
 type Props = React.FC<{ children: React.ReactNode }>;

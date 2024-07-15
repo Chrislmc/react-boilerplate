@@ -1,17 +1,18 @@
 import { OverlayProvider } from "@/utils/hooks/useOverlay";
 import useWindowSize from "@/utils/hooks/useWindowSize";
 import { Outlet } from "react-router-dom";
+import "./_layout.scss";
 import { Content } from "./content/content";
 import { Footer } from "./footer/footer";
 
-type Props = React.FC<{ children?: React.ReactNode }>;
+type Props = React.FC;
 
-export const Layout: Props = ({ children }) => {
+export const Layout: Props = () => {
     const { isMobile, isTablet, isSmallScreen } = useWindowSize();
 
     return (
-        <div>
-            <OverlayProvider>
+        <OverlayProvider>
+            <div className="site-layout">
                 {/* {isMobile || isTablet || isSmallScreen ? (
                 <TabletHeader />
             ) : (
@@ -36,7 +37,7 @@ export const Layout: Props = ({ children }) => {
                 />
             )} */}
                 {/* <Overlay /> */}
-            </OverlayProvider>
-        </div>
+            </div>
+        </OverlayProvider>
     );
 };

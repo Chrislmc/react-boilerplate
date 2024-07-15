@@ -1,7 +1,7 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
-.antd-footer {
+.site-footer {
     width: 100%;
     background-color: $white;
     padding: 0;
@@ -36,7 +36,6 @@
                     .site-footer-logo-text {
                         display: block;
                         text-align: center;
-                        font-family: $font-primary;
                         font-weight: 500;
                         color: $dark-300;
                     }

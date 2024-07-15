@@ -1,5 +1,5 @@
-import { debounce } from 'lodash';
-import { useEffect, useState } from 'react';
+import { debounce } from "lodash";
+import { useEffect, useState } from "react";
 
 const mapSizeToBreakpoint = {
     mobile: 480,
@@ -14,7 +14,7 @@ export const useWindowSize = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isTablet, setIsTablet] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
-
+    console.log("height", height);
     useEffect(() => {
         const handleResize = () => {
             setHeight(window.innerHeight);
@@ -22,20 +22,20 @@ export const useWindowSize = () => {
             setIsMobile(window.innerWidth <= mapSizeToBreakpoint.mobile);
             setIsTablet(
                 window.innerWidth > mapSizeToBreakpoint.mobile &&
-                    window.innerWidth <= mapSizeToBreakpoint.tablet,
+                    window.innerWidth <= mapSizeToBreakpoint.tablet
             );
             setIsSmallScreen(
                 window.innerWidth > mapSizeToBreakpoint.tablet &&
-                    window.innerWidth <= mapSizeToBreakpoint.smallScreen,
+                    window.innerWidth <= mapSizeToBreakpoint.smallScreen
             );
         };
         handleResize();
 
         const debouncedHandleResize = debounce(handleResize, 150);
-        window.addEventListener('resize', debouncedHandleResize);
+        window.addEventListener("resize", debouncedHandleResize);
 
         return () => {
-            window.removeEventListener('resize', debouncedHandleResize);
+            window.removeEventListener("resize", debouncedHandleResize);
         };
     }, []);
 

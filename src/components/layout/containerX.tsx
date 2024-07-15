@@ -1,3 +1,5 @@
+import "./_containerX.scss";
+
 type Props = React.FC<{ children: React.ReactNode }>;
 
 export const ContainerX: Props = ({ children }) => {

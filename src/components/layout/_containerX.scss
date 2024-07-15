@@ -1,4 +1,4 @@
-@import '../abstracts';
+@import '@/scss/main';
 
 /* 
  * h1 40px 60 4
@@ -12,7 +12,6 @@
 
 .container-x {
     overflow: auto;
-    font-family: $font-primary;
     max-width: 100rem;
     margin: 0 auto;
     padding: 0 3.125rem;
