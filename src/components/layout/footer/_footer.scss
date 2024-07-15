@@ -153,11 +153,11 @@
                         background-color: $transparent;
                         color: $white;
                         border: none;
-                        cursor: pointer;
                         padding: 0;
 
-                        &:disabled {
-                            cursor: unset;
+                        &:hover {
+                            color: $white-600;
+                            transition: all 0.1s ease-in;
                         }
                     }
 
@@ -214,20 +214,18 @@
                     font-size: 1rem;
                     line-height: 1.5rem;
                     font-weight: 500;
+                    flex: 1;
                 }
 
                 .site-footer-link-container {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
                     align-items: center;
+                    gap: 0.625rem;
 
-                    & > .site-footer-link + .site-footer-link {
-                        border-left: 0.0625rem solid $white;
-                    }
-
-                    .site-footer-link {
-                        padding: 0 0.625rem;
+                    img {
+                        width: 2.875rem;
+                        aspect-ratio: 1/1;
                     }
                 }
             }

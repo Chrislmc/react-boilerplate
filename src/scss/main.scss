@@ -89,6 +89,15 @@ body {
         letter-spacing: 0.1125rem;
         margin: 0;
     }
+
+    button {
+        all: unset;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: unset;
+        }
+    }
 }
 
 #root {

@@ -2,6 +2,7 @@ import { menuList } from "@/assets/constant/menuList";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { ContainerX } from "../containerX";
 import "./_footer.scss";
+import { footerSocialIcons } from "./constant";
 import { SiteMap } from "./siteMap";
 import { SubscribeButton } from "./subscribeButton";
 
@@ -47,7 +48,10 @@ export const Footer = () => {
                         </div>
                         <div className="site-footer-site-map-container">
                             {menuList.map((menu, i) => (
-                                <SiteMap key={i} menuItem={menu} />
+                                <SiteMap
+                                    key={`site-map-${i}`}
+                                    menuItem={menu}
+                                />
                             ))}
                         </div>
                     </div>
@@ -63,7 +67,17 @@ export const Footer = () => {
                             })}
                         </p>
 
-                        <div className="site-footer-link-container"></div>
+                        <div className="site-footer-link-container">
+                            {footerSocialIcons.map((icon, i) => (
+                                <a
+                                    key={`footer-social-icons-${i}`}
+                                    href={icon.link}
+                                    target="_blank"
+                                >
+                                    <img src={icon.imgUrl} />
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </ContainerX>
             </div>
