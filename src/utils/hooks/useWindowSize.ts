@@ -14,7 +14,7 @@ export const useWindowSize = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [isTablet, setIsTablet] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
-    console.log("height", height);
+
     useEffect(() => {
         const handleResize = () => {
             setHeight(window.innerHeight);

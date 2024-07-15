@@ -1,10 +1,10 @@
+import { i18nHelper } from "@/utils/i18n-helper";
 import { Link } from "react-router-dom";
 import { ContainerX } from "../containerX";
 import "./_footer.scss";
 
 export const Footer = () => {
-    // const translate = useTranslate();
-    // const t = i18nHelper(translate, "shared");
+    const t = i18nHelper("shared");
 
     return (
         <div className="site-footer">
@@ -16,11 +16,18 @@ export const Footer = () => {
                                 <Link to="/" className="site-footer-logo">
                                     {/* <img src={Images.FooterLogo} /> */}
                                 </Link>
-                                <span className="site-footer-logo-text">
-                                    {'t("footer.logoText1")'}
+                                <span
+                                    className="site-footer-logo-text"
+                                    style={{
+                                        height: 20,
+                                        backgroundColor: "pink",
+                                    }}
+                                >
+                                    {t("footer.logoText")}
                                 </span>
                                 <span className="site-footer-logo-text">
-                                    {'t("footer.logoText2")'}
+                                    {t("footer.stayUpToDate")}
+                                    {t("footer.stayUpToDateDesc")}
                                 </span>
                             </div>
                         </div>
@@ -36,29 +43,13 @@ export const Footer = () => {
             <div className="site-footer-link-line-container">
                 <ContainerX>
                     <div className="site-footer-link-line">
-                        <p>{'t("footer.copyright"'}</p>
+                        <p>
+                            {t("footer.copyright", {
+                                year: new Date().getFullYear(),
+                            })}
+                        </p>
 
-                        <div className="site-footer-link-container">
-                            <div className="site-footer-link">
-                                <Link to="/weather-policy">
-                                    <p>{'t("footer.weatherPolicy")'}</p>
-                                </Link>
-                            </div>
-
-                            <div className="site-footer-link">
-                                <Link to="/privacy-policy">
-                                    <p>{'t("footer.privacyPolicy")'}</p>
-                                </Link>
-                            </div>
-
-                            <div className="site-footer-link">
-                                <Link to="/volunteer-code-of-conduct">
-                                    <p>
-                                        {'t("footer.volunteerCodeOfConduct‍")'}
-                                    </p>
-                                </Link>
-                            </div>
-                        </div>
+                        <div className="site-footer-link-container"></div>
                     </div>
                 </ContainerX>
             </div>
