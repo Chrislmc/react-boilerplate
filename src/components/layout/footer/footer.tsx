@@ -3,6 +3,7 @@ import { i18nHelper } from "@/utils/i18n-helper";
 import { ContainerX } from "../containerX";
 import "./_footer.scss";
 import { SiteMap } from "./siteMap";
+import { SubscribeButton } from "./subscribeButton";
 
 export const Footer = () => {
     const t = i18nHelper("shared");
@@ -42,9 +43,7 @@ export const Footer = () => {
                                 </p>
                             </div>
 
-                            <div className="site-footer-subscribe-container">
-                                <p>Subscribe Placeholder</p>
-                            </div>
+                            <SubscribeButton />
                         </div>
                         <div className="site-footer-site-map-container">
                             {menuList.map((menu, i) => (
