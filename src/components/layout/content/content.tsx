@@ -1,14 +1,20 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-import { ISeo, mapPathNameToSeo } from "./mapPathNameToSeo";
+import { ISeo, defaultSeo, mapPathNameToSeo } from "./mapPathNameToSeo";
 
-export const Content = ({ children }) => {
+type Props = React.FC<{ children: React.ReactNode }>;
+
+export const Content: Props = ({ children }) => {
     const location = useLocation();
-    const [seoContent, setSeoContent] = useState<ISeo>(undefined);
+    const [seoContent, setSeoContent] = useState<ISeo>(defaultSeo);
 
-    useEffect(() => {
-        document.getElementsByTagName("main")[0].scrollTo(0, 0);
+    useLayoutEffect(() => {
+        const main = document.getElementsByTagName("main")[0];
+
+        if (!main) return;
+
+        main.scrollTo(0, 0);
 
         setSeoContent(mapPathNameToSeo?.[location.pathname]);
     }, [location.pathname]);

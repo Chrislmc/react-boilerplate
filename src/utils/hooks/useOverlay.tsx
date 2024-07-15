@@ -7,16 +7,26 @@ import React, {
 } from "react";
 import { useLocation } from "react-router-dom";
 
-export const OverlayProvider: React.FC<any> = ({ children }) => {
+type Props = React.FC<{ children: React.ReactNode }>;
+type IOverlayWrapper = ({
+    closeIcon,
+    children,
+    ...props
+}: {
+    closeIcon?: string;
+    children: React.ReactNode;
+}) => React.ReactNode;
+
+export const OverlayProvider: Props = ({ children }) => {
     const [showOverlay, setShowOverlay] = useState(false);
-    const [content, setContent] = useState<JSX.Element>(<></>);
+    const [content, setContent] = useState<React.ReactNode>(<></>);
     const location = useLocation();
 
     useLayoutEffect(() => {
         setShowOverlay(false);
     }, [location.pathname]);
 
-    const OverlayWrapper = useCallback(
+    const OverlayWrapper: IOverlayWrapper = useCallback(
         ({ closeIcon, children, ...props }) => (
             <div
                 className={`overlay-wrapper ${
@@ -52,22 +62,16 @@ export const OverlayProvider: React.FC<any> = ({ children }) => {
 };
 
 export const OverlayContext = React.createContext<{
-    content: JSX.Element;
-    OverlayWrapper: ({
-        children,
-        closeIcon,
-    }: {
-        children: JSX.Element;
-        closeIcon?: string;
-        [x: string]: any;
-    }) => JSX.Element;
-    setContent: React.Dispatch<React.SetStateAction<JSX.Element>>;
-    setShowOverlay?: React.Dispatch<React.SetStateAction<boolean>>;
-    showOverlay?: boolean;
+    content: React.ReactNode;
+    OverlayWrapper: IOverlayWrapper;
+    setContent: React.Dispatch<React.SetStateAction<React.ReactNode>>;
+    setShowOverlay: React.Dispatch<React.SetStateAction<boolean>>;
+    showOverlay: boolean;
 }>({
     content: <></>,
     OverlayWrapper: () => <></>,
     setContent: () => null,
+    setShowOverlay: () => null,
     showOverlay: false,
 });
 

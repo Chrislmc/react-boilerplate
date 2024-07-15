@@ -1,8 +1,5 @@
-import { TFunction } from 'react-i18next';
+import { WithTranslation } from "react-i18next";
 
-export const i18nHelper = (
-    t: TFunction<'translation', undefined>,
-    ns: string,
-) => {
+export const i18nHelper = (t: WithTranslation["t"], ns: string) => {
     return (key: string, param?: object) => t(key, { ns, ...param });
 };
