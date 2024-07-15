@@ -25,7 +25,72 @@ body {
     font-family: $font-primary;
     margin: 0;
 
-    #root {
-        white-space: pre-line;
+    /* 
+     * h1 40px 60 4
+     * h3 30px 34 3
+     * h4 28px 37 1.4
+     * h5 24px 34 2.4
+     * h6 22px 20 2.2
+     * p 20px 18 2
+     * span 18px 24 1.8
+     */
+    h1 {
+        /* 40px */
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+        letter-spacing: 0.25rem;
+        margin: 0;
     }
+
+    h3 {
+        /* 30px */
+        font-size: 1.875rem;
+        line-height: 2.125rem;
+        letter-spacing: 0.1875rem;
+        margin: 0;
+    }
+
+    h4 {
+        /* 28px */
+        font-size: 1.75rem;
+        line-height: 2.3125rem;
+        letter-spacing: 0.0875rem;
+        margin: 0;
+    }
+
+    h5 {
+        /* 24px */
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+        letter-spacing: 0.15rem;
+        margin: 0;
+    }
+
+    h6 {
+        /* 22px */
+        font-size: 1.375rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1375rem;
+        margin: 0;
+    }
+
+    p {
+        /* 20px */
+        font-size: 1.25rem;
+        line-height: 1.125rem;
+        letter-spacing: 0.125rem;
+        margin: 0;
+    }
+
+    span {
+        /* 18px */
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.1125rem;
+        margin: 0;
+    }
+}
+
+#root {
+    white-space: pre-line;
 }

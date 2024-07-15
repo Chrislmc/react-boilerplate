@@ -10,7 +10,7 @@
     .site-footer-content-container {
         padding: 3.125rem 0;
         width: 100%;
-        background-color: $white;
+        background-color: $primary;
 
         .site-footer-site-map-row {
             display: flex;
@@ -25,37 +25,45 @@
                 align-items: flex-start;
 
                 .site-footer-logo-container {
-                    height: auto;
-                    width: 16.875rem;
-
+                    height: 5rem;
+                    width: 19.0625rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
                     .site-footer-logo {
-                        margin-bottom: 1rem;
-                        display: block;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 0.625rem;
+
+                        .site-footer-logo-character {
+                            font-size: 3.75rem;
+                            color: $white;
+                            line-height: 1;
+                            letter-spacing: normal;
+                        }
+                    }
+
+                    .site-footer-logo-separator {
+                        width: 0.125rem;
+                        height: 100%;
+                        background-color: $white;
+                        margin: 0 1rem 0 1.5rem;
                     }
 
                     .site-footer-logo-text {
                         display: block;
-                        text-align: center;
-                        font-weight: 500;
-                        color: $dark-300;
+                        text-align: left;
+                        color: $white;
+                        font-size: 0.875rem;
+                        line-height: 1.125rem;
+                        font-family: $font-tertiary;
+                        font-weight: 300;
+                        letter-spacing: 0.04375rem;
                     }
                 }
 
-                .site-footer-social-button-container {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 0.5rem;
-
-                    .site-footer-social-icon {
-                        height: 2rem;
-                        width: 2rem;
-                        background-color: $transparent;
-
-                        :hover {
-                            opacity: 0.6;
-                        }
-                    }
-                }
             }
 
             .site-footer-site-map-container {
@@ -100,7 +108,7 @@
     }
 
     .site-footer-link-line-container {
-        background-color: $dark;
+        background-color: $primary-700;
         padding: 1.25rem 0;
         color: $white;
 
@@ -113,6 +121,12 @@
                 justify-content: space-between;
                 align-items: center;
                 text-align: left;
+
+                .site-footer-copyright {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-weight: 500;
+                }
 
                 .site-footer-link-container {
                     display: flex;
