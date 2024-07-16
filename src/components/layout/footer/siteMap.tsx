@@ -1,5 +1,5 @@
-import { IMenuItem } from "@/assets/constant/menuList";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { IMenuItem } from "@/utils/routes/menuList";
 import { useNavigate } from "react-router-dom";
 
 interface Props {
@@ -24,9 +24,7 @@ export const SiteMap = ({ menuItem }: Props) => {
                 {menuItem?.subMenu?.map((subMenuItem, i) => (
                     <div key={i} className="site-footer-site-map-sub-menu-item">
                         <button
-                            onClick={() =>
-                                navigate(`${menuItem.link}${subMenuItem.link}`)
-                            }
+                            onClick={() => navigate(subMenuItem.link)}
                             id={subMenuItem.desc}
                         >
                             <span className="site-footer-site-map-sub-menu-item-desc">

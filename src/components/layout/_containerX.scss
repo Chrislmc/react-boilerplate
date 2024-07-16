@@ -4,8 +4,9 @@
     overflow: auto;
     max-width: 100rem;
     margin: 0 auto;
-    padding: 0 3.125rem;
+    padding: 0 3.75rem;
     text-align: center;
+    height: 100%;
 
     @include media(tablet) {
         max-width: unset;

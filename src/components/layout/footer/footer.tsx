@@ -1,5 +1,5 @@
-import { menuList } from "@/assets/constant/menuList";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { menuList } from "@/utils/routes/menuList";
 import { ContainerX } from "../containerX";
 import "./_footer.scss";
 import { footerSocialIcons } from "./constant";

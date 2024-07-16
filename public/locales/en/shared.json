@@ -17,6 +17,13 @@
     },
 
     "header": {
+        "menu": {
+            "practitioners": "Practitioners",
+            "services": "Services",
+            "shop": "Shop",
+            "dispensary": "Dispensary",
+            "healthHub": "Health Hub"
+        },
         "ribbon": {
             "consultation": "Consultation",
             "labTests": "Lab tests",
