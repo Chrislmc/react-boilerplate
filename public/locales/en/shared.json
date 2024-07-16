@@ -17,6 +17,12 @@
     },
 
     "header": {
+        "ribbon": {
+            "consultation": "Consultation",
+            "labTests": "Lab tests",
+            "shop": "Shop",
+            "dispensary": "Dispensary"
+        },
         "lang": {
             "en": "EN"
         }
