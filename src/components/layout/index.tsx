@@ -6,14 +6,14 @@ import { Content } from "./content/content";
 import { Footer } from "./footer/footer";
 import { Header } from "./header/header";
 
-type Props = React.FC;
+type Props = React.FC<{ children?: React.ReactNode; className?: string }>;
 
-export const Layout: Props = () => {
+export const Layout: Props = ({ children, className }) => {
     const { isMobile, isTablet, isSmallScreen } = useWindowSize();
 
     return (
         <OverlayProvider>
-            <div className="site-layout">
+            <div className={`site-layout ${className ? className : ""}`}>
                 {isMobile || isTablet || isSmallScreen ? (
                     <Header />
                 ) : (
@@ -22,6 +22,7 @@ export const Layout: Props = () => {
                 <Content>
                     <div className="content-container">
                         <Outlet />
+                        {children && children}
                     </div>
                     {isMobile || isTablet || isSmallScreen ? (
                         <Footer />

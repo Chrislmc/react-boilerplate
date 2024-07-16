@@ -3,21 +3,22 @@ import { ProtectedRoute } from "./ProtectedRoute";
 import { Layout } from "./components/layout";
 import { HomePage } from "./pages";
 import { Secret } from "./pages/Secret";
+import { Services } from "./pages/services";
 import "./scss/main.scss";
 import { RouteConstant } from "./utils/routes/route";
 
 function App() {
     return (
         <Routes>
-            <Route element={<Layout />}>
-                <Route index element={<HomePage />} />
+            <Route index element={<HomePage />} />
 
+            <Route element={<Layout />}>
                 <Route
                     path={RouteConstant.practitioners}
                     element={<HomePage />}
                 ></Route>
 
-                <Route path={RouteConstant.services} element={<HomePage />}>
+                <Route path={RouteConstant.services} element={<Services />}>
                     <Route
                         path={RouteConstant.naturopathicAndFunctionalMedicine}
                         element={<HomePage />}

@@ -1,0 +1,76 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+#root > .site-layout.home-page {
+    .site-header {
+        z-index: 1;
+        position: fixed;
+        box-shadow: unset;
+        pointer-events: none;
+
+        .site-header-logo-container {
+            .site-header-logo-character {
+                // color: $white
+            }
+        }
+
+        .site-header-content-container-background{
+            opacity: 0;
+        }
+
+        .site-header-content-container {
+            background-color: $transparent;
+
+            .site-header-menu-container {
+                .header-menu-item-button {
+                    pointer-events: auto;
+                    // color: $white;
+                }
+            }
+
+            .site-header-button-container {
+                // border-color: $white;
+
+                button {
+                    pointer-events: auto;
+                    // border-color: $white;
+                }
+            }
+
+            .site-header-translation-container {
+                pointer-events: auto;
+                
+                .site-header-translation {
+                    transition: none;
+                    
+                    .site-header-translation-button{
+                        transition: none;
+                    }
+                }
+            }
+        }
+
+        .site-header-link-ribbon {
+            opacity: 0;
+        }
+    }
+
+    .home-page-hero-banner {  
+        div {
+            width: 100%;
+            height: auto;
+        }
+
+        .home-page-hero-banner-background-container {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: flex-end;
+            height: 100%;
+            background: transparent linear-gradient(180deg, #00828C66 0%, #99CDD11A 100%) 0% 0% no-repeat padding-box;
+            pointer-events: none;
+        }
+    }
+}

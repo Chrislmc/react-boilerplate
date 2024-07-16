@@ -1,4 +1,7 @@
 import { Icons } from "@/assets/icons";
+import { AccountIconComponent } from "@/assets/icons/account.component";
+import { CartIconComponent } from "@/assets/icons/cart.component";
+import { SearchIconComponent } from "@/assets/icons/search.component";
 import { RouteConstant, redirectRouteMap } from "@/utils/routes/route";
 
 export const headerMenuItems = [
@@ -31,14 +34,14 @@ export const headerMenuItems = [
 
 export const headerButtons = [
     {
-        imgUrl: Icons.IconAccount,
+        iconComponent: AccountIconComponent,
         link: redirectRouteMap.accountDetails,
     },
     {
-        imgUrl: Icons.IconSearch,
+        iconComponent: SearchIconComponent,
     },
     {
-        imgUrl: Icons.IconCart,
+        iconComponent: CartIconComponent,
         link: redirectRouteMap.shoppingCart,
     },
 ];

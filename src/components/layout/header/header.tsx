@@ -1,5 +1,5 @@
-import { Images } from "@/assets/images";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { redirectRouteMap } from "@/utils/routes/route";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ContainerX } from "../containerX";
 import "./_header.scss";
@@ -12,12 +12,21 @@ export const Header = () => {
 
     return (
         <div className="site-header">
+            <div className="site-header-content-container-background" />
             <div className="site-header-content-container">
                 <ContainerX>
                     <div className="site-header-container">
-                        <div className="site-header-logo-container">
-                            <img src={Images.ImageImiLogo} />
-                        </div>
+                        <button
+                            className="site-header-logo-container"
+                            onClick={() => navigator(redirectRouteMap.homepage)}
+                        >
+                            <div className="site-header-logo">
+                                <p className="site-header-logo-character">I</p>
+                                <p className="site-header-logo-character">M</p>
+                                <p className="site-header-logo-character">I</p>
+                            </div>
+                            {/* <img src={Images.ImageImiLogo} /> */}
+                        </button>
                         <div className="site-header-section-content-container">
                             <div className="site-header-menu-container">
                                 {headerMenuItems.map((item) => {
@@ -27,7 +36,7 @@ export const Header = () => {
                                     return (
                                         <button
                                             key={`header-menu-item-${item.value}`}
-                                            className={`${
+                                            className={`header-menu-item-button${
                                                 isActive ? " mod__active" : ""
                                             }`}
                                             onClick={() => navigator(item.link)}
@@ -41,16 +50,21 @@ export const Header = () => {
                             </div>
 
                             <div className="site-header-button-container">
-                                {headerButtons.map((button) => (
-                                    <button
-                                        onClick={() =>
-                                            button?.link &&
-                                            navigator(button.link)
-                                        }
-                                    >
-                                        <img src={button.imgUrl} />
-                                    </button>
-                                ))}
+                                {headerButtons.map(
+                                    ({
+                                        link,
+                                        iconComponent: IconComponent,
+                                    }) => (
+                                        <button
+                                            className={`header-button`}
+                                            onClick={() =>
+                                                link && navigator(link)
+                                            }
+                                        >
+                                            <IconComponent />
+                                        </button>
+                                    )
+                                )}
                             </div>
 
                             <div className="site-header-translation-container">
