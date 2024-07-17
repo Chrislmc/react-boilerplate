@@ -1,7 +1,7 @@
 import { Videos } from "@/assets/video";
+import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
 import { Layout } from "@/components/layout";
 import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEffect";
-import ReactPlayer from "react-player";
 import "./_homePage.scss";
 
 export const HomePage = () => {
@@ -12,16 +12,13 @@ export const HomePage = () => {
         <Layout className="home-page" ref={siteContentRef}>
             <div className="home-page">
                 <div className="home-page-hero-banner">
-                    <ReactPlayer
+                    <ImiVideoPlayer
                         url={Videos.HomePageHeroBannerVideo}
                         controls={false}
-                        playing={false}
-                        muted={true}
-                        loop={true}
-                        playsinline={true}
                         height={"auto"}
                         width={"100%"}
                     />
+
                     <div
                         className="home-page-hero-banner-background-container"
                         ref={heroBannerBackgroundContainerRef}
