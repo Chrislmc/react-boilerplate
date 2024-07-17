@@ -51,11 +51,12 @@ export const Header = () => {
 
                             <div className="site-header-button-container">
                                 {headerButtons.map(
-                                    ({
-                                        link,
-                                        iconComponent: IconComponent,
-                                    }) => (
+                                    (
+                                        { link, iconComponent: IconComponent },
+                                        i
+                                    ) => (
                                         <button
+                                            key={`header-button-${i}`}
                                             className={`header-button`}
                                             onClick={() =>
                                                 link && navigator(link)
@@ -69,12 +70,12 @@ export const Header = () => {
 
                             <div className="site-header-translation-container">
                                 <div className="site-header-translation mod__current">
-                                    <button className="site-header-translation-button">
+                                    <button className="site-header-translation-button mod__current">
                                         <p>En</p>
                                     </button>
                                 </div>
                                 <div className="site-header-translation mod__inactive">
-                                    <button className="site-header-translation-button">
+                                    <button className="site-header-translation-button mod__inactive">
                                         <p>Ch</p>
                                     </button>
                                 </div>

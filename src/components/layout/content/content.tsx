@@ -1,12 +1,15 @@
-import { useLayoutEffect, useState } from "react";
+import { forwardRef, useLayoutEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import "./_content.scss";
 import { ISeo, defaultSeo, mapPathNameToSeo } from "./mapPathNameToSeo";
 
-type Props = React.FC<{ children: React.ReactNode }>;
+type ContentProps = { children: React.ReactNode };
 
-export const Content: Props = ({ children }) => {
+export const Content = forwardRef<HTMLDivElement, ContentProps>(function (
+    { children },
+    ref
+) {
     const location = useLocation();
     const [seoContent, setSeoContent] = useState<ISeo>(defaultSeo);
 
@@ -21,7 +24,7 @@ export const Content: Props = ({ children }) => {
     }, [location.pathname]);
 
     return (
-        <div className="site-content">
+        <div className="site-content" ref={ref}>
             {!!seoContent && (
                 <Helmet>
                     <title>{seoContent.title}</title>
@@ -31,4 +34,4 @@ export const Content: Props = ({ children }) => {
             {children ?? "Content"}
         </div>
     );
-};
+});

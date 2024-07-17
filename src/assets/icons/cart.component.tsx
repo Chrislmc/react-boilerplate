@@ -19,8 +19,8 @@ export const CartIconComponent = () => {
                     transform="translate(0 0)"
                     fill="#00828c"
                     stroke="#00828c"
-                    stroke-linecap="round"
-                    stroke-width="0.5"
+                    strokeLinecap="round"
+                    strokeWidth="0.5"
                 />
                 <path
                     id="Path_1363"
@@ -29,8 +29,8 @@ export const CartIconComponent = () => {
                     transform="translate(0.745 2.638)"
                     fill="#00828c"
                     stroke="#00828c"
-                    stroke-linecap="round"
-                    stroke-width="0.5"
+                    strokeLinecap="round"
+                    strokeWidth="0.5"
                 />
                 <path
                     id="Path_1364"
@@ -39,8 +39,8 @@ export const CartIconComponent = () => {
                     transform="translate(1.929 2.638)"
                     fill="#00828c"
                     stroke="#00828c"
-                    stroke-linecap="round"
-                    stroke-width="0.5"
+                    strokeLinecap="round"
+                    strokeWidth="0.5"
                 />
             </g>
             <rect

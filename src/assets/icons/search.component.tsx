@@ -19,8 +19,8 @@ export const SearchIconComponent = () => {
                     transform="translate(0 0)"
                     fill="#00828c"
                     stroke="#00828c"
-                    stroke-linecap="round"
-                    stroke-width="0.25"
+                    strokeLinecap="round"
+                    strokeWidth="0.25"
                 />
             </g>
             <rect

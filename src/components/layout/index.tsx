@@ -1,14 +1,21 @@
 import { OverlayProvider } from "@/utils/hooks/useOverlay";
 import useWindowSize from "@/utils/hooks/useWindowSize";
+import { forwardRef } from "react";
 import { Outlet } from "react-router-dom";
 import "./_layout.scss";
 import { Content } from "./content/content";
 import { Footer } from "./footer/footer";
 import { Header } from "./header/header";
 
-type Props = React.FC<{ children?: React.ReactNode; className?: string }>;
+type LayoutProps = {
+    children?: React.ReactNode;
+    className?: string;
+};
 
-export const Layout: Props = ({ children, className }) => {
+export const Layout = forwardRef<HTMLDivElement, LayoutProps>(function (
+    { children, className },
+    ref
+) {
     const { isMobile, isTablet, isSmallScreen } = useWindowSize();
 
     return (
@@ -19,7 +26,7 @@ export const Layout: Props = ({ children, className }) => {
                 ) : (
                     <Header />
                 )}
-                <Content>
+                <Content ref={ref}>
                     <div className="content-container">
                         <Outlet />
                         {children && children}
@@ -42,4 +49,4 @@ export const Layout: Props = ({ children, className }) => {
             </div>
         </OverlayProvider>
     );
-};
+});

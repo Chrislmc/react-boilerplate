@@ -8,12 +8,6 @@
         box-shadow: unset;
         pointer-events: none;
 
-        .site-header-logo-container {
-            .site-header-logo-character {
-                // color: $white
-            }
-        }
-
         .site-header-content-container-background{
             opacity: 0;
         }
@@ -24,22 +18,18 @@
             .site-header-menu-container {
                 .header-menu-item-button {
                     pointer-events: auto;
-                    // color: $white;
                 }
             }
 
             .site-header-button-container {
-                // border-color: $white;
-
                 button {
                     pointer-events: auto;
-                    // border-color: $white;
                 }
             }
 
             .site-header-translation-container {
                 pointer-events: auto;
-                
+
                 .site-header-translation {
                     transition: none;
                     
@@ -71,6 +61,8 @@
             height: 100%;
             background: transparent linear-gradient(180deg, #00828C66 0%, #99CDD11A 100%) 0% 0% no-repeat padding-box;
             pointer-events: none;
+
+            display: none;
         }
     }
 }
