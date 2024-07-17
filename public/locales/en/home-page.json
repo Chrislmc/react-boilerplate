@@ -1,4 +1,9 @@
 {
-    "title1": "Never Too Young",
-    "title2": "To Change The World"
+    "hero-banner": {
+        "card1": {
+            "title": "Heal. Balance. Evolve.",
+            "desc": "Centering you and your family’s health, so you can get well and stay well.",
+            "linkText": "Find Out More"
+        }
+    }
 }

@@ -1,6 +1,8 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
+$heroBannerBtnColor: #69A2C2;
+
 #root > .site-layout.home-page {
     .site-header {
         z-index: 1;
@@ -44,18 +46,94 @@
             opacity: 0;
         }
     }
+}
 
+#home-page {
     .home-page-hero-banner {  
-        .home-page-hero-banner-background-container {
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: flex;
-            justify-content: flex-end;
-            height: 100%;
-            background: transparent linear-gradient(180deg, #00828C66 0%, #99CDD11A 100%) 0% 0% no-repeat padding-box;
-            pointer-events: none;
+        .imi-swiper-component{
+            .home-page-hero-banner-card {
+                width: 100%;
+                height: 56.25rem;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .home-page-hero-banner-card-background {
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        position: absolute;
+                    }
+
+                    .imi-video-section {
+                        position: absolute;
+                        height: 100%;
+
+                        video {
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .home-page-banner-card-gradient-overlay {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 100%;
+                    background: transparent linear-gradient(180deg, #00828C66 0%, #99CDD11A 100%) 0% 0% no-repeat padding-box;
+                    pointer-events: none;
+                }
+
+                .home-page-hero-banner-header {
+                    position: relative;
+                    font-size: 5rem;
+                    line-height: 7rem;
+                    letter-spacing: 0.25rem;
+                    color: $white;
+                    margin-bottom: 2.5rem;
+                }
+
+                .home-page-hero-banner-desc {
+                    position: relative;
+                    font-family: $font-secondary;
+                    color: $white;
+                }
+
+                .imi-btn-component {
+                    position: relative;
+                    margin-top: 5rem;
+                    width: 12.5rem;
+                    height: 3.125rem;
+                    background-color: $heroBannerBtnColor;
+                    padding: 0;
+
+                    &:hover {
+                        background-color: $white;
+
+                        .imi-btn-desc {
+                            color: $heroBannerBtnColor;
+                        }
+                    }
+
+                    .imi-btn-desc {
+                        color: $white;
+                        font-size: 1rem;
+                        line-height: 1.1875rem;
+                        letter-spacing: 0.05rem;
+                    }
+                }
+            }
         }
     }
 }

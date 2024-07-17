@@ -16,7 +16,7 @@ interface IHeroImgProps extends IHeroImgBaseProps {
 interface IHeroVideoProps extends IHeroImgBaseProps {
     videoUrl: string;
 }
-type IHeroImg = IHeroImgProps | IHeroVideoProps;
+export type IHeroImg = IHeroImgProps | IHeroVideoProps;
 
 interface Props {
     header?: string;

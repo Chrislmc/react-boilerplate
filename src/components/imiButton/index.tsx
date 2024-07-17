@@ -3,7 +3,7 @@ import "./_button.scss";
 
 export type IImiButtonType = "solid" | "outline" | "round" | "text";
 
-export interface IK4kButtonProps {
+export interface IImiButtonProps {
     type?: IImiButtonType;
     text: string;
     onClick?: () => void;
@@ -16,7 +16,7 @@ export interface IK4kButtonProps {
     redirectUrl?: string;
 }
 
-export const K4kButton: React.FC<IK4kButtonProps> = ({
+export const ImiButton: React.FC<IImiButtonProps> = ({
     type = "solid",
     text,
     onClick,

@@ -146,6 +146,10 @@ export const useHomePageScrollingEffect = () => {
         const siteHeaderRibbonItems = document.getElementsByClassName(
             "site-header-ribbon-item"
         );
+        const homePageBannerCardGradientOverlays =
+            document.getElementsByClassName(
+                "home-page-banner-card-gradient-overlay"
+            );
 
         const onScroll = () => {
             const currentScrollPosition = (siteContentDiv as HTMLDivElement)
@@ -210,9 +214,11 @@ export const useHomePageScrollingEffect = () => {
                 (paragraph as HTMLParagraphElement).style.color = currentColor;
             }
 
-            (
-                heroBannerBackgroundContainerRef?.current as HTMLDivElement
-            ).style.opacity = (1 - currentRatio).toString();
+            for (const div of homePageBannerCardGradientOverlays) {
+                (div as HTMLDivElement).style.opacity = (
+                    1 - currentRatio
+                ).toString();
+            }
 
             setIsAutoScrolling(true);
             if (currentRatio < 0.5) {

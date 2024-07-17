@@ -9,6 +9,7 @@ $swiperNavigationSize:4.5625rem;
 
         .swiper-wrapper {
             z-index: inherit;
+            height: auto;
 
             .swiper-slide {
                 z-index: inherit;
@@ -36,12 +37,14 @@ $swiperNavigationSize:4.5625rem;
             right: 1.375rem;
             top: calc(100% - 3.125rem - 0.5rem);
             transform: none;
+            bottom: none;
 
             .swiper-pagination-bullet {
                 background-color: $transparent;
                 opacity: 0.7;
                 height: 0.5rem;
                 width: 0.5rem;
+                line-height: 0.5rem;
                 border-radius: 9999rem;
 
                 &:not(.swiper-pagination-bullet-active){
@@ -55,6 +58,7 @@ $swiperNavigationSize:4.5625rem;
                 opacity: 1;
                 width: 1.5rem;
                 height: 0.5rem;
+                line-height: 0.5rem;
                 border-radius: 9999rem;
             }
         }
