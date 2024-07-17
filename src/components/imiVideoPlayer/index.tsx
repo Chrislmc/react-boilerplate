@@ -11,7 +11,7 @@ export const ImiVideoPlayer: React.FC<Props> = ({
     ...props
 }) => {
     return (
-        <div className="imi-video-player">
+        <div className="imi-video-player-component">
             <ReactPlayer
                 url={url}
                 controls={controls}

@@ -1,4 +1,5 @@
 import { Videos } from "@/assets/video";
+import { ImiSwiper } from "@/components/imiSwiper";
 import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
 import { Layout } from "@/components/layout";
 import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEffect";
@@ -12,11 +13,24 @@ export const HomePage = () => {
         <Layout className="home-page" ref={siteContentRef}>
             <div className="home-page">
                 <div className="home-page-hero-banner">
-                    <ImiVideoPlayer
-                        url={Videos.HomePageHeroBannerVideo}
-                        controls={false}
-                        height={"auto"}
-                        width={"100%"}
+                    <ImiSwiper
+                        cardLists={[
+                            <ImiVideoPlayer
+                                url={Videos.HomePageHeroBannerVideo}
+                                controls={false}
+                                height={"auto"}
+                                width={"100%"}
+                            />,
+                            <ImiVideoPlayer
+                                url={Videos.HomePageHeroBannerVideo}
+                                controls={false}
+                                height={"auto"}
+                                width={"100%"}
+                            />,
+                        ]}
+                        pagination={{ clickable: true }}
+                        navigation
+                        speed={1000}
                     />
 
                     <div
