@@ -143,6 +143,9 @@ export const useHomePageScrollingEffect = () => {
         const siteHeaderLogoCharacters = document.getElementsByClassName(
             "site-header-logo-character"
         );
+        const siteHeaderRibbonItems = document.getElementsByClassName(
+            "site-header-ribbon-item"
+        );
 
         const onScroll = () => {
             const currentScrollPosition = (siteContentDiv as HTMLDivElement)
@@ -218,15 +221,24 @@ export const useHomePageScrollingEffect = () => {
                     left: 0,
                     behavior: "smooth",
                 });
+                siteHeaderRibbonItems;
+                for (const item of siteHeaderRibbonItems) {
+                    (item as HTMLDivElement).style.pointerEvents = "none";
+                }
             } else if (currentRatio > 0.5 && currentRatio < 1) {
                 (siteContentDiv as HTMLDivElement).scrollTo({
                     top: scrollTill,
                     left: 0,
                     behavior: "smooth",
                 });
+                for (const item of siteHeaderRibbonItems) {
+                    (item as HTMLDivElement).style.pointerEvents = "auto";
+                }
             }
             setIsAutoScrolling(false);
         };
+
+        /* Run the color change on first rendering */
         onScroll();
 
         siteContentDiv.addEventListener("scroll", () => {
