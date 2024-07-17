@@ -1,0 +1,82 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-btn {
+    border-radius: 9999rem;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.type-solid {
+        padding: 0 1.875rem;
+
+        &.color-primary {
+            background-color: $primary;
+
+            &:hover {
+                background-color: $primary-hover;
+            }
+        }
+    }
+
+    &.type-outline {
+        padding: 0 1.875rem;
+        border-width: 0.125rem;
+        border-style: solid;
+        background-color: transparent;
+
+        &.color-primary {
+            border-color: $primary;
+
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+.imi-btn-desc {
+    font-family: $font-primary;
+
+    &.type-solid {
+        letter-spacing: 0.0625rem;
+
+        &.color-primary {
+            color: $white;
+        }
+    }
+
+    &.type-outline {
+        letter-spacing: 0.1125rem;
+
+        &.color-primary {
+            color: $primary;
+
+            :hover > & {
+                color: $white;
+            }
+        }
+
+        &.type-outline {
+            letter-spacing: 0.1125rem;
+
+            &.color-primary {
+                color: $primary;
+
+                :hover > & {
+                    color: $white;
+                }
+            }
+        }
+
+        &.type-round {
+            letter-spacing: 0.0625rem;
+            color: $dark;
+
+            :hover > & {
+                color: $white;
+            }
+        }
+    }
+}
