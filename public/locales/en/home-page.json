@@ -16,5 +16,27 @@
             "desc2": "IMI’s practitioners work with awareness that your health is connected to seven key factors. Mind, body, emotions, spirit, energy, community and environment.",
             "desc3": "We’re led by science and nature. Find the root cause of your concern for sustained healing."
         }
+    },
+    "services": {
+        "card1": {
+            "title": "Naturopathic & functional medicine",
+            "desc": "Treat the root cause of your concern with nutrition, homeopathy and world class supplements.",
+            "linkText": "Learn more"
+        },
+        "card2": {
+            "title": "Psychology, counselling & coaching",
+            "desc": "From diagnosis to support; our psychotherapists, counsellors and coaches are here for you.",
+            "linkText": "Learn more"
+        },
+        "card3": {
+            "title": "Bodywork & energy medicine",
+            "desc": "Osteopathy. Craniosacral therapy. Acupuncture. TCM. Nourish your physical and energetic body.",
+            "linkText": "Learn more"
+        },
+        "card4": {
+            "title": "Labs, IV & conventional medicine",
+            "desc": "Advice from our family GP, medical testing from allergies to digestion and IV therapy.",
+            "linkText": "Learn more"
+        }
     }
 }
