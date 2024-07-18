@@ -202,4 +202,20 @@ $heroBannerBtnColor: #69A2C2;
             gap: 1.25rem;
         }
     }
+
+    .home-page-product-section {
+        .custom-bottom-container {
+            margin-top: 3.75rem;
+            width: 100%;
+
+            .imi-gradient-banner {
+                .imi-btn-component:hover {
+                    .imi-btn-desc {
+                        color: $blueish-green;
+                    }
+                }
+                    
+            }
+        }
+    }
 }

@@ -41,6 +41,12 @@
     },
     "product": {
         "header": "SCIENCE-LED SUPPLEMENTS",
-        "desc": "Clinical grade formulas, tried and trusted by doctors and clients worldwide."
+        "desc": "Clinical grade formulas, tried and trusted by doctors and clients worldwide.",
+        "gradientBanner1": {
+            "header": "STAYING HEALTHY",
+            "subheader": "DURING THE FLU SEASON",
+            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "linkText": "Shop now"
+        }
     }
 }
