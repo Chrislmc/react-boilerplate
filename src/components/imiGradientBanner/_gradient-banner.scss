@@ -1,0 +1,120 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-gradient-banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.25rem;
+
+    .imi-gradient-banner-image-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        height: 100%;
+
+        /* From design file */
+        width: 53.75%;
+
+        @include media(mobile) {
+            width: 100%;
+            height: unset;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+            @include media(tablet) {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .imi-gradient-banner-background-container {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+
+    &.color-primary {
+        background: transparent linear-gradient(90deg,#34ABA4 0%, #34ABA4 30%, #d5dd99 50%,#F28C0000 100%) 0% 0% no-repeat padding-box;
+
+            @include media(mobile) {
+                background: transparent
+                    linear-gradient(
+                        270deg,
+                        #F28C0000 0%, 
+                        #34ABA4 100%
+                    )
+                    0% 0% no-repeat padding-box;
+            }
+        }
+    }
+
+    .imi-gradient-banner-content-container {
+        width: 45%;
+        height: auto;
+        position: relative;
+        text-align: left;
+        margin: 0;
+
+        @include media(mobile) {
+            width: 100%;
+            margin-top: 20rem;
+        }
+
+        .container-column {
+            margin: 3.125rem 6.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .header-column {
+                display: flex;
+                flex-direction: column;
+                margin: 0 0 1.5rem;
+
+                .header {
+                    font-weight: 700;
+                    color: $white;
+                    font-size: 2.8125rem;
+                    line-height: 3.125rem;
+                    letter-spacing: 0.1375rem;
+                }
+
+                .subheader {
+                    color: $white;
+                    line-height: 3.125rem;
+                    letter-spacing: 0.09375rem;
+                    font-weight: 500;
+                }
+            }
+
+
+            .detail-column {
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+
+                .desc-text {
+                    font-family: $font-secondary;
+                    line-height: 1.375rem;
+                    letter-spacing: 0.05625rem;
+                    color: $white;
+                }
+            }
+
+            .imi-btn-component {
+                margin-top: 3.125rem;
+            }
+        }
+    }
+}
