@@ -7,7 +7,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
     border?: boolean;
 }
 
-export const K4kBaseCard = ({ children, shadow, border, ...props }: Props) => {
+export const ImiBaseCard = ({ children, shadow, border, ...props }: Props) => {
     return (
         <div
             className={`imi-card-component ${shadow ? "mod__shadow" : ""} ${
