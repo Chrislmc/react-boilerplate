@@ -1,5 +1,7 @@
+import { Icons } from "@/assets/icons";
 import { Videos } from "@/assets/video";
 import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
+import { redirectRouteMap } from "@/utils/routes/route";
 import { HomePageHeroBannerCard } from "./homePageHeroBannerCard";
 
 export const homePageSwiperCardLists = [
@@ -22,4 +24,27 @@ export const homePageSwiperCardLists = [
             width={"100%"}
         />
     </div>,
+];
+
+export const homePageHeroBannerRibbonItems = [
+    {
+        imgUrl: Icons.IconHomePageConsultation,
+        link: redirectRouteMap.homepage,
+        desc: "hero-banner.ribbon.consultation",
+    },
+    {
+        imgUrl: Icons.IconHomePageLabTest,
+        link: redirectRouteMap.homepage,
+        desc: "hero-banner.ribbon.labTests",
+    },
+    {
+        imgUrl: Icons.IconHomePageShop,
+        link: redirectRouteMap.shop,
+        desc: "hero-banner.ribbon.shop",
+    },
+    {
+        imgUrl: Icons.IconHomePageDispensary,
+        link: redirectRouteMap.dispensary,
+        desc: "hero-banner.ribbon.dispensary",
+    },
 ];

@@ -49,90 +49,144 @@ $heroBannerBtnColor: #69A2C2;
 }
 
 #home-page {
-    .home-page-hero-banner {  
-        .imi-swiper-component{
-            .home-page-hero-banner-card {
-                width: 100%;
-                height: 56.25rem;
-                overflow: hidden;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+    .home-page-hero-banner-section {  
+        .hero-banner-container {
+            display: block;
+            width: 100%;
+            height: auto;
 
-                .home-page-hero-banner-card-background {
-                    height: 100%;
+            .imi-swiper-component {
+                .home-page-hero-banner-card {
                     width: 100%;
-                    position: absolute;
+                    height: 56.25rem;
+                    overflow: hidden;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
 
-                    img {
+                    .home-page-hero-banner-card-background {
                         height: 100%;
                         width: 100%;
-                        object-fit: cover;
                         position: absolute;
-                    }
 
-                    .imi-video-section {
-                        position: absolute;
-                        height: 100%;
-
-                        video {
+                        img {
+                            height: 100%;
+                            width: 100%;
                             object-fit: cover;
+                            position: absolute;
+                        }
+
+                        .imi-video-section {
+                            position: absolute;
+                            height: 100%;
+
+                            video {
+                                object-fit: cover;
+                            }
                         }
                     }
-                }
 
-                .home-page-banner-card-gradient-overlay {
-                    width: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    display: flex;
-                    justify-content: flex-end;
-                    height: 100%;
-                    background: transparent linear-gradient(180deg, #00828C66 0%, #99CDD11A 100%) 0% 0% no-repeat padding-box;
-                    pointer-events: none;
-                }
+                    .home-page-banner-card-gradient-overlay {
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: flex;
+                        justify-content: flex-end;
+                        height: 100%;
+                        background: transparent linear-gradient(180deg, #00828C66 0%, #99CDD11A 100%) 0% 0% no-repeat padding-box;
+                        pointer-events: none;
+                    }
 
-                .home-page-hero-banner-header {
-                    position: relative;
-                    font-size: 5rem;
-                    line-height: 7rem;
-                    letter-spacing: 0.25rem;
-                    color: $white;
-                    margin-bottom: 2.5rem;
-                }
+                    .home-page-hero-banner-header {
+                        position: relative;
+                        font-size: 5rem;
+                        line-height: 7rem;
+                        letter-spacing: 0.25rem;
+                        color: $white;
+                        margin-bottom: 2.5rem;
+                    }
 
-                .home-page-hero-banner-desc {
-                    position: relative;
-                    font-family: $font-secondary;
-                    color: $white;
-                }
+                    .home-page-hero-banner-desc {
+                        position: relative;
+                        font-family: $font-secondary;
+                        color: $white;
+                    }
 
-                .imi-btn-component {
-                    position: relative;
-                    margin-top: 5rem;
-                    width: 12.5rem;
-                    height: 3.125rem;
-                    background-color: $heroBannerBtnColor;
-                    padding: 0;
+                    .imi-btn-component {
+                        position: relative;
+                        margin-top: 5rem;
+                        width: 12.5rem;
+                        height: 3.125rem;
+                        background-color: $heroBannerBtnColor;
+                        padding: 0;
 
-                    &:hover {
-                        background-color: $white;
+                        &:hover {
+                            background-color: $white;
+
+                            .imi-btn-desc {
+                                color: $heroBannerBtnColor;
+                            }
+                        }
 
                         .imi-btn-desc {
-                            color: $heroBannerBtnColor;
+                            color: $white;
+                            font-size: 1rem;
+                            line-height: 1.1875rem;
+                            letter-spacing: 0.05rem;
                         }
                     }
+                }
+            }
+        }
 
-                    .imi-btn-desc {
-                        color: $white;
-                        font-size: 1rem;
-                        line-height: 1.1875rem;
-                        letter-spacing: 0.05rem;
+        .hero-banner-ribbon {
+            padding: 2.8125rem 0;
+            background-color: $white;
+
+            .hero-banner-ribbon-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                .ribbon-item {
+                    padding: 0 3.125rem;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 1.25rem;
+
+                    img {
+                        width: 6.375rem;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                    }
+
+                    span {
+                        display: block;
+                        color: $gray;
+                        font-weight: 700;
+                        text-align: left;
                     }
                 }
+            }
+        }
+
+        .hero-banner-testimonial {
+            background: transparent linear-gradient(180deg, #34ABA4 0%, #5692CD 100%) 0% 0% no-repeat padding-box;
+
+            h3 + h3 {
+                margin-top: 2.125rem;
+            }
+
+            .hero-banner-testimonial-text {
+                line-height: 2.5rem;
+                letter-spacing: 0.09375rem;
+                color: $white;
+                font-weight: 500;
             }
         }
     }

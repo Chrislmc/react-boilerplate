@@ -160,6 +160,7 @@ export const useHomePageScrollingEffect = () => {
                     ? 1
                     : currentScrollPosition / scrollTill;
 
+            console.log(currentRatio.toString(), currentScrollPosition);
             (siteHeaderLinkRibbonDiv as HTMLDivElement).style.opacity =
                 currentRatio.toString();
 
@@ -222,21 +223,23 @@ export const useHomePageScrollingEffect = () => {
 
             setIsAutoScrolling(true);
             if (currentRatio < 0.5) {
-                (siteContentDiv as HTMLDivElement).scrollTo({
-                    top: 0,
-                    left: 0,
-                    behavior: "smooth",
-                });
+                // Remove auto scroll
+                // (siteContentDiv as HTMLDivElement).scrollTo({
+                //     top: 0,
+                //     left: 0,
+                //     behavior: "smooth",
+                // });
                 siteHeaderRibbonItems;
                 for (const item of siteHeaderRibbonItems) {
                     (item as HTMLDivElement).style.pointerEvents = "none";
                 }
             } else if (currentRatio > 0.5 && currentRatio < 1) {
-                (siteContentDiv as HTMLDivElement).scrollTo({
-                    top: scrollTill,
-                    left: 0,
-                    behavior: "smooth",
-                });
+                // Remove auto scroll
+                // (siteContentDiv as HTMLDivElement).scrollTo({
+                //     top: scrollTill,
+                //     left: 0,
+                //     behavior: "smooth",
+                // });
                 for (const item of siteHeaderRibbonItems) {
                     (item as HTMLDivElement).style.pointerEvents = "auto";
                 }

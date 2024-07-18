@@ -4,6 +4,17 @@
             "title": "Heal. Balance. Evolve.",
             "desc": "Centering you and your family’s health, so you can get well and stay well.",
             "linkText": "Find Out More"
+        },
+        "ribbon": {
+            "consultation": "Book\na consultation",
+            "labTests": "Schedule\n a lab test",
+            "shop": "Shop\nsupplements",
+            "dispensary": "Visit our\ndispensary"
+        },
+        "testimonial": {
+            "desc1": "Integrating centuries-old healing traditions with science and medical testing.",
+            "desc2": "IMI’s practitioners work with awareness that your health is connected to seven key factors. Mind, body, emotions, spirit, energy, community and environment.",
+            "desc3": "We’re led by science and nature. Find the root cause of your concern for sustained healing."
         }
     }
 }
