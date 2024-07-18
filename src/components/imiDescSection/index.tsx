@@ -3,6 +3,7 @@ import { ImiSectionHeader } from "../imiSectionHeader";
 import { ImiVideoPlayer } from "../imiVideoPlayer";
 import { ContainerX } from "../layout/containerX";
 import { SectionContainerY } from "../layout/sectionContainerY";
+import "./_desc-section.scss";
 
 interface IHeroImgBaseProps {
     colorLayer?: boolean;
@@ -20,6 +21,7 @@ export type IHeroImg = IHeroImgProps | IHeroVideoProps;
 
 interface Props {
     header?: string;
+    subheader?: string;
     desc?: string[];
 
     heroImg?: IHeroImg;
@@ -95,15 +97,21 @@ export const ImiDescSection: React.FC<Props> = (props: Props) => {
                             </div>
                         )}
 
+                        {props?.subheader && (
+                            <h5 className="imi-desc-section-subheader">
+                                {props.subheader}
+                            </h5>
+                        )}
+
                         {props?.desc && (
                             <div className="imi-desc-section-desc-column">
                                 {props?.desc?.map((desc, i) => (
-                                    <h6
+                                    <h5
                                         key={`imi-desc-section-desc-${i}`}
                                         className={`imi-desc-section-desc imi-desc-section-desc-${i}`}
                                     >
                                         {desc}
-                                    </h6>
+                                    </h5>
                                 ))}
                             </div>
                         )}

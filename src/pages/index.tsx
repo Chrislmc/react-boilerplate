@@ -4,6 +4,7 @@ import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEf
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_homePage.scss";
 import { HomePageHeroBannerSection } from "./homePageHeroBannerSection";
+import { HomePageProductSection } from "./homePageProductSection";
 import { HomePageServicesSection } from "./homePageServicesSection";
 
 export const HomePage = () => {
@@ -18,6 +19,9 @@ export const HomePage = () => {
                 </ImiSection>
                 <ImiSection className="home-page-services-section">
                     <HomePageServicesSection />
+                </ImiSection>
+                <ImiSection className="home-page-product-section">
+                    <HomePageProductSection />
                 </ImiSection>
             </div>
         </Layout>
