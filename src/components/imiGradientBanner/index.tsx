@@ -1,4 +1,6 @@
+import { ReactNode } from "react";
 import { IImiButtonProps, ImiButton } from "../imiButton";
+import { ImiSwiper } from "../imiSwiper";
 import "./_gradient-banner.scss";
 
 export interface IImiGradientBannerProps {
@@ -8,6 +10,7 @@ export interface IImiGradientBannerProps {
     subheader?: string;
     descList?: string[];
     button?: IImiButtonProps;
+    contentCards?: ReactNode[];
     customComponent?: JSX.Element;
 }
 
@@ -46,6 +49,13 @@ export const ImiGradientBanner: React.FC<IImiGradientBannerProps> = (
                         </div>
                     )}
                     {props?.button && <ImiButton {...props.button} />}
+                    {props?.contentCards && (
+                        <ImiSwiper
+                            cardLists={props.contentCards}
+                            pagination={{ clickable: true }}
+                            speed={1000}
+                        />
+                    )}
                     {props?.customComponent && props.customComponent}
                 </div>
             </div>

@@ -72,7 +72,7 @@
         }
 
         .container-column {
-            margin: 3.125rem 6.25rem;
+            margin: 3.125rem 0 3.125rem 6.25rem;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -114,6 +114,24 @@
 
             .imi-btn-component {
                 margin-top: 3.125rem;
+            }
+
+            .imi-swiper-component {
+                width: 100%;
+
+                .swiper-column {
+                    width: auto;
+                    padding-bottom: 3.625rem;
+                }
+
+                .swiper-pagination {
+                    right: unset;
+                    left: 0;
+                    top: calc(100% - 0.5rem);
+                    height: 0.5rem;
+                    width: auto;
+                    transform: translateY(-0.5rem);
+                }
             }
         }
     }
