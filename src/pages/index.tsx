@@ -1,15 +1,14 @@
 import { ImiSection } from "@/components/imiSection";
 import { Layout } from "@/components/layout";
 import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEffect";
-import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";
+import { HomePageDispensarySection } from "./homePageDispensarySection";
 import { HomePageHeroBannerSection } from "./homePageHeroBannerSection";
 import { HomePageProductSection } from "./homePageProductSection";
 import { HomePageServicesSection } from "./homePageServicesSection";
 
 export const HomePage = () => {
     const { siteContentRef } = useHomePageScrollingEffect();
-    const t = i18nHelper("home-page");
 
     return (
         <Layout className="home-page" ref={siteContentRef}>
@@ -22,6 +21,9 @@ export const HomePage = () => {
                 </ImiSection>
                 <ImiSection className="home-page-product-section">
                     <HomePageProductSection />
+                </ImiSection>
+                <ImiSection className="home-page-dispensary-section">
+                    <HomePageDispensarySection />
                 </ImiSection>
             </div>
         </Layout>

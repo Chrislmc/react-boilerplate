@@ -232,4 +232,61 @@ $heroBannerBtnColor: #69A2C2;
             }
         }
     }
+
+    .home-page-dispensary-section {
+        .imi-gradient-banner {
+            height: 50rem;
+            border-radius: unset;
+
+            .imi-gradient-banner-image-container {
+                width: 100%;
+            }
+
+            .imi-gradient-banner-background-container {
+                background: transparent linear-gradient(180deg, #00769900 0%, $blueish-green-700 100%) 0% 0% no-repeat padding-box;
+            }
+
+            .imi-gradient-banner-content-container {
+                height: 100%;
+                width: 100%;
+                text-align: center;
+
+                @include media(mobile) {
+                    margin-top: unset;
+                }
+
+                .container-column {
+                    align-items: center;
+                    height: 100%;
+                    justify-content: flex-end;
+                    display: flex;
+                    box-sizing: border-box;
+                    margin: 0;
+
+                    .swiper-column {
+                        margin-bottom: 5rem;
+                        
+                        .header-column {
+                            margin: 0 0 1.875rem;
+
+                            .header {
+                                font-size: 2.5rem;
+                                line-height: 3.4375rem;
+                                letter-spacing: 0.125rem;
+                            }
+                            
+                            .desc-text {
+                                line-height: 1.5rem;
+                            }
+                        }
+
+                        .imi-btn-component {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

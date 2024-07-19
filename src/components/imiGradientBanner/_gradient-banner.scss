@@ -44,8 +44,8 @@
         justify-content: flex-end;
         height: 100%;
 
-    &.color-primary {
-        background: transparent linear-gradient(90deg,#34ABA4 0%, #34ABA4 30%, #d5dd99 50%,#F28C0000 100%) 0% 0% no-repeat padding-box;
+        &.color-primary {
+            background: transparent linear-gradient(90deg,#34ABA4 0%, #34ABA4 30%, #d5dd99 50%,#F28C0000 100%) 0% 0% no-repeat padding-box;
 
             @include media(mobile) {
                 background: transparent

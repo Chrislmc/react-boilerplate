@@ -32,6 +32,14 @@
                 background-color: $primary;
             }
         }
+
+        &.color-orange {
+            background-color: $orange;
+
+            &:hover {
+                background-color: $white;
+            }
+        }
     }
 
     &.type-outline {
@@ -61,8 +69,15 @@
         letter-spacing: 0.0625rem;
 
         &.color-primary, 
-        &.color-blueish-green {
+        &.color-blueish-green,
+        &.color-orange {
             color: $white;
+        }
+
+        &.mod__hover-blueish-green {
+            :hover > & {
+                color: $blueish-green-700;
+            }
         }
     }
 
