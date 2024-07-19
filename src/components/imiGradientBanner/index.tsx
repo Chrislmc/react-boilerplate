@@ -1,16 +1,18 @@
-import { ReactNode } from "react";
 import { IImiButtonProps, ImiButton } from "../imiButton";
 import { ImiSwiper } from "../imiSwiper";
 import "./_gradient-banner.scss";
 
-export interface IImiGradientBannerProps {
-    colorTheme: string;
-    imgUrl?: string;
+interface IGradientBannerContent {
     header?: string;
     subheader?: string;
     descList?: string[];
     button?: IImiButtonProps;
-    contentCards?: ReactNode[];
+}
+
+export interface IImiGradientBannerProps {
+    colorTheme: string;
+    imgUrl?: string;
+    content?: IGradientBannerContent[];
     customComponent?: JSX.Element;
 }
 
@@ -27,38 +29,48 @@ export const ImiGradientBanner: React.FC<IImiGradientBannerProps> = (
             />
             <div className="imi-gradient-banner-content-container">
                 <div className="container-column">
-                    {(props?.header || props?.subheader) && (
-                        <div className="header-column">
-                            {props?.header && (
-                                <h1 className="header">
-                                    {props.header.toUpperCase()}
-                                </h1>
-                            )}
-                            {props?.subheader && (
-                                <h3 className="subheader">
-                                    {props?.subheader?.toUpperCase()}
-                                </h3>
-                            )}
-                        </div>
+                    {props?.content?.length === 1 && (
+                        <GradientBannerContent {...props?.content[0]} />
                     )}
-                    {props?.descList && (
-                        <div className="detail-column">
-                            {props.descList.map((desc) => (
-                                <span className="desc-text">{desc}</span>
-                            ))}
-                        </div>
-                    )}
-                    {props?.button && <ImiButton {...props.button} />}
-                    {props?.contentCards && (
+                    {props?.content?.length && props?.content?.length > 1 && (
                         <ImiSwiper
-                            cardLists={props.contentCards}
+                            cardLists={props?.content.map((item) => (
+                                <GradientBannerContent {...item} />
+                            ))}
                             pagination={{ clickable: true }}
-                            speed={1000}
+                            speed={2000}
                         />
                     )}
                     {props?.customComponent && props.customComponent}
                 </div>
             </div>
+        </div>
+    );
+};
+
+const GradientBannerContent: React.FC<IGradientBannerContent> = (props) => {
+    return (
+        <div className="swiper-column">
+            {(props?.header || props?.subheader) && (
+                <div className="header-column">
+                    {props?.header && (
+                        <h1 className="header">{props.header.toUpperCase()}</h1>
+                    )}
+                    {props?.subheader && (
+                        <h3 className="subheader">
+                            {props?.subheader?.toUpperCase()}
+                        </h3>
+                    )}
+                </div>
+            )}
+            {props?.descList && (
+                <div className="detail-column">
+                    {props.descList.map((desc) => (
+                        <span className="desc-text">{desc}</span>
+                    ))}
+                </div>
+            )}
+            {props?.button && <ImiButton {...props.button} />}
         </div>
     );
 };

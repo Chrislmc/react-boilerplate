@@ -17,7 +17,11 @@ export const ImiSwiper: React.FC<Props> = ({ cardLists, ...props }: Props) => {
     if ("pagination" in props) modules.push(Pagination);
 
     return (
-        <div className="imi-swiper-component">
+        <div
+            className={`imi-swiper-component${
+                props?.speed ? ` mod__speed${props.speed}` : ""
+            }`}
+        >
             <Swiper modules={modules} {...props}>
                 {cardLists?.length &&
                     cardLists?.map((card, i) => (

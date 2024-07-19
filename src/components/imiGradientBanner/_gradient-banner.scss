@@ -16,7 +16,7 @@
         height: 100%;
 
         /* From design file */
-        width: 53.75%;
+        width: 60%;
 
         @include media(mobile) {
             width: 100%;
@@ -72,7 +72,7 @@
         }
 
         .container-column {
-            margin: 3.125rem 0 3.125rem 6.25rem;
+            margin: 3.125rem 0 3.125rem 3.75rem;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -121,12 +121,12 @@
 
                 .swiper-column {
                     width: auto;
-                    padding-bottom: 3.625rem;
+                    padding: 0 2.5rem 3.625rem 2.5rem;
                 }
 
                 .swiper-pagination {
                     right: unset;
-                    left: 0;
+                    left: 2.5rem;
                     top: calc(100% - 0.5rem);
                     height: 0.5rem;
                     width: auto;

@@ -38,6 +38,7 @@ $swiperNavigationSize:4.5625rem;
             top: calc(100% - 3.125rem - 0.5rem);
             transform: none;
             bottom: none;
+            box-sizing: border-box;
 
             .swiper-pagination-bullet {
                 background-color: $transparent;
@@ -46,11 +47,7 @@ $swiperNavigationSize:4.5625rem;
                 width: 0.5rem;
                 line-height: 0.5rem;
                 border-radius: 9999rem;
-
-                &:not(.swiper-pagination-bullet-active){
-                    border: 0.125rem solid $white;
-                    box-sizing: border-box;
-                }
+                border: 0.125rem solid $white;
             }
 
             .swiper-pagination-bullet-active {
@@ -59,8 +56,19 @@ $swiperNavigationSize:4.5625rem;
                 width: 1.5rem;
                 height: 0.5rem;
                 line-height: 0.5rem;
-                border-radius: 9999rem;
             }
+        }
+    }
+
+    &.mod__speed1000 {
+        .swiper-pagination-bullet {
+            transition: all 1s ease;
+        }
+    }
+
+    &.mod__speed2000 {
+        .swiper-pagination-bullet {
+            transition: all 2s ease;
         }
     }
 }

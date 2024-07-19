@@ -1,5 +1,4 @@
 import { Images } from "@/assets/images";
-import { ImiButton } from "@/components/imiButton";
 import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiGradientBanner } from "@/components/imiGradientBanner";
 import { ContainerX } from "@/components/layout/containerX";
@@ -19,59 +18,39 @@ export const HomePageProductSection = () => {
                         <ImiGradientBanner
                             colorTheme={"primary"}
                             imgUrl={Images.ImageHomePageGradientBanner1}
-                            contentCards={[
-                                <div className="swiper-column">
-                                    <div className="header-column">
-                                        <h1 className="header">
-                                            {t(
-                                                "product.gradientBanner1.header"
-                                            ).toUpperCase()}
-                                        </h1>
-                                        <h3 className="subheader">
-                                            {t(
-                                                "product.gradientBanner1.subheader"
-                                            )?.toUpperCase()}
-                                        </h3>
-                                    </div>
-                                    <div className="detail-column">
-                                        <span className="desc-text">
-                                            {t("product.gradientBanner1.desc")}
-                                        </span>
-                                    </div>
-                                    <ImiButton
-                                        text={t(
+                            content={[
+                                {
+                                    header: t("product.gradientBanner1.header"),
+                                    subheader: t(
+                                        "product.gradientBanner1.subheader"
+                                    ),
+                                    descList: [
+                                        t("product.gradientBanner1.desc"),
+                                    ],
+                                    button: {
+                                        text: t(
                                             "product.gradientBanner1.linkText"
-                                        )}
-                                        type={"outline"}
-                                        colorTheme={"white"}
-                                    />
-                                </div>,
-                                <div className="swiper-column">
-                                    <div className="header-column">
-                                        <h1 className="header">
-                                            {t(
-                                                "product.gradientBanner1.header"
-                                            ).toUpperCase()}
-                                        </h1>
-                                        <h3 className="subheader">
-                                            {t(
-                                                "product.gradientBanner1.subheader"
-                                            )?.toUpperCase()}
-                                        </h3>
-                                    </div>
-                                    <div className="detail-column">
-                                        <span className="desc-text">
-                                            {t("product.gradientBanner1.desc")}
-                                        </span>
-                                    </div>
-                                    <ImiButton
-                                        text={t(
+                                        ),
+                                        type: "outline",
+                                        colorTheme: "white",
+                                    },
+                                },
+                                {
+                                    header: t("product.gradientBanner1.header"),
+                                    subheader: t(
+                                        "product.gradientBanner1.subheader"
+                                    ),
+                                    descList: [
+                                        t("product.gradientBanner1.desc"),
+                                    ],
+                                    button: {
+                                        text: t(
                                             "product.gradientBanner1.linkText"
-                                        )}
-                                        type={"outline"}
-                                        colorTheme={"white"}
-                                    />
-                                </div>,
+                                        ),
+                                        type: "outline",
+                                        colorTheme: "white",
+                                    },
+                                },
                             ]}
                         />
                     </div>
