@@ -1,3 +1,5 @@
+import "./_section-header.scss";
+
 interface Props {
     header: string;
 }

@@ -317,4 +317,39 @@ $heroBannerBtnColor: #69A2C2;
             }
         }
     }
+
+    .home-page-health-hub-section {
+        background-color: $primary-200;
+
+        .imi-swiper-component {
+            margin: 3.75rem 0 5.5rem;
+
+            .health-condition-card-container {
+                height: 15rem;
+                border-radius: 1.25rem;
+
+                .imi-card-component {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1.5rem;
+                    box-shadow: 0 0 0.375rem #26262629;
+                    box-sizing: border-box;
+
+                    img {
+                        width: 6.25rem;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        .imi-btn-component {
+            margin: 0 auto;
+        }
+    }
 }

@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout";
 import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEffect";
 import "./_home-page.scss";
 import { HomePageDispensarySection } from "./homePageDispensarySection";
+import { HomePageHealthHubSection } from "./homePageHealthHubSection";
 import { HomePageHeroBannerSection } from "./homePageHeroBannerSection";
 import { HomePageProductSection } from "./homePageProductSection";
 import { HomePageServicesSection } from "./homePageServicesSection";
@@ -24,6 +25,9 @@ export const HomePage = () => {
                 </ImiSection>
                 <ImiSection className="home-page-dispensary-section">
                     <HomePageDispensarySection />
+                </ImiSection>
+                <ImiSection className="home-page-health-hub-section">
+                    <HomePageHealthHubSection />
                 </ImiSection>
             </div>
         </Layout>

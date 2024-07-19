@@ -73,5 +73,19 @@
             "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
             "linkText": "Learn more"
         }
+    },
+    "healthHub": {
+        "header": "HEALTH CONDITIONS",
+        "desc": "We don’t just treat your symptoms. Through careful assessment and testing, we discover and treat the root cause of your health concern.",
+        "allergies": "Allergies",
+        "gutHealth": "Gut health",
+        "immunity": "Immunity",
+        "sleep": "Sleep",
+        "hormonalHealth": "Hormonal health",
+        "pain": "Pain",
+        "detoxAndWeightLoss": "Detox & weightloss",
+        "aToZ": "A-Z",
+        "seeAllHealthConditions": "See all health conditions",
+        "viewAllAToZ": "View all A-Z"
     }
 }
