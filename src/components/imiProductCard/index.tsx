@@ -4,6 +4,7 @@ import { IProductButton, ProductButton } from "./productButton";
 import { IProductRating, ProductRating } from "./productRating";
 
 interface IImiProductCardProps extends IProductRating, IProductButton {
+    id: string;
     imgUrl: string;
     name: string;
     desc?: string;

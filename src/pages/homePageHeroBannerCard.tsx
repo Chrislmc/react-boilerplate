@@ -2,7 +2,7 @@ import { IImiButtonProps, ImiButton } from "@/components/imiButton";
 import { IHeroImg } from "@/components/imiDescSection";
 import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
 import { i18nHelper } from "@/utils/i18n-helper";
-import "./_homePage.scss";
+import "./_home-page.scss";
 
 interface Props {
     heroImg: IHeroImg;

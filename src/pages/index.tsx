@@ -2,7 +2,7 @@ import { ImiSection } from "@/components/imiSection";
 import { Layout } from "@/components/layout";
 import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEffect";
 import { i18nHelper } from "@/utils/i18n-helper";
-import "./_homePage.scss";
+import "./_home-page.scss";
 import { HomePageHeroBannerSection } from "./homePageHeroBannerSection";
 import { HomePageProductSection } from "./homePageProductSection";
 import { HomePageServicesSection } from "./homePageServicesSection";

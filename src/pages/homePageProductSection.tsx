@@ -1,13 +1,16 @@
 import { Images } from "@/assets/images";
+import { ImiButton } from "@/components/imiButton";
 import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiGradientBanner } from "@/components/imiGradientBanner";
 import { ImiProductCard } from "@/components/imiProductCard";
 import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
-import "./_homePage.scss";
+import "./_home-page.scss";
+import { homePageProductCardList } from "./homePageConstant";
 
 export const HomePageProductSection = () => {
     const t = i18nHelper("home-page");
+    const tInSharedContext = i18nHelper("shared");
 
     return (
         <ImiDescSection
@@ -18,7 +21,7 @@ export const HomePageProductSection = () => {
                     <div className="custom-bottom-container">
                         <ImiGradientBanner
                             colorTheme={"primary"}
-                            imgUrl={Images.ImageHomePageGradientBanner1}
+                            imgUrl={Images.HomePageGradientBanner1}
                             content={[
                                 {
                                     header: t("product.gradientBanner1.header"),
@@ -54,15 +57,24 @@ export const HomePageProductSection = () => {
                                 },
                             ]}
                         />
-                        <ImiProductCard
-                            imgUrl={Images.ImageHomePageGradientBanner1}
-                            name={"fsaf"}
-                            currency={"HK$"}
-                            price={"296"}
-                            rating={2}
-                            isOutOfStock={false}
-                            onlyAvailableInClinic={false}
-                        />
+
+                        <div className="product-card-grid-container">
+                            {homePageProductCardList.map((cardItem, i) => (
+                                <ImiProductCard
+                                    key={`product-card-${i}`}
+                                    {...cardItem}
+                                />
+                            ))}
+                        </div>
+                        <div className="view-more-btn-container">
+                            <ImiButton
+                                text={tInSharedContext(
+                                    "product.btn.seeAllProduct"
+                                )}
+                                size="padding"
+                                colorTheme="blueish-green"
+                            />
+                        </div>
                     </div>
                 </ContainerX>
             }

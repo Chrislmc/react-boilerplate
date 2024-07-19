@@ -216,6 +216,20 @@ $heroBannerBtnColor: #69A2C2;
                 }
                     
             }
+
+            .product-card-grid-container {
+                margin-top: 2.5rem;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.25rem;
+            }
+
+            .view-more-btn-container {
+                margin: 2.5rem auto 0 auto;
+                width: fit-content;
+            }
         }
     }
 }

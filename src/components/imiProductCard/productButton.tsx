@@ -14,9 +14,11 @@ export const ProductButton: React.FC<IProductButton> = ({
 
     let btnText = "";
     let btnTheme = "";
+    let isDisabled = false;
     if (isOutOfStock) {
         btnText = t("product.btn.outOfStock");
         btnTheme = "mod__outOfStock";
+        isDisabled = true;
     } else if (onlyAvailableInClinic) {
         btnText = t("product.btn.buyInClinic");
         btnTheme = "mod__buyInClinic";
@@ -30,6 +32,7 @@ export const ProductButton: React.FC<IProductButton> = ({
             text={btnText}
             buttonClassName={btnTheme}
             textClassName={btnTheme}
+            disabled={isDisabled}
         />
     );
 };

@@ -25,7 +25,7 @@ export const Header = () => {
                                 <p className="site-header-logo-character">M</p>
                                 <p className="site-header-logo-character">I</p>
                             </div>
-                            {/* <img src={Images.ImageImiLogo} /> */}
+                            {/* <img src={Images.ImiLogo} /> */}
                         </button>
                         <div className="site-header-section-content-container">
                             <div className="site-header-menu-container">

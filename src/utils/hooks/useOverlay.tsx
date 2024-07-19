@@ -38,7 +38,7 @@ export const OverlayProvider: Props = ({ children }) => {
                 {children}
                 <div className="overlay-wrapper-close-button-container">
                     <button onClick={() => setShowOverlay(false)}>
-                        <img src={closeIcon || Icons.IconYoutube} />
+                        <img src={closeIcon || Icons.Youtube} />
                     </button>
                 </div>
             </div>

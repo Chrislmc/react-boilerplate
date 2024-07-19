@@ -6,8 +6,8 @@ export interface IProductRating {
 
 export const ProductRating: React.FC<IProductRating> = ({ rating }) => {
     const starList = Array.from(new Array(5))
-        .fill(Icons.IconStar, 0, rating)
-        .fill(Icons.IconEmptyStar, rating, 5);
+        .fill(Icons.Star, 0, rating)
+        .fill(Icons.EmptyStar, rating, 5);
 
     return (
         <div className="product-rating-container">

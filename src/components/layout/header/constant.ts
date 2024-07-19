@@ -48,22 +48,22 @@ export const headerButtons = [
 
 export const headerRibbonItems = [
     {
-        imgUrl: Icons.IconConsultation,
+        imgUrl: Icons.Consultation,
         link: redirectRouteMap.homepage,
         desc: "header.ribbon.consultation",
     },
     {
-        imgUrl: Icons.IconLabTests,
+        imgUrl: Icons.LabTests,
         link: redirectRouteMap.homepage,
         desc: "header.ribbon.labTests",
     },
     {
-        imgUrl: Icons.IconShop,
+        imgUrl: Icons.Shop,
         link: redirectRouteMap.shop,
         desc: "header.ribbon.shop",
     },
     {
-        imgUrl: Icons.IconDispensary,
+        imgUrl: Icons.Dispensary,
         link: redirectRouteMap.dispensary,
         desc: "header.ribbon.dispensary",
     },

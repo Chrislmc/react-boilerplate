@@ -2,9 +2,11 @@ import { useNavigate } from "react-router-dom";
 import "./_button.scss";
 
 export type IImiButtonType = "solid" | "outline" | "round" | "text";
+export type IImiButtonSize = "normal" | "padding";
 
 export interface IImiButtonProps {
     type?: IImiButtonType;
+    size?: IImiButtonSize;
     text: string;
     onClick?: () => void;
     disabled?: boolean;
@@ -18,6 +20,7 @@ export interface IImiButtonProps {
 
 export const ImiButton: React.FC<IImiButtonProps> = ({
     type = "solid",
+    size = "normal",
     text,
     onClick,
     disabled,
@@ -32,7 +35,7 @@ export const ImiButton: React.FC<IImiButtonProps> = ({
 
     return downloadFile || externalPath ? (
         <a
-            className={`imi-btn-component type-${type} color-${colorTheme} ${buttonClassName}`}
+            className={`imi-btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
             href={downloadFile?.path || externalPath}
             target="_blank"
         >
@@ -44,7 +47,7 @@ export const ImiButton: React.FC<IImiButtonProps> = ({
         </a>
     ) : (
         <button
-            className={`imi-btn-component type-${type} color-${colorTheme} ${buttonClassName}`}
+            className={`imi-btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
             onClick={() => {
                 redirectUrl && navigator(redirectUrl);
                 onClick && onClick();

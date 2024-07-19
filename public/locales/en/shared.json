@@ -48,7 +48,8 @@
         "btn": {
             "outOfStock": "Out of stock",
             "buyInClinic": "Buy in-clinic",
-            "addToBasket": "Add to basket"
+            "addToBasket": "Add to basket",
+            "seeAllProduct": "See all products"
         }
     }
 }

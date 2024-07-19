@@ -2,15 +2,15 @@ import { Icons } from "@/assets/icons";
 
 export const footerSocialIcons = [
     {
-        imgUrl: Icons.IconYoutube,
+        imgUrl: Icons.Youtube,
         link: "https://www.youtube.com/IMIHK",
     },
     {
-        imgUrl: Icons.IconFacebook,
+        imgUrl: Icons.Facebook,
         link: "https://www.facebook.com/IMIHK",
     },
     {
-        imgUrl: Icons.IconInstagram,
+        imgUrl: Icons.Instagram,
         link: "https://www.instagram.com/imi_hk",
     },
 ];

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "./_card.scss";
+import "./_base-card.scss";
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
     children: ReactNode;
