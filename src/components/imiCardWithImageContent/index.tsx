@@ -2,19 +2,16 @@ import { ImiBaseCard } from "@/components/imiBaseCard";
 import { IImiButtonProps, ImiButton } from "@/components/imiButton";
 import "./_card-with-image-content.scss";
 
-interface Props {
+export interface IImiCardWithImageContentProps {
     imgUrl: string;
     title: string;
     desc: string;
     button: IImiButtonProps;
 }
 
-export const ImiCardWithImageCard: React.FC<Props> = ({
-    imgUrl,
-    title,
-    desc,
-    button,
-}) => {
+export const ImiCardWithImageContent: React.FC<
+    IImiCardWithImageContentProps
+> = ({ imgUrl, title, desc, button }) => {
     return (
         <div className="imi-card-with-image-content-component">
             <ImiBaseCard shadow>

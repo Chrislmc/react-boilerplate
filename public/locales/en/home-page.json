@@ -52,6 +52,26 @@
     "dispensary": {
         "header": "Visit us",
         "desc": "Visit us to explore our products and services. Our dispensary carries Hong Kong’s largest range of practitioner-recommended supplements.",
-        "linkText": "Location and hours"
+        "linkText": "Location and hours",
+        "card1": {
+            "title": "Meet our practitioners",
+            "desc": "Peace of mind comes as standard. Our practitioners’ treatments are properly regulated and follow a strict code of ethics.",
+            "linkText": "Meet us"
+        },
+        "card2": {
+            "title": "Your health, online",
+            "desc": "Better wellbeing, at the click of a button. No matter where you are in the world, you can always receive quality healthcare.",
+            "linkText": "Online consultations"
+        },
+        "card3": {
+            "title": "Corporate wellness",
+            "desc": "Interactive health talks and urban wellness retreats for business leaders and employees.",
+            "linkText": "Inspiring healthier businesses"
+        },
+        "card4": {
+            "title": "Our healing vision",
+            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+            "linkText": "Learn more"
+        }
     }
 }

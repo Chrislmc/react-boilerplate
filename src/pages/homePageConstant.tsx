@@ -1,6 +1,7 @@
 import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
 import { Videos } from "@/assets/video";
+import { IImiCardWithImageContentProps } from "@/components/imiCardWithImageContent";
 import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
 import { redirectRouteMap } from "@/utils/routes/route";
 import { HomePageHeroBannerCard } from "./homePageHeroBannerCard";
@@ -129,5 +130,43 @@ export const homePageProductCardList = [
         rating: 0,
         isOutOfStock: false,
         onlyAvailableInClinic: false,
+    },
+];
+
+export const homePageDispensaryCardList: IImiCardWithImageContentProps[] = [
+    {
+        imgUrl: Images.HomePageDispensaryCard1,
+        title: "dispensary.card1.title",
+        desc: "dispensary.card1.desc",
+        button: {
+            text: "dispensary.card1.linkText",
+        },
+    },
+    {
+        imgUrl: Images.HomePageDispensaryCard2,
+        title: "dispensary.card2.title",
+        desc: "dispensary.card2.desc",
+        button: {
+            text: "dispensary.card2.linkText",
+            size: "padding",
+        },
+    },
+    {
+        imgUrl: Images.HomePageDispensaryCard3,
+        title: "dispensary.card3.title",
+        desc: "dispensary.card3.desc",
+        button: {
+            text: "dispensary.card3.linkText",
+            size: "padding",
+            buttonClassName: "size-small-padding",
+        },
+    },
+    {
+        imgUrl: Images.HomePageDispensaryCard4,
+        title: "dispensary.card4.title",
+        desc: "dispensary.card4.desc",
+        button: {
+            text: "dispensary.card4.linkText",
+        },
     },
 ];

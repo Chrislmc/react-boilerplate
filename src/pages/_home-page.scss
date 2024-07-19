@@ -200,6 +200,12 @@ $heroBannerBtnColor: #69A2C2;
             flex-direction: row;
             grid-template-columns: repeat(4, 1fr);
             gap: 1.25rem;
+
+            .image-container {
+                img {
+                    height: unset;
+                }
+            }
         }
     }
 
@@ -284,6 +290,28 @@ $heroBannerBtnColor: #69A2C2;
                             margin-left: auto;
                             margin-right: auto;
                         }
+                    }
+                }
+            }
+        }
+
+        .dispensary-card-grid-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+
+            .card-content-container {
+                border-top: 0.0625rem solid $gray;
+
+                .imi-btn-component {
+                    &.size-padding {
+                        padding: 0.8125rem 2.5rem;
+                    }
+
+                    &.size-small-padding {
+                        padding: 0.8125rem 2rem;
                     }
                 }
             }
