@@ -1,6 +1,7 @@
 import { Images } from "@/assets/images";
 import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiGradientBanner } from "@/components/imiGradientBanner";
+import { ImiProductCard } from "@/components/imiProductCard";
 import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_homePage.scss";
@@ -52,6 +53,15 @@ export const HomePageProductSection = () => {
                                     },
                                 },
                             ]}
+                        />
+                        <ImiProductCard
+                            imgUrl={Images.ImageHomePageGradientBanner1}
+                            name={"fsaf"}
+                            currency={"HK$"}
+                            price={"296"}
+                            rating={2}
+                            isOutOfStock={false}
+                            onlyAvailableInClinic={false}
                         />
                     </div>
                 </ContainerX>

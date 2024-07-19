@@ -42,5 +42,13 @@
         "subscribeInputPlaceholder": "Enter your email address",
         "subscribe": "Subscribe",
         "copyright": "Copyright © {{year}} Integrated Medicine Institute (IMI). All rights reserved."
+    },
+
+    "product": {
+        "btn": {
+            "outOfStock": "Out of stock",
+            "buyInClinic": "Buy in-clinic",
+            "addToBasket": "Add to basket"
+        }
     }
 }
