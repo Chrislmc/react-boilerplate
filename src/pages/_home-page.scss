@@ -335,7 +335,7 @@ $heroBannerBtnColor: #69A2C2;
                         border-color: $blueish-green;
                         transition: all 0.5s ease;
                     }
-                    
+
                     &.health-condition-last-card {
                         .imi-card-component {
                             .imi-btn-component {
@@ -403,6 +403,46 @@ $heroBannerBtnColor: #69A2C2;
 
         .imi-btn-component {
             margin: 0 auto;
+        }
+    }
+
+    .home-page-health-hub-section {
+        background-color: $white;
+
+        .tab-container {
+            margin-top: 3.75rem;
+
+            .imi-tab-component {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .health-hub-card-grid-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+
+            .image-container {
+                height: 18.75rem;
+
+                img {
+                    height: unset;
+                }
+            }
+
+            .card-content-container {
+                align-items: flex-start;
+                padding: 1.875rem 2.5rem 2.5rem 2.5rem;
+
+                .card-title {
+                    text-align: left;
+                }
+
+                .card-desc {
+                    text-align: left;
+                }
+            }
         }
     }
 }

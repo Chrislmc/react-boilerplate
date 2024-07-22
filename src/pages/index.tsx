@@ -4,6 +4,7 @@ import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEf
 import "./_home-page.scss";
 import { HomePageDispensarySection } from "./homePageDispensarySection";
 import { HomePageHealthConditionSection } from "./homePageHealthConditionSection";
+import { HomePageHealthHubSection } from "./homePageHealthHubSection";
 import { HomePageHeroBannerSection } from "./homePageHeroBannerSection";
 import { HomePageProductSection } from "./homePageProductSection";
 import { HomePageServicesSection } from "./homePageServicesSection";
@@ -28,6 +29,9 @@ export const HomePage = () => {
                 </ImiSection>
                 <ImiSection className="home-page-health-condition-section">
                     <HomePageHealthConditionSection />
+                </ImiSection>
+                <ImiSection className="home-page-health-hub-section">
+                    <HomePageHealthHubSection />
                 </ImiSection>
             </div>
         </Layout>

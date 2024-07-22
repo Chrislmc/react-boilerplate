@@ -208,3 +208,99 @@ export const homePageHealthConditionCardList = [
         redirectUrl: "",
     },
 ];
+
+export enum IHomePageHealthHubTab {
+    TRENDING = "trending",
+    POPULAR = "popular",
+    HEALTH_NEEDS = "healthNeeds",
+    SUPPLEMENTS = "supplements",
+    PRACTITIONER_BLOGS = "practitionerBlogs",
+}
+
+export const homePageHealthHubTabItems = [
+    {
+        text: "healthHub.tab.trending",
+        value: IHomePageHealthHubTab.TRENDING,
+    },
+    {
+        text: "healthHub.tab.popular",
+        value: IHomePageHealthHubTab.POPULAR,
+    },
+    {
+        text: "healthHub.tab.healthNeeds",
+        value: IHomePageHealthHubTab.HEALTH_NEEDS,
+    },
+    {
+        text: "healthHub.tab.supplements",
+        value: IHomePageHealthHubTab.SUPPLEMENTS,
+    },
+    {
+        text: "healthHub.tab.practitionerBlogs",
+        value: IHomePageHealthHubTab.PRACTITIONER_BLOGS,
+    },
+];
+
+export const homePageHealthHubCardList: {
+    [key in IHomePageHealthHubTab]: (IImiCardWithImageContentProps & {
+        date: string;
+    })[];
+} = {
+    [IHomePageHealthHubTab.TRENDING]: [
+        {
+            imgUrl: Images.HomePageHealthHubCard1,
+            date: "healthHub.card1.date",
+            title: "healthHub.card1.title",
+            desc: "healthHub.card1.desc",
+        },
+        {
+            imgUrl: Images.HomePageHealthHubCard2,
+            date: "healthHub.card2.date",
+            title: "healthHub.card2.title",
+            desc: "healthHub.card2.desc",
+        },
+        {
+            imgUrl: Images.HomePageHealthHubCard1,
+            date: "healthHub.card1.date",
+            title: "healthHub.card1.title",
+            desc: "healthHub.card1.desc",
+        },
+    ],
+    [IHomePageHealthHubTab.POPULAR]: [
+        {
+            imgUrl: Images.HomePageHealthHubCard1,
+            date: "healthHub.card1.date",
+            title: "healthHub.card1.title",
+            desc: "healthHub.card1.desc",
+        },
+        {
+            imgUrl: Images.HomePageHealthHubCard2,
+            date: "healthHub.card2.date",
+            title: "healthHub.card2.title",
+            desc: "healthHub.card2.desc",
+        },
+    ],
+    [IHomePageHealthHubTab.HEALTH_NEEDS]: [
+        {
+            imgUrl: Images.HomePageHealthHubCard1,
+            date: "healthHub.card1.date",
+            title: "healthHub.card1.title",
+            desc: "healthHub.card1.desc",
+        },
+    ],
+    [IHomePageHealthHubTab.SUPPLEMENTS]: [
+        {
+            imgUrl: Images.HomePageHealthHubCard2,
+            date: "healthHub.card2.date",
+            title: "healthHub.card2.title",
+            desc: "healthHub.card2.desc",
+        },
+    ],
+    [IHomePageHealthHubTab.PRACTITIONER_BLOGS]: [
+        {
+            imgUrl: Images.HomePageHealthHubCard1,
+            date: "healthHub.card1.date",
+            title: "healthHub.card1.title",
+            desc: "healthHub.card1.desc",
+        },
+    ],
+};

@@ -1,0 +1,67 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-tab-component {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6.25rem;
+
+    .tab-item {
+        margin: 0;
+
+        button {
+            position: relative;
+            height: auto;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:hover {
+                .tab-text {
+                    color: $gray;
+                    transition: all 0.2s ease;
+                }
+            }
+
+            .tab-text {
+                font-family: $font-secondary;
+                color: $gray-600;
+                margin-bottom: 0.625rem;
+                font-weight: 500;
+
+                &::after {
+                    font-weight: 900;
+                    color: $gray;
+                    visibility: hidden;
+                }
+            }
+
+            .tab-item-decorator {
+                width: 5rem;
+                height: 0.25rem;
+                border-radius: 9999rem;
+                background-color: $orange;
+                opacity: 0;
+                transition: all 0.2s ease;
+            }
+        }
+
+
+        &.mod__active {
+            button {
+                .tab-text {
+                    font-weight: 900;
+                    color: $gray;
+                }
+
+                .tab-item-decorator {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

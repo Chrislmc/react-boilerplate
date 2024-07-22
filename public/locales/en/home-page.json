@@ -87,5 +87,26 @@
         "aToZ": "A-Z",
         "seeAllHealthConditions": "See all health conditions",
         "viewAllAToZ": "View all A-Z"
+    },
+    "healthHub": {
+        "header": "HEALTH HUB",
+        "desc": "Three decades of health and wellness wisdom at your fingertips.",
+        "tab": {
+            "trending": "TRENDING",
+            "popular": "POPULAR",
+            "healthNeeds": "HEALTH NEEDS",
+            "supplements": "SUPPLEMENTS",
+            "practitionerBlogs": "PRACTITIONER BLOGS"
+        },
+        "card1": {
+            "date": "October 13, 2023",
+            "title": "Stress busting herbs : the power of adaptogens",
+            "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
+        },
+        "card2": {
+            "date": "September 28, 2023",
+            "title": "How meditation nourishes mental health",
+            "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
+        }
     }
 }
