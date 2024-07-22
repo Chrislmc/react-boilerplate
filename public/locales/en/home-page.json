@@ -108,5 +108,10 @@
             "title": "How meditation nourishes mental health",
             "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
         }
+    },
+    "bookNow": {
+        "header": "WHERE DO I START?",
+        "desc": "Health can be complex. For signposting in the right direction, book a free 20 minute consultation.",
+        "linkText": "Book now"
     }
 }

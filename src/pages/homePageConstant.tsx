@@ -1,6 +1,7 @@
 import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
 import { Videos } from "@/assets/video";
+import { IImiButtonProps } from "@/components/imiButton";
 import { IImiCardWithImageContentProps } from "@/components/imiCardWithImageContent";
 import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
 import { redirectRouteMap } from "@/utils/routes/route";
@@ -133,7 +134,9 @@ export const homePageProductCardList = [
     },
 ];
 
-export const homePageDispensaryCardList: IImiCardWithImageContentProps[] = [
+export const homePageDispensaryCardList: (IImiCardWithImageContentProps & {
+    button: IImiButtonProps;
+})[] = [
     {
         imgUrl: Images.HomePageDispensaryCard1,
         title: "dispensary.card1.title",

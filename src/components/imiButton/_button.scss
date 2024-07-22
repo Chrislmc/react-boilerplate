@@ -34,10 +34,10 @@
         }
 
         &.color-orange {
-            background-color: $orange;
-
+            background-color: $white;
+            
             &:hover {
-                background-color: $white;
+                background-color: $orange;
             }
         }
     }
@@ -69,16 +69,19 @@
         letter-spacing: 0.0625rem;
 
         &.color-primary, 
-        &.color-blueish-green,
-        &.color-orange {
-            color: $white;
+        &.color-blueish-green {
         }
 
-        &.mod__hover-blueish-green {
-            :hover > & {
-                color: $blueish-green-700;
+        &.color-orange {
+            color: $blueish-green-700;
+
+            &.mod__hover-blueish-green {
+                :hover > & {
+                    color: $white;
+                }
             }
         }
+
     }
 
     &.type-outline {

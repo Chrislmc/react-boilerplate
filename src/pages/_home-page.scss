@@ -445,4 +445,22 @@ $heroBannerBtnColor: #69A2C2;
             }
         }
     }
+
+    .home-page-book-now-section {
+        background: transparent linear-gradient(180deg, $blueish-green 0%, #5692CD 100%) 0% 0% no-repeat padding-box;
+
+        .imi-desc-section-component {
+            .imi-section-header-component{
+                color: $white;
+            }
+
+            h5[class*='imi-desc-section-desc-'] {
+                color: $white;
+            }
+        }
+
+        .imi-btn-component {
+            margin: 3.75rem auto 0 auto;
+        }
+    }
 }
