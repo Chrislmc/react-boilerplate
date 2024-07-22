@@ -37,7 +37,7 @@ $swiperNavigationSize:4.5625rem;
             right: 1.375rem;
             top: calc(100% - 3.125rem - 0.5rem);
             transform: none;
-            bottom: none;
+            bottom: unset;
             box-sizing: border-box;
 
             .swiper-pagination-bullet {

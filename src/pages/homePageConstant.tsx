@@ -174,37 +174,37 @@ export const homePageDispensaryCardList: IImiCardWithImageContentProps[] = [
 export const homePageHealthConditionCardList = [
     {
         imgUrl: Icons.Allergies,
-        text: "healthHub.allergies",
+        text: "healthCondition.allergies",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.GutHealth,
-        text: "healthHub.gutHealth",
+        text: "healthCondition.gutHealth",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.Immunity,
-        text: "healthHub.immunity",
+        text: "healthCondition.immunity",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.Sleep,
-        text: "healthHub.sleep",
+        text: "healthCondition.sleep",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.HormonalHealth,
-        text: "healthHub.hormonalHealth",
+        text: "healthCondition.hormonalHealth",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.Pain,
-        text: "healthHub.pain",
+        text: "healthCondition.pain",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.DetoxAndWeightLoss,
-        text: "healthHub.detoxAndWeightLoss",
+        text: "healthCondition.detoxAndWeightLoss",
         redirectUrl: "",
     },
 ];
