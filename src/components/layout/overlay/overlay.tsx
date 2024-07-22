@@ -15,7 +15,7 @@ export const Overlay: React.FC = () => {
                 className={`overlay-background${
                     blurOverlayBackground ? " mod__blur" : ""
                 }`}
-            ></div>
+            />
             {content}
         </div>
     );

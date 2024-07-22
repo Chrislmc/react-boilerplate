@@ -1,58 +1,30 @@
 import { Icons } from "@/assets/icons";
-import { useOverlay } from "@/utils/hooks/useOverlay";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { useCallback } from "react";
+import { useState } from "react";
 
 interface Props {}
 
 export const FloatingIcon: React.FC<Props> = () => {
     const t = i18nHelper("shared");
-    // const [showContent, setShowContent] = useState(false);
-    const {
-        OverlayWrapper,
-        setContent,
-        setShowOverlay,
-        showOverlay,
-        setBlurOverlayBackground,
-    } = useOverlay();
-
-    const onButtonClick = useCallback(() => {
-        if (showOverlay) {
-            setShowOverlay(false);
-            return;
-        }
-
-        setBlurOverlayBackground(false);
-
-        setContent(
-            <OverlayWrapper>
-                <></>
-            </OverlayWrapper>
-        );
-
-        setShowOverlay(true);
-    }, [
-        OverlayWrapper,
-        setBlurOverlayBackground,
-        setContent,
-        setShowOverlay,
-        showOverlay,
-    ]);
+    const [showContent, setShowContent] = useState(false);
 
     return (
         <div
             className={`floating-icon-container${
-                showOverlay ? " mod__display" : ""
+                showContent ? " mod__display" : ""
             }`}
         >
             <div
                 className={`before-content${
-                    showOverlay ? " mod__display" : ""
+                    showContent ? " mod__display" : ""
                 }`}
             >
                 <div className="before-content-decorator" />
 
-                <button className={`floating-icon-btn`} onClick={onButtonClick}>
+                <button
+                    className={`floating-icon-btn`}
+                    onClick={() => setShowContent(!showContent)}
+                >
                     <div className="floating-icon">
                         <img src={Icons.Contact} />
                     </div>
@@ -60,7 +32,7 @@ export const FloatingIcon: React.FC<Props> = () => {
             </div>
 
             <div
-                className={`after-content${showOverlay ? " mod__display" : ""}`}
+                className={`after-content${showContent ? " mod__display" : ""}`}
             >
                 <button className={`floating-icon-btn`}>
                     <div className="floating-icon">
