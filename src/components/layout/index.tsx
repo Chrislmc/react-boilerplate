@@ -4,8 +4,10 @@ import { forwardRef } from "react";
 import { Outlet } from "react-router-dom";
 import "./_layout.scss";
 import { Content } from "./content/content";
+import { FloatingIcon } from "./floatingIcon";
 import { Footer } from "./footer/footer";
 import { Header } from "./header/header";
+import { Overlay } from "./overlay/overlay";
 
 type LayoutProps = {
     children?: React.ReactNode;
@@ -38,14 +40,8 @@ export const Layout = forwardRef<HTMLDivElement, LayoutProps>(function (
                     )}
                 </Content>
 
-                {/* {!!data && !!data?.data.length && (
-                <FloatingIcon
-                    imageUrl={data?.data[0].image}
-                    imageOnly
-                    imageRedirectUrl={data?.data[0].link}
-                />
-            )} */}
-                {/* <Overlay /> */}
+                <Overlay />
+                <FloatingIcon />
             </div>
         </OverlayProvider>
     );

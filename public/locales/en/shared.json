@@ -44,6 +44,11 @@
         "copyright": "Copyright © {{year}} Integrated Medicine Institute (IMI). All rights reserved."
     },
 
+    "floatingIcon": {
+        "whatsapp": "Whatsapp",
+        "enquiry": "Enquiry"
+    },
+
     "product": {
         "btn": {
             "outOfStock": "Out of stock",

@@ -1,4 +1,3 @@
-import { Icons } from "@/assets/icons";
 import React, {
     useCallback,
     useContext,
@@ -20,6 +19,7 @@ type IOverlayWrapper = ({
 export const OverlayProvider: Props = ({ children }) => {
     const [showOverlay, setShowOverlay] = useState(false);
     const [content, setContent] = useState<React.ReactNode>(<></>);
+    const [blurOverlayBackground, setBlurOverlayBackground] = useState(true);
     const location = useLocation();
 
     useLayoutEffect(() => {
@@ -37,9 +37,11 @@ export const OverlayProvider: Props = ({ children }) => {
             >
                 {children}
                 <div className="overlay-wrapper-close-button-container">
-                    <button onClick={() => setShowOverlay(false)}>
-                        <img src={closeIcon || Icons.Youtube} />
-                    </button>
+                    {closeIcon && (
+                        <button onClick={() => setShowOverlay(false)}>
+                            <img src={closeIcon} />
+                        </button>
+                    )}
                 </div>
             </div>
         ),
@@ -54,6 +56,8 @@ export const OverlayProvider: Props = ({ children }) => {
                 setContent,
                 setShowOverlay,
                 showOverlay,
+                blurOverlayBackground,
+                setBlurOverlayBackground,
             }}
         >
             {children}
@@ -67,12 +71,16 @@ export const OverlayContext = React.createContext<{
     setContent: React.Dispatch<React.SetStateAction<React.ReactNode>>;
     setShowOverlay: React.Dispatch<React.SetStateAction<boolean>>;
     showOverlay: boolean;
+    setBlurOverlayBackground: React.Dispatch<React.SetStateAction<boolean>>;
+    blurOverlayBackground: boolean;
 }>({
     content: <></>,
     OverlayWrapper: () => <></>,
     setContent: () => null,
     setShowOverlay: () => null,
     showOverlay: false,
+    setBlurOverlayBackground: () => null,
+    blurOverlayBackground: false,
 });
 
 export const useOverlay = () => useContext(OverlayContext);
