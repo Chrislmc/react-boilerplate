@@ -251,14 +251,7 @@ export const useHomePageScrollingEffect = () => {
         onScroll();
 
         siteContentDiv.addEventListener("scroll", () => {
-            const currentScrollPosition = (siteContentDiv as HTMLDivElement)
-                .scrollTop;
-
-            if (
-                !isScrolling &&
-                !isAutoScrolling &&
-                currentScrollPosition <= scrollTill
-            ) {
+            if (!isScrolling && !isAutoScrolling) {
                 onScroll();
             }
         });
