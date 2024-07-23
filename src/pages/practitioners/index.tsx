@@ -38,6 +38,15 @@ export const PractitionersPage = () => {
                       )?.length
               );
 
+    const finalCardList = searchString?.length
+        ? filteredCardList?.filter(
+              (cardItem) =>
+                  cardItem.name
+                      .toLocaleLowerCase()
+                      .indexOf(searchString.toLocaleLowerCase()) > -1
+          )
+        : filteredCardList;
+
     return (
         <div id="practitioners-page">
             <ImiSection className="practitioners-page-desc-section">
@@ -48,11 +57,6 @@ export const PractitionersPage = () => {
                         <ContainerX>
                             <div className="content-container">
                                 <div className="control-container">
-                                    <ImiInput
-                                        placeholder={"input.searchByName"}
-                                        value={searchString}
-                                        setValue={setSearchString}
-                                    />
                                     <ImiSelect<IPractitionerType>
                                         options={translatedFilterOption}
                                         defaultOption={
@@ -63,8 +67,13 @@ export const PractitionersPage = () => {
                                         setSelectedOption={setSelectedOption}
                                         setInTransition={setInTransition}
                                     />
+                                    <ImiInput
+                                        placeholder={"input.searchByName"}
+                                        value={searchString}
+                                        setValue={setSearchString}
+                                    />
                                 </div>
-                                {filteredCardList?.length ? (
+                                {finalCardList?.length ? (
                                     <div
                                         className={`card-grid-container${
                                             inTransition
@@ -72,7 +81,7 @@ export const PractitionersPage = () => {
                                                 : ""
                                         }`}
                                     >
-                                        {filteredCardList.map((cardItem) => (
+                                        {finalCardList.map((cardItem) => (
                                             <PractitionerCard
                                                 {...cardItem}
                                                 button={{

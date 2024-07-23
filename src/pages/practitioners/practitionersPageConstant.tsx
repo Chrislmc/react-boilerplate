@@ -59,7 +59,7 @@ export const practitionersPageCardList = [
     {
         id: "2",
         imgUrl: Images.GraemeBradshawPortrait,
-        name: "Graeme Bradshaw",
+        name: "Dr Benita Perch (ND)",
         types: [IPractitionerType.HOMEOPATHY],
         button: {
             text: "practitioners.linkText",
@@ -68,7 +68,7 @@ export const practitionersPageCardList = [
     {
         id: "3",
         imgUrl: Images.GraemeBradshawPortrait,
-        name: "Graeme Bradshaw",
+        name: "Tej BG",
         types: [IPractitionerType.PSYCHOLOGY_AND_COUNSELLING],
         button: {
             text: "practitioners.linkText",
@@ -77,7 +77,7 @@ export const practitionersPageCardList = [
     {
         id: "4",
         imgUrl: Images.GraemeBradshawPortrait,
-        name: "Graeme Bradshaw",
+        name: "Dr Ardyce Yik",
         types: [IPractitionerType.OSTEOPATHY_AND_PHYSIOTHERAPY],
         button: {
             text: "practitioners.linkText",
