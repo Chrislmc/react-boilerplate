@@ -60,7 +60,7 @@ export const practitionersPageCardList = [
         id: "2",
         imgUrl: Images.GraemeBradshawPortrait,
         name: "Graeme Bradshaw",
-        types: [IPractitionerType.NATUROPATHIC_MEDICINE_AND_NUTRITION],
+        types: [IPractitionerType.HOMEOPATHY],
         button: {
             text: "practitioners.linkText",
         },
@@ -69,7 +69,7 @@ export const practitionersPageCardList = [
         id: "3",
         imgUrl: Images.GraemeBradshawPortrait,
         name: "Graeme Bradshaw",
-        types: [IPractitionerType.NATUROPATHIC_MEDICINE_AND_NUTRITION],
+        types: [IPractitionerType.PSYCHOLOGY_AND_COUNSELLING],
         button: {
             text: "practitioners.linkText",
         },
@@ -78,7 +78,7 @@ export const practitionersPageCardList = [
         id: "4",
         imgUrl: Images.GraemeBradshawPortrait,
         name: "Graeme Bradshaw",
-        types: [IPractitionerType.NATUROPATHIC_MEDICINE_AND_NUTRITION],
+        types: [IPractitionerType.OSTEOPATHY_AND_PHYSIOTHERAPY],
         button: {
             text: "practitioners.linkText",
         },
@@ -87,7 +87,7 @@ export const practitionersPageCardList = [
         id: "5",
         imgUrl: Images.GraemeBradshawPortrait,
         name: "Graeme Bradshaw",
-        types: [IPractitionerType.NATUROPATHIC_MEDICINE_AND_NUTRITION],
+        types: [IPractitionerType.ACUPUNCTURE_AND_TCM],
         button: {
             text: "practitioners.linkText",
         },
@@ -96,7 +96,7 @@ export const practitionersPageCardList = [
         id: "6",
         imgUrl: Images.GraemeBradshawPortrait,
         name: "Graeme Bradshaw",
-        types: [IPractitionerType.NATUROPATHIC_MEDICINE_AND_NUTRITION],
+        types: [IPractitionerType.HOLISTIC_THERAPIES_AND_COACHING],
         button: {
             text: "practitioners.linkText",
         },
@@ -105,7 +105,7 @@ export const practitionersPageCardList = [
         id: "7",
         imgUrl: Images.GraemeBradshawPortrait,
         name: "Graeme Bradshaw",
-        types: [IPractitionerType.NATUROPATHIC_MEDICINE_AND_NUTRITION],
+        types: [IPractitionerType.GP_AND_LAB_TESTING],
         button: {
             text: "practitioners.linkText",
         },

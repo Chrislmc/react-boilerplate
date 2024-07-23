@@ -1,11 +1,13 @@
 import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiSection } from "@/components/imiSection";
-import { ImiSelect } from "@/components/imiSelect";
+import { IOption, ImiSelect } from "@/components/imiSelect";
 import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { useState } from "react";
 import "./_practitioners-page.scss";
 import { PractitionerCard } from "./practitionersCard";
 import {
+    IPractitionerType,
     practitionersPageCardList,
     practitionersPageFilterOption,
 } from "./practitionersPageConstant";
@@ -17,6 +19,10 @@ export const PractitionersPage = () => {
         (option) => ({ ...option, text: t(option.text) })
     );
 
+    const [selectedOption, setSelectedOption] = useState<
+        IOption<IPractitionerType>[]
+    >([translatedFilterOption[0]]);
+
     return (
         <div id="practitioners-page">
             <ImiSection className="practitioners-page-desc-section">
@@ -27,12 +33,14 @@ export const PractitionersPage = () => {
                         <ContainerX>
                             <div className="content-container">
                                 <div className="control-container">
-                                    <ImiSelect
+                                    <ImiSelect<IPractitionerType>
                                         options={translatedFilterOption}
                                         defaultOption={
                                             translatedFilterOption[0]
                                         }
                                         allOption={translatedFilterOption[0]}
+                                        selectedOption={selectedOption}
+                                        setSelectedOption={setSelectedOption}
                                     />
                                 </div>
                                 <div className="card-grid-container">

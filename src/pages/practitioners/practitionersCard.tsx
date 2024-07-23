@@ -67,7 +67,7 @@ export const PractitionerCard: React.FC<IPractitionerCardProps> = ({
             >
                 <span className="name">{name}</span>
                 <span className="type">{practitionerTypeHelper(types)}</span>
-                <ImiButton {...button} />
+                <ImiButton {...button} size="padding" />
             </ImiBaseCard>
         </div>
     );

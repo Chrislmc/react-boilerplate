@@ -1,9 +1,9 @@
 import { Icons } from "@/assets/icons";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import "./_select.scss";
 
-interface IOption<T> {
+export interface IOption<T> {
     text: string;
     value: T;
 }
@@ -12,19 +12,21 @@ export interface IImiSelectProps<T> {
     options: IOption<T>[];
     defaultOption: IOption<T>;
     allOption: IOption<T>;
+    selectedOption: IOption<T>[];
+    setSelectedOption: Dispatch<SetStateAction<IOption<T>[]>>;
 }
 
 export const ImiSelect = <T extends string>({
     options,
     defaultOption,
     allOption,
+    selectedOption,
+    setSelectedOption,
 }: IImiSelectProps<T>) => {
     const t = i18nHelper("shared");
 
     const [isExpanded, setIsExpanded] = useState(false);
-    const [selectedOption, setSelectedOption] = useState<IOption<T>[]>([
-        defaultOption,
-    ]);
+
     const [displayText, setDisplayText] = useState(defaultOption.text);
 
     const parseClassName = (className: string) => {
