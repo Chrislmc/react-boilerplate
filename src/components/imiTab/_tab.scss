@@ -12,6 +12,13 @@
     .tab-item {
         margin: 0;
 
+        &:hover:not(.mod__disabled) {
+            .tab-text {
+                color: $gray;
+                transition: all 0.2s ease;
+            }
+        }
+
         button {
             position: relative;
             height: auto;
@@ -19,13 +26,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-
-            &:hover {
-                .tab-text {
-                    color: $gray;
-                    transition: all 0.2s ease;
-                }
-            }
 
             .tab-text {
                 font-family: $font-secondary;
@@ -49,7 +49,6 @@
                 transition: all 0.2s ease;
             }
         }
-
 
         &.mod__active {
             button {

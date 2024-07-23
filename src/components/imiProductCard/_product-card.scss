@@ -8,10 +8,18 @@
     display: block;
     position: relative;
 
+    &:hover {
+        .imi-card-component {
+            border-color: $blueish-green;
+            transition: all 0.5s ease;
+        }
+    }
+
     .imi-card-component {
         border-radius: 1.25rem;
         padding: 1.875rem;
         height: unset;
+        border: 0.125rem solid $white;
 
         .card-column {
             height: 100%;
@@ -81,10 +89,10 @@
                 .imi-btn-component {
                     margin-top: 0.625rem;
 
-                    &.mod__addToBasket {
+                    &.mod__add-to-basket {
                     }
 
-                    &.mod__buyInClinic {
+                    &.mod__buy-in-clinic {
                         background-color: $purple;
 
                         &:hover {
@@ -92,7 +100,7 @@
                         }
                     }
 
-                    &.mod__outOfStock {
+                    &.mod__out-of-stock {
                         background-color: $blueish-green-300;
 
                         .imi-btn-desc {

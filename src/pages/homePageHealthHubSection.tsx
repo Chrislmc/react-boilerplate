@@ -4,7 +4,7 @@ import { ImiTab } from "@/components/imiTab";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
     IHomePageHealthHubTab,
     homePageHealthHubCardList,
@@ -12,11 +12,34 @@ import {
 } from "./homePageConstant";
 
 export const HomePageHealthHubSection = () => {
+    const healthHubCardContainer = useRef<HTMLDivElement>(null);
     const t = i18nHelper("home-page");
 
     const [activeTab, setActiveTab] = useState<IHomePageHealthHubTab>(
         homePageHealthHubTabItems[0].value
     );
+    const [inTransition, setInTransition] = useState(false);
+
+    const onTabClick = (value: IHomePageHealthHubTab) => {
+        // if (healthHubCardContainer?.current) {
+        //     healthHubCardContainer.current.style.opacity = "0";
+
+        //     setActiveTab(value);
+
+        //     setTimeout(
+        //         () =>
+        //             ((
+        //                 healthHubCardContainer.current as HTMLDivElement
+        //             ).style.opacity = "1"),
+        //         500
+        //     );
+        // }
+        setInTransition(true);
+        setTimeout(() => {
+            setActiveTab(value);
+            setInTransition(false);
+        }, 500);
+    };
 
     return (
         <ContainerX>
@@ -32,8 +55,15 @@ export const HomePageHealthHubSection = () => {
                                 )}
                                 activeTab={activeTab}
                                 setActiveTab={setActiveTab}
+                                onTabClick={onTabClick}
+                                disabled={inTransition}
                             />
-                            <div className="health-hub-card-grid-container">
+                            <div
+                                className={`health-hub-card-grid-container${
+                                    inTransition ? " mod__in-transition" : ""
+                                }`}
+                                ref={healthHubCardContainer}
+                            >
                                 {homePageHealthHubCardList[activeTab].map(
                                     (card, i) => (
                                         <ImiCardWithImageContent
