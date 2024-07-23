@@ -53,97 +53,101 @@ export const ImiSelect = <T extends string>({
     ) => {
         if (setInTransition) setInTransition(true);
 
-        setTimeout(() => {
-            let filteredOption = selectedOption;
-            if (isSelected) {
-                filteredOption = [
-                    ...selectedOption.filter(
-                        (option) => option.value !== targetOption.value
-                    ),
-                ];
+        let filteredOption = selectedOption;
+        if (isSelected) {
+            filteredOption = [
+                ...selectedOption.filter(
+                    (option) => option.value !== targetOption.value
+                ),
+            ];
 
-                if (!filteredOption?.length) {
-                    filteredOption.push(allOption);
-                }
-
-                setSelectedOption(filteredOption);
-            } else {
-                if (targetOption === allOption) {
-                    filteredOption = [targetOption];
-                } else {
-                    filteredOption = options.filter(
-                        (option) =>
-                            !!selectedOption.find(
-                                (selectedOption) =>
-                                    selectedOption.value === option.value &&
-                                    selectedOption.value !== allOption?.value
-                            ) || option.value === targetOption.value
-                    );
-                }
-
-                setSelectedOption(filteredOption);
+            if (!filteredOption?.length) {
+                filteredOption.push(allOption);
             }
+        } else {
+            if (targetOption === allOption) {
+                filteredOption = [targetOption];
+            } else {
+                filteredOption = options.filter(
+                    (option) =>
+                        !!selectedOption.find(
+                            (selectedOption) =>
+                                selectedOption.value === option.value &&
+                                selectedOption.value !== allOption?.value
+                        ) || option.value === targetOption.value
+                );
+            }
+        }
 
-            updateDisplayText(filteredOption);
+        updateDisplayText(filteredOption);
+        setSelectedOption(filteredOption);
 
+        setTimeout(() => {
             if (setInTransition) setInTransition(false);
         }, 500);
     };
 
     return (
         <div className="imi-select-component">
-            <div className={parseClassName(`dropdown-list`)}>
-                {options.map((option) => {
-                    const isSelected =
-                        selectedOption
-                            .map((item) => item.value)
-                            .indexOf(option.value) > -1;
+            <div className={parseClassName(`dropdown-list-container`)}>
+                <div className={`dropdown-list`}>
+                    {options.map((option) => {
+                        const isSelected =
+                            selectedOption
+                                .map((item) => item.value)
+                                .indexOf(option.value) > -1;
 
-                    return (
-                        <div
-                            key={`dropdown-item-${option.value}`}
-                            className={parseClassName("dropdown-item")}
-                        >
-                            <button
-                                className={parseClassName("dropdown-item-btn")}
-                                onClick={() =>
-                                    onDropdownItemBtnClick(option, isSelected)
-                                }
+                        return (
+                            <div
+                                key={`dropdown-item-${option.value}`}
+                                className={parseClassName("dropdown-item")}
                             >
-                                <div
-                                    className={`tick-container${
-                                        isSelected ? " mod__selected" : ""
-                                    }`}
+                                <button
+                                    className={"dropdown-item-btn"}
+                                    onClick={() =>
+                                        onDropdownItemBtnClick(
+                                            option,
+                                            isSelected
+                                        )
+                                    }
                                 >
                                     <div
-                                        className={`inner-tick-container${
+                                        className={`tick-container${
                                             isSelected ? " mod__selected" : ""
                                         }`}
                                     >
                                         <div
-                                            className={`tick-icon-container${
+                                            className={`inner-tick-container${
                                                 isSelected
                                                     ? " mod__selected"
                                                     : ""
                                             }`}
                                         >
-                                            {isSelected && (
-                                                <img src={Icons.Tick} />
-                                            )}
+                                            <div
+                                                className={`tick-icon-container${
+                                                    isSelected
+                                                        ? " mod__selected"
+                                                        : ""
+                                                }`}
+                                            >
+                                                {isSelected && (
+                                                    <img src={Icons.Tick} />
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <p
-                                    className={`dropdown-item-desc${
-                                        isSelected ? " mod__selected" : ""
-                                    }`}
-                                >
-                                    {option.text}
-                                </p>
-                            </button>
-                        </div>
-                    );
-                })}
+                                    <p
+                                        className={`dropdown-item-desc${
+                                            isSelected ? " mod__selected" : ""
+                                        }`}
+                                    >
+                                        {option.text}
+                                    </p>
+                                </button>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
 
             <div

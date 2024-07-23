@@ -69,36 +69,36 @@
         }
     }
 
-    .dropdown-list {
+    .dropdown-list-container {
         position: absolute;
         top: calc(100% - 0.625rem);
         left: 0;
         max-height: 0;
-        transition: all 0.5s ease-out;
-        width: calc(100% - 2.5rem);
+        transition: max-height 0.2s ease-out;
+        width: 100%;
         border: 0.0625rem solid $gray-200;
         border-radius: 0 0 0.625rem 0.625rem;
         overflow: hidden;
-        display: flex;
-        flex-direction: column;
         background-color: $white;
-        overflow-y: auto;
-        gap: 1rem;
-        padding: 1.5rem 1.25rem 1.25rem 1.25rem;
 
         &.mod__is-expanded {
             max-height: 20rem;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .dropdown-list {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 0 1.25rem 0;
         }
 
         .dropdown-item {
             width: 100%;
             background-color: $white;
-            transition: all 0.5s ease-out;
-            opacity: 1;
             pointer-events: none;
+            padding: 0 1.25rem;
 
             &.mod__is-expanded {
-                opacity: 1;
                 pointer-events: all;
             }
 
@@ -107,16 +107,11 @@
             }
 
             .dropdown-item-btn {
-                max-height: 0;
                 width: 100%;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 0.625rem;
-
-                &.mod__is-expanded {
-                    max-height: 100%;
-                }
 
                 .tick-container {
                     height: 1.125rem;
@@ -157,8 +152,8 @@
                 }
 
                 .dropdown-item-desc {
-                    font-size: 0.875rem;
-                    line-height: 0.5rem;
+                    font-size: 1rem;
+                    line-height: 2rem;
                     font-family: $font-secondary;
                     font-weight: 500;
                     letter-spacing: 0.04375rem;
