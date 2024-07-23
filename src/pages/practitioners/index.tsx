@@ -19,7 +19,6 @@ export const PractitionersPage = () => {
     const translatedFilterOption = practitionersPageFilterOption.map(
         (option) => ({ ...option, text: t(option.text) })
     );
-    console.log(document.activeElement);
 
     const [searchString, setSearchString] = useState<string>("");
 
