@@ -60,5 +60,9 @@
 
     "filter": {
         "filterBy": "Filter by: "
+    },
+
+    "input": {
+        "searchByName": "Search by name"
     }
 }

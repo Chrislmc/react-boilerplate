@@ -1,4 +1,5 @@
 import { ImiDescSection } from "@/components/imiDescSection";
+import { ImiInput } from "@/components/imiInput";
 import { ImiSection } from "@/components/imiSection";
 import { IOption, ImiSelect } from "@/components/imiSelect";
 import { ContainerX } from "@/components/layout/containerX";
@@ -18,6 +19,8 @@ export const PractitionersPage = () => {
     const translatedFilterOption = practitionersPageFilterOption.map(
         (option) => ({ ...option, text: t(option.text) })
     );
+
+    const [searchString, setSearchString] = useState<string>("");
 
     const [selectedOption, setSelectedOption] = useState<
         IOption<IPractitionerType>[]
@@ -45,6 +48,11 @@ export const PractitionersPage = () => {
                         <ContainerX>
                             <div className="content-container">
                                 <div className="control-container">
+                                    <ImiInput
+                                        placeholder={"input.searchByName"}
+                                        value={searchString}
+                                        setValue={setSearchString}
+                                    />
                                     <ImiSelect<IPractitionerType>
                                         options={translatedFilterOption}
                                         defaultOption={
