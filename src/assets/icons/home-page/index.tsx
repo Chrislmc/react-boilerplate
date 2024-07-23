@@ -6,9 +6,9 @@ import HomePageDispensary from "./home-page-dispensary.svg";
 import HomePageLabTest from "./home-page-lab-test.svg";
 import HomePageShop from "./home-page-shop.svg";
 import HormonalHealth from "./hormonal-health.svg";
-import Immunity from "./Immunity.svg";
-import Pain from "./Pain.svg";
-import Sleep from "./Sleep.svg";
+import Immunity from "./immunity.svg";
+import Pain from "./pain.svg";
+import Sleep from "./sleep.svg";
 
 export const HomePageIcons = {
     Allergies,
