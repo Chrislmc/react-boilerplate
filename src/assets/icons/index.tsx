@@ -2,9 +2,11 @@ import Account from "./account.svg";
 import Cart from "./cart.svg";
 import Consultation from "./consultation.svg";
 import Contact from "./contact.svg";
-import Dispensary from "./Dispensary.svg";
+import Dispensary from "./dispensary.svg";
+import Dropdown from "./dropdown.svg";
 import EmptyStar from "./empty-star.svg";
 import Facebook from "./facebook.svg";
+import Filter from "./filter.svg";
 import Form from "./form.svg";
 import { HomePageIcons } from "./home-page";
 import Instagram from "./instagram.svg";
@@ -21,8 +23,10 @@ export const Icons = {
     Consultation,
     Contact,
     Dispensary,
+    Dropdown,
     EmptyStar,
     Facebook,
+    Filter,
     Form,
     Instagram,
     LabTests,

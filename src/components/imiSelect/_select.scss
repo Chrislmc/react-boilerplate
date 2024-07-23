@@ -1,0 +1,133 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-select-component {
+    position: relative;
+    width: 21.875rem;
+    height: 2.8125rem;
+
+    .display-container {
+        width: inherit;
+        height: inherit;
+        position: relative;
+        background-color: $white;
+        border: 0.0625rem solid $gray-200;
+        border-radius: 0.625rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+        transition: border-color 0.2s ease;
+        cursor: pointer;
+        box-shadow: 0 0 0.0625rem $gray;
+
+        &:hover, .mod__is-expanded {
+            border-color: $blueish-green;
+        }
+
+        .filter-btn {
+            margin-left: 1.25rem;
+            width: 1.375rem;
+            height: 1.375rem;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .display-text {
+            flex: 1;
+            font-size: 0.875rem;
+            line-height: 1.75rem;
+            font-family: $font-secondary;
+            font-weight: 500;
+            letter-spacing: 0.04375rem;
+            color: $gray;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1; /* number of lines to show */
+            line-clamp: 1;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .dropdown-btn {
+            margin-right: 1.25rem;
+            width: 1.125rem;
+            height: 1.125rem;
+            transition: all 0.5s ease;
+
+            img {
+                object-fit: cover;
+            }
+
+            &.mod__is-expanded {
+                transform: rotate(3.142rad);
+            }
+        }
+    }
+
+    .dropdown-list {
+        position: absolute;
+        top: calc(100% - 0.625rem);
+        left: 0;
+        max-height: 0;
+        transition: all 0.5s ease-out;
+        width: inherit;
+        border: 0.0625rem solid $gray-200;
+        border-radius: 0 0 0.625rem 0.625rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        overflow-y: auto;
+
+        &.mod__is-expanded {
+            max-height: 20rem;
+        }
+
+        .dropdown-item {
+            width: 100%;
+            background-color: $white;
+            transition: all 0.5s ease-out;
+            opacity: 1;
+            pointer-events: none;
+
+            &.mod__is-expanded {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            &:hover {
+                background-color: $gray-300;
+            }
+
+            &:not(:first-child) {
+                border-top: 0.0625rem solid $gray-600;
+            }
+
+            .dropdown-item-btn {
+                max-height: 0;
+                width: 100%;
+                padding: 0 1.25rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+
+                &.mod__is-expanded {
+                    max-height: 100%;
+                }
+
+                p {
+                    font-size: 0.875rem;
+                    line-height: 3.75rem;
+                    font-family: $font-secondary;
+                    font-weight: 500;
+                    letter-spacing: 0.04375rem;
+                    color: $dark;
+                }
+            }
+        }
+    }
+}

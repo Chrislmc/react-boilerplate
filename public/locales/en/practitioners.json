@@ -2,7 +2,16 @@
     "practitioners": {
         "header": "MEET OUR PRACTITIONERS",
         "desc": "Peace of mind comes as standard. Our practitioners’ treatments are properly regulated and follow a strict code of ethics.",
-        "filterPlaceholder": "Filter by: ",
-        "searchByPlaceholder": "Search by name"
+        "searchByPlaceholder": "Search by name",
+        "filterOption": {
+            "allServices": "All Services",
+            "naturopathicMedicineAndNutrition": "Naturopathic Medicine & Nutrition",
+            "homeopathy": "Homeopathy",
+            "psychologyAndCounselling": "Psychology & Counselling",
+            "osteopathyAndPhysiotherapy": "Osteopathy & Physiotherapy",
+            "acupunctureAndTcm": "Acupuncture & TCM",
+            "holisticTherapiesAndCoaching": "Holistic Therapies & Coaching",
+            "gpAndLabTesting": "GP & Lab Testing"
+        }
     }
 }

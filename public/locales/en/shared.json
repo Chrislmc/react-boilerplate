@@ -56,5 +56,9 @@
             "addToBasket": "Add to basket",
             "seeAllProduct": "See all products"
         }
+    },
+
+    "filter": {
+        "filterBy": "Filter by: "
     }
 }

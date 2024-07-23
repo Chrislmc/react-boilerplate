@@ -19,6 +19,11 @@ $font-tertiary: montserrat;
 }
 @font-face {
     font-family: 'lato';
+    src: url('@/assets/font/Lato bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'lato';
     src: url('@/assets/font/Lato regular.ttf') format('truetype');
     font-weight: 500;
 }
