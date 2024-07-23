@@ -110,7 +110,36 @@ export const ImiSelect = <T extends string>({
                                     onDropdownItemBtnClick(option, isSelected)
                                 }
                             >
-                                <p>{option.text}</p>
+                                <div
+                                    className={`tick-container${
+                                        isSelected ? " mod__selected" : ""
+                                    }`}
+                                >
+                                    <div
+                                        className={`inner-tick-container${
+                                            isSelected ? " mod__selected" : ""
+                                        }`}
+                                    >
+                                        <div
+                                            className={`tick-icon-container${
+                                                isSelected
+                                                    ? " mod__selected"
+                                                    : ""
+                                            }`}
+                                        >
+                                            {isSelected && (
+                                                <img src={Icons.Tick} />
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                                <p
+                                    className={`dropdown-item-desc${
+                                        isSelected ? " mod__selected" : ""
+                                    }`}
+                                >
+                                    {option.text}
+                                </p>
                             </button>
                         </div>
                     );

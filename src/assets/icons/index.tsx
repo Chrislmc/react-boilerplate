@@ -14,6 +14,7 @@ import LabTests from "./Lab tests.svg";
 import Search from "./search.svg";
 import Shop from "./Shop.svg";
 import Star from "./star.svg";
+import Tick from "./tick.svg";
 import Whatsapp from "./whatsapp.svg";
 import Youtube from "./youtube.svg";
 
@@ -33,6 +34,7 @@ export const Icons = {
     Search,
     Shop,
     Star,
+    Tick,
     Whatsapp,
     Youtube,
     ...HomePageIcons,
