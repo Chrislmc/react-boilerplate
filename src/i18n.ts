@@ -16,18 +16,7 @@ await i18n
         backend: {
             loadPath: "/public/locales/{{lng}}/{{ns}}.json",
         },
-        ns: [
-            "common",
-            "about-us",
-            "contact-us",
-            "donate-now",
-            "events",
-            "get-involved",
-            "home-page",
-            "news",
-            "our-programs",
-            "shared",
-        ],
+        ns: ["shared", "home-page", "practitioners"],
         defaultNS: "shared",
     });
 
