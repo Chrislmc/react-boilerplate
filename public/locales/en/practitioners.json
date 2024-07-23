@@ -13,6 +13,7 @@
             "holisticTherapiesAndCoaching": "Holistic Therapies & Coaching",
             "gpAndLabTesting": "GP & Lab Testing"
         },
-        "linkText": "Book now"
+        "linkText": "Book now",
+        "emptyState": "There is no practitioner satisfying all the requirement"
     }
 }

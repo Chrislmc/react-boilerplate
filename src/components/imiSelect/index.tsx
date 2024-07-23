@@ -14,6 +14,7 @@ export interface IImiSelectProps<T> {
     allOption: IOption<T>;
     selectedOption: IOption<T>[];
     setSelectedOption: Dispatch<SetStateAction<IOption<T>[]>>;
+    setInTransition?: Dispatch<SetStateAction<boolean>>;
 }
 
 export const ImiSelect = <T extends string>({
@@ -22,6 +23,7 @@ export const ImiSelect = <T extends string>({
     allOption,
     selectedOption,
     setSelectedOption,
+    setInTransition,
 }: IImiSelectProps<T>) => {
     const t = i18nHelper("shared");
 
@@ -49,33 +51,43 @@ export const ImiSelect = <T extends string>({
         targetOption: IOption<T>,
         isSelected: boolean
     ) => {
-        let filteredOption = selectedOption;
-        if (isSelected) {
-            filteredOption = [
-                ...selectedOption.filter(
-                    (option) => option.value !== targetOption.value
-                ),
-            ];
+        if (setInTransition) setInTransition(true);
 
-            if (!filteredOption?.length) {
-                filteredOption.push(allOption);
+        setTimeout(() => {
+            let filteredOption = selectedOption;
+            if (isSelected) {
+                filteredOption = [
+                    ...selectedOption.filter(
+                        (option) => option.value !== targetOption.value
+                    ),
+                ];
+
+                if (!filteredOption?.length) {
+                    filteredOption.push(allOption);
+                }
+
+                setSelectedOption(filteredOption);
+            } else {
+                if (targetOption === allOption) {
+                    filteredOption = [targetOption];
+                } else {
+                    filteredOption = options.filter(
+                        (option) =>
+                            !!selectedOption.find(
+                                (selectedOption) =>
+                                    selectedOption.value === option.value &&
+                                    selectedOption.value !== allOption?.value
+                            ) || option.value === targetOption.value
+                    );
+                }
+
+                setSelectedOption(filteredOption);
             }
 
-            setSelectedOption(filteredOption);
-        } else {
-            filteredOption = options.filter(
-                (option) =>
-                    !!selectedOption.find(
-                        (selectedOption) =>
-                            selectedOption.value === option.value &&
-                            selectedOption.value !== allOption?.value
-                    ) || option.value === targetOption.value
-            );
+            updateDisplayText(filteredOption);
 
-            setSelectedOption(filteredOption);
-        }
-
-        updateDisplayText(filteredOption);
+            if (setInTransition) setInTransition(false);
+        }, 500);
     };
 
     return (

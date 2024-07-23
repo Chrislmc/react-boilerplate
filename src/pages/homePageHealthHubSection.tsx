@@ -21,19 +21,6 @@ export const HomePageHealthHubSection = () => {
     const [inTransition, setInTransition] = useState(false);
 
     const onTabClick = (value: IHomePageHealthHubTab) => {
-        // if (healthHubCardContainer?.current) {
-        //     healthHubCardContainer.current.style.opacity = "0";
-
-        //     setActiveTab(value);
-
-        //     setTimeout(
-        //         () =>
-        //             ((
-        //                 healthHubCardContainer.current as HTMLDivElement
-        //             ).style.opacity = "1"),
-        //         500
-        //     );
-        // }
         setInTransition(true);
         setTimeout(() => {
             setActiveTab(value);

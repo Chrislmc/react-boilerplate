@@ -22,6 +22,18 @@ export const PractitionersPage = () => {
     const [selectedOption, setSelectedOption] = useState<
         IOption<IPractitionerType>[]
     >([translatedFilterOption[0]]);
+    const [inTransition, setInTransition] = useState(false);
+
+    const filteredCardList =
+        selectedOption[0].value === IPractitionerType.ALL_SERVICES
+            ? practitionersPageCardList
+            : practitionersPageCardList.filter(
+                  (cardItem) =>
+                      selectedOption.filter(
+                          (sOption) =>
+                              cardItem.types.indexOf(sOption.value) > -1
+                      )?.length
+              );
 
     return (
         <div id="practitioners-page">
@@ -41,11 +53,18 @@ export const PractitionersPage = () => {
                                         allOption={translatedFilterOption[0]}
                                         selectedOption={selectedOption}
                                         setSelectedOption={setSelectedOption}
+                                        setInTransition={setInTransition}
                                     />
                                 </div>
-                                <div className="card-grid-container">
-                                    {practitionersPageCardList.map(
-                                        (cardItem) => (
+                                {filteredCardList?.length ? (
+                                    <div
+                                        className={`card-grid-container${
+                                            inTransition
+                                                ? " mod__in-transition"
+                                                : ""
+                                        }`}
+                                    >
+                                        {filteredCardList.map((cardItem) => (
                                             <PractitionerCard
                                                 {...cardItem}
                                                 button={{
@@ -55,9 +74,19 @@ export const PractitionersPage = () => {
                                                     ),
                                                 }}
                                             />
-                                        )
-                                    )}
-                                </div>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div
+                                        className={`empty-state${
+                                            inTransition
+                                                ? " mod__in-transition"
+                                                : ""
+                                        }`}
+                                    >
+                                        <h5>{t("practitioners.emptyState")}</h5>
+                                    </div>
+                                )}
                             </div>
                         </ContainerX>
                     }

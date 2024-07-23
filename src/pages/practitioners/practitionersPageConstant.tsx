@@ -105,7 +105,7 @@ export const practitionersPageCardList = [
         id: "7",
         imgUrl: Images.GraemeBradshawPortrait,
         name: "Graeme Bradshaw",
-        types: [IPractitionerType.GP_AND_LAB_TESTING],
+        types: [IPractitionerType.NATUROPATHIC_MEDICINE_AND_NUTRITION],
         button: {
             text: "practitioners.linkText",
         },
