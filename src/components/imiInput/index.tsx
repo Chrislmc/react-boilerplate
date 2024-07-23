@@ -20,7 +20,6 @@ export const ImiInput: React.FC<IImiInputProps> = ({
     const onSearchIconClick = () => {
         if (inputRef?.current) {
             inputRef.current.focus();
-            console.log("focus~");
         }
     };
 

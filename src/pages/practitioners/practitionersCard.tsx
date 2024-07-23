@@ -28,7 +28,6 @@ export const PractitionerCard: React.FC<IPractitionerCardProps> = ({
     const onMouseEnterImage = useCallback(() => {
         if (cardContainerRef?.current) {
             cardContainerRef.current.focus();
-            console.log("focus");
         }
     }, []);
 

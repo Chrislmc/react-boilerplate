@@ -1,6 +1,6 @@
 import { Icons } from "@/assets/icons";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import "./_select.scss";
 
 export interface IOption<T> {
@@ -27,10 +27,23 @@ export const ImiSelect = <T extends string>({
 }: IImiSelectProps<T>) => {
     const t = i18nHelper("shared");
 
+    const selectComponentRef = useRef<HTMLDivElement>(null);
     const [isExpanded, setIsExpanded] = useState(false);
-
     const [displayText, setDisplayText] = useState(defaultOption.text);
 
+    useEffect(() => {
+        if (selectComponentRef?.current) {
+            selectComponentRef?.current.addEventListener("focusout", (e) => {
+                if (
+                    !(e.relatedTarget as HTMLDivElement)?.closest(
+                        ".imi-select-component"
+                    )
+                ) {
+                    setIsExpanded(false);
+                }
+            });
+        }
+    }, []);
     const parseClassName = (className: string) => {
         return [className, isExpanded ? ["mod__is-expanded"] : []].join(" ");
     };
@@ -45,6 +58,13 @@ export const ImiSelect = <T extends string>({
             .join(", ");
 
         setDisplayText(selectedValues);
+    };
+
+    const onClickDisplayContainer = () => {
+        if (!isExpanded && selectComponentRef?.current) {
+            selectComponentRef?.current.focus();
+        }
+        setIsExpanded(!isExpanded);
     };
 
     const onDropdownItemBtnClick = (
@@ -88,7 +108,7 @@ export const ImiSelect = <T extends string>({
     };
 
     return (
-        <div className="imi-select-component">
+        <div className="imi-select-component" ref={selectComponentRef}>
             <div className={parseClassName(`dropdown-list-container`)}>
                 <div className={`dropdown-list`}>
                     {options.map((option) => {
@@ -117,23 +137,15 @@ export const ImiSelect = <T extends string>({
                                         }`}
                                     >
                                         <div
-                                            className={`inner-tick-container${
+                                            className={`tick-icon-container${
                                                 isSelected
                                                     ? " mod__selected"
                                                     : ""
                                             }`}
                                         >
-                                            <div
-                                                className={`tick-icon-container${
-                                                    isSelected
-                                                        ? " mod__selected"
-                                                        : ""
-                                                }`}
-                                            >
-                                                {isSelected && (
-                                                    <img src={Icons.Tick} />
-                                                )}
-                                            </div>
+                                            {isSelected && (
+                                                <img src={Icons.Tick} />
+                                            )}
                                         </div>
                                     </div>
                                     <p
@@ -152,7 +164,7 @@ export const ImiSelect = <T extends string>({
 
             <div
                 className={parseClassName(`display-container`)}
-                onClick={() => setIsExpanded(!isExpanded)}
+                onClick={onClickDisplayContainer}
             >
                 <div className="filter-btn">
                     <img className="filter-icon" src={Icons.Filter} />

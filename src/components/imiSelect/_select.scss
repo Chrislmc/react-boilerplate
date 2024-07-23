@@ -114,39 +114,32 @@
                 gap: 0.625rem;
 
                 .tick-container {
-                    height: 1.125rem;
-                    width: 1.125rem;
-                    border: 0.0625rem solid $gray-400;
+                    background-color: $white;
+                    height: 0.875rem;
+                    width: 0.875rem;
+                    border: 0.125rem solid $white;
                     border-radius: 0.25rem;
+                    outline: 0.0625rem solid $gray;
                     margin: 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    .inner-tick-container {
-                        height: 0.875rem;
-                        width: 0.875rem;
-                        border-radius: 0.125rem;
+                    &.mod__selected {
+                        background-color: $blueish-green-700;
+                    }
+
+                    .tick-icon-container {
+                        height: 0.625rem;
+                        width: 0.625rem;
                         display: flex;
                         justify-content: center;
                         align-items: center;
 
-                        &.mod__selected {
-                            background-color: $blueish-green-700;
-                        }
-
-                        .tick-icon-container {
-                            height: 0.625rem;
-                            width: 0.625rem;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            img {
-                                height: 100%;
-                                width: 100%;
-                                object-fit: cover;
-                            }
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
                         }
                     }
                 }
