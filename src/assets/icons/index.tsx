@@ -11,6 +11,7 @@ import Form from "./form.svg";
 import { HomePageIcons } from "./home-page";
 import Instagram from "./instagram.svg";
 import LabTests from "./lab tests.svg";
+import { practitionersIcons } from "./practitioners";
 import Search from "./search.svg";
 import Shop from "./shop.svg";
 import Star from "./star.svg";
@@ -38,4 +39,5 @@ export const Icons = {
     Whatsapp,
     Youtube,
     ...HomePageIcons,
+    ...practitionersIcons,
 };

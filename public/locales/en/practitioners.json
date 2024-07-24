@@ -18,6 +18,11 @@
     },
 
     "meetOurPractitioners": {
-        "bookAnAppointment": "Book an appointment"
+        "bookAnAppointment": "Book an appointment",
+        "languagePrefix": "Language: ",
+        "tag": {
+            "hongKong": "Hong Kong",
+            "online": "Online"
+        }
     }
 }
