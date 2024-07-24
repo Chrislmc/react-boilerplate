@@ -1,0 +1,51 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-article-card-component {
+    flex: 1;
+    height: 33.75rem;
+
+    .imi-card-with-image-content-component {
+        transition: all 0.5s ease;
+        height: 100%;
+
+        .image-container {
+            // max-height: 18.75rem;
+            height: 18.75rem;
+            overflow: hidden;
+
+            img {
+                height: unset;
+            }
+        }
+
+        .card-content-container {
+            align-items: flex-start;
+            padding: 1.875rem 2.5rem 2.5rem 2.5rem;
+            width: calc(100% - 5rem);
+
+            .card-title {
+                text-align: left;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2; /* number of lines to show */
+                line-clamp: 2;
+                height: 3rem;
+            }
+
+            .card-desc-container {
+                overflow: hidden;
+                
+                .card-desc {
+                    text-align: left;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3; /* number of lines to show */
+                    line-clamp: 3;
+                    text-overflow: ellipsis;
+                    height: 3.9375rem;
+                }
+            }
+        }
+    }
+}

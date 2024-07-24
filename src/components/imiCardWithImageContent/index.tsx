@@ -23,7 +23,9 @@ export const ImiCardWithImageContent: React.FC<
                     <div className="card-content-container">
                         {date && <span className="card-date">{date}</span>}
                         <span className="card-title">{title}</span>
-                        <span className="card-desc">{desc}</span>
+                        <div className="card-desc-container">
+                            <span className="card-desc">{desc}</span>
+                        </div>
                         {button && (
                             <ImiButton
                                 type="solid"

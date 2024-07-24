@@ -263,9 +263,9 @@ export const homePageHealthHubCardList: {
         },
         {
             imgUrl: Images.HomePageHealthHubCard1,
-            date: "healthHub.card1.date",
-            title: "healthHub.card1.title",
-            desc: "healthHub.card1.desc",
+            date: "healthHub.card3.date",
+            title: "healthHub.card3.title",
+            desc: "healthHub.card3.desc",
         },
     ],
     [IHomePageHealthHubTab.POPULAR]: [
@@ -285,9 +285,9 @@ export const homePageHealthHubCardList: {
     [IHomePageHealthHubTab.HEALTH_NEEDS]: [
         {
             imgUrl: Images.HomePageHealthHubCard1,
-            date: "healthHub.card1.date",
-            title: "healthHub.card1.title",
-            desc: "healthHub.card1.desc",
+            date: "healthHub.card3.date",
+            title: "healthHub.card3.title",
+            desc: "healthHub.card3.desc",
         },
     ],
     [IHomePageHealthHubTab.SUPPLEMENTS]: [

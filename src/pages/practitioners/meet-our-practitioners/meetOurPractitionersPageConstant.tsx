@@ -1,3 +1,4 @@
+import { Images } from "@/assets/images";
 import { IPractitionerType } from "../practitionersPageConstant";
 
 export const samplePractitionerDetail = {
@@ -34,3 +35,48 @@ export const areasOfExpertiseDetail = [
 
 export const testimonialText =
     "I like to get test-based facts and individualise your treatment based on this information. I find underlying causes and teach you corrective tools while coaching you into living the solutions.";
+
+export const meetOurPractitionersPageArticleCardList = [
+    {
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "meetOurPractitioners.articlesAndVideos.card1.date",
+        title: "meetOurPractitioners.articlesAndVideos.card1.title",
+        desc: "meetOurPractitioners.articlesAndVideos.card1.desc",
+    },
+    {
+        imgUrl: Images.HomePageHealthHubCard2,
+        date: "meetOurPractitioners.articlesAndVideos.card2.date",
+        title: "meetOurPractitioners.articlesAndVideos.card2.title",
+        desc: "meetOurPractitioners.articlesAndVideos.card2.desc",
+    },
+    {
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "meetOurPractitioners.articlesAndVideos.card3.date",
+        title: "meetOurPractitioners.articlesAndVideos.card3.title",
+        desc: "meetOurPractitioners.articlesAndVideos.card3.desc",
+    },
+    {
+        imgUrl: Images.HomePageHealthHubCard2,
+        date: "meetOurPractitioners.articlesAndVideos.card2.date",
+        title: "meetOurPractitioners.articlesAndVideos.card2.title",
+        desc: "meetOurPractitioners.articlesAndVideos.card2.desc",
+    },
+    {
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "meetOurPractitioners.articlesAndVideos.card1.date",
+        title: "meetOurPractitioners.articlesAndVideos.card1.title",
+        desc: "meetOurPractitioners.articlesAndVideos.card1.desc",
+    },
+    {
+        imgUrl: Images.HomePageHealthHubCard2,
+        date: "meetOurPractitioners.articlesAndVideos.card2.date",
+        title: "meetOurPractitioners.articlesAndVideos.card2.title",
+        desc: "meetOurPractitioners.articlesAndVideos.card2.desc",
+    },
+    {
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "meetOurPractitioners.articlesAndVideos.card3.date",
+        title: "meetOurPractitioners.articlesAndVideos.card3.title",
+        desc: "meetOurPractitioners.articlesAndVideos.card3.desc",
+    },
+];

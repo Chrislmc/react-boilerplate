@@ -1,4 +1,4 @@
-import { ImiCardWithImageContent } from "@/components/imiCardWithImageContent";
+import { ImiArticleCard } from "@/components/imiArticleCard";
 import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiTab } from "@/components/imiTab";
 import { ContainerX } from "@/components/layout/containerX";
@@ -53,7 +53,7 @@ export const HomePageHealthHubSection = () => {
                             >
                                 {homePageHealthHubCardList[activeTab].map(
                                     (card, i) => (
-                                        <ImiCardWithImageContent
+                                        <ImiArticleCard
                                             key={`health-hub-card-${i}`}
                                             imgUrl={card.imgUrl}
                                             date={t(card.date)}

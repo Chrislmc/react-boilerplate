@@ -428,31 +428,6 @@ $heroBannerBtnColor: #69A2C2;
             &.mod__in-transition {
                 opacity: 0;
             }
-
-            .imi-card-with-image-content-component{
-                transition: all 0.5s ease;
-
-                .image-container {
-                    height: 18.75rem;
-
-                    img {
-                        height: unset;
-                    }
-                }
-
-                .card-content-container {
-                    align-items: flex-start;
-                    padding: 1.875rem 2.5rem 2.5rem 2.5rem;
-
-                    .card-title {
-                        text-align: left;
-                    }
-
-                    .card-desc {
-                        text-align: left;
-                    }
-                }
-            }
         }
     }
 
