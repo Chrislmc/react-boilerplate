@@ -6,4 +6,12 @@ h1.imi-section-header-component.imi-section-header-h1,
     margin-bottom: 2.5rem;
     font-weight: 700;
     color: $gray;
+
+    &.mod__subsection {
+        font-size: 1.875rem;
+        line-height: 2.625rem;   
+        letter-spacing: 0.09375rem;
+        text-align: left;
+        margin-bottom: 3.125rem;
+    }
 }

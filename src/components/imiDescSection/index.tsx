@@ -32,6 +32,8 @@ interface Props {
     customBottomComponent?: ReactNode;
     customFullWidthBottomComponent?: ReactNode;
     backButton?: boolean;
+
+    style?: "normal" | "subsection";
 }
 
 export const ImiDescSection: React.FC<Props> = (props: Props) => {
@@ -80,7 +82,10 @@ export const ImiDescSection: React.FC<Props> = (props: Props) => {
                                     props?.header ? "mod__with-back-button" : ""
                                 }`}
                             >
-                                <ImiSectionHeader header={props.header} />
+                                <ImiSectionHeader
+                                    header={props.header}
+                                    style={props?.style}
+                                />
 
                                 {props?.customHeaderComponent && (
                                     <div className="imi-desc-section-header-decoration-container">
