@@ -17,6 +17,7 @@ export const samplePractitionerDetail = {
         "Graeme studied an undergraduate in the sciences, before turning to natural medicine. He qualified in naturopathy, homeopathy, medical herbalism and nutrition in Sydney and was the first full time naturopath to practise in Hong Kong. Graeme gives seminars to doctors on one of his areas of expertise: functional medicine testing and how to manage gut issues naturally.",
         "Graeme enjoys going to the gym, hill walking, meditation, sailing, adventure travel and eating a healthy non-vegetarian diet – alongside a few coffees and a drink or two per week. He is a father of three, and now – a grandfather of three.",
     ],
+    phoneNumber: "+852 25237121",
 };
 
 export const areasOfExpertiseDetail = [

@@ -24,6 +24,11 @@
             "hongKong": "Hong Kong",
             "online": "Online"
         },
-        "areasOfExpertise": "AREAS OF EXPERTISE"
+        "areasOfExpertise": "AREAS OF EXPERTISE",
+        "contactPractitioner": {
+            "header": "WOULD YOU LIKE TO SEE GRAEME?",
+            "sendUsAMessage": "Send us a message",
+            "bookOnline": "Book online"
+        }
     }
 }

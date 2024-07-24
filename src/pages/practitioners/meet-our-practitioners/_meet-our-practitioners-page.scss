@@ -260,4 +260,58 @@
             }
         }
     }
+
+    .practitioner-contact-section {
+        background: transparent linear-gradient(180deg, #34ABA4 0%, #5692CD 100%) 0% 0% no-repeat padding-box;
+        width: 100%;
+
+        .container-x {
+            width: 100%;
+        }
+
+        h1 {
+            color: $white;
+            margin-bottom: 3.75rem;
+        }
+
+        .button-row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+
+                &:hover {
+                    opacity: 0.7;
+                    transition: all 0.2s ease-out;
+                }
+
+                .icon-container {
+                    width: 5rem;
+                    aspect-ratio: 1/1;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                span {
+                    text-align: center;
+                    font-size: 1rem;
+                    line-height: 1.375rem;
+                    letter-spacing: 0.05rem;
+                    font-family: $font-secondary;
+                    color: $white;
+                }
+            }
+        }
+    }
 }
