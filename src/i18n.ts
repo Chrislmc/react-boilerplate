@@ -14,7 +14,7 @@ await i18n
         fallbackLng: ["en"],
         supportedLngs: ["en"],
         backend: {
-            loadPath: "/public/locales/{{lng}}/{{ns}}.json",
+            loadPath: "/locales/{{lng}}/{{ns}}.json",
         },
         ns: ["shared", "home-page", "practitioners"],
         defaultNS: "shared",
