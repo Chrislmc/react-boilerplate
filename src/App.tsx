@@ -4,10 +4,11 @@ import { Layout } from "./components/layout";
 import { HomePage } from "./pages";
 import { Secret } from "./pages/Secret";
 import { PractitionersPage } from "./pages/practitioners";
+import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practitioners";
 import { Services } from "./pages/services";
 import "./scss/main.scss";
 import { RemoveTrailingSlash } from "./utils/routes/RemoveTrailingSlash";
-import { RouteConstant } from "./utils/routes/route";
+import { RouteConstant, dynamicRouteConstant } from "./utils/routes/route";
 
 function App() {
     return (
@@ -17,10 +18,13 @@ function App() {
                 <Route index element={<HomePage />} />
 
                 <Route element={<Layout />}>
-                    <Route
-                        path={RouteConstant.practitioners}
-                        element={<PractitionersPage />}
-                    ></Route>
+                    <Route path={RouteConstant.practitioners}>
+                        <Route index element={<PractitionersPage />} />
+                        <Route
+                            path={`${RouteConstant.meetOurPractitioners}/${dynamicRouteConstant.meetOurPractitioners}`}
+                            element={<MeetOurPractitionersPage />}
+                        />
+                    </Route>
 
                     <Route path={RouteConstant.services} element={<Services />}>
                         <Route

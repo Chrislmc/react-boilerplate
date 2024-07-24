@@ -1,6 +1,6 @@
 import { ImiBaseCard } from "@/components/imiBaseCard";
 import { IImiButtonProps, ImiButton } from "@/components/imiButton";
-import { redirectRouteMap } from "@/utils/routes/route";
+import { dynamicRouteConstant, redirectRouteMap } from "@/utils/routes/route";
 import { useCallback, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./_practitioners-page.scss";
@@ -44,7 +44,12 @@ export const PractitionerCard: React.FC<IPractitionerCardProps> = ({
     }, []);
 
     const onCardClick = () => {
-        navigator(`${redirectRouteMap.meetOurPractitioners}/${id}`);
+        navigator(
+            redirectRouteMap.meetOurPractitioners.replace(
+                dynamicRouteConstant.meetOurPractitioners,
+                id
+            )
+        );
     };
 
     return (

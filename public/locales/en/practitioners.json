@@ -15,5 +15,9 @@
         },
         "linkText": "Book now",
         "emptyState": "There is no practitioner satisfying all the requirement"
+    },
+
+    "meetOurPractitioners": {
+        "bookAnAppointment": "Book an appointment"
     }
 }

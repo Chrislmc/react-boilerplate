@@ -1,0 +1,68 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+#meet-our-practitioners-page {
+    .practitioner-detail-section {
+        .section-wrapper {
+            width: 100%;
+
+            .hero-banner-container {
+                width: 100%;
+                height: 25rem;
+                position: relative;
+
+                .banner-image-container{
+                    width: inherit;
+                    height: inherit;
+                    overflow: hidden;
+
+                    .hero-banner {
+                        width: 100%;
+                        object-fit: cover;
+                        position: relative;
+                    }
+                }
+
+                .portrait-container {
+                    position: absolute;
+                    top: 14.375rem;
+                    left: 0;
+                    width: auto;
+
+                    .image-container {
+                        width: 15.625rem;
+                        aspect-ratio: 1/1;
+                        border-radius: 9999rem;
+                        overflow: hidden;
+                        margin: 0;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+
+            .appointment-button-container {
+                margin: 1.875rem 0 3.125rem auto;
+                display: flex;
+                justify-content: flex-end;
+
+                .imi-btn-component {
+                    padding: 1rem 1.875rem;
+                    background-color: $orange;
+
+                    &:hover {
+                        background-color: $orange-700;
+                    }
+
+                    .imi-btn-desc {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

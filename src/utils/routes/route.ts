@@ -2,33 +2,37 @@ export enum RouteConstant {
     "homepage" = "",
 
     "practitioners" = "practitioners",
-    "meetOurPractitioners" = "meetOurPractitioners",
+    "meetOurPractitioners" = "meet-our-practitioners",
 
     "services" = "services",
-    "naturopathicAndFunctionalMedicine" = "naturopathicAndFunctionalMedicine",
-    "psychologyCounsellingAndCoaching" = "psychologyCounsellingAndCoaching",
-    "bodyworkAndEnergyMedicine" = "bodyworkAndEnergyMedicine",
-    "labsIvAndConventionalMedicine" = "labsIvAndConventionalMedicine",
+    "naturopathicAndFunctionalMedicine" = "naturopathic-and-functional-medicine",
+    "psychologyCounsellingAndCoaching" = "psychology-counselling-and-coaching",
+    "bodyworkAndEnergyMedicine" = "bodywork-and-energy-medicine",
+    "labsIvAndConventionalMedicine" = "labs-iv-and-conventional-medicine",
 
     "shop" = "shop",
-    "imiSupplementOnline" = "imiSupplementOnline",
+    "imiSupplementOnline" = "imi-supplement-online",
 
     "dispensary" = "dispensary",
 
-    "healthHub" = "healthHub",
+    "healthHub" = "health-hub",
 
     "others" = "others",
     "insurance" = "insurance",
 
-    "accountDetails" = "accountDetails",
-    "shoppingCart" = "shoppingCart",
+    "accountDetails" = "account-details",
+    "shoppingCart" = "shopping-cart",
 }
+
+export const dynamicRouteConstant = {
+    meetOurPractitioners: ":practitionerId",
+};
 
 export const redirectRouteMap = {
     homepage: `/`,
 
     practitioners: `/${RouteConstant.practitioners}`,
-    meetOurPractitioners: `/${RouteConstant.practitioners}/${RouteConstant.meetOurPractitioners}`,
+    meetOurPractitioners: `/${RouteConstant.practitioners}/${RouteConstant.meetOurPractitioners}/${dynamicRouteConstant.meetOurPractitioners}`,
 
     services: `/${RouteConstant.services}`,
     naturopathicAndFunctionalMedicine: `/${RouteConstant.services}/${RouteConstant.naturopathicAndFunctionalMedicine}`,
