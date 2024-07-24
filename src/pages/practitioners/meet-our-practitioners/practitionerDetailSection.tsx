@@ -5,7 +5,11 @@ import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { practitionerTypeHelper } from "../practitionerTypeHelper";
 import "./_meet-our-practitioners-page.scss";
-import { samplePractitionerDetail } from "./meetOurPractitionersPageConstant";
+import {
+    areasOfExpertiseDetail,
+    samplePractitionerDetail,
+    testimonialText,
+} from "./meetOurPractitionersPageConstant";
 import { PractitionerTag } from "./practitionerTag";
 
 export const PractitionerDetailSection = () => {
@@ -94,7 +98,32 @@ export const PractitionerDetailSection = () => {
                                 )}
                             </div>
                         </div>
-                        <div className="misc-info-column"></div>
+                        <div className="misc-info-column">
+                            <div className="areas-of-expertise-container">
+                                <h3 className="title">
+                                    {t("meetOurPractitioners.areasOfExpertise")}
+                                </h3>
+
+                                <div className="item-column">
+                                    {areasOfExpertiseDetail.map((detail, i) => (
+                                        <div
+                                            className="item-detail"
+                                            key={`item-detail-${i}`}
+                                        >
+                                            <span>•</span>
+                                            <span>{detail}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="testimonial-container">
+                                <span className="testimonial-quote">"</span>
+                                <span className="testimonial-text">
+                                    {testimonialText}
+                                </span>
+                                <span className="testimonial-quote">"</span>
+                            </div>
+                        </div>
                     </div>
                 </ContainerX>
             </div>

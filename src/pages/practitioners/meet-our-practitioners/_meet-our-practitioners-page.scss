@@ -104,6 +104,7 @@
                                     align-items: center;
                                     gap: 0.375rem;
                                     padding: 0.625rem 1.25rem;
+                                    pointer-events: none;
 
                                     .icon-container {
                                         width: 1.25rem;
@@ -190,6 +191,71 @@
 
                 .misc-info-column {
                     flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4.375rem;
+
+                    .areas-of-expertise-container {
+                        // height: 40.625rem;
+                        background-color: $white;
+                        border: 0.0625rem solid $gray-400;
+                        border-radius: 1.25rem;
+                        padding: 2.5rem;
+
+                        .title {
+                            line-height: 2.625REM;
+                            font-weight: 700;
+                            letter-spacing: 0.09375rem;
+                            color: $gray;
+                            margin-bottom: 2.5rem;
+                            text-align: left;
+                        }
+
+                        .item-column {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 1.5rem;
+
+                            .item-detail {
+                                width: 100%;
+                                display: flex;
+                                gap: 0.625rem;
+                                align-items: flex-start;
+
+                                span {
+                                    font-size: 1.125rem;
+                                    line-height: 1.5rem;
+                                    font-family: $font-secondary;
+                                    letter-spacing: 0.05625rem;
+                                    color: $gray-600;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+
+                    .testimonial-container {
+                        padding: 0.25rem;
+                        vertical-align: top;
+                        text-align: left;
+
+                        .testimonial-quote {
+                            font-size: 2.5rem;
+                            line-height: 2.5rem;
+                            font-weight: 700;
+                            color: $blueish-green-700;
+                            vertical-align: top;
+                        }
+
+                        .testimonial-text {
+                            font-size: 1.5rem;
+                            line-height: 2.5rem;
+                            letter-spacing: 0.075rem;
+                            color: $gray;
+                            vertical-align: top;
+                        }
+                    }
                 }
             }
         }

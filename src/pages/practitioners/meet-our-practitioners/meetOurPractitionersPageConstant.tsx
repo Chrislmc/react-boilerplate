@@ -18,3 +18,18 @@ export const samplePractitionerDetail = {
         "Graeme enjoys going to the gym, hill walking, meditation, sailing, adventure travel and eating a healthy non-vegetarian diet – alongside a few coffees and a drink or two per week. He is a father of three, and now – a grandfather of three.",
     ],
 };
+
+export const areasOfExpertiseDetail = [
+    "The gut-brain, gut-immune and gut-skin connection",
+    "Gut health and food intolerances",
+    "Immune support for all ages",
+    "Individualised diets, weight and mood management",
+    "Immunity",
+    "Therapeutic detox",
+    "Skin problems and hair loss",
+    "Brain health",
+    "Preventative approaches: DNA analysis and anti-aging",
+];
+
+export const testimonialText =
+    "I like to get test-based facts and individualise your treatment based on this information. I find underlying causes and teach you corrective tools while coaching you into living the solutions.";
