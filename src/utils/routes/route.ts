@@ -53,3 +53,32 @@ export const redirectRouteMap = {
     accountDetails: `/${RouteConstant.accountDetails}`,
     shoppingCart: `/${RouteConstant.shoppingCart}`,
 };
+
+export const breadcrumbRouteDescMap = {
+    [RouteConstant.homepage]: `Home`,
+
+    [RouteConstant.practitioners]: "Practitioners",
+    [RouteConstant.meetOurPractitioners]: "Meet Our Practitioners",
+
+    [RouteConstant.services]: "Services",
+    [RouteConstant.naturopathicAndFunctionalMedicine]:
+        "Naturopathic And Functional Medicine",
+    [RouteConstant.psychologyCounsellingAndCoaching]:
+        "Psychology Counselling AndCoaching",
+    [RouteConstant.bodyworkAndEnergyMedicine]: "Bodywork And Energy Medicine",
+    [RouteConstant.labsIvAndConventionalMedicine]:
+        "Labs Iv And Conventional Medicine",
+
+    [RouteConstant.shop]: "Shop",
+    [RouteConstant.imiSupplementOnline]: "Imi Supplement Online",
+
+    [RouteConstant.dispensary]: "Dispensary",
+
+    [RouteConstant.healthHub]: "Health Hub",
+
+    [RouteConstant.others]: "Others",
+    [RouteConstant.insurance]: "Insurance",
+
+    [RouteConstant.accountDetails]: "Account Details",
+    [RouteConstant.shoppingCart]: "Shopping Cart",
+};

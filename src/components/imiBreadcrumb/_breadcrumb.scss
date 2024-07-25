@@ -1,0 +1,35 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-breadcrumb-component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 1.875rem;
+    
+    button {
+        cursor: pointer;
+
+        &:not(:last-child)::after {
+            content: '•';
+            display: inline-block;
+            margin: 0 0.5rem;
+            color: $gray;
+        }
+
+        &:hover:not(.mod__disabled) {
+            span {
+                color: $dark;
+            }
+        }
+
+        span {
+            font-size: 1rem;
+            line-height: 1.25rem;
+            letter-spacing: 0.05rem;
+            color: $gray;
+            font-family: $font-secondary;
+        }
+    }
+}
