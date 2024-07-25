@@ -80,3 +80,30 @@ export const meetOurPractitionersPageArticleCardList = [
         desc: "meetOurPractitioners.articlesAndVideos.card3.desc",
     },
 ];
+
+export const testimonialCardList = [
+    {
+        imgUrl: Images.GraemeBradshawPortrait,
+        name: "Bing Bing Li",
+        title: "Actress",
+        desc: "For many years, doctors and medication could not resolve my chronic bloating. Since following Graeme’s treatment plan, it’s improved significantly. I’m very grateful.",
+    },
+    {
+        imgUrl: Images.GraemeBradshawPortrait,
+        name: "Anon",
+        title: "Lorem ipsum",
+        desc: "After Graeme’s 2 month treatment, most of my son’s issues were resolved – his behaviour and overall health really improved. Graeme has been a kind, patient and thoughtful practitioner.",
+    },
+    {
+        imgUrl: Images.GraemeBradshawPortrait,
+        name: "Margaret Lui",
+        title: "Lorem ipsum",
+        desc: "Graeme used herbs to treat my son’s gut and we saw a vast improvement. His social skills and cognitive ability improved, while his anxiety reduced. His teacher was amazed at the change.",
+    },
+    {
+        imgUrl: Images.GraemeBradshawPortrait,
+        name: "Anon",
+        title: "Lorem ipsum",
+        desc: "Graeme used tests to understand the link between gut health and headaches. After treatment, the deadaches and gut issues stopped. If I had staed on the GP route, I would still be on heavy medication with no answers. The time and care taken by Graeme and the team has been excellent. It was such a nice experience to have someone listen and really understand what you're going through.",
+    },
+];

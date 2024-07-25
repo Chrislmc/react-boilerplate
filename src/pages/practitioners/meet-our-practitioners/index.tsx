@@ -5,6 +5,7 @@ import { ArticlesAndVideosSection } from "./articlesAndVideosSection";
 import { samplePractitionerDetail } from "./meetOurPractitionersPageConstant";
 import { PractitionerContactSection } from "./practitionerContactSection";
 import { PractitionerDetailSection } from "./practitionerDetailSection";
+import { TestimonialsSection } from "./testimonialsSection";
 
 export const MeetOurPractitionersPage = () => {
     return (
@@ -17,6 +18,9 @@ export const MeetOurPractitionersPage = () => {
             </ImiSection>
             <ImiSection className="articles-and-videos-section">
                 <ArticlesAndVideosSection />
+            </ImiSection>
+            <ImiSection className="testimonials-section">
+                <TestimonialsSection />
             </ImiSection>
             <ImiBreadcrumb customRouteDesc={samplePractitionerDetail.name} />
         </div>

@@ -19,7 +19,9 @@ export const PractitionerContactSection = () => {
                         <span>{samplePractitionerDetail.phoneNumber}</span>
                     </button>
                     <button className="button-container">
-                        <img src={Icons.Phone} />
+                        <div className="icon-container">
+                            <img src={Icons.Phone} />
+                        </div>
                         <span>
                             {t(
                                 "meetOurPractitioners.contactPractitioner.sendUsAMessage"
@@ -27,7 +29,9 @@ export const PractitionerContactSection = () => {
                         </span>
                     </button>
                     <button className="button-container">
-                        <img src={Icons.Calendar} />
+                        <div className="icon-container">
+                            <img src={Icons.Calendar} />
+                        </div>
                         <span>
                             {t(
                                 "meetOurPractitioners.contactPractitioner.bookOnline"
