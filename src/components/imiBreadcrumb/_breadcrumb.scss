@@ -2,11 +2,16 @@
 @import '@/scss/base';
 
 .imi-breadcrumb-component {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     position: absolute;
     top: 1.875rem;
+    width: 100%;
+
+    .container-x {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     
     button {
         cursor: pointer;
