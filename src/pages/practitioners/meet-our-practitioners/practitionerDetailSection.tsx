@@ -25,18 +25,15 @@ export const PractitionerDetailSection = () => {
                             src={Images.HomePageGradientBanner1}
                         />
                     </div>
-
-                    <div className="portrait-container">
-                        <ContainerX>
-                            <div className="image-container">
-                                <img src={Images.GraemeBradshawPortrait} />
-                            </div>
-                        </ContainerX>
-                    </div>
                 </div>
 
                 <ContainerX>
                     <div className="appointment-button-container">
+                        <div className="portrait-container">
+                            <div className="image-container">
+                                <img src={Images.GraemeBradshawPortrait} />
+                            </div>
+                        </div>
                         <ImiButton
                             text={t("meetOurPractitioners.bookAnAppointment")}
                             size="padding"

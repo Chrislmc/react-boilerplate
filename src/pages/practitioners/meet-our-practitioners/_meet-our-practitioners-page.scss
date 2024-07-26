@@ -5,6 +5,10 @@
     position: relative;
     
     .practitioner-detail-section {
+        .section-container-y {
+            width: 100%;
+        }
+        
         .section-wrapper {
             width: 100%;
 
@@ -24,10 +28,23 @@
                         position: relative;
                     }
                 }
+            }
+
+            .container-x {
+                overflow: visible;
+            }
+
+            .appointment-button-container {
+                margin: 1.875rem 0 3.125rem auto;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                overflow: visible;
 
                 .portrait-container {
                     position: absolute;
-                    top: 14.375rem;
+                    top: unset;
+                    bottom: 0;
                     left: 0;
                     width: auto;
 
@@ -45,12 +62,6 @@
                         }
                     }
                 }
-            }
-
-            .appointment-button-container {
-                margin: 1.875rem 0 3.125rem auto;
-                display: flex;
-                justify-content: flex-end;
 
                 .imi-btn-component {
                     padding: 1rem 1.875rem;
