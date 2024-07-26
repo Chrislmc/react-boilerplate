@@ -34,8 +34,11 @@ export const ImiGradientBanner: React.FC<IImiGradientBannerProps> = (
                     )}
                     {props?.content?.length && props?.content?.length > 1 && (
                         <ImiSwiper
-                            cardLists={props?.content.map((item) => (
-                                <GradientBannerContent {...item} />
+                            cardLists={props?.content.map((item, i) => (
+                                <GradientBannerContent
+                                    key={`gradient-banner-swiper-card-${i}`}
+                                    {...item}
+                                />
                             ))}
                             pagination={{ clickable: true }}
                             speed={2000}
@@ -65,8 +68,10 @@ const GradientBannerContent: React.FC<IGradientBannerContent> = (props) => {
             )}
             {props?.descList && (
                 <div className="detail-column">
-                    {props.descList.map((desc) => (
-                        <span className="desc-text">{desc}</span>
+                    {props.descList.map((desc, i) => (
+                        <span key={`detail-${i}`} className="desc-text">
+                            {desc}
+                        </span>
                     ))}
                 </div>
             )}

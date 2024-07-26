@@ -11,8 +11,8 @@ export const ProductRating: React.FC<IProductRating> = ({ rating }) => {
 
     return (
         <div className="product-rating-container">
-            {starList.map((imgUrl) => (
-                <img src={imgUrl} />
+            {starList.map((imgUrl, i) => (
+                <img key={`rating-${i}`} src={imgUrl} />
             ))}
         </div>
     );

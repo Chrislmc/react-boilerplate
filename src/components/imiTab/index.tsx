@@ -27,8 +27,9 @@ export const ImiTab = <T extends string>({
 
     return (
         <div className="imi-tab-component">
-            {options.map((option) => (
+            {options.map((option, i) => (
                 <div
+                    key={`tab-${i}`}
                     className={`tab-item${
                         activeTab === option.value ? " mod__active" : ""
                     }${disabled ? " mod__disabled" : ""}`}

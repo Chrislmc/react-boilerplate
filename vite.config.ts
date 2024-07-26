@@ -5,6 +5,7 @@ import { fileURLToPath, URL } from "url";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    assetsInclude: ["**/*.json"],
     build: { target: "esnext" },
     plugins: [react()],
     resolve: {

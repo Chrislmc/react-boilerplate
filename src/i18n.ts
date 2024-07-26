@@ -14,7 +14,15 @@ await i18n
         fallbackLng: ["en"],
         supportedLngs: ["en"],
         backend: {
-            loadPath: "/locales/{{lng}}/{{ns}}.json",
+            loadPath: () => {
+                // check the domain
+                const host = window.location.host;
+                console.log("host", host);
+                return (
+                    (host.indexOf("localhost:5175") > -1 ? "/public" : "") +
+                    "/locales/{{lng}}/{{ns}}.json"
+                );
+            },
         },
         ns: ["shared", "home-page", "practitioners"],
         defaultNS: "shared",
