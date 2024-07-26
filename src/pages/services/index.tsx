@@ -1,6 +1,12 @@
-export const Services = () => {
+export const ServicesPage = () => {
     return (
-        <div style={{ margin: "80px", backgroundColor: "#c6c6c6" }}>
+        <div
+            style={{
+                margin: "80px",
+                fontSize: "2rem",
+                fontFamily: "futura",
+            }}
+        >
             Services page
         </div>
     );

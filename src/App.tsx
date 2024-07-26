@@ -3,9 +3,13 @@ import { ProtectedRoute } from "./ProtectedRoute";
 import { Layout } from "./components/layout";
 import { HomePage } from "./pages";
 import { Secret } from "./pages/Secret";
+import { DispensaryPage } from "./pages/dispensary";
+import { HealthHubPage } from "./pages/health-hub";
 import { PractitionersPage } from "./pages/practitioners";
 import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practitioners";
-import { Services } from "./pages/services";
+import { ServicesPage } from "./pages/services";
+import { NaturopathicAndFunctionalMedicinePage } from "./pages/services/naturopathic-and-functional-medicine";
+import { ShopPage } from "./pages/shop";
 import "./scss/main.scss";
 import { RemoveTrailingSlash } from "./utils/routes/RemoveTrailingSlash";
 import { RouteConstant, dynamicRouteConstant } from "./utils/routes/route";
@@ -26,28 +30,31 @@ function App() {
                         />
                     </Route>
 
-                    <Route path={RouteConstant.services} element={<Services />}>
+                    <Route
+                        path={RouteConstant.services}
+                        element={<ServicesPage />}
+                    >
                         <Route
                             path={
                                 RouteConstant.naturopathicAndFunctionalMedicine
                             }
-                            element={<HomePage />}
+                            element={<NaturopathicAndFunctionalMedicinePage />}
                         />
                     </Route>
 
                     <Route
                         path={RouteConstant.shop}
-                        element={<HomePage />}
+                        element={<ShopPage />}
                     ></Route>
 
                     <Route
                         path={RouteConstant.dispensary}
-                        element={<HomePage />}
+                        element={<DispensaryPage />}
                     ></Route>
 
                     <Route
                         path={RouteConstant.healthHub}
-                        element={<HomePage />}
+                        element={<HealthHubPage />}
                     ></Route>
                     <Route
                         element={
