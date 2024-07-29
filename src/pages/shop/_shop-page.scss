@@ -62,71 +62,73 @@
                     }
                 }
             }
+        }
+    }
 
-            .imi-desc-section-component {
-                margin-top: 5rem;
+    .shop-page-category-section {
+        .section-container-y {
+            margin: 0 auto 5rem auto;
+        }
 
-                .custom-category-container {
-                    width: calc(100% - 1.25rem);
-                    display: grid;
-                    gap: 1.25rem;
-                    grid-template-columns: repeat(3, 1fr);
-                    margin: 0 0.625rem 2.5rem 0.0625rem;
+        .custom-category-container {
+            width: calc(100% - 1.25rem);
+            display: grid;
+            gap: 1.25rem;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0 0.625rem 2.5rem 0.0625rem;
 
-                    .category-card {
+            .category-card {
+                width: 100%;
+
+                &:hover {
+                    .imi-card-component {
+                        border-color: $blueish-green;
+                        transition: all 0.5s ease;
+                    }
+                }
+
+                .imi-card-component {
+                    display: flex;
+                    border: 0.125rem solid $white;
+                    
+                    .category-button {
                         width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 3.75rem;
 
-                        &:hover {
-                            .imi-card-component {
-                                border-color: $blueish-green;
-                                transition: all 0.5s ease;
-                            }
+                        h5 {
+                            line-height: 1.5rem;
+                            letter-spacing: 0.075rem;
+                            font-weight: 700;
+                            color: $gray;
+                            flex: 1;
+                            text-align: left;
                         }
 
-                        .imi-card-component {
-                            display: flex;
-                            border: 0.125rem solid $white;
-                            
-                            .category-button {
-                                width: 100%;
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-between;
-                                align-items: center;
-                                padding: 3.75rem;
-
-                                h5 {
-                                    line-height: 1.5rem;
-                                    letter-spacing: 0.075rem;
-                                    font-weight: 700;
-                                    color: $gray;
-                                    flex: 1;
-                                    text-align: left;
-                                }
-
-                                img {
-                                    width: 1.375rem;
-                                    aspect-ratio: 1/1;
-                                    object-fit: cover;
-                                }
-                            }
+                        img {
+                            width: 1.375rem;
+                            aspect-ratio: 1/1;
+                            object-fit: cover;
                         }
                     }
                 }
+            }
+        }
 
-                .imi-btn-component {
-                    margin: 0 auto;
-                    background-color: $orange;
-                    padding: 1rem 2rem;
+        .imi-btn-component {
+            margin: 0 auto;
+            background-color: $orange;
+            padding: 1rem 2rem;
 
-                    &:hover {
-                        background-color: $orange-700;
-                    }
+            &:hover {
+                background-color: $orange-700;
+            }
 
-                    .imi-btn-desc {
-                        color: $white;
-                    }
-                }
+            .imi-btn-desc {
+                color: $white;
             }
         }
     }
