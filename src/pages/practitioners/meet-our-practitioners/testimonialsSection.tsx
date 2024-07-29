@@ -11,7 +11,7 @@ export const TestimonialsSection = () => {
     return (
         <ImiDescSection
             header={t("meetOurPractitioners.testimonials.title")}
-            style="subsection"
+            style="small-subsection"
             customBottomComponent={
                 <ImiSwiper
                     cardLists={testimonialCardList.map((card, i) => (

@@ -26,6 +26,17 @@
         "recommended": {
             "header": "WHAT WE LOVE THIS MONTH",
             "linkText": "Shop all products"
+        },
+        "healthNeed": {
+            "header": "SHOP BY HEALTH NEED",
+            "allergies": "Allergies",
+            "gutHealth": "Gut health",
+            "immunity": "Immunity",
+            "sleep": "Sleep",
+            "hormonalHealth": "Hormonal health",
+            "pain": "Pain",
+            "detoxAndWeightLoss": "Detox & weightloss",
+            "linkText": "Shop all health needs"
         }
     }
 }

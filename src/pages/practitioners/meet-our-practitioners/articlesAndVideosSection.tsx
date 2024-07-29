@@ -12,7 +12,7 @@ export const ArticlesAndVideosSection = () => {
     return (
         <ImiDescSection
             header={t("meetOurPractitioners.articlesAndVideos.title")}
-            style="subsection"
+            style="small-subsection"
             customBottomComponent={
                 <ImiSwiper
                     cardLists={meetOurPractitionersPageArticleCardList.map(

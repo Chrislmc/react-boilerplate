@@ -1,32 +1,36 @@
+import { ImiBaseCard } from "@/components/imiBaseCard";
 import { ImiButton } from "@/components/imiButton";
 import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiProductCard } from "@/components/imiProductCard";
 import { ImiSwiper } from "@/components/imiSwiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_shop-page.scss";
-import { shopPageProductCardList } from "./shopPageConstant";
+import { shopPageHealthNeedCardList } from "./shopPageConstant";
 
-export const ShopPageRecommendedSection = () => {
+export const ShopPageHealthNeedSection = () => {
     const t = i18nHelper("shop");
 
     return (
         <ImiDescSection
             style="subsection"
-            header={t("shop.recommended.header")}
+            header={t("shop.healthNeed.header")}
             customBottomComponent={
                 <>
                     <ImiSwiper
-                        cardLists={shopPageProductCardList.map(
-                            (cardItem, i) => (
-                                <ImiProductCard
-                                    key={`product-card-${i}`}
-                                    {...cardItem}
-                                />
+                        cardLists={shopPageHealthNeedCardList.map(
+                            (cardItem) => (
+                                <div className="health-need-card">
+                                    <ImiBaseCard shadow>
+                                        <img src={cardItem.imgUrl} />
+                                        <span className="card-desc">
+                                            {t(cardItem.text)}
+                                        </span>
+                                    </ImiBaseCard>
+                                </div>
                             )
                         )}
-                        slidesPerGroup={4}
-                        slidesPerView={4}
+                        slidesPerGroup={5}
+                        slidesPerView={5}
                         spaceBetween={convertRemToPx(1.25)}
                         pagination={{ clickable: true }}
                         speed={2000}
@@ -34,7 +38,7 @@ export const ShopPageRecommendedSection = () => {
 
                     <div className="btn-container">
                         <ImiButton
-                            text={t("shop.recommended.linkText")}
+                            text={t("shop.healthNeed.linkText")}
                             colorTheme="orange"
                             size="padding"
                         />

@@ -1,3 +1,4 @@
+import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
 import { redirectRouteMap } from "@/utils/routes/route";
 
@@ -105,5 +106,43 @@ export const shopPageProductCardList = [
         rating: 3,
         isOutOfStock: true,
         onlyAvailableInClinic: false,
+    },
+];
+
+export const shopPageHealthNeedCardList = [
+    {
+        imgUrl: Icons.Allergies,
+        text: "shop.healthNeed.allergies",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.GutHealth,
+        text: "shop.healthNeed.gutHealth",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Immunity,
+        text: "shop.healthNeed.immunity",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Sleep,
+        text: "shop.healthNeed.sleep",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.HormonalHealth,
+        text: "shop.healthNeed.hormonalHealth",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Pain,
+        text: "shop.healthNeed.pain",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.DetoxAndWeightLoss,
+        text: "shop.healthNeed.detoxAndWeightLoss",
+        redirectUrl: "",
     },
 ];

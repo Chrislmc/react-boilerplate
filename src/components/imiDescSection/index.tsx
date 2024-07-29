@@ -33,7 +33,7 @@ interface Props {
     customFullWidthBottomComponent?: ReactNode;
     backButton?: boolean;
 
-    style?: "normal" | "subsection";
+    style?: "normal" | "subsection" | "small-subsection";
 }
 
 export const ImiDescSection: React.FC<Props> = (props: Props) => {

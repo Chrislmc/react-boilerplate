@@ -2,6 +2,7 @@ import { ImiSection } from "@/components/imiSection";
 import "./_shop-page.scss";
 import { ShopPageCategorySection } from "./shopPageCategorySection";
 import { ShopPageDescSection } from "./shopPageDescSection";
+import { ShopPageHealthNeedSection } from "./shopPageHealthNeedSection";
 import { ShopPageRecommendedSection } from "./shopPageRecommendedSection";
 
 export const ShopPage = () => {
@@ -15,6 +16,9 @@ export const ShopPage = () => {
             </ImiSection>
             <ImiSection className="shop-page-recommended-section">
                 <ShopPageRecommendedSection />
+            </ImiSection>
+            <ImiSection className="shop-page-health-need-section">
+                <ShopPageHealthNeedSection />
             </ImiSection>
         </div>
     );
