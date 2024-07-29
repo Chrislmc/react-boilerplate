@@ -22,6 +22,10 @@
             "supplements": "Supplements",
             "lifestyle": "Lifestyle",
             "linkText": "Shop all products"
+        },
+        "recommended": {
+            "header": "WHAT WE LOVE THIS MONTH",
+            "linkText": "Shop all products"
         }
     }
 }
