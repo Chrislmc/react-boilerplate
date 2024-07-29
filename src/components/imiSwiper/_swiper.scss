@@ -48,14 +48,14 @@ $swiperNavigationSize:4.5625rem;
                 line-height: 0.5rem;
                 border-radius: 9999rem;
                 border: 0.125rem solid $white;
-            }
 
-            .swiper-pagination-bullet-active {
-                background-color: $white;
-                opacity: 1;
-                width: 1.5rem;
-                height: 0.5rem;
-                line-height: 0.5rem;
+                &.swiper-pagination-bullet-active {
+                    background-color: $white;
+                    opacity: 1;
+                    width: 1.5rem;
+                    height: 0.5rem;
+                    line-height: 0.5rem;
+                }
             }
         }
     }

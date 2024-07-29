@@ -11,6 +11,7 @@ export enum RouteConstant {
     "labsIvAndConventionalMedicine" = "labs-iv-and-conventional-medicine",
 
     "shop" = "shop",
+    "products" = "products",
     "imiSupplementOnline" = "imi-supplement-online",
 
     "dispensary" = "dispensary",
@@ -41,6 +42,7 @@ export const redirectRouteMap = {
     labsIvAndConventionalMedicine: `/${RouteConstant.services}/${RouteConstant.labsIvAndConventionalMedicine}`,
 
     shop: `/${RouteConstant.shop}`,
+    products: `/${RouteConstant.shop}/${RouteConstant.products}`,
     imiSupplementOnline: `/${RouteConstant.shop}/${RouteConstant.imiSupplementOnline}`,
 
     dispensary: `/${RouteConstant.dispensary}`,
@@ -70,6 +72,7 @@ export const breadcrumbRouteDescMap = {
         "Labs Iv And Conventional Medicine",
 
     [RouteConstant.shop]: "Shop",
+    [RouteConstant.products]: "All products",
     [RouteConstant.imiSupplementOnline]: "Imi Supplement Online",
 
     [RouteConstant.dispensary]: "Dispensary",

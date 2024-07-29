@@ -3,6 +3,14 @@
 
 .imi-desc-section-component {
     width: 100%;
+
+    /* Remove children container x if nested */
+    .imi-desc-section-component {
+        .container-x {
+            margin: 0;
+            padding: 0;
+        }
+    }
     
     .imi-desc-section-hero-image {
         width: 100%;

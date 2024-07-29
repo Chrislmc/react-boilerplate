@@ -24,7 +24,7 @@ await i18n
                 );
             },
         },
-        ns: ["shared", "home-page", "practitioners"],
+        ns: ["shared", "home-page", "practitioners", "shop"],
         defaultNS: "shared",
     });
 

@@ -42,10 +42,9 @@ function App() {
                         />
                     </Route>
 
-                    <Route
-                        path={RouteConstant.shop}
-                        element={<ShopPage />}
-                    ></Route>
+                    <Route path={RouteConstant.shop}>
+                        <Route index element={<ShopPage />} />
+                    </Route>
 
                     <Route
                         path={RouteConstant.dispensary}

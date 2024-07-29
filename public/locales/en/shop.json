@@ -1,0 +1,17 @@
+{
+    "shop": {
+        "desc": {
+            "header": "IMI SUPPLEMENTS ONLINE",
+            "categories": {
+                "header": "CATEGORIES",
+                "saleAndOffers": " Sale & offers",
+                "vitaminAndMinerals": "Vitamin & minerals",
+                "probiotics": "Probiotics",
+                "oils": "Oils",
+                "supplements": "Supplements",
+                "lifestyle": "Lifestyle",
+                "linkText": "Shop all products"
+            }
+        }
+    }
+}
