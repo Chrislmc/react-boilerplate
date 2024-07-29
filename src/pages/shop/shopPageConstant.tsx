@@ -2,27 +2,27 @@ import { redirectRouteMap } from "@/utils/routes/route";
 
 export const shopPageCategoryList = [
     {
-        text: "shop.desc.categories.saleAndOffers",
+        text: "shop.category.saleAndOffers",
         redirectUrl: redirectRouteMap.products,
     },
     {
-        text: "shop.desc.categories.vitaminAndMinerals",
+        text: "shop.category.vitaminAndMinerals",
         redirectUrl: redirectRouteMap.products,
     },
     {
-        text: "shop.desc.categories.probiotics",
+        text: "shop.category.probiotics",
         redirectUrl: redirectRouteMap.products,
     },
     {
-        text: "shop.desc.categories.oils",
+        text: "shop.category.oils",
         redirectUrl: redirectRouteMap.products,
     },
     {
-        text: "shop.desc.categories.supplements",
+        text: "shop.category.supplements",
         redirectUrl: redirectRouteMap.products,
     },
     {
-        text: "shop.desc.categories.lifestyle",
+        text: "shop.category.lifestyle",
         redirectUrl: redirectRouteMap.products,
     },
 ];

@@ -12,6 +12,16 @@
                 "lifestyle": "Lifestyle",
                 "linkText": "Shop all products"
             }
+        },
+        "category": {
+            "header": "CATEGORIES",
+            "saleAndOffers": " Sale & offers",
+            "vitaminAndMinerals": "Vitamin & minerals",
+            "probiotics": "Probiotics",
+            "oils": "Oils",
+            "supplements": "Supplements",
+            "lifestyle": "Lifestyle",
+            "linkText": "Shop all products"
         }
     }
 }

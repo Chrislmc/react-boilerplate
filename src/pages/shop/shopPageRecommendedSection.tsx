@@ -7,14 +7,14 @@ import { useNavigate } from "react-router-dom";
 import "./_shop-page.scss";
 import { shopPageCategoryList } from "./shopPageConstant";
 
-export const ShopPageCategorySection = () => {
+export const ShopPageRecommendedSection = () => {
     const t = i18nHelper("shop");
     const navigator = useNavigate();
 
     return (
         <ImiDescSection
             style="subsection"
-            header={t("shop.category.header")}
+            header={t("shop.desc.categories.header")}
             customBottomComponent={
                 <>
                     <div className="custom-category-container">
