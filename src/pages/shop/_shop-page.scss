@@ -341,4 +341,47 @@
             }
         }
     }
+
+    .shop-page-customer-favorites-section {
+        background-color: $blueish-green-100;
+
+        .imi-swiper-component {
+            margin-bottom: 2.5rem;
+
+            .swiper {
+                padding: 0.375rem;
+                height: 41rem;
+
+                .swiper-pagination {
+                    top: unset;
+                    bottom: 0;
+
+                    .swiper-pagination-bullet {
+                        border-color: #80BBCC;
+            
+                        &.swiper-pagination-bullet-active {
+                            background-color: $blueish-green-700;
+                            border-color: $blueish-green-700;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-container {
+            .imi-btn-component {
+                margin: 0 auto;
+                background-color: $orange;
+                padding: 1rem 2rem;
+                
+                &:hover {
+                    background-color: $orange-700;
+                }
+                
+                .imi-btn-desc {
+                    color: $white;
+                }
+            }
+        }
+    }
 }

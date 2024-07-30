@@ -2,6 +2,7 @@ import { ImiSection } from "@/components/imiSection";
 import "./_shop-page.scss";
 import { ShopPageArticlesSection } from "./shopPageArticlesSection";
 import { ShopPageCategorySection } from "./shopPageCategorySection";
+import { ShopPageCustomerFavoritesSection } from "./shopPageCustomerFavoritesSection";
 import { ShopPageDescSection } from "./shopPageDescSection";
 import { ShopPageHealthNeedSection } from "./shopPageHealthNeedSection";
 import { ShopPagePractitionerSection } from "./shopPagePractitionerSection";
@@ -27,6 +28,9 @@ export const ShopPage = () => {
             </ImiSection>
             <ImiSection className="shop-page-practitioner-section">
                 <ShopPagePractitionerSection />
+            </ImiSection>
+            <ImiSection className="shop-page-customer-favorites-section">
+                <ShopPageCustomerFavoritesSection />
             </ImiSection>
         </div>
     );

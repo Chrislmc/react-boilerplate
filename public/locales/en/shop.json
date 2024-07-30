@@ -60,6 +60,10 @@
         "practitioner": {
             "header": "Build a strong foundation for true wellbeing",
             "desc": "Our practitioners’ top picks for building a healthy body and mind."
+        },
+        "customerFavorites": {
+            "header": "CUSTOMER FAVOURITES",
+            "linkText": "Shop all products"
         }
     }
 }
