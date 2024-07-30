@@ -7,6 +7,7 @@ import { ShopPageDescSection } from "./shopPageDescSection";
 import { ShopPageHealthNeedSection } from "./shopPageHealthNeedSection";
 import { ShopPagePractitionerSection } from "./shopPagePractitionerSection";
 import { ShopPageRecommendedSection } from "./shopPageRecommendedSection";
+import { ShopePageSubscribeSection } from "./shopPageSubscribeSection";
 
 export const ShopPage = () => {
     return (
@@ -31,6 +32,9 @@ export const ShopPage = () => {
             </ImiSection>
             <ImiSection className="shop-page-customer-favorites-section">
                 <ShopPageCustomerFavoritesSection />
+            </ImiSection>
+            <ImiSection className="shop-page-subscribe-section">
+                <ShopePageSubscribeSection />
             </ImiSection>
         </div>
     );

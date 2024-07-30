@@ -64,6 +64,11 @@
         "customerFavorites": {
             "header": "CUSTOMER FAVOURITES",
             "linkText": "Shop all products"
+        },
+        "subscribe": {
+            "header": "BE THE FIRST IN LINE",
+            "desc": "Get the latest offers, our favourite supplements and health inspiration direct to your inbox.",
+            "linkText": "Subscribe now"
         }
     }
 }
