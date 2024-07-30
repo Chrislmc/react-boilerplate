@@ -31,6 +31,7 @@
                 -webkit-line-clamp: 2; /* number of lines to show */
                 line-clamp: 2;
                 height: 3rem;
+                overflow: hidden;
             }
 
             .card-desc-container {

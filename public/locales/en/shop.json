@@ -15,7 +15,7 @@
         },
         "category": {
             "header": "CATEGORIES",
-            "saleAndOffers": " Sale & offers",
+            "saleAndOffers": "Sale & offers",
             "vitaminAndMinerals": "Vitamin & minerals",
             "probiotics": "Probiotics",
             "oils": "Oils",
@@ -37,6 +37,25 @@
             "pain": "Pain",
             "detoxAndWeightLoss": "Detox & weightloss",
             "linkText": "Shop all health needs"
+        },
+        "articles": {
+            "header": "RECENT ARTICLES",
+            "card1": {
+                "date": "October 13, 2023",
+                "title": "Introducing the IMI Clinical Multivitamin",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient…"
+            },
+            "card2": {
+                "date": "September 28, 2023",
+                "title": "Nutritional imbalances which affect impulsivity, inattention and hyperactivity",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient…"
+            },
+            "card3": {
+                "date": "September 28, 2023",
+                "title": "Short title",
+                "desc": "Very short desc"
+            },
+            "linkText": "Discover more"
         }
     }
 }

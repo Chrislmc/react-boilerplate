@@ -134,7 +134,7 @@
     }
 
     .shop-page-recommended-section {
-        background-color: #F7FAFD;
+        background-color: $blueish-green-100;
 
         .imi-swiper-component {
             margin-bottom: 2.5rem;
@@ -196,27 +196,30 @@
                     }
 
                     .imi-card-component {
-                        height: 100%;
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 1.5rem;
                         box-shadow: 0 0 0.375rem #26262629;
                         box-sizing: border-box;
                         border: 0.125rem solid $white;
 
-                        img {
-                            width: 6.25rem;
-                            aspect-ratio: 1/1;
-                            object-fit: cover;
-                        }
-    
-                        .card-desc {
-                            font-weight: 700;
-                            line-height: 1.5rem;
-                            color: $gray;
+                        button {
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 1.5rem;
+                            
+                            img {
+                                width: 6.25rem;
+                                aspect-ratio: 1/1;
+                                object-fit: cover;
+                            }
+                            
+                            .card-desc {
+                                font-weight: 700;
+                                line-height: 1.5rem;
+                                color: $gray;
+                            }
                         }
                     }
                 }
@@ -235,6 +238,35 @@
                     }
                 }
             }
+        }
+
+        .btn-container {
+            .imi-btn-component {
+                margin: 0 auto;
+                background-color: $orange;
+                padding: 1rem 2rem;
+                
+                &:hover {
+                    background-color: $orange-700;
+                }
+                
+                .imi-btn-desc {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .shop-page-articles-section {
+        background-color: $blueish-green-100;
+
+        .card-grid-container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            padding: 0.375rem 0;
+            margin-bottom: 2.5rem;
         }
 
         .btn-container {

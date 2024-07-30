@@ -6,9 +6,11 @@ import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_shop-page.scss";
 import { shopPageHealthNeedCardList } from "./shopPageConstant";
+import { useNavigate } from "react-router-dom";
 
 export const ShopPageHealthNeedSection = () => {
     const t = i18nHelper("shop");
+    const navigator = useNavigate();
 
     return (
         <ImiDescSection
@@ -21,10 +23,16 @@ export const ShopPageHealthNeedSection = () => {
                             (cardItem) => (
                                 <div className="health-need-card">
                                     <ImiBaseCard shadow>
-                                        <img src={cardItem.imgUrl} />
-                                        <span className="card-desc">
-                                            {t(cardItem.text)}
-                                        </span>
+                                        <button
+                                            onClick={() =>
+                                                navigator(cardItem.redirectUrl)
+                                            }
+                                        >
+                                            <img src={cardItem.imgUrl} />
+                                            <span className="card-desc">
+                                                {t(cardItem.text)}
+                                            </span>
+                                        </button>
                                     </ImiBaseCard>
                                 </div>
                             )

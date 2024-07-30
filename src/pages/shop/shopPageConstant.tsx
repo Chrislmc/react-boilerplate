@@ -146,3 +146,24 @@ export const shopPageHealthNeedCardList = [
         redirectUrl: "",
     },
 ];
+
+export const shopPageArticlesCardList = [
+    {
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "shop.articles.card1.date",
+        title: "shop.articles.card1.title",
+        desc: "shop.articles.card1.desc",
+    },
+    {
+        imgUrl: Images.HomePageHealthHubCard2,
+        date: "shop.articles.card2.date",
+        title: "shop.articles.card2.title",
+        desc: "shop.articles.card2.desc",
+    },
+    {
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "shop.articles.card3.date",
+        title: "shop.articles.card3.title",
+        desc: "shop.articles.card3.desc",
+    },
+];
