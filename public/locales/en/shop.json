@@ -56,6 +56,10 @@
                 "desc": "Very short desc"
             },
             "linkText": "Discover more"
+        },
+        "practitioner": {
+            "header": "Build a strong foundation for true wellbeing",
+            "desc": "Our practitioners’ top picks for building a healthy body and mind."
         }
     }
 }

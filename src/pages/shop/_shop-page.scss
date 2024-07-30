@@ -285,4 +285,60 @@
             }
         }
     }
+
+    .shop-page-practitioner-section {
+        .practitioner-section-container {
+            height: 31.25rem;
+            width: 100%;
+            position: relative;
+         
+            .background-image-container {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+            }
+
+            .background-overlay {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $primary-600;
+                opacity: 0.7;
+            }
+
+            .content-container {
+                height: 100%;
+                width: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 3.375rem;
+
+                h1 {
+                    font-weight: 700;
+                    color: $white;
+                }
+
+                h3 {
+                    line-height: 2.25rem;
+                    letter-spacing: 0.09375rem;
+                    color: $white;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
 }

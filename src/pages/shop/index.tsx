@@ -4,6 +4,7 @@ import { ShopPageArticlesSection } from "./shopPageArticlesSection";
 import { ShopPageCategorySection } from "./shopPageCategorySection";
 import { ShopPageDescSection } from "./shopPageDescSection";
 import { ShopPageHealthNeedSection } from "./shopPageHealthNeedSection";
+import { ShopPagePractitionerSection } from "./shopPagePractitionerSection";
 import { ShopPageRecommendedSection } from "./shopPageRecommendedSection";
 
 export const ShopPage = () => {
@@ -23,6 +24,9 @@ export const ShopPage = () => {
             </ImiSection>
             <ImiSection className="shop-page-articles-section">
                 <ShopPageArticlesSection />
+            </ImiSection>
+            <ImiSection className="shop-page-practitioner-section">
+                <ShopPagePractitionerSection />
             </ImiSection>
         </div>
     );
