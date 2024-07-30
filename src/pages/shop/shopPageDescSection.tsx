@@ -14,16 +14,14 @@ export const ShopPageDescSection = () => {
                 <div className="custom-bottom-container">
                     <ImiBaseCard>
                         <ImiSwiper
-                            cardLists={Array.from(new Array(4)).map(
-                                (item, i) => (
-                                    <div
-                                        key={`promotion-swiper-card-${i}`}
-                                        className="promotion-swiper-card"
-                                    >
-                                        <div className="image-container"></div>
-                                    </div>
-                                )
-                            )}
+                            cardLists={Array.from(new Array(4)).map((_, i) => (
+                                <div
+                                    key={`promotion-swiper-card-${i}`}
+                                    className="promotion-swiper-card"
+                                >
+                                    <div className="image-container"></div>
+                                </div>
+                            ))}
                             pagination={{ clickable: true }}
                             speed={3000}
                             autoplay={true}
