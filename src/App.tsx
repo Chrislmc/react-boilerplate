@@ -10,6 +10,7 @@ import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practit
 import { ServicesPage } from "./pages/services";
 import { NaturopathicAndFunctionalMedicinePage } from "./pages/services/naturopathic-and-functional-medicine";
 import { ShopPage } from "./pages/shop";
+import { ProductsPage } from "./pages/shop/products";
 import "./scss/main.scss";
 import { RemoveTrailingSlash } from "./utils/routes/RemoveTrailingSlash";
 import { RouteConstant, dynamicRouteConstant } from "./utils/routes/route";
@@ -44,6 +45,11 @@ function App() {
 
                     <Route path={RouteConstant.shop}>
                         <Route index element={<ShopPage />} />
+
+                        <Route
+                            path={RouteConstant.products}
+                            element={<ProductsPage />}
+                        />
                     </Route>
 
                     <Route

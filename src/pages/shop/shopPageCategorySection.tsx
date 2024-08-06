@@ -3,6 +3,7 @@ import { ImiBaseCard } from "@/components/imiBaseCard";
 import { ImiButton } from "@/components/imiButton";
 import { ImiDescSection } from "@/components/imiDescSection";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { redirectRouteMap } from "@/utils/routes/route";
 import { useNavigate } from "react-router-dom";
 import "./_shop-page.scss";
 import { shopPageCategoryList } from "./shopPageConstant";
@@ -41,6 +42,7 @@ export const ShopPageCategorySection = () => {
                         text={t("shop.desc.categories.linkText")}
                         colorTheme="orange"
                         size="padding"
+                        onClick={() => navigator(redirectRouteMap.products)}
                     />
                 </>
             }

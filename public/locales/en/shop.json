@@ -70,5 +70,25 @@
             "desc": "Get the latest offers, our favourite supplements and health inspiration direct to your inbox.",
             "linkText": "Subscribe now"
         }
+    },
+    "products": {
+        "header": "ALL PRODUCTS",
+        "filter": {
+            "price": {
+                "header": "Price"
+            },
+            "categories": {
+                "header": "Categories"
+            },
+            "healthNeed": {
+                "header": "Health Need(s)"
+            },
+            "brands": {
+                "header": "Brands"
+            },
+            "sortBy": {
+                "header": "SortBy"
+            }
+        }
     }
 }
