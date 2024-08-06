@@ -1,5 +1,15 @@
 import { Icons } from "@/assets/icons";
 import { Dispatch, SetStateAction } from "react";
+import { IProductPageFilter } from "./productPageConstant";
+
+export interface IProductPageFilterBaseProps {
+    filterStatus: { [key in IProductPageFilter]: boolean };
+    setFilterStatus: Dispatch<
+        SetStateAction<{
+            [key in IProductPageFilter]: boolean;
+        }>
+    >;
+}
 
 interface Props {
     header: string;
@@ -8,11 +18,7 @@ interface Props {
     isOpen: boolean;
     setIsOpen: Dispatch<
         SetStateAction<{
-            price: boolean;
-            categories: boolean;
-            healthNeed: boolean;
-            brands: boolean;
-            sortBy: boolean;
+            [key in IProductPageFilter]: boolean;
         }>
     >;
     children: JSX.Element;
@@ -40,6 +46,7 @@ export const ProductPageFilterWrapper: React.FC<Props> = ({
                         className={`dropdown-btn${
                             isOpen ? " mod__is-expanded" : ""
                         }`}
+                        /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
                         onClick={setIsOpen as any}
                     >
                         <img src={Icons.Dropdown} />

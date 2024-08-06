@@ -7,7 +7,8 @@ import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_products-page.scss";
 import { IProductPageFilter } from "./productPageConstant";
-import { ProductPageFilterWrapper } from "./productPageFilter";
+import { ProductPageFilterWrapper } from "./productPageFilterWrapper";
+import { ProductPagePriceFilter } from "./productPagePrceFilter";
 
 export const ProductsPage = () => {
     const t = i18nHelper("shop");
@@ -22,6 +23,7 @@ export const ProductsPage = () => {
         brands: true,
         sortBy: true,
     });
+    const [priceRange, setPriceRange] = useState<number[]>([0, 100]);
 
     return (
         <div id="products-page">
@@ -29,25 +31,12 @@ export const ProductsPage = () => {
                 <ContainerX>
                     <div className="content-row">
                         <div className="filter-list-container">
-                            <ProductPageFilterWrapper
-                                header={t("products.filter.price.header")}
-                                collapsible={false}
-                                className={"price-filter"}
-                                isOpen={filterStatus[IProductPageFilter.Price]}
-                                setIsOpen={() =>
-                                    setFilterStatus({
-                                        ...filterStatus,
-                                        [IProductPageFilter.Price]:
-                                            !filterStatus[
-                                                IProductPageFilter.Price
-                                            ],
-                                    })
-                                }
-                            >
-                                <>
-                                    <p>fdsfds</p>
-                                </>
-                            </ProductPageFilterWrapper>
+                            <ProductPagePriceFilter
+                                filterStatus={filterStatus}
+                                setFilterStatus={setFilterStatus}
+                                value={priceRange}
+                                onChange={setPriceRange}
+                            />
                             <ProductPageFilterWrapper
                                 header={t("products.filter.categories.header")}
                                 collapsible={true}
