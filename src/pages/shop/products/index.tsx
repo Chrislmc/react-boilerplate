@@ -8,7 +8,7 @@ import { useState } from "react";
 import "./_products-page.scss";
 import { IProductPageFilter } from "./productPageConstant";
 import { ProductPageFilterWrapper } from "./productPageFilterWrapper";
-import { ProductPagePriceFilter } from "./productPagePrceFilter";
+import { ProductPagePriceFilter } from "./productPagePriceFilter";
 
 export const ProductsPage = () => {
     const t = i18nHelper("shop");

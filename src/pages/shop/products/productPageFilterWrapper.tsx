@@ -39,19 +39,26 @@ export const ProductPageFilterWrapper: React.FC<Props> = ({
                     isOpen ? " mod__is-expanded" : ""
                 }`}
             >
-                <span>{header}</span>
+                <button
+                    className={`dropdown-btn${
+                        collapsible ? " mod__collapsible" : ""
+                    }`}
+                    disabled={!collapsible}
+                    /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+                    onClick={setIsOpen as any}
+                >
+                    <span>{header}</span>
 
-                {collapsible && (
-                    <button
-                        className={`dropdown-btn${
-                            isOpen ? " mod__is-expanded" : ""
-                        }`}
-                        /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
-                        onClick={setIsOpen as any}
-                    >
-                        <img src={Icons.Dropdown} />
-                    </button>
-                )}
+                    {collapsible && (
+                        <div
+                            className={`dropdown-icon${
+                                isOpen ? " mod__is-expanded" : ""
+                            }`}
+                        >
+                            <img src={Icons.Dropdown} />
+                        </div>
+                    )}
+                </button>
             </div>
             <div
                 className={`filter-content-container${

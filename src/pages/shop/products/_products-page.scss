@@ -38,14 +38,18 @@
 
                     .header-container {
                         width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: flex-start;
                         transition: all 0.5s ease;
                         min-height: 1.5rem;
 
                         &.mod__is-expanded {
                             min-height: 2.25rem;
+                        }
+
+                        .dropdown-btn {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
                         }
 
                         span {
@@ -54,7 +58,7 @@
                             color: $gray;
                         }
 
-                        .dropdown-btn {
+                        .dropdown-icon {
                             width: 1.125rem;
                             aspect-ratio: 1/1;
                             transition: all 0.5s ease;
