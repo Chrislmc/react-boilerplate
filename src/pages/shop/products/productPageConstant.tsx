@@ -34,6 +34,14 @@ export enum IProductPageHealthNeedFilter {
     DetoxAndWeightLoss = "detoxAndWeightLoss",
 }
 
+export enum IProductPageSortBy {
+    Latest = "latest",
+    Popularity = "popularity",
+    AverageRating = "averageRating",
+    PriceLowToHigh = "priceLowToHigh",
+    PriceHighToLow = "priceHighToLow",
+}
+
 export enum IProductPageBrandsFilter {
     A = "A",
     B = "B",
@@ -270,3 +278,26 @@ export const productPageSampleBrandList: {
     [IProductPageBrandsFilter.Y]: [],
     [IProductPageBrandsFilter.Z]: [],
 };
+
+export const productPageSortByOption = [
+    {
+        text: `shared.sortBy.${IProductPageSortBy.Latest}`,
+        value: IProductPageSortBy.Latest,
+    },
+    {
+        text: `shared.sortBy.${IProductPageSortBy.Popularity}`,
+        value: IProductPageSortBy.Popularity,
+    },
+    {
+        text: `shared.sortBy.${IProductPageSortBy.AverageRating}`,
+        value: IProductPageSortBy.AverageRating,
+    },
+    {
+        text: `shared.sortBy.${IProductPageSortBy.PriceLowToHigh}`,
+        value: IProductPageSortBy.PriceLowToHigh,
+    },
+    {
+        text: `shared.sortBy.${IProductPageSortBy.PriceHighToLow}`,
+        value: IProductPageSortBy.PriceHighToLow,
+    },
+];

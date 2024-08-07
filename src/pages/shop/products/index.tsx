@@ -1,4 +1,5 @@
 import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
+import { IOption } from "@/components/imiCheckBox";
 import { ImiInput } from "@/components/imiInput";
 import { ImiSection } from "@/components/imiSection";
 import { ImiSectionHeader } from "@/components/imiSectionHeader";
@@ -11,11 +12,14 @@ import { ProductPageCategoriesFilter } from "./productPageCategoriesFilter";
 import {
     IProductPageActiveFilter,
     IProductPageFilter,
+    IProductPageSortBy,
     productPageCategoriesFilterOption,
     productPageHealthNeedFilterOption,
+    productPageSortByOption,
 } from "./productPageConstant";
 import { ProductPageHealthNeedFilter } from "./productPageHealthNeedFilter";
 import { ProductPagePriceFilter } from "./productPagePriceFilter";
+import { ProductPageSorter } from "./productPageSorter";
 
 export const ProductsPage = () => {
     const t = i18nHelper("shop");
@@ -31,6 +35,11 @@ export const ProductsPage = () => {
             ...option,
             text: t(option.text),
         }));
+
+    const translatedSortByOption = productPageSortByOption.map((option) => ({
+        ...option,
+        text: t(option.text),
+    }));
 
     const [searchString, setSearchString] = useState<string>("");
     const [filterStatus, setFilterStatus] = useState<{
@@ -48,6 +57,9 @@ export const ProductsPage = () => {
         [IProductPageFilter.HealthNeed]: [],
         [IProductPageFilter.Brands]: [],
     });
+    const [sortBy, setSortBy] = useState<IOption<IProductPageSortBy>>(
+        translatedSortByOption[0]
+    );
     console.log(activeFilter);
 
     return (
@@ -84,6 +96,14 @@ export const ProductsPage = () => {
                                 setFilterStatus={setFilterStatus}
                                 activeFilter={activeFilter}
                                 setActiveFilter={setActiveFilter}
+                            />
+
+                            <ProductPageSorter
+                                filterStatus={filterStatus}
+                                setFilterStatus={setFilterStatus}
+                                sortBy={sortBy}
+                                setSortBy={setSortBy}
+                                filterOptions={translatedSortByOption}
                             />
                         </div>
 

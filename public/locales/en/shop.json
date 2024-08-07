@@ -122,6 +122,14 @@
                 "Y": "Y",
                 "Z": "Z"
             }
+        },
+        "sortBy": {
+            "header": "Sort By",
+            "latest": "Latest",
+            "popularity": "Popularity",
+            "averageRating": "Average rating",
+            "priceLowToHigh": "Price low to high",
+            "priceHighToLow": "Price high to low"
         }
     }
 }

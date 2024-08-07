@@ -7,12 +7,14 @@ export interface IOption<T> {
 }
 
 interface Props<T> {
+    allowMultiSelect?: boolean;
     option: IOption<T>;
     isSelected: boolean;
     onClick?: (option: IOption<T>, isSelected: boolean) => void;
 }
 
 export const ImiCheckBox = <T extends string>({
+    allowMultiSelect = true,
     option,
     isSelected,
     onClick,
@@ -22,7 +24,12 @@ export const ImiCheckBox = <T extends string>({
     };
 
     return (
-        <button className={"imi-check-box-component"} onClick={onCheckBoxClick}>
+        <button
+            className={`imi-check-box-component${
+                allowMultiSelect ? " mod__multi-select" : " mod__single-select"
+            }`}
+            onClick={onCheckBoxClick}
+        >
             <div
                 className={`tick-container${
                     isSelected ? " mod__selected" : ""

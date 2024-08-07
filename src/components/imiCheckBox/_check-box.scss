@@ -10,34 +10,8 @@
     padding-left: 0.0625rem;
 
     .tick-container {
-        background-color: $white;
         height: 0.875rem;
         width: 0.875rem;
-        border: 0.125rem solid $white;
-        border-radius: 0.25rem;
-        outline: 0.0625rem solid $gray;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &.mod__selected {
-            background-color: $blueish-green-700;
-        }
-
-        .tick-icon-container {
-            height: 0.625rem;
-            width: 0.625rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-        }
     }
 
     .label {
@@ -54,4 +28,54 @@
         }
     }
 
+    &.mod__multi-select {
+        .tick-container {
+            background-color: $white;
+            border: 0.125rem solid $white;
+            border-radius: 0.25rem;
+            outline: 0.0625rem solid $gray;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.mod__selected {
+                background-color: $blueish-green-700;
+            }
+
+            .tick-icon-container {
+                height: 0.625rem;
+                width: 0.625rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    &.mod__single-select {
+        .tick-container {
+            height: calc(0.875rem - 0.375rem);
+            width: calc(0.875rem - 0.375rem);
+            background-color: $white;
+            border-radius: 9999rem;
+            outline: 0.0625rem solid $gray-400;
+            border: 0.1875rem solid $white;
+
+            &.mod__selected {
+                background-color: $blueish-green-700;
+                outline: 0.0625rem solid $gray;
+
+                .tick-icon-container {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
 }
