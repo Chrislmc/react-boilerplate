@@ -1,7 +1,8 @@
+import { IOption } from "@/components/imiCheckBox";
 import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiInput } from "@/components/imiInput";
 import { ImiSection } from "@/components/imiSection";
-import { IOption, ImiSelect } from "@/components/imiSelect";
+import { ImiSelect } from "@/components/imiSelect";
 import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";

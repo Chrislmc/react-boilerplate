@@ -77,9 +77,7 @@
             "price": {
                 "header": "Price"
             },
-            "categories": {
-                "header": "Categories"
-            },
+            "categories": {},
             "healthNeed": {
                 "header": "Health Need(s)"
             },
@@ -88,6 +86,20 @@
             },
             "sortBy": {
                 "header": "SortBy"
+            }
+        }
+    },
+    "shared": {
+        "filter": {
+            "categories": {
+                "header": "Categories",
+                "saleAndOffers": "Sale & offers",
+                "vitaminAndMinerals": "Vitamin & minerals",
+                "probiotics": "Probiotics",
+                "oils": "Oils",
+                "supplements": "Supplements",
+                "lifestyle": "Lifestyle",
+                "linkText": "Shop all products"
             }
         }
     }

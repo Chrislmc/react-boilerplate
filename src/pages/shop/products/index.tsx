@@ -1,4 +1,5 @@
 import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
+import { IOption } from "@/components/imiCheckBox";
 import { ImiInput } from "@/components/imiInput";
 import { ImiSection } from "@/components/imiSection";
 import { ImiSectionHeader } from "@/components/imiSectionHeader";
@@ -6,12 +7,23 @@ import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_products-page.scss";
-import { IProductPageFilter } from "./productPageConstant";
+import { ProductPageCategoriesFilter } from "./productPageCategoriesFilter";
+import {
+    IProductPageCategoriesFilter,
+    IProductPageFilter,
+    productPageCategoriesFilterOption,
+} from "./productPageConstant";
 import { ProductPageFilterWrapper } from "./productPageFilterWrapper";
 import { ProductPagePriceFilter } from "./productPagePriceFilter";
 
 export const ProductsPage = () => {
     const t = i18nHelper("shop");
+
+    const translatedCategoriesFilterOption =
+        productPageCategoriesFilterOption.map((option) => ({
+            ...option,
+            text: t(option.text),
+        }));
 
     const [searchString, setSearchString] = useState<string>("");
     const [filterStatus, setFilterStatus] = useState<{
@@ -24,6 +36,9 @@ export const ProductsPage = () => {
         sortBy: true,
     });
     const [priceRange, setPriceRange] = useState<number[]>([0, 100]);
+    const [selectedCategoriesOption, setSelectedCategoriesOption] = useState<
+        IOption<IProductPageCategoriesFilter>[]
+    >([]);
 
     return (
         <div id="products-page">
@@ -37,25 +52,15 @@ export const ProductsPage = () => {
                                 value={priceRange}
                                 onChange={setPriceRange}
                             />
-                            <ProductPageFilterWrapper
-                                header={t("products.filter.categories.header")}
-                                collapsible={true}
-                                className={"categories-filter"}
-                                isOpen={
-                                    filterStatus[IProductPageFilter.Categories]
-                                }
-                                setIsOpen={() =>
-                                    setFilterStatus({
-                                        ...filterStatus,
-                                        [IProductPageFilter.Categories]:
-                                            !filterStatus[
-                                                IProductPageFilter.Categories
-                                            ],
-                                    })
-                                }
-                            >
-                                <></>
-                            </ProductPageFilterWrapper>
+
+                            <ProductPageCategoriesFilter
+                                filterStatus={filterStatus}
+                                setFilterStatus={setFilterStatus}
+                                selectedOption={selectedCategoriesOption}
+                                onChange={setSelectedCategoriesOption}
+                                filterOptions={translatedCategoriesFilterOption}
+                            />
+
                             <ProductPageFilterWrapper
                                 header={t("products.filter.healthNeed.header")}
                                 collapsible={true}

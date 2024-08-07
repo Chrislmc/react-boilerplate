@@ -24,7 +24,7 @@ export const ImiSelect = <T extends string>({
     const t = i18nHelper("shared");
 
     const selectComponentRef = useRef<HTMLDivElement>(null);
-    const [isExpanded, setIsExpanded] = useState(true);
+    const [isExpanded, setIsExpanded] = useState(false);
     const [displayText, setDisplayText] = useState(defaultOption.text);
 
     useEffect(() => {
