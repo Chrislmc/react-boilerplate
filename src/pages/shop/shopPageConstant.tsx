@@ -112,37 +112,37 @@ export const shopPageProductCardList = [
 export const shopPageHealthNeedCardList = [
     {
         imgUrl: Icons.Allergies,
-        text: "shop.healthNeed.allergies",
+        text: "shared.filter.healthNeed.allergies",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.GutHealth,
-        text: "shop.healthNeed.gutHealth",
+        text: "shared.filter.healthNeed.gutHealth",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.Immunity,
-        text: "shop.healthNeed.immunity",
+        text: "shared.filter.healthNeed.immunity",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.Sleep,
-        text: "shop.healthNeed.sleep",
+        text: "shared.filter.healthNeed.sleep",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.HormonalHealth,
-        text: "shop.healthNeed.hormonalHealth",
+        text: "shared.filter.healthNeed.hormonalHealth",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.Pain,
-        text: "shop.healthNeed.pain",
+        text: "shared.filter.healthNeed.pain",
         redirectUrl: "",
     },
     {
         imgUrl: Icons.DetoxAndWeightLoss,
-        text: "shop.healthNeed.detoxAndWeightLoss",
+        text: "shared.filter.healthNeed.detoxAndWeightLoss",
         redirectUrl: "",
     },
 ];

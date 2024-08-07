@@ -15,7 +15,7 @@ export const ShopPageCategorySection = () => {
     return (
         <ImiDescSection
             style="subsection"
-            header={t("shop.category.header")}
+            header={t("shop.categories.header")}
             customBottomComponent={
                 <>
                     <div className="custom-category-container">

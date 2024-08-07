@@ -11,9 +11,11 @@ import { ProductPageCategoriesFilter } from "./productPageCategoriesFilter";
 import {
     IProductPageCategoriesFilter,
     IProductPageFilter,
+    IProductPageHealthNeedFilter,
     productPageCategoriesFilterOption,
+    productPageHealthNeedFilterOption,
 } from "./productPageConstant";
-import { ProductPageFilterWrapper } from "./productPageFilterWrapper";
+import { ProductPageHealthNeedFilter } from "./productPageHealthNeedFilter";
 import { ProductPagePriceFilter } from "./productPagePriceFilter";
 
 export const ProductsPage = () => {
@@ -21,6 +23,12 @@ export const ProductsPage = () => {
 
     const translatedCategoriesFilterOption =
         productPageCategoriesFilterOption.map((option) => ({
+            ...option,
+            text: t(option.text),
+        }));
+
+    const translatedHealthNeedFilterOption =
+        productPageHealthNeedFilterOption.map((option) => ({
             ...option,
             text: t(option.text),
         }));
@@ -38,6 +46,9 @@ export const ProductsPage = () => {
     const [priceRange, setPriceRange] = useState<number[]>([0, 100]);
     const [selectedCategoriesOption, setSelectedCategoriesOption] = useState<
         IOption<IProductPageCategoriesFilter>[]
+    >([]);
+    const [selectedHealthNeedOption, setSelectedHealthNeedOption] = useState<
+        IOption<IProductPageHealthNeedFilter>[]
     >([]);
 
     return (
@@ -61,30 +72,15 @@ export const ProductsPage = () => {
                                 filterOptions={translatedCategoriesFilterOption}
                             />
 
-                            <ProductPageFilterWrapper
-                                header={t("products.filter.healthNeed.header")}
-                                collapsible={true}
-                                className={"health-need-filter"}
-                                isOpen={
-                                    filterStatus[IProductPageFilter.HealthNeed]
-                                }
-                                setIsOpen={() =>
-                                    setFilterStatus({
-                                        ...filterStatus,
-                                        [IProductPageFilter.HealthNeed]:
-                                            !filterStatus[
-                                                IProductPageFilter.HealthNeed
-                                            ],
-                                    })
-                                }
-                            >
-                                <>
-                                    <p>fdsfds</p>
-                                    <p>fdsfds</p>
-                                    <p>fdsfds</p>
-                                </>
-                            </ProductPageFilterWrapper>
+                            <ProductPageHealthNeedFilter
+                                filterStatus={filterStatus}
+                                setFilterStatus={setFilterStatus}
+                                selectedOption={selectedHealthNeedOption}
+                                onChange={setSelectedHealthNeedOption}
+                                filterOptions={translatedHealthNeedFilterOption}
+                            />
                         </div>
+
                         <div className="main-container">
                             <div className="header-container">
                                 <ImiSectionHeader

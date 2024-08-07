@@ -2,8 +2,8 @@ import { IOption, ImiCheckBox } from "@/components/imiCheckBox";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { Dispatch, SetStateAction } from "react";
 import {
-    IProductPageCategoriesFilter,
     IProductPageFilter,
+    IProductPageHealthNeedFilter,
 } from "./productPageConstant";
 import {
     IProductPageFilterBaseProps,
@@ -11,12 +11,12 @@ import {
 } from "./productPageFilterWrapper";
 
 interface Props extends IProductPageFilterBaseProps {
-    filterOptions: IOption<IProductPageCategoriesFilter>[];
-    selectedOption: IOption<IProductPageCategoriesFilter>[];
-    onChange: Dispatch<SetStateAction<IOption<IProductPageCategoriesFilter>[]>>;
+    filterOptions: IOption<IProductPageHealthNeedFilter>[];
+    selectedOption: IOption<IProductPageHealthNeedFilter>[];
+    onChange: Dispatch<SetStateAction<IOption<IProductPageHealthNeedFilter>[]>>;
 }
 
-export const ProductPageCategoriesFilter: React.FC<Props> = ({
+export const ProductPageHealthNeedFilter: React.FC<Props> = ({
     filterStatus,
     setFilterStatus,
     filterOptions,
@@ -26,7 +26,7 @@ export const ProductPageCategoriesFilter: React.FC<Props> = ({
     const t = i18nHelper("shop");
 
     const onCheckBoxItemBtnClick = (
-        targetOption: IOption<IProductPageCategoriesFilter>,
+        targetOption: IOption<IProductPageHealthNeedFilter>,
         isSelected: boolean
     ) => {
         let filteredOption = selectedOption;
@@ -52,15 +52,15 @@ export const ProductPageCategoriesFilter: React.FC<Props> = ({
 
     return (
         <ProductPageFilterWrapper
-            header={t("shared.filter.categories.header")}
+            header={t("shared.filter.healthNeed.header")}
             collapsible={true}
-            className={"categories-filter"}
-            isOpen={filterStatus[IProductPageFilter.Categories]}
+            className={"health-need-filter"}
+            isOpen={filterStatus[IProductPageFilter.HealthNeed]}
             setIsOpen={() =>
                 setFilterStatus({
                     ...filterStatus,
-                    [IProductPageFilter.Categories]:
-                        !filterStatus[IProductPageFilter.Categories],
+                    [IProductPageFilter.HealthNeed]:
+                        !filterStatus[IProductPageFilter.HealthNeed],
                 })
             }
         >

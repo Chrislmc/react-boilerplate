@@ -13,15 +13,8 @@
                 "linkText": "Shop all products"
             }
         },
-        "category": {
-            "header": "CATEGORIES",
-            "saleAndOffers": "Sale & offers",
-            "vitaminAndMinerals": "Vitamin & minerals",
-            "probiotics": "Probiotics",
-            "oils": "Oils",
-            "supplements": "Supplements",
-            "lifestyle": "Lifestyle",
-            "linkText": "Shop all products"
+        "categories": {
+            "header": "CATEGORIES"
         },
         "recommended": {
             "header": "WHAT WE LOVE THIS MONTH",
@@ -29,13 +22,6 @@
         },
         "healthNeed": {
             "header": "SHOP BY HEALTH NEED",
-            "allergies": "Allergies",
-            "gutHealth": "Gut health",
-            "immunity": "Immunity",
-            "sleep": "Sleep",
-            "hormonalHealth": "Hormonal health",
-            "pain": "Pain",
-            "detoxAndWeightLoss": "Detox & weightloss",
             "linkText": "Shop all health needs"
         },
         "articles": {
@@ -78,9 +64,7 @@
                 "header": "Price"
             },
             "categories": {},
-            "healthNeed": {
-                "header": "Health Need(s)"
-            },
+            "healthNeed": {},
             "brands": {
                 "header": "Brands"
             },
@@ -100,6 +84,16 @@
                 "supplements": "Supplements",
                 "lifestyle": "Lifestyle",
                 "linkText": "Shop all products"
+            },
+            "healthNeed": {
+                "header": "Health Need(s)",
+                "allergies": "Allergies",
+                "gutHealth": "Gut health",
+                "immunity": "Immunity",
+                "sleep": "Sleep",
+                "hormonalHealth": "Hormonal health",
+                "pain": "Pain",
+                "detoxAndWeightLoss": "Detox & weightloss"
             }
         }
     }
