@@ -9,10 +9,10 @@ export enum IProductPageFilter {
 }
 
 export interface IProductPageActiveFilter {
-    [IProductPageFilter.Price]: number[],
-    [IProductPageFilter.Categories]: IOption<IProductPageCategoriesFilter>[],
-    [IProductPageFilter.HealthNeed]: IOption<IProductPageHealthNeedFilter>[],
-    [IProductPageFilter.Brands]: string[],
+    [IProductPageFilter.Price]: number[];
+    [IProductPageFilter.Categories]: IOption<IProductPageCategoriesFilter>[];
+    [IProductPageFilter.HealthNeed]: IOption<IProductPageHealthNeedFilter>[];
+    [IProductPageFilter.Brands]: IOption<string>[];
 }
 
 export enum IProductPageCategoriesFilter {
@@ -227,3 +227,46 @@ export const productPageBrandsFilterOption = [
         value: IProductPageBrandsFilter.Z,
     },
 ];
+
+export const productPageSampleBrandList: {
+    [key in IProductPageBrandsFilter]: IOption<string>[];
+} = {
+    [IProductPageBrandsFilter.A]: [{ text: "Apple Inc.", value: "Apple Inc." }],
+    [IProductPageBrandsFilter.B]: [],
+    [IProductPageBrandsFilter.C]: [
+        { text: "Cell-Logic", value: "Cell-Logic" },
+        { text: "Coconut Matter", value: "Coconut Matter" },
+        { text: "Coka Cola", value: "Coka Cola" },
+        { text: "Citigroup", value: "Citigroup" },
+        { text: "Carrefour", value: "Carrefour" },
+        {
+            text: "Concrete Aggregates Corp.",
+            value: "Concrete Aggregates Corp.",
+        },
+    ],
+    [IProductPageBrandsFilter.D]: [
+        { text: "Deutsche Bank AG", value: "Deutsche Bank AG" },
+    ],
+    [IProductPageBrandsFilter.E]: [],
+    [IProductPageBrandsFilter.F]: [],
+    [IProductPageBrandsFilter.G]: [],
+    [IProductPageBrandsFilter.H]: [],
+    [IProductPageBrandsFilter.I]: [],
+    [IProductPageBrandsFilter.J]: [],
+    [IProductPageBrandsFilter.K]: [],
+    [IProductPageBrandsFilter.L]: [],
+    [IProductPageBrandsFilter.M]: [],
+    [IProductPageBrandsFilter.N]: [],
+    [IProductPageBrandsFilter.O]: [],
+    [IProductPageBrandsFilter.P]: [],
+    [IProductPageBrandsFilter.Q]: [],
+    [IProductPageBrandsFilter.R]: [],
+    [IProductPageBrandsFilter.S]: [],
+    [IProductPageBrandsFilter.T]: [],
+    [IProductPageBrandsFilter.U]: [],
+    [IProductPageBrandsFilter.V]: [],
+    [IProductPageBrandsFilter.W]: [],
+    [IProductPageBrandsFilter.X]: [],
+    [IProductPageBrandsFilter.Y]: [],
+    [IProductPageBrandsFilter.Z]: [],
+};

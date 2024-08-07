@@ -32,13 +32,6 @@ export const ProductsPage = () => {
             text: t(option.text),
         }));
 
-    // const translatedBrandsFilterOption = productPageBrandsFilterOption.map(
-    //     (option) => ({
-    //         ...option,
-    //         text: t(option.text),
-    //     })
-    // );
-
     const [searchString, setSearchString] = useState<string>("");
     const [filterStatus, setFilterStatus] = useState<{
         [key in IProductPageFilter]: boolean;
@@ -89,9 +82,8 @@ export const ProductsPage = () => {
                             <ProductPageBrandsFilter
                                 filterStatus={filterStatus}
                                 setFilterStatus={setFilterStatus}
-                                // selectedOption={selectedBrandsOption}
-                                // onChange={setSelectedBrandsOption}
-                                // filterOptions={translatedBrandsFilterOption}
+                                activeFilter={activeFilter}
+                                setActiveFilter={setActiveFilter}
                             />
                         </div>
 

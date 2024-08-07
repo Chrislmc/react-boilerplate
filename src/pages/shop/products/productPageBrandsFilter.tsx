@@ -5,24 +5,20 @@ import {
     IProductPageBrandsFilter,
     IProductPageFilter,
     productPageBrandsFilterOption,
+    productPageSampleBrandList,
 } from "./productPageConstant";
 import {
     IProductPageFilterBaseProps,
     ProductPageFilterWrapper,
 } from "./productPageFilterWrapper";
 
-interface Props extends IProductPageFilterBaseProps {
-    // filterOptions: IOption<IProductPageBrandsFilter>[];
-    // selectedOption: IOption<IProductPageBrandsFilter>[];
-    // onChange: Dispatch<SetStateAction<IOption<IProductPageBrandsFilter>[]>>;
-}
+interface Props extends IProductPageFilterBaseProps {}
 
 export const ProductPageBrandsFilter: React.FC<Props> = ({
     filterStatus,
     setFilterStatus,
-    // filterOptions,
-    // selectedOption,
-    // onChange,
+    activeFilter,
+    setActiveFilter,
 }) => {
     const t = i18nHelper("shop");
 
@@ -33,33 +29,70 @@ export const ProductPageBrandsFilter: React.FC<Props> = ({
         })
     );
 
-    const [selectedBrandsCharacter, setSelectedBrandsCharacter] = useState<
-        IOption<IProductPageBrandsFilter>[]
-    >([]);
+    const [selectedBrandsCharacter, setSelectedBrandsCharacter] =
+        useState<IOption<IProductPageBrandsFilter> | null>(null);
+    const [isLoadingBrandList, setIsLoadingBrandList] = useState(false);
+
+    const showBrandList =
+        selectedBrandsCharacter &&
+        productPageSampleBrandList?.[selectedBrandsCharacter.value]?.length;
 
     const onCharacterBtnClick = (
         targetOption: IOption<IProductPageBrandsFilter>,
         isSelected: boolean
     ) => {
-        let filteredOption = selectedBrandsCharacter;
+        if (selectedBrandsCharacter) {
+            setIsLoadingBrandList(true);
+
+            /* Reset brand name filter */
+            setActiveFilter({
+                ...activeFilter,
+                [IProductPageFilter.Brands]: [],
+            });
+
+            setTimeout(() => {
+                if (isSelected) {
+                    setSelectedBrandsCharacter(null);
+                } else {
+                    setSelectedBrandsCharacter(targetOption);
+                }
+                setIsLoadingBrandList(false);
+            }, 500);
+        } else {
+            setSelectedBrandsCharacter(targetOption);
+        }
+    };
+
+    const onBrandNameClick = (
+        targetOption: IOption<string>,
+        isSelected: boolean
+    ) => {
+        if (!selectedBrandsCharacter) return;
+        let filteredBrandsOption = activeFilter[IProductPageFilter.Brands];
 
         if (isSelected) {
-            filteredOption = [
-                ...selectedBrandsCharacter.filter(
+            filteredBrandsOption = [
+                ...activeFilter[IProductPageFilter.Brands].filter(
                     (option) => option.value !== targetOption.value
                 ),
             ];
         } else {
-            filteredOption = translatedBrandsFilterOption.filter(
-                (option) =>
-                    !!selectedBrandsCharacter.find(
-                        (selectedBrandsCharacter) =>
-                            selectedBrandsCharacter.value === option.value
-                    ) || option.value === targetOption.value
-            );
+            filteredBrandsOption =
+                productPageSampleBrandList?.[
+                    selectedBrandsCharacter.value
+                ]?.filter(
+                    (option) =>
+                        !!activeFilter[IProductPageFilter.Brands].find(
+                            (selectedItem) =>
+                                selectedItem.value === option.value
+                        ) || option.value === targetOption.value
+                ) || [];
         }
 
-        setSelectedBrandsCharacter(filteredOption);
+        setActiveFilter({
+            ...activeFilter,
+            [IProductPageFilter.Brands]: filteredBrandsOption,
+        });
     };
 
     return (
@@ -76,34 +109,101 @@ export const ProductPageBrandsFilter: React.FC<Props> = ({
                 })
             }
         >
-            <div className="brand-grid-container">
-                {translatedBrandsFilterOption.map((option) => {
-                    const isSelected =
-                        selectedBrandsCharacter
-                            .map((item) => item.value)
-                            .indexOf(option.value) > -1;
+            <>
+                <div
+                    className={`brand-grid-container${
+                        isLoadingBrandList ? " mod__in-transition" : ""
+                    }`}
+                >
+                    {translatedBrandsFilterOption.map((option) => {
+                        const isSelected =
+                            selectedBrandsCharacter?.value === option.value;
+                        const hasAvailableBrands =
+                            productPageSampleBrandList[option.value]?.length;
 
-                    return (
-                        <div
-                            key={`brand-character-${option.value}`}
-                            className={`brand-character-container${
-                                isSelected ? " mod__selected" : ""
-                            }`}
-                        >
-                            <button
-                                className={`brand-character-btn${
+                        return (
+                            <div
+                                key={`brand-character-${option.value}`}
+                                className={`brand-character-container${
                                     isSelected ? " mod__selected" : ""
                                 }`}
-                                onClick={() =>
-                                    onCharacterBtnClick(option, isSelected)
-                                }
                             >
-                                <span>{option.text}</span>
-                            </button>
-                        </div>
-                    );
-                })}
-            </div>
+                                <button
+                                    className={`brand-character-btn${
+                                        isSelected ? " mod__selected" : ""
+                                    }${
+                                        isLoadingBrandList
+                                            ? " mod__in-transition"
+                                            : ""
+                                    }${
+                                        hasAvailableBrands
+                                            ? " mod__has-available-brands"
+                                            : ""
+                                    }`}
+                                    onClick={() => {
+                                        if (!isLoadingBrandList) {
+                                            onCharacterBtnClick(
+                                                option,
+                                                isSelected
+                                            );
+                                        }
+                                    }}
+                                    disabled={
+                                        !filterStatus[
+                                            IProductPageFilter.Brands
+                                        ] ||
+                                        isLoadingBrandList ||
+                                        !hasAvailableBrands
+                                    }
+                                >
+                                    <span>{option.text}</span>
+                                </button>
+                            </div>
+                        );
+                    })}
+                </div>
+
+                <div
+                    className={`brand-list-container${
+                        showBrandList && !isLoadingBrandList
+                            ? " mod__expanded"
+                            : ""
+                    }`}
+                >
+                    <h5 className="brand-character-header">
+                        {selectedBrandsCharacter?.value}
+                    </h5>
+                    <div className="brand-list">
+                        {showBrandList
+                            ? productPageSampleBrandList[
+                                  selectedBrandsCharacter.value
+                              ].map((option) => {
+                                  const isSelected =
+                                      activeFilter[IProductPageFilter.Brands]
+                                          .map((item) => item.value)
+                                          .indexOf(option.value) > -1;
+
+                                  return (
+                                      <button
+                                          key={`brand-btn-${option.value}`}
+                                          className={`brand-name-btn${
+                                              isSelected ? " mod__selected" : ""
+                                          }`}
+                                          onClick={() =>
+                                              onBrandNameClick(
+                                                  option,
+                                                  isSelected
+                                              )
+                                          }
+                                      >
+                                          <span>{option.text}</span>
+                                      </button>
+                                  );
+                              })
+                            : null}
+                    </div>
+                </div>
+            </>
         </ProductPageFilterWrapper>
     );
 };
