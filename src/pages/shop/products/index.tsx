@@ -7,6 +7,7 @@ import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_products-page.scss";
+import { ProductPageBrandsFilter } from "./productPageBrandsFilter";
 import { ProductPageCategoriesFilter } from "./productPageCategoriesFilter";
 import {
     IProductPageCategoriesFilter,
@@ -78,6 +79,14 @@ export const ProductsPage = () => {
                                 selectedOption={selectedHealthNeedOption}
                                 onChange={setSelectedHealthNeedOption}
                                 filterOptions={translatedHealthNeedFilterOption}
+                            />
+
+                            <ProductPageBrandsFilter
+                                filterStatus={filterStatus}
+                                setFilterStatus={setFilterStatus}
+                                // selectedOption={selectedBrandsOption}
+                                // onChange={setSelectedBrandsOption}
+                                // filterOptions={translatedBrandsFilterOption}
                             />
                         </div>
 

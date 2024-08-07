@@ -25,6 +25,35 @@ export enum IProductPageHealthNeedFilter {
     DetoxAndWeightLoss = "detoxAndWeightLoss",
 }
 
+export enum IProductPageBrandsFilter {
+    A = "A",
+    B = "B",
+    C = "C",
+    D = "D",
+    E = "E",
+    F = "F",
+    G = "G",
+    H = "H",
+    I = "I",
+    J = "J",
+    K = "K",
+    L = "L",
+    M = "M",
+    N = "N",
+    O = "O",
+    P = "P",
+    Q = "Q",
+    R = "R",
+    S = "S",
+    T = "T",
+    U = "U",
+    V = "V",
+    W = "W",
+    X = "X",
+    Y = "Y",
+    Z = "Z",
+}
+
 export const productPageCategoriesFilterOption = [
     {
         text: `shared.filter.categories.${IProductPageCategoriesFilter.SaleAndOffers}`,
@@ -80,5 +109,112 @@ export const productPageHealthNeedFilterOption = [
     {
         text: `shared.filter.healthNeed.${IProductPageHealthNeedFilter.DetoxAndWeightLoss}`,
         value: IProductPageHealthNeedFilter.DetoxAndWeightLoss,
+    },
+];
+
+export const productPageBrandsFilterOption = [
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.A}`,
+        value: IProductPageBrandsFilter.A,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.B}`,
+        value: IProductPageBrandsFilter.B,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.C}`,
+        value: IProductPageBrandsFilter.C,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.D}`,
+        value: IProductPageBrandsFilter.D,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.E}`,
+        value: IProductPageBrandsFilter.E,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.F}`,
+        value: IProductPageBrandsFilter.F,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.G}`,
+        value: IProductPageBrandsFilter.G,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.H}`,
+        value: IProductPageBrandsFilter.H,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.I}`,
+        value: IProductPageBrandsFilter.I,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.J}`,
+        value: IProductPageBrandsFilter.J,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.K}`,
+        value: IProductPageBrandsFilter.K,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.L}`,
+        value: IProductPageBrandsFilter.L,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.M}`,
+        value: IProductPageBrandsFilter.M,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.N}`,
+        value: IProductPageBrandsFilter.N,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.O}`,
+        value: IProductPageBrandsFilter.O,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.P}`,
+        value: IProductPageBrandsFilter.P,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.Q}`,
+        value: IProductPageBrandsFilter.Q,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.R}`,
+        value: IProductPageBrandsFilter.R,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.S}`,
+        value: IProductPageBrandsFilter.S,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.T}`,
+        value: IProductPageBrandsFilter.T,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.U}`,
+        value: IProductPageBrandsFilter.U,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.V}`,
+        value: IProductPageBrandsFilter.V,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.W}`,
+        value: IProductPageBrandsFilter.W,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.X}`,
+        value: IProductPageBrandsFilter.X,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.Y}`,
+        value: IProductPageBrandsFilter.Y,
+    },
+    {
+        text: `shared.filter.brands.${IProductPageBrandsFilter.Z}`,
+        value: IProductPageBrandsFilter.Z,
     },
 ];
