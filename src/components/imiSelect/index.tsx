@@ -1,12 +1,8 @@
 import { Icons } from "@/assets/icons";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
+import { IOption, ImiCheckBox } from "../imiCheckBox";
 import "./_select.scss";
-
-export interface IOption<T> {
-    text: string;
-    value: T;
-}
 
 export interface IImiSelectProps<T> {
     options: IOption<T>[];
@@ -28,7 +24,7 @@ export const ImiSelect = <T extends string>({
     const t = i18nHelper("shared");
 
     const selectComponentRef = useRef<HTMLDivElement>(null);
-    const [isExpanded, setIsExpanded] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(true);
     const [displayText, setDisplayText] = useState(defaultOption.text);
 
     useEffect(() => {
@@ -74,6 +70,7 @@ export const ImiSelect = <T extends string>({
         if (setInTransition) setInTransition(true);
 
         let filteredOption = selectedOption;
+
         if (isSelected) {
             filteredOption = [
                 ...selectedOption.filter(
@@ -122,40 +119,11 @@ export const ImiSelect = <T extends string>({
                                 key={`dropdown-item-${option.value}`}
                                 className={parseClassName("dropdown-item")}
                             >
-                                <button
-                                    className={"dropdown-item-btn"}
-                                    onClick={() =>
-                                        onDropdownItemBtnClick(
-                                            option,
-                                            isSelected
-                                        )
-                                    }
-                                >
-                                    <div
-                                        className={`tick-container${
-                                            isSelected ? " mod__selected" : ""
-                                        }`}
-                                    >
-                                        <div
-                                            className={`tick-icon-container${
-                                                isSelected
-                                                    ? " mod__selected"
-                                                    : ""
-                                            }`}
-                                        >
-                                            {isSelected && (
-                                                <img src={Icons.Tick} />
-                                            )}
-                                        </div>
-                                    </div>
-                                    <p
-                                        className={`dropdown-item-desc${
-                                            isSelected ? " mod__selected" : ""
-                                        }`}
-                                    >
-                                        {option.text}
-                                    </p>
-                                </button>
+                                <ImiCheckBox
+                                    option={option}
+                                    isSelected={isSelected}
+                                    onClick={onDropdownItemBtnClick}
+                                />
                             </div>
                         );
                     })}

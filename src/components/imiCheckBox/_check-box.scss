@@ -1,0 +1,56 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-check-box-component {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.625rem;
+
+    .tick-container {
+        background-color: $white;
+        height: 0.875rem;
+        width: 0.875rem;
+        border: 0.125rem solid $white;
+        border-radius: 0.25rem;
+        outline: 0.0625rem solid $gray;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.mod__selected {
+            background-color: $blueish-green-700;
+        }
+
+        .tick-icon-container {
+            height: 0.625rem;
+            width: 0.625rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .label {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-family: $font-secondary;
+        font-weight: 500;
+        letter-spacing: 0.04375rem;
+        color: $gray-600;
+
+        &.mod__selected {
+            color: $gray;
+            font-weight: 700;
+        }
+    }
+
+}
