@@ -1,6 +1,5 @@
 import { IOption, ImiCheckBox } from "@/components/imiCheckBox";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { Dispatch, SetStateAction } from "react";
 import {
     IProductPageFilter,
     IProductPageHealthNeedFilter,
@@ -12,16 +11,14 @@ import {
 
 interface Props extends IProductPageFilterBaseProps {
     filterOptions: IOption<IProductPageHealthNeedFilter>[];
-    selectedOption: IOption<IProductPageHealthNeedFilter>[];
-    onChange: Dispatch<SetStateAction<IOption<IProductPageHealthNeedFilter>[]>>;
 }
 
 export const ProductPageHealthNeedFilter: React.FC<Props> = ({
     filterStatus,
     setFilterStatus,
     filterOptions,
-    selectedOption,
-    onChange,
+    activeFilter,
+    setActiveFilter,
 }) => {
     const t = i18nHelper("shop");
 
@@ -29,25 +26,28 @@ export const ProductPageHealthNeedFilter: React.FC<Props> = ({
         targetOption: IOption<IProductPageHealthNeedFilter>,
         isSelected: boolean
     ) => {
-        let filteredOption = selectedOption;
+        let filteredHealthNeedOption =
+            activeFilter[IProductPageFilter.HealthNeed];
 
         if (isSelected) {
-            filteredOption = [
-                ...selectedOption.filter(
+            filteredHealthNeedOption = [
+                ...activeFilter[IProductPageFilter.HealthNeed].filter(
                     (option) => option.value !== targetOption.value
                 ),
             ];
         } else {
-            filteredOption = filterOptions.filter(
+            filteredHealthNeedOption = filterOptions.filter(
                 (option) =>
-                    !!selectedOption.find(
-                        (selectedOption) =>
-                            selectedOption.value === option.value
+                    !!activeFilter[IProductPageFilter.HealthNeed].find(
+                        (selectedItem) => selectedItem.value === option.value
                     ) || option.value === targetOption.value
             );
         }
 
-        onChange(filteredOption);
+        setActiveFilter({
+            ...activeFilter,
+            [IProductPageFilter.HealthNeed]: filteredHealthNeedOption,
+        });
     };
 
     return (
@@ -67,7 +67,7 @@ export const ProductPageHealthNeedFilter: React.FC<Props> = ({
             <>
                 {filterOptions.map((option) => {
                     const isSelected =
-                        selectedOption
+                        activeFilter[IProductPageFilter.HealthNeed]
                             .map((item) => item.value)
                             .indexOf(option.value) > -1;
 

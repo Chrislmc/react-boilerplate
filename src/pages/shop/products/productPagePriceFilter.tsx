@@ -1,22 +1,18 @@
 import { ImiSlider } from "@/components/imiSlider";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { Dispatch, SetStateAction } from "react";
 import { IProductPageFilter } from "./productPageConstant";
 import {
     IProductPageFilterBaseProps,
     ProductPageFilterWrapper,
 } from "./productPageFilterWrapper";
 
-interface Props extends IProductPageFilterBaseProps {
-    value: number[];
-    onChange: Dispatch<SetStateAction<number[]>>;
-}
+interface Props extends IProductPageFilterBaseProps {}
 
 export const ProductPagePriceFilter: React.FC<Props> = ({
     filterStatus,
     setFilterStatus,
-    value,
-    onChange,
+    activeFilter,
+    setActiveFilter,
 }) => {
     const t = i18nHelper("shop");
 
@@ -40,14 +36,23 @@ export const ProductPagePriceFilter: React.FC<Props> = ({
                     min={0}
                     max={1000}
                     defaultValue={[0, 100]}
-                    value={value}
+                    value={activeFilter[IProductPageFilter.Price]}
                     onChange={(e) => {
-                        if (typeof e === "object") onChange(e);
+                        if (typeof e === "object") {
+                            setActiveFilter({
+                                ...activeFilter,
+                                [IProductPageFilter.Price]: e,
+                            });
+                        }
                     }}
                 />
                 <div className="range-row-container">
-                    <span>{`HKD ${value[0]}`}</span>
-                    <span>{`HKD ${value[1]}`}</span>
+                    <span>{`HKD ${
+                        activeFilter[IProductPageFilter.Price][0]
+                    }`}</span>
+                    <span>{`HKD ${
+                        activeFilter[IProductPageFilter.Price][1]
+                    }`}</span>
                 </div>
             </>
         </ProductPageFilterWrapper>

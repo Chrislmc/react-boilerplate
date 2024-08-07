@@ -1,6 +1,9 @@
 import { Icons } from "@/assets/icons";
 import { Dispatch, SetStateAction } from "react";
-import { IProductPageFilter } from "./productPageConstant";
+import {
+    IProductPageActiveFilter,
+    IProductPageFilter,
+} from "./productPageConstant";
 
 export interface IProductPageFilterBaseProps {
     filterStatus: { [key in IProductPageFilter]: boolean };
@@ -9,6 +12,8 @@ export interface IProductPageFilterBaseProps {
             [key in IProductPageFilter]: boolean;
         }>
     >;
+    activeFilter: IProductPageActiveFilter;
+    setActiveFilter: Dispatch<SetStateAction<IProductPageActiveFilter>>;
 }
 
 interface Props {

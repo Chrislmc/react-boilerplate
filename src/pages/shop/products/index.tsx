@@ -1,5 +1,4 @@
 import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { IOption } from "@/components/imiCheckBox";
 import { ImiInput } from "@/components/imiInput";
 import { ImiSection } from "@/components/imiSection";
 import { ImiSectionHeader } from "@/components/imiSectionHeader";
@@ -10,9 +9,8 @@ import "./_products-page.scss";
 import { ProductPageBrandsFilter } from "./productPageBrandsFilter";
 import { ProductPageCategoriesFilter } from "./productPageCategoriesFilter";
 import {
-    IProductPageCategoriesFilter,
+    IProductPageActiveFilter,
     IProductPageFilter,
-    IProductPageHealthNeedFilter,
     productPageCategoriesFilterOption,
     productPageHealthNeedFilterOption,
 } from "./productPageConstant";
@@ -34,6 +32,13 @@ export const ProductsPage = () => {
             text: t(option.text),
         }));
 
+    // const translatedBrandsFilterOption = productPageBrandsFilterOption.map(
+    //     (option) => ({
+    //         ...option,
+    //         text: t(option.text),
+    //     })
+    // );
+
     const [searchString, setSearchString] = useState<string>("");
     const [filterStatus, setFilterStatus] = useState<{
         [key in IProductPageFilter]: boolean;
@@ -44,13 +49,13 @@ export const ProductsPage = () => {
         brands: true,
         sortBy: true,
     });
-    const [priceRange, setPriceRange] = useState<number[]>([0, 100]);
-    const [selectedCategoriesOption, setSelectedCategoriesOption] = useState<
-        IOption<IProductPageCategoriesFilter>[]
-    >([]);
-    const [selectedHealthNeedOption, setSelectedHealthNeedOption] = useState<
-        IOption<IProductPageHealthNeedFilter>[]
-    >([]);
+    const [activeFilter, setActiveFilter] = useState<IProductPageActiveFilter>({
+        [IProductPageFilter.Price]: [0, 100],
+        [IProductPageFilter.Categories]: [],
+        [IProductPageFilter.HealthNeed]: [],
+        [IProductPageFilter.Brands]: [],
+    });
+    console.log(activeFilter);
 
     return (
         <div id="products-page">
@@ -61,23 +66,23 @@ export const ProductsPage = () => {
                             <ProductPagePriceFilter
                                 filterStatus={filterStatus}
                                 setFilterStatus={setFilterStatus}
-                                value={priceRange}
-                                onChange={setPriceRange}
+                                activeFilter={activeFilter}
+                                setActiveFilter={setActiveFilter}
                             />
 
                             <ProductPageCategoriesFilter
                                 filterStatus={filterStatus}
                                 setFilterStatus={setFilterStatus}
-                                selectedOption={selectedCategoriesOption}
-                                onChange={setSelectedCategoriesOption}
+                                activeFilter={activeFilter}
+                                setActiveFilter={setActiveFilter}
                                 filterOptions={translatedCategoriesFilterOption}
                             />
 
                             <ProductPageHealthNeedFilter
                                 filterStatus={filterStatus}
                                 setFilterStatus={setFilterStatus}
-                                selectedOption={selectedHealthNeedOption}
-                                onChange={setSelectedHealthNeedOption}
+                                activeFilter={activeFilter}
+                                setActiveFilter={setActiveFilter}
                                 filterOptions={translatedHealthNeedFilterOption}
                             />
 

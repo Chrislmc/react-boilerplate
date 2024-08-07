@@ -1,6 +1,5 @@
 import { IOption, ImiCheckBox } from "@/components/imiCheckBox";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { Dispatch, SetStateAction } from "react";
 import {
     IProductPageCategoriesFilter,
     IProductPageFilter,
@@ -12,16 +11,14 @@ import {
 
 interface Props extends IProductPageFilterBaseProps {
     filterOptions: IOption<IProductPageCategoriesFilter>[];
-    selectedOption: IOption<IProductPageCategoriesFilter>[];
-    onChange: Dispatch<SetStateAction<IOption<IProductPageCategoriesFilter>[]>>;
 }
 
 export const ProductPageCategoriesFilter: React.FC<Props> = ({
     filterStatus,
     setFilterStatus,
     filterOptions,
-    selectedOption,
-    onChange,
+    activeFilter,
+    setActiveFilter,
 }) => {
     const t = i18nHelper("shop");
 
@@ -29,25 +26,28 @@ export const ProductPageCategoriesFilter: React.FC<Props> = ({
         targetOption: IOption<IProductPageCategoriesFilter>,
         isSelected: boolean
     ) => {
-        let filteredOption = selectedOption;
+        let filteredCategoriesOption =
+            activeFilter[IProductPageFilter.Categories];
 
         if (isSelected) {
-            filteredOption = [
-                ...selectedOption.filter(
+            filteredCategoriesOption = [
+                ...activeFilter[IProductPageFilter.Categories].filter(
                     (option) => option.value !== targetOption.value
                 ),
             ];
         } else {
-            filteredOption = filterOptions.filter(
+            filteredCategoriesOption = filterOptions.filter(
                 (option) =>
-                    !!selectedOption.find(
-                        (selectedOption) =>
-                            selectedOption.value === option.value
+                    !!activeFilter[IProductPageFilter.Categories].find(
+                        (activeFilter) => activeFilter.value === option.value
                     ) || option.value === targetOption.value
             );
         }
 
-        onChange(filteredOption);
+        setActiveFilter({
+            ...activeFilter,
+            [IProductPageFilter.Categories]: filteredCategoriesOption,
+        });
     };
 
     return (
@@ -67,7 +67,7 @@ export const ProductPageCategoriesFilter: React.FC<Props> = ({
             <>
                 {filterOptions.map((option) => {
                     const isSelected =
-                        selectedOption
+                        activeFilter[IProductPageFilter.Categories]
                             .map((item) => item.value)
                             .indexOf(option.value) > -1;
 

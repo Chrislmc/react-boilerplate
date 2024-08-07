@@ -1,9 +1,18 @@
+import { IOption } from "@/components/imiCheckBox";
+
 export enum IProductPageFilter {
     Price = "price",
     Categories = "categories",
     HealthNeed = "healthNeed",
     Brands = "brands",
     SortBy = "sortBy",
+}
+
+export interface IProductPageActiveFilter {
+    [IProductPageFilter.Price]: number[],
+    [IProductPageFilter.Categories]: IOption<IProductPageCategoriesFilter>[],
+    [IProductPageFilter.HealthNeed]: IOption<IProductPageHealthNeedFilter>[],
+    [IProductPageFilter.Brands]: string[],
 }
 
 export enum IProductPageCategoriesFilter {
