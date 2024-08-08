@@ -3,6 +3,7 @@ $max-breakpoints: (
     mobile: 480px,
     tablet: 768px,
     small-screen: 1350px,
+    medium-screen: 1500px,
     desktop: 2000px,
     large-screen: 4000px,
 );
@@ -10,7 +11,8 @@ $min-breakpoints: (
     mobile: 0,
     tablet: 480px,
     small-screen: 768px,
-    desktop: 1350px,
+    medium-screen: 1350px,
+    desktop: 1500px,
     large-screen: 2000px,
 );
 

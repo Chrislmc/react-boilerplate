@@ -1,6 +1,7 @@
 import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
 import { IOption } from "@/components/imiCheckBox";
 import { ImiInput } from "@/components/imiInput";
+import { ImiProductCard } from "@/components/imiProductCard";
 import { ImiSection } from "@/components/imiSection";
 import { ImiSectionHeader } from "@/components/imiSectionHeader";
 import { ContainerX } from "@/components/layout/containerX";
@@ -16,6 +17,7 @@ import {
     initialFilter,
     productPageCategoriesFilterOption,
     productPageHealthNeedFilterOption,
+    productPageProductCardList,
     productPageSortByOption,
 } from "./productPageConstant";
 import { ProductPageHealthNeedFilter } from "./productPageHealthNeedFilter";
@@ -57,6 +59,8 @@ export const ProductsPage = () => {
     const [sortBy, setSortBy] = useState<IOption<IProductPageSortBy>>(
         translatedSortByOption[0]
     );
+
+    const filteredProducts = productPageProductCardList;
 
     return (
         <div id="products-page">
@@ -115,7 +119,14 @@ export const ProductsPage = () => {
                                     setValue={setSearchString}
                                 />
                             </div>
-                            <div className="product-list-grid-container"></div>
+                            <div className="product-list-grid-container">
+                                {filteredProducts.map((product) => (
+                                    <ImiProductCard
+                                        key={`product-card-${product.id}`}
+                                        {...product}
+                                    />
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </ContainerX>
