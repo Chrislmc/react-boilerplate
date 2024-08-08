@@ -71,6 +71,13 @@ export enum IProductPageBrandsFilter {
     Z = "Z",
 }
 
+export const initialFilter = {
+    [IProductPageFilter.Price]: [0, 100],
+    [IProductPageFilter.Categories]: [],
+    [IProductPageFilter.HealthNeed]: [],
+    [IProductPageFilter.Brands]: [],
+};
+
 export const productPageCategoriesFilterOption = [
     {
         text: `shared.filter.categories.${IProductPageCategoriesFilter.SaleAndOffers}`,

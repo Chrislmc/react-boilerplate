@@ -13,6 +13,7 @@ import {
     IProductPageActiveFilter,
     IProductPageFilter,
     IProductPageSortBy,
+    initialFilter,
     productPageCategoriesFilterOption,
     productPageHealthNeedFilterOption,
     productPageSortByOption,
@@ -51,16 +52,11 @@ export const ProductsPage = () => {
         brands: true,
         sortBy: true,
     });
-    const [activeFilter, setActiveFilter] = useState<IProductPageActiveFilter>({
-        [IProductPageFilter.Price]: [0, 100],
-        [IProductPageFilter.Categories]: [],
-        [IProductPageFilter.HealthNeed]: [],
-        [IProductPageFilter.Brands]: [],
-    });
+    const [activeFilter, setActiveFilter] =
+        useState<IProductPageActiveFilter>(initialFilter);
     const [sortBy, setSortBy] = useState<IOption<IProductPageSortBy>>(
         translatedSortByOption[0]
     );
-    console.log(activeFilter);
 
     return (
         <div id="products-page">

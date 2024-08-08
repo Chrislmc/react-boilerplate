@@ -21,11 +21,8 @@ interface Props {
     collapsible: boolean;
     className: string;
     isOpen: boolean;
-    setIsOpen: Dispatch<
-        SetStateAction<{
-            [key in IProductPageFilter]: boolean;
-        }>
-    >;
+    setIsOpen: () => void;
+    customHeaderRightComponent?: JSX.Element;
     children: JSX.Element;
 }
 
@@ -35,6 +32,7 @@ export const ProductPageFilterWrapper: React.FC<Props> = ({
     className,
     isOpen,
     setIsOpen,
+    customHeaderRightComponent,
     children,
 }) => {
     return (
@@ -44,26 +42,27 @@ export const ProductPageFilterWrapper: React.FC<Props> = ({
                     isOpen ? " mod__is-expanded" : ""
                 }`}
             >
-                <button
+                <div
                     className={`dropdown-btn${
                         collapsible ? " mod__collapsible" : ""
                     }`}
-                    disabled={!collapsible}
                     /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
-                    onClick={setIsOpen as any}
+                    onClick={() => collapsible && (setIsOpen() as any)}
                 >
                     <span>{header}</span>
 
+                    {customHeaderRightComponent && customHeaderRightComponent}
+
                     {collapsible && (
-                        <div
+                        <button
                             className={`dropdown-icon${
                                 isOpen ? " mod__is-expanded" : ""
                             }`}
                         >
                             <img src={Icons.Dropdown} />
-                        </div>
+                        </button>
                     )}
-                </button>
+                </div>
             </div>
             <div
                 className={`filter-content-container${

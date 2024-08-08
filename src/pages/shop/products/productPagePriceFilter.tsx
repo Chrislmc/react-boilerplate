@@ -1,6 +1,7 @@
+import { ImiButton } from "@/components/imiButton";
 import { ImiSlider } from "@/components/imiSlider";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { IProductPageFilter } from "./productPageConstant";
+import { IProductPageFilter, initialFilter } from "./productPageConstant";
 import {
     IProductPageFilterBaseProps,
     ProductPageFilterWrapper,
@@ -28,6 +29,13 @@ export const ProductPagePriceFilter: React.FC<Props> = ({
                     [IProductPageFilter.Price]:
                         !filterStatus[IProductPageFilter.Price],
                 })
+            }
+            customHeaderRightComponent={
+                <ImiButton
+                    text={t("shared.filter.clear")}
+                    size="padding"
+                    onClick={() => setActiveFilter(initialFilter)}
+                />
             }
         >
             <>
