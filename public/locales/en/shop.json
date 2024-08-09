@@ -91,7 +91,12 @@
                 "sleep": "Sleep",
                 "hormonalHealth": "Hormonal health",
                 "pain": "Pain",
-                "detoxAndWeightLoss": "Detox & weightloss"
+                "detoxAndWeightLoss": "Detox & weightloss",
+                "Immune Health": "Immune Health",
+                "Brain, Learning \u0026 Cognitive Health": "Brain, Learning \u0026 Cognitive Health",
+                "Energy Support": "Energy Support",
+                "Mental Health": "Mental Health",
+                "Travel Health": "Travel Health"
             },
             "brands": {
                 "header": "Brands",

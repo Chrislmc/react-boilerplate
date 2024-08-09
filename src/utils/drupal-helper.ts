@@ -20,6 +20,10 @@ export const parseDrupalProduct = (
             drupalProduct.default_variation.commerce_stock_always_in_stock ||
             drupalProduct.default_variation.field_stock_level.available_stock >
                 0,
+        category: decodeURIComponent(
+            escape(window.atob(drupalProduct.field_primary_category.name))
+        ),
+        healthNeeds: drupalProduct.field_health_needs.map((item) => item.name),
         /* Unknown logic */
         onlyAvailableInClinic: false,
     };

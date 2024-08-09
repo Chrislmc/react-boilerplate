@@ -16,6 +16,7 @@ export interface IProductPageActiveFilter {
     [IProductPageFilter.Brands]: IOption<string>[];
 }
 
+/* To be replaced by categories from Drupal */
 export enum IProductPageCategoriesFilter {
     SaleAndOffers = "saleAndOffers",
     VitaminAndMinerals = "vitaminAndMinerals",
@@ -33,6 +34,11 @@ export enum IProductPageHealthNeedFilter {
     HormonalHealth = "hormonalHealth",
     Pain = "pain",
     DetoxAndWeightLoss = "detoxAndWeightLoss",
+    ImmuneHealth = "Immune Health",
+    BrainLearningAndCognitiveHealth = "Brain, Learning \u0026 Cognitive Health",
+    EnergySupport = "Energy Support",
+    MentalHealth = "Mental Health",
+    TravelHealth = "Travel Health",
 }
 
 export enum IProductPageSortBy {
@@ -134,6 +140,26 @@ export const productPageHealthNeedFilterOption = [
     {
         text: `shared.filter.healthNeed.${IProductPageHealthNeedFilter.DetoxAndWeightLoss}`,
         value: IProductPageHealthNeedFilter.DetoxAndWeightLoss,
+    },
+    {
+        text: `shared.filter.healthNeed.${IProductPageHealthNeedFilter.ImmuneHealth}`,
+        value: IProductPageHealthNeedFilter.ImmuneHealth,
+    },
+    {
+        text: `shared.filter.healthNeed.${IProductPageHealthNeedFilter.BrainLearningAndCognitiveHealth}`,
+        value: IProductPageHealthNeedFilter.BrainLearningAndCognitiveHealth,
+    },
+    {
+        text: `shared.filter.healthNeed.${IProductPageHealthNeedFilter.EnergySupport}`,
+        value: IProductPageHealthNeedFilter.EnergySupport,
+    },
+    {
+        text: `shared.filter.healthNeed.${IProductPageHealthNeedFilter.MentalHealth}`,
+        value: IProductPageHealthNeedFilter.MentalHealth,
+    },
+    {
+        text: `shared.filter.healthNeed.${IProductPageHealthNeedFilter.TravelHealth}`,
+        value: IProductPageHealthNeedFilter.TravelHealth,
     },
 ];
 
@@ -321,6 +347,14 @@ export const productPageProductCardList = [
         rating: 5,
         isOutOfStock: false,
         onlyAvailableInClinic: false,
+        category: IProductPageCategoriesFilter.VitaminAndMinerals,
+        healthNeeds: [
+            IProductPageHealthNeedFilter.BrainLearningAndCognitiveHealth,
+            IProductPageHealthNeedFilter.ImmuneHealth,
+            IProductPageHealthNeedFilter.EnergySupport,
+            IProductPageHealthNeedFilter.MentalHealth,
+            IProductPageHealthNeedFilter.TravelHealth,
+        ],
     },
     {
         id: "2",
@@ -332,6 +366,11 @@ export const productPageProductCardList = [
         rating: 4,
         isOutOfStock: false,
         onlyAvailableInClinic: true,
+        category: IProductPageCategoriesFilter.Oils,
+        healthNeeds: [
+            IProductPageHealthNeedFilter.BrainLearningAndCognitiveHealth,
+            IProductPageHealthNeedFilter.ImmuneHealth,
+        ],
     },
     {
         id: "3",
@@ -343,6 +382,11 @@ export const productPageProductCardList = [
         rating: 3,
         isOutOfStock: true,
         onlyAvailableInClinic: false,
+        category: IProductPageCategoriesFilter.Lifestyle,
+        healthNeeds: [
+            IProductPageHealthNeedFilter.MentalHealth,
+            IProductPageHealthNeedFilter.TravelHealth,
+        ],
     },
     {
         id: "4",
@@ -354,6 +398,8 @@ export const productPageProductCardList = [
         rating: 0,
         isOutOfStock: false,
         onlyAvailableInClinic: false,
+        category: IProductPageCategoriesFilter.Probiotics,
+        healthNeeds: [IProductPageHealthNeedFilter.EnergySupport],
     },
     {
         id: "5",
@@ -365,6 +411,12 @@ export const productPageProductCardList = [
         rating: 5,
         isOutOfStock: false,
         onlyAvailableInClinic: false,
+        category: IProductPageCategoriesFilter.Probiotics,
+        healthNeeds: [
+            IProductPageHealthNeedFilter.BrainLearningAndCognitiveHealth,
+            IProductPageHealthNeedFilter.ImmuneHealth,
+            IProductPageHealthNeedFilter.TravelHealth,
+        ],
     },
     {
         id: "6",
@@ -376,6 +428,12 @@ export const productPageProductCardList = [
         rating: 4,
         isOutOfStock: false,
         onlyAvailableInClinic: true,
+        category: IProductPageCategoriesFilter.SaleAndOffers,
+        healthNeeds: [
+            IProductPageHealthNeedFilter.ImmuneHealth,
+            IProductPageHealthNeedFilter.EnergySupport,
+            IProductPageHealthNeedFilter.MentalHealth,
+        ],
     },
     {
         id: "7",
@@ -387,5 +445,12 @@ export const productPageProductCardList = [
         rating: 3,
         isOutOfStock: true,
         onlyAvailableInClinic: false,
+        category: IProductPageCategoriesFilter.VitaminAndMinerals,
+        healthNeeds: [
+            IProductPageHealthNeedFilter.BrainLearningAndCognitiveHealth,
+            IProductPageHealthNeedFilter.ImmuneHealth,
+            IProductPageHealthNeedFilter.EnergySupport,
+            IProductPageHealthNeedFilter.MentalHealth,
+        ],
     },
 ];

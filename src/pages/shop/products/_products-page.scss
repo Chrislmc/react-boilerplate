@@ -326,6 +326,12 @@
                     grid-template-columns: repeat(4, 1fr);
                     grid-template-rows: repeat(auto-fill, 35rem);
                     gap: 1.25rem;
+                    opacity: 1;
+                    transition: opacity 0.3s ease-out;
+
+                    &.mod__in-transition {
+                        opacity: 0;
+                    }
 
                     @include media(medium-screen) {
                         grid-template-columns: repeat(3, 1fr);

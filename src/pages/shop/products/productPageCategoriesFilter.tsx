@@ -19,6 +19,7 @@ export const ProductPageCategoriesFilter: React.FC<Props> = ({
     filterOptions,
     activeFilter,
     setActiveFilter,
+    setIsLoadingList,
 }) => {
     const t = i18nHelper("shop");
 
@@ -44,10 +45,15 @@ export const ProductPageCategoriesFilter: React.FC<Props> = ({
             );
         }
 
+        setIsLoadingList(true);
         setActiveFilter({
             ...activeFilter,
             [IProductPageFilter.Categories]: filteredCategoriesOption,
         });
+
+        setTimeout(() => {
+            setIsLoadingList(false);
+        }, 500);
     };
 
     return (

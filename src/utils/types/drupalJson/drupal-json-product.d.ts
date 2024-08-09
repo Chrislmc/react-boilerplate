@@ -1,5 +1,7 @@
 import { IDrupalJsonFile } from "./drupal-json-file";
 import { IDrupalJsonProductVariation } from "./drupal-json-product-variation";
+import { IDrupalJsonTaxonomyCategory } from "./drupal-json-taxonomy-term-category";
+import { IDrupalJsonTaxonomyHealth } from "./drupal-json-taxonomy-term-health";
 
 export interface IDrupalJsonProduct {
     drupal_internal__product_id: number;
@@ -58,4 +60,6 @@ export interface IDrupalJsonProduct {
     /* Relation, has to join manually */
     field_product_images: IDrupalJsonFile[];
     default_variation: IDrupalJsonProductVariation;
+    field_primary_category: IDrupalJsonTaxonomyCategory;
+    field_health_needs: IDrupalJsonTaxonomyHealth[];
 }

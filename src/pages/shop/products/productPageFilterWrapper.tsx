@@ -14,6 +14,7 @@ export interface IProductPageFilterBaseProps {
     >;
     activeFilter: IProductPageActiveFilter;
     setActiveFilter: Dispatch<SetStateAction<IProductPageActiveFilter>>;
+    setIsLoadingList: Dispatch<SetStateAction<boolean>>;
 }
 
 interface Props {

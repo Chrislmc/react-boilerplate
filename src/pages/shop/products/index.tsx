@@ -6,7 +6,7 @@ import { ImiSection } from "@/components/imiSection";
 import { ImiSectionHeader } from "@/components/imiSectionHeader";
 import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./_products-page.scss";
 import { ProductPageBrandsFilter } from "./productPageBrandsFilter";
 import { ProductPageCategoriesFilter } from "./productPageCategoriesFilter";
@@ -45,6 +45,7 @@ export const ProductsPage = () => {
     }));
 
     const [searchString, setSearchString] = useState<string>("");
+    const [isLoadingList, setIsLoadingList] = useState<boolean>(false);
     const [filterStatus, setFilterStatus] = useState<{
         [key in IProductPageFilter]: boolean;
     }>({
@@ -59,8 +60,39 @@ export const ProductsPage = () => {
     const [sortBy, setSortBy] = useState<IOption<IProductPageSortBy>>(
         translatedSortByOption[0]
     );
+    const [filteredProducts, setFilteredProducts] = useState(
+        productPageProductCardList
+    );
 
-    const filteredProducts = productPageProductCardList;
+    useEffect(() => {
+        setTimeout(() => {
+            const list = productPageProductCardList.filter((product) => {
+                if (activeFilter[IProductPageFilter.Categories]?.length) {
+                    if (
+                        !activeFilter[IProductPageFilter.Categories]
+                            .map((option) => option.value)
+                            .includes(product.category)
+                    )
+                        return false;
+                }
+
+                if (activeFilter[IProductPageFilter.HealthNeed]?.length) {
+                    if (
+                        !product.healthNeeds.find((healthNeed) =>
+                            activeFilter[IProductPageFilter.HealthNeed]
+                                .map((option) => option.value)
+                                .includes(healthNeed)
+                        )
+                    )
+                        return false;
+                }
+
+                return true;
+            });
+
+            setFilteredProducts(list);
+        }, 300);
+    }, [activeFilter]);
 
     return (
         <div id="products-page">
@@ -73,6 +105,7 @@ export const ProductsPage = () => {
                                 setFilterStatus={setFilterStatus}
                                 activeFilter={activeFilter}
                                 setActiveFilter={setActiveFilter}
+                                setIsLoadingList={setIsLoadingList}
                             />
 
                             <ProductPageCategoriesFilter
@@ -81,6 +114,7 @@ export const ProductsPage = () => {
                                 activeFilter={activeFilter}
                                 setActiveFilter={setActiveFilter}
                                 filterOptions={translatedCategoriesFilterOption}
+                                setIsLoadingList={setIsLoadingList}
                             />
 
                             <ProductPageHealthNeedFilter
@@ -89,6 +123,7 @@ export const ProductsPage = () => {
                                 activeFilter={activeFilter}
                                 setActiveFilter={setActiveFilter}
                                 filterOptions={translatedHealthNeedFilterOption}
+                                setIsLoadingList={setIsLoadingList}
                             />
 
                             <ProductPageBrandsFilter
@@ -96,6 +131,7 @@ export const ProductsPage = () => {
                                 setFilterStatus={setFilterStatus}
                                 activeFilter={activeFilter}
                                 setActiveFilter={setActiveFilter}
+                                setIsLoadingList={setIsLoadingList}
                             />
 
                             <ProductPageSorter
@@ -104,6 +140,7 @@ export const ProductsPage = () => {
                                 sortBy={sortBy}
                                 setSortBy={setSortBy}
                                 filterOptions={translatedSortByOption}
+                                setIsLoadingList={setIsLoadingList}
                             />
                         </div>
 
@@ -119,7 +156,11 @@ export const ProductsPage = () => {
                                     setValue={setSearchString}
                                 />
                             </div>
-                            <div className="product-list-grid-container">
+                            <div
+                                className={`product-list-grid-container${
+                                    isLoadingList ? " mod__in-transition" : ""
+                                }`}
+                            >
                                 {filteredProducts.map((product) => (
                                     <ImiProductCard
                                         key={`product-card-${product.id}`}

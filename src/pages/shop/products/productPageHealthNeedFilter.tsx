@@ -19,6 +19,7 @@ export const ProductPageHealthNeedFilter: React.FC<Props> = ({
     filterOptions,
     activeFilter,
     setActiveFilter,
+    setIsLoadingList,
 }) => {
     const t = i18nHelper("shop");
 
@@ -43,11 +44,15 @@ export const ProductPageHealthNeedFilter: React.FC<Props> = ({
                     ) || option.value === targetOption.value
             );
         }
-
+        setIsLoadingList(true);
         setActiveFilter({
             ...activeFilter,
             [IProductPageFilter.HealthNeed]: filteredHealthNeedOption,
         });
+
+        setTimeout(() => {
+            setIsLoadingList(false);
+        }, 500);
     };
 
     return (
