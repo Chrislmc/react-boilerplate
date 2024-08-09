@@ -1,10 +1,11 @@
 import {
+    IDrupalFile,
     IDrupalFormatValue,
     IDrupalRelationship,
     IDrupalValue,
 } from "./drupal-shared";
 
-export interface IDrupalProduct {
+export interface IDrupalRestfulProduct {
     product_id: IDrupalValue<number>[];
     uuid: IDrupalValue<string>[];
     langcode: IDrupalValue<string>[];
@@ -32,7 +33,7 @@ export interface IDrupalProduct {
     field_dietary_filters: (IDrupalRelationship & { url: string })[];
     field_gender: IDrupalRelationship[];
     field_health_needs: (IDrupalRelationship & { url: string })[];
-    /* Description */
+    /* Search desc */
     field_hidden_search_descriptor: IDrupalValue<string>[];
     field_ingredients_specifications: [];
     /* Ingredient */
@@ -52,18 +53,21 @@ export interface IDrupalProduct {
     field_product_flag_text: [];
     field_product_id: IDrupalValue<string>[];
     field_product_id_: IDrupalValue<number>[];
+    /* Image */
     field_product_images: IDrupalFile[];
     field_product_ingredients: [];
     field_product_name_1: IDrupalValue<string>[];
     field_product_name_2: [];
     field_product_specifications: [];
     field_promotion_category: [];
+    /* Rating */
     field_rating: IDrupalValue<number>[];
     field_requires_approval: IDrupalValue<boolean>[];
     field_returns_refunds: [];
     field_returns_refunds_content: [];
     field_secondary_product_type_: (IDrupalRelationship & { url: string })[];
-    field_short_description: IDrupalFormatValue[];
+    /* Description */
+    field_short_description: IDrupalFormatValue<string>[];
     field_special: [];
     field_strength: [];
     field_temperature_controlled: IDrupalValue<boolean>[];

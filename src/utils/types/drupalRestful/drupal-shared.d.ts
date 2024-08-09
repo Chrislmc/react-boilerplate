@@ -2,7 +2,7 @@ export interface IDrupalValue<T> {
     value: T;
     processed?: T;
 }
-export interface IDrupalFormatValue extends IDrupalValue {
+export interface IDrupalFormatValue<T> extends IDrupalValue<T> {
     format: string;
 }
 
