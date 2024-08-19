@@ -9,7 +9,8 @@ interface IImiProductCardProps extends IProductRating, IProductButton {
     name: string;
     desc?: string;
     currency: string;
-    price: string;
+    price: number;
+    priceDesc: string;
 }
 
 export const ImiProductCard: React.FC<IImiProductCardProps> = ({
@@ -19,6 +20,7 @@ export const ImiProductCard: React.FC<IImiProductCardProps> = ({
     rating,
     currency,
     price,
+    priceDesc,
     isOutOfStock,
     onlyAvailableInClinic,
 }) => {
@@ -36,7 +38,9 @@ export const ImiProductCard: React.FC<IImiProductCardProps> = ({
 
                         <ProductRating rating={rating} />
 
-                        <p className="price-desc">{`${currency}${price}`}</p>
+                        <p className="price-desc">
+                            {priceDesc ? `${priceDesc}` : `${currency}${price}`}
+                        </p>
 
                         <ProductButton
                             isOutOfStock={isOutOfStock}

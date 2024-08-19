@@ -67,6 +67,16 @@ export const ProductsPage = () => {
     useEffect(() => {
         setTimeout(() => {
             const list = productPageProductCardList.filter((product) => {
+                if (activeFilter[IProductPageFilter.Price]?.length) {
+                    if (
+                        product.price <
+                            activeFilter[IProductPageFilter.Price][0] ||
+                        product.price >
+                            activeFilter[IProductPageFilter.Price][1]
+                    )
+                        return false;
+                }
+
                 if (activeFilter[IProductPageFilter.Categories]?.length) {
                     if (
                         !activeFilter[IProductPageFilter.Categories]

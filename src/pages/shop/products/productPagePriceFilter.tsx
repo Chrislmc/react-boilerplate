@@ -14,8 +14,21 @@ export const ProductPagePriceFilter: React.FC<Props> = ({
     setFilterStatus,
     activeFilter,
     setActiveFilter,
+    setIsLoadingList,
 }) => {
     const t = i18nHelper("shop");
+
+    const onPriceRangeChange = (e: number[]) => {
+        setIsLoadingList(true);
+        setActiveFilter({
+            ...activeFilter,
+            [IProductPageFilter.Price]: e,
+        });
+
+        setTimeout(() => {
+            setIsLoadingList(false);
+        }, 500);
+    };
 
     return (
         <ProductPageFilterWrapper
@@ -46,12 +59,7 @@ export const ProductPagePriceFilter: React.FC<Props> = ({
                     defaultValue={[0, 100]}
                     value={activeFilter[IProductPageFilter.Price]}
                     onChange={(e) => {
-                        if (typeof e === "object") {
-                            setActiveFilter({
-                                ...activeFilter,
-                                [IProductPageFilter.Price]: e,
-                            });
-                        }
+                        onPriceRangeChange(e as number[]);
                     }}
                 />
                 <div className="range-row-container">
