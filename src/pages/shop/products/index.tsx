@@ -24,6 +24,7 @@ import { ProductPageHealthNeedFilter } from "./productPageHealthNeedFilter";
 import { ProductPagePriceFilter } from "./productPagePriceFilter";
 import { ProductPageSorter } from "./productPageSorter";
 
+// TODO: add brand name and sort by logic
 export const ProductsPage = () => {
     const t = i18nHelper("shop");
 
@@ -67,6 +68,15 @@ export const ProductsPage = () => {
     useEffect(() => {
         setTimeout(() => {
             const list = productPageProductCardList.filter((product) => {
+                if (searchString?.length) {
+                    if (
+                        product.name
+                            .toLowerCase()
+                            .indexOf(searchString?.toLowerCase()) === -1
+                    )
+                        return false;
+                }
+
                 if (activeFilter[IProductPageFilter.Price]?.length) {
                     if (
                         product.price <
@@ -102,7 +112,7 @@ export const ProductsPage = () => {
 
             setFilteredProducts(list);
         }, 300);
-    }, [activeFilter]);
+    }, [activeFilter, searchString]);
 
     return (
         <div id="products-page">
