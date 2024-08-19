@@ -1,14 +1,17 @@
 import { i18nHelper } from "@/utils/i18n-helper";
 import { ImiButton } from "../imiButton";
+import "./_product-button.scss";
 
-export interface IProductButton {
+export interface IImiProductButton {
     isOutOfStock: boolean;
     onlyAvailableInClinic: boolean;
+    disabled?: boolean;
 }
 
-export const ProductButton: React.FC<IProductButton> = ({
+export const ImiProductButton: React.FC<IImiProductButton> = ({
     isOutOfStock,
     onlyAvailableInClinic,
+    disabled,
 }) => {
     const t = i18nHelper("shared");
 
@@ -28,11 +31,13 @@ export const ProductButton: React.FC<IProductButton> = ({
     }
 
     return (
-        <ImiButton
-            text={btnText}
-            buttonClassName={btnTheme}
-            textClassName={btnTheme}
-            disabled={isDisabled}
-        />
+        <div className="imi-product-button-component">
+            <ImiButton
+                text={btnText}
+                buttonClassName={btnTheme}
+                textClassName={btnTheme}
+                disabled={isDisabled || disabled}
+            />
+        </div>
     );
 };

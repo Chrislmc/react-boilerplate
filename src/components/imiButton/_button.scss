@@ -20,7 +20,7 @@
         &.color-primary {
             background-color: $primary;
 
-            &:hover {
+            &:hover:not(:disabled) {
                 background-color: $primary-700;
             }
         }
@@ -28,7 +28,7 @@
         &.color-blueish-green {
             background-color: $blueish-green;
 
-            &:hover {
+            &:hover:not(:disabled) {
                 background-color: $primary;
             }
         }
@@ -36,7 +36,7 @@
         &.color-orange {
             background-color: $white;
             
-            &:hover {
+            &:hover:not(:disabled) {
                 background-color: $orange;
             }
         }
@@ -50,7 +50,7 @@
         &.color-white {
             border-color: $white;
 
-            &:hover {
+            &:hover:not(:disabled) {
                 background-color: $white;
             }
         }
@@ -77,7 +77,7 @@
             color: $blueish-green-700;
 
             &.mod__hover-blueish-green {
-                :hover > & {
+                :hover:not(:disabled) > & {
                     color: $white;
                 }
             }
@@ -91,7 +91,7 @@
         &.color-white {
             color: $white;
 
-            :hover > & {
+            :hover:not(:disabled) > & {
                 color: $transparent;
             }
         }
@@ -100,7 +100,7 @@
             letter-spacing: 0.0625rem;
             color: $dark;
 
-            :hover > & {
+            :hover:not(:disabled) > & {
                 color: $white;
             }
         }

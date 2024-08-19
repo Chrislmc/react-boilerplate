@@ -1,0 +1,31 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-product-button-component{
+    .imi-btn-component {
+        margin-top: 0.625rem;
+
+        &:disabled {
+            background-color: $gray-400;
+        }
+    
+        &.mod__add-to-basket {
+        }
+    
+        &.mod__buy-in-clinic {
+            background-color: $purple;
+    
+            &:hover:not(:disabled) {
+                background-color: $purple-700;
+            }
+        }
+    
+        &.mod__out-of-stock {
+            background-color: $blueish-green-300;
+    
+            .imi-btn-desc {
+                color: $blueish-green-400;
+            }
+        }
+    }
+}

@@ -1,3 +1,5 @@
+import { ImiNumberInput } from "@/components/imiNumberInput";
+import { ImiProductButton } from "@/components/imiProductButton";
 import { ImiProductRating } from "@/components/imiProductRating";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
@@ -10,6 +12,7 @@ export const ProductDetailPageDetailSection: React.FC<{
 }> = ({ product }) => {
     const t = i18nHelper("shop");
     const [activeThumbnail, setActiveThumbnail] = useState(product.imgUrl[0]);
+    const [quantity, setQuantity] = useState(0);
 
     const onThumbnailClick = (url: string) => {
         setActiveThumbnail(url);
@@ -71,6 +74,24 @@ export const ProductDetailPageDetailSection: React.FC<{
                                     })}
                                 </span>
                             )}
+                        </div>
+
+                        <div className="button-container">
+                            <ImiNumberInput
+                                min={0}
+                                max={100}
+                                step={1}
+                                value={quantity}
+                                setValue={setQuantity}
+                            />
+
+                            <ImiProductButton
+                                isOutOfStock={product.isOutOfStock}
+                                onlyAvailableInClinic={
+                                    product.onlyAvailableInClinic
+                                }
+                                disabled={quantity === 0}
+                            />
                         </div>
                     </div>
                 </div>

@@ -121,29 +121,18 @@
                     }
                 }
 
-                .imi-btn-component {
-                    margin-top: 0.625rem;
-
-                    &.mod__add-to-basket {
-                    }
-
-                    &.mod__buy-in-clinic {
-                        background-color: $purple;
-
-                        &:hover {
-                            background-color: $purple-700;
-                        }
-                    }
-
-                    &.mod__out-of-stock {
-                        background-color: $blueish-green-300;
-
-                        .imi-btn-desc {
-                            color: $blueish-green-400;
+                .button-container {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1.25rem;
+                    margin: 0;
+                    
+                    .imi-product-button-component {
+                        .imi-btn-component {
+                            margin: 0;
                         }
                     }
                 }
-    
             }
         }
 
