@@ -72,7 +72,12 @@
         }
     },
     "product-detail": {
-        "packSize": "Pack size: {{packSize}}"
+        "packSize": "Pack size: {{packSize}}",
+        "tab": {
+            "description": "Description",
+            "ingredients": "Ingredients",
+            "vitalNutrients": "Vital Nutrients"
+        }
     },
     "shared": {
         "filter": {

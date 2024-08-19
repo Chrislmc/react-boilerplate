@@ -9,7 +9,7 @@ interface IImiProductCardProps extends IImiProductRating, IImiProductButton {
     id: string;
     imgUrl: string[];
     name: string;
-    desc?: string;
+    shortDesc?: string;
     currency: string;
     price: number;
     priceDesc: string;
@@ -19,7 +19,7 @@ export const ImiProductCard: React.FC<IImiProductCardProps> = ({
     id,
     imgUrl,
     name,
-    desc,
+    shortDesc,
     rating,
     currency,
     price,
@@ -48,7 +48,9 @@ export const ImiProductCard: React.FC<IImiProductCardProps> = ({
                     <div className="card-content-container">
                         <span className="product-name">{name}</span>
 
-                        {desc && <span className="product-desc">{desc}</span>}
+                        {shortDesc && (
+                            <span className="product-desc">{shortDesc}</span>
+                        )}
 
                         <ImiProductRating rating={rating} />
 

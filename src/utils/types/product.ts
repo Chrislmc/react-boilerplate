@@ -7,7 +7,8 @@ export interface IProduct {
     id: string;
     imgUrl: string[];
     name: string;
-    desc: string;
+    desc?: string;
+    shortDesc?: string;
     currency: string;
     price: number;
     priceDesc: string;

@@ -21,23 +21,23 @@
 
         button {
             position: relative;
-            height: auto;
-            width: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            font-family: $font-secondary;
+            color: $gray-600;
+            margin-bottom: 0.625rem;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            letter-spacing: 0.075rem;
 
-            .tab-text {
+            &::after {
+                display: block;
+                content: attr(title);
+                height: 0rem;
+                font-weight: 900;
                 font-family: $font-secondary;
-                color: $gray-600;
-                margin-bottom: 0.625rem;
-                font-weight: 500;
-
-                &::after {
-                    font-weight: 900;
-                    color: $gray;
-                    visibility: hidden;
-                }
+                color: $primary;
+                overflow: hidden;
+                visibility: hidden;
             }
 
             .tab-item-decorator {
@@ -47,15 +47,17 @@
                 background-color: $orange;
                 opacity: 0;
                 transition: all 0.2s ease;
+                position: absolute;
+                top: calc(100% + 0.625rem);
+                left: calc((100% - 5rem) / 2);
+                opacity: 0;
             }
         }
 
         &.mod__active {
             button {
-                .tab-text {
-                    font-weight: 900;
-                    color: $gray;
-                }
+                font-weight: 900;
+                color: $gray;
 
                 .tab-item-decorator {
                     opacity: 1;

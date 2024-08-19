@@ -37,8 +37,9 @@ export const ImiTab = <T extends string>({
                     <button
                         onClick={() => onTabItemClick(option.value)}
                         disabled={disabled}
+                        title={option.text}
                     >
-                        <h5 className="tab-text">{option.text}</h5>
+                        {option.text}
 
                         <div className="tab-item-decorator" />
                     </button>
