@@ -69,6 +69,81 @@
 
             .main-attribute-container {
                 flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                height: 100%;
+                gap: 1.875rem;
+
+                .product-name {
+                    font-size: 2.125rem;
+                    line-height: 3rem;
+                    letter-spacing: 0.10625rem;
+                    font-weight: 700;
+                    color: $gray;
+                    margin-bottom: 0.375rem;
+                }
+
+                .imi-product-rating-component {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 0.25rem;
+                    margin: 0;
+
+                    img {
+                        width: 1.375rem;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                    }
+                }
+
+                .price-desc {
+                    line-height: 2.125rem;
+                    letter-spacing: 0.075rem;
+                    font-weight: 700;
+                    color: $primary-700;
+                    margin-bottom: 0.625rem;
+                }
+
+                .product-desc-container{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1.5rem;
+
+                    span {
+                        font-size: 1rem;
+                        line-height: 1.1875rem;
+                        letter-spacing: 0.05rem;
+                        font-family: $font-secondary;
+                        color: $gray-600;
+                    }
+                }
+
+                .imi-btn-component {
+                    margin-top: 0.625rem;
+
+                    &.mod__add-to-basket {
+                    }
+
+                    &.mod__buy-in-clinic {
+                        background-color: $purple;
+
+                        &:hover {
+                            background-color: $purple-700;
+                        }
+                    }
+
+                    &.mod__out-of-stock {
+                        background-color: $blueish-green-300;
+
+                        .imi-btn-desc {
+                            color: $blueish-green-400;
+                        }
+                    }
+                }
+    
             }
         }
 

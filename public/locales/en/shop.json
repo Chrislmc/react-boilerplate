@@ -71,6 +71,9 @@
             }
         }
     },
+    "product-detail": {
+        "packSize": "Pack size: {{packSize}}"
+    },
     "shared": {
         "filter": {
             "categories": {

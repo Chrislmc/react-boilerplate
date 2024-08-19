@@ -24,6 +24,7 @@ export const parseDrupalProduct = (
             escape(window.atob(drupalProduct.field_primary_category.name))
         ),
         healthNeeds: drupalProduct.field_health_needs.map((item) => item.name),
+        packSize: drupalProduct.field_unit_size_text,
         /* Unknown logic */
         onlyAvailableInClinic: false,
     };

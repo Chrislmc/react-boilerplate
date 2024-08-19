@@ -16,4 +16,5 @@ export interface IProduct {
     onlyAvailableInClinic: boolean;
     category: IProductPageCategoriesFilter;
     healthNeeds: IProductPageHealthNeedFilter[];
+    packSize?: string;
 }

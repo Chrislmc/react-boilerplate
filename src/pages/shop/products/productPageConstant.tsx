@@ -356,6 +356,7 @@ export const productPageProductCardList = [
             IProductPageHealthNeedFilter.MentalHealth,
             IProductPageHealthNeedFilter.TravelHealth,
         ],
+        packSize: "60 capsules",
     },
     {
         id: "2",

@@ -69,18 +69,6 @@
                     flex: 1;
                 }
 
-                .product-rating-container {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 0.25rem;
-
-                    img {
-                        width: 1.375rem;
-                        aspect-ratio: 1/1;
-                        object-fit: cover;
-                    }
-                }
-
                 .price-desc {
                     line-height: 1.6875rem;
                     letter-spacing: 0.0625rem;

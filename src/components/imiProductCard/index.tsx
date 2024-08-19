@@ -1,11 +1,11 @@
 import { dynamicRouteConstant, redirectRouteMap } from "@/utils/routes/route";
 import { useNavigate } from "react-router-dom";
 import { ImiBaseCard } from "../imiBaseCard";
+import { IImiProductRating, ImiProductRating } from "../imiProductRating";
 import "./_product-card.scss";
 import { IProductButton, ProductButton } from "./productButton";
-import { IProductRating, ProductRating } from "./productRating";
 
-interface IImiProductCardProps extends IProductRating, IProductButton {
+interface IImiProductCardProps extends IImiProductRating, IProductButton {
     id: string;
     imgUrl: string[];
     name: string;
@@ -50,7 +50,7 @@ export const ImiProductCard: React.FC<IImiProductCardProps> = ({
 
                         {desc && <span className="product-desc">{desc}</span>}
 
-                        <ProductRating rating={rating} />
+                        <ImiProductRating rating={rating} />
 
                         <p className="price-desc">
                             {priceDesc ? `${priceDesc}` : `${currency}${price}`}
