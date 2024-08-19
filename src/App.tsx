@@ -10,6 +10,7 @@ import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practit
 import { ServicesPage } from "./pages/services";
 import { NaturopathicAndFunctionalMedicinePage } from "./pages/services/naturopathic-and-functional-medicine";
 import { ShopPage } from "./pages/shop";
+import { ProductDetailPage } from "./pages/shop/product-detail";
 import { ProductsPage } from "./pages/shop/products";
 import "./scss/main.scss";
 import { RemoveTrailingSlash } from "./utils/routes/RemoveTrailingSlash";
@@ -49,6 +50,10 @@ function App() {
                         <Route
                             path={RouteConstant.products}
                             element={<ProductsPage />}
+                        />
+                        <Route
+                            path={`${RouteConstant.productDetail}/${dynamicRouteConstant.productDetail}`}
+                            element={<ProductDetailPage />}
                         />
                     </Route>
 

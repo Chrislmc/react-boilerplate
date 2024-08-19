@@ -339,7 +339,7 @@ export const productPageSortByOption = [
 export const productPageProductCardList = [
     {
         id: "1",
-        imgUrl: Images.ImiProduct1,
+        imgUrl: [Images.ImiProduct1, Images.ImiProduct1_2],
         name: "Viracon",
         desc: "Maximise your natural immune defences with Viracon.",
         currency: "HK$",
@@ -359,7 +359,7 @@ export const productPageProductCardList = [
     },
     {
         id: "2",
-        imgUrl: Images.ImiProduct2,
+        imgUrl: [Images.ImiProduct2],
         name: "Ther-Biotic® Complete Capsule",
         desc: "Encourage a flourishing environment of good bacteria in the gut.",
         currency: "HK$",
@@ -376,7 +376,7 @@ export const productPageProductCardList = [
     },
     {
         id: "3",
-        imgUrl: Images.ImiProduct3,
+        imgUrl: [Images.ImiProduct3],
         name: "C Complete Powder",
         desc: "A mighty union of vitamin C and flavonoids.",
         currency: "HK$",
@@ -393,7 +393,7 @@ export const productPageProductCardList = [
     },
     {
         id: "4",
-        imgUrl: Images.ImiProduct4,
+        imgUrl: [Images.ImiProduct4],
         name: "Bundle Offer [20% Off]: Anti-Aging",
         desc: "Stars aren’t the only thing glowing this holiday season.",
         currency: "HK$",
@@ -407,7 +407,7 @@ export const productPageProductCardList = [
     },
     {
         id: "5",
-        imgUrl: Images.ImiProduct1,
+        imgUrl: [Images.ImiProduct1],
         name: "Viracon",
         desc: "Maximise your natural immune defences with Viracon.",
         currency: "HK$",
@@ -425,7 +425,7 @@ export const productPageProductCardList = [
     },
     {
         id: "6",
-        imgUrl: Images.ImiProduct2,
+        imgUrl: [Images.ImiProduct2],
         name: "Ther-Biotic® Complete Capsule",
         desc: "Encourage a flourishing environment of good bacteria in the gut.",
         currency: "HK$",
@@ -443,7 +443,7 @@ export const productPageProductCardList = [
     },
     {
         id: "7",
-        imgUrl: Images.ImiProduct3,
+        imgUrl: [Images.ImiProduct3],
         name: "C Complete Powder",
         desc: "A mighty union of vitamin C and flavonoids.",
         currency: "HK$",

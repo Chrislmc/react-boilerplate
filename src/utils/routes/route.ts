@@ -12,6 +12,7 @@ export enum RouteConstant {
 
     "shop" = "shop",
     "products" = "products",
+    "productDetail" = "product",
     "imiSupplementOnline" = "imi-supplement-online",
 
     "dispensary" = "dispensary",
@@ -27,6 +28,7 @@ export enum RouteConstant {
 
 export const dynamicRouteConstant = {
     meetOurPractitioners: ":practitionerId",
+    productDetail: ":productId",
 };
 
 export const redirectRouteMap = {
@@ -43,6 +45,7 @@ export const redirectRouteMap = {
 
     shop: `/${RouteConstant.shop}`,
     products: `/${RouteConstant.shop}/${RouteConstant.products}`,
+    productDetail: `/${RouteConstant.shop}/${RouteConstant.productDetail}/${dynamicRouteConstant.productDetail}`,
     imiSupplementOnline: `/${RouteConstant.shop}/${RouteConstant.imiSupplementOnline}`,
 
     dispensary: `/${RouteConstant.dispensary}`,
@@ -73,6 +76,7 @@ export const breadcrumbRouteDescMap = {
 
     [RouteConstant.shop]: "Shop",
     [RouteConstant.products]: "All products",
+    [RouteConstant.productDetail]: "Product detail",
     [RouteConstant.imiSupplementOnline]: "Imi Supplement Online",
 
     [RouteConstant.dispensary]: "Dispensary",
