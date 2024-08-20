@@ -13,6 +13,7 @@ import {
     productDetailPageTabItems,
 } from "./productDetailPageConstant";
 
+// TODO: figure out where does ingredients and vital nutrients come from
 export const ProductDetailPageDetailSection: React.FC<{
     product: IProduct;
 }> = ({ product }) => {
@@ -31,7 +32,6 @@ export const ProductDetailPageDetailSection: React.FC<{
         setActiveTab(value);
     };
 
-    console.log("decode", decodeUtf(product.desc || ""));
     return (
         <SectionContainerY>
             <ContainerX>
@@ -121,6 +121,7 @@ export const ProductDetailPageDetailSection: React.FC<{
                             onTabClick={onTabClick}
                         />
                         <div
+                            className="detail-desc-container"
                             dangerouslySetInnerHTML={{
                                 __html: decodeUtf(product.desc || ""),
                             }}
