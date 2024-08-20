@@ -21,13 +21,14 @@ export const ImiNumberInput: React.FC<Props> = ({
     const disableMaxBtn = inputValue === max;
 
     const onChange = (e: number) => {
-        let parsedValue = e;
+        let parsedValue = e || min;
         if (e > max) {
             parsedValue = max;
         }
         if (e < min) {
             parsedValue = min;
         }
+
         if (setValue) setValue(parsedValue);
         setInputValue(parsedValue);
     };
