@@ -18,6 +18,7 @@ export enum RouteConstant {
     "dispensary" = "dispensary",
 
     "healthHub" = "health-hub",
+    "article" = "article",
 
     "others" = "others",
     "insurance" = "insurance",
@@ -29,6 +30,7 @@ export enum RouteConstant {
 export const dynamicRouteConstant = {
     meetOurPractitioners: ":practitionerId",
     productDetail: ":productId",
+    article: ":articleId",
 };
 
 export const redirectRouteMap = {
@@ -51,6 +53,7 @@ export const redirectRouteMap = {
     dispensary: `/${RouteConstant.dispensary}`,
 
     healthHub: `/${RouteConstant.healthHub}`,
+    article: `/${RouteConstant.healthHub}/${RouteConstant.article}/${dynamicRouteConstant.article}`,
 
     others: `/${RouteConstant.others}`,
     insurance: `/${RouteConstant.others}/${RouteConstant.insurance}`,
@@ -82,6 +85,7 @@ export const breadcrumbRouteDescMap = {
     [RouteConstant.dispensary]: "Dispensary",
 
     [RouteConstant.healthHub]: "Health Hub",
+    [RouteConstant.article]: "Article",
 
     [RouteConstant.others]: "Others",
     [RouteConstant.insurance]: "Insurance",

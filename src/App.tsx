@@ -5,6 +5,7 @@ import { HomePage } from "./pages";
 import { Secret } from "./pages/Secret";
 import { DispensaryPage } from "./pages/dispensary";
 import { HealthHubPage } from "./pages/health-hub";
+import { ArticlePage } from "./pages/health-hub/article";
 import { PractitionersPage } from "./pages/practitioners";
 import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practitioners";
 import { ServicesPage } from "./pages/services";
@@ -62,10 +63,14 @@ function App() {
                         element={<DispensaryPage />}
                     ></Route>
 
-                    <Route
-                        path={RouteConstant.healthHub}
-                        element={<HealthHubPage />}
-                    ></Route>
+                    <Route path={RouteConstant.healthHub}>
+                        <Route index element={<HealthHubPage />} />
+                        <Route
+                            path={`${RouteConstant.article}/${dynamicRouteConstant.article}`}
+                            element={<ArticlePage />}
+                        />
+                    </Route>
+
                     <Route
                         element={
                             <ProtectedRoute>

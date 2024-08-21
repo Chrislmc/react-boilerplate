@@ -1,17 +1,18 @@
 import { ImiArticleCard } from "@/components/imiArticleCard";
+import { IOption } from "@/components/imiCheckBox";
 import { ImiDescSection } from "@/components/imiDescSection";
+import { ImiInput } from "@/components/imiInput";
 import { ImiSection } from "@/components/imiSection";
+import { ImiSelect } from "@/components/imiSelect";
 import { ImiTab } from "@/components/imiTab";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { IArticle } from "@/utils/types/article";
 import { useRef, useState } from "react";
-
-import { IOption } from "@/components/imiCheckBox";
-import { ImiInput } from "@/components/imiInput";
-import { ImiSelect } from "@/components/imiSelect";
 import "./_health-hub.scss";
 import {
+    healthHubArticleList,
     HealthHubPageCardList,
     healthHubPageTabItems,
     healthNeedPageFilterOption,
@@ -46,6 +47,7 @@ export const HealthHubPage = () => {
             setInTransition(false);
         }, 500);
     };
+
     return (
         <div id="health-hub-page">
             <ImiSection className="health-hub-page-desc-section">
@@ -100,15 +102,24 @@ export const HealthHubPage = () => {
                                         ref={healthHubCardContainer}
                                     >
                                         {HealthHubPageCardList[activeTab].map(
-                                            (card, i) => (
-                                                <ImiArticleCard
-                                                    key={`health-hub-card-${i}`}
-                                                    imgUrl={card.imgUrl}
-                                                    date={t(card.date)}
-                                                    title={t(card.title)}
-                                                    desc={t(card.desc)}
-                                                />
-                                            )
+                                            (id, i) => {
+                                                const card =
+                                                    healthHubArticleList.find(
+                                                        (article) =>
+                                                            article.id === id
+                                                    ) as IArticle;
+
+                                                return (
+                                                    <ImiArticleCard
+                                                        key={`health-hub-card-${i}`}
+                                                        id={card.id}
+                                                        imgUrl={card.imgUrl}
+                                                        date={t(card.date)}
+                                                        title={t(card.title)}
+                                                        desc={t(card.desc)}
+                                                    />
+                                                );
+                                            }
                                         )}
                                     </div>
                                 </div>
