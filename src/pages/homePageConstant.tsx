@@ -5,6 +5,7 @@ import { IImiButtonProps } from "@/components/imiButton";
 import { IImiCardWithImageContentProps } from "@/components/imiCardWithImageContent";
 import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
 import { redirectRouteMap } from "@/utils/routes/route";
+import { IArticle } from "@/utils/types/article";
 import { HomePageHeroBannerCard } from "./homePageHeroBannerCard";
 
 export const homePageSwiperCardLists = [
@@ -248,67 +249,41 @@ export const homePageHealthHubTabItems = [
     },
 ];
 
+export const homePageArticleList: IArticle[] = [
+    {
+        id: "1",
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "healthHub.card1.date",
+        title: "healthHub.card1.title",
+        desc: "healthHub.card1.desc",
+        content: [
+            "healthHub.card1.content1",
+            "healthHub.card1.content2",
+            "healthHub.card1.content3",
+            "healthHub.card1.content4",
+        ],
+    },
+    {
+        id: "2",
+        imgUrl: Images.HomePageHealthHubCard2,
+        date: "healthHub.card2.date",
+        title: "healthHub.card2.title",
+        desc: "healthHub.card2.desc",
+        content: [
+            "healthHub.card1.content1",
+            "healthHub.card1.content2",
+            "healthHub.card1.content3",
+            "healthHub.card1.content4",
+        ],
+    },
+];
+
 export const homePageHealthHubCardList: {
-    [key in IHomePageHealthHubTab]: (IImiCardWithImageContentProps & {
-        date: string;
-    })[];
+    [key in IHomePageHealthHubTab]: string[];
 } = {
-    [IHomePageHealthHubTab.TRENDING]: [
-        {
-            imgUrl: Images.HomePageHealthHubCard1,
-            date: "healthHub.card1.date",
-            title: "healthHub.card1.title",
-            desc: "healthHub.card1.desc",
-        },
-        {
-            imgUrl: Images.HomePageHealthHubCard2,
-            date: "healthHub.card2.date",
-            title: "healthHub.card2.title",
-            desc: "healthHub.card2.desc",
-        },
-        {
-            imgUrl: Images.HomePageHealthHubCard1,
-            date: "healthHub.card3.date",
-            title: "healthHub.card3.title",
-            desc: "healthHub.card3.desc",
-        },
-    ],
-    [IHomePageHealthHubTab.POPULAR]: [
-        {
-            imgUrl: Images.HomePageHealthHubCard1,
-            date: "healthHub.card1.date",
-            title: "healthHub.card1.title",
-            desc: "healthHub.card1.desc",
-        },
-        {
-            imgUrl: Images.HomePageHealthHubCard2,
-            date: "healthHub.card2.date",
-            title: "healthHub.card2.title",
-            desc: "healthHub.card2.desc",
-        },
-    ],
-    [IHomePageHealthHubTab.HEALTH_NEEDS]: [
-        {
-            imgUrl: Images.HomePageHealthHubCard1,
-            date: "healthHub.card3.date",
-            title: "healthHub.card3.title",
-            desc: "healthHub.card3.desc",
-        },
-    ],
-    [IHomePageHealthHubTab.SUPPLEMENTS]: [
-        {
-            imgUrl: Images.HomePageHealthHubCard2,
-            date: "healthHub.card2.date",
-            title: "healthHub.card2.title",
-            desc: "healthHub.card2.desc",
-        },
-    ],
-    [IHomePageHealthHubTab.PRACTITIONER_BLOGS]: [
-        {
-            imgUrl: Images.HomePageHealthHubCard1,
-            date: "healthHub.card1.date",
-            title: "healthHub.card1.title",
-            desc: "healthHub.card1.desc",
-        },
-    ],
+    [IHomePageHealthHubTab.TRENDING]: ["1", "2", "1", "1", "2", "1"],
+    [IHomePageHealthHubTab.POPULAR]: ["1", "2"],
+    [IHomePageHealthHubTab.HEALTH_NEEDS]: ["1", "1", "1", "1", "1"],
+    [IHomePageHealthHubTab.SUPPLEMENTS]: ["2"],
+    [IHomePageHealthHubTab.PRACTITIONER_BLOGS]: ["1"],
 };

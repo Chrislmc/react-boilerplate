@@ -4,9 +4,11 @@ import { ImiTab } from "@/components/imiTab";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { IArticle } from "@/utils/types/article";
 import { useRef, useState } from "react";
 import {
     IHomePageHealthHubTab,
+    homePageArticleList,
     homePageHealthHubCardList,
     homePageHealthHubTabItems,
 } from "./homePageConstant";
@@ -52,15 +54,22 @@ export const HomePageHealthHubSection = () => {
                                 ref={healthHubCardContainer}
                             >
                                 {homePageHealthHubCardList[activeTab].map(
-                                    (card, i) => (
-                                        <ImiArticleCard
-                                            key={`health-hub-card-${i}`}
-                                            imgUrl={card.imgUrl}
-                                            date={t(card.date)}
-                                            title={t(card.title)}
-                                            desc={t(card.desc)}
-                                        />
-                                    )
+                                    (id, i) => {
+                                        const card = homePageArticleList.find(
+                                            (article) => article.id === id
+                                        ) as IArticle;
+
+                                        return (
+                                            <ImiArticleCard
+                                                key={`health-hub-card-${i}`}
+                                                id={card.id}
+                                                imgUrl={card.imgUrl}
+                                                date={t(card.date)}
+                                                title={t(card.title)}
+                                                desc={t(card.desc)}
+                                            />
+                                        );
+                                    }
                                 )}
                             </div>
                         </div>

@@ -143,9 +143,6 @@ export const healthHubPageTabItems = [
     },
 ];
 
-export const healthHubTrendingList = [1, 2, 1, 1, 2, 1];
-export const healthHubPopularList = [1, 2];
-
 export const healthHubArticleList: IArticle[] = [
     {
         id: "1",
