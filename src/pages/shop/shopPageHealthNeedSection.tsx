@@ -4,9 +4,10 @@ import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiSwiper } from "@/components/imiSwiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { redirectRouteMap } from "@/utils/routes/route";
+import { useNavigate } from "react-router-dom";
 import "./_shop-page.scss";
 import { shopPageHealthNeedCardList } from "./shopPageConstant";
-import { useNavigate } from "react-router-dom";
 
 export const ShopPageHealthNeedSection = () => {
     const t = i18nHelper("shop");
@@ -49,6 +50,7 @@ export const ShopPageHealthNeedSection = () => {
                             text={t("shop.healthNeed.linkText")}
                             colorTheme="orange"
                             size="padding"
+                            onClick={() => navigator(redirectRouteMap.products)}
                         />
                     </div>
                 </>
