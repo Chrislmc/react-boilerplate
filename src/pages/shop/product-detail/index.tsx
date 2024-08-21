@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 import { productPageProductCardList } from "../products/productPageConstant";
 import "./_product-detail-page.scss";
 import { ProductDetailPageDetailSection } from "./productDetailPageDetailSection";
+import { ProductDetailPageRelatedProductSection } from "./productDetailPageRelatedProductSection";
 
 export const ProductDetailPage = () => {
     const location = useLocation();
@@ -17,6 +18,9 @@ export const ProductDetailPage = () => {
         <div id="product-detail-page">
             <ImiSection className="product-detail-section">
                 <ProductDetailPageDetailSection product={productDetail} />
+            </ImiSection>
+            <ImiSection className="related-product-section">
+                <ProductDetailPageRelatedProductSection />
             </ImiSection>
 
             <ImiBreadcrumb customRouteDesc={productDetail.name} />

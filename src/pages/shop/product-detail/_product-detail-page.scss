@@ -167,31 +167,82 @@
                         }
                     }
                 }
+            }
 
-                .detail-desc-container {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
+            .detail-desc-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
 
-                    p {
-                        font-size: 1rem;
-                        line-height: 1.875rem;
-                        letter-spacing: 0.05rem;
-                        font-family: $font-secondary;
+                p {
+                    font-size: 1rem;
+                    line-height: 1.875rem;
+                    letter-spacing: 0.05rem;
+                    font-family: $font-secondary;
+                    color: $gray;
+                    text-align: left;
+                    margin: 0;
+                    padding-left: 1.5em;
+                    text-indent: -1em;
+
+                    &::before {
+                        content: '•';
+                        display: inline-block;
+                        margin: 0 0.5rem;
                         color: $gray;
-                        text-align: left;
-                        margin: 0;
-                        padding-left: 1.5em;
-                        text-indent: -1em;
+                    }
+                }
+            }
+        }
+    }
+    
+    .related-product-section {
+        background-color: $primary-200;
+        
+        .section-container-y {
+            margin-top: 1.875rem;
 
-                        &::before {
-                            content: '•';
-                            display: inline-block;
-                            margin: 0 0.5rem;
-                            color: $gray;
+            .swiper {
+                padding: 0.375rem;
+                height: 41rem;
+
+                .swiper-wrapper {
+                    .imi-product-card-component {
+                        min-width: unset;
+                    }
+                }
+
+                .swiper-pagination {
+                    top: unset;
+                    bottom: 0;
+
+                    .swiper-pagination-bullet {
+                        border-color: #80BBCC;
+            
+                        &.swiper-pagination-bullet-active {
+                            background-color: $blueish-green-700;
+                            border-color: $blueish-green-700;
                         }
                     }
                 }
+            }
+            .swiper {
+                // height: 18rem;
+                // padding: 0 0.375rem;
+
+                // .swiper-pagination {
+                //     top: unset;
+                //     bottom: 0;
+
+                //     .swiper-pagination-bullet {
+                //         border-color: #80BBCC;
+                        
+                //         &.swiper-pagination-bullet-active {
+                //             background-color: $blueish-green-700;
+                //             border-color: $blueish-green-700;
+                //         }
+                //     }
+                // }
             }
         }
     }

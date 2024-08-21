@@ -120,14 +120,13 @@ export const ProductDetailPageDetailSection: React.FC<{
                             setActiveTab={setActiveTab}
                             onTabClick={onTabClick}
                         />
-                        <div
-                            className="detail-desc-container"
-                            dangerouslySetInnerHTML={{
-                                __html: decodeUtf(product.desc || ""),
-                            }}
-                        />
                     </div>
-                    <div className="detail-container"></div>
+                    <div
+                        className="detail-desc-container"
+                        dangerouslySetInnerHTML={{
+                            __html: decodeUtf(product.desc || ""),
+                        }}
+                    />
                 </div>
             </ContainerX>
         </SectionContainerY>
