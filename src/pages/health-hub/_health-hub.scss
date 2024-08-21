@@ -36,6 +36,16 @@
                 &.mod__in-transition {
                     opacity: 0;
                 }
+
+                .imi-card-with-image-content-component {
+                    &:hover {
+                        cursor: pointer;
+
+                        .card-content-container {
+                            background-color: $gray-100;
+                        }
+                    }
+                }
             }
         }
     }
