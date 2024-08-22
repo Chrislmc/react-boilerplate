@@ -1,6 +1,7 @@
 import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
 import "./_naturopathy-page.scss";
 import { NaturopathyPageDescSection } from "./naturopathyPageDescSection";
+import { NaturopathyPageFunctionalMedicineSection } from "./naturopathyPageFunctionalMedicineSection";
 import { NaturopathyPageHeroBannerSection } from "./naturopathyPageHeroBannerSection";
 
 export const NaturopathyPage = () => {
@@ -14,6 +15,10 @@ export const NaturopathyPage = () => {
 
             <div className="naturopathy-page-desc-section">
                 <NaturopathyPageDescSection />
+            </div>
+
+            <div className="naturopathy-page-functional-medicine-section">
+                <NaturopathyPageFunctionalMedicineSection />
             </div>
         </div>
     );

@@ -49,6 +49,12 @@
                 "nutrition": "Nutrition",
                 "supplements": "Supplements"
             }
+        },
+        "functionalMedicine": {
+            "header": "FUNCTIONAL MEDICINE AND TESTING",
+            "desc1": "There is overlap between naturopathy and functional medicine, as practitioners often borrow concepts from the other discipline.",
+            "desc2": "We use industry-leading tests (a key part of functional medicine) to find the root cause of your condition, so we can treat it effectively.",
+            "linkText": "Learn more"
         }
     }
 }
