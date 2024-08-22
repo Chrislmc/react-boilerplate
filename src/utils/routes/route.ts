@@ -5,7 +5,7 @@ export enum RouteConstant {
     "meetOurPractitioners" = "meet-our-practitioners",
 
     "services" = "services",
-    "naturopathicAndFunctionalMedicine" = "naturopathic-and-functional-medicine",
+    "naturopathy" = "naturopathy",
     "psychologyCounsellingAndCoaching" = "psychology-counselling-and-coaching",
     "bodyworkAndEnergyMedicine" = "bodywork-and-energy-medicine",
     "labsIvAndConventionalMedicine" = "labs-iv-and-conventional-medicine",
@@ -40,7 +40,7 @@ export const redirectRouteMap = {
     meetOurPractitioners: `/${RouteConstant.practitioners}/${RouteConstant.meetOurPractitioners}/${dynamicRouteConstant.meetOurPractitioners}`,
 
     services: `/${RouteConstant.services}`,
-    naturopathicAndFunctionalMedicine: `/${RouteConstant.services}/${RouteConstant.naturopathicAndFunctionalMedicine}`,
+    naturopathy: `/${RouteConstant.services}/${RouteConstant.naturopathy}`,
     psychologyCounsellingAndCoaching: `/${RouteConstant.services}/${RouteConstant.psychologyCounsellingAndCoaching}`,
     bodyworkAndEnergyMedicine: `/${RouteConstant.services}/${RouteConstant.bodyworkAndEnergyMedicine}`,
     labsIvAndConventionalMedicine: `/${RouteConstant.services}/${RouteConstant.labsIvAndConventionalMedicine}`,
@@ -69,8 +69,7 @@ export const breadcrumbRouteDescMap = {
     [RouteConstant.meetOurPractitioners]: "Meet Our Practitioners",
 
     [RouteConstant.services]: "Services",
-    [RouteConstant.naturopathicAndFunctionalMedicine]:
-        "Naturopathic And Functional Medicine",
+    [RouteConstant.naturopathy]: "Naturopathy",
     [RouteConstant.psychologyCounsellingAndCoaching]:
         "Psychology Counselling AndCoaching",
     [RouteConstant.bodyworkAndEnergyMedicine]: "Bodywork And Energy Medicine",

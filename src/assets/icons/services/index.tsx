@@ -6,14 +6,17 @@ import Counselling from "./counselling.svg";
 import CraniosacralTherapyAndEnergyTreatments from "./craniosacral-therapy-and-energy-treatments.svg";
 import FunctionalMedicine from "./functional-medicine.svg";
 import GpServices from "./gp-services.svg";
+import HerbalMedicine from "./herbal-medicine.svg";
 import Homeopathy from "./homeopathy.svg";
 import IvTherapy from "./iv-therapy.svg";
 import LabTestsColorless from "./lab-tests.svg";
 import Naturopathy from "./naturopathy.svg";
 import Osteopathy from "./osteopathy.svg";
 import Physiotherapy from "./physiotherapy.svg";
+import Supplements from "./supplements.svg";
+import Testing from "./testing.svg";
 
-export const ServicesIcons = {
+export const servicesIcons = {
     AcupunctureAndTcm,
     ClinicalNutrition,
     ClinicalPsychology,
@@ -22,10 +25,13 @@ export const ServicesIcons = {
     CraniosacralTherapyAndEnergyTreatments,
     FunctionalMedicine,
     GpServices,
+    HerbalMedicine,
     Homeopathy,
     IvTherapy,
     LabTestsColorless,
     Naturopathy,
     Osteopathy,
     Physiotherapy,
+    Supplements,
+    Testing,
 };

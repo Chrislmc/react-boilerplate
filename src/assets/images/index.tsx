@@ -6,6 +6,7 @@ import ImiProduct1 from "./product1.png";
 import ImiProduct2 from "./product2.png";
 import ImiProduct3 from "./product3.png";
 import ImiProduct4 from "./product4.png";
+import { servicesImages } from "./services";
 import { shopPageImages } from "./shop";
 
 export const Images = {
@@ -18,4 +19,5 @@ export const Images = {
     ...homePageImages,
     ...practitionersImages,
     ...shopPageImages,
+    ...servicesImages,
 };

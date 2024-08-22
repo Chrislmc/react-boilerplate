@@ -31,5 +31,24 @@
             "labTests": "Lab Tests",
             "ivTherapy": "IV therapy"
         }
+    },
+
+    "naturopathicMedicine": {
+        "heroBanner": {
+            "header": "NATUROPATHIC MEDICINE",
+            "desc": "Think of us as the GPs of natural medicine"
+        },
+        "desc": {
+            "desc1": "Our naturopaths bring together the laws of science with centuries old healing traditions to optimise your wellbeing.",
+            "desc2": "The basis of naturopathy is the idea that everyone is capable of self-healing given the right support.",
+            "desc3": "Our naturopaths don’t just look at your presenting symptoms. They evaluate your nutritional status, genetics, family history, lifestyle, emotions and more to get the full picture of your health.",
+            "desc4": "Consultations are available in person in our Hong Kong clinic, or online.",
+            "ribbon": {
+                "testing": "Testing",
+                "herbalMedicine": "Herbal Medicine",
+                "nutrition": "Nutrition",
+                "supplements": "Supplements"
+            }
+        }
     }
 }

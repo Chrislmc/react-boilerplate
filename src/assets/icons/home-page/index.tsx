@@ -10,7 +10,7 @@ import Immunity from "./immunity.svg";
 import Pain from "./pain.svg";
 import Sleep from "./sleep.svg";
 
-export const HomePageIcons = {
+export const homePageIcons = {
     Allergies,
     DetoxAndWeightLoss,
     GutHealth,

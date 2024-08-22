@@ -8,12 +8,12 @@ import EmptyStar from "./empty-star.svg";
 import Facebook from "./facebook.svg";
 import Filter from "./filter.svg";
 import Form from "./form.svg";
-import { HomePageIcons } from "./home-page";
+import { homePageIcons } from "./home-page";
 import Instagram from "./instagram.svg";
 import LabTests from "./lab tests.svg";
-import { PractitionersIcons } from "./practitioners";
+import { practitionersIcons } from "./practitioners";
 import Search from "./search.svg";
-import { ServicesIcons } from "./services";
+import { servicesIcons } from "./services";
 import Shop from "./shop.svg";
 import Star from "./star.svg";
 import Tick from "./tick.svg";
@@ -39,7 +39,7 @@ export const Icons = {
     Tick,
     Whatsapp,
     Youtube,
-    ...HomePageIcons,
-    ...PractitionersIcons,
-    ...ServicesIcons,
+    ...homePageIcons,
+    ...practitionersIcons,
+    ...servicesIcons,
 };

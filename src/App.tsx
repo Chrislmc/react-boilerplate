@@ -9,7 +9,7 @@ import { ArticlePage } from "./pages/health-hub/article";
 import { PractitionersPage } from "./pages/practitioners";
 import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practitioners";
 import { ServicesPage } from "./pages/services";
-import { NaturopathicAndFunctionalMedicinePage } from "./pages/services/naturopathic-and-functional-medicine";
+import { NaturopathyPage } from "./pages/services/naturopathy";
 import { ShopPage } from "./pages/shop";
 import { ProductDetailPage } from "./pages/shop/product-detail";
 import { ProductsPage } from "./pages/shop/products";
@@ -33,15 +33,12 @@ function App() {
                         />
                     </Route>
 
-                    <Route
-                        path={RouteConstant.services}
-                        element={<ServicesPage />}
-                    >
+                    <Route path={RouteConstant.services}>
+                        <Route index element={<ServicesPage />} />
+
                         <Route
-                            path={
-                                RouteConstant.naturopathicAndFunctionalMedicine
-                            }
-                            element={<NaturopathicAndFunctionalMedicinePage />}
+                            path={RouteConstant.naturopathy}
+                            element={<NaturopathyPage />}
                         />
                     </Route>
 

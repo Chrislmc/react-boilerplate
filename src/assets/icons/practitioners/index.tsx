@@ -3,7 +3,7 @@ import Location from "./location.svg";
 import Online from "./online.svg";
 import Phone from "./phone.svg";
 
-export const PractitionersIcons = {
+export const practitionersIcons = {
     Calendar,
     Location,
     Online,
