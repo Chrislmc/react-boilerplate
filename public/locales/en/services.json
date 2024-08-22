@@ -1,0 +1,35 @@
+{
+    "services": {
+        "naturopathicAndFunctionalMedicine": {
+            "header": "NATUROPATHIC & FUNCTIONAL MEDICINE",
+            "desc": "Treat the root cause of your concern with testing, nutrition, naturopathic medicine and herbal medicine.",
+            "naturopathicMedicine": "Naturopathic medicine",
+            "homeopathy": "Homeopathy",
+            "clinicalNutrition": "Clinical nutrition",
+            "functionalMedicine": "Functional medicine"
+        },
+        "psychologyCounsellingAndCoaching": {
+            "header": "PSYCHOLOGY, COUNSELLING & COACHING",
+            "desc": "Treat the root cause of your concern with testing, nutrition, homeopathy and herbal medicine.",
+            "clinicalPsychology": "Clinical Psychology",
+            "psychotherapy": "Psychotherapy",
+            "counselling": "Counselling",
+            "coaching": "Coaching"
+        },
+        "bodyworkAndEnergyMedicine": {
+            "header": "BODYWORK & ENERGY MEDICINE",
+            "desc": "Treat the root cause of your concern with testing, nutrition, homeopathy and herbal medicine.",
+            "osteopathy": "Osteopathy",
+            "physiotherapy": "Physiotherapy",
+            "craniosacralTherapyAndEnergyTreatments": "Craniosacral Therapy & Energy treatments",
+            "acupunctureAndTcm": "Acupuncture & TCM"
+        },
+        "labsIvAndConventionalMedicine": {
+            "header": "LABS, IV & CONVENTIONAL MEDICINE",
+            "desc": "Treat the root cause of your concern with testing, nutrition, homeopathy and herbal medicine.",
+            "gpServices": "GP services",
+            "labTests": "Lab Tests",
+            "ivTherapy": "IV therapy"
+        }
+    }
+}

@@ -24,7 +24,14 @@ await i18n
                 );
             },
         },
-        ns: ["shared", "home-page", "practitioners", "shop", "health-hub"],
+        ns: [
+            "shared",
+            "home-page",
+            "practitioners",
+            "shop",
+            "health-hub",
+            "services",
+        ],
         defaultNS: "shared",
     });
 
