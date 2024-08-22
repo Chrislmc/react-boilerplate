@@ -8,7 +8,7 @@ import FunctionalMedicine from "./functional-medicine.svg";
 import GpServices from "./gp-services.svg";
 import Homeopathy from "./homeopathy.svg";
 import IvTherapy from "./iv-therapy.svg";
-import LabTests from "./lab-tests.svg";
+import LabTestsColorless from "./lab-tests.svg";
 import Naturopathy from "./naturopathy.svg";
 import Osteopathy from "./osteopathy.svg";
 import Physiotherapy from "./physiotherapy.svg";
@@ -24,7 +24,7 @@ export const ServicesIcons = {
     GpServices,
     Homeopathy,
     IvTherapy,
-    LabTests,
+    LabTestsColorless,
     Naturopathy,
     Osteopathy,
     Physiotherapy,

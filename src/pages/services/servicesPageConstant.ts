@@ -64,7 +64,7 @@ export const LabsIvAndConventionalMedicineList = [
     },
     {
         text: "services.labsIvAndConventionalMedicine.labTests",
-        imgUrl: Icons.LabTests,
+        imgUrl: Icons.LabTestsColorless,
     },
     {
         text: "services.labsIvAndConventionalMedicine.ivTherapy",
