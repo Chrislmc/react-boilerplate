@@ -14,12 +14,6 @@ export const Content = forwardRef<HTMLDivElement, ContentProps>(function (
     const [seoContent, setSeoContent] = useState<ISeo>(defaultSeo);
 
     useLayoutEffect(() => {
-        const main = document.getElementsByTagName("main")[0];
-
-        if (!main) return;
-
-        main.scrollTo(0, 0);
-
         setSeoContent(mapPathNameToSeo?.[location.pathname]);
     }, [location.pathname]);
 

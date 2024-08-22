@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: column-reverse;
     transition: max-height 0.2s ease-out;
+    z-index: 2;
 
     &.mod__display {
         max-height: 13.125rem;

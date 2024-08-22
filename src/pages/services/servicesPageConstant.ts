@@ -18,3 +18,22 @@ export const naturopathicAndFunctionalMedicineList = [
         imgUrl: Icons.FunctionalMedicine,
     },
 ];
+
+export const psychologyCounsellingAndCoachingList = [
+    {
+        text: "services.psychologyCounsellingAndCoaching.clinicalPsychology",
+        imgUrl: Icons.ClinicalPsychology,
+    },
+    {
+        text: "services.psychologyCounsellingAndCoaching.psychotherapy",
+        imgUrl: Icons.ClinicalPsychology,
+    },
+    {
+        text: "services.psychologyCounsellingAndCoaching.counselling",
+        imgUrl: Icons.Counselling,
+    },
+    {
+        text: "services.psychologyCounsellingAndCoaching.coaching",
+        imgUrl: Icons.Coaching,
+    },
+];
