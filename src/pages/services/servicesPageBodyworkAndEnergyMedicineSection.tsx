@@ -2,18 +2,18 @@ import { ImiDescSection } from "@/components/imiDescSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { redirectRouteMap } from "@/utils/routes/route";
 import { ServiceCard } from "./serviceCard";
-import { naturopathicAndFunctionalMedicineList } from "./servicesPageConstant";
+import { bodyworkAndEnergyMedicineList } from "./servicesPageConstant";
 
-export const NaturopathicAndFunctionalMedicineSection = () => {
+export const BodyworkAndEnergyMedicineSection = () => {
     const t = i18nHelper("services");
 
     return (
         <ImiDescSection
-            header={t("services.naturopathicAndFunctionalMedicine.header")}
-            desc={[t("services.naturopathicAndFunctionalMedicine.desc")]}
+            header={t("services.bodyworkAndEnergyMedicine.header")}
+            desc={[t("services.bodyworkAndEnergyMedicine.desc")]}
             customBottomComponent={
                 <div className="card-grid-container">
-                    {naturopathicAndFunctionalMedicineList.map((cardItem) => (
+                    {bodyworkAndEnergyMedicineList.map((cardItem) => (
                         <ServiceCard
                             text={t(cardItem.text)}
                             imgUrl={cardItem.imgUrl}

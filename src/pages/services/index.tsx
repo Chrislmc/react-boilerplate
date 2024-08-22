@@ -1,4 +1,6 @@
 import "./_services-page.scss";
+import { BodyworkAndEnergyMedicineSection } from "./servicesPageBodyworkAndEnergyMedicineSection";
+import { LabsIvAndConventionalMedicine } from "./servicesPageLabsIvAndConventionalMedicine";
 import { NaturopathicAndFunctionalMedicineSection } from "./servicesPageNaturopathicAndFunctionalMedicineSection";
 import { PsychologyCounsellingAndCoachingSection } from "./servicesPagePsychologyCounsellingAndCoachingSection";
 
@@ -10,6 +12,12 @@ export const ServicesPage = () => {
             </div>
             <div className="psychology-counselling-and-coaching-section">
                 <PsychologyCounsellingAndCoachingSection />
+            </div>
+            <div className="bodywork-and-energy-medicine-section">
+                <BodyworkAndEnergyMedicineSection />
+            </div>
+            <div className="labs-iv-and-conventional-section">
+                <LabsIvAndConventionalMedicine />
             </div>
         </div>
     );

@@ -17,11 +17,16 @@
             margin-top: 3.75rem;
 
             .service-card-component {
-                height: 15rem;
+                height: 20rem;
                 border-radius: 1.25rem;
                 padding: 0.375rem 0;
                 margin: 0;
                 cursor: pointer;
+
+                @include media(medium-screen){
+                    height: unset;
+                    aspect-ratio: 1.21875/1;
+                }
 
                 &:hover {
                     .imi-card-component {
@@ -41,6 +46,7 @@
                     box-shadow: 0 0 0.375rem #26262629;
                     box-sizing: border-box;
                     border: 0.125rem solid $white;
+                    padding: 2.5rem;
     
                     img {
                         width: 6.25rem;
@@ -52,6 +58,7 @@
                         font-weight: 700;
                         line-height: 1.5rem;
                         color: $gray;
+                        height: 3rem;
                     }
                 }
             }
@@ -61,6 +68,12 @@
     .naturopathic-and-functional-medicine-section { }
 
     .psychology-counselling-and-coaching-section {
+        background-color: $primary-200;
+    }
+
+    .bodywork-and-energy-medicine-section { }
+
+    .labs-iv-and-conventional-section {
         background-color: $primary-200;
     }
 }

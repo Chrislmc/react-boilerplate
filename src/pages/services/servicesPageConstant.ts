@@ -37,3 +37,37 @@ export const psychologyCounsellingAndCoachingList = [
         imgUrl: Icons.Coaching,
     },
 ];
+
+export const bodyworkAndEnergyMedicineList = [
+    {
+        text: "services.bodyworkAndEnergyMedicine.osteopathy",
+        imgUrl: Icons.Osteopathy,
+    },
+    {
+        text: "services.bodyworkAndEnergyMedicine.physiotherapy",
+        imgUrl: Icons.Physiotherapy,
+    },
+    {
+        text: "services.bodyworkAndEnergyMedicine.craniosacralTherapyAndEnergyTreatments",
+        imgUrl: Icons.CraniosacralTherapyAndEnergyTreatments,
+    },
+    {
+        text: "services.bodyworkAndEnergyMedicine.acupunctureAndTcm",
+        imgUrl: Icons.AcupunctureAndTcm,
+    },
+];
+
+export const LabsIvAndConventionalMedicineList = [
+    {
+        text: "services.labsIvAndConventionalMedicine.gpServices",
+        imgUrl: Icons.GpServices,
+    },
+    {
+        text: "services.labsIvAndConventionalMedicine.labTests",
+        imgUrl: Icons.LabTests,
+    },
+    {
+        text: "services.labsIvAndConventionalMedicine.ivTherapy",
+        imgUrl: Icons.IvTherapy,
+    },
+];
