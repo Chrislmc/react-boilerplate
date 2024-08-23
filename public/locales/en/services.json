@@ -84,6 +84,11 @@
                     "desc3Suffix": " will check the effects of your therapies, as you go through healing. You may experience several stages (detoxification, nutritional repair and rebalancing) as your body’s organs return to health."
                 }
             }
+        },
+        "license": {
+            "header": "IS NATUROPATHY LICENSED?",
+            "desc1": "Not all natural medicine practitioners are licensed. Ours are though.",
+            "desc2": "Our naturopathic physicians are certified in north America and Europe. Our naturopaths are licensed in Australia. All are certified by the Integrated Naturopathic Association of Hong Kong, a member of the World Naturopathic Federation."
         }
     }
 }

@@ -8,7 +8,7 @@ interface Props {
     backgroundColor?: "white" | "blueish-green";
     header: string;
     descs?: string[];
-    button: IImiButtonProps;
+    button?: IImiButtonProps;
 }
 
 export const ImiImageTextSection: React.FC<Props> = ({

@@ -4,6 +4,7 @@ import { NaturopathyPageDescSection } from "./naturopathyPageDescSection";
 import { NaturopathyPageFunctionalMedicineSection } from "./naturopathyPageFunctionalMedicineSection";
 import { NaturopathyPageHeroBannerSection } from "./naturopathyPageHeroBannerSection";
 import { NaturopathyPageServiceDetailSection } from "./naturopathyPageServiceDetailSection";
+import { NaturopathyPageLicenseSection } from "./NaturopathyPageLicenseSection";
 
 export const NaturopathyPage = () => {
     return (
@@ -24,6 +25,10 @@ export const NaturopathyPage = () => {
 
             <div className="naturopathy-page-service-detail-section">
                 <NaturopathyPageServiceDetailSection />
+            </div>
+
+            <div className="naturopathy-page-license-section">
+                <NaturopathyPageLicenseSection />
             </div>
         </div>
     );
