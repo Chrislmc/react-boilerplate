@@ -12,6 +12,10 @@
         }
 
         .imi-desc-section-component {
+            .section-container-y {
+                padding-bottom: 0;
+            }
+
             .imi-desc-section-hero-image {
                 height: 37.5rem;
 
@@ -21,11 +25,8 @@
             }
 
             .imi-desc-section-content {
-                margin-top: 3.75rem;
-
                 .imi-section-header-component{
                     text-align: left;
-                    margin-bottom: 3.75rem;
                 }
             }
 
