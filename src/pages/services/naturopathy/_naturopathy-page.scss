@@ -109,60 +109,7 @@
         }
     }
 
-    .naturopathy-page-functional-medicine-section {
-        background-color: $primary-200;
-
-        .row {
-            padding: 3.125rem 0;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-
-            .content-container {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-                gap: 3.75rem;
-                padding-right: 6.25rem;
-
-                .header {
-                    line-height: 2.625rem;
-                    letter-spacing: 0.09375rem;
-                    font-weight: 700;
-                    color: $gray;
-                }
-
-                .desc-container {
-                    .desc {
-                        line-height: 1.875rem;
-                        font-family: $font-secondary;
-                        letter-spacing: 0.06875rem;
-                        color: $gray-600;
-                        text-align: left;
-                        font-weight: 500;
-                    }
-
-                    .desc + .desc {
-                        margin-top: 1.5rem;
-                    }
-                }
-            }
-
-            .image-container {
-                flex: 1;
-                height: 31.25rem;
-                border-radius: 1.25rem;
-                overflow: hidden;
-
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
+    .naturopathy-page-functional-medicine-section { }
 
     .naturopathy-page-service-detail-section {
         background-color: $white;
