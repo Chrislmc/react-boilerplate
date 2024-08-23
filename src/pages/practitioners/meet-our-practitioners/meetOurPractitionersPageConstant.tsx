@@ -38,42 +38,49 @@ export const testimonialText =
 
 export const meetOurPractitionersPageArticleCardList = [
     {
+        id: "1",
         imgUrl: Images.HomePageHealthHubCard1,
         date: "meetOurPractitioners.articlesAndVideos.card1.date",
         title: "meetOurPractitioners.articlesAndVideos.card1.title",
         desc: "meetOurPractitioners.articlesAndVideos.card1.desc",
     },
     {
+        id: "2",
         imgUrl: Images.HomePageHealthHubCard2,
         date: "meetOurPractitioners.articlesAndVideos.card2.date",
         title: "meetOurPractitioners.articlesAndVideos.card2.title",
         desc: "meetOurPractitioners.articlesAndVideos.card2.desc",
     },
     {
+        id: "1",
         imgUrl: Images.HomePageHealthHubCard1,
         date: "meetOurPractitioners.articlesAndVideos.card3.date",
         title: "meetOurPractitioners.articlesAndVideos.card3.title",
         desc: "meetOurPractitioners.articlesAndVideos.card3.desc",
     },
     {
+        id: "2",
         imgUrl: Images.HomePageHealthHubCard2,
         date: "meetOurPractitioners.articlesAndVideos.card2.date",
         title: "meetOurPractitioners.articlesAndVideos.card2.title",
         desc: "meetOurPractitioners.articlesAndVideos.card2.desc",
     },
     {
+        id: "1",
         imgUrl: Images.HomePageHealthHubCard1,
         date: "meetOurPractitioners.articlesAndVideos.card1.date",
         title: "meetOurPractitioners.articlesAndVideos.card1.title",
         desc: "meetOurPractitioners.articlesAndVideos.card1.desc",
     },
     {
+        id: "2",
         imgUrl: Images.HomePageHealthHubCard2,
         date: "meetOurPractitioners.articlesAndVideos.card2.date",
         title: "meetOurPractitioners.articlesAndVideos.card2.title",
         desc: "meetOurPractitioners.articlesAndVideos.card2.desc",
     },
     {
+        id: "1",
         imgUrl: Images.HomePageHealthHubCard1,
         date: "meetOurPractitioners.articlesAndVideos.card3.date",
         title: "meetOurPractitioners.articlesAndVideos.card3.title",

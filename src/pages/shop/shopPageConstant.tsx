@@ -158,18 +158,21 @@ export const shopPageHealthNeedCardList = [
 
 export const shopPageArticlesCardList = [
     {
+        id: "1",
         imgUrl: Images.HomePageHealthHubCard1,
         date: "shop.articles.card1.date",
         title: "shop.articles.card1.title",
         desc: "shop.articles.card1.desc",
     },
     {
+        id: "2",
         imgUrl: Images.HomePageHealthHubCard2,
         date: "shop.articles.card2.date",
         title: "shop.articles.card2.title",
         desc: "shop.articles.card2.desc",
     },
     {
+        id: "1",
         imgUrl: Images.HomePageHealthHubCard1,
         date: "shop.articles.card3.date",
         title: "shop.articles.card3.title",

@@ -25,7 +25,7 @@ export const menuList: IMenuItem[] = [
         subMenu: [
             {
                 desc: "naturopathicAndFunctionalMedicine",
-                link: redirectRouteMap.naturopathicAndFunctionalMedicine,
+                link: redirectRouteMap.naturopathy,
             },
             {
                 desc: "psychologyCounsellingAndCoaching",

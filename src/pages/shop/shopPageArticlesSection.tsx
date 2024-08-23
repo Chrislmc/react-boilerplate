@@ -18,6 +18,7 @@ export const ShopPageArticlesSection = () => {
                         {shopPageArticlesCardList.map((card, i) => (
                             <ImiArticleCard
                                 key={`health-hub-card-${i}`}
+                                id={card.id}
                                 imgUrl={card.imgUrl}
                                 date={t(card.date)}
                                 title={t(card.title)}

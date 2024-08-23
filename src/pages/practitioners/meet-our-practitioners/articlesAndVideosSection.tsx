@@ -19,6 +19,7 @@ export const ArticlesAndVideosSection = () => {
                         (card, i) => (
                             <ImiArticleCard
                                 key={`article-card-${i}`}
+                                id={card.id}
                                 imgUrl={card.imgUrl}
                                 date={t(card.date)}
                                 title={t(card.title)}
