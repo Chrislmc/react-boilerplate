@@ -3,6 +3,7 @@ import Cart from "./cart.svg";
 import Consultation from "./consultation.svg";
 import Contact from "./contact.svg";
 import Dispensary from "./dispensary.svg";
+import DropdownWhite from "./dropdown-white.svg";
 import Dropdown from "./dropdown.svg";
 import EmptyStar from "./empty-star.svg";
 import Facebook from "./facebook.svg";
@@ -27,6 +28,7 @@ export const Icons = {
     Contact,
     Dispensary,
     Dropdown,
+    DropdownWhite,
     EmptyStar,
     Facebook,
     Filter,
