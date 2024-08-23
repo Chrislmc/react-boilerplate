@@ -18,6 +18,10 @@
             grid-template-rows: min-content 1fr;
         }
 
+        &:last-child .accordion-list {
+            margin-bottom: 0;
+        }
+
         .accordion-summary {
             width: 100%;
             background-color: $primary-600;
