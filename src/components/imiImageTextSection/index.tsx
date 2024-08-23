@@ -1,5 +1,6 @@
 import { IImiButtonProps, ImiButton } from "../imiButton";
 import { ContainerX } from "../layout/containerX";
+import { SectionContainerY } from "../layout/sectionContainerY";
 import "./_image-text-section.scss";
 
 interface Props {
@@ -22,31 +23,36 @@ export const ImiImageTextSection: React.FC<Props> = ({
     return (
         <div className={`imi-image-text-section mod__bg-${backgroundColor}`}>
             <ContainerX>
-                <div
-                    className={`row${
-                        imgPosition === "right" ? "" : "mod__reversed"
-                    }`}
-                >
-                    <div className="content-container">
-                        <h3 className="header">{header}</h3>
+                <SectionContainerY size="small">
+                    <div
+                        className={`row${
+                            imgPosition === "right" ? "" : "mod__reversed"
+                        }`}
+                    >
+                        <div className="content-container">
+                            <h3 className="header">{header}</h3>
 
-                        {descs && (
-                            <div className="desc-container">
-                                {descs.map((desc, i) => (
-                                    <h6 key={`desc-${i}`} className={"desc"}>
-                                        {desc}
-                                    </h6>
-                                ))}
-                            </div>
-                        )}
+                            {descs && (
+                                <div className="desc-container">
+                                    {descs.map((desc, i) => (
+                                        <h6
+                                            key={`desc-${i}`}
+                                            className={"desc"}
+                                        >
+                                            {desc}
+                                        </h6>
+                                    ))}
+                                </div>
+                            )}
 
-                        {button && <ImiButton {...button} />}
+                            {button && <ImiButton {...button} />}
+                        </div>
+
+                        <div className="image-container">
+                            <img src={imgUrl} />
+                        </div>
                     </div>
-
-                    <div className="image-container">
-                        <img src={imgUrl} />
-                    </div>
-                </div>
+                </SectionContainerY>
             </ContainerX>
         </div>
     );

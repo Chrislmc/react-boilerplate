@@ -1,5 +1,6 @@
 import { ImiAccordion } from "@/components/imiAccordion";
 import { ContainerX } from "@/components/layout/containerX";
+import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { naturopathyDetailsAccordionItems } from "./naturopathyPageConstant";
 
@@ -23,8 +24,10 @@ export const NaturopathyPageServiceDetailSection = () => {
     );
 
     return (
-        <ContainerX>
-            <ImiAccordion content={translatedAccordionItems} />
-        </ContainerX>
+        <SectionContainerY size="small">
+            <ContainerX>
+                <ImiAccordion content={translatedAccordionItems} />
+            </ContainerX>
+        </SectionContainerY>
     );
 };
