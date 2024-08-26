@@ -89,6 +89,11 @@
             "header": "IS NATUROPATHY LICENSED?",
             "desc1": "Not all natural medicine practitioners are licensed. Ours are though.",
             "desc2": "Our naturopathic physicians are certified in north America and Europe. Our naturopaths are licensed in Australia. All are certified by the Integrated Naturopathic Association of Hong Kong, a member of the World Naturopathic Federation."
+        },
+        "banner": {
+            "header": "INSURANCE",
+            "desc": "It’s worth checking if your insurance covers you for naturopathy. Your practitioner can detail any tests needed and treatment so that you can check.",
+            "linkText": "Learn more"
         }
     }
 }

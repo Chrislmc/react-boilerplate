@@ -116,4 +116,25 @@
     }
 
     .naturopathy-page-license-section { }
+
+    .naturopathy-page-banner-section {
+        .imi-gradient-banner {
+            height: 25rem;
+
+            .imi-gradient-banner-content-container {
+                height: 100%;
+            }
+
+            .container-column {
+                height: 100%;
+                margin: 0 0 0 3.75rem;
+
+                .imi-btn-component:hover {
+                    .imi-btn-desc {
+                        color: $blueish-green;
+                    }
+                }
+            }
+        }
+    }
 }

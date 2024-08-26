@@ -23,14 +23,16 @@ export const ImiGradientBanner: React.FC<IImiGradientBannerProps> = (
     return (
         <div className="imi-gradient-banner">
             <div
-                className={`imi-gradient-banner-image-container mod__img-${props?.imgPosition}`}
+                className={`imi-gradient-banner-image-container mod__img-${props.imgPosition}`}
             >
                 <img src={props.imgUrl} />
             </div>
             <div
-                className={`imi-gradient-banner-background-container color-${props.colorTheme}`}
+                className={`imi-gradient-banner-background-container color-${props.colorTheme} mod__img-${props.imgPosition}`}
             />
-            <div className="imi-gradient-banner-content-container">
+            <div
+                className={`imi-gradient-banner-content-container mod__img-${props.imgPosition}`}
+            >
                 <div className="container-column">
                     {props?.content?.length === 1 && (
                         <GradientBannerContent {...props?.content[0]} />
