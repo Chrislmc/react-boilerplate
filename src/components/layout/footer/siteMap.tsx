@@ -12,13 +12,13 @@ export const SiteMap = ({ menuItem }: Props) => {
     return (
         <div className="site-footer-site-map-item-container">
             <div className="site-footer-site-map-item-header">
-                <button
-                    onClick={() => navigate(menuItem.link)}
+                <a
+                    href={menuItem.link}
                     id={menuItem.desc}
-                    disabled={menuItem?.noPage}
+                    aria-disabled={menuItem?.noPage}
                 >
                     <h6>{t(`menuItem.${menuItem.desc}`)}</h6>
-                </button>
+                </a>
             </div>
             <div className="site-footer-site-map-sub-menu-item-container">
                 {menuItem?.subMenu?.map((subMenuItem, i) => (

@@ -34,17 +34,17 @@ export const Header = () => {
                                         location.pathname === item.link;
 
                                     return (
-                                        <button
+                                        <a
                                             key={`header-menu-item-${item.value}`}
                                             className={`header-menu-item-button${
                                                 isActive ? " mod__active" : ""
                                             }`}
-                                            onClick={() => navigator(item.link)}
+                                            href={item.link}
                                             title={t(item.desc)}
                                         >
                                             {t(item.desc)}
                                             <div className="site-header-menu-decorator" />
-                                        </button>
+                                        </a>
                                     );
                                 })}
                             </div>
@@ -55,15 +55,13 @@ export const Header = () => {
                                         { link, iconComponent: IconComponent },
                                         i
                                     ) => (
-                                        <button
+                                        <a
                                             key={`header-button-${i}`}
                                             className={`header-button`}
-                                            onClick={() =>
-                                                link && navigator(link)
-                                            }
+                                            href={link}
                                         >
                                             <IconComponent />
-                                        </button>
+                                        </a>
                                     )
                                 )}
                             </div>
@@ -88,14 +86,14 @@ export const Header = () => {
                 <ContainerX>
                     <div className="site-header-ribbon-content-container">
                         {headerRibbonItems.map((item, i) => (
-                            <button
+                            <a
                                 key={`site-header-ribbon-item-${i}`}
                                 className="site-header-ribbon-item"
-                                onClick={() => navigator(item.link)}
+                                href={item.link}
                             >
                                 <img src={item.imgUrl} />
                                 <p>{t(item.desc)}</p>
-                            </button>
+                            </a>
                         ))}
                     </div>
                 </ContainerX>
