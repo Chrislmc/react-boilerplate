@@ -13,7 +13,7 @@ export const HomePageDispensarySection = () => {
     return (
         <>
             <ImiGradientBanner
-                colorTheme={"any"}
+                colorTheme={"primary"}
                 content={[
                     {
                         header: t("dispensary.header"),
@@ -27,6 +27,7 @@ export const HomePageDispensarySection = () => {
                     },
                 ]}
                 imgUrl={Images.HomePageDispensary}
+                imgPosition="right"
             />
             <ContainerX>
                 <SectionContainerY>

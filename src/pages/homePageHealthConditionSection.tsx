@@ -2,8 +2,6 @@ import { ImiBaseCard } from "@/components/imiBaseCard";
 import { ImiButton } from "@/components/imiButton";
 import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiSwiper } from "@/components/imiSwiper";
-import { ContainerX } from "@/components/layout/containerX";
-import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";
@@ -13,46 +11,40 @@ export const HomePageHealthConditionSection = () => {
     const t = i18nHelper("home-page");
 
     return (
-        <ContainerX>
-            <SectionContainerY>
-                <ImiDescSection
-                    header={t("healthCondition.header")}
-                    desc={[t("healthCondition.desc")]}
-                    customFullWidthBottomComponent={
-                        <>
-                            <ImiSwiper
-                                cardLists={[
-                                    ...homePageHealthConditionCardList.map(
-                                        (cardItem) => (
-                                            <div className="health-condition-card-container">
-                                                <ImiBaseCard shadow>
-                                                    <img
-                                                        src={cardItem.imgUrl}
-                                                    />
-                                                    <span className="card-desc">
-                                                        {t(cardItem.text)}
-                                                    </span>
-                                                </ImiBaseCard>
-                                            </div>
-                                        )
-                                    ),
-                                    HomePageHealthConditionLastCard(),
-                                ]}
-                                slidesPerGroup={4}
-                                slidesPerView={4}
-                                spaceBetween={convertRemToPx(1.25)}
-                                pagination={{ clickable: true }}
-                                speed={2000}
-                            />
-                            <ImiButton
-                                text={t("healthCondition.viewAllAToZ")}
-                                size="padding"
-                            />
-                        </>
-                    }
-                />
-            </SectionContainerY>
-        </ContainerX>
+        <ImiDescSection
+            header={t("healthCondition.header")}
+            desc={[t("healthCondition.desc")]}
+            customBottomComponent={
+                <>
+                    <ImiSwiper
+                        cardLists={[
+                            ...homePageHealthConditionCardList.map(
+                                (cardItem) => (
+                                    <div className="health-condition-card-container">
+                                        <ImiBaseCard shadow>
+                                            <img src={cardItem.imgUrl} />
+                                            <span className="card-desc">
+                                                {t(cardItem.text)}
+                                            </span>
+                                        </ImiBaseCard>
+                                    </div>
+                                )
+                            ),
+                            HomePageHealthConditionLastCard(),
+                        ]}
+                        slidesPerGroup={4}
+                        slidesPerView={4}
+                        spaceBetween={convertRemToPx(1.25)}
+                        pagination={{ clickable: true }}
+                        speed={2000}
+                    />
+                    <ImiButton
+                        text={t("healthCondition.viewAllAToZ")}
+                        size="padding"
+                    />
+                </>
+            }
+        />
     );
 };
 

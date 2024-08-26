@@ -10,10 +10,11 @@ interface IGradientBannerContent {
 }
 
 export interface IImiGradientBannerProps {
-    colorTheme: string;
+    colorTheme: "primary";
     imgUrl?: string;
     content?: IGradientBannerContent[];
     customComponent?: JSX.Element;
+    imgPosition: "right" | "left";
 }
 
 export const ImiGradientBanner: React.FC<IImiGradientBannerProps> = (
@@ -21,7 +22,9 @@ export const ImiGradientBanner: React.FC<IImiGradientBannerProps> = (
 ) => {
     return (
         <div className="imi-gradient-banner">
-            <div className="imi-gradient-banner-image-container">
+            <div
+                className={`imi-gradient-banner-image-container mod__img-${props?.imgPosition}`}
+            >
                 <img src={props.imgUrl} />
             </div>
             <div

@@ -1,21 +1,26 @@
 import { Icons } from "@/assets/icons";
+import { redirectRouteMap } from "@/utils/routes/route";
 
 export const naturopathicAndFunctionalMedicineList = [
     {
         text: "services.naturopathicAndFunctionalMedicine.naturopathicMedicine",
         imgUrl: Icons.Naturopathy,
+        redirectUrl: redirectRouteMap.naturopathy,
     },
     {
         text: "services.naturopathicAndFunctionalMedicine.homeopathy",
         imgUrl: Icons.Homeopathy,
+        redirectUrl: redirectRouteMap.homepage,
     },
     {
         text: "services.naturopathicAndFunctionalMedicine.clinicalNutrition",
         imgUrl: Icons.ClinicalNutrition,
+        redirectUrl: redirectRouteMap.homepage,
     },
     {
         text: "services.naturopathicAndFunctionalMedicine.functionalMedicine",
         imgUrl: Icons.FunctionalMedicine,
+        redirectUrl: redirectRouteMap.homepage,
     },
 ];
 

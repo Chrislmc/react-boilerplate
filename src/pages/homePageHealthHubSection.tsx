@@ -1,8 +1,6 @@
 import { ImiArticleCard } from "@/components/imiArticleCard";
 import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiTab } from "@/components/imiTab";
-import { ContainerX } from "@/components/layout/containerX";
-import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IArticle } from "@/utils/types/article";
 import { useRef, useState } from "react";
@@ -31,51 +29,46 @@ export const HomePageHealthHubSection = () => {
     };
 
     return (
-        <ContainerX>
-            <SectionContainerY>
-                <ImiDescSection
-                    header={t("healthHub.header")}
-                    desc={[t("healthHub.desc")]}
-                    customFullWidthBottomComponent={
-                        <div className="tab-container">
-                            <ImiTab<IHomePageHealthHubTab>
-                                options={homePageHealthHubTabItems.map(
-                                    (tab) => ({ ...tab, text: t(tab.text) })
-                                )}
-                                activeTab={activeTab}
-                                setActiveTab={setActiveTab}
-                                onTabClick={onTabClick}
-                                disabled={inTransition}
-                            />
-                            <div
-                                className={`health-hub-card-grid-container${
-                                    inTransition ? " mod__in-transition" : ""
-                                }`}
-                                ref={healthHubCardContainer}
-                            >
-                                {homePageHealthHubCardList[activeTab].map(
-                                    (id, i) => {
-                                        const card = homePageArticleList.find(
-                                            (article) => article.id === id
-                                        ) as IArticle;
+        <ImiDescSection
+            header={t("healthHub.header")}
+            desc={[t("healthHub.desc")]}
+            customBottomComponent={
+                <div className="tab-container">
+                    <ImiTab<IHomePageHealthHubTab>
+                        options={homePageHealthHubTabItems.map((tab) => ({
+                            ...tab,
+                            text: t(tab.text),
+                        }))}
+                        activeTab={activeTab}
+                        setActiveTab={setActiveTab}
+                        onTabClick={onTabClick}
+                        disabled={inTransition}
+                    />
+                    <div
+                        className={`health-hub-card-grid-container${
+                            inTransition ? " mod__in-transition" : ""
+                        }`}
+                        ref={healthHubCardContainer}
+                    >
+                        {homePageHealthHubCardList[activeTab].map((id, i) => {
+                            const card = homePageArticleList.find(
+                                (article) => article.id === id
+                            ) as IArticle;
 
-                                        return (
-                                            <ImiArticleCard
-                                                key={`health-hub-card-${i}`}
-                                                id={card.id}
-                                                imgUrl={card.imgUrl}
-                                                date={t(card.date)}
-                                                title={t(card.title)}
-                                                desc={t(card.desc)}
-                                            />
-                                        );
-                                    }
-                                )}
-                            </div>
-                        </div>
-                    }
-                />
-            </SectionContainerY>
-        </ContainerX>
+                            return (
+                                <ImiArticleCard
+                                    key={`health-hub-card-${i}`}
+                                    id={card.id}
+                                    imgUrl={card.imgUrl}
+                                    date={t(card.date)}
+                                    title={t(card.title)}
+                                    desc={t(card.desc)}
+                                />
+                            );
+                        })}
+                    </div>
+                </div>
+            }
+        />
     );
 };

@@ -22,6 +22,7 @@ export const HomePageProductSection = () => {
                         <ImiGradientBanner
                             colorTheme={"primary"}
                             imgUrl={Images.HomePageGradientBanner1}
+                            imgPosition="right"
                             content={[
                                 {
                                     header: t("product.gradientBanner1.header"),
