@@ -94,6 +94,11 @@
             "header": "INSURANCE",
             "desc": "It’s worth checking if your insurance covers you for naturopathy. Your practitioner can detail any tests needed and treatment so that you can check.",
             "linkText": "Learn more"
+        },
+        "bookNow": {
+            "header": "WHAT'S NEXT?",
+            "desc": "To see our naturopaths, call +852 2523 7121 or complete your request below.",
+            "linkText": "Book now"
         }
     }
 }
