@@ -4,6 +4,7 @@ import "./_naturopathy-page.scss";
 import { NaturopathyPageBannerSection } from "./naturopathyPageBannerSection";
 import { NaturopathyPageBookNowSection } from "./naturopathyPageBookNowSection";
 import { NaturopathyPageDescSection } from "./naturopathyPageDescSection";
+import { NaturopathyPageHealthNeedSection } from "./naturopathyPageEffectSection";
 import { NaturopathyPageFunctionalMedicineSection } from "./naturopathyPageFunctionalMedicineSection";
 import { NaturopathyPageHeroBannerSection } from "./naturopathyPageHeroBannerSection";
 import { NaturopathyPageServiceDetailSection } from "./naturopathyPageServiceDetailSection";
@@ -39,6 +40,10 @@ export const NaturopathyPage = () => {
 
             <div className="naturopathy-page-book-now-section">
                 <NaturopathyPageBookNowSection />
+            </div>
+
+            <div className="naturopathy-page-health-need-section">
+                <NaturopathyPageHealthNeedSection />
             </div>
         </div>
     );

@@ -99,6 +99,19 @@
             "header": "WHAT'S NEXT?",
             "desc": "To see our naturopaths, call +852 2523 7121 or complete your request below.",
             "linkText": "Book now"
+        },
+        "effect": {
+            "header": "WHAT CAN NATUROPATHY HELP WITH?",
+            "gutHealth": "Gut health",
+            "anxiety": "Anxiety",
+            "skinProblems": "Skin problems",
+            "immunity": "Immunity",
+            "headaches": "Headaches",
+            "sleep": "Sleep",
+            "hormonalHealth": "Hormonal health",
+            "pregnancy": "Pregnancy",
+            "foodIntolerances": "Food intolerances",
+            "detox": "Detox"
         }
     }
 }

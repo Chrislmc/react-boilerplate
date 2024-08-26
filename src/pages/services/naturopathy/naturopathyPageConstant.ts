@@ -63,3 +63,56 @@ export const naturopathyDetailsAccordionItems: IImiAccordion["content"] = [
         ],
     },
 ];
+
+export const NaturopathyPageHealthNeedCardList = [
+    {
+        imgUrl: Icons.GutHealth,
+        text: "naturopathicMedicine.effect.gutHealth",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Anxiety,
+        text: "naturopathicMedicine.effect.anxiety",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.SkinProblems,
+        text: "naturopathicMedicine.effect.skinProblems",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Immunity,
+        text: "naturopathicMedicine.effect.immunity",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Headaches,
+        text: "naturopathicMedicine.effect.headaches",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Sleep,
+        text: "naturopathicMedicine.effect.sleep",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.HormonalHealth,
+        text: "naturopathicMedicine.effect.hormonalHealth",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Pregnancy,
+        text: "naturopathicMedicine.effect.pregnancy",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.FoodIntolerances,
+        text: "naturopathicMedicine.effect.foodIntolerances",
+        redirectUrl: "",
+    },
+    {
+        imgUrl: Icons.Detox,
+        text: "naturopathicMedicine.effect.detox",
+        redirectUrl: "",
+    },
+];
