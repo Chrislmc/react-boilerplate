@@ -104,6 +104,8 @@
         .imi-desc-section-subheader {
             font-family: $font-secondary;
             font-weight: 700;
+            font-style: italic;
+            margin-bottom: 3.125rem;
             color: $gray;
         }
 
@@ -111,6 +113,10 @@
             display: flex;
             flex-direction: column;
             gap: 1.875rem;
+
+            &.mod__shrink-width {
+                padding: 0 9.375rem;
+            }
 
             .imi-desc-section-desc,
             h5[class*='imi-desc-section-desc-'] {

@@ -23,6 +23,7 @@ interface Props {
     header?: string;
     subheader?: string;
     desc?: string[];
+    shrinkDescWidth?: boolean;
 
     heroImg?: IHeroImg;
     customHeaderComponent?: {
@@ -109,7 +110,13 @@ export const ImiDescSection: React.FC<Props> = (props: Props) => {
                         )}
 
                         {props?.desc && (
-                            <div className="imi-desc-section-desc-column">
+                            <div
+                                className={`imi-desc-section-desc-column${
+                                    props?.shrinkDescWidth
+                                        ? " mod__shrink-width"
+                                        : ""
+                                }`}
+                            >
                                 {props?.desc?.map((desc, i) => (
                                     <h5
                                         key={`imi-desc-section-desc-${i}`}

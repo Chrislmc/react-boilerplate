@@ -54,7 +54,7 @@ export const headerRibbonItems = [
     },
     {
         imgUrl: Icons.LabTests,
-        link: redirectRouteMap.homepage,
+        link: redirectRouteMap.labTest,
         desc: "header.ribbon.labTests",
     },
     {

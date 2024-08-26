@@ -6,6 +6,7 @@ import { Secret } from "./pages/Secret";
 import { DispensaryPage } from "./pages/dispensary";
 import { HealthHubPage } from "./pages/health-hub";
 import { ArticlePage } from "./pages/health-hub/article";
+import { LabTestPage } from "./pages/lab-test";
 import { PractitionersPage } from "./pages/practitioners";
 import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practitioners";
 import { ServicesPage } from "./pages/services";
@@ -67,6 +68,11 @@ function App() {
                             element={<ArticlePage />}
                         />
                     </Route>
+
+                    <Route
+                        path={RouteConstant.labTest}
+                        element={<LabTestPage />}
+                    ></Route>
 
                     <Route
                         element={

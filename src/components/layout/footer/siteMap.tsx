@@ -23,14 +23,14 @@ export const SiteMap = ({ menuItem }: Props) => {
             <div className="site-footer-site-map-sub-menu-item-container">
                 {menuItem?.subMenu?.map((subMenuItem, i) => (
                     <div key={i} className="site-footer-site-map-sub-menu-item">
-                        <button
+                        <a
                             onClick={() => navigate(subMenuItem.link)}
                             id={subMenuItem.desc}
                         >
                             <span className="site-footer-site-map-sub-menu-item-desc">
                                 {t(`menuItem.${subMenuItem.desc}`)}
                             </span>
-                        </button>
+                        </a>
                     </div>
                 ))}
             </div>

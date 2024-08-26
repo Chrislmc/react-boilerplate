@@ -20,6 +20,8 @@ export enum RouteConstant {
     "healthHub" = "health-hub",
     "article" = "article",
 
+    "labTest" = "lab-test",
+
     "others" = "others",
     "insurance" = "insurance",
 
@@ -55,6 +57,8 @@ export const redirectRouteMap = {
     healthHub: `/${RouteConstant.healthHub}`,
     article: `/${RouteConstant.healthHub}/${RouteConstant.article}/${dynamicRouteConstant.article}`,
 
+    labTest: `/${RouteConstant.labTest}`,
+
     others: `/${RouteConstant.others}`,
     insurance: `/${RouteConstant.others}/${RouteConstant.insurance}`,
 
@@ -85,6 +89,8 @@ export const breadcrumbRouteDescMap = {
 
     [RouteConstant.healthHub]: "Health Hub",
     [RouteConstant.article]: "Article",
+
+    [RouteConstant.labTest]: "Lab test",
 
     [RouteConstant.others]: "Others",
     [RouteConstant.insurance]: "Insurance",
