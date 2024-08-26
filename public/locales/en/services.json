@@ -112,6 +112,25 @@
             "pregnancy": "Pregnancy",
             "foodIntolerances": "Food intolerances",
             "detox": "Detox"
+        },
+        "articlesAndVideos": {
+            "title": "ARTICLES AND VIDEOS",
+            "card1": {
+                "date": "October 13, 2023",
+                "title": "Stress busting herbs : the power of adaptogens",
+                "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
+            },
+            "card2": {
+                "date": "September 28, 2023",
+                "title": "How meditation nourishes mental health",
+                "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
+            },
+            "card3": {
+                "date": "September 28, 2023",
+                "title": "Short title",
+                "desc": "Very short desc"
+            },
+            "linkText": "See all"
         }
     }
 }

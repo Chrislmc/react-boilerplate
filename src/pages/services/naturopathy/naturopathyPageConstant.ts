@@ -1,4 +1,5 @@
 import { Icons } from "@/assets/icons";
+import { Images } from "@/assets/images";
 import { IImiAccordion } from "@/components/imiAccordion";
 import { redirectRouteMap } from "@/utils/routes/route";
 
@@ -114,5 +115,29 @@ export const NaturopathyPageHealthNeedCardList = [
         imgUrl: Icons.Detox,
         text: "naturopathicMedicine.effect.detox",
         redirectUrl: "",
+    },
+];
+
+export const naturopathyPageArticleCardList = [
+    {
+        id: "1",
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "naturopathicMedicine.articlesAndVideos.card1.date",
+        title: "naturopathicMedicine.articlesAndVideos.card1.title",
+        desc: "naturopathicMedicine.articlesAndVideos.card1.desc",
+    },
+    {
+        id: "2",
+        imgUrl: Images.HomePageHealthHubCard2,
+        date: "naturopathicMedicine.articlesAndVideos.card2.date",
+        title: "naturopathicMedicine.articlesAndVideos.card2.title",
+        desc: "naturopathicMedicine.articlesAndVideos.card2.desc",
+    },
+    {
+        id: "1",
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "naturopathicMedicine.articlesAndVideos.card3.date",
+        title: "naturopathicMedicine.articlesAndVideos.card3.title",
+        desc: "naturopathicMedicine.articlesAndVideos.card3.desc",
     },
 ];
