@@ -4,6 +4,24 @@
         "subheader": "Your gut is your second brain - what is it telling you?",
         "desc1": "Do you suffer in silence with digestive issues? Bloating, gas, constipation, diarrhoea and indigestion - these are messages from an unhealthy gut.",
         "desc2": "Gut problems cause and aggravate conditions- hay fever, anxiety, depression, chronic fatigue, skin health, Parkinson’s and Alzheimer’s.",
-        "desc3": "Our tests translate the messages your gut is sending."
+        "desc3": "Our tests translate the messages your gut is sending.",
+        "card1": {
+            "header": "Organic Acids Test (OAT)",
+            "desc1": "75 organic acids",
+            "desc2": "Toxin exposure",
+            "desc3": "Microbiome balance"
+        },
+        "card2": {
+            "header": "Microbial Organic Acids Test (MOAT)",
+            "desc1": "Follow up for OAT",
+            "desc2": "Monitors microbiome",
+            "desc3": "Checks kidney function"
+        },
+        "card3": {
+            "header": "Comprehensive parasitology",
+            "desc1": "Bacteria",
+            "desc2": "Yeast",
+            "desc3": "Parasites"
+        }
     }
 }

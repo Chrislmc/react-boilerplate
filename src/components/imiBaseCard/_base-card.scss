@@ -16,12 +16,17 @@
         border: 0.125rem solid $gray-300;
     }
 
-    &.mod__hover-effect{
+    &.mod__hover-effect {
         border: 0.125rem solid $white;
         
         &:hover {
             border-color: $blueish-green;
             transition: all 0.5s ease;
         }
+    }
+
+    &.mod__active-effect {
+        border: 0.125rem solid $blueish-green;
+        transition: all 0.5s ease;
     }
 }

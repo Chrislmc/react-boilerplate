@@ -3,6 +3,7 @@ import Cart from "./cart.svg";
 import Consultation from "./consultation.svg";
 import Contact from "./contact.svg";
 import Dispensary from "./dispensary.svg";
+import DropdownOrange from "./dropdown-orange.svg";
 import DropdownWhite from "./dropdown-white.svg";
 import Dropdown from "./dropdown.svg";
 import EmptyStar from "./empty-star.svg";
@@ -17,6 +18,7 @@ import Search from "./search.svg";
 import { servicesIcons } from "./services";
 import Shop from "./shop.svg";
 import Star from "./star.svg";
+import TickBlueishGreen from "./tick-blueish-green.svg";
 import Tick from "./tick.svg";
 import Whatsapp from "./whatsapp.svg";
 import Youtube from "./youtube.svg";
@@ -28,6 +30,7 @@ export const Icons = {
     Contact,
     Dispensary,
     Dropdown,
+    DropdownOrange,
     DropdownWhite,
     EmptyStar,
     Facebook,
@@ -39,6 +42,7 @@ export const Icons = {
     Shop,
     Star,
     Tick,
+    TickBlueishGreen,
     Whatsapp,
     Youtube,
     ...homePageIcons,
