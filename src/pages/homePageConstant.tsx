@@ -38,7 +38,7 @@ export const homePageHeroBannerRibbonItems = [
     },
     {
         imgUrl: Icons.HomePageLabTest,
-        link: redirectRouteMap.homepage,
+        link: redirectRouteMap.labTest,
         desc: "hero-banner.ribbon.labTests",
     },
     {
