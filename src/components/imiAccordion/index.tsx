@@ -1,6 +1,7 @@
 import { Icons } from "@/assets/icons";
 import { useState } from "react";
-import { IImiBoldTextProps, ImiBoldText } from "../imiBoldText";
+import { IImiBoldTextProps } from "../imiBoldText";
+import { ImiText } from "../imiText";
 import "./_accordion.scss";
 
 export interface IImiAccordion {
@@ -9,7 +10,12 @@ export interface IImiAccordion {
 
 interface IAccordionItem {
     header: string;
-    details: (string | IImiBoldTextProps)[];
+    details: (
+        | {
+              desc: string;
+          }
+        | IImiBoldTextProps
+    )[];
 }
 
 export const ImiAccordion: React.FC<IImiAccordion> = ({ content }) => {
@@ -49,16 +55,10 @@ const AccordionItem: React.FC<IAccordionItem> = ({ header, details }) => {
             >
                 <div className="accordion-list">
                     {details.map((detail, i) => (
-                        <span
+                        <ImiText
                             key={`${header}-accordion-desc-${i}`}
-                            className="desc"
-                        >
-                            {typeof detail === "string" ? (
-                                detail
-                            ) : (
-                                <ImiBoldText {...detail} />
-                            )}
-                        </span>
+                            {...detail}
+                        />
                     ))}
                 </div>
             </div>

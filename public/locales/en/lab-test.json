@@ -9,19 +9,49 @@
             "header": "Organic Acids Test (OAT)",
             "desc1": "75 organic acids",
             "desc2": "Toxin exposure",
-            "desc3": "Microbiome balance"
+            "desc3": "Microbiome balance",
+            "detailDesc1LinkText": "This test",
+            "detailDesc1Suffix": " measures acids produced by bacteria, yeasts, neurotransmitters to assess how healthy your metabolism is.",
+            "detailDesc2": "Abnormal levels indicate gut and metabolic imbalances that contribute to behavioural disorders, hyperactivity, anxiety, depression, fatigue and immune problems.",
+            "detailDesc3": "It also reports on vitamins and minerals, neurotransmitters, oxalates and oxidative stress.",
+            "detailDesc4": "This urine test is run by Great Plains Lab.",
+            "detailDesc5Prefix": "Cost: ",
+            "detailDesc5Bold": "$3350",
+            "detailDesc6Prefix": "You can opt to test for ",
+            "detailDesc6LinkText": "phospholipase A2",
+            "detailDesc6Suffix": " for an additional $400 which indicates toxin damage."
         },
         "card2": {
             "header": "Microbial Organic Acids Test (MOAT)",
             "desc1": "Follow up for OAT",
             "desc2": "Monitors microbiome",
-            "desc3": "Checks kidney function"
+            "desc3": "Checks kidney function",
+            "detailDesc1LinkText": "This test",
+            "detailDesc1Suffix": " measures acids produced by bacteria, yeasts, neurotransmitters to assess how healthy your metabolism is.",
+            "detailDesc2": "Abnormal levels indicate gut and metabolic imbalances that contribute to behavioural disorders, hyperactivity, anxiety, depression, fatigue and immune problems.",
+            "detailDesc3": "It also reports on vitamins and minerals, neurotransmitters, oxalates and oxidative stress.",
+            "detailDesc4": "This urine test is run by Great Plains Lab.",
+            "detailDesc5Prefix": "Cost: ",
+            "detailDesc5Bold": "$3350",
+            "detailDesc6Prefix": "You can opt to test for ",
+            "detailDesc6LinkText": "phospholipase A2",
+            "detailDesc6Suffix": " for an additional $400 which indicates toxin damage."
         },
         "card3": {
             "header": "Comprehensive parasitology",
             "desc1": "Bacteria",
             "desc2": "Yeast",
-            "desc3": "Parasites"
+            "desc3": "Parasites",
+            "detailDesc1LinkText": "This test",
+            "detailDesc1Suffix": " measures acids produced by bacteria, yeasts, neurotransmitters to assess how healthy your metabolism is.",
+            "detailDesc2": "Abnormal levels indicate gut and metabolic imbalances that contribute to behavioural disorders, hyperactivity, anxiety, depression, fatigue and immune problems.",
+            "detailDesc3": "It also reports on vitamins and minerals, neurotransmitters, oxalates and oxidative stress.",
+            "detailDesc4": "This urine test is run by Great Plains Lab.",
+            "detailDesc5Prefix": "Cost: ",
+            "detailDesc5Bold": "$3350",
+            "detailDesc6Prefix": "You can opt to test for ",
+            "detailDesc6LinkText": "phospholipase A2",
+            "detailDesc6Suffix": " for an additional $400 which indicates toxin damage."
         }
     }
 }

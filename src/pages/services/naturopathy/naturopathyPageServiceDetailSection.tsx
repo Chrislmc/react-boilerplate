@@ -12,8 +12,8 @@ export const NaturopathyPageServiceDetailSection = () => {
             ...item,
             header: t(item.header),
             details: item.details.map((detail) =>
-                typeof detail === "string"
-                    ? t(detail)
+                "desc" in detail
+                    ? { desc: t(detail.desc) }
                     : {
                           ...(detail?.prefix && { prefix: t(detail.prefix) }),
                           boldText: t(detail.boldText),

@@ -30,17 +30,17 @@ export const naturopathyDetailsAccordionItems: IImiAccordion["content"] = [
     {
         header: "naturopathicMedicine.details.accordion1.header",
         details: [
-            "naturopathicMedicine.details.accordion1.details.desc1",
-            "naturopathicMedicine.details.accordion1.details.desc2",
-            "naturopathicMedicine.details.accordion1.details.desc3",
-            "naturopathicMedicine.details.accordion1.details.desc4",
+            { desc: "naturopathicMedicine.details.accordion1.details.desc1" },
+            { desc: "naturopathicMedicine.details.accordion1.details.desc2" },
+            { desc: "naturopathicMedicine.details.accordion1.details.desc3" },
+            { desc: "naturopathicMedicine.details.accordion1.details.desc4" },
         ],
     },
     {
         header: "naturopathicMedicine.details.accordion2.header",
         details: [
-            "naturopathicMedicine.details.accordion2.details.desc1",
-            "naturopathicMedicine.details.accordion2.details.desc2",
+            { desc: "naturopathicMedicine.details.accordion2.details.desc1" },
+            { desc: "naturopathicMedicine.details.accordion2.details.desc2" },
         ],
     },
     {
