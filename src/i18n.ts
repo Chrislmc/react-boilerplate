@@ -32,6 +32,7 @@ await i18n
             "health-hub",
             "services",
             "lab-test",
+            "health-condition",
         ],
         defaultNS: "shared",
     });

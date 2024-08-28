@@ -16,6 +16,13 @@ export interface IProductPageActiveFilter {
     [IProductPageFilter.Brands]: IOption<string>[];
 }
 
+export const initialFilter = {
+    [IProductPageFilter.Price]: [0, 1000],
+    [IProductPageFilter.Categories]: [],
+    [IProductPageFilter.HealthNeed]: [],
+    [IProductPageFilter.Brands]: [],
+};
+
 /* To be replaced by categories from Drupal */
 export enum IProductPageCategoriesFilter {
     SaleAndOffers = "saleAndOffers",
@@ -77,13 +84,6 @@ export enum IProductPageBrandsFilter {
     Y = "Y",
     Z = "Z",
 }
-
-export const initialFilter = {
-    [IProductPageFilter.Price]: [0, 1000],
-    [IProductPageFilter.Categories]: [],
-    [IProductPageFilter.HealthNeed]: [],
-    [IProductPageFilter.Brands]: [],
-};
 
 export const productPageCategoriesFilterOption = [
     {

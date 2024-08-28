@@ -1,21 +1,24 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
-#products-page {
+#health-condition-page {
     position: relative;
 
-    .products-content-section {
+    .health-content-section {
         position: relative;
 
         .container-x {
             width: 100%;
         }
 
+        .imi-section-header-component {
+            text-align: left;
+        }
+
         .content-row {
             width: 100%;
             display: flex;
             gap: 3.125rem;
-            padding: 5rem 0;
 
             .filter-list-container {
                 position: relative;
@@ -103,7 +106,7 @@
                         }
                     }
 
-                    &.price-filter {
+                    &.conditions-filter {
                         .imi-btn-component {
                             padding: 0.375rem 0.75rem;
                             border: 0.0625rem solid $gray-400;
@@ -130,26 +133,7 @@
                             }
                         }
 
-                        .filter-content-container {
-                            .range-row-container {
-                                margin-top: 0.25rem;
-                                width: 100%;
-                                display: flex;
-                                justify-content: space-between;
-
-                                span {
-                                    font-size: 0.875rem;
-                                    line-height: 1.5rem;
-                                    letter-spacing: 0.04375rem;
-                                    font-family: $font-secondary;
-                                    color: $gray;
-                                }
-                            }
-                        }
-                    }
-
-                    &.brands-filter {
-                        .brand-grid-container {
+                        .condition-grid-container {
                             width: calc(100% + 2.5rem);
                             display: grid;
                             gap: 0.125rem;
@@ -165,14 +149,14 @@
                                 cursor: wait;
                             }
 
-                            .brand-character-container {
+                            .condition-character-container {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 width: 100%;
                                 aspect-ratio: 1/1;
 
-                                .brand-character-btn {
+                                .condition-character-btn {
                                     width: 2.5rem;
                                     aspect-ratio: 1/1;
                                     display: flex;
@@ -192,7 +176,7 @@
                                         }
                                     }
 
-                                    &.mod__has-available-brands {
+                                    &.mod__has-available-conditions {
                                         cursor: pointer;
 
                                         &:hover {
@@ -221,7 +205,7 @@
                             }
                         }
 
-                        .brand-list-container {
+                        .condition-list-container {
                             width: 100%;
                             display: flex;
                             flex-direction: column;
@@ -242,7 +226,7 @@
                                 border: 0.0625rem solid $gray-200
                             }
 
-                            .brand-character-header {
+                            .condition-character-header {
                                 padding: 1.25rem 0;
                                 font-size: 1.5rem;
                                 line-height: 1.5rem;
@@ -251,7 +235,7 @@
                                 color: $primary-700;
                             }
 
-                            .brand-list {
+                            .condition-list {
                                 width: 100%;
                                 display: flex;
                                 flex-direction: column;
@@ -260,7 +244,7 @@
                                 max-height: 10rem;
                                 overflow: auto;
                                 
-                                .brand-name-btn {
+                                .condition-name-btn {
                                     &:hover {
                                         span {
                                             text-shadow: 0 0 4px $shadow;
@@ -278,6 +262,8 @@
                                         line-height: 1.5rem;
                                         letter-spacing: 0.05rem;
                                         color: $gray;
+                                        text-align: left;
+                                        display: block;
 
                                         &::after {
                                             font-size: 700;
@@ -303,64 +289,11 @@
                     }
                 }
             }
-    
+
             .main-container {
                 flex: 4;
                 display: flex;
                 flex-direction: column;
-                gap: 2rem;
-    
-                .header-container {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-    
-                    .imi-section-header-component {
-                        margin: 0;
-                    }
-                }
-
-                .product-list-grid-container {
-                    width: 100%;
-                    flex: 1;
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-template-rows: repeat(auto-fill, 35rem);
-                    gap: 1.25rem;
-                    opacity: 1;
-                    transition: opacity 0.3s ease-out;
-
-                    &.mod__in-transition {
-                        opacity: 0;
-                    }
-
-                    @include media(medium-screen) {
-                        grid-template-columns: repeat(3, 1fr);
-                        grid-template-rows: repeat(auto-fill, 38rem);
-
-                        .imi-card-component {
-                            .product-image-container {
-                                min-height: 14.375rem;
-                            }
-                        }
-                    }
-
-                    @include media(small-screen, tablet) {
-                        grid-template-columns: repeat(2, 1fr);
-                        grid-template-rows: repeat(auto-fill, 38rem);
-
-                        .imi-card-component {
-                            .product-image-container {
-                                min-height: 14.375rem;
-                            }
-                        }
-                    }
-
-                    .imi-product-card-component {
-                        min-width: unset;
-                    }
-                }
             }
         }
     }

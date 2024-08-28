@@ -4,6 +4,7 @@ import { ImiDescSection } from "@/components/imiDescSection";
 import { ImiSwiper } from "@/components/imiSwiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
+import { redirectRouteMap } from "@/utils/routes/route";
 import "./_home-page.scss";
 import { homePageHealthConditionCardList } from "./homePageConstant";
 
@@ -41,6 +42,7 @@ export const HomePageHealthConditionSection = () => {
                     <ImiButton
                         text={t("healthCondition.viewAllAToZ")}
                         size="padding"
+                        redirectUrl={redirectRouteMap.healthCondition}
                     />
                 </>
             }

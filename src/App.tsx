@@ -4,6 +4,7 @@ import { Layout } from "./components/layout";
 import { HomePage } from "./pages";
 import { Secret } from "./pages/Secret";
 import { DispensaryPage } from "./pages/dispensary";
+import { HealthConditionPage } from "./pages/health-condition";
 import { HealthHubPage } from "./pages/health-hub";
 import { ArticlePage } from "./pages/health-hub/article";
 import { LabTestPage } from "./pages/lab-test";
@@ -72,6 +73,11 @@ function App() {
                     <Route
                         path={RouteConstant.labTest}
                         element={<LabTestPage />}
+                    ></Route>
+
+                    <Route
+                        path={RouteConstant.healthCondition}
+                        element={<HealthConditionPage />}
                     ></Route>
 
                     <Route
