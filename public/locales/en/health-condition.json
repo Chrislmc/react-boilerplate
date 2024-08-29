@@ -33,6 +33,17 @@
                 "Y": "Y",
                 "Z": "Z"
             },
+            "featuredConditions": {
+                "header": "8 Featured Health Conditions",
+                "allergies": "Allergies",
+                "gutHealth": "Gut Health",
+                "immunity": "Immunity",
+                "sleep": "Sleep",
+                "stress": "Stress",
+                "hormonalHealth": "Hormonal Health",
+                "pain": "Pain",
+                "detoxAndWeightless": "Detox & Weightless"
+            },
             "clear": "Clear"
         }
     }

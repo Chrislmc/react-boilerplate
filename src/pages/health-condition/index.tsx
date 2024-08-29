@@ -12,6 +12,7 @@ import {
     IHealthConditionPageFilter,
     initialFilter,
 } from "./healthConditionPageConstant";
+import { HealthConditionPageFeatureConditionFilter } from "./healthConditionPageFeatureConditionFilter";
 
 export const HealthConditionPage = () => {
     const t = i18nHelper("health-condition");
@@ -21,6 +22,7 @@ export const HealthConditionPage = () => {
         [key in IHealthConditionPageFilter]: boolean;
     }>({
         conditions: true,
+        featuredConditions: true,
     });
     const [activeFilter, setActiveFilter] =
         useState<IHealthConditionPageActiveFilter>(initialFilter);
@@ -35,14 +37,24 @@ export const HealthConditionPage = () => {
                         />
 
                         <div className="content-row">
-                            <div className="filter-list-container">
-                                <HealthConditionPageConditionFilter
-                                    filterStatus={filterStatus}
-                                    setFilterStatus={setFilterStatus}
-                                    activeFilter={activeFilter}
-                                    setActiveFilter={setActiveFilter}
-                                    setIsLoadingList={setIsLoadingList}
-                                />
+                            <div className="condition-column">
+                                <div className="filter-list-container">
+                                    <HealthConditionPageConditionFilter
+                                        filterStatus={filterStatus}
+                                        setFilterStatus={setFilterStatus}
+                                        activeFilter={activeFilter}
+                                        setActiveFilter={setActiveFilter}
+                                        setIsLoadingList={setIsLoadingList}
+                                    />
+                                </div>
+
+                                <div className="filter-list-container">
+                                    <HealthConditionPageFeatureConditionFilter
+                                        activeFilter={activeFilter}
+                                        setActiveFilter={setActiveFilter}
+                                        setIsLoadingList={setIsLoadingList}
+                                    />
+                                </div>
                             </div>
 
                             <div className="main-container"></div>

@@ -20,272 +20,329 @@
             display: flex;
             gap: 3.125rem;
 
-            .filter-list-container {
+            .condition-column {
                 position: relative;
                 flex: 1;
-                box-shadow: 0 0 0.375rem $shadow;
-                background-color: $white;
-                border-radius: 1.25rem;
-                padding: 2.5rem;
                 display: flex;
                 flex-direction: column;
+                gap: 1.25rem;
                 height: fit-content;
 
-                .filter-container {
-                    width: 100%;
+                .filter-list-container {
+                    position: relative;
+                    // width: 100%;
+                    box-shadow: 0 0 0.375rem $shadow;
+                    background-color: $white;
+                    border-radius: 1.25rem;
+                    padding: 2.5rem;
                     display: flex;
                     flex-direction: column;
-                    overflow: visible;
-
-                    &:not(:last-child) {
-                        margin-bottom: 1.875rem;
-                    }
-
-                    .header-container {
+                    height: fit-content;
+    
+                    .filter-container {
                         width: 100%;
-                        transition: all 0.5s ease;
-                        min-height: 1.5rem;
-
-                        &.mod__is-expanded {
-                            min-height: 2.25rem;
-                        }
-
-                        .dropdown-btn {
-                            width: 100%;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: flex-start;
-                            cursor: auto;
-                            
-                            &.mod__collapsible {
-                                cursor: pointer;
-                            }
-                        }
-
-                        span {
-                            line-height: 1.5rem;
-                            font-weight: 700;
-                            color: $gray;
-                        }
-
-                        .dropdown-icon {
-                            width: 1.125rem;
-                            aspect-ratio: 1/1;
-                            transition: all 0.5s ease;
-
-                            &.mod__is-expanded {
-                                transform: rotate(3.142rad);
-                            }
-
-                            img {
-                                height: 100%;
-                                width: 100%;
-                                object-fit: cover;
-                            }
-                        }
-                    }
-
-                    .filter-content-container {
-                        width: 100%;
-                        max-height: 0;
-                        transition: all 0.5s ease;
+                        display: flex;
+                        flex-direction: column;
                         overflow: visible;
-                        opacity: 0;
-                        pointer-events: none;
-
-                        &.mod__is-expanded{
-                            max-height: 50rem;
-                            opacity: 1;
-                            pointer-events: all;
+    
+                        &:not(:last-child) {
+                            margin-bottom: 1.875rem;
                         }
-                    }
-
-                    .imi-check-box-component {
-                        p {
-                            color: $gray;
-                        }
-                    }
-
-                    &.conditions-filter {
-                        .imi-btn-component {
-                            padding: 0.375rem 0.75rem;
-                            border: 0.0625rem solid $gray-400;
-                            border-radius: 9999rem;
-                            background-color: $white;
-                            margin-top: -0.5rem;
-
-                            &:hover {
-                                background-color: $gray-600;
-                                transition: all 0.2s ease;
-
-                                .imi-btn-desc {
-                                    color: $white;
-                                    transition: all 0.2s ease;
+    
+                        .header-container {
+                            width: 100%;
+                            transition: all 0.5s ease;
+                            min-height: 1.5rem;
+    
+                            &.mod__is-expanded {
+                                min-height: 2.25rem;
+                            }
+    
+                            .dropdown-btn {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                cursor: auto;
+                                
+                                &.mod__collapsible {
+                                    cursor: pointer;
                                 }
                             }
-
-                            .imi-btn-desc {
-                                font-size: 0.875rem;
+    
+                            span {
                                 line-height: 1.5rem;
-                                letter-spacing: 0.04375rem;
-                                color: $gray-600;
-                                font-weight: 400;
+                                font-weight: 700;
+                                color: $gray;
+                            }
+    
+                            .dropdown-icon {
+                                width: 1.125rem;
+                                aspect-ratio: 1/1;
+                                transition: all 0.5s ease;
+    
+                                &.mod__is-expanded {
+                                    transform: rotate(3.142rad);
+                                }
+    
+                                img {
+                                    height: 100%;
+                                    width: 100%;
+                                    object-fit: cover;
+                                }
                             }
                         }
-
-                        .condition-grid-container {
-                            width: calc(100% + 2.5rem);
-                            display: grid;
-                            gap: 0.125rem;
-                            grid-template-columns: repeat(7, 1fr);
-                            background-color: $white;
-                            margin: 0 -1.25rem;
-
-                            &:not(:last-child) {
-                                padding-bottom: 1.25rem;
+    
+                        .filter-content-container {
+                            width: 100%;
+                            max-height: 0;
+                            transition: all 0.5s ease;
+                            overflow: visible;
+                            opacity: 0;
+                            pointer-events: none;
+    
+                            &.mod__is-expanded{
+                                max-height: 50rem;
+                                opacity: 1;
+                                pointer-events: all;
                             }
-
-                            &.mod__in-transition {
-                                cursor: wait;
+                        }
+    
+                        .imi-check-box-component {
+                            p {
+                                color: $gray;
                             }
-
-                            .condition-character-container {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                width: 100%;
-                                aspect-ratio: 1/1;
-
-                                .condition-character-btn {
-                                    width: 2.5rem;
-                                    aspect-ratio: 1/1;
+                        }
+    
+                        &.conditions-filter {
+                            .imi-btn-component {
+                                padding: 0.375rem 0.75rem;
+                                border: 0.0625rem solid $gray-400;
+                                border-radius: 9999rem;
+                                background-color: $white;
+                                margin-top: -0.5rem;
+    
+                                &:hover {
+                                    background-color: $gray-600;
+                                    transition: all 0.2s ease;
+    
+                                    .imi-btn-desc {
+                                        color: $white;
+                                        transition: all 0.2s ease;
+                                    }
+                                }
+    
+                                .imi-btn-desc {
+                                    font-size: 0.875rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: 0.04375rem;
+                                    color: $gray-600;
+                                    font-weight: 400;
+                                }
+                            }
+    
+                            .condition-grid-container {
+                                width: calc(100% + 2.5rem);
+                                display: grid;
+                                gap: 0.125rem;
+                                grid-template-columns: repeat(7, 1fr);
+                                background-color: $white;
+                                margin: 0 -1.25rem;
+    
+                                &:not(:last-child) {
+                                    padding-bottom: 1.25rem;
+                                }
+    
+                                &.mod__in-transition {
+                                    cursor: wait;
+                                }
+    
+                                .condition-character-container {
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    border-radius: 9999rem;
-                                    cursor: default;
-
-                                    span {
-                                        line-height: 1.5rem;
-                                        color: $gray-400;
-
-                                        &::after {
-                                            color: $primary-700;
-                                            font-weight: 700;
-                                            visibility: hidden;
-                                        }
-                                    }
-
-                                    &.mod__has-available-conditions {
-                                        cursor: pointer;
-
-                                        &:hover {
-                                            background-color: $blueish-green-200;
-                                            transition: all 0.5s ease;
-                                        }
+                                    width: 100%;
+                                    aspect-ratio: 1/1;
     
-                                        &.mod__selected {
-                                            background-color: #E6EEF0;
-        
-                                            span {
+                                    .condition-character-btn {
+                                        width: 2.5rem;
+                                        aspect-ratio: 1/1;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 9999rem;
+                                        cursor: default;
+    
+                                        span {
+                                            line-height: 1.5rem;
+                                            color: $gray-400;
+    
+                                            &::after {
                                                 color: $primary-700;
                                                 font-weight: 700;
+                                                visibility: hidden;
                                             }
                                         }
     
-                                        &.mod__in-transition {
-                                            cursor: wait;
-                                        }
-
-                                        span {
-                                            color: $gray;
+                                        &.mod__has-available-conditions {
+                                            cursor: pointer;
+    
+                                            &:hover {
+                                                background-color: $blueish-green-200;
+                                                transition: all 0.5s ease;
+                                            }
+        
+                                            &.mod__selected {
+                                                background-color: #E6EEF0;
+            
+                                                span {
+                                                    color: $primary-700;
+                                                    font-weight: 700;
+                                                }
+                                            }
+        
+                                            &.mod__in-transition {
+                                                cursor: wait;
+                                            }
+    
+                                            span {
+                                                color: $gray;
+                                            }
                                         }
                                     }
                                 }
                             }
-                        }
-
-                        .condition-list-container {
-                            width: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            max-height: 0rem;
-                            transition: all 0.5s ease;
-                            opacity: 0;
-
-                            &.mod__expanded {
-                                max-height: 12.5rem;
-                                opacity: 1;
-                            }
-
-                            &::before {
-                                content: "";
-                                width: 100%;
-                                height: 0;
-                                border: 0.0625rem solid $gray-200
-                            }
-
-                            .condition-character-header {
-                                padding: 1.25rem 0;
-                                font-size: 1.5rem;
-                                line-height: 1.5rem;
-                                letter-spacing: 0.75rem;
-                                font-weight: 700;
-                                color: $primary-700;
-                            }
-
-                            .condition-list {
+    
+                            .condition-list-container {
                                 width: 100%;
                                 display: flex;
                                 flex-direction: column;
                                 align-items: flex-start;
-                                gap: 1rem;
-                                max-height: 10rem;
-                                overflow: auto;
-                                
-                                .condition-name-btn {
-                                    &:hover {
+                                max-height: 0rem;
+                                transition: all 0.5s ease;
+                                opacity: 0;
+    
+                                &.mod__expanded {
+                                    max-height: 12.5rem;
+                                    opacity: 1;
+                                }
+    
+                                &::before {
+                                    content: "";
+                                    width: 100%;
+                                    height: 0;
+                                    border: 0.0625rem solid $gray-200
+                                }
+    
+                                .condition-character-header {
+                                    padding: 1.25rem 0;
+                                    font-size: 1.5rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: 0.75rem;
+                                    font-weight: 700;
+                                    color: $primary-700;
+                                }
+    
+                                .condition-list {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    gap: 1rem;
+                                    max-height: 10rem;
+                                    overflow: auto;
+                                    
+                                    .condition-name-btn {
+                                        &:hover {
+                                            span {
+                                                text-shadow: 0 0 4px $shadow;
+                                            }
+                                        }
+    
+                                        &.mod__selected {
+                                            span {
+                                                font-weight: 700;
+                                            }
+                                        }
+    
                                         span {
-                                            text-shadow: 0 0 4px $shadow;
+                                            font-size: 1rem;
+                                            line-height: 1.5rem;
+                                            letter-spacing: 0.05rem;
+                                            color: $gray;
+                                            text-align: left;
+                                            display: block;
+    
+                                            &::after {
+                                                font-size: 700;
+                                                visibility: hidden;
+                                            }
                                         }
                                     }
+                                }
+                            }
+                        }
 
-                                    &.mod__selected {
-                                        span {
-                                            font-weight: 700;
+                        &.featured-conditions-filter {
+                            .condition-list-container {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                transition: all 0.5s ease;
+    
+                                .condition-list {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    gap: 1rem;
+                                    margin-top: 1.25rem;
+                                    
+                                    .condition-name-btn {
+                                        &:hover {
+                                            span {
+                                                text-shadow: 0 0 4px $shadow;
+                                            }
                                         }
-                                    }
-
-                                    span {
-                                        font-size: 1rem;
-                                        line-height: 1.5rem;
-                                        letter-spacing: 0.05rem;
-                                        color: $gray;
-                                        text-align: left;
-                                        display: block;
-
-                                        &::after {
-                                            font-size: 700;
-                                            visibility: hidden;
+    
+                                        &.mod__selected {
+                                            span {
+                                                font-weight: 700;
+                                            }
+                                        }
+    
+                                        span {
+                                            font-size: 1rem;
+                                            line-height: 1.5rem;
+                                            letter-spacing: 0.05rem;
+                                            color: $gray;
+                                            text-align: left;
+                                            display: block;
+    
+                                            &::after {
+                                                font-size: 700;
+                                                visibility: hidden;
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                }
-
-                .filter-container + .filter-container {
-                    .header-container {
-                        padding-top: 1.875rem;
-                    }
-
-                    &::before {
-                        content: "";
-                        width: 100%;
-                        height: 0;
-                        border: 0.0625rem solid $gray-200
+    
+                    .filter-container + .filter-container {
+                        .header-container {
+                            padding-top: 1.875rem;
+                        }
+    
+                        &::before {
+                            content: "";
+                            width: 100%;
+                            height: 0;
+                            border: 0.0625rem solid $gray-200
+                        }
                     }
                 }
             }

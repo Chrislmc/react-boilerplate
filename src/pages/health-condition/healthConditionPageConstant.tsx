@@ -2,14 +2,17 @@ import { IOption } from "@/components/imiCheckBox";
 
 export enum IHealthConditionPageFilter {
     Conditions = "conditions",
+    FeaturedConditions = "featuredConditions",
 }
 
 export interface IHealthConditionPageActiveFilter {
     [IHealthConditionPageFilter.Conditions]: IOption<string>[];
+    [IHealthConditionPageFilter.FeaturedConditions]: IOption<string>[];
 }
 
 export const initialFilter = {
     [IHealthConditionPageFilter.Conditions]: [],
+    [IHealthConditionPageFilter.FeaturedConditions]: [],
 };
 
 export enum IHealthConditionPageConditionsFilter {
@@ -243,3 +246,20 @@ export const healthConditionPageSampleConditionList: {
     [IHealthConditionPageConditionsFilter.Y]: [],
     [IHealthConditionPageConditionsFilter.Z]: [],
 };
+
+export const healthConditionPageFeaturedConditionList = [
+    { text: "shared.filter.featuredConditions.allergies", value: "allergies" },
+    { text: "shared.filter.featuredConditions.gutHealth", value: "gutHealth" },
+    { text: "shared.filter.featuredConditions.immunity", value: "immunity" },
+    { text: "shared.filter.featuredConditions.sleep", value: "sleep" },
+    { text: "shared.filter.featuredConditions.stress", value: "stress" },
+    {
+        text: "shared.filter.featuredConditions.hormonalHealth",
+        value: "hormonalHealth",
+    },
+    { text: "shared.filter.featuredConditions.pain", value: "pain" },
+    {
+        text: "shared.filter.featuredConditions.detoxAndWeightless",
+        value: "detoxAndWeightless",
+    },
+];

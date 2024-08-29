@@ -66,7 +66,7 @@ export const HealthConditionPageConditionFilter: React.FC<Props> = ({
         }
     };
 
-    const onConditionNameClick = (
+    const onConditionClick = (
         targetOption: IOption<string>,
         isSelected: boolean
     ) => {
@@ -131,7 +131,7 @@ export const HealthConditionPageConditionFilter: React.FC<Props> = ({
                     {translatedConditionsFilterOption.map((option) => {
                         const isSelected =
                             selectedConditionsCharacter?.value === option.value;
-                        const hasAvailableBrands =
+                        const hasAvailableConditions =
                             healthConditionPageSampleConditionList[option.value]
                                 ?.length;
 
@@ -150,7 +150,7 @@ export const HealthConditionPageConditionFilter: React.FC<Props> = ({
                                             ? " mod__in-transition"
                                             : ""
                                     }${
-                                        hasAvailableBrands
+                                        hasAvailableConditions
                                             ? " mod__has-available-conditions"
                                             : ""
                                     }`}
@@ -168,7 +168,7 @@ export const HealthConditionPageConditionFilter: React.FC<Props> = ({
                                                 .Conditions
                                         ] ||
                                         isLoadingConditionList ||
-                                        !hasAvailableBrands
+                                        !hasAvailableConditions
                                     }
                                 >
                                     <span>{option.text}</span>
@@ -207,7 +207,7 @@ export const HealthConditionPageConditionFilter: React.FC<Props> = ({
                                               isSelected ? " mod__selected" : ""
                                           }`}
                                           onClick={() =>
-                                              onConditionNameClick(
+                                              onConditionClick(
                                                   option,
                                                   isSelected
                                               )
