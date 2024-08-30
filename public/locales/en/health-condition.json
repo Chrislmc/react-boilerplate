@@ -1,6 +1,12 @@
 {
     "healthCondition": {
-        "header": "HEALTH CONDITIONS"
+        "header": "HEALTH CONDITIONS",
+        "desc": {
+            "header": "IMMUNITY",
+            "desc1": "A strong immune system is the best defence against disease. From simple sniffles to serious sicknesses, our immune systems have the potential to protect against all kinds of illness.",
+            "desc2": "But maintaining and strengthening immunity is not easy in Hong Kong. The city’s high levels of pollution, its dense population, nutrient-poor foods, and the work hard, play hard mentality are proven to significantly take a toll on our immune systems. If you find you’re struggling with persistent and recurring sicknesses, you might have a weakened immune system.",
+            "desc3": "Through in-depth consultations and relevant tests, our naturopaths are skilled at pinpointing the obvious and hidden causes of a compromised immune system. Armed with the facts, they can prepare a tailored plan to boost your immune system, naturally and powerfully."
+        }
     },
     "shared": {
         "filter": {

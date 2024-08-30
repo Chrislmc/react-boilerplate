@@ -13,6 +13,7 @@ import {
     initialFilter,
 } from "./healthConditionPageConstant";
 import { HealthConditionPageFeatureConditionFilter } from "./healthConditionPageFeatureConditionFilter";
+import { HealthConditionPageDescContent } from "./healthConditionPageDescContent";
 
 export const HealthConditionPage = () => {
     const t = i18nHelper("health-condition");
@@ -57,7 +58,9 @@ export const HealthConditionPage = () => {
                                 </div>
                             </div>
 
-                            <div className="main-container"></div>
+                            <div className="main-container">
+                                <HealthConditionPageDescContent />
+                            </div>
                         </div>
                     </SectionContainerY>
                 </ContainerX>

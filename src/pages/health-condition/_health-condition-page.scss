@@ -353,6 +353,47 @@
                 flex: 4;
                 display: flex;
                 flex-direction: column;
+
+                .desc-content-column {
+                    background-color: $white;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+
+                    .hero-banner-container {
+                        height: 25rem;
+                        width: 100%;
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .imi-section-header-component {
+                        margin: 3.75rem 3.125rem 3.125rem;
+                    }
+
+                    .desc-list {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1.5rem;
+                        margin: 0 3.125rem;
+
+                        .desc {
+                            font-size: 1.375rem;
+                            line-height: 1.875rem;
+                            letter-spacing: 0.06875rem;
+                            font-family: $font-secondary;
+                            font-weight: 500;
+                            color: $gray-600;
+                            text-align: left;
+                        }
+                    }
+                }
             }
         }
     }

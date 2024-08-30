@@ -263,3 +263,9 @@ export const healthConditionPageFeaturedConditionList = [
         value: "detoxAndWeightless",
     },
 ];
+
+export const healthConditionPageDescContent = [
+    "healthCondition.desc.desc1",
+    "healthCondition.desc.desc2",
+    "healthCondition.desc.desc3",
+];
