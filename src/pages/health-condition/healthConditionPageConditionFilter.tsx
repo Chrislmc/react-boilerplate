@@ -126,6 +126,10 @@ export const HealthConditionPageConditionFilter: React.FC<Props> = ({
                 <div
                     className={`condition-grid-container${
                         isLoadingConditionList ? " mod__in-transition" : ""
+                    }${
+                        showConditionList && !isLoadingConditionList
+                            ? " mod__expanded"
+                            : ""
                     }`}
                 >
                     {translatedConditionsFilterOption.map((option) => {

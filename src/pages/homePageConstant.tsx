@@ -60,6 +60,7 @@ export const homePageServicesCardList = [
         desc: "services.card1.desc",
         button: {
             text: "services.card1.linkText",
+            redirectUrl: redirectRouteMap.naturopathy,
         },
     },
     {

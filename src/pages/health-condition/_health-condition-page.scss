@@ -148,13 +148,15 @@
                                 grid-template-columns: repeat(7, 1fr);
                                 background-color: $white;
                                 margin: 0 -1.25rem;
-    
-                                &:not(:last-child) {
-                                    padding-bottom: 1.25rem;
-                                }
+                                padding-bottom: 0;
+                                transition: padding-bottom 0.5s ease;
     
                                 &.mod__in-transition {
                                     cursor: wait;
+                                }
+
+                                &.mod__expanded {
+                                    padding-bottom: 1.25rem;
                                 }
     
                                 .condition-character-container {
