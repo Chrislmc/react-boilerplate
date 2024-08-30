@@ -45,6 +45,18 @@ export const ImiButton: React.FC<IImiButtonProps> = ({
                 {text}
             </p>
         </a>
+    ) : redirectUrl ? (
+        <a
+            className={`imi-btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
+            href={redirectUrl}
+            aria-disabled={disabled}
+        >
+            <p
+                className={`imi-btn-desc type-${type} color-${colorTheme} ${textClassName}`}
+            >
+                {text}
+            </p>
+        </a>
     ) : (
         <button
             className={`imi-btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
