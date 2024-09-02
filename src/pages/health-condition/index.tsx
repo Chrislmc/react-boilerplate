@@ -12,8 +12,9 @@ import {
     IHealthConditionPageFilter,
     initialFilter,
 } from "./healthConditionPageConstant";
-import { HealthConditionPageFeatureConditionFilter } from "./healthConditionPageFeatureConditionFilter";
 import { HealthConditionPageDescContent } from "./healthConditionPageDescContent";
+import { HealthConditionPageDetail } from "./healthConditionPageDetail";
+import { HealthConditionPageFeatureConditionFilter } from "./healthConditionPageFeatureConditionFilter";
 
 export const HealthConditionPage = () => {
     const t = i18nHelper("health-condition");
@@ -31,7 +32,7 @@ export const HealthConditionPage = () => {
     return (
         <div id="health-condition-page">
             <ImiSection className="health-content-section">
-                <ContainerX>
+                <ContainerX leftOnly>
                     <SectionContainerY>
                         <ImiSectionHeader
                             header={t("healthCondition.header")}
@@ -60,6 +61,7 @@ export const HealthConditionPage = () => {
 
                             <div className="main-container">
                                 <HealthConditionPageDescContent />
+                                <HealthConditionPageDetail />
                             </div>
                         </div>
                     </SectionContainerY>

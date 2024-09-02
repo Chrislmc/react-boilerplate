@@ -1,3 +1,4 @@
+import { IImiAccordion } from "@/components/imiAccordion";
 import { IOption } from "@/components/imiCheckBox";
 
 export enum IHealthConditionPageFilter {
@@ -268,4 +269,46 @@ export const healthConditionPageDescContent = [
     "healthCondition.desc.desc1",
     "healthCondition.desc.desc2",
     "healthCondition.desc.desc3",
+];
+
+export const healthConditionDetailsAccordionItems: IImiAccordion["content"] = [
+    {
+        header: "healthCondition.details.accordion1.header",
+        details: [
+            { desc: "healthCondition.details.accordion1.details.desc1" },
+            { desc: "healthCondition.details.accordion1.details.desc2" },
+            { desc: "healthCondition.details.accordion1.details.desc3" },
+            { desc: "healthCondition.details.accordion1.details.desc4" },
+            { desc: "healthCondition.details.accordion1.details.desc5" },
+            { desc: "healthCondition.details.accordion1.details.desc6" },
+            { desc: "healthCondition.details.accordion1.details.desc7" },
+            { desc: "healthCondition.details.accordion1.details.desc8" },
+        ],
+    },
+    {
+        header: "healthCondition.details.accordion2.header",
+        details: [
+            { desc: "healthCondition.details.accordion2.details.desc1" },
+            { desc: "healthCondition.details.accordion2.details.desc2" },
+            { desc: "healthCondition.details.accordion2.details.desc3" },
+            { desc: "healthCondition.details.accordion2.details.desc4" },
+            { desc: "healthCondition.details.accordion2.details.desc5" },
+            { desc: "healthCondition.details.accordion2.details.desc6" },
+            { desc: "healthCondition.details.accordion2.details.desc7" },
+            { desc: "healthCondition.details.accordion2.details.desc8" },
+            { desc: "healthCondition.details.accordion2.details.desc9" },
+            { desc: "healthCondition.details.accordion2.details.desc10" },
+            { desc: "healthCondition.details.accordion2.details.desc11" },
+            { desc: "healthCondition.details.accordion2.details.desc12" },
+            { desc: "healthCondition.details.accordion2.details.desc13" },
+        ],
+    },
+    {
+        header: "healthCondition.details.accordion3.header",
+        details: [
+            { desc: "healthCondition.details.accordion3.details.desc1" },
+            { desc: "healthCondition.details.accordion3.details.desc2" },
+            { desc: "healthCondition.details.accordion3.details.desc3" },
+        ],
+    },
 ];

@@ -6,6 +6,47 @@
             "desc1": "A strong immune system is the best defence against disease. From simple sniffles to serious sicknesses, our immune systems have the potential to protect against all kinds of illness.",
             "desc2": "But maintaining and strengthening immunity is not easy in Hong Kong. The city’s high levels of pollution, its dense population, nutrient-poor foods, and the work hard, play hard mentality are proven to significantly take a toll on our immune systems. If you find you’re struggling with persistent and recurring sicknesses, you might have a weakened immune system.",
             "desc3": "Through in-depth consultations and relevant tests, our naturopaths are skilled at pinpointing the obvious and hidden causes of a compromised immune system. Armed with the facts, they can prepare a tailored plan to boost your immune system, naturally and powerfully."
+        },
+        "details": {
+            "accordion1": {
+                "header": "Symptoms",
+                "details": {
+                    "desc1": "The signs that you have a compromised immune system include:",
+                    "desc2": "• Persistent respiratory conditions",
+                    "desc3": "• Repeated illness including skin problems and urinary tract infections",
+                    "desc4": "• Wounds that take too long to heal",
+                    "desc5": "• Allergic responses like hayfever and eczema",
+                    "desc6": "• Autoimmune disorders",
+                    "desc7": "• Blood disorders or abnormalities, such as anaemia",
+                    "desc8": "• Digestive issues and more"
+                }
+            },
+            "accordion2": {
+                "header": "Causes",
+                "details": {
+                    "desc1": "There are multiple obvious and far-less-obvious culprits that can undermine your immunity. These include:",
+                    "desc2": "• Chronic stress",
+                    "desc3": "• Highly processed foods and excess sugar consumption",
+                    "desc4": "• Nutrient-poor diets due to poor soil quality and importation of foods",
+                    "desc5": "• High levels of pollution",
+                    "desc6": "• Excess alcohol and cigarette intake",
+                    "desc7": "• Inadequate sleep",
+                    "desc8": "• A sedentary lifestyle",
+                    "desc9": "• Obesity",
+                    "desc10": "• Excessive use of medications and antibiotics",
+                    "desc11": "• Poor hygiene",
+                    "desc12": "• Loneliness and social isolation",
+                    "desc13": "• Early childhood or present-day trauma                "
+                }
+            },
+            "accordion3": {
+                "header": "Our treatment",
+                "details": {
+                    "desc1": "A healthy diet, regular exercise, more sleep and less stress can help to boost your immune system. And that’s not all. At IMI, we recognise seven factors, seemingly unrelated yet intimately connected, that can significantly influence your immune system’s superpowers and your overall health.",
+                    "desc2": "Taking your whole being into consideration, our naturopaths can find the obvious and hidden causes of your weakened immune system. Through in-depth consultations and, when appropriate, diagnostic testing, they can identify food intolerances, nutritional deficiencies, environmental triggers, lifestyle habits and more that may be impacting your immunity.",
+                    "desc3": "Working hand-in-hand with you, they can put in place a personalised and sustainable plan to boost your immune system, naturally and effectively. Your treatment plan may include homeopathic and herbal remedies, pure and potent supplements, and lifestyle and dietary tweaks. Our naturopaths may also recommend psychology services and energy healing therapies, depending on your unique immunity needs."
+                }
+            }
         }
     },
     "shared": {
