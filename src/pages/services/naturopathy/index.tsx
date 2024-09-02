@@ -1,5 +1,4 @@
 import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { NaturopathyPageLicenseSection } from "./NaturopathyPageLicenseSection";
 import "./_naturopathy-page.scss";
 import { NaturopathyPageArticlesAndVideosSection } from "./naturopathyPageArticlesAndVideosSection";
 import { NaturopathyPageBannerSection } from "./naturopathyPageBannerSection";
@@ -8,6 +7,7 @@ import { NaturopathyPageDescSection } from "./naturopathyPageDescSection";
 import { NaturopathyPageHealthNeedSection } from "./naturopathyPageEffectSection";
 import { NaturopathyPageFunctionalMedicineSection } from "./naturopathyPageFunctionalMedicineSection";
 import { NaturopathyPageHeroBannerSection } from "./naturopathyPageHeroBannerSection";
+import { NaturopathyPageLicenseSection } from "./naturopathyPageLicenseSections";
 import { NaturopathyPageServiceDetailSection } from "./naturopathyPageServiceDetailSection";
 
 export const NaturopathyPage = () => {

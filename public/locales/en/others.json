@@ -80,7 +80,10 @@
         "desc1": "Did you know there are insurance providers that will cover the cost of services like naturopathy, homeopathy, osteopathy, counselling, TCM & acupuncture?",
         "desc2": "Insurers provide ‘coinsurance’ for outpatients services like these – a cost sharing method which varies from 10% to 30%.",
         "desc3": "For example, if your set percentage is 10%, you will pay 10% of each bill, and your insurer will pay the remaining 90%.",
-        "desc4": "Some insurers may even cover 100% of your bill for certain services like psychotherapy."
+        "desc4": "Some insurers may even cover 100% of your bill for certain services like psychotherapy.",
+        "imageContent": {
+            "header": "OUR PARTNER"
+        }
     },
 
     "shared": {

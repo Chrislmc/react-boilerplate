@@ -3,4 +3,10 @@
 
 #insurance-page {
     position: relative;
+
+    .insurance-page-desc-section { }
+
+    .insurance-page-image-content-section {
+        background-color: $primary-200;
+    }
 }
