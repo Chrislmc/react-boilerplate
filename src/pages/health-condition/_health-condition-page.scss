@@ -433,8 +433,9 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                     background-color: $white;
             
                     .section-container-y {
-                        padding: 3.875rem 0;
+                        padding: 3.875rem 0 0;
                     }
+
                     .health-hub-card-grid-container {
                         width: 100%;
                         display: grid;
