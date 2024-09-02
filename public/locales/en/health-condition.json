@@ -47,6 +47,11 @@
                     "desc3": "Working hand-in-hand with you, they can put in place a personalised and sustainable plan to boost your immune system, naturally and effectively. Your treatment plan may include homeopathic and herbal remedies, pure and potent supplements, and lifestyle and dietary tweaks. Our naturopaths may also recommend psychology services and energy healing therapies, depending on your unique immunity needs."
                 }
             }
+        },
+        "bookNow": {
+            "header": "WHAT'S NEXT?",
+            "desc": "To see our naturopaths, call +852 2523 7121 or complete your request below.",
+            "linkText": "Book now"
         }
     },
     "shared": {

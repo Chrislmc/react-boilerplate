@@ -400,6 +400,26 @@
                     background-color: $primary-200;
                     padding: 3.875rem 0 3.875rem 3.125rem;
                 }
+
+                .book-now {
+                    background: transparent linear-gradient(180deg, $blueish-green 0%, #5692CD 100%) 0% 0% no-repeat padding-box;
+                    width: 100%;
+            
+                    .imi-desc-section-component {
+                        .imi-section-header-component{
+                            color: $white;
+                            text-align: center;
+                        }
+            
+                        h5[class*='imi-desc-section-desc-'] {
+                            color: $white;
+                        }
+                    }
+            
+                    .imi-btn-component {
+                        margin: 3.75rem auto 0 auto;
+                    }
+                }
             }
         }
     }

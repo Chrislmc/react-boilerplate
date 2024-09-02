@@ -6,6 +6,7 @@ import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_health-condition-page.scss";
+import { HealthConditionPageBookNowSection } from "./healthConditionPageBookNow";
 import { HealthConditionPageConditionFilter } from "./healthConditionPageConditionFilter";
 import {
     IHealthConditionPageActiveFilter,
@@ -62,6 +63,7 @@ export const HealthConditionPage = () => {
                             <div className="main-container">
                                 <HealthConditionPageDescContent />
                                 <HealthConditionPageDetail />
+                                <HealthConditionPageBookNowSection />
                             </div>
                         </div>
                     </SectionContainerY>
