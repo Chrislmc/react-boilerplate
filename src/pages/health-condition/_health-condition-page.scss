@@ -420,6 +420,45 @@
                         margin: 3.75rem auto 0 auto;
                     }
                 }
+
+                .articles-and-videos {
+                    background-color: $white;
+            
+                    .section-container-y {
+                        padding: 3.875rem 0;
+                    }
+                    .health-hub-card-grid-container {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 1.25rem;
+                        opacity: 1;
+                        transition: all 0.5s ease-out;
+                        padding: 0.375rem 0;
+                        margin-bottom: 2.5rem;
+            
+                        &.mod__in-transition {
+                            opacity: 0;
+                        }
+            
+                        .imi-card-with-image-content-component {
+                            .image-container {
+                                height: 15.625rem;
+                            }
+                            &:hover {
+                                cursor: pointer;
+            
+                                .card-content-container {
+                                    background-color: $gray-100;
+                                }
+                            }
+                        }
+                    }
+            
+                    .imi-btn-component {
+                        margin: 0 auto;
+                    }
+                }
             }
         }
     }

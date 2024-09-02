@@ -1,3 +1,4 @@
+import { Images } from "@/assets/images";
 import { IImiAccordion } from "@/components/imiAccordion";
 import { IOption } from "@/components/imiCheckBox";
 
@@ -310,5 +311,29 @@ export const healthConditionDetailsAccordionItems: IImiAccordion["content"] = [
             { desc: "healthCondition.details.accordion3.details.desc2" },
             { desc: "healthCondition.details.accordion3.details.desc3" },
         ],
+    },
+];
+
+export const healthConditionPageArticleCardList = [
+    {
+        id: "1",
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "healthCondition.articlesAndVideos.card1.date",
+        title: "healthCondition.articlesAndVideos.card1.title",
+        desc: "healthCondition.articlesAndVideos.card1.desc",
+    },
+    {
+        id: "2",
+        imgUrl: Images.HomePageHealthHubCard2,
+        date: "healthCondition.articlesAndVideos.card2.date",
+        title: "healthCondition.articlesAndVideos.card2.title",
+        desc: "healthCondition.articlesAndVideos.card2.desc",
+    },
+    {
+        id: "1",
+        imgUrl: Images.HomePageHealthHubCard1,
+        date: "healthCondition.articlesAndVideos.card3.date",
+        title: "healthCondition.articlesAndVideos.card3.title",
+        desc: "healthCondition.articlesAndVideos.card3.desc",
     },
 ];
