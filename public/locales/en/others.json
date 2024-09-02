@@ -82,7 +82,9 @@
         "desc3": "For example, if your set percentage is 10%, you will pay 10% of each bill, and your insurer will pay the remaining 90%.",
         "desc4": "Some insurers may even cover 100% of your bill for certain services like psychotherapy.",
         "imageContent": {
-            "header": "OUR PARTNER"
+            "header": "OUR PARTNER",
+            "desc": "Alea are on a mission to empower you to find the right health insurance, with unbiased information and advice. The insurance companies they compare include ones that cover complementary medicine and mental health care.",
+            "linkText": "Learn more"
         }
     },
 

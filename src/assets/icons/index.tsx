@@ -13,6 +13,7 @@ import Form from "./form.svg";
 import { homePageIcons } from "./home-page";
 import Instagram from "./instagram.svg";
 import LabTests from "./lab tests.svg";
+import { othersIcons } from "./others";
 import { practitionersIcons } from "./practitioners";
 import Search from "./search.svg";
 import { servicesIcons } from "./services";
@@ -48,4 +49,5 @@ export const Icons = {
     ...homePageIcons,
     ...practitionersIcons,
     ...servicesIcons,
+    ...othersIcons,
 };

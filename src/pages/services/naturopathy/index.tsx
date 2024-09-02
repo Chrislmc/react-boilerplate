@@ -7,7 +7,7 @@ import { NaturopathyPageDescSection } from "./naturopathyPageDescSection";
 import { NaturopathyPageHealthNeedSection } from "./naturopathyPageEffectSection";
 import { NaturopathyPageFunctionalMedicineSection } from "./naturopathyPageFunctionalMedicineSection";
 import { NaturopathyPageHeroBannerSection } from "./naturopathyPageHeroBannerSection";
-import { NaturopathyPageLicenseSection } from "./naturopathyPageLicenseSections";
+import { NaturopathyPageLicenseSection } from "./naturopathyPageLicenseSection";
 import { NaturopathyPageServiceDetailSection } from "./naturopathyPageServiceDetailSection";
 
 export const NaturopathyPage = () => {

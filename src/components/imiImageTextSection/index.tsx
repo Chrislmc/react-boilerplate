@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { IImiButtonProps, ImiButton } from "../imiButton";
 import { ContainerX } from "../layout/containerX";
 import { SectionContainerY } from "../layout/sectionContainerY";
@@ -10,6 +11,7 @@ interface Props {
     header: string;
     descs?: string[];
     button?: IImiButtonProps;
+    customSideComponent?: ReactNode;
 }
 
 export const ImiImageTextSection: React.FC<Props> = ({
@@ -19,6 +21,7 @@ export const ImiImageTextSection: React.FC<Props> = ({
     header,
     descs,
     button,
+    customSideComponent,
 }) => {
     return (
         <div className={`imi-image-text-section mod__bg-${backgroundColor}`}>
@@ -46,6 +49,8 @@ export const ImiImageTextSection: React.FC<Props> = ({
                             )}
 
                             {button && <ImiButton {...button} />}
+
+                            {customSideComponent && customSideComponent}
                         </div>
 
                         <div className="image-container">
