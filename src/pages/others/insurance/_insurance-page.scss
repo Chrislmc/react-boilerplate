@@ -52,4 +52,28 @@
             }
         }
     }
+
+    .insurance-page-articles-and-videos-section {
+        .imi-swiper-component {
+            .swiper {
+                height: 38.625rem;
+                padding: 0 0.375rem;
+                
+                .swiper-pagination {
+                    top: unset;
+                    bottom: 0;
+
+                    .swiper-pagination-bullet {
+                        border-color: #80BBCC;
+                        
+                        &.swiper-pagination-bullet-active {
+                            background-color: $blueish-green-700;
+                            border-color: $blueish-green-700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
