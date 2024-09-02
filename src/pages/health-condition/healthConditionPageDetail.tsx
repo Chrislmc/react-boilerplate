@@ -4,7 +4,7 @@ import { i18nHelper } from "@/utils/i18n-helper";
 import { healthConditionDetailsAccordionItems } from "./healthConditionPageConstant";
 
 export const HealthConditionPageDetail = () => {
-    const t = i18nHelper("health-condition");
+    const t = i18nHelper("others");
 
     const translatedAccordionItems = healthConditionDetailsAccordionItems.map(
         (item) => ({

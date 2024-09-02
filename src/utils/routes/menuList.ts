@@ -67,6 +67,12 @@ export const menuList: IMenuItem[] = [
         desc: "others",
         link: redirectRouteMap.others,
         noPage: true,
-        subMenu: [{ desc: "insurance", link: redirectRouteMap.insurance }],
+        subMenu: [
+            {
+                desc: "healthCondition",
+                link: redirectRouteMap.healthCondition,
+            },
+            { desc: "insurance", link: redirectRouteMap.insurance },
+        ],
     },
 ];

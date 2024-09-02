@@ -22,7 +22,7 @@ export const HealthConditionPageConditionFilter: React.FC<Props> = ({
     activeFilter,
     setActiveFilter,
 }) => {
-    const t = i18nHelper("health-condition");
+    const t = i18nHelper("others");
 
     const translatedConditionsFilterOption =
         healthConditionPageConditionsFilterOption.map((option) => ({

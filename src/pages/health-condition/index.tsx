@@ -19,7 +19,7 @@ import { HealthConditionPageDetail } from "./healthConditionPageDetail";
 import { HealthConditionPageFeatureConditionFilter } from "./healthConditionPageFeatureConditionFilter";
 
 export const HealthConditionPage = () => {
-    const t = i18nHelper("health-condition");
+    const t = i18nHelper("others");
 
     const [isLoadingList, setIsLoadingList] = useState<boolean>(false);
     const [filterStatus, setFilterStatus] = useState<{

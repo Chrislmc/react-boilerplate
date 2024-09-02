@@ -1,13 +1,11 @@
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IMenuItem } from "@/utils/routes/menuList";
-import { useNavigate } from "react-router-dom";
 
 interface Props {
     menuItem: IMenuItem;
 }
 export const SiteMap = ({ menuItem }: Props) => {
     const t = i18nHelper("shared");
-    const navigate = useNavigate();
 
     return (
         <div className="site-footer-site-map-item-container">
@@ -23,10 +21,7 @@ export const SiteMap = ({ menuItem }: Props) => {
             <div className="site-footer-site-map-sub-menu-item-container">
                 {menuItem?.subMenu?.map((subMenuItem, i) => (
                     <div key={i} className="site-footer-site-map-sub-menu-item">
-                        <a
-                            onClick={() => navigate(subMenuItem.link)}
-                            id={subMenuItem.desc}
-                        >
+                        <a href={subMenuItem.link} id={subMenuItem.desc}>
                             <span className="site-footer-site-map-sub-menu-item-desc">
                                 {t(`menuItem.${subMenuItem.desc}`)}
                             </span>

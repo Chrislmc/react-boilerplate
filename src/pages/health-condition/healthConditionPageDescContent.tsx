@@ -5,7 +5,7 @@ import { i18nHelper } from "@/utils/i18n-helper";
 import { healthConditionPageDescContent } from "./healthConditionPageConstant";
 
 export const HealthConditionPageDescContent = () => {
-    const t = i18nHelper("health-condition");
+    const t = i18nHelper("others");
 
     return (
         <div className="desc-content-column">

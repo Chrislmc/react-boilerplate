@@ -73,6 +73,9 @@
             "linkText": "See all"
         }
     },
+
+    "insurance": {},
+
     "shared": {
         "filter": {
             "conditions": {
