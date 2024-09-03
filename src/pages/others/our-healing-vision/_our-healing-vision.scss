@@ -1,0 +1,18 @@
+#our-healing-vision-page {
+    position: relative;
+
+    .desc-section {
+        .custom-bottom-component {
+            .healing-vision-image-container {
+                height: 37.5rem;
+                width: 37.5rem;
+                overflow: hidden;
+
+                svg {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

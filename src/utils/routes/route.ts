@@ -25,6 +25,7 @@ export enum RouteConstant {
     "others" = "others",
     "healthCondition" = "health-condition",
     "insurance" = "insurance",
+    "ourHealingVision" = "our-healing-vision",
 
     "accountDetails" = "account-details",
     "shoppingCart" = "shopping-cart",
@@ -63,6 +64,7 @@ export const redirectRouteMap = {
     others: `/${RouteConstant.others}`,
     healthCondition: `/${RouteConstant.others}/${RouteConstant.healthCondition}`,
     insurance: `/${RouteConstant.others}/${RouteConstant.insurance}`,
+    ourHealingVision: `/${RouteConstant.others}/${RouteConstant.ourHealingVision}`,
 
     accountDetails: `/${RouteConstant.accountDetails}`,
     shoppingCart: `/${RouteConstant.shoppingCart}`,
@@ -97,6 +99,7 @@ export const breadcrumbRouteDescMap = {
     [RouteConstant.others]: "Others",
     [RouteConstant.healthCondition]: "Health Condition",
     [RouteConstant.insurance]: "Insurance",
+    [RouteConstant.ourHealingVision]: "Our healing vision",
 
     [RouteConstant.accountDetails]: "Account Details",
     [RouteConstant.shoppingCart]: "Shopping Cart",

@@ -73,6 +73,10 @@ export const menuList: IMenuItem[] = [
                 link: redirectRouteMap.healthCondition,
             },
             { desc: "insurance", link: redirectRouteMap.insurance },
+            {
+                desc: "ourHealingVision",
+                link: redirectRouteMap.ourHealingVision,
+            },
         ],
     },
 ];

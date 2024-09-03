@@ -9,6 +9,7 @@ import { ArticlePage } from "./pages/health-hub/article";
 import { LabTestPage } from "./pages/lab-test";
 import { HealthConditionPage } from "./pages/others/health-condition";
 import { InsurancePage } from "./pages/others/insurance";
+import { OurHealingVisionPage } from "./pages/others/our-healing-vision";
 import { PractitionersPage } from "./pages/practitioners";
 import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practitioners";
 import { ServicesPage } from "./pages/services";
@@ -84,6 +85,10 @@ function App() {
                         <Route
                             path={RouteConstant.insurance}
                             element={<InsurancePage />}
+                        />
+                        <Route
+                            path={RouteConstant.ourHealingVision}
+                            element={<OurHealingVisionPage />}
                         />
                     </Route>
 
