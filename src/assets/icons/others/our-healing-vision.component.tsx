@@ -53,7 +53,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
             xmlSpace="preserve"
         >
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -774,7 +774,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
             />
 
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#00929F"
                 opacity="1.000000"
                 stroke="none"
@@ -798,7 +798,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -820,7 +820,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -856,7 +856,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -891,7 +891,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -913,7 +913,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -934,7 +934,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -955,7 +955,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -976,7 +976,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -998,7 +998,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1019,7 +1019,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1044,7 +1044,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1069,7 +1069,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#00929F"
                 opacity="1.000000"
                 stroke="none"
@@ -1083,7 +1083,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1108,7 +1108,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1131,7 +1131,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#00929F"
                 opacity="1.000000"
                 stroke="none"
@@ -1145,7 +1145,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1159,7 +1159,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1173,7 +1173,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1190,7 +1190,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1204,7 +1204,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2CAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1217,7 +1217,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#2DAFA4"
                 opacity="1.000000"
                 stroke="none"
@@ -1229,7 +1229,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#8A00CC"
                 opacity="1.000000"
                 stroke="none"
@@ -1241,7 +1241,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F9F2FC"
                 opacity="1.000000"
                 stroke="none"
@@ -1265,7 +1265,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FBF6FD"
                 opacity="1.000000"
                 stroke="none"
@@ -1289,7 +1289,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FAF4FD"
                 opacity="1.000000"
                 stroke="none"
@@ -1312,7 +1312,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F9F2FC"
                 opacity="1.000000"
                 stroke="none"
@@ -1328,7 +1328,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FAF4FD"
                 opacity="1.000000"
                 stroke="none"
@@ -1342,7 +1342,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FAF4FD"
                 opacity="1.000000"
                 stroke="none"
@@ -1355,7 +1355,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5E8FA"
                 opacity="1.000000"
                 stroke="none"
@@ -1368,7 +1368,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5E8FA"
                 opacity="1.000000"
                 stroke="none"
@@ -1381,7 +1381,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F4F7FA"
                 opacity="1.000000"
                 stroke="none"
@@ -1406,7 +1406,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F4F7F9"
                 opacity="1.000000"
                 stroke="none"
@@ -1429,7 +1429,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5F8FA"
                 opacity="1.000000"
                 stroke="none"
@@ -1449,7 +1449,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F1F6F8"
                 opacity="1.000000"
                 stroke="none"
@@ -1462,7 +1462,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5F8FA"
                 opacity="1.000000"
                 stroke="none"
@@ -1475,10 +1475,10 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // // pointer-events="none"
+                // pointer-events="none"
                 id="disable-body-b"
                 fill="#FBF9FB"
-                // pointer-events="none"
+                pointer-events="none"
                 opacity="1.000000"
                 stroke="none"
                 d="
@@ -1505,7 +1505,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FAF7FA"
                 opacity="1.000000"
                 stroke="none"
@@ -1526,7 +1526,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FBF8FB"
                 opacity="1.000000"
                 stroke="none"
@@ -1543,7 +1543,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FAF7FA"
                 opacity="1.000000"
                 stroke="none"
@@ -1564,7 +1564,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F7F4F7"
                 opacity="1.000000"
                 stroke="none"
@@ -1592,7 +1592,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FBF9FB"
                 opacity="1.000000"
                 stroke="none"
@@ -1613,7 +1613,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FBF9FB"
                 opacity="1.000000"
                 stroke="none"
@@ -1632,7 +1632,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FAF8FA"
                 opacity="1.000000"
                 stroke="none"
@@ -1653,7 +1653,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F9F7F9"
                 opacity="1.000000"
                 stroke="none"
@@ -1669,7 +1669,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F8F5F8"
                 opacity="1.000000"
                 stroke="none"
@@ -1685,7 +1685,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5FBFE"
                 opacity="1.000000"
                 stroke="none"
@@ -1710,7 +1710,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F7FCFE"
                 opacity="1.000000"
                 stroke="none"
@@ -1732,7 +1732,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5FBFE"
                 opacity="1.000000"
                 stroke="none"
@@ -1755,7 +1755,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F6FCFE"
                 opacity="1.000000"
                 stroke="none"
@@ -1775,7 +1775,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F6FCFE"
                 opacity="1.000000"
                 stroke="none"
@@ -1795,7 +1795,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F9FDFE"
                 opacity="1.000000"
                 stroke="none"
@@ -1814,7 +1814,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5FBFE"
                 opacity="1.000000"
                 stroke="none"
@@ -1833,7 +1833,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F3FAFA"
                 opacity="1.000000"
                 stroke="none"
@@ -1846,7 +1846,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F6FCFB"
                 opacity="1.000000"
                 stroke="none"
@@ -1873,7 +1873,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F6FCFB"
                 opacity="1.000000"
                 stroke="none"
@@ -1901,7 +1901,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F6FCFB"
                 opacity="1.000000"
                 stroke="none"
@@ -1920,7 +1920,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F6FCFB"
                 opacity="1.000000"
                 stroke="none"
@@ -1939,7 +1939,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F9FDFC"
                 opacity="1.000000"
                 stroke="none"
@@ -1958,7 +1958,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F8FCFC"
                 opacity="1.000000"
                 stroke="none"
@@ -1979,7 +1979,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F8FCFC"
                 opacity="1.000000"
                 stroke="none"
@@ -1996,7 +1996,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5FBFB"
                 opacity="1.000000"
                 stroke="none"
@@ -2019,7 +2019,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5FBFB"
                 opacity="1.000000"
                 stroke="none"
@@ -2033,7 +2033,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F6FCFB"
                 opacity="1.000000"
                 stroke="none"
@@ -2046,7 +2046,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F7FCFC"
                 opacity="1.000000"
                 stroke="none"
@@ -2070,7 +2070,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F3FAFB"
                 opacity="1.000000"
                 stroke="none"
@@ -2092,7 +2092,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F3FAFB"
                 opacity="1.000000"
                 stroke="none"
@@ -2112,7 +2112,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F3FAFA"
                 opacity="1.000000"
                 stroke="none"
@@ -2132,7 +2132,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F3FAFA"
                 opacity="1.000000"
                 stroke="none"
@@ -2152,7 +2152,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F3FAFA"
                 opacity="1.000000"
                 stroke="none"
@@ -2173,7 +2173,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F8FCFC"
                 opacity="1.000000"
                 stroke="none"
@@ -2192,7 +2192,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5FBFB"
                 opacity="1.000000"
                 stroke="none"
@@ -2208,7 +2208,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F6FBFC"
                 opacity="1.000000"
                 stroke="none"
@@ -2229,7 +2229,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F3FAFA"
                 opacity="1.000000"
                 stroke="none"
@@ -2244,7 +2244,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#F5FBFB"
                 opacity="1.000000"
                 stroke="none"
@@ -2257,7 +2257,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#E7F5F6"
                 opacity="1.000000"
                 stroke="none"
@@ -2270,7 +2270,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2285,7 +2285,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2298,7 +2298,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2313,7 +2313,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2326,7 +2326,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2340,7 +2340,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2352,7 +2352,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2364,7 +2364,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2376,7 +2376,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2388,7 +2388,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#FFFFFF"
                 opacity="1.000000"
                 stroke="none"
@@ -2400,22 +2400,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
-                fill="#900CCE"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M283.934906,152.251373 
-       C285.411713,155.318161 285.495453,157.839630 282.503662,159.450638 
-       C278.974182,161.351166 277.913544,158.349319 276.506989,156.166077 
-       C275.877594,155.189148 274.769135,154.206589 274.756836,153.215698 
-       C274.735199,151.471634 274.836670,148.987335 275.913727,148.175262 
-       C276.999847,147.356384 279.516357,147.773911 281.064026,148.442154 
-       C282.249451,148.954010 282.902405,150.699036 283.934906,152.251373 
-   z"
-            />
-            <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#065280"
                 opacity="1.000000"
                 stroke="none"
@@ -2427,75 +2412,7 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
    z"
             />
             <path
-                // pointer-events="none"
-                fill="#125A86"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M613.174194,142.248306 
-       C615.156250,140.981934 617.039490,139.121887 618.698914,139.303757 
-       C621.289490,139.587662 623.203308,141.507385 621.402405,144.661423 
-       C620.829834,145.664108 620.207642,146.643097 619.703247,147.679199 
-       C618.374207,150.409073 616.757385,152.723022 613.266846,151.018967 
-       C609.589661,149.223740 611.093018,146.446869 612.204834,143.839081 
-       C612.396912,143.388489 612.715027,142.991653 613.174194,142.248306 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#9F669F"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M180.228378,609.108521 
-       C178.915131,610.852295 176.616852,613.574402 176.282639,613.351501 
-       C173.694672,611.625610 171.486176,609.330688 168.676147,606.771057 
-       C171.663818,604.760376 173.678497,603.404541 176.221481,601.693115 
-       C177.637863,604.225464 178.895508,606.473999 180.228378,609.108521 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#9F669F"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M180.521683,600.614258 
-       C182.201340,598.461609 184.060242,596.616760 186.128510,594.564148 
-       C187.437927,596.447876 188.322708,597.635254 189.116257,598.880676 
-       C190.638275,601.269409 191.090714,604.021606 188.124847,605.117554 
-       C186.614136,605.675781 184.219604,604.212158 182.380554,603.335266 
-       C181.611893,602.968750 181.248550,601.752197 180.521683,600.614258 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#9D639D"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M204.621979,643.579224 
-       C206.155243,642.526489 207.321259,641.411743 208.688553,641.042664 
-       C211.533493,640.274597 214.860153,641.883789 213.907669,644.311096 
-       C212.691452,647.410461 209.237350,649.732361 206.401505,651.945740 
-       C206.105225,652.176941 203.026047,649.646729 202.125427,647.931702 
-       C201.726044,647.171204 203.537811,645.249451 204.621979,643.579224 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#9D639D"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M187.499222,632.525757 
-       C185.334290,627.648682 189.342056,621.816040 194.246185,622.040894 
-       C197.096786,622.171509 199.383774,625.381653 198.544006,628.073425 
-       C197.249695,632.222229 191.994858,634.528320 187.499222,632.525757 
-   z"
-            />
-            <path
-                // pointer-events="none"
+                pointer-events="none"
                 fill="#995C99"
                 opacity="1.000000"
                 stroke="none"
@@ -2504,111 +2421,6 @@ export const OurHealingVisionComponent: React.FC<Props> = ({
        C224.914703,665.292175 224.727966,665.472717 224.541229,665.653198 
        C224.481628,665.417480 224.422028,665.181763 224.528595,664.817383 
        C224.694794,664.688782 224.898773,664.899597 225.000092,665.005615 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#884E88"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M146.292816,349.970795 
-       C146.693527,347.858368 147.026703,346.005829 147.867737,344.423187 
-       C148.369720,343.478546 149.668259,342.957214 150.608719,342.245575 
-       C151.035049,343.408020 152.100250,344.817810 151.764450,345.685181 
-       C150.862244,348.015472 151.805771,353.002380 146.292816,349.970795 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#884E88"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M130.694580,342.888916 
-       C132.082397,341.607056 133.412033,340.731628 134.741669,339.856201 
-       C135.482910,340.986053 136.890137,342.181885 136.786530,343.228058 
-       C136.672668,344.377594 135.167709,345.389313 134.268875,346.461090 
-       C133.058060,345.405853 131.847229,344.350616 130.694580,342.888916 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#884E88"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M124.199341,377.236389 
-       C125.473633,376.634338 126.467239,376.314941 128.092102,375.792603 
-       C127.576668,379.108490 127.160110,381.788330 126.703636,384.724915 
-       C122.534752,383.336761 122.261909,380.796021 124.199341,377.236389 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#3DB5E4"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M774.514648,380.461029 
-       C777.622620,379.678040 780.474731,378.732635 783.278625,378.858765 
-       C784.432861,378.910736 786.229736,381.193298 786.370239,382.597687 
-       C786.509460,383.989624 785.138184,386.631744 784.067810,386.836700 
-       C781.022217,387.419830 777.738586,387.326935 774.687805,386.756165 
-       C774.180359,386.661224 774.371155,382.833252 774.514648,380.461029 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#3FB6E4"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M764.670898,338.212708 
-       C761.084412,335.972626 760.864929,333.243469 763.262817,330.567078 
-       C765.872131,327.654602 771.763794,327.115143 773.704346,329.434357 
-       C775.735413,331.861572 775.776978,334.699402 772.942932,336.256073 
-       C770.621399,337.531250 767.689941,337.696136 764.670898,338.212708 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#37B3A9"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M651.389282,694.388916 
-       C649.733643,691.363220 648.991394,688.416077 652.274963,686.843445 
-       C653.761353,686.131531 657.065308,686.474365 657.830566,687.553894 
-       C659.550537,689.980103 661.566956,693.488464 660.980896,695.970215 
-       C659.968567,700.256592 655.597656,699.576172 651.389282,694.388916 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#0C97A4"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M439.303894,769.920654 
-       C437.654297,772.870056 434.954041,774.203857 433.077301,772.107727 
-       C431.466339,770.308472 430.798828,766.868286 431.162323,764.363953 
-       C431.425659,762.549438 433.827728,760.374329 435.730743,759.753479 
-       C436.673584,759.445740 439.270477,762.029358 439.962189,763.765625 
-       C440.604523,765.378052 439.708862,767.603149 439.303894,769.920654 
-   z"
-            />
-            <path
-                // pointer-events="none"
-                fill="#169BA7"
-                opacity="1.000000"
-                stroke="none"
-                d="
-   M521.965088,764.163086 
-       C519.449829,765.138672 516.934753,765.708130 514.419678,766.277588 
-       C514.089844,765.869263 513.760010,765.460999 513.430237,765.052734 
-       C514.541443,763.793335 515.609131,761.558105 516.774109,761.506165 
-       C518.467773,761.430786 520.231506,762.929504 521.965088,764.163086 
    z"
             />
         </svg>
