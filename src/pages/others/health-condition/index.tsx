@@ -20,8 +20,8 @@ import { HealthConditionPageFeatureConditionFilter } from "./healthConditionPage
 
 export const HealthConditionPage = () => {
     const t = i18nHelper("others");
-
-    const [isLoadingList, setIsLoadingList] = useState<boolean>(false);
+    /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+    const [_isLoadingList, setIsLoadingList] = useState<boolean>(false);
     const [filterStatus, setFilterStatus] = useState<{
         [key in IHealthConditionPageFilter]: boolean;
     }>({
