@@ -58,7 +58,9 @@ export const OurHealingVisionPageDescSection = () => {
             ) +
             activeIndex * convertRemToPx(segmentGap);
 
-        TabRef.current?.scrollTo({ left: scrollLeft, behavior: "smooth" });
+        setTimeout(() => {
+            TabRef.current?.scrollTo({ left: scrollLeft, behavior: "smooth" });
+        }, 200);
     }, [activeIndex, activeSection, segmentGap, segmentOptions]);
 
     return (

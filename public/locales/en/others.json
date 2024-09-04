@@ -184,6 +184,23 @@
             "desc1": "Discover the untapped potential in your organisation through IMI Corporate Wellness Solutions. We hold a firm belief that your workforce holds the answers to global challenges. Our custom-designed programs are aimed at enabling your employees to realise their maximum potential, thereby fostering innovation and collaboration to address the most pressing issues confronting mankind. Together, we can unveil the inherent brilliance within your organisation.",
             "desc2": "IMI’s Corporate Wellness Series is trusted by global and local organisations and aims to bolster immunity, resilience, and wellbeing in the workplace.",
             "linkText": "Get in touch"
+        },
+        "whatWeDo": {
+            "header": "WHAT WE DO",
+            "desc": "IMI is Asia’s leading natural and integrative medicine clinic. We have worked with individuals and organisation to develop leadership skills, and catalyse positive change",
+            "linkText": "Learn more\u00A0",
+            "card1": {
+                "header": "Leadership development",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+            },
+            "card2": {
+                "header": "Change management",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+            },
+            "card3": {
+                "header": "Team development",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+            }
         }
     },
 

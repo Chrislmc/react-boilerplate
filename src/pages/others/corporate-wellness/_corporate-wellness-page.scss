@@ -42,4 +42,85 @@
             }
         }
     }
+
+    .what-we-do-section {
+        background-color: $blueish-green-200;
+
+        .imi-desc-section-desc {
+            text-align: left;
+        }
+
+        .imi-swiper-component {
+            margin-top: 2.5rem;
+
+            .swiper {
+                height: 18.75rem;
+
+                .card-container {
+                    height: 15.75rem;
+                    width: 43.75rem;
+                    margin-top: 0.5rem;
+    
+                    .imi-card-component {
+                        padding: 1.875rem 2.5rem;
+                        display: flex;
+                        flex-direction: column;
+                        height: calc(100% - 3.75rem);
+    
+                        .header {
+                            font-size: 1.125rem;
+                            line-height: 1.5rem;
+                            letter-spacing: 0.05625rem;
+                            color: $gray;
+                            font-weight: 700;
+                            text-align: left;
+                        }
+    
+                        .desc-container {
+                            font-size: 1rem;
+                            line-height: 1.375rem;
+                            letter-spacing: 0.05rem;
+                            color: $gray-600;
+                            font-family: $font-secondary;
+                            text-align: left;
+                            margin: 1.25rem 0 2.5rem;
+                        }
+
+                        a {
+                            font-size: 1.125rem;
+                            line-height: 1.5rem;
+                            letter-spacing: 0.05625rem;
+                            font-weight: 500;
+                            color: $blueish-green-700;
+                            font-family: $font-primary;
+                            width: fit-content;
+                            display: flex;
+                            align-items: flex-end;
+
+                            span {
+                                font-size: 1.125rem;
+                                line-height: 1.25rem;
+                            }
+                        }
+                    }
+                }
+
+
+                .swiper-pagination {
+                    top: unset;
+                    bottom: 0;
+
+                    .swiper-pagination-bullet {
+                        border-color: #80BBCC;
+                        
+                        &.swiper-pagination-bullet-active {
+                            background-color: $blueish-green-700;
+                            border-color: $blueish-green-700;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
