@@ -126,5 +126,28 @@
 
     .video-section {
         height: 37.5rem;
+        position: relative;
+
+        .video-container {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+            .imi-video-player-component {
+                height: 100%;
+                width: 100%;
+                
+                .react-player{
+                    height: 100%;
+                    width: 100%;
+                }
+
+                video {
+                    // width: 100%;
+                    // height: unset;
+                    object-fit: cover;
+                }
+            }
+        }
     }
 }
