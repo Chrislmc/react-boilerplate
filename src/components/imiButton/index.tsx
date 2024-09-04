@@ -8,7 +8,7 @@ export interface IImiButtonProps {
     type?: IImiButtonType;
     size?: IImiButtonSize;
     text: string;
-    onClick?: () => void;
+    onClick?: (e?: any) => void;
     disabled?: boolean;
     colorTheme?: string;
     buttonClassName?: string;
@@ -60,9 +60,9 @@ export const ImiButton: React.FC<IImiButtonProps> = ({
     ) : (
         <button
             className={`imi-btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
-            onClick={() => {
+            onClick={(e) => {
                 redirectUrl && navigator(redirectUrl);
-                onClick && onClick();
+                onClick && onClick(e);
             }}
             disabled={disabled}
         >
