@@ -410,7 +410,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                 }
 
                 .book-now {
-                    background: transparent linear-gradient(180deg, $blueish-green 0%, #5692CD 100%) 0% 0% no-repeat padding-box;
+                    background: transparent linear-gradient(180deg, $blueish-green 0%, $blueish-green-600 100%) 0% 0% no-repeat padding-box;
                     width: 100%;
             
                     .imi-desc-section-component {

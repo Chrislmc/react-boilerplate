@@ -169,6 +169,11 @@
                 "desc3": "But modern life can squeeze spirituality out of our lives, upsetting our rhythm and inner peace, and taking us further away from our sense of purpose.",
                 "desc4": "At IMI, we respect Spirit’s important influence on your overall sense of well-being. We offer a range of therapies, mindfulness classes and events to develop awareness and to foster your personal connection to spirit."
             }
+        },
+        "bookNow": {
+            "header": "WHERE DO I START?",
+            "desc": "Health can be complex. For signposting in the right direction, book a free 20 minute consultation.",
+            "linkText": "Book now"
         }
     },
 
