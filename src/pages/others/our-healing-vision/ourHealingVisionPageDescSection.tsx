@@ -71,6 +71,11 @@ export const OurHealingVisionPageDescSection = () => {
                             activeSection={activeSection}
                             setActiveSection={setActiveSection}
                         />
+
+                        <div className="image-text">
+                            <p>{t("ourHealingVision.clickOn")}</p>
+                            <h3>{t("ourHealingVision.keyFactor")}</h3>
+                        </div>
                     </div>
 
                     <div className="content-container">

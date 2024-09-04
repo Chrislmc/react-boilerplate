@@ -20,10 +20,38 @@
                 min-height: 37.5rem;
                 min-width: 37.5rem;
                 overflow: hidden;
+                position: relative;
 
                 svg {
                     width: 100%;
                     object-fit: cover;
+                }
+
+                .image-text {
+                    position: absolute;
+                    top: calc(50% - 1.75rem);
+                    left: 1.5625rem;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    pointer-events: none;
+
+                    p {
+                        line-height: 1.25rem;
+                        font-weight: 500;
+                        font-family: $font-secondary;
+                        letter-spacing: 0.0625rem;
+                        color: $gray-600;
+                    }
+
+                    h3 {
+                        line-height: 2.25rem;
+                        font-weight: 900;
+                        font-family: $font-secondary;
+                        letter-spacing: 0.09375rem;
+                        color: $gray;
+                    }
                 }
             }
 

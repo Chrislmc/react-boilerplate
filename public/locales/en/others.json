@@ -108,6 +108,8 @@
 
     "ourHealingVision": {
         "header": "OUR INTEGRATED HEALING APPROACH: SEVEN KEY FACTORS FOR YOUR WELLBEING",
+        "clickOn": "Click on",
+        "keyFactor": "Key factor",
         "tabs": {
             "overview": {
                 "label": "Overview",
