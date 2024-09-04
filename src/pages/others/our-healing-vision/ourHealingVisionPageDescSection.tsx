@@ -1,8 +1,10 @@
 import { OurHealingVisionComponent } from "@/assets/icons/others/our-healing-vision.component";
-import { ImiButton } from "@/components/imiButton";
 import { ImiDescSection } from "@/components/imiDescSection";
+import { ImiSegment } from "@/components/imiSegment";
+import { convertRemToPx } from "@/utils/css-helper";
+import useWindowSize from "@/utils/hooks/useWindowSize";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
     IOurHealingVision,
     ourHealingVisionColor,
@@ -11,31 +13,53 @@ import {
 
 export const OurHealingVisionPageDescSection = () => {
     const t = i18nHelper("others");
+    const TabRef = useRef<HTMLDivElement>(null);
 
     const [activeSection, setActiveSection] = useState<IOurHealingVision>(
         IOurHealingVision.OVERVIEW
     );
 
+    const segmentOptions = ourHealingVisionTabList.map((section) => ({
+        key: section.id,
+        text: t(section.label),
+    }));
+
     const activeContent = ourHealingVisionTabList.find(
         (section) => activeSection === section.id
     );
-
-    const onButtonClick = (
-        id: IOurHealingVision,
-        e?: React.MouseEvent<HTMLDivElement, MouseEvent>
-    ) => {
-        console.log(e?.target);
-        if (e?.target)
-            (e?.target as HTMLDivElement).scrollIntoView({
-                behavior: "smooth",
-            });
-
-        if (activeSection === id) {
-            setActiveSection(IOurHealingVision.OVERVIEW);
+    const { isMobile, isTablet } = useWindowSize();
+    const segmentGap = useMemo(() => {
+        if (isMobile) {
+            return 0;
+        } else if (isTablet) {
+            return 0;
         } else {
-            setActiveSection(id);
+            return 1.875;
         }
-    };
+    }, [isMobile, isTablet]);
+
+    const activeIndex = segmentOptions.findIndex(
+        (option) => option.key === activeSection
+    );
+
+    useEffect(() => {
+        /* in rem, gap between segments, refer to ._segment css */
+        const scrollLeft =
+            segmentOptions.slice(0, activeIndex).reduce(
+                (partialSum, reduceOption) =>
+                    partialSum +
+                        (
+                            document.getElementById(
+                                `segment-item-${reduceOption.key}`
+                            ) as HTMLElement
+                        ).offsetWidth || 0,
+
+                0
+            ) +
+            activeIndex * convertRemToPx(segmentGap);
+
+        TabRef.current?.scrollTo({ left: scrollLeft, behavior: "smooth" });
+    }, [activeIndex, activeSection, segmentGap, segmentOptions]);
 
     return (
         <ImiDescSection
@@ -50,35 +74,12 @@ export const OurHealingVisionPageDescSection = () => {
                     </div>
 
                     <div className="content-container">
-                        <div className="swiper-container">
-                            {/* <ImiSwiper
-                                cardLists={}
-                                slidesPerView={"auto"}
-                                spaceBetween={convertRemToPx(1.875)}
-                                // freeMode={true}
-                                // scrollbar={true}
-                                // mousewheel={true}
-                                // modules={[FreeMode, Scrollbar, Mousewheel]}
-                            /> */}
-                            {ourHealingVisionTabList.map((section) => {
-                                const isActive = activeSection === section.id;
-                                return (
-                                    <ImiButton
-                                        key={`tab-${section.id}`}
-                                        text={t(section.label)}
-                                        size="padding"
-                                        buttonClassName={
-                                            isActive ? `mod__active` : ""
-                                        }
-                                        textClassName={
-                                            isActive ? `mod__active` : ""
-                                        }
-                                        onClick={(e) =>
-                                            onButtonClick(section.id, e)
-                                        }
-                                    />
-                                );
-                            })}
+                        <div className="swiper-container" ref={TabRef}>
+                            <ImiSegment<IOurHealingVision>
+                                options={segmentOptions}
+                                selectedKey={activeSection}
+                                setSelectedKey={setActiveSection}
+                            />
                         </div>
 
                         <div className={`detail-container`}>
