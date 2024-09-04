@@ -1,6 +1,7 @@
 import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
 import "./_corporate-wellness-page.scss";
 import { CorporateWellnessPageDescSection } from "./corporateWellnessPageDescSection";
+import { CorporateWellnessPageVideoSection } from "./corporateWellnessPageVideoSection";
 import { CorporateWellnessPageWhatWeDoSection } from "./corporateWellnessPageWhatWeDoSection";
 
 export const CorporateWellnessPage = () => {
@@ -11,6 +12,9 @@ export const CorporateWellnessPage = () => {
             </div>
             <div className="what-we-do-section">
                 <CorporateWellnessPageWhatWeDoSection />
+            </div>
+            <div className="video-section">
+                <CorporateWellnessPageVideoSection />
             </div>
 
             <ImiBreadcrumb />
