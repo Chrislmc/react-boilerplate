@@ -69,6 +69,10 @@ export const menuList: IMenuItem[] = [
         noPage: true,
         subMenu: [
             {
+                desc: "corporateWellness",
+                link: redirectRouteMap.corporateWellness,
+            },
+            {
                 desc: "healthCondition",
                 link: redirectRouteMap.healthCondition,
             },

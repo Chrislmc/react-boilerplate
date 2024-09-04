@@ -23,6 +23,7 @@ export enum RouteConstant {
     "labTest" = "lab-test",
 
     "others" = "others",
+    "corporateWellness" = "corporate-wellness",
     "healthCondition" = "health-condition",
     "insurance" = "insurance",
     "ourHealingVision" = "our-healing-vision",
@@ -62,6 +63,7 @@ export const redirectRouteMap = {
     labTest: `/${RouteConstant.labTest}`,
 
     others: `/${RouteConstant.others}`,
+    corporateWellness: `/${RouteConstant.others}/${RouteConstant.corporateWellness}`,
     healthCondition: `/${RouteConstant.others}/${RouteConstant.healthCondition}`,
     insurance: `/${RouteConstant.others}/${RouteConstant.insurance}`,
     ourHealingVision: `/${RouteConstant.others}/${RouteConstant.ourHealingVision}`,
@@ -97,6 +99,7 @@ export const breadcrumbRouteDescMap = {
     [RouteConstant.labTest]: "Lab Test",
 
     [RouteConstant.others]: "Others",
+    [RouteConstant.corporateWellness]: "Corporate Wellness",
     [RouteConstant.healthCondition]: "Health Condition",
     [RouteConstant.insurance]: "Insurance",
     [RouteConstant.ourHealingVision]: "Our healing vision",

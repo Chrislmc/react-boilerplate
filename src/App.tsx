@@ -7,6 +7,7 @@ import { DispensaryPage } from "./pages/dispensary";
 import { HealthHubPage } from "./pages/health-hub";
 import { ArticlePage } from "./pages/health-hub/article";
 import { LabTestPage } from "./pages/lab-test";
+import { CorporateWellnessPage } from "./pages/others/corporate-wellness";
 import { HealthConditionPage } from "./pages/others/health-condition";
 import { InsurancePage } from "./pages/others/insurance";
 import { OurHealingVisionPage } from "./pages/others/our-healing-vision";
@@ -78,6 +79,10 @@ function App() {
                     ></Route>
 
                     <Route path={RouteConstant.others}>
+                        <Route
+                            path={RouteConstant.corporateWellness}
+                            element={<CorporateWellnessPage />}
+                        />
                         <Route
                             path={RouteConstant.healthCondition}
                             element={<HealthConditionPage />}
