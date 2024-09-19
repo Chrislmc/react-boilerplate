@@ -68,7 +68,7 @@ export const Segment = <T extends string>({
     }, [onResize]);
 
     return (
-        <div className="imi-segment-component">
+        <div className="segment-component">
             <div
                 className="segment-active-background"
                 style={{ width: activeBorderWidth, left: activeBorderLeft }}

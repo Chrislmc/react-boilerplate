@@ -31,7 +31,7 @@ export const ProductButton: React.FC<IProductButton> = ({
     }
 
     return (
-        <div className="imi-product-button-component">
+        <div className="product-button-component">
             <Button
                 text={btnText}
                 buttonClassName={btnTheme}

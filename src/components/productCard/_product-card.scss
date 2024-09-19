@@ -1,7 +1,7 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
-.imi-product-card-component {
+.product-card-component {
     flex: 1;
     height: auto;
     min-width: 18.125rem;
@@ -9,13 +9,13 @@
     position: relative;
 
     &:hover {
-        .imi-card-component {
+        .card-component {
             border-color: $blueish-green;
             transition: all 0.5s ease;
         }
     }
 
-    .imi-card-component {
+    .card-component {
         border-radius: 1.25rem;
         border: 0.125rem solid $white;
         padding: 1.875rem;

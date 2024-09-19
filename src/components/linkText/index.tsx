@@ -14,7 +14,7 @@ export const LinkText: React.FC<ILinkTextProps> = ({
     href,
 }) => {
     return (
-        <span className="imi-link-text-component">
+        <span className="link-text-component">
             {prefix}
             <a href={href}>
                 <span>{linkText}</span>

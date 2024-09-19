@@ -99,14 +99,14 @@
                         }
                     }
 
-                    .imi-check-box-component {
+                    .check-box-component {
                         p {
                             color: $gray;
                         }
                     }
 
                     &.price-filter {
-                        .imi-btn-component {
+                        .btn-component {
                             padding: 0.375rem 0.75rem;
                             border: 0.0625rem solid $gray-400;
                             border-radius: 9999rem;
@@ -117,13 +117,13 @@
                                 background-color: $gray-600;
                                 transition: all 0.2s ease;
 
-                                .imi-btn-desc {
+                                .btn-desc {
                                     color: $white;
                                     transition: all 0.2s ease;
                                 }
                             }
 
-                            .imi-btn-desc {
+                            .btn-desc {
                                 font-size: 0.875rem;
                                 line-height: 1.5rem;
                                 letter-spacing: 0.04375rem;
@@ -318,7 +318,7 @@
                     justify-content: space-between;
                     align-items: center;
     
-                    .imi-section-header-component {
+                    .section-header-component {
                         margin: 0;
                     }
                 }
@@ -341,7 +341,7 @@
                         grid-template-columns: repeat(3, 1fr);
                         grid-template-rows: repeat(auto-fill, 38rem);
 
-                        .imi-card-component {
+                        .card-component {
                             .product-image-container {
                                 min-height: 14.375rem;
                             }
@@ -352,14 +352,14 @@
                         grid-template-columns: repeat(2, 1fr);
                         grid-template-rows: repeat(auto-fill, 38rem);
 
-                        .imi-card-component {
+                        .card-component {
                             .product-image-container {
                                 min-height: 14.375rem;
                             }
                         }
                     }
 
-                    .imi-product-card-component {
+                    .product-card-component {
                         min-width: unset;
                     }
                 }

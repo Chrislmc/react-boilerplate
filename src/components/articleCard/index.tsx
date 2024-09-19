@@ -26,7 +26,7 @@ export const ArticleCard: React.FC<IArticleCard> = ({
     };
 
     return (
-        <div className="imi-article-card-component" onClick={onCardClick}>
+        <div className="article-card-component" onClick={onCardClick}>
             <CardWithImageContent
                 imgUrl={imgUrl}
                 date={date}

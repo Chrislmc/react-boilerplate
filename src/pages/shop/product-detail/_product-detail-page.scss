@@ -84,7 +84,7 @@
                     margin-bottom: 0.375rem;
                 }
 
-                .imi-product-rating-component {
+                .product-rating-component {
                     display: flex;
                     flex-direction: row;
                     gap: 0.25rem;
@@ -127,8 +127,8 @@
                     gap: 1.25rem;
                     margin: 0;
                     
-                    .imi-product-button-component {
-                        .imi-btn-component {
+                    .product-button-component {
+                        .btn-component {
                             margin: 0;
                         }
                     }
@@ -141,7 +141,7 @@
             margin-top: 3.125rem;
 
             .tab-container {
-                .imi-tab-component {
+                .tab-component {
                     justify-content: flex-start;
                     margin: 0 0 1.875rem;
                     gap: 3.75rem;
@@ -207,7 +207,7 @@
                 height: 41rem;
 
                 .swiper-wrapper {
-                    .imi-product-card-component {
+                    .product-card-component {
                         min-width: unset;
                     }
                 }

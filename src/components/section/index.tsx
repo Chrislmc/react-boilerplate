@@ -7,7 +7,7 @@ interface Props {
 
 export const Section: React.FC<Props> = ({ className, children }) => {
     return (
-        <section className={`imi-section-component ${className}`}>
+        <section className={`section-component ${className}`}>
             {children}
         </section>
     );

@@ -24,7 +24,7 @@ export const Input: React.FC<IInputProps> = ({
     };
 
     return (
-        <div className="imi-input-component">
+        <div className="input-component">
             <div className="search-btn" onClick={() => onSearchIconClick()}>
                 <img className="search-icon" src={Icons.Search} />
             </div>

@@ -35,31 +35,31 @@ export const Button: React.FC<IButtonProps> = ({
 
     return downloadFile || externalPath ? (
         <a
-            className={`imi-btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
+            className={`btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
             href={downloadFile?.path || externalPath}
             target="_blank"
         >
             <p
-                className={`imi-btn-desc type-${type} color-${colorTheme} ${textClassName}`}
+                className={`btn-desc type-${type} color-${colorTheme} ${textClassName}`}
             >
                 {text}
             </p>
         </a>
     ) : redirectUrl ? (
         <a
-            className={`imi-btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
+            className={`btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
             href={redirectUrl}
             aria-disabled={disabled}
         >
             <p
-                className={`imi-btn-desc type-${type} color-${colorTheme} ${textClassName}`}
+                className={`btn-desc type-${type} color-${colorTheme} ${textClassName}`}
             >
                 {text}
             </p>
         </a>
     ) : (
         <button
-            className={`imi-btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
+            className={`btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
             onClick={(e) => {
                 redirectUrl && navigator(redirectUrl);
                 onClick && onClick(e);
@@ -67,7 +67,7 @@ export const Button: React.FC<IButtonProps> = ({
             disabled={disabled}
         >
             <p
-                className={`imi-btn-desc type-${type} color-${colorTheme} ${textClassName}`}
+                className={`btn-desc type-${type} color-${colorTheme} ${textClassName}`}
             >
                 {text}
             </p>

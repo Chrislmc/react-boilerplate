@@ -11,7 +11,7 @@ interface Props {
     customRouteDesc?: string;
 }
 
-export const ImiBreadcrumb: React.FC<Props> = ({ customRouteDesc }) => {
+export const Breadcrumb: React.FC<Props> = ({ customRouteDesc }) => {
     const location = useLocation();
     const navigator = useNavigate();
 
@@ -46,7 +46,7 @@ export const ImiBreadcrumb: React.FC<Props> = ({ customRouteDesc }) => {
     }
 
     return (
-        <div className="imi-breadcrumb-component">
+        <div className="breadcrumb-component">
             <ContainerX>
                 {routes.map((route, i) => {
                     const isDisabled = i === routes?.length - 1;

@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { DescSection } from "@/components/descSection";
 import { Section } from "@/components/section";
 import { ITextProps } from "@/components/text";
@@ -124,7 +124,7 @@ export const LabTestPage = () => {
                 />
             </Section>
 
-            <ImiBreadcrumb />
+            <Breadcrumb />
         </div>
     );
 };

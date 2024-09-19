@@ -1,14 +1,14 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
-.imi-gradient-banner {
+.gradient-banner {
     width: 100%;
     height: auto;
     position: relative;
     overflow: hidden;
     border-radius: 1.25rem;
 
-    .imi-gradient-banner-image-container {
+    .gradient-banner-image-container {
         position: absolute;
         top: 0;
         overflow: hidden;
@@ -42,7 +42,7 @@
         }
     }
 
-    .imi-gradient-banner-background-container {
+    .gradient-banner-background-container {
         width: 100%;
         position: absolute;
         top: 0;
@@ -88,7 +88,7 @@
         }
     }
 
-    .imi-gradient-banner-content-container {
+    .gradient-banner-content-container {
         width: 45%;
         height: auto;
         position: relative;
@@ -151,11 +151,11 @@
                 }
             }
 
-            .imi-btn-component {
+            .btn-component {
                 margin-top: 3.125rem;
             }
 
-            .imi-swiper-component {
+            .swiper-component {
                 width: 100%;
 
                 .swiper-column {

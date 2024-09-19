@@ -46,11 +46,11 @@
     .what-we-do-section {
         background-color: $blueish-green-200;
 
-        .imi-desc-section-desc {
+        .desc-section-desc {
             text-align: left;
         }
 
-        .imi-swiper-component {
+        .swiper-component {
             margin-top: 2.5rem;
 
             .swiper {
@@ -61,7 +61,7 @@
                     width: 43.75rem;
                     margin-top: 0.5rem;
     
-                    .imi-card-component {
+                    .card-component {
                         padding: 1.875rem 2.5rem;
                         display: flex;
                         flex-direction: column;
@@ -133,7 +133,7 @@
             height: 100%;
             width: 100%;
 
-            .imi-video-player-component {
+            .video-player-component {
                 height: 100%;
                 width: 100%;
                 

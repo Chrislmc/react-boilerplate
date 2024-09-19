@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Section } from "@/components/section";
 import "./_our-healing-vision.scss";
 import { OurHealingVisionPageBookNowSection } from "./ourHealingVisionPageBookNowSection";
@@ -14,7 +14,7 @@ export const OurHealingVisionPage = () => {
                 <OurHealingVisionPageBookNowSection />
             </Section>
 
-            <ImiBreadcrumb />
+            <Breadcrumb />
         </div>
     );
 };

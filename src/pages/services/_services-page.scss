@@ -2,8 +2,8 @@
 @import '@/scss/base';
 
 #services-page {
-    .imi-desc-section-component {
-        .imi-desc-section-desc {
+    .desc-section-component {
+        .desc-section-desc {
             font-size: 1.375rem;
             line-height: 1.75rem;
             letter-spacing: 0.06875rem;
@@ -29,13 +29,13 @@
                 }
 
                 &:hover {
-                    .imi-card-component {
+                    .card-component {
                         border-color: $blueish-green;
                         transition: all 0.5s ease;
                     }
                 }
     
-                .imi-card-component {
+                .card-component {
                     height: 100%;
                     width: 100%;
                     display: flex;

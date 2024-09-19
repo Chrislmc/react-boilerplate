@@ -1,7 +1,7 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
-.imi-card-with-image-content-component {
+.card-with-image-content-component {
     flex: 1 0 21%; 
     height: auto;
 
@@ -61,7 +61,7 @@
                 }
             }
 
-            .imi-btn-component {
+            .btn-component {
                 margin-top: 1.875rem;
             }
         }

@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { Section } from "@/components/section";
@@ -70,7 +70,7 @@ export const HealthConditionPage = () => {
                 </ContainerX>
             </Section>
 
-            <ImiBreadcrumb />
+            <Breadcrumb />
         </div>
     );
 };

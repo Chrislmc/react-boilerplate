@@ -1,7 +1,7 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
-.imi-btn-component {
+.btn-component {
     border-radius: 9999rem;
     height: 2.8125rem;
     width: 11.25rem;
@@ -57,7 +57,7 @@
     }
 }
 
-.imi-btn-desc {
+.btn-desc {
     font-family: $font-secondary;
     font-size: 1rem;
     line-height: 1.1875rem;

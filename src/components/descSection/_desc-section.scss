@@ -1,10 +1,10 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
-.imi-desc-section-component {
+.desc-section-component {
     width: 100%;
 
-    .imi-desc-section-hero-image {
+    .desc-section-hero-image {
         width: 100%;
         height: 40rem;
         overflow: hidden;
@@ -17,14 +17,14 @@
             position: absolute;
         }
 
-        .imi-desc-section-hero-color-layer {
+        .desc-section-hero-color-layer {
             position: absolute;
             height: 100%;
             width: 100%;
             opacity: 0.5;
         }
 
-        .imi-desc-section-hero-image-content {
+        .desc-section-hero-image-content {
             height: 100%;
             width: 100%;
             position: absolute;
@@ -54,15 +54,15 @@
         }
     }
 
-    .imi-desc-section-content {
+    .desc-section-content {
         position: relative;
 
-        .imi-desc-section-header-container {
+        .desc-section-header-container {
             width: 100%;
             position: relative;
             margin-bottom: 2.5rem;
 
-            .imi-desc-section-header-decoration-container {
+            .desc-section-header-decoration-container {
                 position: absolute;
                 height: 100%;
                 top: 0;
@@ -80,19 +80,19 @@
                     margin: 0;
                 }
 
-                .imi-desc-section-header-right-container {
+                .desc-section-header-right-container {
                     margin: 0 0 0 auto;
                 }
-                .imi-desc-section-header-center-container {
+                .desc-section-header-center-container {
                     margin: 0 auto;
                 }
-                .imi-desc-section-header-left-container {
+                .desc-section-header-left-container {
                     margin: 0;
                 }
             }
         }
 
-        .imi-desc-section-subheader {
+        .desc-section-subheader {
             font-family: $font-secondary;
             font-weight: 700;
             font-style: italic;
@@ -100,7 +100,7 @@
             color: $gray;
         }
 
-        .imi-desc-section-desc-column {
+        .desc-section-desc-column {
             display: flex;
             flex-direction: column;
             gap: 1.875rem;
@@ -109,8 +109,8 @@
                 padding: 0 9.375rem;
             }
 
-            .imi-desc-section-desc,
-            h5[class*='imi-desc-section-desc-'] {
+            .desc-section-desc,
+            h5[class*='desc-section-desc-'] {
                 line-height: 1.875rem;
                 color: $gray-600;
                 font-family: $font-secondary;

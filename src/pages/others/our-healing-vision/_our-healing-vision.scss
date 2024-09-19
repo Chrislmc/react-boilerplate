@@ -5,7 +5,7 @@
     position: relative;
 
     .desc-section {
-        .imi-section-header-component {
+        .section-header-component {
             max-width: 62.5rem;
             margin: 0 auto;
         }
@@ -71,7 +71,7 @@
                         display: none;
                     }
 
-                    .imi-btn-component {
+                    .btn-component {
                         padding: 0.5rem 1.25rem;
                         border-radius: 9999rem;
                         background-color: $transparent;
@@ -80,7 +80,7 @@
                             background-color: $orange;
                         }
 
-                        .imi-btn-desc {
+                        .btn-desc {
                             font-size: 1.5rem;
                             line-height: 1.875rem;
                             font-family: $font-secondary;
@@ -96,7 +96,7 @@
 
                 }
 
-                .imi-swiper-component {
+                .swiper-component {
                     width: inherit;
 
                     .swiper-slide {
@@ -146,17 +146,17 @@
     .book-now-section {
         background: transparent linear-gradient(180deg, $blueish-green 0%, $blueish-green-600 100%) 0% 0% no-repeat padding-box;
 
-        .imi-desc-section-component {
-            .imi-section-header-component{
+        .desc-section-component {
+            .section-header-component{
                 color: $white;
             }
 
-            h5[class*='imi-desc-section-desc-'] {
+            h5[class*='desc-section-desc-'] {
                 color: $white;
             }
         }
 
-        .imi-btn-component {
+        .btn-component {
             margin: 3.75rem auto 0 auto;
         }
     }

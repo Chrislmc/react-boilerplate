@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Section } from "@/components/section";
 import "./_meet-our-practitioners-page.scss";
 import { ArticlesAndVideosSection } from "./articlesAndVideosSection";
@@ -22,7 +22,7 @@ export const MeetOurPractitionersPage = () => {
             <Section className="testimonials-section">
                 <TestimonialsSection />
             </Section>
-            <ImiBreadcrumb customRouteDesc={samplePractitionerDetail.name} />
+            <Breadcrumb customRouteDesc={samplePractitionerDetail.name} />
         </div>
     );
 };

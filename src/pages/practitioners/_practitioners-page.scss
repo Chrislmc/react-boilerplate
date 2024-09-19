@@ -63,7 +63,7 @@
                         }
                     }
 
-                    .imi-card-component {
+                    .card-component {
                         flex: 1;
                         margin: 0;
                         position: relative;
@@ -96,12 +96,12 @@
                             flex: 1;
                         }
 
-                        .imi-btn-component {
+                        .btn-component {
                             padding: 0.8125rem 1.875rem;
                         }
                     }
 
-                    .image-container:hover + .imi-card-component {
+                    .image-container:hover + .card-component {
                         border-color: $blueish-green;
                         transition: all 0.5s ease;
                     }

@@ -26,7 +26,7 @@ export const Tab = <T extends string>({
     };
 
     return (
-        <div className="imi-tab-component">
+        <div className="tab-component">
             {options.map((option, i) => (
                 <div
                     key={`tab-${i}`}

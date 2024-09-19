@@ -21,17 +21,17 @@ export const GradientBanner: React.FC<IGradientBannerProps> = (
     props: IGradientBannerProps
 ) => {
     return (
-        <div className="imi-gradient-banner">
+        <div className="gradient-banner">
             <div
-                className={`imi-gradient-banner-image-container mod__img-${props.imgPosition}`}
+                className={`gradient-banner-image-container mod__img-${props.imgPosition}`}
             >
                 <img src={props.imgUrl} />
             </div>
             <div
-                className={`imi-gradient-banner-background-container color-${props.colorTheme} mod__img-${props.imgPosition}`}
+                className={`gradient-banner-background-container color-${props.colorTheme} mod__img-${props.imgPosition}`}
             />
             <div
-                className={`imi-gradient-banner-content-container mod__img-${props.imgPosition}`}
+                className={`gradient-banner-content-container mod__img-${props.imgPosition}`}
             >
                 <div className="container-column">
                     {props?.content?.length === 1 && (

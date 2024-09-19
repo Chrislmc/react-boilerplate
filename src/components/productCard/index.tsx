@@ -39,7 +39,7 @@ export const ProductCard: React.FC<IProductCardProps> = ({
     };
 
     return (
-        <div className="imi-product-card-component" onClick={onCardClick}>
+        <div className="product-card-component" onClick={onCardClick}>
             <BaseCard shadow>
                 <div className="card-column">
                     <div className="product-image-container">

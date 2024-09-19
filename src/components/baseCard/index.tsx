@@ -16,7 +16,7 @@ export const BaseCard = forwardRef<HTMLDivElement, Props>(
     ) => {
         return (
             <div
-                className={`imi-card-component${shadow ? " mod__shadow" : ""}${
+                className={`card-component${shadow ? " mod__shadow" : ""}${
                     border ? " mod__border" : ""
                 }${hoverEffect ? " mod__hover-effect" : ""}${
                     activeEffect ? " mod__active-effect" : ""

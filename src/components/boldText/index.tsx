@@ -12,7 +12,7 @@ export const BoldText: React.FC<IBoldTextProps> = ({
     suffix,
 }) => {
     return (
-        <span className="imi-bold-text-component">
+        <span className="bold-text-component">
             {prefix}
             <strong>{boldText}</strong>
             {suffix}

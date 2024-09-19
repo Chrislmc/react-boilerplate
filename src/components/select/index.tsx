@@ -32,7 +32,7 @@ export const Select = <T extends string>({
             selectComponentRef?.current.addEventListener("focusout", (e) => {
                 if (
                     !(e.relatedTarget as HTMLDivElement)?.closest(
-                        ".imi-select-component"
+                        ".select-component"
                     )
                 ) {
                     setIsExpanded(false);
@@ -105,7 +105,7 @@ export const Select = <T extends string>({
     };
 
     return (
-        <div className="imi-select-component" ref={selectComponentRef}>
+        <div className="select-component" ref={selectComponentRef}>
             <div className={parseClassName(`dropdown-list-container`)}>
                 <div className={`dropdown-list`}>
                     {options.map((option) => {

@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Section } from "@/components/section";
 import "./_insurance-page.scss";
 import { InsurancePageArticlesAndVideosSection } from "./insurancePageArticlesAndVideosSection";
@@ -20,7 +20,7 @@ export const InsurancePage = () => {
                 <InsurancePageArticlesAndVideosSection />
             </Section>
 
-            <ImiBreadcrumb />
+            <Breadcrumb />
         </div>
     );
 };

@@ -10,7 +10,7 @@ export const ProductRating: React.FC<IProductRating> = ({ rating }) => {
         .fill(Icons.EmptyStar, rating, 5);
 
     return (
-        <div className="imi-product-rating-component">
+        <div className="product-rating-component">
             {starList.map((imgUrl, i) => (
                 <img key={`rating-${i}`} src={imgUrl} />
             ))}

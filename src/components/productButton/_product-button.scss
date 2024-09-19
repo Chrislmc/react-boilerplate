@@ -1,8 +1,8 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
-.imi-product-button-component{
-    .imi-btn-component {
+.product-button-component{
+    .btn-component {
         margin-top: 0.625rem;
 
         &:disabled {
@@ -23,7 +23,7 @@
         &.mod__out-of-stock {
             background-color: $blueish-green-300;
     
-            .imi-btn-desc {
+            .btn-desc {
                 color: $blueish-green-400;
             }
         }

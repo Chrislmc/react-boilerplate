@@ -24,7 +24,7 @@ export const ImageTextSection: React.FC<Props> = ({
     customSideComponent,
 }) => {
     return (
-        <div className={`imi-image-text-section mod__bg-${backgroundColor}`}>
+        <div className={`image-text-section mod__bg-${backgroundColor}`}>
             <ContainerX>
                 <SectionContainerY size="small">
                     <div

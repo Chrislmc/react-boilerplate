@@ -34,7 +34,7 @@ export const NumberInput: React.FC<Props> = ({
     };
 
     return (
-        <div className="imi-number-input-component">
+        <div className="number-input-component">
             <button
                 className={`button-container minus`}
                 disabled={disableMinBtn}

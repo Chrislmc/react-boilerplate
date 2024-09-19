@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import "./_corporate-wellness-page.scss";
 import { CorporateWellnessPageDescSection } from "./corporateWellnessPageDescSection";
 import { CorporateWellnessPageVideoSection } from "./corporateWellnessPageVideoSection";
@@ -17,7 +17,7 @@ export const CorporateWellnessPage = () => {
                 <CorporateWellnessPageVideoSection />
             </div>
 
-            <ImiBreadcrumb />
+            <Breadcrumb />
         </div>
     );
 };

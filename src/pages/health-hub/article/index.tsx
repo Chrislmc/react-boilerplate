@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { DescSection } from "@/components/descSection";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { Section } from "@/components/section";
@@ -39,7 +39,7 @@ export const ArticlePage = () => {
                 </SectionContainerY>
             </Section>
 
-            <ImiBreadcrumb customRouteDesc={t(articleDetail.title)} />
+            <Breadcrumb customRouteDesc={t(articleDetail.title)} />
         </div>
     );
 };

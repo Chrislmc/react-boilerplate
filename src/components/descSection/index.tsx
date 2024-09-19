@@ -39,9 +39,9 @@ interface Props {
 
 export const DescSection: React.FC<Props> = (props: Props) => {
     return (
-        <div className="imi-desc-section-component">
+        <div className="desc-section-component">
             {!!props?.heroImg && (
-                <div className="imi-desc-section-hero-image">
+                <div className="desc-section-hero-image">
                     {"imgUrl" in props.heroImg ? (
                         <img src={props.heroImg.imgUrl} />
                     ) : (
@@ -51,9 +51,9 @@ export const DescSection: React.FC<Props> = (props: Props) => {
                         />
                     )}
                     {props.heroImg?.colorLayer && (
-                        <div className="imi-desc-section-hero-color-layer" />
+                        <div className="desc-section-hero-color-layer" />
                     )}
-                    <div className="imi-desc-section-hero-image-content">
+                    <div className="desc-section-hero-image-content">
                         <ContainerX>
                             {props.heroImg?.smallHeader && (
                                 <h2>
@@ -73,13 +73,13 @@ export const DescSection: React.FC<Props> = (props: Props) => {
             <SectionContainerY>
                 <ContainerX>
                     <div
-                        className={`imi-desc-section-content ${
+                        className={`desc-section-content ${
                             props?.header ? "mod__with-back-button" : ""
                         }`}
                     >
                         {props?.header && (
                             <div
-                                className={`imi-desc-section-header-container ${
+                                className={`desc-section-header-container ${
                                     props?.header ? "mod__with-back-button" : ""
                                 }`}
                             >
@@ -89,9 +89,9 @@ export const DescSection: React.FC<Props> = (props: Props) => {
                                 />
 
                                 {props?.customHeaderComponent && (
-                                    <div className="imi-desc-section-header-decoration-container">
+                                    <div className="desc-section-header-decoration-container">
                                         <div
-                                            className={`imi-desc-section-header-${props.customHeaderComponent.position}-container`}
+                                            className={`desc-section-header-${props.customHeaderComponent.position}-container`}
                                         >
                                             {
                                                 props.customHeaderComponent
@@ -104,14 +104,14 @@ export const DescSection: React.FC<Props> = (props: Props) => {
                         )}
 
                         {props?.subheader && (
-                            <h5 className="imi-desc-section-subheader">
+                            <h5 className="desc-section-subheader">
                                 {props.subheader}
                             </h5>
                         )}
 
                         {props?.desc && (
                             <div
-                                className={`imi-desc-section-desc-column${
+                                className={`desc-section-desc-column${
                                     props?.shrinkDescWidth
                                         ? " mod__shrink-width"
                                         : ""
@@ -119,8 +119,8 @@ export const DescSection: React.FC<Props> = (props: Props) => {
                             >
                                 {props?.desc?.map((desc, i) => (
                                     <h5
-                                        key={`imi-desc-section-desc-${i}`}
-                                        className={`imi-desc-section-desc imi-desc-section-desc-${i}`}
+                                        key={`desc-section-desc-${i}`}
+                                        className={`desc-section-desc desc-section-desc-${i}`}
                                     >
                                         {desc}
                                     </h5>

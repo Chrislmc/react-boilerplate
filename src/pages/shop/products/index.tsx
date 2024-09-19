@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { IOption } from "@/components/checkBox";
 import { Input } from "@/components/input";
 import { ContainerX } from "@/components/layout/containerX";
@@ -191,7 +191,7 @@ export const ProductsPage = () => {
                 </ContainerX>
             </Section>
 
-            <ImiBreadcrumb />
+            <Breadcrumb />
         </div>
     );
 };

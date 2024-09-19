@@ -13,7 +13,7 @@ export enum RouteConstant {
     "shop" = "shop",
     "products" = "products",
     "productDetail" = "product",
-    "imiSupplementOnline" = "imi-supplement-online",
+    "imiSupplementOnline" = "supplement-online",
 
     "dispensary" = "dispensary",
 

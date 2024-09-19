@@ -18,7 +18,7 @@ export const Swiper: React.FC<Props> = ({ cardLists, ...props }: Props) => {
 
     return (
         <div
-            className={`imi-swiper-component${
+            className={`swiper-component${
                 props?.speed ? ` mod__speed${props.speed}` : ""
             }`}
         >
@@ -26,8 +26,8 @@ export const Swiper: React.FC<Props> = ({ cardLists, ...props }: Props) => {
                 {cardLists?.length &&
                     cardLists?.map((card, i) => (
                         <SwiperSlide
-                            key={`imi-swiper-slide-${i}`}
-                            className="imi-swiper-slide"
+                            key={`swiper-slide-${i}`}
+                            className="swiper-slide"
                         >
                             {card}
                         </SwiperSlide>

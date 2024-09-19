@@ -18,7 +18,7 @@ export const CardWithImageContent: React.FC<ICardWithImageContentProps> = ({
     button,
 }) => {
     return (
-        <div className="imi-card-with-image-content-component">
+        <div className="card-with-image-content-component">
             <BaseCard shadow>
                 <div className="card-column">
                     <div className="image-container">

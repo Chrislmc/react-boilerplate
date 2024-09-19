@@ -20,7 +20,7 @@ interface IAccordionItem {
 
 export const Accordion: React.FC<IAccordion> = ({ content }) => {
     return (
-        <div className="imi-accordion-component">
+        <div className="accordion-component">
             {content.map((item, i) => (
                 <AccordionItem key={`accordion-item-${i}`} {...item} />
             ))}

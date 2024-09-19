@@ -6,7 +6,7 @@ interface Props extends SliderProps {}
 
 export const Slider: React.FC<Props> = ({ ...props }: Props) => {
     return (
-        <div className={`imi-slider-component`}>
+        <div className={`slider-component`}>
             <RcSlider {...props}></RcSlider>
         </div>
     );

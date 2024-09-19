@@ -21,9 +21,7 @@ export const SectionHeader: React.FC<Props> = (props: Props) => {
     }
 
     return (
-        <h1
-            className={`imi-section-header-component imi-section-header-h1${mod}`}
-        >
+        <h1 className={`section-header-component section-header-h1${mod}`}>
             {props.header.toUpperCase()}
         </h1>
     );

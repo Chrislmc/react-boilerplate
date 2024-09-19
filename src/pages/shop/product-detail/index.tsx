@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/breadcrumb";
 import { Section } from "@/components/section";
 import { useLocation } from "react-router-dom";
 import { productPageProductCardList } from "../products/productPageConstant";
@@ -23,7 +23,7 @@ export const ProductDetailPage = () => {
                 <ProductDetailPageRelatedProductSection />
             </Section>
 
-            <ImiBreadcrumb customRouteDesc={productDetail.name} />
+            <Breadcrumb customRouteDesc={productDetail.name} />
         </div>
     );
 };

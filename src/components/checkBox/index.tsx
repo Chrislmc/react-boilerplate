@@ -25,7 +25,7 @@ export const CheckBox = <T extends string>({
 
     return (
         <button
-            className={`imi-check-box-component${
+            className={`check-box-component${
                 allowMultiSelect ? " mod__multi-select" : " mod__single-select"
             }`}
             onClick={onCheckBoxClick}

@@ -9,7 +9,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
     .health-content-section {
         position: relative;
 
-        .imi-section-header-component {
+        .section-header-component {
             text-align: left;
         }
 
@@ -107,14 +107,14 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                             }
                         }
     
-                        .imi-check-box-component {
+                        .check-box-component {
                             p {
                                 color: $gray;
                             }
                         }
     
                         &.conditions-filter {
-                            .imi-btn-component {
+                            .btn-component {
                                 padding: 0.375rem 0.75rem;
                                 border: 0.0625rem solid $gray-400;
                                 border-radius: 9999rem;
@@ -125,13 +125,13 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                                     background-color: $gray-600;
                                     transition: all 0.2s ease;
     
-                                    .imi-btn-desc {
+                                    .btn-desc {
                                         color: $white;
                                         transition: all 0.2s ease;
                                     }
                                 }
     
-                                .imi-btn-desc {
+                                .btn-desc {
                                     font-size: 0.875rem;
                                     line-height: 1.5rem;
                                     letter-spacing: 0.04375rem;
@@ -381,7 +381,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                         }
                     }
 
-                    .imi-section-header-component {
+                    .section-header-component {
                         margin: 3.75rem 0 3.125rem 3.125rem;
                     }
 
@@ -413,18 +413,18 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                     background: transparent linear-gradient(180deg, $blueish-green 0%, $blueish-green-600 100%) 0% 0% no-repeat padding-box;
                     width: 100%;
             
-                    .imi-desc-section-component {
-                        .imi-section-header-component{
+                    .desc-section-component {
+                        .section-header-component{
                             color: $white;
                             text-align: center;
                         }
             
-                        h5[class*='imi-desc-section-desc-'] {
+                        h5[class*='desc-section-desc-'] {
                             color: $white;
                         }
                     }
             
-                    .imi-btn-component {
+                    .btn-component {
                         margin: 3.75rem auto 0 auto;
                     }
                 }
@@ -450,7 +450,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                             opacity: 0;
                         }
             
-                        .imi-card-with-image-content-component {
+                        .card-with-image-content-component {
                             .image-container {
                                 height: 15.625rem;
                             }
@@ -464,7 +464,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                         }
                     }
             
-                    .imi-btn-component {
+                    .btn-component {
                         margin: 0 auto;
                     }
                 }
