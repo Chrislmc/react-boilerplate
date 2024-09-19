@@ -1,0 +1,114 @@
+{
+    "variation_id": [
+        {
+            "value": 856
+        }
+    ],
+    "uuid": [
+        {
+            "value": "3984445a-9bdd-49ed-bdea-6f8b57aee2fe"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "pack_size",
+            "target_type": "commerce_product_variation_type",
+            "target_uuid": "a17ea2e9-9939-4c21-bcac-f6e6a8043a7a"
+        }
+    ],
+    "uid": [
+        {
+            "target_id": 1,
+            "target_type": "user",
+            "target_uuid": "8add619e-0d99-4bad-9391-25973e3960fc",
+            "url": "/user/1"
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "product_id": [
+        {
+            "target_id": 985,
+            "target_type": "commerce_product",
+            "target_uuid": "9ee6142f-8c0d-4ac2-b996-a3b981339f14",
+            "url": "/twice-daily-multi-60-capsules"
+        }
+    ],
+    "sku": [
+        {
+            "value": "879452000940"
+        }
+    ],
+    "title": [
+        {
+            "value": "Twice Daily Multi"
+        }
+    ],
+    "list_price": [
+        {
+            "number": "230.000000",
+            "currency_code": "HKD",
+            "formatted": "HK$230.00"
+        }
+    ],
+    "price": [
+        {
+            "number": "230.000000",
+            "currency_code": "HKD",
+            "formatted": "HK$230.00"
+        }
+    ],
+    "created": [
+        {
+            "value": "2020-11-02T09:52:47+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2024-06-03T06:55:14+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true
+        }
+    ],
+    "commerce_stock_always_in_stock": [
+        {
+            "value": false
+        }
+    ],
+    "content_translation_source": [
+        {
+            "value": "und"
+        }
+    ],
+    "content_translation_outdated": [
+        {
+            "value": false
+        }
+    ],
+    "field_cached_stock_level": [
+        {
+            "value": 12
+        }
+    ],
+    "field_loyalty_points": [],
+    "field_stock_level": [
+        {
+            "value": 8,
+            "available_stock": 12
+        }
+    ],
+    "weight": []
+}

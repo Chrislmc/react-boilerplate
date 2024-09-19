@@ -1,0 +1,146 @@
+{
+    "jsonapi": {
+        "version": "1.0",
+        "meta": {
+            "links": { "self": { "href": "http://jsonapi.org/format/1.0/" } }
+        }
+    },
+    "data": {
+        "type": "taxonomy_term--category",
+        "id": "cb7782e3-97a6-488e-8bed-c657b00ddefb",
+        "links": {
+            "self": {
+                "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb"
+            }
+        },
+        "attributes": {
+            "drupal_internal__tid": 35,
+            "drupal_internal__revision_id": 35,
+            "langcode": "en",
+            "revision_created": "2020-06-01T06:32:07+00:00",
+            "revision_log_message": null,
+            "status": true,
+            "name": "Vitamins \u0026 Minerals",
+            "description": null,
+            "weight": 42,
+            "changed": "2022-05-09T08:48:57+00:00",
+            "default_langcode": true,
+            "revision_translation_affected": true,
+            "content_translation_source": "und",
+            "content_translation_outdated": false,
+            "content_translation_created": "2020-11-17T16:39:01+00:00",
+            "field_category_banner_intro": {
+                "value": "\u003Cp\u003EFrom child-friendly multis to top tier vitamin D formulas, our vitamins and minerals feature the best supplements from around the globe, right here in Hong Kong.\u003C/p\u003E\r\n",
+                "format": "basic_html",
+                "processed": "\u003Cp\u003EFrom child-friendly multis to top tier vitamin D formulas, our vitamins and minerals feature the best supplements from around the globe, right here in Hong Kong.\u003C/p\u003E"
+            },
+            "field_category_banner_text": {
+                "value": "\u003Cp\u003EOur range of vitamins and minerals have been carefully selected by IMI\u2019s practitioners, for purity, potency and quality. Whether you\u2019re a man, woman, child, or baby, we\u2019ve got a formula for you.\u003C/p\u003E\r\n\r\n\u003Cp\u003EOur supplements feature premium ingredients which are easily absorbed, and range from a simple once daily tablet, to tasty gummies which are sure to please fussy eaters, while fulfilling nutritional deficiencies.\u003C/p\u003E\r\n\r\n\u003Cp\u003EMaximise your bone health, immunity, mental health and more, with our vitamins \u0026amp; minerals.\u003C/p\u003E\r\n",
+                "format": "basic_html",
+                "processed": "\u003Cp\u003EOur range of vitamins and minerals have been carefully selected by IMI\u2019s practitioners, for purity, potency and quality. Whether you\u2019re a man, woman, child, or baby, we\u2019ve got a formula for you.\u003C/p\u003E\n\n\u003Cp\u003EOur supplements feature premium ingredients which are easily absorbed, and range from a simple once daily tablet, to tasty gummies which are sure to please fussy eaters, while fulfilling nutritional deficiencies.\u003C/p\u003E\n\n\u003Cp\u003EMaximise your bone health, immunity, mental health and more, with our vitamins \u0026amp; minerals.\u003C/p\u003E"
+            },
+            "field_category_intro_tint": 50,
+            "field_category_link": "https://shop.imi.com.hk/category/vitamins-and-minerals",
+            "field_custom_parameter": null,
+            "field_c_meta_description": {
+                "value": "\u003Cp\u003EBuy the best vitamins \u0026amp; minerals in Hong Kong. Pure, potent and practitioner-recommended.\u003C/p\u003E\r\n",
+                "format": "basic_html",
+                "processed": "\u003Cp\u003EBuy the best vitamins \u0026amp; minerals in Hong Kong. Pure, potent and practitioner-recommended.\u003C/p\u003E"
+            },
+            "field_c_meta_title": "Quality Vitamins \u0026 Minerals Hong Kong | IMI Supplements Online ",
+            "field_show_child_categories_": true
+        },
+        "relationships": {
+            "vid": {
+                "data": {
+                    "type": "taxonomy_vocabulary--taxonomy_vocabulary",
+                    "id": "3c818c3d-3b09-4935-9130-323b9c95fd69"
+                },
+                "links": {
+                    "related": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/vid"
+                    },
+                    "self": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/relationships/vid"
+                    }
+                }
+            },
+            "revision_user": {
+                "data": null,
+                "links": {
+                    "related": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/revision_user"
+                    },
+                    "self": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/relationships/revision_user"
+                    }
+                }
+            },
+            "parent": {
+                "data": [
+                    {
+                        "type": "taxonomy_term--category",
+                        "id": "virtual",
+                        "meta": {
+                            "links": {
+                                "help": {
+                                    "href": "https://www.drupal.org/docs/8/modules/json-api/core-concepts#virtual",
+                                    "meta": {
+                                        "about": "Usage and meaning of the \u0027virtual\u0027 resource identifier."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "links": {
+                    "related": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/parent"
+                    },
+                    "self": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/relationships/parent"
+                    }
+                }
+            },
+            "content_translation_uid": {
+                "data": {
+                    "type": "user--user",
+                    "id": "875836c4-88ad-41d0-8974-a493b781ab95"
+                },
+                "links": {
+                    "related": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/content_translation_uid"
+                    },
+                    "self": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/relationships/content_translation_uid"
+                    }
+                }
+            },
+            "field_category_banner_image": {
+                "data": {
+                    "type": "file--file",
+                    "id": "5a34c3aa-8f3a-42e0-a84a-edcc7434fe90",
+                    "meta": {
+                        "alt": "",
+                        "title": "",
+                        "width": 1131,
+                        "height": 353
+                    }
+                },
+                "links": {
+                    "related": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/field_category_banner_image"
+                    },
+                    "self": {
+                        "href": "http://localhost:8088/jsonapi/taxonomy_term/category/cb7782e3-97a6-488e-8bed-c657b00ddefb/relationships/field_category_banner_image"
+                    }
+                }
+            }
+        }
+    },
+    "links": {
+        "self": {
+            "href": "http://localhost:8088/jsonapi/commerce_product/consumable_product/9ee6142f-8c0d-4ac2-b996-a3b981339f14/field_primary_category"
+        }
+    }
+}

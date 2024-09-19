@@ -1,0 +1,70 @@
+{
+    "practitioners": {
+        "header": "MEET OUR PRACTITIONERS",
+        "desc": "Peace of mind comes as standard. Our practitioners’ treatments are properly regulated and follow a strict code of ethics.",
+        "searchByPlaceholder": "Search by name",
+        "filterOption": {
+            "allServices": "All Services",
+            "naturopathicMedicineAndNutrition": "Naturopathic Medicine & Nutrition",
+            "homeopathy": "Homeopathy",
+            "psychologyAndCounselling": "Psychology & Counselling",
+            "osteopathyAndPhysiotherapy": "Osteopathy & Physiotherapy",
+            "acupunctureAndTcm": "Acupuncture & TCM",
+            "holisticTherapiesAndCoaching": "Holistic Therapies & Coaching",
+            "gpAndLabTesting": "GP & Lab Testing"
+        },
+        "linkText": "Book now",
+        "emptyState": "There is no practitioner satisfying all the requirement"
+    },
+
+    "meetOurPractitioners": {
+        "bookAnAppointment": "Book an appointment",
+        "languagePrefix": "Language: ",
+        "tag": {
+            "hongKong": "Hong Kong",
+            "online": "Online"
+        },
+        "areasOfExpertise": "AREAS OF EXPERTISE",
+        "contactPractitioner": {
+            "header": "WOULD YOU LIKE TO SEE GRAEME?",
+            "sendUsAMessage": "Send us a message",
+            "bookOnline": "Book online"
+        },
+        "articlesAndVideos": {
+            "title": "ARTICLES AND VIDEOS",
+            "card1": {
+                "date": "October 13, 2023",
+                "title": "Stress busting herbs : the power of adaptogens",
+                "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
+            },
+            "card2": {
+                "date": "September 28, 2023",
+                "title": "How meditation nourishes mental health",
+                "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
+            },
+            "card3": {
+                "date": "September 28, 2023",
+                "title": "Short title",
+                "desc": "Very short desc"
+            }
+        },
+        "testimonials": {
+            "title": "TESTIMONIALS",
+            "card1": {
+                "date": "October 13, 2023",
+                "title": "Stress busting herbs : the power of adaptogens",
+                "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
+            },
+            "card2": {
+                "date": "September 28, 2023",
+                "title": "How meditation nourishes mental health",
+                "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
+            },
+            "card3": {
+                "date": "September 28, 2023",
+                "title": "Short title",
+                "desc": "Very short desc"
+            }
+        }
+    }
+}

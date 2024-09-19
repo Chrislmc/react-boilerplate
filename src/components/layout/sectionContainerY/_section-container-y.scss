@@ -1,0 +1,14 @@
+.section-container-y {
+    &.mod__size-normal{
+        padding: 5rem 0;
+    }
+
+    &.mod__size-small{
+        padding: 3.75rem 0;
+    }
+
+    /* Center children */
+    div {
+        margin: 0 auto;
+    }
+}

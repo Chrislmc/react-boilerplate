@@ -1,0 +1,96 @@
+/* map holding breakpoint values */
+$max-breakpoints: (
+    mobile: 480px,
+    tablet: 768px,
+    small-screen: 1350px,
+    medium-screen: 1500px,
+    desktop: 2000px,
+    large-screen: 4000px,
+);
+$min-breakpoints: (
+    mobile: 0,
+    tablet: 480px,
+    small-screen: 768px,
+    medium-screen: 1350px,
+    desktop: 1500px,
+    large-screen: 2000px,
+);
+
+/* mixin to print out media queries (based on map keys passed) */
+@mixin media($keys...) {
+    @each $key in $keys {
+        @media (min-width: map-get($min-breakpoints, $key)) and (max-width: map-get($max-breakpoints, $key)) {
+            @content;
+        }
+    }
+}
+
+@mixin rich-text-make-up {
+    a {
+        color: $a-tag-color;
+        
+        span {
+            color: $a-tag-color!important;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    strong {
+        font-weight: 800;
+    }
+
+    p:has(> span > strong) {
+        margin: 1.25rem 0 1rem;
+    }
+
+    ol {
+        margin-top: 1rem;
+        
+        li {
+            margin: 0 20px 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        li::marker {
+            unicode-bidi: isolate;
+            font-variant-numeric: tabular-nums;
+            text-transform: none;
+            text-indent: 0 !important;
+            text-align: start !important;
+            text-align-last: start !important;
+            content:counter(list-item)". ";
+        }
+    }
+
+    ul {
+        margin-top: 1rem;
+
+        li {
+            margin: 0 20px 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        li::marker {
+            unicode-bidi: isolate;
+            font-variant-numeric: tabular-nums;
+            text-transform: none;
+            text-indent: 0 !important;
+            text-align: start !important;
+            text-align-last: start !important;
+            content: "• ";
+        }
+    }
+}

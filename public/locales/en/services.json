@@ -1,0 +1,136 @@
+{
+    "services": {
+        "naturopathicAndFunctionalMedicine": {
+            "header": "NATUROPATHIC & FUNCTIONAL MEDICINE",
+            "desc": "Treat the root cause of your concern with testing, nutrition, naturopathic medicine and herbal medicine.",
+            "naturopathicMedicine": "Naturopathic medicine",
+            "homeopathy": "Homeopathy",
+            "clinicalNutrition": "Clinical nutrition",
+            "functionalMedicine": "Functional medicine"
+        },
+        "psychologyCounsellingAndCoaching": {
+            "header": "PSYCHOLOGY, COUNSELLING & COACHING",
+            "desc": "Treat the root cause of your concern with testing, nutrition, homeopathy and herbal medicine.",
+            "clinicalPsychology": "Clinical Psychology",
+            "psychotherapy": "Psychotherapy",
+            "counselling": "Counselling",
+            "coaching": "Coaching"
+        },
+        "bodyworkAndEnergyMedicine": {
+            "header": "BODYWORK & ENERGY MEDICINE",
+            "desc": "Treat the root cause of your concern with testing, nutrition, homeopathy and herbal medicine.",
+            "osteopathy": "Osteopathy",
+            "physiotherapy": "Physiotherapy",
+            "craniosacralTherapyAndEnergyTreatments": "Craniosacral Therapy & Energy treatments",
+            "acupunctureAndTcm": "Acupuncture & TCM"
+        },
+        "labsIvAndConventionalMedicine": {
+            "header": "LABS, IV & CONVENTIONAL MEDICINE",
+            "desc": "Treat the root cause of your concern with testing, nutrition, homeopathy and herbal medicine.",
+            "gpServices": "GP services",
+            "labTests": "Lab Tests",
+            "ivTherapy": "IV therapy"
+        }
+    },
+
+    "naturopathicMedicine": {
+        "heroBanner": {
+            "header": "NATUROPATHIC MEDICINE",
+            "desc": "Think of us as the GPs of natural medicine"
+        },
+        "desc": {
+            "desc1": "Our naturopaths bring together the laws of science with centuries old healing traditions to optimise your wellbeing.",
+            "desc2": "The basis of naturopathy is the idea that everyone is capable of self-healing given the right support.",
+            "desc3": "Our naturopaths don’t just look at your presenting symptoms. They evaluate your nutritional status, genetics, family history, lifestyle, emotions and more to get the full picture of your health.",
+            "desc4": "Consultations are available in person in our Hong Kong clinic, or online.",
+            "ribbon": {
+                "testing": "Testing",
+                "herbalMedicine": "Herbal Medicine",
+                "nutrition": "Nutrition",
+                "supplements": "Supplements"
+            }
+        },
+        "functionalMedicine": {
+            "header": "FUNCTIONAL MEDICINE AND TESTING",
+            "desc1": "There is overlap between naturopathy and functional medicine, as practitioners often borrow concepts from the other discipline.",
+            "desc2": "We use industry-leading tests (a key part of functional medicine) to find the root cause of your condition, so we can treat it effectively.",
+            "linkText": "Learn more"
+        },
+        "details": {
+            "accordion1": {
+                "header": "Treatments",
+                "details": {
+                    "desc1": "Your treatment will be tailor-made for you. Grounded in your needs, goals and health history, your treatment will strengthen any weaknesses identified during testing.",
+                    "desc2": "Our naturopaths use personalised medicine, including prescribed herbal tinctures and clinical grade supplements that can’t be bought over the counter to heal your body.",
+                    "desc3": "They’ll work with you to set diet and lifestyle changes that you feel you can stay consistent with.",
+                    "desc4": "Some of our naturopaths use homeopathy as a complementary treatment. They may also refer you beyond their services, to other modalities beneficial to your healing. This includes counselling, bodywork, medical doctors and lifestyle coaching."
+                }
+            },
+            "accordion2": {
+                "header": "Supplements and herbal remedies",
+                "details": {
+                    "desc1": "From personalised herbal tinctures, to clinical-grade supplements, our formulas are vetted by our naturopaths for efficacy, and closely monitored to ensure they give you real results.",
+                    "desc2": "Our supplements comply with GMP and are independently tested for purity and quality."
+                }
+            },
+            "accordion3": {
+                "header": "What should I expect?",
+                "details": {
+                    "desc1Bold": "Your initial consultation",
+                    "desc1Suffix": " is thorough and takes around an hour. Your naturopath will review your diet, stress levels, lifestyle and assess you for toxin levels. They will recommend any necessary tests and prescribe tailored treatments to meet your needs.",
+                    "desc2Bold": "Follow up consultations",
+                    "desc2Suffix": " usually take half an hour. Your naturopath will check how the treatment is working and detail any test results or diagnosis. They’ll give diet and lifestyle recommendations and a realistic idea of how long changes will take to work.",
+                    "desc3Bold": "Further sessions",
+                    "desc3Suffix": " will check the effects of your therapies, as you go through healing. You may experience several stages (detoxification, nutritional repair and rebalancing) as your body’s organs return to health."
+                }
+            }
+        },
+        "license": {
+            "header": "IS NATUROPATHY LICENSED?",
+            "desc1": "Not all natural medicine practitioners are licensed. Ours are though.",
+            "desc2": "Our naturopathic physicians are certified in north America and Europe. Our naturopaths are licensed in Australia. All are certified by the Integrated Naturopathic Association of Hong Kong, a member of the World Naturopathic Federation."
+        },
+        "banner": {
+            "header": "INSURANCE",
+            "desc": "It’s worth checking if your insurance covers you for naturopathy. Your practitioner can detail any tests needed and treatment so that you can check.",
+            "linkText": "Learn more"
+        },
+        "bookNow": {
+            "header": "WHAT'S NEXT?",
+            "desc": "To see our naturopaths, call +852 2523 7121 or complete your request below.",
+            "linkText": "Book now"
+        },
+        "effect": {
+            "header": "WHAT CAN NATUROPATHY HELP WITH?",
+            "gutHealth": "Gut health",
+            "anxiety": "Anxiety",
+            "skinProblems": "Skin problems",
+            "immunity": "Immunity",
+            "headaches": "Headaches",
+            "sleep": "Sleep",
+            "hormonalHealth": "Hormonal health",
+            "pregnancy": "Pregnancy",
+            "foodIntolerances": "Food intolerances",
+            "detox": "Detox"
+        },
+        "articlesAndVideos": {
+            "title": "ARTICLES AND VIDEOS",
+            "card1": {
+                "date": "October 13, 2023",
+                "title": "Stress busting herbs : the power of adaptogens",
+                "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
+            },
+            "card2": {
+                "date": "September 28, 2023",
+                "title": "How meditation nourishes mental health",
+                "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
+            },
+            "card3": {
+                "date": "September 28, 2023",
+                "title": "Short title",
+                "desc": "Very short desc"
+            },
+            "linkText": "See all"
+        }
+    }
+}

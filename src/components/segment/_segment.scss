@@ -1,0 +1,69 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-segment-component {
+    display: flex;
+    flex-direction: row;
+    border-radius: 9999rem;
+    height: 2.75rem;
+    width: fit-content;
+    position: relative;
+    gap: 1.875rem;
+
+    @include media(mobile) {
+        gap: 0rem;
+        height: auto;
+    }
+
+    @include media(tablet) {
+        gap: 1rem;
+        height: auto;
+    }
+
+    @include media(small-screen) {
+        height: auto;
+    }
+
+    .segment-btn {
+        padding: 0 1.25rem;
+        position: relative;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+        font-family: $font-secondary;
+        font-weight: 500;
+        letter-spacing: 0.075rem;
+        color: $gray-600;
+        text-align: center;
+        transition: color 0.5s ease;
+
+        &::after {
+            display: block;
+            content: attr(title);
+            font-weight: 900;
+            height: 0rem;
+            color: transparent;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+
+        &.mod__active {
+            color: $white;
+            font-weight: 900;
+        }
+    }
+
+    .segment-active-background {
+        pointer-events: none;
+        border-radius: 9999rem;
+        background-color: $orange;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transition: all 500ms ease-out;
+    }
+}

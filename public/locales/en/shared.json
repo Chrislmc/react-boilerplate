@@ -1,0 +1,72 @@
+{
+    "menuItem": {
+        "practitioners": "Practitioners",
+        "meetOurPractitioners": "Meet our practitioners",
+        "services": "Services",
+        "naturopathicAndFunctionalMedicine": "Naturopathic & functional medicine",
+        "psychologyCounsellingAndCoaching": "Psychology, counselling & coaching",
+        "bodyworkAndEnergyMedicine": "Bodywork & energy medicine",
+        "labsIvAndConventionalMedicine": "Labs, IV & conventional medicine",
+        "shop": "Shop",
+        "imiSupplementOnline": "IMI supplement online",
+        "dispensary": "Dispensary",
+        "healthHub": "Health Hub",
+        "others": "Others",
+        "corporateWellness": "Corporate Wellness",
+        "healthCondition": "Health Condition",
+        "insurance": "Insurance",
+        "ourHealingVision": "Our Healing Vision",
+        "Lorem ipsum": "Lorem ipsum"
+    },
+
+    "header": {
+        "menu": {
+            "practitioners": "Practitioners",
+            "services": "Services",
+            "shop": "Shop",
+            "dispensary": "Dispensary",
+            "healthHub": "Health Hub"
+        },
+        "ribbon": {
+            "consultation": "Consultation",
+            "labTests": "Lab tests",
+            "shop": "Shop",
+            "dispensary": "Dispensary"
+        },
+        "lang": {
+            "en": "EN"
+        }
+    },
+
+    "footer": {
+        "logoText": "INTEGRATED\nMEDICINE INSTITUTE",
+        "stayUpToDate": "Stay up to date",
+        "stayUpToDateDesc": "Get the latest health inspiration and supplement offers direct to your inbox",
+        "subscribeInputPlaceholder": "Enter your email address",
+        "subscribe": "Subscribe",
+        "copyright": "Copyright © {{year}} Integrated Medicine Institute (IMI). All rights reserved."
+    },
+
+    "floatingIcon": {
+        "whatsapp": "Whatsapp",
+        "enquiry": "Enquiry"
+    },
+
+    "product": {
+        "btn": {
+            "outOfStock": "Out of stock",
+            "buyInClinic": "Buy in-clinic",
+            "addToBasket": "Add to basket",
+            "seeAllProduct": "See all products"
+        }
+    },
+
+    "filter": {
+        "filterBy": "Filter by: "
+    },
+
+    "input": {
+        "searchByName": "Search by name",
+        "searchBy": "Search by ..."
+    }
+}

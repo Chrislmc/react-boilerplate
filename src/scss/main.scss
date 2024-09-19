@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'abstracts';
+@import 'base';
+
+html {
+    font-size: 16px;
+
+    @include media(desktop, medium-screen) {
+        font-size: 14px;
+    }
+
+    @include media(small-screen) {
+        font-size: 12px;
+    }
+
+    @include media(mobile, tablet) {
+        font-size: 10px;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    margin: 0;
+
+    /* 
+     * h1 40px 56 2
+     * h3 30px 34 3
+     * h4 28px 37 1.4
+     * h5 24px 28 1.2
+     * h6 22px 28 1.1
+     * p 20px 18 2
+     * span 18px 26 0.9
+     */
+    h1 {
+        /* 40px */
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.1255rem;
+        margin: 0;
+    }
+
+    h3 {
+        /* 30px */
+        font-size: 1.875rem;
+        line-height: 2.125rem;
+        letter-spacing: 0.1875rem;
+        margin: 0;
+    }
+
+    h4 {
+        /* 28px */
+        font-size: 1.75rem;
+        line-height: 2.125rem;
+        letter-spacing: 0.0875rem;
+        margin: 0;
+    }
+
+    h5 {
+        /* 24px */
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.075rem;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    h6 {
+        /* 22px */
+        font-size: 1.375rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.06875rem;
+        margin: 0;
+    }
+
+    p {
+        /* 20px */
+        font-size: 1.25rem;
+        line-height: 1.125rem;
+        letter-spacing: 0.125rem;
+        margin: 0;
+    }
+
+    span {
+        /* 18px */
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        letter-spacing: 0.05625rem;
+        margin: 0;
+    }
+
+    button {
+        all: unset;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: unset;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+#root {
+    white-space: pre-line;
+}

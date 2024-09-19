@@ -1,0 +1,406 @@
+{
+  "product_id": [
+    {
+      "value": 985
+    }
+  ],
+  "uuid": [
+    {
+      "value": "9ee6142f-8c0d-4ac2-b996-a3b981339f14"
+    }
+  ],
+  "langcode": [
+    {
+      "value": "en"
+    }
+  ],
+  "type": [
+    {
+      "target_id": "consumable_product",
+      "target_type": "commerce_product_type",
+      "target_uuid": "cc9a7b69-82ba-46d2-8789-688f97f6a907"
+    }
+  ],
+  "uid": [
+    {
+      "target_id": 1,
+      "target_type": "user",
+      "target_uuid": "8add619e-0d99-4bad-9391-25973e3960fc",
+      "url": "/user/1"
+    }
+  ],
+  "status": [
+    {
+      "value": true
+    }
+  ],
+  "stores": [
+    {
+      "target_id": 1,
+      "target_type": "commerce_store",
+      "target_uuid": "b6c1de0f-0556-4b81-9b4d-592a05af0d91",
+      "url": "/store/1"
+    }
+  ],
+  "title": [
+    {
+      "value": "Twice Daily Multi"
+    }
+  ],
+  "variations": [
+    {
+      "target_id": 856,
+      "target_type": "commerce_product_variation",
+      "target_uuid": "3984445a-9bdd-49ed-bdea-6f8b57aee2fe"
+    }
+  ],
+  "default_variation": [
+    {
+      "target_id": 856,
+      "target_type": "commerce_product_variation",
+      "target_uuid": "3984445a-9bdd-49ed-bdea-6f8b57aee2fe"
+    }
+  ],
+  "created": [
+    {
+      "value": "2020-11-02T09:52:47+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "changed": [
+    {
+      "value": "2024-04-23T02:23:14+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "default_langcode": [
+    {
+      "value": true
+    }
+  ],
+  "overall_rating": [
+    {
+      "score": null,
+      "count": null
+    }
+  ],
+  "content_translation_source": [
+    {
+      "value": "und"
+    }
+  ],
+  "content_translation_outdated": [
+    {
+      "value": false
+    }
+  ],
+  "field_age_bracket": [
+    {
+      "target_id": 39,
+      "target_type": "taxonomy_term",
+      "target_uuid": "33356aa0-9254-4603-943f-96699fd976e3",
+      "url": "/category/age/teenagers-13-18"
+    },
+    {
+      "target_id": 251,
+      "target_type": "taxonomy_term",
+      "target_uuid": "cdddbebb-1f3b-4f9e-af5f-6a2f075970e4",
+      "url": "/category/age/women-19-40"
+    },
+    {
+      "target_id": 250,
+      "target_type": "taxonomy_term",
+      "target_uuid": "7dbb8a6e-b5e5-4615-908a-4c923922f82c",
+      "url": "/category/age/men-19-40"
+    },
+    {
+      "target_id": 246,
+      "target_type": "taxonomy_term",
+      "target_uuid": "b8f27642-c011-4231-9d49-20e9c88b9237",
+      "url": "/category/age/women-40-above"
+    },
+    {
+      "target_id": 247,
+      "target_type": "taxonomy_term",
+      "target_uuid": "09460334-ff68-40de-afd4-10a793af45ca",
+      "url": "/category/age/men-40-above"
+    }
+  ],
+  "field_also_available_in": [
+    {
+      "target_id": 986,
+      "target_type": "commerce_product",
+      "target_uuid": "7edb43d8-a964-4401-9504-03ff0c469446",
+      "url": "/twice-daily-multi-120-capsules"
+    }
+  ],
+  "field_articles_research_": [],
+  "field_brand": [
+    {
+      "target_id": 116,
+      "target_type": "taxonomy_term",
+      "target_uuid": "9cd5e783-d09b-40f9-8d82-e1cd2f9a3237",
+      "url": "/category/brands/designs-health"
+    }
+  ],
+  "field_champion_product_as_of_may": [
+    {
+      "value": false
+    }
+  ],
+  "field_clinic_only": [
+    {
+      "value": false
+    }
+  ],
+  "field_customer_favourites": [
+    {
+      "value": false
+    }
+  ],
+  "field_dietary_filters": [
+    {
+      "target_id": 256,
+      "target_type": "taxonomy_term",
+      "target_uuid": "ea8f60a6-5ae1-4ed3-85f7-756329352959",
+      "url": "/taxonomy/term/256"
+    },
+    {
+      "target_id": 197,
+      "target_type": "taxonomy_term",
+      "target_uuid": "264a6675-c112-4079-8f5c-cd9a2b5c872f",
+      "url": "/taxonomy/term/197"
+    },
+    {
+      "target_id": 198,
+      "target_type": "taxonomy_term",
+      "target_uuid": "62ab5811-1abc-4c41-a82e-cf5796d5d81a",
+      "url": "/taxonomy/term/198"
+    }
+  ],
+  "field_gender": [
+    {
+      "target_id": null
+    }
+  ],
+  "field_health_needs": [
+    {
+      "target_id": 46,
+      "target_type": "taxonomy_term",
+      "target_uuid": "b9abfc41-98e5-450a-9650-827bc09669e6",
+      "url": "/Health%20Needs/Brain%2C%20Learning%20%26%20Cognitive%20Health"
+    },
+    {
+      "target_id": 48,
+      "target_type": "taxonomy_term",
+      "target_uuid": "42f0b65f-6041-4fbd-91ea-cf2b433f2871",
+      "url": "/Health%20Needs/Colds%2C%20Flu%20%26%20Immunity"
+    },
+    {
+      "target_id": 51,
+      "target_type": "taxonomy_term",
+      "target_uuid": "3829f9f8-c713-4d64-b423-be32dc9a2513",
+      "url": "/Health%20Needs/Energy%20Support"
+    },
+    {
+      "target_id": 18,
+      "target_type": "taxonomy_term",
+      "target_uuid": "c60e2c89-34f6-4073-bd7e-5158090ab48f",
+      "url": "/Health_Needs/Mental_Health"
+    },
+    {
+      "target_id": 59,
+      "target_type": "taxonomy_term",
+      "target_uuid": "304744e4-cc6f-4691-b6e6-4b4b0ae4fb25",
+      "url": "/Health%20Needs/Travel%20Health"
+    },
+    {
+      "target_id": 61,
+      "target_type": "taxonomy_term",
+      "target_uuid": "3e0df4dc-7f6b-4f92-b5f2-126cb9082e91",
+      "url": "/Health%20Needs/Women%27s%20Health"
+    }
+  ],
+  "field_hidden_search_descriptor": [
+    {
+      "value": "multivitamin, mutli, delta gold, folate, vit c , c, vit, b9, zn, folic acid, twice daily mutli, "
+    }
+  ],
+  "field_ingredients_specifications": [],
+  "field_major_ingredient_search": [
+    {
+      "value": "b12, methylcobalamin, ascorbic acid, chromium, selenium"
+    }
+  ],
+  "field_manufacturing_country": [
+    {
+      "target_id": 206,
+      "target_type": "taxonomy_term",
+      "target_uuid": "2082f151-0d27-43ba-bdf9-96ed7cab5aef",
+      "url": "/taxonomy/term/206"
+    }
+  ],
+  "field_meta_description": [
+    {
+      "value": "<p>A truly superior multivitamin,&nbsp;crafted from the best and most bioavailable nutrients, for optimal absorption. This daily supplement supports immune health, even during stressful times. A multi built for strengthening brain, heart and metabolic health, while boosting energy.</p>\r\n",
+      "format": "basic_html",
+      "processed": "<p>A truly superior multivitamin, crafted from the best and most bioavailable nutrients, for optimal absorption. This daily supplement supports immune health, even during stressful times. A multi built for strengthening brain, heart and metabolic health, while boosting energy.</p>"
+    }
+  ],
+  "field_meta_title": [
+    {
+      "value": "Twice Daily Multi | Vitamins & Minerals | Shop IMI Hong Kong"
+    }
+  ],
+  "field_more_info": [],
+  "field_our_recommendation_order": [],
+  "field_practitioner_favourites": [
+    {
+      "value": false
+    }
+  ],
+  "field_price_range": [
+    {
+      "target_id": 202,
+      "target_type": "taxonomy_term",
+      "target_uuid": "3c97f0b9-f785-429b-9255-6d09b829610e",
+      "url": "/category/price/100-249"
+    }
+  ],
+  "field_primary_category": [
+    {
+      "target_id": 35,
+      "target_type": "taxonomy_term",
+      "target_uuid": "cb7782e3-97a6-488e-8bed-c657b00ddefb",
+      "url": "/category/products/vitamins-minerals"
+    }
+  ],
+  "field_pri_product_type": [
+    {
+      "target_id": 35,
+      "target_type": "taxonomy_term",
+      "target_uuid": "cb7782e3-97a6-488e-8bed-c657b00ddefb",
+      "url": "/category/products/vitamins-minerals"
+    },
+    {
+      "target_id": 214,
+      "target_type": "taxonomy_term",
+      "target_uuid": "0a1aa668-3909-4d5b-a8bc-5674891199ee",
+      "url": "/category/products/vitamins-minerals/all-vitamins-minerals"
+    },
+    {
+      "target_id": 184,
+      "target_type": "taxonomy_term",
+      "target_uuid": "fd22748e-b984-4116-8640-b9249ce391de",
+      "url": "/category/products/vitamins-minerals/multivitamins"
+    }
+  ],
+  "field_product_description": [
+    {
+      "value": "<p>19 nutrients unite to strengthen your immunity, enhance brain health and support your body. By selecting only the most bioavailable ingredients, Designs for Health ensure optimal absorption and tolerance.</p>\r\n\r\n<p>A potent dose of vitamins C, D and zinc make this supplement a powerful immune-booster, especially during stressful times, helping reduce stress and improve immunity at the same time.&nbsp;</p>\r\n\r\n<p>Using a natural and readily-absorbed form of folate, this supplement helps enhance cognitive function and gives you a helpful boost of energy. High levels of folate makes this product ideal for supporting pregnancy and the healthy development of a baby in the womb.</p>\r\n\r\n<p>Delta Gold, a potent form of vitamin E, supports cardiovascular and metabolic health. This ingredient may also assist in stabilising cholesterol.*</p>\r\n\r\n<p>Vitamins E and A also nurture the skin, while selenium and iodine provide potent antioxidant support.</p>\r\n\r\n<p>*This product is not registered under the Pharmacy and Poisons Ordinance or the Chinese Medicine Ordinance. Any claim made for it has not been subject to evaluation for such registration. This product is not intended to diagnose, treat or prevent any disease.</p>\r\n",
+      "format": "full_html",
+      "processed": "<p>19 nutrients unite to strengthen your immunity, enhance brain health and support your body. By selecting only the most bioavailable ingredients, Designs for Health ensure optimal absorption and tolerance.</p>\n\n<p>A potent dose of vitamins C, D and zinc make this supplement a powerful immune-booster, especially during stressful times, helping reduce stress and improve immunity at the same time. </p>\n\n<p>Using a natural and readily-absorbed form of folate, this supplement helps enhance cognitive function and gives you a helpful boost of energy. High levels of folate makes this product ideal for supporting pregnancy and the healthy development of a baby in the womb.</p>\n\n<p>Delta Gold, a potent form of vitamin E, supports cardiovascular and metabolic health. This ingredient may also assist in stabilising cholesterol.*</p>\n\n<p>Vitamins E and A also nurture the skin, while selenium and iodine provide potent antioxidant support.</p>\n\n<p>*This product is not registered under the Pharmacy and Poisons Ordinance or the Chinese Medicine Ordinance. Any claim made for it has not been subject to evaluation for such registration. This product is not intended to diagnose, treat or prevent any disease.</p>\n"
+    }
+  ],
+  "field_product_flag_text": [],
+  "field_product_id": [
+    {
+      "value": "377"
+    }
+  ],
+  "field_product_id_": [
+    {
+      "value": 377
+    }
+  ],
+  "field_product_images": [
+    {
+      "target_id": 791,
+      "alt": "",
+      "title": "",
+      "width": 1800,
+      "height": 1800,
+      "target_type": "file",
+      "target_uuid": "9a822441-0042-4e5a-9199-b377c86f7a06",
+      "url": "http://localhost:8088/sites/default/files/377.png"
+    }
+  ],
+  "field_product_ingredients": [],
+  "field_product_name_1": [
+    {
+      "value": "Twice Daily Multi"
+    }
+  ],
+  "field_product_name_2": [],
+  "field_product_specifications": [],
+  "field_promotion_category": [],
+  "field_rating": [
+    {
+      "value": 5
+    }
+  ],
+  "field_requires_approval": [
+    {
+      "value": false
+    }
+  ],
+  "field_returns_refunds": [],
+  "field_returns_refunds_content": [],
+  "field_secondary_product_type_": [
+    {
+      "target_id": 35,
+      "target_type": "taxonomy_term",
+      "target_uuid": "cb7782e3-97a6-488e-8bed-c657b00ddefb",
+      "url": "/category/products/vitamins-minerals"
+    },
+    {
+      "target_id": 214,
+      "target_type": "taxonomy_term",
+      "target_uuid": "0a1aa668-3909-4d5b-a8bc-5674891199ee",
+      "url": "/category/products/vitamins-minerals/all-vitamins-minerals"
+    },
+    {
+      "target_id": 184,
+      "target_type": "taxonomy_term",
+      "target_uuid": "fd22748e-b984-4116-8640-b9249ce391de",
+      "url": "/category/products/vitamins-minerals/multivitamins"
+    }
+  ],
+  "field_short_description": [
+    {
+      "value": "<p>Innovative research meets exceptional ingredients, to create a truly superior multivitamin.</p>\r\n",
+      "format": "basic_html",
+      "processed": "<p>Innovative research meets exceptional ingredients, to create a truly superior multivitamin.</p>"
+    }
+  ],
+  "field_special": [],
+  "field_strength": [],
+  "field_temperature_controlled": [
+    {
+      "value": false
+    }
+  ],
+  "field_temperature_sensitive": [
+    {
+      "value": false
+    }
+  ],
+  "field_unit_size": [
+    {
+      "target_id": 257,
+      "target_type": "taxonomy_term",
+      "target_uuid": "89ea47b8-b46d-45e9-bf5f-7bad1662797a",
+      "url": "/taxonomy/term/257"
+    }
+  ],
+  "field_unit_size_text": [
+    {
+      "value": "60 capsules"
+    }
+  ],
+  "field_what_we_love_this_month": [
+    {
+      "value": true
+    }
+  ]
+}

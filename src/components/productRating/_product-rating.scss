@@ -1,0 +1,11 @@
+.imi-product-rating-component {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+
+    img {
+        width: 1.375rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}

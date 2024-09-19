@@ -1,0 +1,441 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+#meet-our-practitioners-page {
+    position: relative;
+    
+    .practitioner-detail-section {
+        .section-container-y {
+            width: 100%;
+        }
+        
+        .section-wrapper {
+            width: 100%;
+
+            .hero-banner-container {
+                width: 100%;
+                height: 25rem;
+                position: relative;
+
+                .banner-image-container{
+                    width: inherit;
+                    height: inherit;
+                    overflow: hidden;
+
+                    .hero-banner {
+                        width: 100%;
+                        object-fit: cover;
+                        position: relative;
+                    }
+                }
+            }
+
+            .container-x {
+                overflow: visible;
+            }
+
+            .appointment-button-container {
+                margin: 1.875rem 0 3.125rem auto;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                overflow: visible;
+
+                .portrait-container {
+                    position: absolute;
+                    top: unset;
+                    bottom: 0;
+                    left: 0;
+                    width: auto;
+
+                    .image-container {
+                        width: 15.625rem;
+                        aspect-ratio: 1/1;
+                        border-radius: 9999rem;
+                        overflow: hidden;
+                        margin: 0;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .imi-btn-component {
+                    padding: 1rem 1.875rem;
+                    background-color: $orange;
+
+                    &:hover {
+                        background-color: $orange-700;
+                    }
+
+                    .imi-btn-desc {
+                        color: $white;
+                    }
+                }
+            }
+
+            .content-row {
+                width: 100%;
+                display: flex;
+                gap: 6.25rem;
+
+                .summary-column {
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.5rem;
+
+                    .basic-info-container{
+                        width: 100%;
+
+                        .name-row {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 0.75rem;
+
+                            .name {
+                                font-size: 2.125rem;
+                                line-height: 1.5rem;
+                                font-weight: 700;
+                                letter-spacing: 0.10625rem;
+                                color: $gray;
+                            }
+
+                            .tag-container{
+                                display: flex;
+                                gap: 0.625rem;
+                                margin: 0;
+
+                                .practitioner-tag-component {
+                                    border-radius: 9999rem;
+                                    background-color: $primary-700;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.375rem;
+                                    padding: 0.625rem 1.25rem;
+                                    pointer-events: none;
+
+                                    .icon-container {
+                                        width: 1.25rem;
+                                        aspect-ratio: 1/1;
+                                        overflow: hidden;
+
+                                        img {
+                                            width: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+
+                                    span {
+                                        font-size: 0.875rem;
+                                        line-height: 1.375rem;
+                                        letter-spacing: 0.04375rem;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+
+                        .type-row {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 1.25rem;
+
+                            .type {
+                                line-height: 1.375rem;
+                                letter-spacing: 0.0625rem;
+                                color: $gray-600;
+                            }
+
+                            .language {
+                                line-height: 1.375rem;
+                                letter-spacing: 0.0625rem;
+                                color: $gray-600;
+                            }
+                        }
+
+                        .title {
+                            line-height: 1.375rem;
+                            font-weight: 700;
+                            font-family: $font-secondary;
+                            font-style: italic;
+                            color: $gray;
+                            text-align: left;
+                            margin-bottom: 0.375rem;
+                        }
+
+                        .subtitle {
+                            font-size: 1rem;
+                            line-height: 1.375rem;
+                            font-family: $font-secondary;
+                            letter-spacing: 0.05rem;
+                            color: $gray;
+                            text-align: left;
+                            display: block;
+                        }
+                    }
+
+                    .summary-column-separator {
+                        width: 100%;
+                        height: 0.0625rem;
+                        background-color: $gray-400;
+                    }
+
+                    .detail-info-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1.5rem;
+
+                        span {
+                            font-size: 1.125rem;
+                            line-height: 1.5rem;
+                            color: $gray-600;
+                            font-family: $font-secondary;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .misc-info-column {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4.375rem;
+
+                    .areas-of-expertise-container {
+                        // height: 40.625rem;
+                        background-color: $white;
+                        border: 0.0625rem solid $gray-400;
+                        border-radius: 1.25rem;
+                        padding: 2.5rem;
+
+                        .title {
+                            line-height: 2.625REM;
+                            font-weight: 700;
+                            letter-spacing: 0.09375rem;
+                            color: $gray;
+                            margin-bottom: 2.5rem;
+                            text-align: left;
+                        }
+
+                        .item-column {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 1.5rem;
+
+                            .item-detail {
+                                width: 100%;
+                                display: flex;
+                                gap: 0.625rem;
+                                align-items: flex-start;
+
+                                span {
+                                    font-size: 1.125rem;
+                                    line-height: 1.5rem;
+                                    font-family: $font-secondary;
+                                    letter-spacing: 0.05625rem;
+                                    color: $gray-600;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+
+                    .testimonial-container {
+                        padding: 0.25rem;
+                        vertical-align: top;
+                        text-align: left;
+
+                        .testimonial-quote {
+                            font-size: 2.5rem;
+                            line-height: 2.5rem;
+                            font-weight: 700;
+                            color: $blueish-green-700;
+                            vertical-align: top;
+                        }
+
+                        .testimonial-text {
+                            font-size: 1.5rem;
+                            line-height: 2.5rem;
+                            letter-spacing: 0.075rem;
+                            color: $gray;
+                            vertical-align: top;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .practitioner-contact-section {
+        background: transparent linear-gradient(180deg, #34ABA4 0%, $blueish-green-600 100%) 0% 0% no-repeat padding-box;
+        width: 100%;
+
+        .container-x {
+            width: 100%;
+        }
+
+        h1 {
+            color: $white;
+            margin-bottom: 3.75rem;
+        }
+
+        .button-row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+
+                &:hover {
+                    opacity: 0.7;
+                    transition: all 0.2s ease-out;
+                }
+
+                .icon-container {
+                    width: 5rem;
+                    aspect-ratio: 1/1;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                span {
+                    text-align: center;
+                    font-size: 1rem;
+                    line-height: 1.375rem;
+                    letter-spacing: 0.05rem;
+                    font-family: $font-secondary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .articles-and-videos-section {
+        .imi-swiper-component {
+            .swiper {
+                height: 38.625rem;
+                padding: 0 0.375rem;
+                
+                .swiper-pagination {
+                    top: unset;
+                    bottom: 0;
+
+                    .swiper-pagination-bullet {
+                        border-color: #80BBCC;
+                        
+                        &.swiper-pagination-bullet-active {
+                            background-color: $blueish-green-700;
+                            border-color: $blueish-green-700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .testimonials-section {
+        background-color: $blueish-green-200;
+
+        .imi-swiper-component {
+            .swiper {
+                height: 22.3125rem;
+
+                .testimonial-card {
+                    height: 19.3125rem;
+                    width: 43.75rem;
+    
+                    .imi-card-component {
+                        padding: 1.875rem 2.5rem;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.25rem;
+                        height: calc(100% - 3.75rem);
+    
+                        .title-row {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            gap: 1.875rem;
+    
+                            .portrait-container {
+                                width: 6.25rem;
+                                aspect-ratio: 1/1;
+                                border-radius: 9999rem;
+                                overflow: hidden;
+    
+                                img {
+                                    width: 100%;
+                                }
+                            }
+    
+                            .title-column {
+                                flex: 1;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 0.625rem;
+    
+                                .name {
+                                    font-size: 1.125rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: 0.05625rem;
+                                    color: $gray;
+                                    font-weight: 700;
+                                }
+    
+                                .title {
+                                    font-size: 1rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: 0.05rem;
+                                    color: $gray-600;
+                                }
+                            }
+                        }
+    
+                        .desc-container {
+                            font-size: 1rem;
+                            line-height: 1.375rem;
+                            letter-spacing: 0.05rem;
+                            color: $gray-600;
+                            font-family: $font-secondary;
+                            text-align: left;
+                        }
+                    }
+                }
+
+
+                .swiper-pagination {
+                    top: unset;
+                    bottom: 0;
+
+                    .swiper-pagination-bullet {
+                        border-color: #80BBCC;
+                        
+                        &.swiper-pagination-bullet-active {
+                            background-color: $blueish-green-700;
+                            border-color: $blueish-green-700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

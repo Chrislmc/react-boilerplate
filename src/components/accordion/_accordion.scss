@@ -1,0 +1,104 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-accordion-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .accordion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 0fr;
+        transition: grid-template-rows 0.4s ease;
+        width: 100%;
+
+        &.mod__is-expanded {
+            visibility: visible;
+            grid-template-rows: min-content 1fr;
+        }
+
+        &:last-child {
+            .accordion-details-container{
+                .accordion-list {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .accordion-summary {
+            width: 100%;
+            background-color: $primary-600;
+            border-radius: 0.625rem;
+
+            .header-row {
+                width: calc(100% - 3.75rem);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 1rem 1.875rem;
+                align-items: center;
+            }
+
+            .header {
+                line-height: 1.875rem;
+                font-weight: 900;
+                letter-spacing: 0.06875rem;
+                text-align: left;
+                font-family: $font-secondary;
+                color: $white;
+            }
+
+            .icon-container {
+                height: 1.125rem;
+                width: 1.125rem;
+                overflow: hidden;
+                transition: all 0.4s ease;
+                margin: 0;
+
+                &.mod__is-expanded {
+                    transform: rotate(3.142rad);
+                }
+                
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        
+        .accordion-details-container {
+            width: 100%;
+            overflow: hidden;
+            opacity: 0;
+            transition: all 0.4s ease;
+
+            &.mod__is-expanded {
+                opacity: 1;
+            }
+
+            .accordion-list {
+                margin: 1.5rem 1.975rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            span {
+                text-align: left;
+                line-height: 1.5rem;
+                font-weight: 500;
+                font-family: $font-secondary;
+                letter-spacing: 0.05625rem;
+                color: $gray-600;
+
+                strong {
+                    font-weight: 900;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}

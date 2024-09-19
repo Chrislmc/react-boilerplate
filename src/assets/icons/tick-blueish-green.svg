@@ -1,0 +1,13 @@
+<svg id="tick" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 10 10">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1280" data-name="Rectangle 1280" width="8" height="5.877" transform="translate(0 0)" fill="#007699"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1594" data-name="Group 1594" transform="translate(1 2)">
+    <g id="Group_1593" data-name="Group 1593" clip-path="url(#clip-path)">
+      <path id="Path_1469" data-name="Path 1469" d="M8,.484a.832.832,0,0,1-.22.3Q5.313,3.253,2.847,5.721a.405.405,0,0,1-.442.133.512.512,0,0,1-.188-.12C1.523,5.044.833,4.349.138,3.66a.4.4,0,0,1,.166-.7.381.381,0,0,1,.332.068,1.041,1.041,0,0,1,.093.083L2.458,4.842c.02.02.038.042.075.085A.784.784,0,0,1,2.6,4.836Q4.935,2.5,7.273.157a.422.422,0,0,1,.42-.145A.393.393,0,0,1,7.98.273c.006.013.013.026.02.039Z" fill="#007699"/>
+    </g>
+  </g>
+  <rect id="Rectangle_1282" data-name="Rectangle 1282" width="10" height="10" fill="none"/>
+</svg>

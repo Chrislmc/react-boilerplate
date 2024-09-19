@@ -1,0 +1,163 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+#our-healing-vision-page {
+    position: relative;
+
+    .desc-section {
+        .imi-section-header-component {
+            max-width: 62.5rem;
+            margin: 0 auto;
+        }
+
+        .custom-bottom-component {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            gap: 7.5rem;
+
+            .healing-vision-image-container {
+                min-height: 37.5rem;
+                min-width: 37.5rem;
+                overflow: hidden;
+                position: relative;
+
+                svg {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                .image-text {
+                    position: absolute;
+                    top: calc(50% - 1.75rem);
+                    left: 1.5625rem;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    pointer-events: none;
+
+                    p {
+                        line-height: 1.25rem;
+                        font-weight: 500;
+                        font-family: $font-secondary;
+                        letter-spacing: 0.0625rem;
+                        color: $gray-600;
+                    }
+
+                    h3 {
+                        line-height: 2.25rem;
+                        font-weight: 900;
+                        font-family: $font-secondary;
+                        letter-spacing: 0.09375rem;
+                        color: $gray;
+                    }
+                }
+            }
+
+            .content-container {
+                flex: 1;
+                overflow-x: hidden;
+
+                .swiper-container {
+                    position: relative;
+                    width: inherit;
+                    overflow-x: scroll;
+                    display: flex;
+                    align-items: center;
+                    gap: 1.875rem;
+             
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .imi-btn-component {
+                        padding: 0.5rem 1.25rem;
+                        border-radius: 9999rem;
+                        background-color: $transparent;
+
+                        &.mod__active {
+                            background-color: $orange;
+                        }
+
+                        .imi-btn-desc {
+                            font-size: 1.5rem;
+                            line-height: 1.875rem;
+                            font-family: $font-secondary;
+                            font-weight: 500;
+                            letter-spacing: 0.075rem;
+                            color: $gray-600;
+
+                            &.mod__active {
+                                color: $white;
+                            }
+                        }
+                    }
+
+                }
+
+                .imi-swiper-component {
+                    width: inherit;
+
+                    .swiper-slide {
+                        width: fit-content;
+                    }
+
+                }
+
+                .detail-container {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 3.75rem;
+
+                    .tab-content-header {
+                        margin-bottom: 2.5rem;
+                        line-height: 2.125rem;
+                        letter-spacing: 0.0875rem;
+                        font-weight: 700;
+                        text-align: left;
+                    }
+
+                    .desc-list {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1.5rem;
+
+                        .detail-desc {
+                            font-size: 1.25rem;
+                            line-height: 1.625rem;
+                            letter-spacing: 0.0625rem;
+                            font-family: $font-secondary;
+                            font-weight: 500;
+                            color: $gray-600;
+                            text-align: left;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .book-now-section {
+        background: transparent linear-gradient(180deg, $blueish-green 0%, $blueish-green-600 100%) 0% 0% no-repeat padding-box;
+
+        .imi-desc-section-component {
+            .imi-section-header-component{
+                color: $white;
+            }
+
+            h5[class*='imi-desc-section-desc-'] {
+                color: $white;
+            }
+        }
+
+        .imi-btn-component {
+            margin: 3.75rem auto 0 auto;
+        }
+    }
+}

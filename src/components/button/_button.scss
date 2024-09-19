@@ -1,0 +1,108 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-btn-component {
+    border-radius: 9999rem;
+    height: 2.8125rem;
+    width: 11.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease-in;
+
+    &.size-padding {
+        height: unset;
+        width: fit-content;
+        padding: 1rem 2.5rem;
+    }
+
+    &.type-solid {
+        &.color-primary {
+            background-color: $primary;
+
+            &:hover:not(:disabled) {
+                background-color: $primary-700;
+            }
+        }
+
+        &.color-blueish-green {
+            background-color: $blueish-green;
+
+            &:hover:not(:disabled) {
+                background-color: $primary;
+            }
+        }
+
+        &.color-orange {
+            background-color: $white;
+            
+            &:hover:not(:disabled) {
+                background-color: $orange;
+            }
+        }
+    }
+
+    &.type-outline {
+        border-width: 0.125rem;
+        border-style: solid;
+        background-color: transparent;
+
+        &.color-white {
+            border-color: $white;
+
+            &:hover:not(:disabled) {
+                background-color: $white;
+            }
+        }
+    }
+}
+
+.imi-btn-desc {
+    font-family: $font-secondary;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    transition: all 0.15s ease-in;
+
+    &.type-solid {
+        letter-spacing: 0.0625rem;
+
+        &.color-primary, 
+        &.color-blueish-green {
+            color: $white;
+        }
+
+        &.color-orange {
+            color: $blueish-green-700;
+
+            &.mod__hover-blueish-green {
+                :hover:not(:disabled) > & {
+                    color: $white;
+                }
+            }
+        }
+
+    }
+
+    &.type-outline {
+        letter-spacing: 0.1125rem;
+
+        &.color-white {
+            color: $white;
+
+            :hover:not(:disabled) > & {
+                color: $transparent;
+            }
+        }
+
+        &.type-round {
+            letter-spacing: 0.0625rem;
+            color: $dark;
+
+            :hover:not(:disabled) > & {
+                color: $white;
+            }
+        }
+    }
+}

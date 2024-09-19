@@ -1,0 +1,152 @@
+{
+    "shop": {
+        "desc": {
+            "header": "IMI SUPPLEMENTS ONLINE",
+            "categories": {
+                "header": "CATEGORIES",
+                "saleAndOffers": " Sale & offers",
+                "vitaminAndMinerals": "Vitamin & minerals",
+                "probiotics": "Probiotics",
+                "oils": "Oils",
+                "supplements": "Supplements",
+                "lifestyle": "Lifestyle",
+                "linkText": "Shop all products"
+            }
+        },
+        "categories": {
+            "header": "CATEGORIES"
+        },
+        "recommended": {
+            "header": "WHAT WE LOVE THIS MONTH",
+            "linkText": "Shop all products"
+        },
+        "healthNeed": {
+            "header": "SHOP BY HEALTH NEED",
+            "linkText": "Shop all health needs"
+        },
+        "articles": {
+            "header": "RECENT ARTICLES",
+            "card1": {
+                "date": "October 13, 2023",
+                "title": "Introducing the IMI Clinical Multivitamin",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient…"
+            },
+            "card2": {
+                "date": "September 28, 2023",
+                "title": "Nutritional imbalances which affect impulsivity, inattention and hyperactivity",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient…"
+            },
+            "card3": {
+                "date": "September 28, 2023",
+                "title": "Short title",
+                "desc": "Very short desc"
+            },
+            "linkText": "Discover more"
+        },
+        "practitioner": {
+            "header": "Build a strong foundation for true wellbeing",
+            "desc": "Our practitioners’ top picks for building a healthy body and mind."
+        },
+        "customerFavorites": {
+            "header": "CUSTOMER FAVOURITES",
+            "linkText": "Shop all products"
+        },
+        "subscribe": {
+            "header": "BE THE FIRST IN LINE",
+            "desc": "Get the latest offers, our favourite supplements and health inspiration direct to your inbox.",
+            "linkText": "Subscribe now"
+        }
+    },
+    "products": {
+        "header": "ALL PRODUCTS",
+        "filter": {
+            "price": {
+                "header": "Price"
+            },
+            "categories": {},
+            "healthNeed": {},
+            "brands": {},
+            "sortBy": {
+                "header": "SortBy"
+            }
+        }
+    },
+    "product-detail": {
+        "packSize": "Pack size: {{packSize}}",
+        "tab": {
+            "description": "Description",
+            "ingredients": "Ingredients",
+            "vitalNutrients": "Vital Nutrients"
+        },
+        "relatedProducts": {
+            "title": "RELATED PRODUCTS"
+        }
+    },
+    "shared": {
+        "filter": {
+            "categories": {
+                "header": "Categories",
+                "saleAndOffers": "Sale & offers",
+                "vitaminAndMinerals": "Vitamin & minerals",
+                "probiotics": "Probiotics",
+                "oils": "Oils",
+                "supplements": "Supplements",
+                "lifestyle": "Lifestyle",
+                "linkText": "Shop all products"
+            },
+            "healthNeed": {
+                "header": "Health Need(s)",
+                "allergies": "Allergies",
+                "gutHealth": "Gut health",
+                "immunity": "Immunity",
+                "sleep": "Sleep",
+                "hormonalHealth": "Hormonal health",
+                "pain": "Pain",
+                "detoxAndWeightLoss": "Detox & weightloss",
+                "Immune Health": "Immune Health",
+                "Brain, Learning \u0026 Cognitive Health": "Brain, Learning \u0026 Cognitive Health",
+                "Energy Support": "Energy Support",
+                "Mental Health": "Mental Health",
+                "Travel Health": "Travel Health"
+            },
+            "brands": {
+                "header": "Brands",
+                "A": "A",
+                "B": "B",
+                "C": "C",
+                "D": "D",
+                "E": "E",
+                "F": "F",
+                "G": "G",
+                "H": "H",
+                "I": "I",
+                "J": "J",
+                "K": "K",
+                "L": "L",
+                "M": "M",
+                "N": "N",
+                "O": "O",
+                "P": "P",
+                "Q": "Q",
+                "R": "R",
+                "S": "S",
+                "T": "T",
+                "U": "U",
+                "V": "V",
+                "W": "W",
+                "X": "X",
+                "Y": "Y",
+                "Z": "Z"
+            },
+            "clear": "Clear"
+        },
+        "sortBy": {
+            "header": "Sort By",
+            "latest": "Latest",
+            "popularity": "Popularity",
+            "averageRating": "Average rating",
+            "priceLowToHigh": "Price low to high",
+            "priceHighToLow": "Price high to low"
+        }
+    }
+}

@@ -1,0 +1,252 @@
+{
+    "healthCondition": {
+        "header": "HEALTH CONDITIONS",
+        "desc": {
+            "header": "IMMUNITY",
+            "desc1": "A strong immune system is the best defence against disease. From simple sniffles to serious sicknesses, our immune systems have the potential to protect against all kinds of illness.",
+            "desc2": "But maintaining and strengthening immunity is not easy in Hong Kong. The city’s high levels of pollution, its dense population, nutrient-poor foods, and the work hard, play hard mentality are proven to significantly take a toll on our immune systems. If you find you’re struggling with persistent and recurring sicknesses, you might have a weakened immune system.",
+            "desc3": "Through in-depth consultations and relevant tests, our naturopaths are skilled at pinpointing the obvious and hidden causes of a compromised immune system. Armed with the facts, they can prepare a tailored plan to boost your immune system, naturally and powerfully."
+        },
+        "details": {
+            "accordion1": {
+                "header": "Symptoms",
+                "details": {
+                    "desc1": "The signs that you have a compromised immune system include:",
+                    "desc2": "• Persistent respiratory conditions",
+                    "desc3": "• Repeated illness including skin problems and urinary tract infections",
+                    "desc4": "• Wounds that take too long to heal",
+                    "desc5": "• Allergic responses like hayfever and eczema",
+                    "desc6": "• Autoimmune disorders",
+                    "desc7": "• Blood disorders or abnormalities, such as anaemia",
+                    "desc8": "• Digestive issues and more"
+                }
+            },
+            "accordion2": {
+                "header": "Causes",
+                "details": {
+                    "desc1": "There are multiple obvious and far-less-obvious culprits that can undermine your immunity. These include:",
+                    "desc2": "• Chronic stress",
+                    "desc3": "• Highly processed foods and excess sugar consumption",
+                    "desc4": "• Nutrient-poor diets due to poor soil quality and importation of foods",
+                    "desc5": "• High levels of pollution",
+                    "desc6": "• Excess alcohol and cigarette intake",
+                    "desc7": "• Inadequate sleep",
+                    "desc8": "• A sedentary lifestyle",
+                    "desc9": "• Obesity",
+                    "desc10": "• Excessive use of medications and antibiotics",
+                    "desc11": "• Poor hygiene",
+                    "desc12": "• Loneliness and social isolation",
+                    "desc13": "• Early childhood or present-day trauma                "
+                }
+            },
+            "accordion3": {
+                "header": "Our treatment",
+                "details": {
+                    "desc1": "A healthy diet, regular exercise, more sleep and less stress can help to boost your immune system. And that’s not all. At IMI, we recognise seven factors, seemingly unrelated yet intimately connected, that can significantly influence your immune system’s superpowers and your overall health.",
+                    "desc2": "Taking your whole being into consideration, our naturopaths can find the obvious and hidden causes of your weakened immune system. Through in-depth consultations and, when appropriate, diagnostic testing, they can identify food intolerances, nutritional deficiencies, environmental triggers, lifestyle habits and more that may be impacting your immunity.",
+                    "desc3": "Working hand-in-hand with you, they can put in place a personalised and sustainable plan to boost your immune system, naturally and effectively. Your treatment plan may include homeopathic and herbal remedies, pure and potent supplements, and lifestyle and dietary tweaks. Our naturopaths may also recommend psychology services and energy healing therapies, depending on your unique immunity needs."
+                }
+            }
+        },
+        "bookNow": {
+            "header": "WHAT'S NEXT?",
+            "desc": "To see our naturopaths, call +852 2523 7121 or complete your request below.",
+            "linkText": "Book now"
+        },
+        "articlesAndVideos": {
+            "title": "ARTICLES AND VIDEOS",
+            "card1": {
+                "date": "October 13, 2023",
+                "title": "Stress busting herbs : the power of adaptogens",
+                "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
+            },
+            "card2": {
+                "date": "September 28, 2023",
+                "title": "How meditation nourishes mental health",
+                "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
+            },
+            "card3": {
+                "date": "September 28, 2023",
+                "title": "Short title",
+                "desc": "Very short desc"
+            },
+            "linkText": "See all"
+        }
+    },
+
+    "insurance": {
+        "header": "DOES MY INSURANCE COVER COMPLEMENTARY MEDICINE?",
+        "subheader": "Cover for the services you love.",
+        "desc1": "Did you know there are insurance providers that will cover the cost of services like naturopathy, homeopathy, osteopathy, counselling, TCM & acupuncture?",
+        "desc2": "Insurers provide ‘coinsurance’ for outpatients services like these – a cost sharing method which varies from 10% to 30%.",
+        "desc3": "For example, if your set percentage is 10%, you will pay 10% of each bill, and your insurer will pay the remaining 90%.",
+        "desc4": "Some insurers may even cover 100% of your bill for certain services like psychotherapy.",
+        "imageContent": {
+            "header": "OUR PARTNER",
+            "desc": "Alea are on a mission to empower you to find the right health insurance, with unbiased information and advice. The insurance companies they compare include ones that cover complementary medicine and mental health care.",
+            "linkText": "Learn more"
+        },
+        "articlesAndVideos": {
+            "title": "ARTICLES AND VIDEOS",
+            "card1": {
+                "date": "October 13, 2023",
+                "title": "Stress busting herbs : the power of adaptogens",
+                "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
+            },
+            "card2": {
+                "date": "September 28, 2023",
+                "title": "How meditation nourishes mental health",
+                "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
+            },
+            "card3": {
+                "date": "September 28, 2023",
+                "title": "Short title",
+                "desc": "Very short desc"
+            }
+        }
+    },
+
+    "ourHealingVision": {
+        "header": "OUR INTEGRATED HEALING APPROACH: SEVEN KEY FACTORS FOR YOUR WELLBEING",
+        "clickOn": "Click on",
+        "keyFactor": "Key factor",
+        "tabs": {
+            "overview": {
+                "label": "Overview",
+                "desc1": "We’ve identified seven key factors – seemingly unrelated, yet intimately connected – that need to be considered for optimal healing. Learn more about these key factors and how they influence your overall health and wellbeing.",
+                "desc2": "We apply our Integrated healing approach to all sorts of different health conditions for optimal results. Examples include depression, sleep, anxiety, immunity and even digestive issues.",
+                "desc3": "We harness medicinal approaches and treatments provided by doctors and practitioners from all sorts of disciplines committed to help you to achieve optimal wellbeing."
+            },
+            "mind": {
+                "label": "Mind",
+                "header": "MIND: THE POWER OF THE THINKING AND NON-THINKING MIND FOR DEEPER HEALING",
+                "desc1": "Our minds are continuously developing, from the moment we’re conceived throughout our entire life. Genetics has a role to play but it’s our world, nature, technological environment and interpersonal relationships that continue to influence our mind’s neural connections and growth.",
+                "desc2": "We all have a ‘thinking’ mind – the part that’s rational throughout our daily interactions. We also have a ‘non-thinking’ mind – the part that processes typically non-verbal communication, impressions and instinctive responses in our body faster than we can think. Tucked away inside our non-thinking mind are our deepest memories. Some we recall. Some we don’t. Whether we recall them or not, they leave a lasting impression affecting our responses to events and stressors in life. Our temperatures rise, our stomachs sink, our heart rates rocket. We act. We feel. We think. But we don’t always know why.",
+                "desc3": "Our responses do not need to be forever locked in their initial form. Recent studies reveal new neural connections are stimulated mostly through our relationships. Psychotherapy can help here, especially when the therapist uses methods to reach both the thinking, and non-thinking mind. Safe experience in the present can re-wire and heal the past."
+            },
+            "emotions": {
+                "label": "Emotions",
+                "header": "EMOTIONS: THE POWERFUL BRIDGE FROM YOUR EXPERIENCES TO YOUR MIND",
+                "desc1": "Fear. Anger. Sadness. Love. All felt by billions of people from around the world.",
+                "desc2": "We come from different cultures, we speak different languages, yet we’re all connected by our capacity to feel each other’s emotions.",
+                "desc3": "But are we feeling our own emotions in their entirety? Our emotions are constantly communicating with ourselves and with others. We all get that ‘gut feeling’ or other feelings/sensations in our body and mind. Often, they give us important insight and cues. To others, whether we express them or not, our internal emotional state is often revealed through our non-verbal cues and behaviour. Often, they’re communicated faster than we can think. Our look. Our tone of voice. The way we pace our words. All these signs can tell a different story to the words we speak.",
+                "desc4": "At IMI, we respect the importance of acknowledging the whole range of emotions that go with your unique life story. Accepting and meeting emotions – even those you don’t want or that you’ve been conditioned to ignore – can make all the difference to your mental and physical wellbeing."
+            },
+            "community": {
+                "label": "Community",
+                "header": "COMMUNITY: A STRONG SENSE OF BELONGING AND A GOOD SUPPORT NETWORK",
+                "desc1": "We need to belong. To one another. To our friends and families. To our culture. To our country. To our world. Belonging is fundamental to our mind, emotions and physical wellbeing.",
+                "desc2": "Whether we’re introverts seeking the support of a handful of close friends and family members; or, extroverts connected to multiple people to meet our social and emotional needs, our interpersonal relationships are important.",
+                "desc3": "Surveys show strong social connections lead to a 50% increased chance of longevity, strengthened immune systems, lower rates of anxiety and depression, and greater self-esteem, empathy, and ability to trust.",
+                "desc4": "But social connections can only serve us well when they’re positive and meaningful. New neural pathways in our brains are created continuously from our experiences and particularly, our relationships. Positive connections heal. Negative connections harm."
+            },
+            "environment": {
+                "label": "Environment",
+                "header": "ENVIRONMENT: OUR DAILY STRUGGLE AGAINST TOXINS, STRESSORS, AND LIFESTYLE HABITS",
+                "desc1": "Every single day, we are bombarded by environmental factors affecting our health and wellbeing. Air pollution, noise pollution, and technology pollution. Free radicals, heavy metals, and stress. Toxins inside our food, water, skincare brands and home cleaning products.",
+                "desc2": "Additionally, the city’s frenetic pace of work and life means we lose our connection with nature. We miss out on time in the sun, strolls by the beach, and hikes up hilly paths. Holidays, personal wellbeing classes like yoga and dance, and even time with pets become harder to squeeze in to our lives. Our sleep is compromised be it due to regular long-haul flights, disruptive sounds and light, or children needing attention. And toxic relationships at home or in the workplace wreak havoc too.",
+                "desc3": "Disturbed and disconnected, some of us reach for convenience food. Others seek comfort in junk food or alcohol.",
+                "desc4": "No matter how ‘clean’ we attempt to live our lives, everybody shows evidence of a build-up of toxins. Our mind, emotions and physical body become overburdened."
+            },
+            "body": {
+                "label": "Body",
+                "header": "BODY: HARNESSING YOUR PHYSICAL BODY’S NATURAL HEALING ABILITY",
+                "desc1": "Your body is your vehicle for life. It is an intricately complex living machine that consists of 11 major organ systems: skin, muscular skeletal, nervous, circulatory, lymphatic, hormonal, urinary, excretary, digestive, reproductive and immune.",
+                "desc2": "These organ systems help the body to move, think, protect itself and function. How well the body performs is dependent on how well these organs perform. When even one organ system falters, our health suffers. Coughs and colds. Skin issues. Thyroid deficiencies. Joint pains. Poor posture. Digestive problems. Sexual issues. Fertility challenges and more.",
+                "desc3": "Multiple factors can hinder an organ system’s ability to perform. Our DNA can affect our organ systems. So too can lifestyle factors like our environment, stress and physical injuries; and behaviours like smoking, drinking alcohol, exercise and sleep habits. Significant life events and trauma can also impact our physical wellbeing.",
+                "desc4": "At IMI, we recognise the importance of ensuring all your organ systems are balanced, functioning and strengthened to harness your body’s natural healing abilities. We offer a range of services to heal your body with the right nutrients. Our naturopaths can help to identify and address imbalances in your body through careful analysis of your health condition and, when necessary, functional and diagnostic tests. Our osteopaths, chiropractors and Chinese medicine practitioners are skilled at healing the physical body too."
+            },
+            "energy": {
+                "label": "Energy",
+                "header": "ENERGY: VITAL AND SUBTLE ENERGY THAT FLOWS THROUGH EACH ORGAN AND SYSTEM OF THE BODY",
+                "desc1": "Sometimes we feel off balance but we’re not sure why. We feel fatigued, frustrated or unable to focus. Or, we feel sad and unsettled for no obvious reason. It may be that our vital energy is out of balance.",
+                "desc2": "Call it Chi, Qi, Prana, or Ruah – our vital energy is the subtle energy force that flows through and around our body at all times, promoting health and harmony. When it is in balance, we feel calm, confident, and in control. We experience strong physical health and we find it easy to fight off sicknesses and bounce back after an injury. But physical and emotional blockages like grief or illness, can deplete our vital energy or cause it to become stagnant, impacting our emotional, mental and physical wellness. Lethargy. Negative thoughts. Aches and pain. Poor appetite. Digestive issues. Mood swings and more.",
+                "desc3": "At IMI, we offer a range of practices and therapies to help you heal, reset and become balanced again. Homeopathy. Acupuncture. Reiki. Crystal Healing. Bowen Therapy. Osteopathy. Our skilled practitioners can help to help clear energy blocks and restore equilibrium to your body and brain."
+            },
+            "spirit": {
+                "label": "Spirit",
+                "header": "SPIRIT: YOUR SOUL’S UNIQUE CONNECTION TO A SOURCE OF HEALING",
+                "desc1": "We respect spirituality is personal. What does spirit mean to you? Some people find spirituality through religion. Some find it through the arts, sports, voluntary work or a connection with nature. Others find it in their values. Your spirituality, your soul is yours.",
+                "desc2": "Our chosen spiritual practices cultivate awareness. A sense of purpose and meaning to our lives greater than ourselves. A steady mind and a peaceful heart. They balance our inner needs with the needs of others and the world. At peace within, and aware of our connection with each other, we’re inclined to demonstrate more kindness, compassion and wisdom.",
+                "desc3": "But modern life can squeeze spirituality out of our lives, upsetting our rhythm and inner peace, and taking us further away from our sense of purpose.",
+                "desc4": "At IMI, we respect Spirit’s important influence on your overall sense of well-being. We offer a range of therapies, mindfulness classes and events to develop awareness and to foster your personal connection to spirit."
+            }
+        },
+        "bookNow": {
+            "header": "WHERE DO I START?",
+            "desc": "Health can be complex. For signposting in the right direction, book a free 20 minute consultation.",
+            "linkText": "Book now"
+        }
+    },
+
+    "corporateWellness": {
+        "desc": {
+            "desc1": "Discover the untapped potential in your organisation through IMI Corporate Wellness Solutions. We hold a firm belief that your workforce holds the answers to global challenges. Our custom-designed programs are aimed at enabling your employees to realise their maximum potential, thereby fostering innovation and collaboration to address the most pressing issues confronting mankind. Together, we can unveil the inherent brilliance within your organisation.",
+            "desc2": "IMI’s Corporate Wellness Series is trusted by global and local organisations and aims to bolster immunity, resilience, and wellbeing in the workplace.",
+            "linkText": "Get in touch"
+        },
+        "whatWeDo": {
+            "header": "WHAT WE DO",
+            "desc": "IMI is Asia’s leading natural and integrative medicine clinic. We have worked with individuals and organisation to develop leadership skills, and catalyse positive change",
+            "linkText": "Learn more\u00A0",
+            "card1": {
+                "header": "Leadership development",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+            },
+            "card2": {
+                "header": "Change management",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+            },
+            "card3": {
+                "header": "Team development",
+                "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
+            }
+        }
+    },
+
+    "shared": {
+        "filter": {
+            "conditions": {
+                "header": "All Conditions",
+                "A": "A",
+                "B": "B",
+                "C": "C",
+                "D": "D",
+                "E": "E",
+                "F": "F",
+                "G": "G",
+                "H": "H",
+                "I": "I",
+                "J": "J",
+                "K": "K",
+                "L": "L",
+                "M": "M",
+                "N": "N",
+                "O": "O",
+                "P": "P",
+                "Q": "Q",
+                "R": "R",
+                "S": "S",
+                "T": "T",
+                "U": "U",
+                "V": "V",
+                "W": "W",
+                "X": "X",
+                "Y": "Y",
+                "Z": "Z"
+            },
+            "featuredConditions": {
+                "header": "8 Featured Health Conditions",
+                "allergies": "Allergies",
+                "gutHealth": "Gut Health",
+                "immunity": "Immunity",
+                "sleep": "Sleep",
+                "stress": "Stress",
+                "hormonalHealth": "Hormonal Health",
+                "pain": "Pain",
+                "detoxAndWeightless": "Detox & Weightless"
+            },
+            "clear": "Clear"
+        }
+    }
+}

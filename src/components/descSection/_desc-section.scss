@@ -1,0 +1,120 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-desc-section-component {
+    width: 100%;
+
+    .imi-desc-section-hero-image {
+        width: 100%;
+        height: 40rem;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+
+        .imi-desc-section-hero-color-layer {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.5;
+        }
+
+        .imi-desc-section-hero-image-content {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+
+            h2 {
+                font-size: 3.125rem;
+                line-height: 6.875rem;
+                font-family: $font-secondary;
+                font-weight: 300;
+                letter-spacing: 0.3125rem;
+                margin-bottom: 0;
+            }
+
+            h1 {
+                font-size: 4.375rem;
+                line-height: 6.875rem;
+                font-family: $font-secondary;
+                font-weight: 700;
+                letter-spacing: 0.4375rem;
+                text-align: center;
+            }
+        }
+    }
+
+    .imi-desc-section-content {
+        position: relative;
+
+        .imi-desc-section-header-container {
+            width: 100%;
+            position: relative;
+            margin-bottom: 2.5rem;
+
+            .imi-desc-section-header-decoration-container {
+                position: absolute;
+                height: 100%;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: left;
+                margin: auto 0;
+
+                @include media(tablet, mobile) {
+                    position: relative;
+                    margin: 0;
+                }
+
+                .imi-desc-section-header-right-container {
+                    margin: 0 0 0 auto;
+                }
+                .imi-desc-section-header-center-container {
+                    margin: 0 auto;
+                }
+                .imi-desc-section-header-left-container {
+                    margin: 0;
+                }
+            }
+        }
+
+        .imi-desc-section-subheader {
+            font-family: $font-secondary;
+            font-weight: 700;
+            font-style: italic;
+            margin-bottom: 3.125rem;
+            color: $gray;
+        }
+
+        .imi-desc-section-desc-column {
+            display: flex;
+            flex-direction: column;
+            gap: 1.875rem;
+
+            &.mod__shrink-width {
+                padding: 0 9.375rem;
+            }
+
+            .imi-desc-section-desc,
+            h5[class*='imi-desc-section-desc-'] {
+                line-height: 1.875rem;
+                color: $gray-600;
+                font-family: $font-secondary;
+            }
+        }
+    }
+}

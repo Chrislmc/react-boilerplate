@@ -1,0 +1,32 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.imi-card-component {
+    border-radius: 0.625rem;
+    background-color: $white;
+    height: 100%;
+    overflow: hidden;
+
+    &.mod__shadow {
+        box-shadow: 0 0 0.375rem $shadow;
+        border-radius: 1.25rem;
+    }
+
+    &.mod__border {
+        border: 0.125rem solid $gray-300;
+    }
+
+    &.mod__hover-effect {
+        border: 0.125rem solid $white;
+        
+        &:hover {
+            border-color: $blueish-green;
+            transition: all 0.5s ease;
+        }
+    }
+
+    &.mod__active-effect {
+        border: 0.125rem solid $blueish-green;
+        transition: all 0.5s ease;
+    }
+}

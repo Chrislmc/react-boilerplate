@@ -1,0 +1,59 @@
+{
+    "healthHub": {
+        "header": "HEALTH HUB",
+        "desc": "Three decades of health and wellness wisdom ay your fingertips.",
+        "filterOption": {
+            "allHealthNeeds": "All health needs",
+            "mentalHealth": "Mental health",
+            "allergies": "Allergies",
+            "bloodSugarBalance": "Blood sugar balance",
+            "bonesJointsAndMuscles": "Bones, joints and muscles",
+            "brainLearningAndCognitiveHealth": "Brain, learning and cognitive health",
+            "cardiovascularHealth": "Cardiovascular health",
+            "immuneHealth": "Immune health",
+            "babiesAndChildren": "Babies and children",
+            "digestiveAndGutHealth": "Digestive and gut health",
+            "energySupport": "Energy support",
+            "eyeHealth": "Eye health",
+            "liverAndDetox": "Liver and detox",
+            "mensHealth": "Men's health",
+            "pregnancyAndReproductiveHealth": "Pregnancy and reproductive health",
+            "skinHealth": "Skin health",
+            "sportsAndFitness": "Sports and fitness",
+            "stressAndSleep": "Stress and sleep",
+            "travelHealth": "Travel health",
+            "womensHealth": "Women's health",
+            "weightlossAndWeightManagement": "Weightloss and weight management"
+        },
+        "tab": {
+            "trending": "TRENDING",
+            "popular": "POPULAR",
+            "healthNeeds": "HEALTH NEEDS",
+            "supplements": "SUPPLEMENTS",
+            "practitionerBlogs": "PRACTITIONER BLOGS"
+        },
+        "card1": {
+            "date": "October 13, 2023",
+            "title": "Stress busting herbs : the power of adaptogens",
+            "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind.",
+            "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "content2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "content3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "content4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "card2": {
+            "date": "September 28, 2023",
+            "title": "How meditation nourishes mental health",
+            "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power.",
+            "content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "content2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "content3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "content4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "card3": {
+            "date": "September 28, 2023",
+            "title": "Short title",
+            "desc": "Very short desc"
+        }
+    }
+}
