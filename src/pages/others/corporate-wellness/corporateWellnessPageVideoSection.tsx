@@ -1,4 +1,4 @@
-import { VideoPlayer } from "@/components/videoPlayer";
+import { VideoPlayer } from "@/components/molecules/videoPlayer";
 
 export const CorporateWellnessPageVideoSection = () => {
     return (

@@ -1,6 +1,6 @@
 import { DescSection } from "@/components/descSection";
+import { Swiper } from "@/components/molecules/swiper";
 import { ProductCard } from "@/components/productCard";
-import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { productPageProductCardList } from "../products/productPageConstant";

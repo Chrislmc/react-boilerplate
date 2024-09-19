@@ -1,6 +1,6 @@
 import { ArticleCard } from "@/components/articleCard";
 import { DescSection } from "@/components/descSection";
-import { Swiper } from "@/components/swiper";
+import { Swiper } from "@/components/molecules/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { insurancePageArticleCardList } from "./insurancePageConstant";

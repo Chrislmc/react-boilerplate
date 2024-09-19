@@ -1,6 +1,6 @@
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
-import { Swiper } from "@/components/swiper";
+import { Swiper } from "@/components/molecules/swiper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useNavigate } from "react-router-dom";
 import "./_home-page.scss";

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import {
     CardWithImageContent,
     ICardWithImageContentProps,
-} from "../cardWithImageContent";
+} from "../molecules/cardWithImageContent";
 import "./_article-card.scss";
 
 export interface IArticleCard extends ICardWithImageContentProps {

@@ -1,7 +1,7 @@
 import { Icons } from "@/assets/icons";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
-import { CheckBox, IOption } from "../checkBox";
+import { CheckBox, IOption } from "../molecules/checkBox";
 import "./_select.scss";
 
 export interface ISelectProps<T> {

@@ -1,6 +1,6 @@
 import { Button, IButtonProps } from "@/components/atoms/button";
 import { IHeroImg } from "@/components/descSection";
-import { VideoPlayer } from "@/components/videoPlayer";
+import { VideoPlayer } from "@/components/molecules/videoPlayer";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";
 

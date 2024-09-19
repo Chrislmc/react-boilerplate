@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
+import { SectionHeader } from "../atoms/sectionHeader";
 import { ContainerX } from "../layout/containerX";
 import { SectionContainerY } from "../layout/sectionContainerY";
-import { SectionHeader } from "../sectionHeader";
-import { VideoPlayer } from "../videoPlayer";
+import { VideoPlayer } from "../molecules/videoPlayer";
 import "./_desc-section.scss";
 
 interface IHeroImgBaseProps {

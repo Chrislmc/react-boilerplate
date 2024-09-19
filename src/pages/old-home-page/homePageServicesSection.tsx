@@ -1,6 +1,6 @@
-import { CardWithImageContent } from "@/components/cardWithImageContent";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
+import { CardWithImageContent } from "@/components/molecules/cardWithImageContent";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { homePageServicesCardList } from "./homePageConstant";
 

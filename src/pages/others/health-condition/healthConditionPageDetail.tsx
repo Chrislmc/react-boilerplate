@@ -1,5 +1,5 @@
-import { Accordion } from "@/components/accordion";
 import { ContainerX } from "@/components/layout/containerX";
+import { Accordion } from "@/components/molecules/accordion";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { healthConditionDetailsAccordionItems } from "./healthConditionPageConstant";
 

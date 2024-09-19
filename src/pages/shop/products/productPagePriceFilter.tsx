@@ -1,5 +1,5 @@
 import { Button } from "@/components/atoms/button";
-import { Slider } from "@/components/slider";
+import { Slider } from "@/components/molecules/slider";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IProductPageFilter, initialFilter } from "./productPageConstant";
 import {

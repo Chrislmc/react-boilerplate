@@ -1,4 +1,4 @@
-import { IOption } from "@/components/checkBox";
+import { IOption } from "@/components/molecules/checkBox";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import {

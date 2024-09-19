@@ -1,8 +1,8 @@
 import { ArticleCard } from "@/components/articleCard";
 import { Input } from "@/components/atoms/input";
-import { IOption } from "@/components/checkBox";
 import { DescSection } from "@/components/descSection";
 import { ContainerX } from "@/components/layout/containerX";
+import { IOption } from "@/components/molecules/checkBox";
 import { Section } from "@/components/section";
 import { Select } from "@/components/select";
 import { Tab } from "@/components/tab";

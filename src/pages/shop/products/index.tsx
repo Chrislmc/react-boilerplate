@@ -1,10 +1,10 @@
 import { Input } from "@/components/atoms/input";
+import { SectionHeader } from "@/components/atoms/sectionHeader";
 import { Breadcrumb } from "@/components/breadcrumb";
-import { IOption } from "@/components/checkBox";
 import { ContainerX } from "@/components/layout/containerX";
+import { IOption } from "@/components/molecules/checkBox";
 import { ProductCard } from "@/components/productCard";
 import { Section } from "@/components/section";
-import { SectionHeader } from "@/components/sectionHeader";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useEffect, useState } from "react";
 import "./_products-page.scss";

@@ -1,6 +1,6 @@
 import { Images } from "@/assets/images";
+import { SectionHeader } from "@/components/atoms/sectionHeader";
 import { ContainerX } from "@/components/layout/containerX";
-import { SectionHeader } from "@/components/sectionHeader";
 import { i18nHelper } from "@/utils/i18n-helper";
 
 export const NaturopathyPageHeroBannerSection = () => {

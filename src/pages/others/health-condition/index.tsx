@@ -1,8 +1,8 @@
+import { SectionHeader } from "@/components/atoms/sectionHeader";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { Section } from "@/components/section";
-import { SectionHeader } from "@/components/sectionHeader";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_health-condition-page.scss";

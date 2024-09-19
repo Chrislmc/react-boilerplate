@@ -1,6 +1,6 @@
 import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
-import { IAccordion } from "@/components/accordion";
+import { IAccordion } from "@/components/molecules/accordion";
 import { redirectRouteMap } from "@/utils/routes/route";
 
 export const naturopathyDescRibbonItems = [

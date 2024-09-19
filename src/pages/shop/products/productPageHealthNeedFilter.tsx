@@ -1,4 +1,4 @@
-import { CheckBox, IOption } from "@/components/checkBox";
+import { CheckBox, IOption } from "@/components/molecules/checkBox";
 import { i18nHelper } from "@/utils/i18n-helper";
 import {
     IProductPageFilter,
