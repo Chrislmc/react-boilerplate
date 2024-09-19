@@ -1,0 +1,23 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+#components-page {
+    .components-page-desc-section {
+        background-color: $primary;
+        height: 100vh;
+
+        .custom-bottom-component {
+            display: flex;
+            
+            .scroll-section {
+                width: 12.5rem;
+                padding: 1.25rem;
+                border-left: 0.0625rem solid $gray;
+            }
+
+            .content-section {
+                flex: 1;
+            }
+        }
+    }
+}
