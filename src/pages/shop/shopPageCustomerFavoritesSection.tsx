@@ -1,7 +1,7 @@
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiProductCard } from "@/components/imiProductCard";
-import { ImiSwiper } from "@/components/imiSwiper";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
+import { ProductCard } from "@/components/productCard";
+import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { redirectRouteMap } from "@/utils/routes/route";
@@ -14,15 +14,15 @@ export const ShopPageCustomerFavoritesSection = () => {
     const navigator = useNavigate();
 
     return (
-        <ImiDescSection
+        <DescSection
             style="subsection"
             header={t("shop.customerFavorites.header")}
             customBottomComponent={
                 <>
-                    <ImiSwiper
+                    <Swiper
                         cardLists={shopPageProductCardList.map(
                             (cardItem, i) => (
-                                <ImiProductCard
+                                <ProductCard
                                     key={`product-card-${i}`}
                                     {...cardItem}
                                 />
@@ -36,7 +36,7 @@ export const ShopPageCustomerFavoritesSection = () => {
                     />
 
                     <div className="btn-container">
-                        <ImiButton
+                        <Button
                             text={t("shop.customerFavorites.linkText")}
                             colorTheme="orange"
                             size="padding"

@@ -1,6 +1,6 @@
-import { IImiButtonProps, ImiButton } from "@/components/imiButton";
-import { IHeroImg } from "@/components/imiDescSection";
-import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
+import { Button, IButtonProps } from "@/components/button";
+import { IHeroImg } from "@/components/descSection";
+import { VideoPlayer } from "@/components/videoPlayer";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";
 
@@ -8,7 +8,7 @@ interface Props {
     heroImg: IHeroImg;
     header?: string;
     desc?: string;
-    button?: IImiButtonProps;
+    button?: IButtonProps;
 }
 
 export const HomePageHeroBannerCard: React.FC<Props> = ({
@@ -25,7 +25,7 @@ export const HomePageHeroBannerCard: React.FC<Props> = ({
                 {"imgUrl" in heroImg ? (
                     <img src={heroImg.imgUrl} />
                 ) : (
-                    <ImiVideoPlayer
+                    <VideoPlayer
                         url={heroImg.videoUrl}
                         controls={false}
                         height={"auto"}
@@ -41,7 +41,7 @@ export const HomePageHeroBannerCard: React.FC<Props> = ({
             )}
             {desc && <h4 className="home-page-hero-banner-desc">{t(desc)}</h4>}
 
-            {button && <ImiButton {...button} text={t(button.text)} />}
+            {button && <Button {...button} text={t(button.text)} />}
         </div>
     );
 };

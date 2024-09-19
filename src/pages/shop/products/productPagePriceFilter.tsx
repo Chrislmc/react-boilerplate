@@ -1,5 +1,5 @@
-import { ImiButton } from "@/components/imiButton";
-import { ImiSlider } from "@/components/imiSlider";
+import { Button } from "@/components/button";
+import { Slider } from "@/components/slider";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IProductPageFilter, initialFilter } from "./productPageConstant";
 import {
@@ -44,7 +44,7 @@ export const ProductPagePriceFilter: React.FC<Props> = ({
                 })
             }
             customHeaderRightComponent={
-                <ImiButton
+                <Button
                     text={t("shared.filter.clear")}
                     size="padding"
                     onClick={() => setActiveFilter(initialFilter)}
@@ -52,7 +52,7 @@ export const ProductPagePriceFilter: React.FC<Props> = ({
             }
         >
             <>
-                <ImiSlider
+                <Slider
                     range
                     min={0}
                     max={1000}

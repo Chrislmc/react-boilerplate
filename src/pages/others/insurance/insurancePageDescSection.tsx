@@ -1,11 +1,11 @@
-import { ImiDescSection } from "@/components/imiDescSection";
+import { DescSection } from "@/components/descSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 
 export const InsurancePageDescSection = () => {
     const t = i18nHelper("others");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("insurance.header")}
             subheader={t("insurance.subheader")}
             desc={[

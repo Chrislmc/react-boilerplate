@@ -1,4 +1,4 @@
-import { ImiBaseCard } from "@/components/imiBaseCard";
+import { BaseCard } from "@/components/baseCard";
 
 interface Props {
     text: string;
@@ -9,10 +9,10 @@ export const ServiceCard: React.FC<Props> = ({ imgUrl, text, redirectUrl }) => {
     return (
         <div className="service-card-component">
             <a href={redirectUrl}>
-                <ImiBaseCard shadow>
+                <BaseCard shadow>
                     <img src={imgUrl} />
                     <span className="card-desc">{text}</span>
-                </ImiBaseCard>
+                </BaseCard>
             </a>
         </div>
     );

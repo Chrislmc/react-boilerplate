@@ -1,7 +1,7 @@
-import { ImiBaseCard } from "@/components/imiBaseCard";
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSwiper } from "@/components/imiSwiper";
+import { BaseCard } from "@/components/baseCard";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
+import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { redirectRouteMap } from "@/utils/routes/route";
@@ -12,22 +12,22 @@ export const HomePageHealthConditionSection = () => {
     const t = i18nHelper("home-page");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("healthCondition.header")}
             desc={[t("healthCondition.desc")]}
             customBottomComponent={
                 <>
-                    <ImiSwiper
+                    <Swiper
                         cardLists={[
                             ...homePageHealthConditionCardList.map(
                                 (cardItem) => (
                                     <div className="health-condition-card-container">
-                                        <ImiBaseCard shadow>
+                                        <BaseCard shadow>
                                             <img src={cardItem.imgUrl} />
                                             <span className="card-desc">
                                                 {t(cardItem.text)}
                                             </span>
-                                        </ImiBaseCard>
+                                        </BaseCard>
                                     </div>
                                 )
                             ),
@@ -39,7 +39,7 @@ export const HomePageHealthConditionSection = () => {
                         pagination={{ clickable: true }}
                         speed={2000}
                     />
-                    <ImiButton
+                    <Button
                         text={t("healthCondition.viewAllAToZ")}
                         size="padding"
                         redirectUrl={redirectRouteMap.healthCondition}
@@ -55,13 +55,13 @@ export const HomePageHealthConditionLastCard = () => {
 
     return (
         <div className="health-condition-card-container health-condition-last-card">
-            <ImiBaseCard shadow>
+            <BaseCard shadow>
                 <span className="card-desc">{t("healthCondition.aToZ")}</span>
-                <ImiButton
+                <Button
                     text={t("healthCondition.seeAllHealthConditions")}
                     size="padding"
                 />
-            </ImiBaseCard>
+            </BaseCard>
         </div>
     );
 };

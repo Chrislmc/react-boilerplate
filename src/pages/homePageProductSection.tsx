@@ -1,9 +1,9 @@
 import { Images } from "@/assets/images";
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiGradientBanner } from "@/components/imiGradientBanner";
-import { ImiProductCard } from "@/components/imiProductCard";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
+import { GradientBanner } from "@/components/gradientBanner";
 import { ContainerX } from "@/components/layout/containerX";
+import { ProductCard } from "@/components/productCard";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";
 import { homePageProductCardList } from "./homePageConstant";
@@ -13,13 +13,13 @@ export const HomePageProductSection = () => {
     const tInSharedContext = i18nHelper("shared");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("product.header")}
             desc={[t("product.desc")]}
             customFullWidthBottomComponent={
                 <ContainerX>
                     <div className="custom-bottom-container">
-                        <ImiGradientBanner
+                        <GradientBanner
                             colorTheme={"primary"}
                             imgUrl={Images.HomePageGradientBanner1}
                             imgPosition="right"
@@ -61,14 +61,14 @@ export const HomePageProductSection = () => {
 
                         <div className="product-card-grid-container">
                             {homePageProductCardList.map((cardItem, i) => (
-                                <ImiProductCard
+                                <ProductCard
                                     key={`product-card-${i}`}
                                     {...cardItem}
                                 />
                             ))}
                         </div>
                         <div className="view-more-btn-container">
-                            <ImiButton
+                            <Button
                                 text={tInSharedContext(
                                     "product.btn.seeAllProduct"
                                 )}

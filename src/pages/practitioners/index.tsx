@@ -1,9 +1,9 @@
-import { IOption } from "@/components/imiCheckBox";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiInput } from "@/components/imiInput";
-import { ImiSection } from "@/components/imiSection";
-import { ImiSelect } from "@/components/imiSelect";
+import { IOption } from "@/components/checkBox";
+import { DescSection } from "@/components/descSection";
+import { Input } from "@/components/input";
 import { ContainerX } from "@/components/layout/containerX";
+import { Section } from "@/components/section";
+import { Select } from "@/components/select";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_practitioners-page.scss";
@@ -50,15 +50,15 @@ export const PractitionersPage = () => {
 
     return (
         <div id="practitioners-page">
-            <ImiSection className="practitioners-page-desc-section">
-                <ImiDescSection
+            <Section className="practitioners-page-desc-section">
+                <DescSection
                     header={t("practitioners.header")}
                     desc={[t("practitioners.desc")]}
                     customFullWidthBottomComponent={
                         <ContainerX>
                             <div className="content-container">
                                 <div className="control-container">
-                                    <ImiSelect<IPractitionerType>
+                                    <Select<IPractitionerType>
                                         options={translatedFilterOption}
                                         defaultOption={
                                             translatedFilterOption[0]
@@ -68,7 +68,7 @@ export const PractitionersPage = () => {
                                         setSelectedOption={setSelectedOption}
                                         setInTransition={setInTransition}
                                     />
-                                    <ImiInput
+                                    <Input
                                         placeholder={"input.searchByName"}
                                         value={searchString}
                                         setValue={setSearchString}
@@ -110,7 +110,7 @@ export const PractitionersPage = () => {
                         </ContainerX>
                     }
                 />
-            </ImiSection>
+            </Section>
         </div>
     );
 };

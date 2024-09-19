@@ -1,6 +1,6 @@
-import { ImiArticleCard } from "@/components/imiArticleCard";
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
+import { ArticleCard } from "@/components/articleCard";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { redirectRouteMap } from "@/utils/routes/route";
 import { healthConditionPageArticleCardList } from "./healthConditionPageConstant";
@@ -10,7 +10,7 @@ export const HealthConditionPageArticlesAndVideos = () => {
 
     return (
         <div className="articles-and-videos">
-            <ImiDescSection
+            <DescSection
                 header={t("healthCondition.articlesAndVideos.title")}
                 style="small-subsection"
                 customBottomComponent={
@@ -19,7 +19,7 @@ export const HealthConditionPageArticlesAndVideos = () => {
                             {healthConditionPageArticleCardList.map(
                                 (card, i) => {
                                     return (
-                                        <ImiArticleCard
+                                        <ArticleCard
                                             key={`health-hub-card-${i}`}
                                             id={card.id}
                                             imgUrl={card.imgUrl}
@@ -31,7 +31,7 @@ export const HealthConditionPageArticlesAndVideos = () => {
                                 }
                             )}
                         </div>
-                        <ImiButton
+                        <Button
                             text={t(
                                 "healthCondition.articlesAndVideos.linkText"
                             )}

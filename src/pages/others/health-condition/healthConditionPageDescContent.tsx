@@ -1,6 +1,6 @@
 import { Images } from "@/assets/images";
-import { ImiSectionHeader } from "@/components/imiSectionHeader";
 import { ContainerX } from "@/components/layout/containerX";
+import { SectionHeader } from "@/components/sectionHeader";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { healthConditionPageDescContent } from "./healthConditionPageConstant";
 
@@ -14,7 +14,7 @@ export const HealthConditionPageDescContent = () => {
             </div>
 
             <ContainerX rightOnly>
-                <ImiSectionHeader header={t("healthCondition.desc.header")} />
+                <SectionHeader header={t("healthCondition.desc.header")} />
 
                 <div className="desc-list">
                     {healthConditionPageDescContent.map((content, i) => (

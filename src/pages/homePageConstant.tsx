@@ -1,9 +1,9 @@
 import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
 import { Videos } from "@/assets/video";
-import { IImiButtonProps } from "@/components/imiButton";
-import { IImiCardWithImageContentProps } from "@/components/imiCardWithImageContent";
-import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
+import { IButtonProps } from "@/components/button";
+import { ICardWithImageContentProps } from "@/components/cardWithImageContent";
+import { VideoPlayer } from "@/components/videoPlayer";
 import { redirectRouteMap } from "@/utils/routes/route";
 import { IArticle } from "@/utils/types/article";
 import { HomePageHeroBannerCard } from "./homePageHeroBannerCard";
@@ -21,7 +21,7 @@ export const homePageSwiperCardLists = [
     />,
 
     <div style={{ height: "56.25rem" }}>
-        <ImiVideoPlayer
+        <VideoPlayer
             url={Videos.HomePageHeroBannerVideo}
             controls={false}
             height={"auto"}
@@ -141,8 +141,8 @@ export const homePageProductCardList = [
     },
 ];
 
-export const homePageDispensaryCardList: (IImiCardWithImageContentProps & {
-    button: IImiButtonProps;
+export const homePageDispensaryCardList: (ICardWithImageContentProps & {
+    button: IButtonProps;
 })[] = [
     {
         imgUrl: Images.HomePageDispensaryCard1,

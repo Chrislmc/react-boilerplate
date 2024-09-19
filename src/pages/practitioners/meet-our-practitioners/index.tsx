@@ -1,5 +1,5 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { ImiSection } from "@/components/imiSection";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Section } from "@/components/section";
 import "./_meet-our-practitioners-page.scss";
 import { ArticlesAndVideosSection } from "./articlesAndVideosSection";
 import { samplePractitionerDetail } from "./meetOurPractitionersPageConstant";
@@ -10,18 +10,18 @@ import { TestimonialsSection } from "./testimonialsSection";
 export const MeetOurPractitionersPage = () => {
     return (
         <div id="meet-our-practitioners-page">
-            <ImiSection className="practitioner-detail-section">
+            <Section className="practitioner-detail-section">
                 <PractitionerDetailSection />
-            </ImiSection>
-            <ImiSection className="practitioner-contact-section">
+            </Section>
+            <Section className="practitioner-contact-section">
                 <PractitionerContactSection />
-            </ImiSection>
-            <ImiSection className="articles-and-videos-section">
+            </Section>
+            <Section className="articles-and-videos-section">
                 <ArticlesAndVideosSection />
-            </ImiSection>
-            <ImiSection className="testimonials-section">
+            </Section>
+            <Section className="testimonials-section">
                 <TestimonialsSection />
-            </ImiSection>
+            </Section>
             <ImiBreadcrumb customRouteDesc={samplePractitionerDetail.name} />
         </div>
     );

@@ -1,5 +1,5 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { ImiSection } from "@/components/imiSection";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Section } from "@/components/section";
 import "./_our-healing-vision.scss";
 import { OurHealingVisionPageBookNowSection } from "./ourHealingVisionPageBookNowSection";
 import { OurHealingVisionPageDescSection } from "./ourHealingVisionPageDescSection";
@@ -7,12 +7,12 @@ import { OurHealingVisionPageDescSection } from "./ourHealingVisionPageDescSecti
 export const OurHealingVisionPage = () => {
     return (
         <div id="our-healing-vision-page">
-            <ImiSection className="desc-section">
+            <Section className="desc-section">
                 <OurHealingVisionPageDescSection />
-            </ImiSection>
-            <ImiSection className="book-now-section">
+            </Section>
+            <Section className="book-now-section">
                 <OurHealingVisionPageBookNowSection />
-            </ImiSection>
+            </Section>
 
             <ImiBreadcrumb />
         </div>

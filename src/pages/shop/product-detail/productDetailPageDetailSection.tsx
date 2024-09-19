@@ -1,9 +1,9 @@
-import { ImiNumberInput } from "@/components/imiNumberInput";
-import { ImiProductButton } from "@/components/imiProductButton";
-import { ImiProductRating } from "@/components/imiProductRating";
-import { ImiTab } from "@/components/imiTab";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
+import { NumberInput } from "@/components/numberInput";
+import { ProductButton } from "@/components/productButton";
+import { ProductRating } from "@/components/productRating";
+import { Tab } from "@/components/tab";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IProduct } from "@/utils/types/product";
 import { decodeUtf } from "@/utils/utf-helper";
@@ -66,7 +66,7 @@ export const ProductDetailPageDetailSection: React.FC<{
                     <div className="main-attribute-container">
                         <h3 className="product-name">{product.name}</h3>
 
-                        <ImiProductRating rating={product.rating} />
+                        <ProductRating rating={product.rating} />
 
                         <h5 className="price-desc">
                             {product?.priceDesc
@@ -91,7 +91,7 @@ export const ProductDetailPageDetailSection: React.FC<{
                         </div>
 
                         <div className="button-container">
-                            <ImiNumberInput
+                            <NumberInput
                                 min={0}
                                 max={100}
                                 step={1}
@@ -99,7 +99,7 @@ export const ProductDetailPageDetailSection: React.FC<{
                                 setValue={setQuantity}
                             />
 
-                            <ImiProductButton
+                            <ProductButton
                                 isOutOfStock={product.isOutOfStock}
                                 onlyAvailableInClinic={
                                     product.onlyAvailableInClinic
@@ -111,7 +111,7 @@ export const ProductDetailPageDetailSection: React.FC<{
                 </div>
                 <div className="detail-container">
                     <div className="tab-container">
-                        <ImiTab
+                        <Tab
                             options={productDetailPageTabItems.map((tab) => ({
                                 ...tab,
                                 text: t(tab.text),

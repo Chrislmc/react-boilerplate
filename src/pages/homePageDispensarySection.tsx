@@ -1,6 +1,6 @@
 import { Images } from "@/assets/images";
-import { ImiCardWithImageContent } from "@/components/imiCardWithImageContent";
-import { ImiGradientBanner } from "@/components/imiGradientBanner";
+import { CardWithImageContent } from "@/components/cardWithImageContent";
+import { GradientBanner } from "@/components/gradientBanner";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
@@ -12,7 +12,7 @@ export const HomePageDispensarySection = () => {
 
     return (
         <>
-            <ImiGradientBanner
+            <GradientBanner
                 colorTheme={"primary"}
                 content={[
                     {
@@ -33,7 +33,7 @@ export const HomePageDispensarySection = () => {
                 <SectionContainerY>
                     <div className="dispensary-card-grid-container">
                         {homePageDispensaryCardList.map((cardItem, i) => (
-                            <ImiCardWithImageContent
+                            <CardWithImageContent
                                 key={`dispensary-card-${i}`}
                                 imgUrl={cardItem.imgUrl}
                                 title={t(cardItem.title)}

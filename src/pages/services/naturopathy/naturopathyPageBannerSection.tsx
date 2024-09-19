@@ -1,5 +1,5 @@
 import { Images } from "@/assets/images";
-import { ImiGradientBanner } from "@/components/imiGradientBanner";
+import { GradientBanner } from "@/components/gradientBanner";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
@@ -10,7 +10,7 @@ export const NaturopathyPageBannerSection = () => {
     return (
         <SectionContainerY size="small">
             <ContainerX>
-                <ImiGradientBanner
+                <GradientBanner
                     imgUrl={Images.NaturopathyHeroBanner}
                     imgPosition="left"
                     colorTheme={"primary"}

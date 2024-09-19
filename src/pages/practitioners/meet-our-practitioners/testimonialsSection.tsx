@@ -1,5 +1,5 @@
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSwiper } from "@/components/imiSwiper";
+import { DescSection } from "@/components/descSection";
+import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { testimonialCardList } from "./meetOurPractitionersPageConstant";
@@ -9,11 +9,11 @@ export const TestimonialsSection = () => {
     const t = i18nHelper("practitioners");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("meetOurPractitioners.testimonials.title")}
             style="small-subsection"
             customBottomComponent={
-                <ImiSwiper
+                <Swiper
                     cardLists={testimonialCardList.map((card, i) => (
                         <TestimonialCard
                             key={`testimonial-card-${i}`}

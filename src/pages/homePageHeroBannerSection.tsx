@@ -1,6 +1,6 @@
-import { ImiSwiper } from "@/components/imiSwiper";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
+import { Swiper } from "@/components/swiper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useNavigate } from "react-router-dom";
 import "./_home-page.scss";
@@ -16,7 +16,7 @@ export const HomePageHeroBannerSection = () => {
     return (
         <>
             <div className="hero-banner-container">
-                <ImiSwiper
+                <Swiper
                     cardLists={homePageSwiperCardLists}
                     pagination={{ clickable: true }}
                     navigation

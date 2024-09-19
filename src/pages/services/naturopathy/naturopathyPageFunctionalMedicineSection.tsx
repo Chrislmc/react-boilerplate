@@ -1,12 +1,12 @@
 import { Images } from "@/assets/images";
-import { ImiImageTextSection } from "@/components/imiImageTextSection";
+import { ImageTextSection } from "@/components/imageTextSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 
 export const NaturopathyPageFunctionalMedicineSection = () => {
     const t = i18nHelper("services");
 
     return (
-        <ImiImageTextSection
+        <ImageTextSection
             imgUrl={Images.NaturopathyHeroBanner}
             backgroundColor={"blueish-green"}
             header={t("naturopathicMedicine.functionalMedicine.header")}

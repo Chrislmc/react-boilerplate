@@ -1,5 +1,5 @@
-import { ImiBaseCard } from "@/components/imiBaseCard";
-import { IImiButtonProps, ImiButton } from "@/components/imiButton";
+import { BaseCard } from "@/components/baseCard";
+import { Button, IButtonProps } from "@/components/button";
 import { dynamicRouteConstant, redirectRouteMap } from "@/utils/routes/route";
 import { useCallback, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ export interface IPractitionerCardProps {
     imgUrl: string;
     name: string;
     types: IPractitionerType[];
-    button: IImiButtonProps;
+    button: IButtonProps;
 }
 
 export const PractitionerCard: React.FC<IPractitionerCardProps> = ({
@@ -63,7 +63,7 @@ export const PractitionerCard: React.FC<IPractitionerCardProps> = ({
                 <img src={imgUrl} />
             </div>
 
-            <ImiBaseCard
+            <BaseCard
                 shadow
                 hoverEffect
                 ref={cardContainerRef}
@@ -71,8 +71,8 @@ export const PractitionerCard: React.FC<IPractitionerCardProps> = ({
             >
                 <span className="name">{name}</span>
                 <span className="type">{practitionerTypeHelper(types)}</span>
-                <ImiButton {...button} size="padding" />
-            </ImiBaseCard>
+                <Button {...button} size="padding" />
+            </BaseCard>
         </div>
     );
 };

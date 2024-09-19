@@ -1,4 +1,4 @@
-import { ImiBaseCard } from "@/components/imiBaseCard";
+import { BaseCard } from "@/components/baseCard";
 
 interface Props {
     imgUrl: string;
@@ -15,7 +15,7 @@ export const TestimonialCard: React.FC<Props> = ({
 }) => {
     return (
         <div className="testimonial-card">
-            <ImiBaseCard shadow>
+            <BaseCard shadow>
                 <div className="title-row">
                     <div className="portrait-container">
                         <img src={imgUrl} />
@@ -26,7 +26,7 @@ export const TestimonialCard: React.FC<Props> = ({
                     </div>
                 </div>
                 <div className="desc-container">{desc}</div>
-            </ImiBaseCard>
+            </BaseCard>
         </div>
     );
 };

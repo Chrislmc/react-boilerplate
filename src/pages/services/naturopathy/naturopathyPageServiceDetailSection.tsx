@@ -1,4 +1,4 @@
-import { ImiAccordion } from "@/components/imiAccordion";
+import { Accordion } from "@/components/accordion";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
@@ -26,7 +26,7 @@ export const NaturopathyPageServiceDetailSection = () => {
     return (
         <SectionContainerY size="small">
             <ContainerX>
-                <ImiAccordion content={translatedAccordionItems} />
+                <Accordion content={translatedAccordionItems} />
             </ContainerX>
         </SectionContainerY>
     );

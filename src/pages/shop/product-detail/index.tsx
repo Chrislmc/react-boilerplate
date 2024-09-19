@@ -1,5 +1,5 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { ImiSection } from "@/components/imiSection";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Section } from "@/components/section";
 import { useLocation } from "react-router-dom";
 import { productPageProductCardList } from "../products/productPageConstant";
 import "./_product-detail-page.scss";
@@ -16,12 +16,12 @@ export const ProductDetailPage = () => {
 
     return (
         <div id="product-detail-page">
-            <ImiSection className="product-detail-section">
+            <Section className="product-detail-section">
                 <ProductDetailPageDetailSection product={productDetail} />
-            </ImiSection>
-            <ImiSection className="related-product-section">
+            </Section>
+            <Section className="related-product-section">
                 <ProductDetailPageRelatedProductSection />
-            </ImiSection>
+            </Section>
 
             <ImiBreadcrumb customRouteDesc={productDetail.name} />
         </div>

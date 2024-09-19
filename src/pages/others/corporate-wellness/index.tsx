@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
 import "./_corporate-wellness-page.scss";
 import { CorporateWellnessPageDescSection } from "./corporateWellnessPageDescSection";
 import { CorporateWellnessPageVideoSection } from "./corporateWellnessPageVideoSection";

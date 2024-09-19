@@ -1,4 +1,4 @@
-import { ImiCardWithImageContent } from "@/components/imiCardWithImageContent";
+import { CardWithImageContent } from "@/components/cardWithImageContent";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
@@ -12,7 +12,7 @@ export const HomePageServicesSection = () => {
             <SectionContainerY>
                 <div className="service-card-grid-container">
                     {homePageServicesCardList.map((cardItem, i) => (
-                        <ImiCardWithImageContent
+                        <CardWithImageContent
                             key={`service-card-${i}`}
                             imgUrl={cardItem.imgUrl}
                             title={t(cardItem.title)}

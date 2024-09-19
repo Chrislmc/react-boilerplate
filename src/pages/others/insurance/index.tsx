@@ -1,5 +1,5 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { ImiSection } from "@/components/imiSection";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { Section } from "@/components/section";
 import "./_insurance-page.scss";
 import { InsurancePageArticlesAndVideosSection } from "./insurancePageArticlesAndVideosSection";
 import { InsurancePageDescSection } from "./insurancePageDescSection";
@@ -8,17 +8,17 @@ import { InsurancePageImageContentSection } from "./insurancePageImageContentSec
 export const InsurancePage = () => {
     return (
         <div id="insurance-page">
-            <ImiSection className="insurance-page-desc-section">
+            <Section className="insurance-page-desc-section">
                 <InsurancePageDescSection />
-            </ImiSection>
+            </Section>
 
-            <ImiSection className="insurance-page-image-content-section">
+            <Section className="insurance-page-image-content-section">
                 <InsurancePageImageContentSection />
-            </ImiSection>
+            </Section>
 
-            <ImiSection className="insurance-page-articles-and-videos-section">
+            <Section className="insurance-page-articles-and-videos-section">
                 <InsurancePageArticlesAndVideosSection />
-            </ImiSection>
+            </Section>
 
             <ImiBreadcrumb />
         </div>

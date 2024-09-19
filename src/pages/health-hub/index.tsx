@@ -1,11 +1,11 @@
-import { ImiArticleCard } from "@/components/imiArticleCard";
-import { IOption } from "@/components/imiCheckBox";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiInput } from "@/components/imiInput";
-import { ImiSection } from "@/components/imiSection";
-import { ImiSelect } from "@/components/imiSelect";
-import { ImiTab } from "@/components/imiTab";
+import { ArticleCard } from "@/components/articleCard";
+import { IOption } from "@/components/checkBox";
+import { DescSection } from "@/components/descSection";
+import { Input } from "@/components/input";
 import { ContainerX } from "@/components/layout/containerX";
+import { Section } from "@/components/section";
+import { Select } from "@/components/select";
+import { Tab } from "@/components/tab";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IArticle } from "@/utils/types/article";
 import { useRef, useState } from "react";
@@ -49,14 +49,14 @@ export const HealthHubPage = () => {
 
     return (
         <div id="health-hub-page">
-            <ImiSection className="health-hub-page-desc-section">
+            <Section className="health-hub-page-desc-section">
                 <ContainerX>
-                    <ImiDescSection
+                    <DescSection
                         header={t("healthHub.header")}
                         desc={[t("healthHub.desc")]}
                         customFullWidthBottomComponent={
                             <div className="tab-container">
-                                <ImiTab<IHealthHubPageTab>
+                                <Tab<IHealthHubPageTab>
                                     options={healthHubPageTabItems.map(
                                         (tab) => ({
                                             ...tab,
@@ -70,7 +70,7 @@ export const HealthHubPage = () => {
                                 />
 
                                 <div className="control-container">
-                                    <ImiSelect<IHealthNeedsType>
+                                    <Select<IHealthNeedsType>
                                         options={translatedFilterOption}
                                         defaultOption={
                                             translatedFilterOption[0]
@@ -80,7 +80,7 @@ export const HealthHubPage = () => {
                                         setSelectedOption={setSelectedOption}
                                         setInTransition={setInTransition}
                                     />
-                                    <ImiInput
+                                    <Input
                                         placeholder={"input.searchByName"}
                                         value={searchString}
                                         setValue={setSearchString}
@@ -104,7 +104,7 @@ export const HealthHubPage = () => {
                                                 ) as IArticle;
 
                                             return (
-                                                <ImiArticleCard
+                                                <ArticleCard
                                                     key={`health-hub-card-${i}`}
                                                     id={card.id}
                                                     imgUrl={card.imgUrl}
@@ -120,7 +120,7 @@ export const HealthHubPage = () => {
                         }
                     />
                 </ContainerX>
-            </ImiSection>
+            </Section>
         </div>
     );
 };

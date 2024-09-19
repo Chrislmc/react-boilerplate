@@ -1,5 +1,5 @@
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_shop-page.scss";
 
@@ -7,11 +7,11 @@ export const ShopePageSubscribeSection = () => {
     const t = i18nHelper("shop");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("shop.subscribe.header")}
             desc={[t("shop.subscribe.desc")]}
             customBottomComponent={
-                <ImiButton
+                <Button
                     text={t("shop.subscribe.linkText")}
                     colorTheme="orange"
                     size="padding"

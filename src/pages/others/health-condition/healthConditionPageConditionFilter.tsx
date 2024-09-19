@@ -1,5 +1,5 @@
-import { ImiButton } from "@/components/imiButton";
-import { IOption } from "@/components/imiCheckBox";
+import { Button } from "@/components/button";
+import { IOption } from "@/components/checkBox";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import {
@@ -115,7 +115,7 @@ export const HealthConditionPageConditionFilter: React.FC<Props> = ({
                 })
             }
             customHeaderRightComponent={
-                <ImiButton
+                <Button
                     text={t("shared.filter.clear")}
                     size="padding"
                     onClick={() => setActiveFilter(initialFilter)}

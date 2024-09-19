@@ -1,6 +1,6 @@
-import { ImiArticleCard } from "@/components/imiArticleCard";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSwiper } from "@/components/imiSwiper";
+import { ArticleCard } from "@/components/articleCard";
+import { DescSection } from "@/components/descSection";
+import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { insurancePageArticleCardList } from "./insurancePageConstant";
@@ -9,13 +9,13 @@ export const InsurancePageArticlesAndVideosSection = () => {
     const t = i18nHelper("others");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("insurance.articlesAndVideos.title")}
             style="small-subsection"
             customBottomComponent={
-                <ImiSwiper
+                <Swiper
                     cardLists={insurancePageArticleCardList.map((card, i) => (
-                        <ImiArticleCard
+                        <ArticleCard
                             key={`article-card-${i}`}
                             id={card.id}
                             imgUrl={card.imgUrl}

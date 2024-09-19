@@ -1,10 +1,10 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { IOption } from "@/components/imiCheckBox";
-import { ImiInput } from "@/components/imiInput";
-import { ImiProductCard } from "@/components/imiProductCard";
-import { ImiSection } from "@/components/imiSection";
-import { ImiSectionHeader } from "@/components/imiSectionHeader";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { IOption } from "@/components/checkBox";
+import { Input } from "@/components/input";
 import { ContainerX } from "@/components/layout/containerX";
+import { ProductCard } from "@/components/productCard";
+import { Section } from "@/components/section";
+import { SectionHeader } from "@/components/sectionHeader";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useEffect, useState } from "react";
 import "./_products-page.scss";
@@ -116,7 +116,7 @@ export const ProductsPage = () => {
 
     return (
         <div id="products-page">
-            <ImiSection className="products-content-section">
+            <Section className="products-content-section">
                 <ContainerX>
                     <div className="content-row">
                         <div className="filter-list-container">
@@ -166,11 +166,9 @@ export const ProductsPage = () => {
 
                         <div className="main-container">
                             <div className="header-container">
-                                <ImiSectionHeader
-                                    header={t("products.header")}
-                                />
+                                <SectionHeader header={t("products.header")} />
 
-                                <ImiInput
+                                <Input
                                     placeholder={"input.searchBy"}
                                     value={searchString}
                                     setValue={setSearchString}
@@ -182,7 +180,7 @@ export const ProductsPage = () => {
                                 }`}
                             >
                                 {filteredProducts.map((product) => (
-                                    <ImiProductCard
+                                    <ProductCard
                                         key={`product-card-${product.id}`}
                                         {...product}
                                     />
@@ -191,7 +189,7 @@ export const ProductsPage = () => {
                         </div>
                     </div>
                 </ContainerX>
-            </ImiSection>
+            </Section>
 
             <ImiBreadcrumb />
         </div>

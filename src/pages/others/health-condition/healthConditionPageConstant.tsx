@@ -1,6 +1,6 @@
 import { Images } from "@/assets/images";
-import { IImiAccordion } from "@/components/imiAccordion";
-import { IOption } from "@/components/imiCheckBox";
+import { IAccordion } from "@/components/accordion";
+import { IOption } from "@/components/checkBox";
 
 export enum IHealthConditionPageFilter {
     Conditions = "conditions",
@@ -272,7 +272,7 @@ export const healthConditionPageDescContent = [
     "healthCondition.desc.desc3",
 ];
 
-export const healthConditionDetailsAccordionItems: IImiAccordion["content"] = [
+export const healthConditionDetailsAccordionItems: IAccordion["content"] = [
     {
         header: "healthCondition.details.accordion1.header",
         details: [

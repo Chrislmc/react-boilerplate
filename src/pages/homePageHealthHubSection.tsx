@@ -1,6 +1,6 @@
-import { ImiArticleCard } from "@/components/imiArticleCard";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiTab } from "@/components/imiTab";
+import { ArticleCard } from "@/components/articleCard";
+import { DescSection } from "@/components/descSection";
+import { Tab } from "@/components/tab";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IArticle } from "@/utils/types/article";
 import { useRef, useState } from "react";
@@ -29,12 +29,12 @@ export const HomePageHealthHubSection = () => {
     };
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("healthHub.header")}
             desc={[t("healthHub.desc")]}
             customBottomComponent={
                 <div className="tab-container">
-                    <ImiTab<IHomePageHealthHubTab>
+                    <Tab<IHomePageHealthHubTab>
                         options={homePageHealthHubTabItems.map((tab) => ({
                             ...tab,
                             text: t(tab.text),
@@ -56,7 +56,7 @@ export const HomePageHealthHubSection = () => {
                             ) as IArticle;
 
                             return (
-                                <ImiArticleCard
+                                <ArticleCard
                                     key={`health-hub-card-${i}`}
                                     id={card.id}
                                     imgUrl={card.imgUrl}

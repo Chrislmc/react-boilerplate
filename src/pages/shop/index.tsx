@@ -1,4 +1,4 @@
-import { ImiSection } from "@/components/imiSection";
+import { Section } from "@/components/section";
 import "./_shop-page.scss";
 import { ShopPageArticlesSection } from "./shopPageArticlesSection";
 import { ShopPageCategorySection } from "./shopPageCategorySection";
@@ -12,30 +12,30 @@ import { ShopePageSubscribeSection } from "./shopPageSubscribeSection";
 export const ShopPage = () => {
     return (
         <div id="shop-page">
-            <ImiSection className="shop-page-desc-section">
+            <Section className="shop-page-desc-section">
                 <ShopPageDescSection />
-            </ImiSection>
-            <ImiSection className="shop-page-category-section">
+            </Section>
+            <Section className="shop-page-category-section">
                 <ShopPageCategorySection />
-            </ImiSection>
-            <ImiSection className="shop-page-recommended-section">
+            </Section>
+            <Section className="shop-page-recommended-section">
                 <ShopPageRecommendedSection />
-            </ImiSection>
-            <ImiSection className="shop-page-health-need-section">
+            </Section>
+            <Section className="shop-page-health-need-section">
                 <ShopPageHealthNeedSection />
-            </ImiSection>
-            <ImiSection className="shop-page-articles-section">
+            </Section>
+            <Section className="shop-page-articles-section">
                 <ShopPageArticlesSection />
-            </ImiSection>
-            <ImiSection className="shop-page-practitioner-section">
+            </Section>
+            <Section className="shop-page-practitioner-section">
                 <ShopPagePractitionerSection />
-            </ImiSection>
-            <ImiSection className="shop-page-customer-favorites-section">
+            </Section>
+            <Section className="shop-page-customer-favorites-section">
                 <ShopPageCustomerFavoritesSection />
-            </ImiSection>
-            <ImiSection className="shop-page-subscribe-section">
+            </Section>
+            <Section className="shop-page-subscribe-section">
                 <ShopePageSubscribeSection />
-            </ImiSection>
+            </Section>
         </div>
     );
 };

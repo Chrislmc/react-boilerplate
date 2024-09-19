@@ -1,6 +1,6 @@
-import { ImiBaseCard } from "@/components/imiBaseCard";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSwiper } from "@/components/imiSwiper";
+import { BaseCard } from "@/components/baseCard";
+import { DescSection } from "@/components/descSection";
+import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useNavigate } from "react-router-dom";
@@ -11,16 +11,16 @@ export const NaturopathyPageHealthNeedSection = () => {
     const navigator = useNavigate();
 
     return (
-        <ImiDescSection
+        <DescSection
             style="subsection"
             header={t("naturopathicMedicine.effect.header")}
             customBottomComponent={
                 <>
-                    <ImiSwiper
+                    <Swiper
                         cardLists={NaturopathyPageHealthNeedCardList.map(
                             (cardItem) => (
                                 <div className="health-need-card">
-                                    <ImiBaseCard shadow>
+                                    <BaseCard shadow>
                                         <button
                                             onClick={() =>
                                                 navigator(cardItem.redirectUrl)
@@ -31,7 +31,7 @@ export const NaturopathyPageHealthNeedSection = () => {
                                                 {t(cardItem.text)}
                                             </span>
                                         </button>
-                                    </ImiBaseCard>
+                                    </BaseCard>
                                 </div>
                             )
                         )}

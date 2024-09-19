@@ -1,7 +1,7 @@
-import { ImiBaseCard } from "@/components/imiBaseCard";
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSwiper } from "@/components/imiSwiper";
+import { BaseCard } from "@/components/baseCard";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
+import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { redirectRouteMap } from "@/utils/routes/route";
@@ -14,16 +14,16 @@ export const ShopPageHealthNeedSection = () => {
     const navigator = useNavigate();
 
     return (
-        <ImiDescSection
+        <DescSection
             style="subsection"
             header={t("shop.healthNeed.header")}
             customBottomComponent={
                 <>
-                    <ImiSwiper
+                    <Swiper
                         cardLists={shopPageHealthNeedCardList.map(
                             (cardItem) => (
                                 <div className="health-need-card">
-                                    <ImiBaseCard shadow>
+                                    <BaseCard shadow>
                                         <button
                                             onClick={() =>
                                                 navigator(cardItem.redirectUrl)
@@ -34,7 +34,7 @@ export const ShopPageHealthNeedSection = () => {
                                                 {t(cardItem.text)}
                                             </span>
                                         </button>
-                                    </ImiBaseCard>
+                                    </BaseCard>
                                 </div>
                             )
                         )}
@@ -46,7 +46,7 @@ export const ShopPageHealthNeedSection = () => {
                     />
 
                     <div className="btn-container">
-                        <ImiButton
+                        <Button
                             text={t("shop.healthNeed.linkText")}
                             colorTheme="orange"
                             size="padding"

@@ -1,6 +1,6 @@
-import { ImiBaseCard } from "@/components/imiBaseCard";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSwiper } from "@/components/imiSwiper";
+import { BaseCard } from "@/components/baseCard";
+import { DescSection } from "@/components/descSection";
+import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { whatWeDoCardList } from "./corporateWellnessPageConstant";
@@ -9,18 +9,18 @@ export const CorporateWellnessPageWhatWeDoSection = () => {
     const t = i18nHelper("others");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("corporateWellness.whatWeDo.header")}
             desc={[t("corporateWellness.whatWeDo.desc")]}
             style="small-subsection"
             customBottomComponent={
-                <ImiSwiper
+                <Swiper
                     cardLists={whatWeDoCardList.map((card, i) => (
                         <div
                             key={`what-we-do-card-${i}`}
                             className="card-container"
                         >
-                            <ImiBaseCard shadow>
+                            <BaseCard shadow>
                                 <span className="header">{t(card.header)}</span>
                                 <div className="desc-container">
                                     {t(card.desc)}
@@ -29,7 +29,7 @@ export const CorporateWellnessPageWhatWeDoSection = () => {
                                     {t("corporateWellness.whatWeDo.linkText")}
                                     <span>→</span>
                                 </a>
-                            </ImiBaseCard>
+                            </BaseCard>
                         </div>
                     ))}
                     slidesPerGroup={2}

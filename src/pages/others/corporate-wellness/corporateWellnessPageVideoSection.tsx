@@ -1,10 +1,10 @@
-import { ImiVideoPlayer } from "@/components/imiVideoPlayer";
+import { VideoPlayer } from "@/components/videoPlayer";
 
 export const CorporateWellnessPageVideoSection = () => {
     return (
         <>
             <div className="video-container">
-                <ImiVideoPlayer
+                <VideoPlayer
                     url={"https://www.youtube.com/watch?v=FkefRSxpuFk"}
                     muted={false}
                     controls={false}

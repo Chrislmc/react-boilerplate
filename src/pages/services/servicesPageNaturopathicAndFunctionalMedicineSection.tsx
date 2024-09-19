@@ -1,4 +1,4 @@
-import { ImiDescSection } from "@/components/imiDescSection";
+import { DescSection } from "@/components/descSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { ServiceCard } from "./serviceCard";
 import { naturopathicAndFunctionalMedicineList } from "./servicesPageConstant";
@@ -7,7 +7,7 @@ export const NaturopathicAndFunctionalMedicineSection = () => {
     const t = i18nHelper("services");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("services.naturopathicAndFunctionalMedicine.header")}
             desc={[t("services.naturopathicAndFunctionalMedicine.desc")]}
             customBottomComponent={

@@ -1,4 +1,4 @@
-import { IOption, ImiCheckBox } from "@/components/imiCheckBox";
+import { CheckBox, IOption } from "@/components/checkBox";
 import { i18nHelper } from "@/utils/i18n-helper";
 import {
     IProductPageCategoriesFilter,
@@ -78,7 +78,7 @@ export const ProductPageCategoriesFilter: React.FC<Props> = ({
                             .indexOf(option.value) > -1;
 
                     return (
-                        <ImiCheckBox
+                        <CheckBox
                             key={`categories-checkbox-${option.value}`}
                             option={option}
                             isSelected={isSelected}

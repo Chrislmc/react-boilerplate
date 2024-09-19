@@ -1,7 +1,7 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSection } from "@/components/imiSection";
-import { IImiTextProps } from "@/components/imiText";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { DescSection } from "@/components/descSection";
+import { Section } from "@/components/section";
+import { ITextProps } from "@/components/text";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_lab-test-page.scss";
@@ -13,7 +13,7 @@ export const LabTestPage = () => {
     const t = i18nHelper("lab-test");
     const [activeCard, setActiveCard] = useState("");
 
-    const detailCardContent: IImiTextProps[] =
+    const detailCardContent: ITextProps[] =
         labTestCardList.find((card) => card.id === activeCard)?.detailDesc ||
         [];
 
@@ -25,7 +25,7 @@ export const LabTestPage = () => {
             toReturn[key as string] = t(value);
         });
 
-        return toReturn as IImiTextProps;
+        return toReturn as ITextProps;
     });
 
     const firstRowContent = labTestCardList.filter(
@@ -40,8 +40,8 @@ export const LabTestPage = () => {
 
     return (
         <div id="lab-test-page">
-            <ImiSection className="lab-test-page-desc-section">
-                <ImiDescSection
+            <Section className="lab-test-page-desc-section">
+                <DescSection
                     header={t("labTest.header")}
                     subheader={t("labTest.subheader")}
                     desc={[
@@ -122,7 +122,7 @@ export const LabTestPage = () => {
                         </div>
                     }
                 />
-            </ImiSection>
+            </Section>
 
             <ImiBreadcrumb />
         </div>

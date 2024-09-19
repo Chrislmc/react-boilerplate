@@ -1,4 +1,4 @@
-import { ImiAccordion } from "@/components/imiAccordion";
+import { Accordion } from "@/components/accordion";
 import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { healthConditionDetailsAccordionItems } from "./healthConditionPageConstant";
@@ -25,7 +25,7 @@ export const HealthConditionPageDetail = () => {
     return (
         <div className="detail-accordion-container">
             <ContainerX rightOnly>
-                <ImiAccordion content={translatedAccordionItems} />
+                <Accordion content={translatedAccordionItems} />
             </ContainerX>
         </div>
     );

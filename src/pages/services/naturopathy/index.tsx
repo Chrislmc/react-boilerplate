@@ -1,4 +1,4 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
 import "./_naturopathy-page.scss";
 import { NaturopathyPageArticlesAndVideosSection } from "./naturopathyPageArticlesAndVideosSection";
 import { NaturopathyPageBannerSection } from "./naturopathyPageBannerSection";

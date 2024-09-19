@@ -1,5 +1,5 @@
-import { ImiSection } from "@/components/imiSection";
 import { Layout } from "@/components/layout";
+import { Section } from "@/components/section";
 import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEffect";
 import "./_home-page.scss";
 import { HomePageBookNowSection } from "./homePageBookNowSection";
@@ -16,27 +16,27 @@ export const HomePage = () => {
     return (
         <Layout className="home-page" ref={siteContentRef}>
             <div id="home-page">
-                <ImiSection className="home-page-hero-banner-section">
+                <Section className="home-page-hero-banner-section">
                     <HomePageHeroBannerSection />
-                </ImiSection>
-                <ImiSection className="home-page-services-section">
+                </Section>
+                <Section className="home-page-services-section">
                     <HomePageServicesSection />
-                </ImiSection>
-                <ImiSection className="home-page-product-section">
+                </Section>
+                <Section className="home-page-product-section">
                     <HomePageProductSection />
-                </ImiSection>
-                <ImiSection className="home-page-dispensary-section">
+                </Section>
+                <Section className="home-page-dispensary-section">
                     <HomePageDispensarySection />
-                </ImiSection>
-                <ImiSection className="home-page-health-condition-section">
+                </Section>
+                <Section className="home-page-health-condition-section">
                     <HomePageHealthConditionSection />
-                </ImiSection>
-                <ImiSection className="home-page-health-hub-section">
+                </Section>
+                <Section className="home-page-health-hub-section">
                     <HomePageHealthHubSection />
-                </ImiSection>
-                <ImiSection className="home-page-book-now-section">
+                </Section>
+                <Section className="home-page-book-now-section">
                     <HomePageBookNowSection />
-                </ImiSection>
+                </Section>
             </div>
         </Layout>
     );

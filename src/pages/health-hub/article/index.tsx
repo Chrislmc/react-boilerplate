@@ -1,7 +1,7 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSection } from "@/components/imiSection";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
+import { DescSection } from "@/components/descSection";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
+import { Section } from "@/components/section";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useLocation } from "react-router-dom";
 import { healthHubArticleList } from "../healthHubPageConstant";
@@ -18,9 +18,9 @@ export const ArticlePage = () => {
 
     return (
         <div id="article-page">
-            <ImiSection className="detail-section">
+            <Section className="detail-section">
                 <SectionContainerY>
-                    <ImiDescSection
+                    <DescSection
                         header={t(articleDetail.title)}
                         heroImg={{ imgUrl: articleDetail.imgUrl }}
                         customBottomComponent={
@@ -37,7 +37,7 @@ export const ArticlePage = () => {
                         }
                     />
                 </SectionContainerY>
-            </ImiSection>
+            </Section>
 
             <ImiBreadcrumb customRouteDesc={t(articleDetail.title)} />
         </div>

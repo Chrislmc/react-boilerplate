@@ -1,5 +1,5 @@
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";
 
@@ -7,11 +7,11 @@ export const HomePageBookNowSection = () => {
     const t = i18nHelper("home-page");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("bookNow.header")}
             desc={[t("bookNow.desc")]}
             customBottomComponent={
-                <ImiButton
+                <Button
                     text={t("bookNow.linkText")}
                     colorTheme="orange"
                     textClassName="mod__hover-blueish-green"

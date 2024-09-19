@@ -1,5 +1,5 @@
 import { Icons } from "@/assets/icons";
-import { ImiBaseCard } from "@/components/imiBaseCard";
+import { BaseCard } from "@/components/baseCard";
 import { Dispatch, SetStateAction } from "react";
 
 interface Props {
@@ -29,7 +29,7 @@ export const LabTestCard: React.FC<Props> = ({
 
     return (
         <button className="lab-test-card-component" onClick={onCardClick}>
-            <ImiBaseCard border shadow hoverEffect activeEffect={isActive}>
+            <BaseCard border shadow hoverEffect activeEffect={isActive}>
                 <div className="card-column">
                     <div className="card-header-container">
                         <span className="card-header">{header}</span>
@@ -61,7 +61,7 @@ export const LabTestCard: React.FC<Props> = ({
                         />
                     </div>
                 </div>
-            </ImiBaseCard>
+            </BaseCard>
         </button>
     );
 };

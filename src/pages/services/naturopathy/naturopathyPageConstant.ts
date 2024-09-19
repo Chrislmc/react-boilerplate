@@ -1,6 +1,6 @@
 import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
-import { IImiAccordion } from "@/components/imiAccordion";
+import { IAccordion } from "@/components/accordion";
 import { redirectRouteMap } from "@/utils/routes/route";
 
 export const naturopathyDescRibbonItems = [
@@ -26,7 +26,7 @@ export const naturopathyDescRibbonItems = [
     },
 ];
 
-export const naturopathyDetailsAccordionItems: IImiAccordion["content"] = [
+export const naturopathyDetailsAccordionItems: IAccordion["content"] = [
     {
         header: "naturopathicMedicine.details.accordion1.header",
         details: [

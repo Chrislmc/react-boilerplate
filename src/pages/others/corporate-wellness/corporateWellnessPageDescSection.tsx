@@ -1,5 +1,5 @@
 import { Images } from "@/assets/images";
-import { ImiButton } from "@/components/imiButton";
+import { Button } from "@/components/button";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
 
@@ -21,7 +21,7 @@ export const CorporateWellnessPageDescSection = () => {
                         {t("corporateWellness.desc.desc2")}
                     </h6>
                 </div>
-                <ImiButton text={t("corporateWellness.desc.linkText")} />
+                <Button text={t("corporateWellness.desc.linkText")} />
             </div>
         </SectionContainerY>
     );

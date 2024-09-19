@@ -1,6 +1,6 @@
 import { OurHealingVisionComponent } from "@/assets/icons/others/our-healing-vision.component";
-import { ImiDescSection } from "@/components/imiDescSection";
-import { ImiSegment } from "@/components/imiSegment";
+import { DescSection } from "@/components/descSection";
+import { Segment } from "@/components/segment";
 import { convertRemToPx } from "@/utils/css-helper";
 import useWindowSize from "@/utils/hooks/useWindowSize";
 import { i18nHelper } from "@/utils/i18n-helper";
@@ -64,7 +64,7 @@ export const OurHealingVisionPageDescSection = () => {
     }, [activeIndex, activeSection, segmentGap, segmentOptions]);
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("ourHealingVision.header")}
             customBottomComponent={
                 <div className="custom-bottom-component">
@@ -82,7 +82,7 @@ export const OurHealingVisionPageDescSection = () => {
 
                     <div className="content-container">
                         <div className="swiper-container" ref={TabRef}>
-                            <ImiSegment<IOurHealingVision>
+                            <Segment<IOurHealingVision>
                                 options={segmentOptions}
                                 selectedKey={activeSection}
                                 setSelectedKey={setActiveSection}

@@ -1,6 +1,6 @@
 import { Images } from "@/assets/images";
-import { ImiSectionHeader } from "@/components/imiSectionHeader";
 import { ContainerX } from "@/components/layout/containerX";
+import { SectionHeader } from "@/components/sectionHeader";
 import { i18nHelper } from "@/utils/i18n-helper";
 
 export const NaturopathyPageHeroBannerSection = () => {
@@ -11,7 +11,7 @@ export const NaturopathyPageHeroBannerSection = () => {
             <div className="background-container"></div>
             <div className="content-container">
                 <ContainerX>
-                    <ImiSectionHeader
+                    <SectionHeader
                         header={t("naturopathicMedicine.heroBanner.header")}
                     />
                     <p className="desc">

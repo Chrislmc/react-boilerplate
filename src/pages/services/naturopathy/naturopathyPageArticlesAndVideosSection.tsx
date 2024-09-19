@@ -1,6 +1,6 @@
-import { ImiArticleCard } from "@/components/imiArticleCard";
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
+import { ArticleCard } from "@/components/articleCard";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { redirectRouteMap } from "@/utils/routes/route";
 import { naturopathyPageArticleCardList } from "./naturopathyPageConstant";
@@ -9,7 +9,7 @@ export const NaturopathyPageArticlesAndVideosSection = () => {
     const t = i18nHelper("services");
 
     return (
-        <ImiDescSection
+        <DescSection
             header={t("naturopathicMedicine.articlesAndVideos.title")}
             style="small-subsection"
             customBottomComponent={
@@ -17,7 +17,7 @@ export const NaturopathyPageArticlesAndVideosSection = () => {
                     <div className={`health-hub-card-grid-container`}>
                         {naturopathyPageArticleCardList.map((card, i) => {
                             return (
-                                <ImiArticleCard
+                                <ArticleCard
                                     key={`health-hub-card-${i}`}
                                     id={card.id}
                                     imgUrl={card.imgUrl}
@@ -28,7 +28,7 @@ export const NaturopathyPageArticlesAndVideosSection = () => {
                             );
                         })}
                     </div>
-                    <ImiButton
+                    <Button
                         text={t(
                             "naturopathicMedicine.articlesAndVideos.linkText"
                         )}

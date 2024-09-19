@@ -1,8 +1,8 @@
-import { ImiBreadcrumb } from "@/components/imiBreadcrumb";
-import { ImiSection } from "@/components/imiSection";
-import { ImiSectionHeader } from "@/components/imiSectionHeader";
+import { ImiBreadcrumb } from "@/components/breadcrumb";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
+import { Section } from "@/components/section";
+import { SectionHeader } from "@/components/sectionHeader";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_health-condition-page.scss";
@@ -33,12 +33,10 @@ export const HealthConditionPage = () => {
 
     return (
         <div id="health-condition-page">
-            <ImiSection className="health-content-section">
+            <Section className="health-content-section">
                 <ContainerX leftOnly>
                     <SectionContainerY>
-                        <ImiSectionHeader
-                            header={t("healthCondition.header")}
-                        />
+                        <SectionHeader header={t("healthCondition.header")} />
 
                         <div className="content-row">
                             <div className="condition-column">
@@ -70,7 +68,7 @@ export const HealthConditionPage = () => {
                         </div>
                     </SectionContainerY>
                 </ContainerX>
-            </ImiSection>
+            </Section>
 
             <ImiBreadcrumb />
         </div>

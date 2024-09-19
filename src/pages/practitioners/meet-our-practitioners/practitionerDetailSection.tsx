@@ -1,5 +1,5 @@
 import { Images } from "@/assets/images";
-import { ImiButton } from "@/components/imiButton";
+import { Button } from "@/components/button";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
@@ -34,7 +34,7 @@ export const PractitionerDetailSection = () => {
                                 <img src={Images.GraemeBradshawPortrait} />
                             </div>
                         </div>
-                        <ImiButton
+                        <Button
                             text={t("meetOurPractitioners.bookAnAppointment")}
                             size="padding"
                             colorTheme="orange"

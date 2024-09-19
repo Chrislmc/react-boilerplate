@@ -1,8 +1,8 @@
-import { ImiBaseCard } from "@/components/imiBaseCard";
-import { IImiTextProps, ImiText } from "@/components/imiText";
+import { BaseCard } from "@/components/baseCard";
+import { ITextProps, Text } from "@/components/text";
 
 interface Props {
-    descs: IImiTextProps[];
+    descs: ITextProps[];
     isExpanded: boolean;
 }
 
@@ -13,13 +13,13 @@ export const LabTestDetailCard: React.FC<Props> = ({ descs, isExpanded }) => {
                 isExpanded ? " mod__is-expanded" : ""
             }`}
         >
-            <ImiBaseCard shadow activeEffect>
+            <BaseCard shadow activeEffect>
                 <div className="desc-column">
                     {descs.map((desc, i) => (
-                        <ImiText key={`detail-card-desc-${i}`} {...desc} />
+                        <Text key={`detail-card-desc-${i}`} {...desc} />
                     ))}
                 </div>
-            </ImiBaseCard>
+            </BaseCard>
         </div>
     );
 };

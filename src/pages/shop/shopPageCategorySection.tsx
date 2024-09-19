@@ -1,7 +1,7 @@
 import { Icons } from "@/assets/icons";
-import { ImiBaseCard } from "@/components/imiBaseCard";
-import { ImiButton } from "@/components/imiButton";
-import { ImiDescSection } from "@/components/imiDescSection";
+import { BaseCard } from "@/components/baseCard";
+import { Button } from "@/components/button";
+import { DescSection } from "@/components/descSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { redirectRouteMap } from "@/utils/routes/route";
 import { useNavigate } from "react-router-dom";
@@ -13,7 +13,7 @@ export const ShopPageCategorySection = () => {
     const navigator = useNavigate();
 
     return (
-        <ImiDescSection
+        <DescSection
             style="subsection"
             header={t("shop.categories.header")}
             customBottomComponent={
@@ -24,7 +24,7 @@ export const ShopPageCategorySection = () => {
                                 key={`category-card-${i}`}
                                 className="category-card"
                             >
-                                <ImiBaseCard shadow>
+                                <BaseCard shadow>
                                     <button
                                         className="category-button"
                                         onClick={() =>
@@ -34,11 +34,11 @@ export const ShopPageCategorySection = () => {
                                         <h5>{t(item.text)}</h5>
                                         <img src={Icons.Dropdown} />
                                     </button>
-                                </ImiBaseCard>
+                                </BaseCard>
                             </div>
                         ))}
                     </div>
-                    <ImiButton
+                    <Button
                         text={t("shop.desc.categories.linkText")}
                         colorTheme="orange"
                         size="padding"

@@ -1,14 +1,14 @@
 import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
-import { ImiButton } from "@/components/imiButton";
-import { ImiImageTextSection } from "@/components/imiImageTextSection";
+import { Button } from "@/components/button";
+import { ImageTextSection } from "@/components/imageTextSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 
 export const InsurancePageImageContentSection = () => {
     const t = i18nHelper("others");
 
     return (
-        <ImiImageTextSection
+        <ImageTextSection
             imgUrl={Images.InsurancePageImage}
             header={t("insurance.imageContent.header")}
             backgroundColor="blueish-green"
@@ -24,7 +24,7 @@ export const InsurancePageImageContentSection = () => {
                         {t("insurance.imageContent.desc")}
                     </span>
 
-                    <ImiButton text={t("insurance.imageContent.linkText")} />
+                    <Button text={t("insurance.imageContent.linkText")} />
                 </div>
             }
         />
