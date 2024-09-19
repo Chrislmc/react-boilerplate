@@ -5,18 +5,27 @@
     .components-page-desc-section {
         background-color: $primary;
         height: 100vh;
+        
+        .section-header-component {
+            color: $secondary;
+        }
 
         .custom-bottom-component {
             display: flex;
+            padding: 2.5rem 0;
+            gap: 2.5rem;
             
             .scroll-section {
                 width: 12.5rem;
                 padding: 1.25rem;
-                border-left: 0.0625rem solid $gray;
+                border-right: 0.0625rem solid $gray;
             }
 
             .content-section {
                 flex: 1;
+                background-color: $white;
+                border-radius: 1.25rem;
+                overflow: hidden;
             }
         }
     }

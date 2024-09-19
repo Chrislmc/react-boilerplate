@@ -1,5 +1,5 @@
 import { Icons } from "@/assets/icons";
-import { BaseCard } from "@/components/baseCard";
+import { BaseCard } from "@/components/atoms/baseCard";
 import { Dispatch, SetStateAction } from "react";
 
 interface Props {

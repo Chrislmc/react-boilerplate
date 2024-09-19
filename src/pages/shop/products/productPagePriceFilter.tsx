@@ -1,4 +1,4 @@
-import { Button } from "@/components/button";
+import { Button } from "@/components/atoms/button";
 import { Slider } from "@/components/slider";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IProductPageFilter, initialFilter } from "./productPageConstant";

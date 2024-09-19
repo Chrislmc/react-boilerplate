@@ -1,4 +1,4 @@
-import { Button, IButtonProps } from "@/components/button";
+import { Button, IButtonProps } from "@/components/atoms/button";
 import { IHeroImg } from "@/components/descSection";
 import { VideoPlayer } from "@/components/videoPlayer";
 import { i18nHelper } from "@/utils/i18n-helper";

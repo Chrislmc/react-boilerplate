@@ -1,4 +1,4 @@
-import { Button } from "@/components/button";
+import { Button } from "@/components/atoms/button";
 import { DescSection } from "@/components/descSection";
 import { ProductCard } from "@/components/productCard";
 import { Swiper } from "@/components/swiper";

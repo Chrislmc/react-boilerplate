@@ -1,4 +1,4 @@
-import { BaseCard } from "@/components/baseCard";
+import { BaseCard } from "@/components/atoms/baseCard";
 import { DescSection } from "@/components/descSection";
 import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";

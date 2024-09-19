@@ -1,4 +1,4 @@
-import { Button } from "@/components/button";
+import { Button } from "@/components/atoms/button";
 import { DescSection } from "@/components/descSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";

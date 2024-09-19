@@ -1,5 +1,5 @@
-import { BaseCard } from "@/components/baseCard";
-import { Button, IButtonProps } from "@/components/button";
+import { BaseCard } from "@/components/atoms/baseCard";
+import { Button, IButtonProps } from "@/components/atoms/button";
 import "./_card-with-image-content.scss";
 
 export interface ICardWithImageContentProps {

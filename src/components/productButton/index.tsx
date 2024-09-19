@@ -1,5 +1,5 @@
 import { i18nHelper } from "@/utils/i18n-helper";
-import { Button } from "../button";
+import { Button } from "../atoms/button";
 import "./_product-button.scss";
 
 export interface IProductButton {

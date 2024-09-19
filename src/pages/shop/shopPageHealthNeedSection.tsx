@@ -1,5 +1,5 @@
-import { BaseCard } from "@/components/baseCard";
-import { Button } from "@/components/button";
+import { BaseCard } from "@/components/atoms/baseCard";
+import { Button } from "@/components/atoms/button";
 import { DescSection } from "@/components/descSection";
 import { Swiper } from "@/components/swiper";
 import { convertRemToPx } from "@/utils/css-helper";

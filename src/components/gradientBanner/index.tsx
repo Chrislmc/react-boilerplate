@@ -1,4 +1,4 @@
-import { Button, IButtonProps } from "../button";
+import { Button, IButtonProps } from "../atoms/button";
 import { Swiper } from "../swiper";
 import "./_gradient-banner.scss";
 

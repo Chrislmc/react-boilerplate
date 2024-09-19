@@ -1,6 +1,6 @@
 import { Icons } from "@/assets/icons";
 import { useState } from "react";
-import { IBoldTextProps } from "../boldText";
+import { IBoldTextProps } from "../atoms/boldText";
 import { Text } from "../text";
 import "./_accordion.scss";
 

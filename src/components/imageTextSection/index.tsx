@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Button, IButtonProps } from "../button";
+import { Button, IButtonProps } from "../atoms/button";
 import { ContainerX } from "../layout/containerX";
 import { SectionContainerY } from "../layout/sectionContainerY";
 import "./_image-text-section.scss";

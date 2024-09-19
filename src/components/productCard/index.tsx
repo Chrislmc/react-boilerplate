@@ -1,6 +1,6 @@
 import { dynamicRouteConstant, redirectRouteMap } from "@/utils/routes/route";
 import { useNavigate } from "react-router-dom";
-import { BaseCard } from "../baseCard";
+import { BaseCard } from "../atoms/baseCard";
 import { IProductButton, ProductButton } from "../productButton";
 import { IProductRating, ProductRating } from "../productRating";
 import "./_product-card.scss";

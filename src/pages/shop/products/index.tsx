@@ -1,6 +1,6 @@
+import { Input } from "@/components/atoms/input";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { IOption } from "@/components/checkBox";
-import { Input } from "@/components/input";
 import { ContainerX } from "@/components/layout/containerX";
 import { ProductCard } from "@/components/productCard";
 import { Section } from "@/components/section";

@@ -1,4 +1,4 @@
-import { BaseCard } from "@/components/baseCard";
+import { BaseCard } from "@/components/atoms/baseCard";
 import { DescSection } from "@/components/descSection";
 import { Swiper } from "@/components/swiper";
 import { i18nHelper } from "@/utils/i18n-helper";

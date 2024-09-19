@@ -1,5 +1,5 @@
 import { Images } from "@/assets/images";
-import { Button } from "@/components/button";
+import { Button } from "@/components/atoms/button";
 import { DescSection } from "@/components/descSection";
 import { GradientBanner } from "@/components/gradientBanner";
 import { ContainerX } from "@/components/layout/containerX";

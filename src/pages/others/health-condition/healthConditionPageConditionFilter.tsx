@@ -1,4 +1,4 @@
-import { Button } from "@/components/button";
+import { Button } from "@/components/atoms/button";
 import { IOption } from "@/components/checkBox";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";

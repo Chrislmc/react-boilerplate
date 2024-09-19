@@ -1,4 +1,4 @@
-import { BaseCard } from "@/components/baseCard";
+import { BaseCard } from "@/components/atoms/baseCard";
 
 interface Props {
     text: string;

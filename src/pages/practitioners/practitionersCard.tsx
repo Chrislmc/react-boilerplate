@@ -1,5 +1,5 @@
-import { BaseCard } from "@/components/baseCard";
-import { Button, IButtonProps } from "@/components/button";
+import { BaseCard } from "@/components/atoms/baseCard";
+import { Button, IButtonProps } from "@/components/atoms/button";
 import { dynamicRouteConstant, redirectRouteMap } from "@/utils/routes/route";
 import { useCallback, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";

@@ -1,5 +1,5 @@
 import { Images } from "@/assets/images";
-import { Button } from "@/components/button";
+import { Button } from "@/components/atoms/button";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
 import { i18nHelper } from "@/utils/i18n-helper";
 

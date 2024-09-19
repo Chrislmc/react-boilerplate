@@ -1,7 +1,7 @@
 import { ArticleCard } from "@/components/articleCard";
+import { Input } from "@/components/atoms/input";
 import { IOption } from "@/components/checkBox";
 import { DescSection } from "@/components/descSection";
-import { Input } from "@/components/input";
 import { ContainerX } from "@/components/layout/containerX";
 import { Section } from "@/components/section";
 import { Select } from "@/components/select";

@@ -1,7 +1,7 @@
 import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
 import { Videos } from "@/assets/video";
-import { IButtonProps } from "@/components/button";
+import { IButtonProps } from "@/components/atoms/button";
 import { ICardWithImageContentProps } from "@/components/cardWithImageContent";
 import { VideoPlayer } from "@/components/videoPlayer";
 import { redirectRouteMap } from "@/utils/routes/route";

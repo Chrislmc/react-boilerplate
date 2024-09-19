@@ -1,6 +1,6 @@
 import { Icons } from "@/assets/icons";
 import { Images } from "@/assets/images";
-import { Button } from "@/components/button";
+import { Button } from "@/components/atoms/button";
 import { ImageTextSection } from "@/components/imageTextSection";
 import { i18nHelper } from "@/utils/i18n-helper";
 
