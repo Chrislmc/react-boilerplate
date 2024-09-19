@@ -179,7 +179,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                                             color: $gray-400;
     
                                             &::after {
-                                                color: $primary-700;
+                                                color: $old-primary-700;
                                                 font-weight: 700;
                                                 visibility: hidden;
                                             }
@@ -197,7 +197,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                                                 background-color: #E6EEF0;
             
                                                 span {
-                                                    color: $primary-700;
+                                                    color: $old-primary-700;
                                                     font-weight: 700;
                                                 }
                                             }
@@ -241,7 +241,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                                     line-height: 1.5rem;
                                     letter-spacing: 0.75rem;
                                     font-weight: 700;
-                                    color: $primary-700;
+                                    color: $old-primary-700;
                                 }
     
                                 .condition-list {
@@ -405,7 +405,7 @@ $original-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
                 }
 
                 .detail-accordion-container {
-                    background-color: $primary-200;
+                    background-color: $old-primary-200;
                     padding: 3.875rem 0 3.875rem 3.125rem;
                 }
 

@@ -16,7 +16,7 @@
         background-color: $white;
 
         &:hover:not(:disabled) {
-            background-color: $primary-100;
+            background-color: $old-primary-100;
         }
 
         &::after {

@@ -18,10 +18,10 @@
 
     &.type-solid {
         &.color-primary {
-            background-color: $primary;
+            background-color: $old-primary;
 
             &:hover:not(:disabled) {
-                background-color: $primary-700;
+                background-color: $old-primary-700;
             }
         }
 
@@ -29,7 +29,7 @@
             background-color: $blueish-green;
 
             &:hover:not(:disabled) {
-                background-color: $primary;
+                background-color: $old-primary;
             }
         }
 

@@ -31,7 +31,7 @@
                         border: solid $gray-400 0.0625rem;
 
                         &.mod__active {
-                            border-color: $primary;
+                            border-color: $old-primary;
                         }
 
                         .image-container {
@@ -101,7 +101,7 @@
                     line-height: 2.125rem;
                     letter-spacing: 0.075rem;
                     font-weight: 700;
-                    color: $primary-700;
+                    color: $old-primary-700;
                     margin-bottom: 0.625rem;
                 }
 
@@ -197,7 +197,7 @@
     }
     
     .related-product-section {
-        background-color: $primary-200;
+        background-color: $old-primary-200;
         
         .section-container-y {
             margin-top: 1.875rem;

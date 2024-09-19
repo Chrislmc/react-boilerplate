@@ -186,7 +186,7 @@ $heroBannerBtnColor: #69A2C2;
     }
 
     .home-page-services-section {
-        background-color: $primary-200;
+        background-color: $old-primary-200;
 
         .service-card-grid-container {
             width: 100%;
@@ -312,7 +312,7 @@ $heroBannerBtnColor: #69A2C2;
     }
 
     .home-page-health-condition-section {
-        background-color: $primary-200;
+        background-color: $old-primary-200;
 
         .swiper-component {
             margin: 3.75rem 0 2.5rem;
@@ -332,7 +332,7 @@ $heroBannerBtnColor: #69A2C2;
                     &.health-condition-last-card {
                         .card-component {
                             .btn-component {
-                                background-color: $primary;
+                                background-color: $old-primary;
                             }
                         }
                     }

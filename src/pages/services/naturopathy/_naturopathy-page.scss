@@ -14,7 +14,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                background: transparent linear-gradient(180deg, $primary-700 0%, $blueish-green-700 100%) 0% 0% no-repeat padding-box;
+                background: transparent linear-gradient(180deg, $old-primary-700 0%, $blueish-green-700 100%) 0% 0% no-repeat padding-box;
                 width: 100%;
                 height: 37.5rem;
             }
@@ -28,7 +28,7 @@
                 }
 
                 .desc {
-                    color: $primary-300;
+                    color: $old-primary-300;
                     font-weight: 700;
                     line-height: 1.75rem;
                     font-family: $font-secondary;
@@ -157,7 +157,7 @@
     }
 
     .naturopathy-page-health-need-section {
-        background-color: $primary-200;
+        background-color: $old-primary-200;
 
         .swiper-component {
             margin-top: 3.125rem;
