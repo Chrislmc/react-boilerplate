@@ -1,12 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { ProtectedRoute } from "./ProtectedRoute";
 import { Layout } from "./components/layout";
-import { HomePage } from "./pages";
+import { ComponentsPage } from "./pages";
 import { Secret } from "./pages/Secret";
 import { DispensaryPage } from "./pages/dispensary";
 import { HealthHubPage } from "./pages/health-hub";
 import { ArticlePage } from "./pages/health-hub/article";
 import { LabTestPage } from "./pages/lab-test";
+import { OldHomePage } from "./pages/old-home-page";
 import { CorporateWellnessPage } from "./pages/others/corporate-wellness";
 import { HealthConditionPage } from "./pages/others/health-condition";
 import { InsurancePage } from "./pages/others/insurance";
@@ -27,7 +28,11 @@ function App() {
         <>
             <RemoveTrailingSlash />
             <Routes>
-                <Route index element={<HomePage />} />
+                <Route index element={<ComponentsPage />} />
+                <Route
+                    path={RouteConstant.oldHomePage}
+                    element={<OldHomePage />}
+                />
 
                 <Route element={<Layout />}>
                     <Route path={RouteConstant.practitioners}>

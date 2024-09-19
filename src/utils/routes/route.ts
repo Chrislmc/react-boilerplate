@@ -1,5 +1,6 @@
 export enum RouteConstant {
     "homepage" = "",
+    "oldHomePage" = "old-home-page",
 
     "practitioners" = "practitioners",
     "meetOurPractitioners" = "meet-our-practitioners",
@@ -40,6 +41,7 @@ export const dynamicRouteConstant = {
 
 export const redirectRouteMap = {
     homepage: `/`,
+    oldHomePage: `/${RouteConstant.oldHomePage}`,
 
     practitioners: `/${RouteConstant.practitioners}`,
     meetOurPractitioners: `/${RouteConstant.practitioners}/${RouteConstant.meetOurPractitioners}/${dynamicRouteConstant.meetOurPractitioners}`,
@@ -74,6 +76,7 @@ export const redirectRouteMap = {
 
 export const breadcrumbRouteDescMap = {
     [RouteConstant.homepage]: `Home`,
+    [RouteConstant.oldHomePage]: `Old Home Page`,
 
     [RouteConstant.practitioners]: "Practitioners",
     [RouteConstant.meetOurPractitioners]: "Meet Our Practitioners",

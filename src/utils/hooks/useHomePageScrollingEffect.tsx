@@ -14,7 +14,7 @@ const primary300Color = `rgb(217,238,230)`;
 const whiteColorRgb = [255, 255, 255];
 const whiteColor = `rgb(255,255,255)`;
 
-/* Handle all HomePage special style when scrolling */
+/* Handle all OldHomePage special style when scrolling */
 export const useHomePageScrollingEffect = () => {
     const heroBannerBackgroundContainerRef = useRef<HTMLDivElement>(null);
     const siteContentRef = useRef<HTMLDivElement>(null);
