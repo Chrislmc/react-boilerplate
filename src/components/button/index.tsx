@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import "./_button.scss";
 
-export type IImiButtonType = "solid" | "outline" | "round" | "text";
-export type IImiButtonSize = "normal" | "padding";
+export type IButtonType = "solid" | "outline" | "round" | "text";
+export type IButtonSize = "normal" | "padding";
 
 export interface IButtonProps {
-    type?: IImiButtonType;
-    size?: IImiButtonSize;
+    type?: IButtonType;
+    size?: IButtonSize;
     text: string;
     onClick?: (e?: any) => void;
     disabled?: boolean;
