@@ -1,6 +1,6 @@
 import { OurHealingVisionComponent } from "@/assets/icons/others/our-healing-vision.component";
 import { DescSection } from "@/components/descSection";
-import { Segment } from "@/components/segment";
+import { Segment } from "@/components/molecules/segment";
 import { convertRemToPx } from "@/utils/css-helper";
 import useWindowSize from "@/utils/hooks/useWindowSize";
 import { i18nHelper } from "@/utils/i18n-helper";

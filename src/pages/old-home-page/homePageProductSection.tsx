@@ -1,8 +1,8 @@
 import { Images } from "@/assets/images";
 import { Button } from "@/components/atoms/button";
 import { DescSection } from "@/components/descSection";
-import { GradientBanner } from "@/components/gradientBanner";
 import { ContainerX } from "@/components/layout/containerX";
+import { GradientBanner } from "@/components/molecules/gradientBanner";
 import { ProductCard } from "@/components/productCard";
 import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";

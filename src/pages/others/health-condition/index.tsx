@@ -1,7 +1,7 @@
 import { SectionHeader } from "@/components/atoms/sectionHeader";
-import { Breadcrumb } from "@/components/breadcrumb";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
+import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import { Section } from "@/components/section";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";

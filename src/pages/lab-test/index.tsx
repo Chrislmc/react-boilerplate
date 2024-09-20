@@ -1,7 +1,7 @@
-import { Breadcrumb } from "@/components/breadcrumb";
+import { ITextProps } from "@/components/atoms/text";
 import { DescSection } from "@/components/descSection";
+import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import { Section } from "@/components/section";
-import { ITextProps } from "@/components/text";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
 import "./_lab-test-page.scss";

@@ -4,8 +4,8 @@ import {
     redirectRouteMap,
 } from "@/utils/routes/route";
 import { useLocation, useNavigate } from "react-router-dom";
-import { ContainerX } from "../layout/containerX";
 import "./_breadcrumb.scss";
+import { ContainerX } from "@/components/layout/containerX";
 
 interface Props {
     customRouteDesc?: string;

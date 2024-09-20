@@ -1,11 +1,11 @@
 import { ArticleCard } from "@/components/articleCard";
 import { Input } from "@/components/atoms/input";
+import { Tab } from "@/components/atoms/tab";
 import { DescSection } from "@/components/descSection";
 import { ContainerX } from "@/components/layout/containerX";
 import { IOption } from "@/components/molecules/checkBox";
+import { Select } from "@/components/molecules/select";
 import { Section } from "@/components/section";
-import { Select } from "@/components/select";
-import { Tab } from "@/components/tab";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IArticle } from "@/utils/types/article";
 import { useRef, useState } from "react";

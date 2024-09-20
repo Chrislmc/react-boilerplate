@@ -1,4 +1,4 @@
-import { Breadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import "./_corporate-wellness-page.scss";
 import { CorporateWellnessPageDescSection } from "./corporateWellnessPageDescSection";
 import { CorporateWellnessPageVideoSection } from "./corporateWellnessPageVideoSection";

@@ -1,4 +1,4 @@
-import { Breadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import { Section } from "@/components/section";
 import "./_meet-our-practitioners-page.scss";
 import { ArticlesAndVideosSection } from "./articlesAndVideosSection";

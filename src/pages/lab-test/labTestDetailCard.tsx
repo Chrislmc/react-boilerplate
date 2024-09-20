@@ -1,5 +1,5 @@
 import { BaseCard } from "@/components/atoms/baseCard";
-import { ITextProps, Text } from "@/components/text";
+import { ITextProps, Text } from "@/components/atoms/text";
 
 interface Props {
     descs: ITextProps[];
@@ -15,9 +15,9 @@ export const LabTestDetailCard: React.FC<Props> = ({ descs, isExpanded }) => {
         >
             <BaseCard shadow activeEffect>
                 <div className="desc-column">
-                    {descs.map((desc, i) => (
-                        <Text key={`detail-card-desc-${i}`} {...desc} />
-                    ))}
+                    {descs.map((desc, i) => {
+                        return <Text key={`detail-card-desc-${i}`} {...desc} />;
+                    })}
                 </div>
             </BaseCard>
         </div>

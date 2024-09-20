@@ -1,9 +1,9 @@
+import { NumberInput } from "@/components/atoms/numberInput";
+import { Tab } from "@/components/atoms/tab";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
-import { NumberInput } from "@/components/numberInput";
 import { ProductButton } from "@/components/productButton";
 import { ProductRating } from "@/components/productRating";
-import { Tab } from "@/components/tab";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IProduct } from "@/utils/types/product";
 import { decodeUtf } from "@/utils/utf-helper";

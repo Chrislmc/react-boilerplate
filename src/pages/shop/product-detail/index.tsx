@@ -1,4 +1,4 @@
-import { Breadcrumb } from "@/components/breadcrumb";
+import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import { Section } from "@/components/section";
 import { useLocation } from "react-router-dom";
 import { productPageProductCardList } from "../products/productPageConstant";

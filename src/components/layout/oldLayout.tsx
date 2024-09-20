@@ -6,6 +6,7 @@ import "./_layout.scss";
 import { Content } from "./content/content";
 import { FloatingIcon } from "./floatingIcon";
 import { Footer } from "./footer/footer";
+import { Header } from "./header/header";
 import { Overlay } from "./overlay/overlay";
 
 type LayoutProps = {
@@ -13,7 +14,7 @@ type LayoutProps = {
     className?: string;
 };
 
-export const Layout = forwardRef<HTMLDivElement, LayoutProps>(function (
+export const OldLayout = forwardRef<HTMLDivElement, LayoutProps>(function (
     { children, className },
     ref
 ) {
@@ -22,6 +23,11 @@ export const Layout = forwardRef<HTMLDivElement, LayoutProps>(function (
     return (
         <OverlayProvider>
             <div className={`site-layout ${className ? className : ""}`}>
+                {isMobile || isTablet || isSmallScreen ? (
+                    <Header />
+                ) : (
+                    <Header />
+                )}
                 <Content ref={ref}>
                     <div className="content-container">
                         <Outlet />

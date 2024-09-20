@@ -1,6 +1,6 @@
 import { ArticleCard } from "@/components/articleCard";
+import { Tab } from "@/components/atoms/tab";
 import { DescSection } from "@/components/descSection";
-import { Tab } from "@/components/tab";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IArticle } from "@/utils/types/article";
 import { useRef, useState } from "react";

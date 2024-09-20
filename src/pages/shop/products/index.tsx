@@ -1,7 +1,7 @@
 import { Input } from "@/components/atoms/input";
 import { SectionHeader } from "@/components/atoms/sectionHeader";
-import { Breadcrumb } from "@/components/breadcrumb";
 import { ContainerX } from "@/components/layout/containerX";
+import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import { IOption } from "@/components/molecules/checkBox";
 import { ProductCard } from "@/components/productCard";
 import { Section } from "@/components/section";

@@ -1,6 +1,6 @@
-import { Breadcrumb } from "@/components/breadcrumb";
 import { DescSection } from "@/components/descSection";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
+import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import { Section } from "@/components/section";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useLocation } from "react-router-dom";

@@ -28,13 +28,14 @@ function App() {
         <>
             <RemoveTrailingSlash />
             <Routes>
-                <Route index element={<ComponentsPage />} />
                 <Route
                     path={RouteConstant.oldHomePage}
                     element={<OldHomePage />}
                 />
 
                 <Route element={<Layout />}>
+                    <Route index element={<ComponentsPage />} />
+
                     <Route path={RouteConstant.practitioners}>
                         <Route index element={<PractitionersPage />} />
                         <Route

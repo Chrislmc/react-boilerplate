@@ -1,7 +1,7 @@
 import { Images } from "@/assets/images";
-import { GradientBanner } from "@/components/gradientBanner";
 import { ContainerX } from "@/components/layout/containerX";
 import { SectionContainerY } from "@/components/layout/sectionContainerY";
+import { GradientBanner } from "@/components/molecules/gradientBanner";
 import { i18nHelper } from "@/utils/i18n-helper";
 
 export const NaturopathyPageBannerSection = () => {

@@ -1,4 +1,4 @@
-import { Layout } from "@/components/layout";
+import { OldLayout } from "@/components/layout/oldLayout";
 import { Section } from "@/components/section";
 import { useHomePageScrollingEffect } from "@/utils/hooks/useHomePageScrollingEffect";
 import "./_home-page.scss";
@@ -14,7 +14,7 @@ export const OldHomePage = () => {
     const { siteContentRef } = useHomePageScrollingEffect();
 
     return (
-        <Layout className="home-page" ref={siteContentRef}>
+        <OldLayout className="home-page" ref={siteContentRef}>
             <div id="home-page">
                 <Section className="home-page-hero-banner-section">
                     <HomePageHeroBannerSection />
@@ -38,6 +38,6 @@ export const OldHomePage = () => {
                     <HomePageBookNowSection />
                 </Section>
             </div>
-        </Layout>
+        </OldLayout>
     );
 };
