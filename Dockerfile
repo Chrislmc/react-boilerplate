@@ -1,10 +1,10 @@
-FROM node:22.9.0-slim
+FROM node:22-alpine3.19
 
 WORKDIR /app
 
 COPY package.json .
 
-COPY locales .
+COPY public/locales .
 
 RUN npm install
 
