@@ -1,10 +1,14 @@
 import { DescSection } from "@/components/descSection";
 import { Section } from "@/components/section";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./_components-page.scss";
-import { componentsHierarchy } from "./componentsPageConstant";
+import { componentsHierarchy, IComponent } from "./componentsPageConstant";
 
 export const ComponentsPage = () => {
+    const [activeComponent, setActiveComponent] = useState<string | undefined>(
+        undefined
+    );
+
     useEffect(() => {
         const siteContentContainer =
             document.getElementsByClassName("site-content")?.[0];
@@ -13,6 +17,14 @@ export const ComponentsPage = () => {
             (siteContentContainer as HTMLDivElement).style.overflowY = "hidden";
         }
     }, []);
+
+    const onComponentLabelClick = (component: IComponent) => {
+        if (component.id === activeComponent) {
+            return;
+        } else {
+            setActiveComponent(component.id);
+        }
+    };
 
     return (
         <div id="components-page">
@@ -31,6 +43,7 @@ export const ComponentsPage = () => {
                                         <button
                                             className="label-button"
                                             disabled
+                                            title={level.text}
                                         >
                                             <p className="subsection-label">
                                                 {level.text}
@@ -40,8 +53,19 @@ export const ComponentsPage = () => {
                                         <div className="subsection-content-container">
                                             {level.children.map((component) => (
                                                 <button
-                                                    className="label-button"
+                                                    className={`label-button ${
+                                                        component.id ===
+                                                        activeComponent
+                                                            ? "mod__active"
+                                                            : ""
+                                                    }`}
                                                     key={component.id}
+                                                    title={level.text}
+                                                    onClick={() =>
+                                                        onComponentLabelClick(
+                                                            component
+                                                        )
+                                                    }
                                                 >
                                                     <p className="component-label">
                                                         {component.text}

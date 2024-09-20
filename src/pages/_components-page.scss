@@ -17,11 +17,11 @@
             
             .scroll-section {
                 width: 12.5rem;
+                max-height: calc(100vh - 20.375rem);
                 padding: 1.25rem;
                 border-right: 0.0625rem solid $gray;
                 text-align: left;
-                overflow-y: auto;
-                overflow-x: hidden;
+                overflow: hidden auto;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -48,6 +48,18 @@
                             font-size: 1.25rem;
                             line-height: 1.5rem;
                             color: $primary-100;
+                            text-wrap: pretty;
+                        
+                            &:hover {
+                                color: $secondary-400;
+                            }
+
+                        }
+
+                        &.mod__active {
+                            .component-label {
+                                color: $secondary;
+                            }
                         }
                     }
 
