@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import "./_button.scss";
 
 export type IButtonType = "solid" | "outline" | "round" | "text";
@@ -31,8 +30,6 @@ export const Button: React.FC<IButtonProps> = ({
     externalPath,
     redirectUrl,
 }) => {
-    const navigator = useNavigate();
-
     return downloadFile || externalPath ? (
         <a
             className={`btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
@@ -61,7 +58,6 @@ export const Button: React.FC<IButtonProps> = ({
         <button
             className={`btn-component type-${type} size-${size} color-${colorTheme} ${buttonClassName}`}
             onClick={(e) => {
-                redirectUrl && navigator(redirectUrl);
                 onClick && onClick(e);
             }}
             disabled={disabled}

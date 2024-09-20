@@ -42,6 +42,7 @@
                             line-height: 2rem;
                             color: $primary-100;
                             font-weight: 500;
+                            padding: 0.625rem 0;
                         }
 
                         .component-label {
@@ -75,9 +76,26 @@
 
             .content-section {
                 flex: 1;
-                background-color: $white;
+                background-color: $primary-300;
                 border-radius: 1.25rem;
                 overflow: hidden;
+                padding: 1.25rem 2.5rem;
+
+                .component-container {
+                    margin-top: 3.875rem;
+                    border-radius: 1.25rem;
+                    background-color: $white;
+                    padding: 1.25rem;
+
+                    .component-wrapper {
+                        width: fit-content;
+                        height: fit-content;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1.25rem;
+                    }
+                }
             }
         }
     }

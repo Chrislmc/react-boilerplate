@@ -1,12 +1,12 @@
 import { Icons } from "@/assets/icons";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { Dispatch, SetStateAction, useRef } from "react";
+import { ChangeEvent, Dispatch, SetStateAction, useRef, useState } from "react";
 import "./_input.scss";
 
 export interface IInputProps {
     placeholder: string;
-    value: string;
-    setValue: Dispatch<SetStateAction<string>>;
+    value?: string;
+    setValue?: Dispatch<SetStateAction<string>>;
 }
 
 export const Input: React.FC<IInputProps> = ({
@@ -14,6 +14,7 @@ export const Input: React.FC<IInputProps> = ({
     value,
     setValue,
 }) => {
+    const [inputValue, setInputValue] = useState(value || "");
     const t = i18nHelper("shared");
     const inputRef = useRef<HTMLInputElement>(null);
 
@@ -21,6 +22,12 @@ export const Input: React.FC<IInputProps> = ({
         if (inputRef?.current) {
             inputRef.current.focus();
         }
+    };
+
+    const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setInputValue(e.target.value);
+
+        if (setValue) setValue(e.target.value);
     };
 
     return (
@@ -32,8 +39,8 @@ export const Input: React.FC<IInputProps> = ({
             <input
                 ref={inputRef}
                 placeholder={t(placeholder)}
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
+                value={inputValue}
+                onChange={onInputChange}
                 className={`${value?.length ? " mod__with-value" : ""}`}
             />
         </div>

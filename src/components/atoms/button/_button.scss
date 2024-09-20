@@ -18,26 +18,10 @@
 
     &.type-solid {
         &.color-primary {
-            background-color: $old-primary;
+            background-color: $secondary;
 
             &:hover:not(:disabled) {
-                background-color: $old-primary-700;
-            }
-        }
-
-        &.color-blueish-green {
-            background-color: $blueish-green;
-
-            &:hover:not(:disabled) {
-                background-color: $old-primary;
-            }
-        }
-
-        &.color-orange {
-            background-color: $white;
-            
-            &:hover:not(:disabled) {
-                background-color: $orange;
+                background-color: $secondary-600;
             }
         }
     }
@@ -45,15 +29,31 @@
     &.type-outline {
         border-width: 0.125rem;
         border-style: solid;
-        background-color: transparent;
+        background-color: $transparent;
+        border-color: $secondary;
 
-        &.color-white {
-            border-color: $white;
-
-            &:hover:not(:disabled) {
-                background-color: $white;
-            }
+        &:hover:not(:disabled) {
+            background-color: $secondary;
         }
+    }
+
+    &.type-round {
+        width: unset;
+        aspect-ratio: 1/1;
+        border-radius: 9999rem;
+        border-style: solid;
+        background-color: $transparent;
+        border-color: $secondary;
+
+        &:hover:not(:disabled) {
+            background-color: $secondary;
+            border-color: $white;
+        }
+    }
+
+    &.type-text {
+        height: unset;
+        width: unset;
     }
 }
 
@@ -87,22 +87,32 @@
 
     &.type-outline {
         letter-spacing: 0.1125rem;
+        color: $secondary;
 
-        &.color-white {
+        :hover:not(:disabled) > & {
             color: $white;
-
-            :hover:not(:disabled) > & {
-                color: $transparent;
-            }
         }
 
         &.type-round {
-            letter-spacing: 0.0625rem;
             color: $dark;
 
             :hover:not(:disabled) > & {
                 color: $white;
             }
         }
+    }
+
+    &.type-round {
+        letter-spacing: 0.0625rem;
+        color: $secondary;
+
+        :hover:not(:disabled) > & {
+            color: $white;
+        }
+    }
+
+    &.type-text {
+        text-decoration: underline;
+        color: $blueish-green-700;
     }
 }

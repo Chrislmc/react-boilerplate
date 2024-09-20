@@ -1,10 +1,10 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import "./_tab.scss";
 
 interface Props<T> {
     options: { text: string; value: T }[];
-    activeTab: string;
-    setActiveTab: Dispatch<SetStateAction<T>>;
+    activeTab?: string;
+    setActiveTab?: Dispatch<SetStateAction<T>>;
     onTabClick?: (value: T) => void;
     disabled?: boolean;
 }
@@ -16,13 +16,17 @@ export const Tab = <T extends string>({
     onTabClick,
     disabled,
 }: Props<T>) => {
+    const [tabState, setTabState] = useState(activeTab || options[0].value);
+
     const onTabItemClick = (value: T) => {
         if (onTabClick) {
             onTabClick(value);
             return;
         }
 
-        setActiveTab(value);
+        setTabState(value);
+
+        if (setActiveTab) setActiveTab(value);
     };
 
     return (
@@ -31,7 +35,7 @@ export const Tab = <T extends string>({
                 <div
                     key={`tab-${i}`}
                     className={`tab-item${
-                        activeTab === option.value ? " mod__active" : ""
+                        tabState === option.value ? " mod__active" : ""
                     }${disabled ? " mod__disabled" : ""}`}
                 >
                     <button
