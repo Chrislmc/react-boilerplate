@@ -1,4 +1,4 @@
-import { IOption } from "@/components/molecules/checkBox";
+import { IOption } from "@/components/atoms/checkBox";
 import { ProductPageFilterWrapper } from "@/pages/shop/products/productPageFilterWrapper";
 import { i18nHelper } from "@/utils/i18n-helper";
 import {

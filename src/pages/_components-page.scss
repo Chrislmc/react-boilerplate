@@ -27,6 +27,11 @@
                 align-items: flex-start;
                 gap: 1.25rem;
 
+                &::-webkit-scrollbar {
+                    width: 0px;
+                    background: transparent; /* make scrollbar transparent */
+                }
+
                 .subsection-container {
                     display: flex;
                     flex-direction: column;
@@ -82,10 +87,11 @@
                 padding: 1.25rem 2.5rem;
 
                 .component-container {
-                    margin-top: 3.875rem;
+                    margin-top: 2.5rem;
                     border-radius: 1.25rem;
                     background-color: $white;
                     padding: 1.25rem;
+                    position: relative;
 
                     .component-wrapper {
                         width: fit-content;

@@ -1,3 +1,4 @@
+import { componentsImages } from "./components";
 import { homePageImages } from "./home-page";
 import ImiLogo from "./imi logo.png";
 import { othersImages } from "./others";
@@ -22,4 +23,5 @@ export const Images = {
     ...shopPageImages,
     ...servicesImages,
     ...othersImages,
+    ...componentsImages,
 };

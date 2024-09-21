@@ -1,9 +1,9 @@
 import { ArticleCard } from "@/components/articleCard";
+import { IOption } from "@/components/atoms/checkBox";
 import { Input } from "@/components/atoms/input";
 import { Tab } from "@/components/atoms/tab";
 import { DescSection } from "@/components/descSection";
 import { ContainerX } from "@/components/layout/containerX";
-import { IOption } from "@/components/molecules/checkBox";
 import { Select } from "@/components/molecules/select";
 import { Section } from "@/components/section";
 import { i18nHelper } from "@/utils/i18n-helper";

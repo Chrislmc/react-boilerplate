@@ -1,5 +1,5 @@
 import { Images } from "@/assets/images";
-import { IOption } from "@/components/molecules/checkBox";
+import { IOption } from "@/components/atoms/checkBox";
 
 export enum IProductPageFilter {
     Price = "price",

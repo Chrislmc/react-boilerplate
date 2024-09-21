@@ -93,9 +93,7 @@ export const ComponentsPage = () => {
                                 />
                                 {activeComponent && (
                                     <div className="component-container">
-                                        <div className="component-wrapper">
-                                            {activeComponent?.component}
-                                        </div>
+                                        {activeComponent?.component}
                                     </div>
                                 )}
                             </div>
