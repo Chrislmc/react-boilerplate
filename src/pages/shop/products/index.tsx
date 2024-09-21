@@ -1,8 +1,8 @@
+import { IOption } from "@/components/atoms/checkBox";
 import { Input } from "@/components/atoms/input";
 import { SectionHeader } from "@/components/atoms/sectionHeader";
 import { ContainerX } from "@/components/layout/containerX";
 import { Breadcrumb } from "@/components/molecules/breadcrumb";
-import { IOption } from "@/components/molecules/checkBox";
 import { ProductCard } from "@/components/productCard";
 import { Section } from "@/components/section";
 import { i18nHelper } from "@/utils/i18n-helper";

@@ -3,7 +3,7 @@
 
 .gradient-banner {
     width: 100%;
-    height: auto;
+    height: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 1.25rem;
@@ -55,7 +55,7 @@
             left: 0;
 
             &.color-primary {
-                background: transparent linear-gradient(90deg, #34ABA4 30%, #d5dd99 50%,#F28C0000 100%) 0% 0% no-repeat padding-box;
+                background: transparent linear-gradient(90deg, $secondary 20%, #e2e3b1 40%, #a2bfd8 50%,#F28C0000 100%) 0% 0% no-repeat padding-box;
 
                 @include media(mobile) {
                     background: transparent

@@ -47,7 +47,7 @@
         }
 
         &:hover {
-            color: $old-primary;
+            color: $primary;
         }
 
         &.mod__active {
@@ -59,7 +59,7 @@
     .segment-active-background {
         pointer-events: none;
         border-radius: 9999rem;
-        background-color: $orange;
+        background-color: $secondary;
         position: absolute;
         top: 0;
         left: 0;

@@ -1,6 +1,6 @@
 import { Images } from "@/assets/images";
+import { IOption } from "@/components/atoms/checkBox";
 import { IAccordion } from "@/components/molecules/accordion";
-import { IOption } from "@/components/molecules/checkBox";
 
 export enum IHealthConditionPageFilter {
     Conditions = "conditions",

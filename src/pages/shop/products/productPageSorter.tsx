@@ -1,4 +1,4 @@
-import { CheckBox, IOption } from "@/components/molecules/checkBox";
+import { CheckBox, IOption } from "@/components/atoms/checkBox";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { Dispatch, SetStateAction } from "react";
 import { IProductPageFilter, IProductPageSortBy } from "./productPageConstant";
