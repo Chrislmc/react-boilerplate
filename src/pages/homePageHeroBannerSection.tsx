@@ -1,5 +1,6 @@
 import { Icons } from "@/assets/icons";
 import { SearchIconComponent } from "@/assets/icons/shared/search.component";
+import { Button } from "@/components/atoms/button";
 import { Input } from "@/components/atoms/input";
 import { ContainerX } from "@/components/layout/containerX";
 import "./_home-page.scss";
@@ -31,7 +32,17 @@ export const HomePageHeroBannerSection = () => {
                     />
                 </div>
             </div>
-            <div className="hero-banner-container"></div>
+            <div className="hero-banner-container">
+                <div className="desc-container">
+                    <h1 className="header">
+                        I'M <p className="header-highlight">Chris Lai</p>
+                    </h1>
+
+                    <h2 className="header-desc">Fullstack Developer</h2>
+
+                    <Button text={"Contact Me"} />
+                </div>
+            </div>
         </ContainerX>
     );
 };

@@ -132,7 +132,7 @@
 
                         &:active {
                             background-color: $orange-600;
-                            color: $white-600;
+                            color: $white-400;
                         }
                     }
                 }
@@ -156,7 +156,7 @@
                         padding: 0;
 
                         &:hover {
-                            color: $white-600;
+                            color: $white-400;
                             transition: all 0.1s ease-in;
                         }
                     }

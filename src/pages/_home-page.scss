@@ -16,7 +16,6 @@
             align-items: center;
 
             .icon-container {
-                // width: 3.75rem;
                 height: 3.75rem;
                 flex: 1;
                 display: flex;
@@ -25,7 +24,6 @@
                 img {
                     height: 100%;
                     aspect-ratio: 1/1;
-                    // width: 100%;
                     object-fit: cover;
                 }
             }
@@ -50,6 +48,44 @@
                 flex: 1;
                 display: flex;
                 justify-content: flex-end;
+            }
+        }
+
+        .hero-banner-container {
+            height: calc(100vh - 6.25rem);
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .desc-container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .header {
+                    font-size: 3rem;
+                    color: $white-400;
+                    margin-bottom: 1.875rem;
+                    font-weight: 400;
+                    font-family: $font-secondary;
+
+                    .header-highlight {
+                        font-size: 5rem;
+                        color: $secondary;
+                        display: inline;
+                        font-family: $font-tertiary;
+                        font-weight: 700;
+                    }
+                }
+
+                .header-desc {
+                    color: $white-400;
+                    font-size: 2.5rem;
+                    font-weight: 400;
+                    font-family: $font-secondary;
+                    margin-bottom: 2.5rem;
+                }
             }
         }
     }

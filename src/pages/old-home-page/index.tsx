@@ -14,7 +14,7 @@ export const OldHomePage = () => {
     const { siteContentRef } = useHomePageScrollingEffect();
 
     return (
-        <OldLayout className="home-page" ref={siteContentRef}>
+        <OldLayout className="old-home-page" ref={siteContentRef}>
             <div id="home-page">
                 <Section className="home-page-hero-banner-section">
                     <HomePageHeroBannerSection />
