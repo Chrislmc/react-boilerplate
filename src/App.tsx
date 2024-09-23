@@ -1,8 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import { ProtectedRoute } from "./ProtectedRoute";
 import { Layout } from "./components/layout";
-import { ComponentsPage } from "./pages";
-import { Secret } from "./pages/Secret";
+import { HomePage } from "./pages";
+import { ComponentsPage } from "./pages/components";
 import { DispensaryPage } from "./pages/dispensary";
 import { HealthHubPage } from "./pages/health-hub";
 import { ArticlePage } from "./pages/health-hub/article";
@@ -14,11 +13,13 @@ import { InsurancePage } from "./pages/others/insurance";
 import { OurHealingVisionPage } from "./pages/others/our-healing-vision";
 import { PractitionersPage } from "./pages/practitioners";
 import { MeetOurPractitionersPage } from "./pages/practitioners/meet-our-practitioners";
+import { Secret } from "./pages/Secret";
 import { ServicesPage } from "./pages/services";
 import { NaturopathyPage } from "./pages/services/naturopathy";
 import { ShopPage } from "./pages/shop";
 import { ProductDetailPage } from "./pages/shop/product-detail";
 import { ProductsPage } from "./pages/shop/products";
+import { ProtectedRoute } from "./ProtectedRoute";
 import "./scss/main.scss";
 import { RemoveTrailingSlash } from "./utils/routes/RemoveTrailingSlash";
 import { RouteConstant, dynamicRouteConstant } from "./utils/routes/route";
@@ -28,14 +29,17 @@ function App() {
         <>
             <RemoveTrailingSlash />
             <Routes>
+                <Route index element={<HomePage />} />
+                <Route
+                    path={RouteConstant.components}
+                    element={<ComponentsPage />}
+                />
                 <Route
                     path={RouteConstant.oldHomePage}
                     element={<OldHomePage />}
                 />
 
                 <Route element={<Layout />}>
-                    <Route index element={<ComponentsPage />} />
-
                     <Route path={RouteConstant.practitioners}>
                         <Route index element={<PractitionersPage />} />
                         <Route

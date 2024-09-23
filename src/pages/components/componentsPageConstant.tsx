@@ -1,3 +1,4 @@
+import { SearchIconComponent } from "@/assets/icons/shared/search.component";
 import { Images } from "@/assets/images";
 import { BaseCard } from "@/components/atoms/baseCard";
 import { BoldText } from "@/components/atoms/boldText";
@@ -84,7 +85,13 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "input",
                 text: "Input",
-                component: <Input placeholder={"Enter..."} />,
+                component: (
+                    <Input
+                        placeholder={"Enter..."}
+                        prefixIcon={<SearchIconComponent />}
+                        suffixIcon={<SearchIconComponent />}
+                    />
+                ),
             },
             {
                 id: "linkText",

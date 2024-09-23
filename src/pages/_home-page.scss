@@ -1,0 +1,56 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+#home-page {
+    .home-page-hero-banner-section {
+        background-color: $primary;
+
+        .container-x {
+            width: 100%;
+        }
+
+        .header-row {
+            width: 100%;
+            margin: 1.25rem 0;
+            display: flex;
+            align-items: center;
+
+            .icon-container {
+                // width: 3.75rem;
+                height: 3.75rem;
+                flex: 1;
+                display: flex;
+                justify-content: flex-start;
+
+                img {
+                    height: 100%;
+                    aspect-ratio: 1/1;
+                    // width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .header-btn-row {
+                display: flex;
+                align-items: center;
+                gap: 2.5rem;
+
+                button {
+                    color: $gray-300;
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+
+                    &:hover {
+                        color: $gray-100;
+                    }
+                }
+            }
+
+            .search-input-container {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
