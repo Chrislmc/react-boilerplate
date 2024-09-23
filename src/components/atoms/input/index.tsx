@@ -1,15 +1,25 @@
-import { Icons } from "@/assets/icons";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { ChangeEvent, Dispatch, SetStateAction, useRef, useState } from "react";
+import {
+    ChangeEvent,
+    Dispatch,
+    ReactElement,
+    SetStateAction,
+    useRef,
+    useState,
+} from "react";
 import "./_input.scss";
 
 export interface IInputProps {
+    prefixIcon?: ReactElement;
+    suffixIcon?: ReactElement;
     placeholder: string;
     value?: string;
     setValue?: Dispatch<SetStateAction<string>>;
 }
 
 export const Input: React.FC<IInputProps> = ({
+    prefixIcon,
+    suffixIcon,
     placeholder,
     value,
     setValue,
@@ -32,9 +42,14 @@ export const Input: React.FC<IInputProps> = ({
 
     return (
         <div className="input-component">
-            <div className="search-btn" onClick={() => onSearchIconClick()}>
-                <img className="search-icon" src={Icons.Search} />
-            </div>
+            {prefixIcon && (
+                <div
+                    className="input-icon prefix-icon"
+                    onClick={() => onSearchIconClick()}
+                >
+                    {prefixIcon}
+                </div>
+            )}
 
             <input
                 ref={inputRef}
@@ -43,6 +58,15 @@ export const Input: React.FC<IInputProps> = ({
                 onChange={onInputChange}
                 className={`${value?.length ? " mod__with-value" : ""}`}
             />
+
+            {suffixIcon && (
+                <div
+                    className="input-icon suffix-icon"
+                    onClick={() => onSearchIconClick()}
+                >
+                    {suffixIcon}
+                </div>
+            )}
         </div>
     );
 };
