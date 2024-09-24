@@ -4,28 +4,184 @@ import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { CheckBox, IOption } from "../../atoms/checkBox";
 import "./_select.scss";
 
-export interface ISelectProps<T> {
+type ISelectProps<T> = {
+    multiSelect: boolean;
+    placeholder?: string;
     options: IOption<T>[];
-    defaultOption: IOption<T>;
-    allOption: IOption<T>;
-    selectedOption: IOption<T>[];
-    setSelectedOption: Dispatch<SetStateAction<IOption<T>[]>>;
-    setInTransition?: Dispatch<SetStateAction<boolean>>;
-}
+    allOption?: IOption<T>;
+};
 
 export const Select = <T extends string>({
+    multiSelect = false,
     options,
-    defaultOption,
+    placeholder,
     allOption,
-    selectedOption,
-    setSelectedOption,
-    setInTransition,
 }: ISelectProps<T>) => {
+    const [value, setValue] = useState<IOption<T> | IOption<T>[] | null>(
+        multiSelect ? [] : null
+    );
+    const [displayText, setDisplayText] = useState<string>(
+        placeholder || options[0].text || "Select..."
+    );
+
+    if (!multiSelect) {
+        return (
+            <SingleSelect
+                setDisplayText={setDisplayText}
+                setValue={
+                    setValue as Dispatch<SetStateAction<IOption<T> | null>>
+                }
+                options={options}
+                value={value as IOption<T> | null}
+                displayText={displayText}
+            />
+        );
+    } else {
+        return (
+            <MultiSelect
+                setDisplayText={setDisplayText}
+                setValue={setValue as Dispatch<SetStateAction<IOption<T>[]>>}
+                options={options}
+                value={value as IOption<T>[]}
+                displayText={displayText}
+                allOption={allOption}
+            />
+        );
+    }
+};
+
+interface ISingleSelectProps<T>
+    extends Omit<IBaseSelectProps<T>, "onOptionItemClick"> {
+    setDisplayText: Dispatch<SetStateAction<string>>;
+    setValue: Dispatch<SetStateAction<IOption<T> | null>>;
+}
+
+const SingleSelect = <T extends string>({
+    setValue: setSelectedOption,
+    setDisplayText,
+    ...props
+}: ISingleSelectProps<T>) => {
+    const updateDisplayText = (filteredOption: null | IOption<T>) => {
+        const selectedValues = filteredOption ? filteredOption.text : "";
+
+        setDisplayText(selectedValues);
+    };
+
+    const onOptionItemClick = (
+        targetOption: IOption<T>,
+        isSelected: boolean
+    ) => {
+        // if (setInTransition) setInTransition(true);
+
+        const filteredOption = isSelected ? null : targetOption;
+
+        updateDisplayText(filteredOption);
+        setSelectedOption(filteredOption);
+
+        // setTimeout(() => {
+        //     if (setInTransition) setInTransition(false);
+        // }, 500);
+    };
+
+    return <BaseSelect {...props} onOptionItemClick={onOptionItemClick} />;
+};
+
+interface IMultiSelectProps<T>
+    extends Omit<IBaseSelectProps<T>, "value" | "onOptionItemClick"> {
+    allOption?: IOption<T>;
+    setDisplayText: Dispatch<SetStateAction<string>>;
+    value: IOption<T>[];
+    setValue: Dispatch<SetStateAction<IOption<T>[]>>;
+}
+
+const MultiSelect = <T extends string>({
+    value: selectedOption,
+    setValue: setSelectedOption,
+    setDisplayText,
+    options,
+    allOption,
+    ...props
+}: IMultiSelectProps<T>) => {
+    const updateDisplayText = (filteredOption: null | IOption<T>[]) => {
+        if (!filteredOption?.length) {
+            setDisplayText(options[0]?.text || "Select...");
+        }
+
+        const selectedValues = (filteredOption as IOption<T>[])
+            .map((option) => option.text)
+            .join(", ");
+
+        setDisplayText(selectedValues);
+    };
+
+    const onOptionItemClick = (
+        targetOption: IOption<T>,
+        isSelected: boolean
+    ) => {
+        // if (setInTransition) setInTransition(true);
+
+        let filteredOption: IOption<T>[] = selectedOption;
+
+        if (isSelected) {
+            filteredOption = [
+                ...(selectedOption as IOption<T>[]).filter(
+                    (option) => option.value !== targetOption.value
+                ),
+            ];
+
+            if (!filteredOption?.length && allOption) {
+                filteredOption.push(allOption);
+            }
+        } else {
+            if (targetOption === allOption) {
+                filteredOption = [targetOption];
+            } else {
+                filteredOption = options.filter(
+                    (option) =>
+                        !!(selectedOption as IOption<T>[]).find(
+                            (sOption) =>
+                                sOption.value === option.value &&
+                                sOption.value !== allOption?.value
+                        ) || option.value === targetOption.value
+                );
+            }
+        }
+
+        updateDisplayText(filteredOption);
+        setSelectedOption(filteredOption);
+
+        // setTimeout(() => {
+        //     if (setInTransition) setInTransition(false);
+        // }, 500);
+    };
+
+    return (
+        <BaseSelect
+            {...props}
+            onOptionItemClick={onOptionItemClick}
+            value={selectedOption}
+            options={options}
+        />
+    );
+};
+
+interface IBaseSelectProps<T> {
+    displayText: string;
+    options: IOption<T>[];
+    value: null | IOption<T> | IOption<T>[];
+    onOptionItemClick: (targetOption: IOption<T>, isSelected: boolean) => void;
+}
+
+const BaseSelect = <T extends string>({
+    displayText,
+    options,
+    value: selectedOption,
+    onOptionItemClick,
+}: IBaseSelectProps<T>) => {
     const t = i18nHelper("shared");
 
     const selectComponentRef = useRef<HTMLDivElement>(null);
     const [isExpanded, setIsExpanded] = useState(false);
-    const [displayText, setDisplayText] = useState(defaultOption.text);
 
     useEffect(() => {
         if (selectComponentRef?.current) {
@@ -40,20 +196,9 @@ export const Select = <T extends string>({
             });
         }
     }, []);
+
     const parseClassName = (className: string) => {
         return [className, isExpanded ? ["mod__is-expanded"] : []].join(" ");
-    };
-
-    const updateDisplayText = (filteredOption: IOption<T>[]) => {
-        if (!filteredOption?.length) {
-            setDisplayText(defaultOption.text);
-        }
-
-        const selectedValues = filteredOption
-            .map((option) => option.text)
-            .join(", ");
-
-        setDisplayText(selectedValues);
     };
 
     const onClickDisplayContainer = () => {
@@ -63,56 +208,17 @@ export const Select = <T extends string>({
         setIsExpanded(!isExpanded);
     };
 
-    const onDropdownItemBtnClick = (
-        targetOption: IOption<T>,
-        isSelected: boolean
-    ) => {
-        if (setInTransition) setInTransition(true);
-
-        let filteredOption = selectedOption;
-
-        if (isSelected) {
-            filteredOption = [
-                ...selectedOption.filter(
-                    (option) => option.value !== targetOption.value
-                ),
-            ];
-
-            if (!filteredOption?.length) {
-                filteredOption.push(allOption);
-            }
-        } else {
-            if (targetOption === allOption) {
-                filteredOption = [targetOption];
-            } else {
-                filteredOption = options.filter(
-                    (option) =>
-                        !!selectedOption.find(
-                            (selectedOption) =>
-                                selectedOption.value === option.value &&
-                                selectedOption.value !== allOption?.value
-                        ) || option.value === targetOption.value
-                );
-            }
-        }
-
-        updateDisplayText(filteredOption);
-        setSelectedOption(filteredOption);
-
-        setTimeout(() => {
-            if (setInTransition) setInTransition(false);
-        }, 500);
-    };
-
     return (
         <div className="select-component" ref={selectComponentRef}>
             <div className={parseClassName(`dropdown-list-container`)}>
                 <div className={`dropdown-list`}>
-                    {options.map((option) => {
+                    {options?.map((option) => {
                         const isSelected =
-                            selectedOption
-                                .map((item) => item.value)
-                                .indexOf(option.value) > -1;
+                            selectedOption && "value" in selectedOption
+                                ? selectedOption?.value === option.value
+                                : (selectedOption as IOption<T>[])
+                                      ?.map((item) => item.value)
+                                      .indexOf(option.value) > -1;
 
                         return (
                             <div
@@ -122,7 +228,7 @@ export const Select = <T extends string>({
                                 <CheckBox
                                     option={option}
                                     isSelected={isSelected}
-                                    onClick={onDropdownItemBtnClick}
+                                    onClick={onOptionItemClick}
                                 />
                             </div>
                         );

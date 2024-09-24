@@ -1,3 +1,4 @@
+import { sharedIconsOptions } from "@/assets/icons/shared";
 import { Images } from "@/assets/images";
 import { BaseCard } from "@/components/atoms/baseCard";
 import { BoldText } from "@/components/atoms/boldText";
@@ -12,6 +13,7 @@ import { Accordion } from "@/components/molecules/accordion";
 import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import { CardWithImageContent } from "@/components/molecules/cardWithImageContent";
 import { GradientBanner } from "@/components/molecules/gradientBanner";
+import { Select } from "@/components/molecules/select";
 import { VideoPlayer } from "@/components/molecules/videoPlayer";
 import { FC } from "react";
 import { CheckBoxSample } from "./checkBoxSample";
@@ -20,13 +22,14 @@ import { SelectSample } from "./selectSample";
 import { SliderSample } from "./sliderSample";
 import { SwiperSample } from "./swiperSample";
 
-type IControlType = "input";
+type IControlType = "input" | "select";
 
 export const mapControlTypeToComponent: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [key in IControlType]: any;
 } = {
     input: Input,
+    select: Select,
 };
 
 export type IComponent = {
@@ -107,8 +110,12 @@ export const componentsHierarchy: IComponent[] = [
                 controls: [
                     {
                         id: "prefixIcon",
-                        type: "input",
+                        type: "select",
                         initialValue: undefined,
+                        props: {
+                            options: sharedIconsOptions,
+                            multiSelect: false,
+                        },
                     },
                     {
                         id: "suffixIcon",

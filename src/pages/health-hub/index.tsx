@@ -4,7 +4,7 @@ import { Input } from "@/components/atoms/input";
 import { Tab } from "@/components/atoms/tab";
 import { DescSection } from "@/components/descSection";
 import { ContainerX } from "@/components/layout/containerX";
-import { Select } from "@/components/molecules/select";
+import { OldSelect } from "@/components/molecules/select";
 import { Section } from "@/components/section";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { IArticle } from "@/utils/types/article";
@@ -70,14 +70,14 @@ export const HealthHubPage = () => {
                                 />
 
                                 <div className="control-container">
-                                    <Select<IHealthNeedsType>
+                                    <OldSelect<IHealthNeedsType>
                                         options={translatedFilterOption}
                                         defaultOption={
                                             translatedFilterOption[0]
                                         }
                                         allOption={translatedFilterOption[0]}
-                                        selectedOption={selectedOption}
-                                        setSelectedOption={setSelectedOption}
+                                        value={selectedOption}
+                                        setValue={setSelectedOption}
                                         setInTransition={setInTransition}
                                     />
                                     <Input

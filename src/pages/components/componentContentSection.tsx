@@ -32,7 +32,7 @@ export const ComponentContentSection: React.FC<Props> = ({ component }) => {
     const inputProps = Object.fromEntries(
         Object.entries(controlState).map(([key, value]) => [key, value?.value])
     );
-
+    console.log("inputProps", inputProps);
     const DisplayComponent = component?.component;
 
     return (
@@ -45,6 +45,12 @@ export const ComponentContentSection: React.FC<Props> = ({ component }) => {
                 </div>
             )}
 
+            {component?.oldComponent && (
+                <div className="component-container">
+                    {component.oldComponent}
+                </div>
+            )}
+
             {component?.controls?.length && (
                 <div className="controls-container">
                     <Label text="Controls" />
@@ -52,26 +58,36 @@ export const ComponentContentSection: React.FC<Props> = ({ component }) => {
                         {component?.controls.map((control) => {
                             const MappedComponent =
                                 mapControlTypeToComponent[control.type];
-
+                            console.log(
+                                "control props",
+                                controlState[control.id]
+                            );
                             return (
                                 <div
                                     key={control.id}
                                     className="control-input-container"
                                 >
                                     <Label type="input" text={control.id} />
-                                    <MappedComponent
-                                        {...controlState[control.id]}
-                                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                                        setValue={(e: any) =>
-                                            setControlState({
-                                                ...controlState,
-                                                [control.id]: {
-                                                    ...controlState[control.id],
-                                                    value: e,
-                                                },
-                                            })
-                                        }
-                                    />
+                                    {controlState[control.id] !== undefined && (
+                                        <MappedComponent
+                                            {...controlState[control.id]}
+                                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                                            setValue={(e: any) =>
+                                                setControlState({
+                                                    ...controlState,
+                                                    [control.id]: {
+                                                        ...controlState[
+                                                            control.id
+                                                        ],
+                                                        value:
+                                                            "value" in e
+                                                                ? e.value
+                                                                : e,
+                                                    },
+                                                })
+                                            }
+                                        />
+                                    )}
                                 </div>
                             );
                         })}
