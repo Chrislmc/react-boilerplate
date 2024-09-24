@@ -1,4 +1,3 @@
-import { SearchIconComponent } from "@/assets/icons/shared/search.component";
 import { Images } from "@/assets/images";
 import { BaseCard } from "@/components/atoms/baseCard";
 import { BoldText } from "@/components/atoms/boldText";
@@ -14,17 +13,36 @@ import { Breadcrumb } from "@/components/molecules/breadcrumb";
 import { CardWithImageContent } from "@/components/molecules/cardWithImageContent";
 import { GradientBanner } from "@/components/molecules/gradientBanner";
 import { VideoPlayer } from "@/components/molecules/videoPlayer";
-import { CheckBoxSample } from "./CheckBoxSample";
-import { SegmentSample } from "./SegmentSample";
-import { SelectSample } from "./SelectSample";
-import { SliderSample } from "./SliderSample";
-import { SwiperSample } from "./SwiperSample";
+import { FC } from "react";
+import { CheckBoxSample } from "./checkBoxSample";
+import { SegmentSample } from "./segmentSample";
+import { SelectSample } from "./selectSample";
+import { SliderSample } from "./sliderSample";
+import { SwiperSample } from "./swiperSample";
+
+type IControlType = "input";
+
+export const mapControlTypeToComponent: {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    [key in IControlType]: any;
+} = {
+    input: Input,
+};
 
 export type IComponent = {
     id: string;
     text: string;
-    component?: JSX.Element;
+    oldComponent?: JSX.Element;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    component?: FC<any>;
     children?: IComponent[];
+    controls?: {
+        id: string;
+        type: IControlType;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        initialValue: any;
+        props?: object;
+    }[];
 };
 
 export const componentsHierarchy: IComponent[] = [
@@ -35,7 +53,7 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "baseCard",
                 text: "Base Card",
-                component: (
+                oldComponent: (
                     <div className="component-wrapper">
                         <BoldText
                             boldText={"Sample Base Card with border and shadow"}
@@ -60,12 +78,12 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "boldText",
                 text: "Bold Text",
-                component: <BoldText boldText={"Sample Bold Text"} />,
+                oldComponent: <BoldText boldText={"Sample Bold Text"} />,
             },
             {
                 id: "button",
                 text: "Button",
-                component: (
+                oldComponent: (
                     <div className="component-wrapper">
                         <Button text={"Sample Button"} />
                         <Button
@@ -80,28 +98,45 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "checkBox",
                 text: "Check Box",
-                component: <CheckBoxSample />,
+                oldComponent: <CheckBoxSample />,
             },
             {
                 id: "input",
                 text: "Input",
-                component: (
-                    <Input
-                        placeholder={"Enter..."}
-                        prefixIcon={<SearchIconComponent />}
-                        suffixIcon={<SearchIconComponent />}
-                    />
-                ),
+                component: Input,
+                controls: [
+                    {
+                        id: "prefixIcon",
+                        type: "input",
+                        initialValue: undefined,
+                    },
+                    {
+                        id: "suffixIcon",
+                        type: "input",
+                        initialValue: undefined,
+                    },
+                    {
+                        id: "placeholder",
+                        type: "input",
+                        initialValue: "",
+                        props: {
+                            placeholder: "Enter placeholder...",
+                            outline: true,
+                        },
+                    },
+                ],
             },
             {
                 id: "linkText",
                 text: "Link Text",
-                component: <LinkText linkText={"Sample Link Text"} href={""} />,
+                oldComponent: (
+                    <LinkText linkText={"Sample Link Text"} href={""} />
+                ),
             },
             {
                 id: "numberInput",
                 text: "Number Input",
-                component: (
+                oldComponent: (
                     <div className="component-wrapper">
                         <NumberInput />
                     </div>
@@ -110,12 +145,14 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "sectionHeader",
                 text: "Section Header",
-                component: <SectionHeader header={"Sample Section Header"} />,
+                oldComponent: (
+                    <SectionHeader header={"Sample Section Header"} />
+                ),
             },
             {
                 id: "tab",
                 text: "Tab",
-                component: (
+                oldComponent: (
                     <Tab
                         options={[
                             { text: "Tab1", value: "tab1" },
@@ -128,7 +165,7 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "text",
                 text: "Text",
-                component: <Text desc="Sample Text" />,
+                oldComponent: <Text desc="Sample Text" />,
             },
         ],
     },
@@ -139,7 +176,7 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "accordion",
                 text: "Accordion",
-                component: (
+                oldComponent: (
                     <div style={{ width: "31.25rem" }}>
                         <Accordion
                             content={[
@@ -165,7 +202,7 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "breadcrumb",
                 text: "Breadcrumb",
-                component: (
+                oldComponent: (
                     <div style={{ height: "2.417rem", width: "100%" }}>
                         <Breadcrumb customRouteDesc={"Components display"} />
                     </div>
@@ -174,7 +211,7 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "cardWithImageContent",
                 text: "Card With Image Content",
-                component: (
+                oldComponent: (
                     <div
                         className="component-wrapper"
                         style={{ width: "25rem" }}
@@ -192,7 +229,7 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "gradientBanner",
                 text: "Gradient Banner",
-                component: (
+                oldComponent: (
                     <div style={{ height: "25rem" }}>
                         <GradientBanner
                             imgUrl={Images.SampleImage2}
@@ -216,23 +253,23 @@ export const componentsHierarchy: IComponent[] = [
             {
                 id: "segment",
                 text: "Segment",
-                component: <SegmentSample />,
+                oldComponent: <SegmentSample />,
             },
             {
                 id: "select",
                 text: "Select",
-                component: <SelectSample />,
+                oldComponent: <SelectSample />,
             },
-            { id: "slider", text: "Slider", component: <SliderSample /> },
+            { id: "slider", text: "Slider", oldComponent: <SliderSample /> },
             {
                 id: "swiper",
                 text: "Swiper",
-                component: <SwiperSample />,
+                oldComponent: <SwiperSample />,
             },
             {
                 id: "videoPlayer",
                 text: "Video Player",
-                component: (
+                oldComponent: (
                     <VideoPlayer
                         url={"https://www.youtube.com/watch?v=g-TTsdsPJqs"}
                     />

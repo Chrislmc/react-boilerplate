@@ -10,6 +10,7 @@ import {
 import "./_input.scss";
 
 export interface IInputProps {
+    outline?: boolean;
     prefixIcon?: ReactElement;
     suffixIcon?: ReactElement;
     placeholder: string;
@@ -18,6 +19,7 @@ export interface IInputProps {
 }
 
 export const Input: React.FC<IInputProps> = ({
+    outline,
     prefixIcon,
     suffixIcon,
     placeholder,
@@ -41,7 +43,7 @@ export const Input: React.FC<IInputProps> = ({
     };
 
     return (
-        <div className="input-component">
+        <div className={`input-component ${outline ? "mod__outline" : ""}`}>
             {prefixIcon && (
                 <div
                     className="input-icon prefix-icon"

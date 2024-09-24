@@ -1,0 +1,24 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.label-component {
+    text-align: left;
+
+    &.section-label {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+        letter-spacing: 0.075rem;
+        font-family: $font-primary;
+        color: $secondary-600;
+    }
+
+    &.input-label {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.075rem;
+        // font-family: $font-secondary;
+        color: $primary-100;
+    }
+}

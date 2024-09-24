@@ -1,8 +1,8 @@
-import { SectionLabel } from "@/components/atoms/sectionLabel";
 import { DescSection } from "@/components/descSection";
 import { Section } from "@/components/section";
 import { useEffect, useState } from "react";
 import "./_components-page.scss";
+import { ComponentContentSection } from "./componentContentSection";
 import { componentsHierarchy, IComponent } from "./componentsPageConstant";
 
 export const ComponentsPage = () => {
@@ -84,19 +84,9 @@ export const ComponentsPage = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div className="content-section">
-                                <SectionLabel
-                                    text={
-                                        activeComponent?.text ||
-                                        "Select a component to try"
-                                    }
-                                />
-                                {activeComponent && (
-                                    <div className="component-container">
-                                        {activeComponent?.component}
-                                    </div>
-                                )}
-                            </div>
+                            <ComponentContentSection
+                                component={activeComponent}
+                            />
                         </div>
                     }
                 />
