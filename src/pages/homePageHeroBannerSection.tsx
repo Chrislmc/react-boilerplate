@@ -42,7 +42,7 @@ export const HomePageHeroBannerSection = () => {
 
                     <h2 className="header-desc">Fullstack Developer</h2>
 
-                    <Button text={"Contact Me"} />
+                    <Button text={"Contact Me"} type="outline-rectangle" />
                 </div>
 
                 <div className="image-container">

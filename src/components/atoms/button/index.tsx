@@ -1,6 +1,11 @@
 import "./_button.scss";
 
-export type IButtonType = "solid" | "outline" | "round" | "text";
+export type IButtonType =
+    | "solid"
+    | "outline"
+    | "round"
+    | "text"
+    | "outline-rectangle";
 export type IButtonSize = "normal" | "padding";
 
 export interface IButtonProps {

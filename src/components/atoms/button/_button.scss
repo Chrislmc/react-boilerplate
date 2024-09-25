@@ -55,6 +55,14 @@
         height: unset;
         width: unset;
     }
+
+    &.type-outline-rectangle {
+        border-radius: 0.625rem;
+        height: unset;
+        width: unset;
+        border: 0.25rem solid $secondary;
+        padding: 1.25rem;
+    }
 }
 
 .btn-desc {
@@ -114,5 +122,12 @@
     &.type-text {
         text-decoration: underline;
         color: $blueish-green-700;
+    }
+
+    &.type-outline-rectangle {
+        color: $secondary;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: $font-secondary;
     }
 }
