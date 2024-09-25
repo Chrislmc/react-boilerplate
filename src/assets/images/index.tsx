@@ -1,6 +1,7 @@
 import { componentsImages } from "./components";
 import { homePageImages } from "./home-page";
 import ImiLogo from "./imi logo.png";
+import { oldHomePageImages } from "./old-home-page";
 import { othersImages } from "./others";
 import { practitionersImages } from "./practitioners";
 import ImiProduct1_2 from "./product1-2.png";
@@ -18,10 +19,11 @@ export const Images = {
     ImiProduct2,
     ImiProduct3,
     ImiProduct4,
-    ...homePageImages,
+    ...oldHomePageImages,
     ...practitionersImages,
     ...shopPageImages,
     ...servicesImages,
     ...othersImages,
     ...componentsImages,
+    ...homePageImages,
 };

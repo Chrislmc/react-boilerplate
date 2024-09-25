@@ -1,9 +1,11 @@
 import { Icons } from "@/assets/icons";
 import { SearchIconComponent } from "@/assets/icons/shared/search.component";
+import { Images } from "@/assets/images";
 import { Button } from "@/components/atoms/button";
 import { Input } from "@/components/atoms/input";
 import { ContainerX } from "@/components/layout/containerX";
 import "./_home-page.scss";
+import { contactMethods } from "./homePageConstant";
 
 export const HomePageHeroBannerSection = () => {
     return (
@@ -41,6 +43,21 @@ export const HomePageHeroBannerSection = () => {
                     <h2 className="header-desc">Fullstack Developer</h2>
 
                     <Button text={"Contact Me"} />
+                </div>
+
+                <div className="image-container">
+                    <img src={Images.Portrait1} />
+                </div>
+
+                <div className="contacts-container">
+                    {contactMethods.map((method) => {
+                        const Icon = method.icon;
+                        return (
+                            <a href={method.redirectUrl} target="_blank">
+                                <Icon />
+                            </a>
+                        );
+                    })}
                 </div>
             </div>
         </ContainerX>
