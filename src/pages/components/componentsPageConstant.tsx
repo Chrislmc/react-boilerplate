@@ -115,12 +115,18 @@ export const componentsHierarchy: IComponent[] = [
                         props: {
                             options: sharedIconsOptions,
                             multiSelect: false,
+                            placeholder: "Select prefix icon: ",
                         },
                     },
                     {
                         id: "suffixIcon",
-                        type: "input",
+                        type: "select",
                         initialValue: undefined,
+                        props: {
+                            options: sharedIconsOptions,
+                            multiSelect: false,
+                            placeholder: "Select suffix icon: ",
+                        },
                     },
                     {
                         id: "placeholder",

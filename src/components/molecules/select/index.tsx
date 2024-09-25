@@ -1,5 +1,4 @@
 import { Icons } from "@/assets/icons";
-import { i18nHelper } from "@/utils/i18n-helper";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { CheckBox, IOption } from "../../atoms/checkBox";
 import "./_select.scss";
@@ -7,15 +6,19 @@ import "./_select.scss";
 type ISelectProps<T> = {
     multiSelect: boolean;
     placeholder?: string;
+    prefixDisplayText?: string;
     options: IOption<T>[];
     allOption?: IOption<T>;
+    onChange?: (value: IOption<T>[] | IOption<T> | null) => void;
 };
 
 export const Select = <T extends string>({
     multiSelect = false,
     options,
     placeholder,
+    prefixDisplayText,
     allOption,
+    onChange,
 }: ISelectProps<T>) => {
     const [value, setValue] = useState<IOption<T> | IOption<T>[] | null>(
         multiSelect ? [] : null
@@ -34,6 +37,9 @@ export const Select = <T extends string>({
                 options={options}
                 value={value as IOption<T> | null}
                 displayText={displayText}
+                onChange={onChange}
+                placeholder={placeholder}
+                prefixDisplayText={prefixDisplayText}
             />
         );
     } else {
@@ -45,6 +51,9 @@ export const Select = <T extends string>({
                 value={value as IOption<T>[]}
                 displayText={displayText}
                 allOption={allOption}
+                onChange={onChange}
+                placeholder={placeholder}
+                prefixDisplayText={prefixDisplayText}
             />
         );
     }
@@ -54,15 +63,27 @@ interface ISingleSelectProps<T>
     extends Omit<IBaseSelectProps<T>, "onOptionItemClick"> {
     setDisplayText: Dispatch<SetStateAction<string>>;
     setValue: Dispatch<SetStateAction<IOption<T> | null>>;
+    onChange?: (value: IOption<T> | null) => void;
+    placeholder?: string;
 }
 
 const SingleSelect = <T extends string>({
     setValue: setSelectedOption,
     setDisplayText,
+    onChange,
+    placeholder,
     ...props
 }: ISingleSelectProps<T>) => {
     const updateDisplayText = (filteredOption: null | IOption<T>) => {
-        const selectedValues = filteredOption ? filteredOption.text : "";
+        const selectedValues = filteredOption
+            ? filteredOption.text
+            : placeholder || "";
+        console.log(
+            "filteredOption",
+            placeholder,
+            filteredOption,
+            selectedValues
+        );
 
         setDisplayText(selectedValues);
     };
@@ -78,6 +99,8 @@ const SingleSelect = <T extends string>({
         updateDisplayText(filteredOption);
         setSelectedOption(filteredOption);
 
+        if (onChange) onChange(filteredOption);
+
         // setTimeout(() => {
         //     if (setInTransition) setInTransition(false);
         // }, 500);
@@ -92,6 +115,8 @@ interface IMultiSelectProps<T>
     setDisplayText: Dispatch<SetStateAction<string>>;
     value: IOption<T>[];
     setValue: Dispatch<SetStateAction<IOption<T>[]>>;
+    onChange?: (value: IOption<T>[]) => void;
+    placeholder?: string;
 }
 
 const MultiSelect = <T extends string>({
@@ -100,11 +125,13 @@ const MultiSelect = <T extends string>({
     setDisplayText,
     options,
     allOption,
+    onChange,
+    placeholder,
     ...props
 }: IMultiSelectProps<T>) => {
     const updateDisplayText = (filteredOption: null | IOption<T>[]) => {
         if (!filteredOption?.length) {
-            setDisplayText(options[0]?.text || "Select...");
+            setDisplayText(placeholder || options[0]?.text || "Select...");
         }
 
         const selectedValues = (filteredOption as IOption<T>[])
@@ -150,6 +177,8 @@ const MultiSelect = <T extends string>({
         updateDisplayText(filteredOption);
         setSelectedOption(filteredOption);
 
+        if (onChange) onChange(filteredOption);
+
         // setTimeout(() => {
         //     if (setInTransition) setInTransition(false);
         // }, 500);
@@ -170,6 +199,7 @@ interface IBaseSelectProps<T> {
     options: IOption<T>[];
     value: null | IOption<T> | IOption<T>[];
     onOptionItemClick: (targetOption: IOption<T>, isSelected: boolean) => void;
+    prefixDisplayText?: string;
 }
 
 const BaseSelect = <T extends string>({
@@ -177,9 +207,8 @@ const BaseSelect = <T extends string>({
     options,
     value: selectedOption,
     onOptionItemClick,
+    prefixDisplayText,
 }: IBaseSelectProps<T>) => {
-    const t = i18nHelper("shared");
-
     const selectComponentRef = useRef<HTMLDivElement>(null);
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -245,7 +274,7 @@ const BaseSelect = <T extends string>({
                 </div>
 
                 <p className="display-text">
-                    {t("filter.filterBy")}
+                    {prefixDisplayText}
                     <strong>{displayText}</strong>
                 </p>
 

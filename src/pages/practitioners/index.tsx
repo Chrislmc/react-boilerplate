@@ -2,7 +2,6 @@ import { IOption } from "@/components/atoms/checkBox";
 import { Input } from "@/components/atoms/input";
 import { DescSection } from "@/components/descSection";
 import { ContainerX } from "@/components/layout/containerX";
-import { OldSelect } from "@/components/molecules/select";
 import { Section } from "@/components/section";
 import { i18nHelper } from "@/utils/i18n-helper";
 import { useState } from "react";
@@ -58,16 +57,13 @@ export const PractitionersPage = () => {
                         <ContainerX>
                             <div className="content-container">
                                 <div className="control-container">
-                                    <OldSelect<IPractitionerType>
+                                    {/* <Select<IPractitionerType>
                                         options={translatedFilterOption}
-                                        defaultOption={
-                                            translatedFilterOption[0]
-                                        }
                                         allOption={translatedFilterOption[0]}
                                         value={selectedOption}
                                         setValue={setSelectedOption}
                                         setInTransition={setInTransition}
-                                    />
+                                    /> */}
                                     <Input
                                         placeholder={"input.searchByName"}
                                         value={searchString}

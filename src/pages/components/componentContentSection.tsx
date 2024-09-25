@@ -58,10 +58,23 @@ export const ComponentContentSection: React.FC<Props> = ({ component }) => {
                         {component?.controls.map((control) => {
                             const MappedComponent =
                                 mapControlTypeToComponent[control.type];
-                            console.log(
-                                "control props",
-                                controlState[control.id]
-                            );
+
+                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                            const onChange = (e: any) => {
+                                setControlState({
+                                    ...controlState,
+                                    [control.id]: {
+                                        ...controlState[control.id],
+                                        value:
+                                            e &&
+                                            typeof e === "object" &&
+                                            "value" in e
+                                                ? e.value
+                                                : e,
+                                    },
+                                });
+                            };
+
                             return (
                                 <div
                                     key={control.id}
@@ -71,21 +84,7 @@ export const ComponentContentSection: React.FC<Props> = ({ component }) => {
                                     {controlState[control.id] !== undefined && (
                                         <MappedComponent
                                             {...controlState[control.id]}
-                                            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                                            setValue={(e: any) =>
-                                                setControlState({
-                                                    ...controlState,
-                                                    [control.id]: {
-                                                        ...controlState[
-                                                            control.id
-                                                        ],
-                                                        value:
-                                                            "value" in e
-                                                                ? e.value
-                                                                : e,
-                                                    },
-                                                })
-                                            }
+                                            onChange={onChange}
                                         />
                                     )}
                                 </div>

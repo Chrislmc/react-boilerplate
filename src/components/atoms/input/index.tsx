@@ -1,12 +1,5 @@
 import { i18nHelper } from "@/utils/i18n-helper";
-import {
-    ChangeEvent,
-    Dispatch,
-    ReactElement,
-    SetStateAction,
-    useRef,
-    useState,
-} from "react";
+import { ChangeEvent, ReactElement, useRef, useState } from "react";
 import "./_input.scss";
 
 export interface IInputProps {
@@ -15,7 +8,7 @@ export interface IInputProps {
     suffixIcon?: ReactElement;
     placeholder: string;
     value?: string;
-    setValue?: Dispatch<SetStateAction<string>>;
+    onChange?: (value: string) => void;
 }
 
 export const Input: React.FC<IInputProps> = ({
@@ -24,7 +17,7 @@ export const Input: React.FC<IInputProps> = ({
     suffixIcon,
     placeholder,
     value,
-    setValue,
+    onChange,
 }) => {
     const [inputValue, setInputValue] = useState(value || "");
     const t = i18nHelper("shared");
@@ -39,7 +32,7 @@ export const Input: React.FC<IInputProps> = ({
     const onInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         setInputValue(e.target.value);
 
-        if (setValue) setValue(e.target.value);
+        if (onChange) onChange(e.target.value);
     };
 
     return (

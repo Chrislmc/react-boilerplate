@@ -23,8 +23,8 @@ export const SearchIconComponent: React.FC<IBaseSharedIconProps> = ({
                     transform="translate(0 0)"
                     fill={primaryColor}
                     stroke="#FEC86A"
-                    stroke-linecap="round"
-                    stroke-width="0.25"
+                    strokeLinecap="round"
+                    strokeWidth="0.25"
                 />
             </g>
             <rect
