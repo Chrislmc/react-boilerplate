@@ -4,6 +4,7 @@
 #home-page {
     .home-page-hero-banner-section {
         background-color: $primary;
+        box-shadow: 0 0 3.75rem $dark;
 
         .container-x {
             width: 100%;
@@ -96,6 +97,7 @@
             right: 10em;
             height: 90%;
             width: 50rem;
+            overflow: hidden;
 
             img {
                 height: 100%;
@@ -133,4 +135,115 @@
             }
         }
     }
+
+    .home-page-about-section {
+        background-color: $primary-700;
+
+        .container-x {
+            width: 100%;
+        }
+
+        .about-me-container {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2.5rem;
+
+            .desc-container {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+
+                &::before {
+                    content: '';
+                    width: 12.5rem;
+                    border: 0.125rem solid $secondary-700;
+                    margin-top: calc(1rem - 0.0625rem);
+                    margin-right: 1.25rem;
+                }
+
+                .desc {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    color: $white-400;
+                    font-weight: 400;
+                    font-family: $font-secondary;
+                    text-align: left;
+                }
+            }
+        }
+
+        .my-skills-container {
+            .tab-component {
+                margin-top: 1.875rem;
+            }
+
+            .skill-content-container {
+                margin-top: 1.25rem;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.875rem;
+                opacity: 1;
+                transition: all 0.5s ease-out;
+    
+                &.mod__in-transition {
+                    opacity: 0;
+                }
+
+                .skill-container {
+                    position: relative;
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    background-color: $primary-300;
+                    border-radius: 1.25rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2.5rem;
+
+                    &:hover {
+                        background-color: $secondary-600;
+                    }
+
+                    .skill-logo-container {
+                        width: 40%;
+                        aspect-ratio: 1/1;
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .desc {
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        color: $white-400;
+                        font-weight: 400;
+                        font-family: $font-secondary;
+                        text-align: left;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .subsection {
+        padding: 2.5rem 0;
+
+        .header {
+            font-size: 4rem;
+            color: $white-400;
+            display: inline;
+            font-family: $font-tertiary;
+            font-weight: 700;
+        }
+    }
+
 }

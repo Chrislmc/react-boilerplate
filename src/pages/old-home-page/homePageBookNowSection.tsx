@@ -4,7 +4,7 @@ import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";
 
 export const HomePageBookNowSection = () => {
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
 
     return (
         <DescSection

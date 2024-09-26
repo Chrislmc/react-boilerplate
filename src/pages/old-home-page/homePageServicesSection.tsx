@@ -5,7 +5,7 @@ import { i18nHelper } from "@/utils/i18n-helper";
 import { homePageServicesCardList } from "./homePageConstant";
 
 export const HomePageServicesSection = () => {
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
 
     return (
         <ContainerX>

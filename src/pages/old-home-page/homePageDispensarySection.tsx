@@ -8,7 +8,7 @@ import "./_home-page.scss";
 import { homePageDispensaryCardList } from "./homePageConstant";
 
 export const HomePageDispensarySection = () => {
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
 
     return (
         <>

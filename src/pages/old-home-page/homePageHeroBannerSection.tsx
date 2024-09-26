@@ -10,7 +10,7 @@ import {
 } from "./homePageConstant";
 
 export const HomePageHeroBannerSection = () => {
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
     const navigator = useNavigate();
 
     return (

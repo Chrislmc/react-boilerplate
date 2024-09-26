@@ -13,7 +13,7 @@ import {
 
 export const HomePageHealthHubSection = () => {
     const healthHubCardContainer = useRef<HTMLDivElement>(null);
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
 
     const [activeTab, setActiveTab] = useState<IHomePageHealthHubTab>(
         homePageHealthHubTabItems[0].value
