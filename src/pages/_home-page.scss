@@ -3,8 +3,9 @@
 
 #home-page {
     .home-page-hero-banner-section {
+        z-index: 1;
         background-color: $primary;
-        box-shadow: 0 0 3.75rem $dark;
+        box-shadow: 0 0 2.5rem $shadow;
 
         .container-x {
             width: 100%;
@@ -82,11 +83,7 @@
                 }
 
                 .header-desc {
-                    color: $white-400;
-                    font-size: 2.5rem;
-                    font-weight: 400;
-                    font-family: $font-secondary;
-                    margin-bottom: 2.5rem;
+                    @include primary-desc;
                 }
             }
         }
@@ -175,12 +172,14 @@
         }
 
         .my-skills-container {
+            margin-top: 1.875rem;
+
             .tab-component {
                 margin-top: 1.875rem;
             }
 
             .skill-content-container {
-                margin-top: 1.25rem;
+                margin-top: 2.5rem;
                 width: 100%;
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -204,10 +203,6 @@
                     justify-content: center;
                     gap: 2.5rem;
 
-                    &:hover {
-                        background-color: $secondary-600;
-                    }
-
                     .skill-logo-container {
                         width: 40%;
                         aspect-ratio: 1/1;
@@ -229,6 +224,31 @@
                         text-align: left;
                         pointer-events: none;
                     }
+                }
+            }
+        }
+    }
+
+    .home-page-portfolio-section {
+        background-color: $primary-700;
+        padding: 5rem 0;
+
+        .container-x {
+            width: 100%;
+        }
+        
+        .portfolio-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: minmax(15rem, 25rem);
+            gap: 1.25rem;
+
+            .btn-component {
+                padding: 0.625rem 1.25rem;
+
+                .btn-desc {
+                    font-size: 1rem;
                 }
             }
         }

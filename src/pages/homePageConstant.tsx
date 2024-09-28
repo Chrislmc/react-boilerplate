@@ -1,6 +1,7 @@
 import { LinkedinIconComponent } from "@/assets/icons/shared/linkedin.component";
 import { MailIconComponent } from "@/assets/icons/shared/mail.component";
 import { Images } from "@/assets/images";
+import { IButtonProps } from "@/components/atoms/button";
 
 export const contactMethods = [
     {
@@ -107,3 +108,32 @@ export const mySkills = {
         { text: "about-me.my-skills.nx", imageUrl: Images.Nx },
     ],
 };
+
+export const portfolios: {
+    header: string;
+    descs: string[];
+    imageUrl: string[];
+    button?: IButtonProps;
+}[] = [
+    {
+        header: "about-me.portfolio.kids4kids.header",
+        descs: ["about-me.portfolio.kids4kids.desc"],
+        imageUrl: [Images.Kids4kids1, Images.Kids4kids2],
+        button: {
+            text: "about-me.portfolio.seeMore",
+        },
+    },
+    {
+        header: "about-me.portfolio.sunshine.header",
+        descs: ["about-me.portfolio.sunshine.desc"],
+        imageUrl: [Images.Sunshine1, Images.Sunshine2],
+        button: {
+            text: "about-me.portfolio.seeMore",
+        },
+    },
+    {
+        header: "about-me.portfolio.valuePartnerInvest.header",
+        descs: ["about-me.portfolio.valuePartnerInvest.desc"],
+        imageUrl: [Images.ValuePartnerInvest1, Images.ValuePartnerInvest2],
+    },
+];

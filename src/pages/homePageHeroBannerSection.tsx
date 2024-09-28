@@ -46,7 +46,7 @@ export const HomePageHeroBannerSection = () => {
                 </div>
 
                 <div className="image-container">
-                    <img src={Images.Portrait1} />
+                    <img src={Images.Portrait2} />
                 </div>
 
                 <div className="contacts-container">

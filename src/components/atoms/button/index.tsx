@@ -5,6 +5,7 @@ export type IButtonType =
     | "outline"
     | "round"
     | "text"
+    | "rectangle"
     | "outline-rectangle";
 export type IButtonSize = "normal" | "padding";
 

@@ -1,0 +1,114 @@
+@import '@/scss/abstracts';
+@import '@/scss/base';
+
+.card-with-hover-effect-component {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+
+    > div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-container {
+        overflow: hidden;
+        transition: opacity 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-300;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &.prior-img {
+            opacity: 1;
+        }
+
+        &.after-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+    }
+
+    .content-container-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        background-color: $primary-300;
+    }
+
+    .content-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+
+        .content-column {
+            height: 80%;
+            padding: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        
+            .header {
+                @include primary-desc;
+                margin-bottom: 1rem;
+            }
+
+            .desc-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.625rem;
+                
+                .desc {
+                    text-align: center;
+                    color: $white-400;
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    font-weight: 400;
+                    font-family: $font-secondary;
+                }
+            }
+
+            .btn-component {
+                margin-top: 1.25rem;
+            }
+        }
+    }
+
+    &:hover {
+        .img-container {
+            &.after-img {
+                opacity: 0;
+            }
+
+            &.after-img {
+                opacity: 1;
+            }
+        }
+
+        .content-container, {
+            opacity: 1;
+        }
+
+        .content-container-background {
+            opacity: 0.7;
+        }
+    }
+}

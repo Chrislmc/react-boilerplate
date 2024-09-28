@@ -47,6 +47,22 @@
             "netlify": "Netlify",
             "git": "Git",
             "nx": "Nx"
+        },
+        "portfolio": {
+            "header": "Portfolio",
+            "seeMore": "See More",
+            "kids4kids": {
+                "header": "Kids4Kids",
+                "desc": "React website for NGO which makes positive impacts to the youth community"
+            },
+            "sunshine": {
+                "header": "Tricor Sunshine",
+                "desc": "ERP application written in C#"
+            },
+            "valuePartnerInvest": {
+                "header": "Value Partners Invest",
+                "desc": "React Native app for fund trading"
+            }
         }
     }
 }
