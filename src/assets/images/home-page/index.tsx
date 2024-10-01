@@ -17,6 +17,7 @@ import Javascript from "./javascript.png";
 import Jest from "./jest.png";
 import Kids4kids1 from "./kids4kids-1.png";
 import Kids4kids2 from "./kids4kids-2.png";
+import Kubernetes from "./kubernetes.png";
 import MaterialUi from "./material-ui.png";
 import Mysql from "./mysql.png";
 import Netlify from "./netlify.png";
@@ -59,6 +60,7 @@ export const homePageImages = {
     Jest,
     Kids4kids1,
     Kids4kids2,
+    Kubernetes,
     MaterialUi,
     Mysql,
     Netlify,

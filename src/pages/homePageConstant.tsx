@@ -96,6 +96,7 @@ export const mySkills = {
     ],
     [IMySkillsTab.OTHER_TOOLS]: [
         { text: "about-me.my-skills.docker", imageUrl: Images.Docker },
+        { text: "about-me.my-skills.kubernetes", imageUrl: Images.Kubernetes },
         { text: "about-me.my-skills.aws", imageUrl: Images.Aws },
         { text: "about-me.my-skills.azure", imageUrl: Images.Azure },
         { text: "about-me.my-skills.cloudflare", imageUrl: Images.Cloudflare },

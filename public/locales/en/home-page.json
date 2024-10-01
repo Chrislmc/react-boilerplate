@@ -40,6 +40,7 @@
             "jest": "Jest",
             "cypress": "Cypress",
             "docker": "Docker",
+            "kubernetes": "Kubernetes",
             "aws": "Amazon Web Service",
             "azure": "Azure",
             "cloudflare": "Cloudflare",
