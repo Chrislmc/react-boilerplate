@@ -1,7 +1,9 @@
 import { Button, IButtonProps } from "@/components/atoms/button";
 import "./_card-with-hover-effect.scss";
+import classNames from "classnames";
 
 interface Props {
+    className?: string;
     priorImgUrl: string;
     afterImgUrl?: string;
     header?: string;
@@ -10,6 +12,7 @@ interface Props {
 }
 
 export const CardWithHoverEffect: React.FC<Props> = ({
+    className,
     priorImgUrl,
     afterImgUrl,
     header,
@@ -17,7 +20,12 @@ export const CardWithHoverEffect: React.FC<Props> = ({
     button,
 }) => {
     return (
-        <div className="card-with-hover-effect-component">
+        <div
+            className={classNames(
+                `card-with-hover-effect-component`,
+                className
+            )}
+        >
             <div className="img-container prior-img">
                 <img src={priorImgUrl} />
             </div>

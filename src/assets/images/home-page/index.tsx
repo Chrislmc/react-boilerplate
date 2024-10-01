@@ -12,7 +12,11 @@ import Drupal from "./drupal.png";
 import Firebase from "./firebase.png";
 import Git from "./git.png";
 import Graphql from "./graphql.png";
+import Hkgc1 from "./hkgc-1.png";
+import Hkgc2 from "./hkgc-2.png";
 import Html from "./html.png";
+import Imi1 from "./imi-1.png";
+import Imi2 from "./imi-2.png";
 import Javascript from "./javascript.png";
 import Jest from "./jest.png";
 import Kids4kids1 from "./kids4kids-1.png";
@@ -33,6 +37,8 @@ import React from "./react.png";
 import ReduxSaga from "./redux-saga.png";
 import ReduxThunk from "./redux-thunk.png";
 import Sass from "./sass.png";
+import SelfHosting1 from "./self-hosting-1.png";
+import SelfHosting2 from "./self-hosting-2.png";
 import Sunshine1 from "./sunshine-1.png";
 import Sunshine2 from "./sunshine-2.png";
 import Tailwind from "./tailwind.png";
@@ -55,7 +61,11 @@ export const homePageImages = {
     Firebase,
     Git,
     Graphql,
+    Hkgc1,
+    Hkgc2,
     Html,
+    Imi1,
+    Imi2,
     Javascript,
     Jest,
     Kids4kids1,
@@ -76,6 +86,8 @@ export const homePageImages = {
     ReduxSaga,
     ReduxThunk,
     Sass,
+    SelfHosting1,
+    SelfHosting2,
     Sunshine1,
     Sunshine2,
     Typescript,

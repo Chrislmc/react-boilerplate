@@ -111,12 +111,14 @@ export const mySkills = {
 };
 
 export const portfolios: {
+    id: string;
     header: string;
     descs: string[];
     imageUrl: string[];
     button?: IButtonProps;
 }[] = [
     {
+        id: "kids4kids",
         header: "about-me.portfolio.kids4kids.header",
         descs: ["about-me.portfolio.kids4kids.desc"],
         imageUrl: [Images.Kids4kids1, Images.Kids4kids2],
@@ -125,6 +127,7 @@ export const portfolios: {
         },
     },
     {
+        id: "sunshine",
         header: "about-me.portfolio.sunshine.header",
         descs: ["about-me.portfolio.sunshine.desc"],
         imageUrl: [Images.Sunshine1, Images.Sunshine2],
@@ -133,8 +136,27 @@ export const portfolios: {
         },
     },
     {
+        id: "valuePartnerInvest",
         header: "about-me.portfolio.valuePartnerInvest.header",
         descs: ["about-me.portfolio.valuePartnerInvest.desc"],
         imageUrl: [Images.ValuePartnerInvest1, Images.ValuePartnerInvest2],
+    },
+    {
+        id: "imi",
+        header: "about-me.portfolio.imi.header",
+        descs: ["about-me.portfolio.imi.desc"],
+        imageUrl: [Images.Imi1, Images.Imi2],
+    },
+    {
+        id: "systemDesign",
+        header: "about-me.portfolio.systemDesign.header",
+        descs: ["about-me.portfolio.systemDesign.desc"],
+        imageUrl: [Images.Hkgc1, Images.Hkgc2],
+    },
+    {
+        id: "selfHosting",
+        header: "about-me.portfolio.selfHosting.header",
+        descs: ["about-me.portfolio.selfHosting.desc"],
+        imageUrl: [Images.SelfHosting1, Images.SelfHosting2],
     },
 ];

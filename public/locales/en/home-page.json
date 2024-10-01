@@ -63,6 +63,18 @@
             "valuePartnerInvest": {
                 "header": "Value Partners Invest",
                 "desc": "React Native app for fund trading"
+            },
+            "imi": {
+                "header": "IMI",
+                "desc": "Maintain and enhance an E-commerce site under Drupal framework"
+            },
+            "systemDesign": {
+                "header": "System Design",
+                "desc": "Designed a system architecture and built a POC for a real time booking system, featuring Kubernetes"
+            },
+            "selfHosting": {
+                "header": "Self hosting (including this website)",
+                "desc": "Self hosting a cluster of services with only a raspberry pi (yeah raspberry pi is awesome!)"
             }
         }
     }

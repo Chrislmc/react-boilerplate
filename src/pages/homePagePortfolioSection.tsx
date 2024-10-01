@@ -14,6 +14,8 @@ export const HomePagePortfolioSection = () => {
             <div className="portfolio-grid">
                 {portfolios.map((portfolio) => (
                     <CardWithHoverEffect
+                        key={portfolio.id}
+                        className={portfolio.id}
                         priorImgUrl={portfolio.imageUrl[0]}
                         afterImgUrl={portfolio.imageUrl[1]}
                         header={t(portfolio.header)}
