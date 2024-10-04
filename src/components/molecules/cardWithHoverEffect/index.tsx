@@ -1,6 +1,6 @@
 import { Button, IButtonProps } from "@/components/atoms/button";
-import "./_card-with-hover-effect.scss";
 import classNames from "classnames";
+import "./_card-with-hover-effect.scss";
 
 interface Props {
     className?: string;

@@ -77,5 +77,11 @@
                 "desc": "Self hosting a cluster of services with only a raspberry pi (yeah raspberry pi is awesome!)"
             }
         }
+    },
+    "contact-me": {
+        "header": "Contact Me",
+        "mail": "chrislmc25@gmail.com",
+        "phone": "+852 5115 4090",
+        "location": "Hong Kong"
     }
 }

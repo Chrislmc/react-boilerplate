@@ -261,11 +261,103 @@
         }
     }
 
+    .home-page-contact-me-section {
+        background-color: $primary-300;
+        position: relative;
+
+        .header-container {
+            position: absolute;
+            top: -2.5rem;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .decorator {
+                flex: 1;
+                height: 0;
+                width: 100%;
+                border: 0.125rem solid $secondary-700;
+                margin-top: 2.375rem;
+            }
+
+            .header {
+                margin: 0 2.5rem;
+            }
+        }
+
+        .contact-methods {
+            margin: 2.5rem auto 2.5rem auto;
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.875rem 1.25rem;
+
+            .contact-container {
+                width: max(20%, 25rem);
+                height: 5rem;
+                background-color: $primary-700;
+                border-radius: 1.25rem;
+
+                &:hover:not(.disabled) {
+                    background-color: $primary;
+
+                    .desc {
+                        color: $secondary-700;
+                    }
+                }
+
+                &.disabled {
+                    .contact-btn {
+                        pointer-events: none;
+                    }
+                }
+                
+                .contact-btn {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 1.875rem;
+                    padding: 0 1.875rem;
+                    
+                    .icon-container {
+                        width: 2rem;
+                        height: 2rem;
+                        overflow: hidden;
+        
+                        svg {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+    
+                    .desc {
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        color: $secondary-600;
+                        font-weight: 400;
+                        font-family: $font-secondary;
+                        text-align: left;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+
     .subsection {
         padding: 2.5rem 0;
+        width: 100%;
 
         .header {
             font-size: 4rem;
+            line-height: 4rem;
             color: $white-400;
             display: inline;
             font-family: $font-tertiary;

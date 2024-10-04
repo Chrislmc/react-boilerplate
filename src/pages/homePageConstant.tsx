@@ -1,5 +1,7 @@
 import { LinkedinIconComponent } from "@/assets/icons/shared/linkedin.component";
+import { LocationIconComponent } from "@/assets/icons/shared/location.component";
 import { MailIconComponent } from "@/assets/icons/shared/mail.component";
+import { PhoneIconComponent } from "@/assets/icons/shared/phone.component";
 import { Images } from "@/assets/images";
 import { IButtonProps } from "@/components/atoms/button";
 
@@ -158,5 +160,25 @@ export const portfolios: {
         header: "about-me.portfolio.selfHosting.header",
         descs: ["about-me.portfolio.selfHosting.desc"],
         imageUrl: [Images.SelfHosting1, Images.SelfHosting2],
+    },
+];
+
+export const contactMe = [
+    {
+        id: "mail",
+        icon: MailIconComponent,
+        text: "contact-me.mail",
+        redirectUrl: "mailto:chrislmc25@gmail.com",
+    },
+    {
+        id: "phone",
+        icon: PhoneIconComponent,
+        text: "contact-me.phone",
+        redirectUrl: "tel:85266055503",
+    },
+    {
+        id: "location",
+        icon: LocationIconComponent,
+        text: "contact-me.location",
     },
 ];
