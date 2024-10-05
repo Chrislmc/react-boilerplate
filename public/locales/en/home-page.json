@@ -1,4 +1,8 @@
 {
+    "hero-banner": {
+        "about": "About",
+        "portfolio": "Portfolio"
+    },
     "about-me": {
         "header": "About",
         "desc": "I am an experienced developer who is enthusiastic in building interesting, beautiful, and user friendly web applications. Over the years, not only web application but I have had experience also in mobile app and server architecture. Within an organization, I am a friendly, trustworthy and effective communicator. I am looking forward to join a challenging but rewarding team to help achieving its goal.",
@@ -83,5 +87,8 @@
         "mail": "chrislmc25@gmail.com",
         "phone": "+852 5115 4090",
         "location": "Hong Kong"
+    },
+    "footer": {
+        "thank-you": "Thanks for scrolling!"
     }
 }

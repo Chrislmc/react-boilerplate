@@ -10,25 +10,25 @@ export const HomePagePortfolioSection = () => {
         <ContainerX>
             <div className="subsection portfolio-container">
                 <h2 className="header">{t("about-me.portfolio.header")}</h2>
-            </div>
-            <div className="portfolio-grid">
-                {portfolios.map((portfolio) => (
-                    <CardWithHoverEffect
-                        key={portfolio.id}
-                        className={portfolio.id}
-                        priorImgUrl={portfolio.imageUrl[0]}
-                        afterImgUrl={portfolio.imageUrl[1]}
-                        header={t(portfolio.header)}
-                        descs={portfolio.descs.map((desc) => t(desc))}
-                        button={
-                            portfolio?.button && {
-                                ...portfolio.button,
-                                text: t(portfolio.button.text),
-                                type: "rectangle",
+                <div className="portfolio-grid">
+                    {portfolios.map((portfolio) => (
+                        <CardWithHoverEffect
+                            key={portfolio.id}
+                            className={portfolio.id}
+                            priorImgUrl={portfolio.imageUrl[0]}
+                            afterImgUrl={portfolio.imageUrl[1]}
+                            header={t(portfolio.header)}
+                            descs={portfolio.descs.map((desc) => t(desc))}
+                            button={
+                                portfolio?.button && {
+                                    ...portfolio.button,
+                                    text: t(portfolio.button.text),
+                                    type: "rectangle",
+                                }
                             }
-                        }
-                    />
-                ))}
+                        />
+                    ))}
+                </div>
             </div>
         </ContainerX>
     );

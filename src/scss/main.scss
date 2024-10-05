@@ -6,6 +6,7 @@
 @import 'base';
 
 html {
+    scroll-behavior: smooth;
     font-size: 16px;
 
     @include media(desktop, medium-screen) {

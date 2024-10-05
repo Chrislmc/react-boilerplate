@@ -4,10 +4,13 @@ import { Images } from "@/assets/images";
 import { Button } from "@/components/atoms/button";
 import { Input } from "@/components/atoms/input";
 import { ContainerX } from "@/components/layout/containerX";
+import { i18nHelper } from "@/utils/i18n-helper";
 import "./_home-page.scss";
 import { contactMethods } from "./homePageConstant";
 
 export const HomePageHeroBannerSection = () => {
+    const t = i18nHelper("home-page");
+
     return (
         <ContainerX>
             <div className="header-row">
@@ -16,15 +19,20 @@ export const HomePageHeroBannerSection = () => {
                 </div>
 
                 <div className="header-btn-row">
-                    <button key="about" className="header-btn">
-                        About
-                    </button>
-                    <button key="portfolio" className="header-btn">
-                        Portfolio
-                    </button>
-                    <button key="context" className="header-btn">
-                        Context
-                    </button>
+                    <a
+                        key="about"
+                        className="header-btn"
+                        href="#home-page-about-section"
+                    >
+                        {t("hero-banner.about")}
+                    </a>
+                    <a
+                        key="portfolio"
+                        className="header-btn"
+                        href="#home-page-portfolio-section"
+                    >
+                        {t("hero-banner.portfolio")}
+                    </a>
                 </div>
 
                 <div className="search-input-container">

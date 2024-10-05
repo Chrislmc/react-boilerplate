@@ -40,7 +40,7 @@ export const CardWithHoverEffect: React.FC<Props> = ({
 
             <div className="content-container">
                 <div className="content-column">
-                    {header && <p className="header">{header}</p>}
+                    {header && <p className="card-header">{header}</p>}
                     {descs && (
                         <div className="desc-list">
                             {descs.map((desc) => (
