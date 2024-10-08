@@ -91,7 +91,7 @@
         .image-container {
             position: absolute;
             bottom: 0;
-            right: 10em;
+            right: 10rem;
             height: 90%;
             width: 50rem;
             overflow: hidden;
@@ -135,10 +135,6 @@
 
     .home-page-about-section {
         background-color: $primary-700;
-
-        .container-x {
-            width: 100%;
-        }
 
         .about-me-container {
             display: flex;
@@ -229,10 +225,6 @@
     .home-page-portfolio-section {
         background-color: $primary-700;
 
-        .container-x {
-            width: 100%;
-        }
-        
         .portfolio-grid {
             margin-top: 2.5rem;
             width: 100%;

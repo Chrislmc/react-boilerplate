@@ -1,21 +1,21 @@
 @import '@/scss/main';
 
 .container-x {
-    overflow: auto hidden;
-    max-width: min(100rem, 100vw - 3.75rem - 3.75rem);
+    overflow: hidden;
+    max-width: min(100rem, 100% - 3.75rem - 3.75rem);
     margin: 0 auto;
     padding: 0 3.75rem;
     text-align: center;
     height: 100%;
 
     &.mod__right-only {
-        max-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
+        max-width: min(100rem + (100% - 100rem) / 2, 100% - 3.75rem);
         margin: 0 auto 0 0;
         padding: 0 3.75rem 0 0;
     }
 
     &.mod__left-only {
-        max-width: min(100rem + (100vw - 100rem) / 2, 100vw - 3.75rem);
+        max-width: min(100rem + (100% - 100rem) / 2, 100% - 3.75rem);
         margin: 0 0 0 auto;
         padding: 0 0 0 3.75rem;
     }
