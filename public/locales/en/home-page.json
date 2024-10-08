@@ -82,6 +82,27 @@
             }
         }
     },
+    "experience": {
+        "header": "Experience",
+        "step1": {
+            "title": "Started as a business student",
+            "description": "Back in 2013, after finishing the public exam, I was lucky enough to get enrolled into the University of Hong Kong. Being a student majoring in BBA Account & Finance, I learnt a lot about the business world.",
+            "tagline": "BBA, Accounting and Finance - The University of Hong Kong",
+            "linkText": "Learn more"
+        },
+        "step2": {
+            "title": "Graduate job",
+            "description": "Immediately after graduating from the university, I joined Credit Suisse as a back office client analyst. I was able to experience how it is like to work in a huge corporation and how to adapt to working team culture",
+            "tagline": "Client Analyst - Credit Suisse",
+            "linkText": "Learn more"
+        },
+        "step3": {
+            "title": "How my life started to relate with tech",
+            "description": "Principal is a great and successful company which specialize in asset management with a significant mpf market share. But since the software system was relatively old, my job requires quite a lot of excel work, and I heard something called VBA, I tried to make my work life a bit better by self learning VBA. It resulted in half of my daily work automated with just a few buttons in my control panel. I also shared it with my colleagues so that they can enjoy the success.",
+            "tagline": "Assistant Officer - Principal Trust Company (Asia)",
+            "linkText": "Learn more"
+        }
+    },
     "contact-me": {
         "header": "Contact Me",
         "mail": "chrislmc25@gmail.com",

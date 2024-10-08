@@ -1,7 +1,7 @@
 @import '@/scss/main';
 
 .container-x {
-    overflow: auto;
+    overflow: auto hidden;
     max-width: min(100rem, 100vw - 3.75rem - 3.75rem);
     margin: 0 auto;
     padding: 0 3.75rem;

@@ -182,3 +182,27 @@ export const contactMe = [
         text: "contact-me.location",
     },
 ];
+
+export const timelineData = [
+    {
+        title: "experience.step1.title",
+        description: "experience.step1.description",
+        tagline: "experience.step1.tagline",
+        link: "https://ug.hkubs.hku.hk/",
+        buttonText: "experience.step1.linkText",
+    },
+    {
+        title: "experience.step2.title",
+        description: "experience.step2.description",
+        tagline: "experience.step2.tagline",
+        link: "https://www.credit-suisse.com/",
+        buttonText: "experience.step2.linkText",
+    },
+    {
+        title: "experience.step3.title",
+        description: "experience.step3.description",
+        tagline: "experience.step3.tagline",
+        link: "https://www.principal.com.hk/",
+        buttonText: "experience.step3.linkText",
+    },
+];

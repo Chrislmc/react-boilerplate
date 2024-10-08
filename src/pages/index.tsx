@@ -1,6 +1,8 @@
 import { Section } from "@/components/section";
+import "./_home-page.scss";
 import { HomePageAboutSection } from "./homePageAboutSection";
 import { HomePageContactMeSection } from "./homePageContactSection";
+import { HomePageExperienceSection } from "./homePageExperienceSection";
 import { HomePageFooterSection } from "./homePageFooterSection";
 import { HomePageHeroBannerSection } from "./homePageHeroBannerSection";
 import { HomePagePortfolioSection } from "./homePagePortfolioSection";
@@ -22,6 +24,9 @@ export const HomePage = () => {
                 className="home-page-portfolio-section"
             >
                 <HomePagePortfolioSection />
+            </Section>
+            <Section className="home-page-experience-section">
+                <HomePageExperienceSection />
             </Section>
             <Section className="home-page-contact-me-section">
                 <HomePageContactMeSection />

@@ -1704,6 +1704,11 @@ react-dom@^18.3.1:
     loose-envify "^1.1.0"
     scheduler "^0.23.2"
 
+react-elegant-timeline@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-elegant-timeline/-/react-elegant-timeline-1.0.5.tgz#8d187f60f1ac00fa9487953741205fb09358b4c0"
+  integrity sha512-lMtcSolCyiQE/wyg1F+7mAMvkDq7uR1h2a5xo7S0Faf5In6FVh8VEnX5tyaKdKK71kzBJ9kwpjZiNbI+Py6Lvg==
+
 react-fast-compare@^3.0.1, react-fast-compare@^3.1.1:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"

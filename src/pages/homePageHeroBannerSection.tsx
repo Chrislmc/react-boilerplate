@@ -5,7 +5,6 @@ import { Button } from "@/components/atoms/button";
 import { Input } from "@/components/atoms/input";
 import { ContainerX } from "@/components/layout/containerX";
 import { i18nHelper } from "@/utils/i18n-helper";
-import "./_home-page.scss";
 import { contactMethods } from "./homePageConstant";
 
 export const HomePageHeroBannerSection = () => {
