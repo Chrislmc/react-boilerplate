@@ -209,6 +209,7 @@ export const timelineData = [
         title: "experience.step4.title",
         description: "experience.step4.description",
         tagline: "experience.step4.tagline",
+        showButton: false,
     },
     {
         title: "experience.step5.title",
