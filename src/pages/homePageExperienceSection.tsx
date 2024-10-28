@@ -12,7 +12,7 @@ export const HomePageExperienceSection = () => {
         title: t(data.title),
         description: t(data.description),
         tagline: t(data.tagline),
-        buttonText: t(data.buttonText),
+        ...(data?.buttonText && { buttonText: t(data.buttonText) }),
     }));
 
     return (

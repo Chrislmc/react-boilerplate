@@ -205,4 +205,23 @@ export const timelineData = [
         link: "https://www.principal.com.hk/",
         buttonText: "experience.step3.linkText",
     },
+    {
+        title: "experience.step4.title",
+        description: "experience.step4.description",
+        tagline: "experience.step4.tagline",
+    },
+    {
+        title: "experience.step5.title",
+        description: "experience.step5.description",
+        tagline: "experience.step5.tagline",
+        link: "https://www.valuepartners-group.com/",
+        buttonText: "experience.step5.linkText",
+    },
+    {
+        title: "experience.step6.title",
+        description: "experience.step6.description",
+        tagline: "experience.step6.tagline",
+        link: "https://www.appit.com.hk/",
+        buttonText: "experience.step6.linkText",
+    },
 ];

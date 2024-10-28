@@ -32,6 +32,13 @@ export const HomePageHeroBannerSection = () => {
                     >
                         {t("hero-banner.portfolio")}
                     </a>
+                    <a
+                        key="experience"
+                        className="header-btn"
+                        href="#home-page-experience-section"
+                    >
+                        {t("hero-banner.experience")}
+                    </a>
                 </div>
 
                 <div className="search-input-container">

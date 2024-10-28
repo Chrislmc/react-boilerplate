@@ -25,7 +25,10 @@ export const HomePage = () => {
             >
                 <HomePagePortfolioSection />
             </Section>
-            <Section className="home-page-experience-section">
+            <Section
+                id="home-page-experience-section"
+                className="home-page-experience-section"
+            >
                 <HomePageExperienceSection />
             </Section>
             <Section className="home-page-contact-me-section">

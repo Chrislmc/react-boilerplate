@@ -1,7 +1,8 @@
 {
     "hero-banner": {
         "about": "About",
-        "portfolio": "Portfolio"
+        "portfolio": "Portfolio",
+        "experience": "Experience"
     },
     "about-me": {
         "header": "About",
@@ -86,7 +87,7 @@
         "header": "Experience",
         "step1": {
             "title": "Started as a business student",
-            "description": "Back in 2013, after finishing the public exam, I was lucky enough to get enrolled into the University of Hong Kong. Being a student majoring in BBA Account & Finance, I learnt a lot about the business world.",
+            "description": "Back in 2013, after the public exam, I was lucky enough to get enrolled into the University of Hong Kong. Being a student majoring in BBA Account & Finance, I learnt a lot about the business world.",
             "tagline": "BBA, Accounting and Finance - The University of Hong Kong",
             "linkText": "Learn more"
         },
@@ -100,6 +101,23 @@
             "title": "How my life started to relate with tech",
             "description": "Principal is a great and successful company which specialize in asset management with a significant mpf market share. But since the software system was relatively old, my job requires quite a lot of excel work, and I heard something called VBA, I tried to make my work life a bit better by self learning VBA. It resulted in half of my daily work automated with just a few buttons in my control panel. I also shared it with my colleagues so that they can enjoy the success.",
             "tagline": "Assistant Officer - Principal Trust Company (Asia)",
+            "linkText": "Learn more"
+        },
+        "step4": {
+            "title": "The bold move",
+            "description": "During the time in Principal, I started to think this was not the life that I fond of (doing the same daily work for the next 30 years). I pursue something more challenge, perhaps with a bit of problem solving. Therefore, I made a bold move by quitting my job and started learning how to code. It began with writing a simple website, to a POC of a mobile game, and an inventory management system in a couple of months. It was really hard, but eventually I managed to land my first job as a developer.",
+            "tagline": "Self learn programming"
+        },
+        "step5": {
+            "title": "First Programmer job",
+            "description": "I joined Value Partners as a founding member of their brand new fund trading app project, which aims to attract younger generation to participate in the fund trading market. It was a valuable experience as I was able to take part in the entire software development lifecycle.",
+            "tagline": "Full Stack Developer - Value Partners",
+            "linkText": "Learn more"
+        },
+        "step6": {
+            "title": "Improve as a developer",
+            "description": "The scale of my next company is relatively small, therefore I was able to try and use a lot of different new stuff. It broaden my horizons as I worked on many different projects, including historical websites, ERP applications etc.",
+            "tagline": "Senior Software Developer - App It",
             "linkText": "Learn more"
         }
     },
