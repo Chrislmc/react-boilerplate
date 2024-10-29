@@ -43,8 +43,10 @@ export const CardWithHoverEffect: React.FC<Props> = ({
                     {header && <p className="card-header">{header}</p>}
                     {descs && (
                         <div className="desc-list">
-                            {descs.map((desc) => (
-                                <p className="desc">{desc}</p>
+                            {descs.map((desc, i) => (
+                                <p key={`card-desc-${i}`} className="desc">
+                                    {desc}
+                                </p>
                             ))}
                         </div>
                     )}

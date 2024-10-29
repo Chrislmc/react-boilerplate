@@ -10,10 +10,14 @@ export const HomePageFooterSection = () => {
             <div className="header-container intercept-header">
                 <div className="decorator" />
                 <div className="content-container">
-                    {contactMethods.map((method) => {
+                    {contactMethods.map((method, i) => {
                         const Icon = method.icon;
                         return (
-                            <a href={method.redirectUrl} target="_blank">
+                            <a
+                                key={`contact-method-${i}`}
+                                href={method.redirectUrl}
+                                target="_blank"
+                            >
                                 <Icon />
                             </a>
                         );

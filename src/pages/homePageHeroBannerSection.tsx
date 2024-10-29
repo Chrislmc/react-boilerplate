@@ -14,7 +14,7 @@ export const HomePageHeroBannerSection = () => {
         <ContainerX>
             <div className="header-row">
                 <div className="icon-container">
-                    <img src={Icons.IconNoBackground} />
+                    <img src={Icons.IconNoBackground} onLoad={() => null} />
                 </div>
 
                 <div className="header-btn-row">
@@ -64,10 +64,14 @@ export const HomePageHeroBannerSection = () => {
                 </div>
 
                 <div className="contacts-container">
-                    {contactMethods.map((method) => {
+                    {contactMethods.map((method, i) => {
                         const Icon = method.icon;
                         return (
-                            <a href={method.redirectUrl} target="_blank">
+                            <a
+                                key={`contact-method-${i}`}
+                                href={method.redirectUrl}
+                                target="_blank"
+                            >
                                 <Icon />
                             </a>
                         );

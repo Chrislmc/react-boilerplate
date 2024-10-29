@@ -1,10 +1,12 @@
 import { Tab } from "@/components/atoms/tab";
 import { ContainerX } from "@/components/layout/containerX";
+import useViewport from "@/utils/hooks/useViewport";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { useRef, useState } from "react";
+import { RefObject, useRef, useState } from "react";
 import { IMySkillsTab, mySkills, skillTabOptions } from "./homePageConstant";
 
 export const HomePageAboutSection = () => {
+    const [isVisible, currentElement] = useViewport<HTMLDivElement>(-200);
     const skillContentContainer = useRef<HTMLDivElement>(null);
     const t = i18nHelper("home-page");
 
@@ -21,8 +23,10 @@ export const HomePageAboutSection = () => {
         }, 500);
     };
 
+    console.log("isVisible", isVisible);
+
     return (
-        <ContainerX>
+        <ContainerX ref={currentElement as RefObject<HTMLDivElement>}>
             <div className="subsection about-me-container">
                 <h2 className="header">{t("about-me.header")}</h2>
                 <div className="desc-container">
@@ -48,8 +52,8 @@ export const HomePageAboutSection = () => {
                     }`}
                     ref={skillContentContainer}
                 >
-                    {mySkills[activeTab].map((skill) => (
-                        <div className="skill-container">
+                    {mySkills[activeTab].map((skill, i) => (
+                        <div key={`skill-${i}`} className="skill-container">
                             {skill?.imageUrl && (
                                 <div className="skill-logo-container">
                                     <img src={skill.imageUrl} />
