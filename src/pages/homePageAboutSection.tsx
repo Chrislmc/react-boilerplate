@@ -1,4 +1,5 @@
 import { Tab } from "@/components/atoms/tab";
+import FadeIn from "@/components/fadeIn";
 import { ContainerX } from "@/components/layout/containerX";
 import useViewport from "@/utils/hooks/useViewport";
 import { i18nHelper } from "@/utils/i18n-helper";
@@ -28,11 +29,18 @@ export const HomePageAboutSection = () => {
     return (
         <ContainerX ref={currentElement as RefObject<HTMLDivElement>}>
             <div className="subsection about-me-container">
-                <h2 className="header">{t("about-me.header")}</h2>
-                <div className="desc-container">
-                    <p className="desc">{t("about-me.desc")}</p>
-                </div>
+                <FadeIn
+                    visible={isVisible}
+                    transitionDuration={800}
+                    delay={200}
+                >
+                    <h2 className="header">{t("about-me.header")}</h2>
+                    <div className="desc-container">
+                        <p className="desc">{t("about-me.desc")}</p>
+                    </div>
+                </FadeIn>
             </div>
+
             <div className="subsection my-skills-container">
                 <h2 className="header">{t("about-me.my-skills.header")}</h2>
                 <Tab<IMySkillsTab>
