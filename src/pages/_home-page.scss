@@ -104,10 +104,14 @@
             }
         }
 
-        .contacts-container {
+        .contacts-container-fade-in {
             position: absolute;
             bottom: 0.625rem;
             right: 0;
+            
+        }
+        
+        .contacts-container {
             display: flex;
             flex-direction: column;
             align-items: center;
