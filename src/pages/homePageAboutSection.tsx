@@ -24,8 +24,6 @@ export const HomePageAboutSection = () => {
         }, 500);
     };
 
-    console.log("isVisible", isVisible);
-
     return (
         <ContainerX ref={currentElement as RefObject<HTMLDivElement>}>
             <div className="subsection about-me-container">

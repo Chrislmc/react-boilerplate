@@ -6,13 +6,22 @@ import React, {
 } from "react";
 
 interface Props {
+    /*
+     * In Ms
+     */
     delay?: number;
+    /*
+     * In Ms
+     */
     transitionDuration?: number;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     wrapperTag?: JSXElementConstructor<any>;
-    childTag?: JSXElementConstructor<any>;
     className?: string;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    childTag?: JSXElementConstructor<any>;
     childClassName?: string;
     visible?: boolean;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     onComplete?: () => any;
     direction?: "up" | "down" | "left" | "right";
 }
