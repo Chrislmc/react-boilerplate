@@ -4,7 +4,6 @@ import { forwardRef } from "react";
 import { Outlet } from "react-router-dom";
 import "./_layout.scss";
 import { Content } from "./content/content";
-import { FloatingIcon } from "./floatingIcon";
 import { Footer } from "./footer/footer";
 import { Header } from "./header/header";
 import { Overlay } from "./overlay/overlay";
@@ -41,7 +40,7 @@ export const OldLayout = forwardRef<HTMLDivElement, LayoutProps>(function (
                 </Content>
 
                 <Overlay />
-                <FloatingIcon />
+                {/* <FloatingIcon /> */}
             </div>
         </OverlayProvider>
     );

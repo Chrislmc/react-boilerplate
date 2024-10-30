@@ -1,6 +1,100 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
 
+.loading-overlay {
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: $primary;
+
+    &.mod__show-loader {
+        visibility: visible;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        cursor: default;
+        font-size: 0.6vw;
+        letter-spacing: 0.5vw;
+        font-family: $font-secondary;
+        font-weight: 300;
+    }
+    
+    .wave {
+        position: relative;
+        margin-right: -20px;
+        -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    }
+    
+    .waveHidden {
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .wave span {
+        position: relative;
+        display: inline-block;
+        color: #565656;
+        font-size: 4em;
+        text-transform: uppercase;
+        animation: animate 1.5s ease-in-out infinite;
+        animation-delay: calc(0.1s * var(--c));
+    }
+    
+    @keyframes animate {
+        0%,
+        100% {
+        transform: translateY(0px);
+        }
+        20% {
+        transform: translateY(-20px);
+        }
+        40% {
+        transform: translateY(0px);
+        }
+    }
+    
+    /* 2xl */
+    @media (max-width: 1535px) {
+        .container {
+            font-size: 0.7vw;
+            letter-spacing: 0.6vw;
+        }
+    }
+    /* xl */
+    @media (max-width: 1279px) {
+    }
+    /* lg */
+    @media (max-width: 1023px) {
+        .container {
+        font-size: 1vw;
+        letter-spacing: 1vw;
+        }
+    }
+    /* md */
+    @media (max-width: 767px) {
+        .container {
+        font-size: 1.5vw;
+        letter-spacing: 1.5vw;
+        }
+    }
+    /* sm = 639px */
+    @media (max-width: 460px) {
+        .container {
+        font-size: 2vw;
+        letter-spacing: 2vw;
+        }
+    }
+}
+
 #home-page {
     .home-page-hero-banner-section {
         z-index: 1;
@@ -110,7 +204,7 @@
             right: 0;
             
         }
-        
+
         .contacts-container {
             display: flex;
             flex-direction: column;
