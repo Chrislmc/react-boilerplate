@@ -11,21 +11,21 @@ import { HomePagePortfolioSection } from "./homePagePortfolioSection";
 
 export const HomePage = () => {
     const [isImage1Loaded, setImage1Loaded] = useState(false);
-    const [finishedLoadingAll, setFinish] = useState(false);
+    const [finishLoading, setFinishLoading] = useState(false);
     const [showLoader, setShowLoader] = useState(true);
 
     useEffect(() => {
         setTimeout(() => {
             if (isImage1Loaded) {
-                setFinish(true);
+                setFinishLoading(true);
             }
-        }, 1300);
+        }, 1500);
 
         setTimeout(() => {
             if (isImage1Loaded) {
                 setShowLoader(false);
             }
-        }, 1500);
+        }, 2000);
     }, [isImage1Loaded]);
 
     return (
@@ -33,28 +33,28 @@ export const HomePage = () => {
             id="home-page"
             className={classNames(showLoader ? "mod__show-loader" : "")}
         >
-            <div
-                className={classNames(
-                    "loading-overlay",
-                    showLoader ? "mod__show-loader" : ""
-                )}
-            >
-                <div className={"container"}>
-                    <div
-                        className={`wave ${
-                            finishedLoadingAll ? "waveHidden" : ""
-                        }`}
-                    >
-                        {"Loading...".split("").map((letter, index) => {
-                            return (
-                                <span key={index} style={{ "--c": index }}>
-                                    {letter}
-                                </span>
-                            );
-                        })}
+            {showLoader && (
+                <div
+                    className={classNames(
+                        "loading-overlay",
+                        finishLoading ? "mod__end-loading" : ""
+                    )}
+                >
+                    <div className={"container"}>
+                        <div
+                            className={`wave ${showLoader ? "" : "waveHidden"}`}
+                        >
+                            {"Loading...".split("").map((letter, index) => {
+                                return (
+                                    <span key={index} style={{ "--c": index }}>
+                                        {letter}
+                                    </span>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
-            </div>
+            )}
             <Section className="home-page-hero-banner-section">
                 <HomePageHeroBannerSection setImageLoaded={setImage1Loaded} />
             </Section>

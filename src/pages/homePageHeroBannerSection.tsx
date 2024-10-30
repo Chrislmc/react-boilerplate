@@ -1,8 +1,6 @@
 import { Icons } from "@/assets/icons";
-import { SearchIconComponent } from "@/assets/icons/shared/search.component";
 import { Images } from "@/assets/images";
 import { Button } from "@/components/atoms/button";
-import { Input } from "@/components/atoms/input";
 import FadeIn from "@/components/fadeIn";
 import { ContainerX } from "@/components/layout/containerX";
 import useViewport from "@/utils/hooks/useViewport";
@@ -52,13 +50,6 @@ export const HomePageHeroBannerSection: React.FC<Props> = ({
                     >
                         {t("hero-banner.experience")}
                     </a>
-                </div>
-
-                <div className="search-input-container">
-                    <Input
-                        placeholder={"Search"}
-                        prefixIcon={<SearchIconComponent />}
-                    />
                 </div>
             </div>
             <div className="hero-banner-container">

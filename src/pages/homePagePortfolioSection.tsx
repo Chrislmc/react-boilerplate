@@ -12,7 +12,7 @@ export const HomePagePortfolioSection = () => {
 
     return (
         <ContainerX ref={currentElement as RefObject<HTMLDivElement>}>
-            <FadeIn visible={isVisible} transitionDuration={800} delay={200}>
+            <FadeIn visible={isVisible} transitionDuration={800} delay={0}>
                 <div className="subsection portfolio-container">
                     <h2 className="header">{t("about-me.portfolio.header")}</h2>
                     <div className="portfolio-grid">
