@@ -7,10 +7,16 @@ import FadeIn from "@/components/fadeIn";
 import { ContainerX } from "@/components/layout/containerX";
 import useViewport from "@/utils/hooks/useViewport";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { RefObject } from "react";
+import { Dispatch, RefObject, SetStateAction } from "react";
 import { contactMethods } from "./homePageConstant";
 
-export const HomePageHeroBannerSection = () => {
+interface Props {
+    setImageLoaded: Dispatch<SetStateAction<boolean>>;
+}
+
+export const HomePageHeroBannerSection: React.FC<Props> = ({
+    setImageLoaded,
+}) => {
     const [, currentElement] = useViewport<HTMLDivElement>(-200);
     const t = i18nHelper("home-page");
 
@@ -18,7 +24,10 @@ export const HomePageHeroBannerSection = () => {
         <ContainerX ref={currentElement as RefObject<HTMLDivElement>}>
             <div className="header-row">
                 <div className="icon-container">
-                    <img src={Icons.IconNoBackground} onLoad={() => null} />
+                    <img
+                        src={Icons.IconNoBackground}
+                        onLoad={() => setImageLoaded(true)}
+                    />
                 </div>
 
                 <div className="header-btn-row">

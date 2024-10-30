@@ -17,14 +17,22 @@ export const HomePage = () => {
     useEffect(() => {
         setTimeout(() => {
             if (isImage1Loaded) {
+                setFinish(true);
+            }
+        }, 1300);
+
+        setTimeout(() => {
+            if (isImage1Loaded) {
                 setShowLoader(false);
             }
         }, 1500);
     }, [isImage1Loaded]);
 
-    console.log("showLoader", showLoader);
     return (
-        <div id="home-page">
+        <div
+            id="home-page"
+            className={classNames(showLoader ? "mod__show-loader" : "")}
+        >
             <div
                 className={classNames(
                     "loading-overlay",

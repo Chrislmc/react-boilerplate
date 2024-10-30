@@ -2,17 +2,19 @@
 @import '@/scss/base';
 
 .loading-overlay {
-    height: 100vh;
-    width: 100vw;
-    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1001;
-    background-color: $primary;
+    background-color: $primary-100;
+    transition: opacity 0.8s ease-out;
+    overflow: hidden;
 
     &.mod__show-loader {
-        visibility: visible;
+        opacity: 1;
     }
 
     .container {
@@ -36,10 +38,13 @@
     
     .waveHidden {
         opacity: 0;
-        transition: all 0.5s;
+        transition: all 0.8s;
     }
     
     .wave span {
+        font-family: $font-primary;
+        font-weight: 700;
+        letter-spacing: 0.125rem;
         position: relative;
         display: inline-block;
         color: #565656;
@@ -96,6 +101,18 @@
 }
 
 #home-page {
+    &.mod__show-loader {
+        .home-page-hero-banner-section,
+        .home-page-about-section,
+        .home-page-portfolio-section,
+        .home-page-experience-section,
+        .home-page-contact-me-section,
+        .home-page-footer-section {
+            display: none;
+            height: 0;
+        }
+    }
+
     .home-page-hero-banner-section {
         z-index: 1;
         background-color: $primary;
