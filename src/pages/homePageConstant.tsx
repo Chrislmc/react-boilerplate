@@ -11,7 +11,7 @@ export const contactMethods = [
         icon: LinkedinIconComponent,
     },
     {
-        redirectUrl: "mailto:chrislmc25@gmail.com",
+        redirectUrl: "mailto:career@chris-lai.com",
         icon: MailIconComponent,
     },
 ];
@@ -168,7 +168,7 @@ export const contactMe = [
         id: "mail",
         icon: MailIconComponent,
         text: "contact-me.mail",
-        redirectUrl: "mailto:chrislmc25@gmail.com",
+        redirectUrl: "mailto:career@chris-lai.com",
     },
     {
         id: "phone",
