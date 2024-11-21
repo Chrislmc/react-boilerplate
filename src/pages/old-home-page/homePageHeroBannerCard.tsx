@@ -17,7 +17,7 @@ export const HomePageHeroBannerCard: React.FC<Props> = ({
     desc,
     button,
 }) => {
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
 
     return (
         <div className="home-page-hero-banner-card">

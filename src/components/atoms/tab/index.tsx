@@ -19,12 +19,12 @@ export const Tab = <T extends string>({
     const [tabState, setTabState] = useState(activeTab || options[0].value);
 
     const onTabItemClick = (value: T) => {
+        setTabState(value);
+
         if (onTabClick) {
             onTabClick(value);
             return;
         }
-
-        setTabState(value);
 
         if (setActiveTab) setActiveTab(value);
     };

@@ -1,0 +1,122 @@
+{
+    "hero-banner": {
+        "card1": {
+            "title": "Heal. Balance. Evolve.",
+            "desc": "Centering you and your family’s health, so you can get well and stay well.",
+            "linkText": "Find Out More"
+        },
+        "ribbon": {
+            "consultation": "Book\na consultation",
+            "labTests": "Schedule\n a lab test",
+            "shop": "Shop\nsupplements",
+            "dispensary": "Visit our\ndispensary"
+        },
+        "testimonial": {
+            "desc1": "Integrating centuries-old healing traditions with science and medical testing.",
+            "desc2": "IMI’s practitioners work with awareness that your health is connected to seven key factors. Mind, body, emotions, spirit, energy, community and environment.",
+            "desc3": "We’re led by science and nature. Find the root cause of your concern for sustained healing."
+        }
+    },
+    "services": {
+        "card1": {
+            "title": "Naturopathic & functional medicine",
+            "desc": "Treat the root cause of your concern with nutrition, homeopathy and world class supplements.",
+            "linkText": "Learn more"
+        },
+        "card2": {
+            "title": "Psychology, counselling & coaching",
+            "desc": "From diagnosis to support; our psychotherapists, counsellors and coaches are here for you.",
+            "linkText": "Learn more"
+        },
+        "card3": {
+            "title": "Bodywork & energy medicine",
+            "desc": "Osteopathy. Craniosacral therapy. Acupuncture. TCM. Nourish your physical and energetic body.",
+            "linkText": "Learn more"
+        },
+        "card4": {
+            "title": "Labs, IV & conventional medicine",
+            "desc": "Advice from our family GP, medical testing from allergies to digestion and IV therapy.",
+            "linkText": "Learn more"
+        }
+    },
+    "product": {
+        "header": "SCIENCE-LED SUPPLEMENTS",
+        "desc": "Clinical grade formulas, tried and trusted by doctors and clients worldwide.",
+        "gradientBanner1": {
+            "header": "STAYING HEALTHY",
+            "subheader": "DURING THE FLU SEASON",
+            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "linkText": "Shop now"
+        }
+    },
+    "dispensary": {
+        "header": "Visit us",
+        "desc": "Visit us to explore our products and services. Our dispensary carries Hong Kong’s largest range of practitioner-recommended supplements.",
+        "linkText": "Location and hours",
+        "card1": {
+            "title": "Meet our practitioners",
+            "desc": "Peace of mind comes as standard. Our practitioners’ treatments are properly regulated and follow a strict code of ethics.",
+            "linkText": "Meet us"
+        },
+        "card2": {
+            "title": "Your health, online",
+            "desc": "Better wellbeing, at the click of a button. No matter where you are in the world, you can always receive quality healthcare.",
+            "linkText": "Online consultations"
+        },
+        "card3": {
+            "title": "Corporate wellness",
+            "desc": "Interactive health talks and urban wellness retreats for business leaders and employees.",
+            "linkText": "Inspiring healthier businesses"
+        },
+        "card4": {
+            "title": "Our healing vision",
+            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+            "linkText": "Learn more"
+        }
+    },
+    "healthCondition": {
+        "header": "HEALTH CONDITIONS",
+        "desc": "We don’t just treat your symptoms. Through careful assessment and testing, we discover and treat the root cause of your health concern.",
+        "allergies": "Allergies",
+        "gutHealth": "Gut health",
+        "immunity": "Immunity",
+        "sleep": "Sleep",
+        "hormonalHealth": "Hormonal health",
+        "pain": "Pain",
+        "detoxAndWeightLoss": "Detox & weightloss",
+        "aToZ": "A-Z",
+        "seeAllHealthConditions": "See all health conditions",
+        "viewAllAToZ": "View all A-Z"
+    },
+    "healthHub": {
+        "header": "HEALTH HUB",
+        "desc": "Three decades of health and wellness wisdom at your fingertips.",
+        "tab": {
+            "trending": "TRENDING",
+            "popular": "POPULAR",
+            "healthNeeds": "HEALTH NEEDS",
+            "supplements": "SUPPLEMENTS",
+            "practitionerBlogs": "PRACTITIONER BLOGS"
+        },
+        "card1": {
+            "date": "October 13, 2023",
+            "title": "Stress busting herbs : the power of adaptogens",
+            "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
+        },
+        "card2": {
+            "date": "September 28, 2023",
+            "title": "How meditation nourishes mental health",
+            "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
+        },
+        "card3": {
+            "date": "September 28, 2023",
+            "title": "Short title",
+            "desc": "Very short desc"
+        }
+    },
+    "bookNow": {
+        "header": "WHERE DO I START?",
+        "desc": "Health can be complex. For signposting in the right direction, book a free 20 minute consultation.",
+        "linkText": "Book now"
+    }
+}

@@ -26,13 +26,14 @@ await i18n
         },
         ns: [
             "shared",
-            "home-page",
+            "old-home-page",
             "practitioners",
             "shop",
             "health-hub",
             "services",
             "lab-test",
             "others",
+            "home-page",
         ],
         defaultNS: "shared",
     });

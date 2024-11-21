@@ -55,6 +55,26 @@
         height: unset;
         width: unset;
     }
+
+    &.type-rectangle {
+        border-radius: 0.625rem;
+        height: unset;
+        width: unset;
+        background-color: $secondary;
+        padding: 1.25rem;
+    }
+
+    &.type-outline-rectangle {
+        border-radius: 0.625rem;
+        height: unset;
+        width: unset;
+        border: 0.25rem solid $secondary;
+        padding: 1.25rem;
+
+        &:hover:not(:disabled) {
+            background-color: $secondary;
+        }
+    }
 }
 
 .btn-desc {
@@ -114,5 +134,23 @@
     &.type-text {
         text-decoration: underline;
         color: $blueish-green-700;
+    }
+
+    &.type-rectangle {
+        color: $white-400;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: $font-secondary;
+    }
+
+    &.type-outline-rectangle {
+        color: $secondary;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: $font-secondary;
+
+        :hover:not(:disabled) > & {
+            color: $primary;
+        }
     }
 }

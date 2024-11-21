@@ -13,10 +13,12 @@ import Form from "./form.svg";
 import { homePageIcons } from "./home-page";
 import Instagram from "./instagram.svg";
 import LabTests from "./lab tests.svg";
+import { oldHomePageIcons } from "./old-home-page";
 import { othersIcons } from "./others";
 import { practitionersIcons } from "./practitioners";
 import Search from "./search.svg";
 import { servicesIcons } from "./services";
+import { sharedIcons } from "./shared";
 import Shop from "./shop.svg";
 import Star from "./star.svg";
 import TickBlueishGreen from "./tick-blueish-green.svg";
@@ -46,8 +48,10 @@ export const Icons = {
     TickBlueishGreen,
     Whatsapp,
     Youtube,
-    ...homePageIcons,
+    ...oldHomePageIcons,
     ...practitionersIcons,
     ...servicesIcons,
     ...othersIcons,
+    ...homePageIcons,
+    ...sharedIcons,
 };

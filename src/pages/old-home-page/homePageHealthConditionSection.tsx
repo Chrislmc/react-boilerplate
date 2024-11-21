@@ -9,7 +9,7 @@ import "./_home-page.scss";
 import { homePageHealthConditionCardList } from "./homePageConstant";
 
 export const HomePageHealthConditionSection = () => {
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
 
     return (
         <DescSection
@@ -51,7 +51,7 @@ export const HomePageHealthConditionSection = () => {
 };
 
 export const HomePageHealthConditionLastCard = () => {
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
 
     return (
         <div className="health-condition-card-container health-condition-last-card">

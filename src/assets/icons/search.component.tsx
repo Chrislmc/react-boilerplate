@@ -1,4 +1,4 @@
-export const SearchIconComponent = () => {
+export const OldSearchIconComponent = () => {
     return (
         <svg
             id="search_menu_2"

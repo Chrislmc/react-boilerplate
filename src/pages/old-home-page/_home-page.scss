@@ -3,7 +3,7 @@
 
 $heroBannerBtnColor: #69A2C2;
 
-#root > .site-layout.home-page {
+#root > .site-layout.old-home-page {
     .site-header {
         z-index: 1;
         position: fixed;
@@ -48,7 +48,7 @@ $heroBannerBtnColor: #69A2C2;
     }
 }
 
-#home-page {
+#old-home-page {
     position: relative;
 
     .home-page-hero-banner-section {  

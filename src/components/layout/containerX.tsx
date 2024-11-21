@@ -1,19 +1,24 @@
+import { forwardRef } from "react";
 import "./_containerX.scss";
 
-type Props = React.FC<{
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
     rightOnly?: boolean;
     leftOnly?: boolean;
+    ref?: React.RefObject<Element>;
     children: React.ReactNode;
-}>;
+}
 
-export const ContainerX: Props = ({ rightOnly, leftOnly, children }) => {
-    return (
-        <div
-            className={`container-x${rightOnly ? " mod__right-only" : ""}${
-                leftOnly ? " mod__left-only" : ""
-            }`}
-        >
-            {children}
-        </div>
-    );
-};
+export const ContainerX = forwardRef<HTMLDivElement, Props>(
+    ({ rightOnly, leftOnly, children }, ref) => {
+        return (
+            <div
+                ref={ref || null}
+                className={`container-x${rightOnly ? " mod__right-only" : ""}${
+                    leftOnly ? " mod__left-only" : ""
+                }`}
+            >
+                {children}
+            </div>
+        );
+    }
+);

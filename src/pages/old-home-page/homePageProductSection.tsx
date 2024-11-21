@@ -9,7 +9,7 @@ import "./_home-page.scss";
 import { homePageProductCardList } from "./homePageConstant";
 
 export const HomePageProductSection = () => {
-    const t = i18nHelper("home-page");
+    const t = i18nHelper("old-home-page");
     const tInSharedContext = i18nHelper("shared");
 
     return (

@@ -1,6 +1,6 @@
 $font-primary: futura;
 $font-secondary: lato;
-$font-tertiary: montserrat;
+$font-tertiary: "Kameron, serif";
 
 @font-face {
     font-family: 'futura';
@@ -15,20 +15,5 @@ $font-tertiary: montserrat;
 @font-face {
     font-family: 'futura';
     src: url('@/assets/font/futura light bt.ttf') format('truetype');
-    font-weight: 300;
-}
-@font-face {
-    font-family: 'lato';
-    src: url('@/assets/font/Lato bold.ttf') format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'lato';
-    src: url('@/assets/font/Lato regular.ttf') format('truetype');
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'montserrat';
-    src: url('@/assets/font/Montserrat light.ttf') format('truetype');
     font-weight: 300;
 }

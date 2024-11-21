@@ -1,122 +1,133 @@
 {
     "hero-banner": {
-        "card1": {
-            "title": "Heal. Balance. Evolve.",
-            "desc": "Centering you and your family’s health, so you can get well and stay well.",
-            "linkText": "Find Out More"
+        "about": "About",
+        "portfolio": "Portfolio",
+        "experience": "Experience"
+    },
+    "about-me": {
+        "header": "About",
+        "desc": "I am an experienced developer who is enthusiastic in building interesting, beautiful, and user friendly web applications. Over the years, not only web application but I have had experience also in mobile app and server architecture. Within an organization, I am a friendly, trustworthy and effective communicator. I am looking forward to join a challenging but rewarding team to help achieving its goal.",
+        "my-skills": {
+            "header": "My Skills",
+            "tab": {
+                "frontend": "Frontend",
+                "popularFrontendLibs": "Popular Frontend Libs",
+                "backend": "Backend",
+                "languages": "Languages",
+                "testingLibs": "Testing Libs",
+                "otherTools": "Other Tools"
+            },
+            "html": "Html",
+            "typescript": "Typescript",
+            "sass": "Sass",
+            "react": "React",
+            "reactNative": "React Native",
+            "nextjs": "Next.js",
+            "reduxThunk": "Redux Thunk",
+            "reduxSaga": "Redux Saga",
+            "bootstrap": "Bootstrap",
+            "materialUi": "Material UI",
+            "antDesign": "Ant Design",
+            "tailwind": "Tailwind",
+            "nodejs": "Node.js",
+            "mySql": "MySql",
+            "postgreSql": "PostgreSql",
+            "firebase": "Firebase",
+            "websocket": "Websocket",
+            "graphql": "GraphQL",
+            "soap": "SOAP",
+            "ftp": "FTP",
+            "dotnetCore": ".NET Core",
+            "drupal": "Drupal",
+            "javascript": "Javascript",
+            "cSharp": "C#",
+            "php": "PHP",
+            "jest": "Jest",
+            "cypress": "Cypress",
+            "docker": "Docker",
+            "kubernetes": "Kubernetes",
+            "aws": "Amazon Web Service",
+            "azure": "Azure",
+            "cloudflare": "Cloudflare",
+            "digitalOcean": "DigitalOcean",
+            "netlify": "Netlify",
+            "git": "Git",
+            "nx": "Nx"
         },
-        "ribbon": {
-            "consultation": "Book\na consultation",
-            "labTests": "Schedule\n a lab test",
-            "shop": "Shop\nsupplements",
-            "dispensary": "Visit our\ndispensary"
-        },
-        "testimonial": {
-            "desc1": "Integrating centuries-old healing traditions with science and medical testing.",
-            "desc2": "IMI’s practitioners work with awareness that your health is connected to seven key factors. Mind, body, emotions, spirit, energy, community and environment.",
-            "desc3": "We’re led by science and nature. Find the root cause of your concern for sustained healing."
+        "portfolio": {
+            "header": "Portfolio",
+            "seeMore": "See More",
+            "kids4kids": {
+                "header": "Kids4Kids",
+                "desc": "React website for NGO which makes positive impacts to the youth community"
+            },
+            "sunshine": {
+                "header": "Tricor Sunshine",
+                "desc": "ERP application written in C#"
+            },
+            "valuePartnerInvest": {
+                "header": "Value Partners Invest",
+                "desc": "React Native app for fund trading"
+            },
+            "imi": {
+                "header": "IMI",
+                "desc": "Maintain and enhance an E-commerce site under Drupal framework"
+            },
+            "systemDesign": {
+                "header": "System Design",
+                "desc": "Designed a system architecture and built a POC for a real time booking system, featuring Kubernetes"
+            },
+            "selfHosting": {
+                "header": "Self hosting (including this website)",
+                "desc": "Self hosting a cluster of services with only a raspberry pi (yeah raspberry pi is awesome!)"
+            }
         }
     },
-    "services": {
-        "card1": {
-            "title": "Naturopathic & functional medicine",
-            "desc": "Treat the root cause of your concern with nutrition, homeopathy and world class supplements.",
+    "experience": {
+        "header": "Experience",
+        "step1": {
+            "title": "Started as a business student",
+            "description": "Back in 2013, after the public exam, I was lucky enough to get enrolled into the University of Hong Kong. Being a student majoring in BBA Account & Finance, I learnt a lot about the business world.",
+            "tagline": "BBA, Accounting and Finance - The University of Hong Kong",
             "linkText": "Learn more"
         },
-        "card2": {
-            "title": "Psychology, counselling & coaching",
-            "desc": "From diagnosis to support; our psychotherapists, counsellors and coaches are here for you.",
+        "step2": {
+            "title": "Graduate job",
+            "description": "Immediately after graduating from the university, I joined Credit Suisse as a back office client analyst. I was able to experience how it is like to work in a huge corporation and how to adapt to working team culture",
+            "tagline": "Client Analyst - Credit Suisse",
             "linkText": "Learn more"
         },
-        "card3": {
-            "title": "Bodywork & energy medicine",
-            "desc": "Osteopathy. Craniosacral therapy. Acupuncture. TCM. Nourish your physical and energetic body.",
+        "step3": {
+            "title": "How my life started to relate with tech",
+            "description": "Principal is a great and successful company which specialize in asset management with a significant mpf market share. But since the software system was relatively old, my job requires quite a lot of excel work, and I heard something called VBA, I tried to make my work life a bit better by self learning VBA. It resulted in half of my daily work automated with just a few buttons in my control panel. I also shared it with my colleagues so that they can enjoy the success.",
+            "tagline": "Assistant Officer - Principal Trust Company (Asia)",
             "linkText": "Learn more"
         },
-        "card4": {
-            "title": "Labs, IV & conventional medicine",
-            "desc": "Advice from our family GP, medical testing from allergies to digestion and IV therapy.",
+        "step4": {
+            "title": "The bold move",
+            "description": "During the time in Principal, I started to think this was not the life that I fond of (doing the same daily work for the next 30 years). I pursue something more challenge, perhaps with a bit of problem solving. Therefore, I made a bold move by quitting my job and started learning how to code. It began with writing a simple website, to a POC of a mobile game, and an inventory management system in a couple of months. It was really hard, but eventually I managed to land my first job as a developer.",
+            "tagline": "Self learn programming"
+        },
+        "step5": {
+            "title": "First Programmer job",
+            "description": "I joined Value Partners as a founding member of their brand new fund trading app project, which aims to attract younger generation to participate in the fund trading market. It was a valuable experience as I was able to take part in the entire software development lifecycle.",
+            "tagline": "Full Stack Developer - Value Partners",
             "linkText": "Learn more"
-        }
-    },
-    "product": {
-        "header": "SCIENCE-LED SUPPLEMENTS",
-        "desc": "Clinical grade formulas, tried and trusted by doctors and clients worldwide.",
-        "gradientBanner1": {
-            "header": "STAYING HEALTHY",
-            "subheader": "DURING THE FLU SEASON",
-            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-            "linkText": "Shop now"
-        }
-    },
-    "dispensary": {
-        "header": "Visit us",
-        "desc": "Visit us to explore our products and services. Our dispensary carries Hong Kong’s largest range of practitioner-recommended supplements.",
-        "linkText": "Location and hours",
-        "card1": {
-            "title": "Meet our practitioners",
-            "desc": "Peace of mind comes as standard. Our practitioners’ treatments are properly regulated and follow a strict code of ethics.",
-            "linkText": "Meet us"
         },
-        "card2": {
-            "title": "Your health, online",
-            "desc": "Better wellbeing, at the click of a button. No matter where you are in the world, you can always receive quality healthcare.",
-            "linkText": "Online consultations"
-        },
-        "card3": {
-            "title": "Corporate wellness",
-            "desc": "Interactive health talks and urban wellness retreats for business leaders and employees.",
-            "linkText": "Inspiring healthier businesses"
-        },
-        "card4": {
-            "title": "Our healing vision",
-            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+        "step6": {
+            "title": "Improve as a developer",
+            "description": "The scale of my next company is relatively small, therefore I was able to try and use a lot of different new stuff. It broaden my horizons as I worked on many different projects, including historical websites, ERP applications etc.",
+            "tagline": "Senior Software Developer - App It",
             "linkText": "Learn more"
         }
     },
-    "healthCondition": {
-        "header": "HEALTH CONDITIONS",
-        "desc": "We don’t just treat your symptoms. Through careful assessment and testing, we discover and treat the root cause of your health concern.",
-        "allergies": "Allergies",
-        "gutHealth": "Gut health",
-        "immunity": "Immunity",
-        "sleep": "Sleep",
-        "hormonalHealth": "Hormonal health",
-        "pain": "Pain",
-        "detoxAndWeightLoss": "Detox & weightloss",
-        "aToZ": "A-Z",
-        "seeAllHealthConditions": "See all health conditions",
-        "viewAllAToZ": "View all A-Z"
+    "contact-me": {
+        "header": "Contact Me",
+        "mail": "career@chris-lai.com",
+        "phone": "+852 5115 4090",
+        "location": "Hong Kong"
     },
-    "healthHub": {
-        "header": "HEALTH HUB",
-        "desc": "Three decades of health and wellness wisdom at your fingertips.",
-        "tab": {
-            "trending": "TRENDING",
-            "popular": "POPULAR",
-            "healthNeeds": "HEALTH NEEDS",
-            "supplements": "SUPPLEMENTS",
-            "practitionerBlogs": "PRACTITIONER BLOGS"
-        },
-        "card1": {
-            "date": "October 13, 2023",
-            "title": "Stress busting herbs : the power of adaptogens",
-            "desc": "Adaptogens are powerful herbs that help our bodies build resilience to stress and sleep better. Discover our naturopaths’ top recommendations for peace of mind."
-        },
-        "card2": {
-            "date": "September 28, 2023",
-            "title": "How meditation nourishes mental health",
-            "desc": "Meditation is recommended for mental health - but why? Catriona Rogers, IMI counsellor, explains how it helps us access the Heartmind, our innate healing power."
-        },
-        "card3": {
-            "date": "September 28, 2023",
-            "title": "Short title",
-            "desc": "Very short desc"
-        }
-    },
-    "bookNow": {
-        "header": "WHERE DO I START?",
-        "desc": "Health can be complex. For signposting in the right direction, book a free 20 minute consultation.",
-        "linkText": "Book now"
+    "footer": {
+        "thank-you": "Thanks for scrolling!"
     }
 }
