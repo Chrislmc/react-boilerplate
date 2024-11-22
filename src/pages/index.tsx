@@ -1,6 +1,6 @@
 import { Section } from "@/components/section";
 import classNames from "classnames";
-import { useEffect, useState } from "react";
+import { CSSProperties, useEffect, useState } from "react";
 import "./_home-page.scss";
 import { HomePageAboutSection } from "./homePageAboutSection";
 import { HomePageContactMeSection } from "./homePageContactSection";
@@ -46,7 +46,14 @@ export const HomePage = () => {
                         >
                             {"Loading...".split("").map((letter, index) => {
                                 return (
-                                    <span key={index} style={{ "--c": index }}>
+                                    <span
+                                        key={index}
+                                        style={
+                                            {
+                                                "--c": index,
+                                            } as CSSProperties
+                                        }
+                                    >
                                         {letter}
                                     </span>
                                 );

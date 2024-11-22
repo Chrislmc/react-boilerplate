@@ -14,7 +14,6 @@ import { homePageIcons } from "./home-page";
 import Instagram from "./instagram.svg";
 import LabTests from "./lab tests.svg";
 import { oldHomePageIcons } from "./old-home-page";
-import { othersIcons } from "./others";
 import { practitionersIcons } from "./practitioners";
 import Search from "./search.svg";
 import { servicesIcons } from "./services";
@@ -51,7 +50,6 @@ export const Icons = {
     ...oldHomePageIcons,
     ...practitionersIcons,
     ...servicesIcons,
-    ...othersIcons,
     ...homePageIcons,
     ...sharedIcons,
 };
