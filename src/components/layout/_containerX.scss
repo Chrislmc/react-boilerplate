@@ -26,8 +26,6 @@
     }
 
     @include media(mobile) {
-        max-width: unset;
-        width: 100%;
         padding: 0 1.6rem;
         text-align: center;
     }
