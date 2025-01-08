@@ -126,6 +126,7 @@ export const portfolios: {
         imageUrl: [Images.Kids4kids1, Images.Kids4kids2],
         button: {
             text: "about-me.portfolio.seeMore",
+            externalPath: "https://www.kids4kids.org.hk/",
         },
     },
     {
@@ -135,6 +136,8 @@ export const portfolios: {
         imageUrl: [Images.Sunshine1, Images.Sunshine2],
         button: {
             text: "about-me.portfolio.seeMore",
+            externalPath:
+                "https://apps.apple.com/cn/app/tricor-sunshine/id1590073795",
         },
     },
     {
@@ -148,6 +151,10 @@ export const portfolios: {
         header: "about-me.portfolio.imi.header",
         descs: ["about-me.portfolio.imi.desc"],
         imageUrl: [Images.Imi1, Images.Imi2],
+        button: {
+            text: "about-me.portfolio.seeMore",
+            externalPath: "https://shop.imi.com.hk/",
+        },
     },
     {
         id: "systemDesign",
