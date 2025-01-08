@@ -271,6 +271,13 @@
         background-color: $primary-700;
 
         .about-me-container {
+            max-width: 70%;
+            margin: 0 auto;
+
+            @include media(mobile) {
+                max-width: unset;
+            }
+
             .fade-in-container {
                 display: flex;
                 flex-direction: column;
@@ -315,6 +322,10 @@
                 gap: 1.875rem;
                 opacity: 1;
                 transition: all 0.5s ease-out;
+
+                @include media(mobile) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
     
                 &.mod__in-transition {
                     opacity: 0;
