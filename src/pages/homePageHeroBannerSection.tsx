@@ -19,7 +19,10 @@ export const HomePageHeroBannerSection: React.FC<Props> = ({
     const t = i18nHelper("home-page");
 
     return (
-        <ContainerX ref={currentElement as RefObject<HTMLDivElement>}>
+        <ContainerX
+            ref={currentElement as RefObject<HTMLDivElement>}
+            className="hero-banner-container-x"
+        >
             <div className="header-row">
                 <div className="icon-container">
                     <img
@@ -53,7 +56,16 @@ export const HomePageHeroBannerSection: React.FC<Props> = ({
                 </div>
             </div>
             <div className="hero-banner-container">
-                <FadeIn transitionDuration={800} delay={200} direction="right">
+                <div className="image-container">
+                    <img src={Images.Portrait2} />
+                </div>
+
+                <FadeIn
+                    transitionDuration={800}
+                    delay={200}
+                    direction="right"
+                    className="desc-container-fade-in"
+                >
                     <div className="desc-container">
                         <h1 className="header">
                             I'M <p className="header-highlight">Chris Lai</p>
@@ -68,10 +80,6 @@ export const HomePageHeroBannerSection: React.FC<Props> = ({
                         />
                     </div>
                 </FadeIn>
-
-                <div className="image-container">
-                    <img src={Images.Portrait2} />
-                </div>
 
                 <FadeIn
                     transitionDuration={800}
