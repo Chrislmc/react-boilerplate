@@ -419,6 +419,8 @@
         .timeline {
             background-color: $primary-300;
             text-align: left;
+            width: 80%;
+            margin: 0 auto;
 
             .timeline__main-axis {
                 min-height: 12.5rem;
