@@ -523,6 +523,10 @@
             align-items: center;
             gap: 1.875rem 1.25rem;
 
+            @include media(mobile) {
+                width: 80%;
+            }
+
             .contact-container {
                 width: max(20%, 25rem);
                 height: 5rem;
