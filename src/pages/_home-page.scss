@@ -307,11 +307,11 @@
         background-color: $primary-700;
 
         .about-me-container {
-            max-width: 70%;
+            width: 71.42rem;
             margin: 0 auto;
 
             @include media(mobile) {
-                max-width: unset;
+                width: unset;
             }
 
             .fade-in-container {
