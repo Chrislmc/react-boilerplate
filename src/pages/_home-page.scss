@@ -416,6 +416,16 @@
             grid-template-rows: minmax(15rem, 25rem);
             gap: 1.25rem;
 
+            @include media (mobile) {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+                .card-with-hover-effect-component {
+                    height: 20rem;
+                }
+            }
+
+
             .btn-component {
                 padding: 0.625rem 1.25rem;
 
