@@ -146,7 +146,7 @@
             .image-container-background, .image-container {
                 position: absolute;
                 right: 0;
-                height: 100vh;
+                height: 100lvh;
                 width: 100%;
                 opacity: 0.4;
                 overflow: hidden;
@@ -213,6 +213,7 @@
             
                             @include media (mobile) {
                                 margin-left: unset;
+                                align-items: flex-start;
                             }
                             
                             .header {
