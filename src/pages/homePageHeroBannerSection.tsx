@@ -1,11 +1,13 @@
 import { Icons } from "@/assets/icons";
+import { PortraitOutlineComponent } from "@/assets/icons/home-page/portrait-outline.component";
 import { Images } from "@/assets/images";
 import { Button } from "@/components/atoms/button";
 import FadeIn from "@/components/fadeIn";
 import { ContainerX } from "@/components/layout/containerX";
 import useViewport from "@/utils/hooks/useViewport";
 import { i18nHelper } from "@/utils/i18n-helper";
-import { Dispatch, RefObject, SetStateAction } from "react";
+import classNames from "classnames";
+import { Dispatch, RefObject, SetStateAction, useState } from "react";
 import { contactMethods } from "./homePageConstant";
 
 interface Props {
@@ -16,6 +18,7 @@ export const HomePageHeroBannerSection: React.FC<Props> = ({
     setImageLoaded,
 }) => {
     const [, currentElement] = useViewport<HTMLDivElement>(-200);
+    const [portraitHover, setPortraitHover] = useState(false);
     const t = i18nHelper("home-page");
 
     return (
@@ -26,9 +29,31 @@ export const HomePageHeroBannerSection: React.FC<Props> = ({
             <div className="image-container-background">
                 <img src={Images.Portrait3Background} />
             </div>
-            <div className="image-container">
+            <div
+                className={classNames(
+                    "image-container",
+                    portraitHover && "mod__hover"
+                )}
+            >
                 <img src={Images.Portrait3} />
             </div>
+            <div className="outline-container">
+                <PortraitOutlineComponent
+                    portraitHover={portraitHover}
+                    onPortraitMouseEnter={() => {
+                        console.log("enter");
+                        setPortraitHover(true);
+                    }}
+                    onPortraitMouseLeave={() => setPortraitHover(false)}
+                />
+            </div>
+            {/* <div
+                className="outline-container"
+                onMouseEnter={() => setPortraitHover(true)}
+                onMouseLeave={() => setPortraitHover(false)}
+            >
+                <img src={Icons.PortraitOutline} />
+            </div> */}
             <div className="hero-banner-container">
                 <ContainerX className="hero-banner-desc-container-x">
                     <FadeIn
