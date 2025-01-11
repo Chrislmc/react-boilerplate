@@ -137,119 +137,19 @@
         box-shadow: 0 0 2.5rem $shadow;
 
         .hero-banner-section-container {
+            position: relative;
             height: 100vh;
             width: 100%;
             display: flex;
             flex-direction: column-reverse;
 
-            @include media (mobile) {
-                margin: 0;
-                padding: 0;
-                overflow: visible;
-            }
-        }
-
-        .hero-banner-container {
-            flex: 1;
-            width: 100%;
-            position: relative;
-
-            @include media (mobile) {
-                min-height: min(70rem, calc(70vh - 6.25rem));
-                height: unset;
-            }
-
-            .hero-banner-desc-container-x {
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                margin-right: 10rem;
-                height: 100%;
-                position: relative;
-
-                .desc-container-fade-in {
-                    position: relative;
-    
-                    @include media (mobile) {
-                        align-self: flex-end;
-                        margin-bottom: 10%;
-                    }
-                    
-                    .desc-container {
-                        margin-left: 10rem;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-end;
-        
-                        @include media (mobile) {
-                            margin-left: unset;
-                            justify-content: flex-end;
-                        }
-                        
-                        .header {
-                            font-size: 3rem;
-                            color: $white-400;
-                            margin-bottom: 1.875rem;
-                            font-weight: 400;
-                            font-family: $font-secondary;
-        
-                            .header-highlight {
-                                font-size: 5rem;
-                                color: $secondary;
-                                display: inline;
-                                font-family: $font-tertiary;
-                                font-weight: 700;
-                            }
-                        }
-        
-                        .header-desc {
-                            @include primary-desc;
-                        }
-                    }
-                }
-
-                .contacts-container {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    &::before {
-                        content: '';
-                        height: 6.25rem;
-                        border: 0.125rem solid $secondary-700
-                    }
-
-                    a {
-                        margin: 0.625rem 0;
-                        width: 2rem;
-                        height: 2rem;
-                        overflow: hidden;
-
-                        svg {
-                            height: 100%;
-                            width: 100%;
-                            object-fit: cover;
-                        }
-                    }
-                }
-            }
-
             .image-container-background, .image-container {
                 position: absolute;
-                bottom: 0;
-                right: 0rem;
+                right: 0;
                 height: 100vh;
                 width: 100%;
                 opacity: 0.4;
                 overflow: hidden;
-
-                @include media (mobile) {
-                    opacity: 0.4;
-                    right: 0;
-                    margin: 0 -3.75rem;
-                    height: 80%;
-                    width: 100vw;
-                }
 
                 img {
                     height: 100%;
@@ -257,7 +157,8 @@
                     object-fit: cover;
                 
                     @include media (mobile) {
-                        object-position: 2rem 0;
+                        width: unset;
+                        object-position: -25rem 0;
                     }
                 }
             }
@@ -272,55 +173,150 @@
                 }
             }
 
-            .contacts-container-fade-in {
-                position: absolute;
-                bottom: 0.625rem;
-                right: 0;
-            }
-        }
-
-        .header-row-container-x {
-            width: min(100rem, 100% - 3.75rem - 3.75rem);
-            height: auto;
-
-            .header-row {
+            .hero-banner-container {
+                flex: 1;
                 width: 100%;
-                margin: 1.25rem 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 position: relative;
     
-                .icon-container {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    height: 3.75rem;
-                    flex: 1;
-                    display: flex;
-                    justify-content: flex-start;
+                @include media (mobile) {
+                    min-height: min(70rem, calc(70vh - 6.25rem));
+                    height: unset;
+                }
     
-                    img {
-                        height: 100%;
-                        aspect-ratio: 1/1;
-                        object-fit: cover;
+                .hero-banner-desc-container-x {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-right: 10rem;
+                    height: 100%;
+                    position: relative;
+                    overflow: visible;
+    
+                    @include media (mobile) {
+                        justify-content: flex-start;
+                        margin-right: auto;
+                        height: 90%;
+                    }
+    
+                    .desc-container-fade-in {
+                        position: relative;
+        
+                        @include media (mobile) {
+                            align-self: flex-end;
+                        }
+                        
+                        .desc-container {
+                            margin-left: 10rem;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+            
+                            @include media (mobile) {
+                                margin-left: unset;
+                            }
+                            
+                            .header {
+                                font-size: 3rem;
+                                color: $white-400;
+                                margin-bottom: 1.875rem;
+                                font-weight: 400;
+                                font-family: $font-secondary;
+            
+                                .header-highlight {
+                                    font-size: 5rem;
+                                    color: $secondary;
+                                    display: inline;
+                                    font-family: $font-tertiary;
+                                    font-weight: 700;
+                                }
+                            }
+            
+                            .header-desc {
+                                @include primary-desc;
+                            }
+                        }
+                    }
+    
+                    .contacts-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+    
+                        &::before {
+                            content: '';
+                            height: 6.25rem;
+                            border: 0.125rem solid $secondary-700
+                        }
+    
+                        a {
+                            margin: 0.625rem 0;
+                            width: 2rem;
+                            height: 2rem;
+                            overflow: hidden;
+    
+                            svg {
+                                height: 100%;
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
                     }
                 }
     
-                .header-btn-row {
-                    position: relative;
+                .contacts-container-fade-in {
+                    position: absolute;
+                    bottom: 0.625rem;
+                    right: 0;
+    
+                    @include media(mobile) {
+                        bottom: -5rem;
+                    }
+                }
+            }
+    
+            .header-row-container-x {
+                width: min(100rem, 100% - 3.75rem - 3.75rem);
+                height: auto;
+    
+                .header-row {
+                    width: 100%;
+                    margin: 1.25rem 0;
                     display: flex;
                     align-items: center;
-                    gap: 2.5rem;
-                    margin-top: 1rem;
-    
-                    a {
-                        color: $gray-300;
-                        font-size: 1.5rem;
-                        line-height: 2.2rem;
-    
-                        &:hover {
-                            color: $gray-100;
+                    justify-content: center;
+                    position: relative;
+        
+                    .icon-container {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 3.75rem;
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-start;
+        
+                        img {
+                            height: 100%;
+                            aspect-ratio: 1/1;
+                            object-fit: cover;
+                        }
+                    }
+        
+                    .header-btn-row {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        gap: 2.5rem;
+                        margin-top: 1rem;
+        
+                        a {
+                            color: $gray-300;
+                            font-size: 1.5rem;
+                            line-height: 2.2rem;
+        
+                            &:hover {
+                                color: $gray-100;
+                            }
                         }
                     }
                 }
