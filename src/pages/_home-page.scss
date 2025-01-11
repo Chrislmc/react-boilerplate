@@ -1,6 +1,14 @@
 @import '@/scss/abstracts';
 @import '@/scss/base';
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+  }
 #home-page {
     position: relative;
     background-color: $primary;
@@ -155,10 +163,11 @@
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
+                    object-position: 50% 100%;
                 
                     @include media (mobile) {
                         width: unset;
-                        object-position: -25rem 0;
+                        object-position: -25rem bottom;
                     }
                 }
             }
@@ -167,8 +176,11 @@
                 opacity: 1;
 
                 img {
+                    opacity: 0;
+
                     &:hover {
-                        transform: scale(1.2);
+                        opacity: 1;
+                        transition: all 0.2s ease-in-out;
                     }
                 }
             }
@@ -177,6 +189,7 @@
                 flex: 1;
                 width: 100%;
                 position: relative;
+                pointer-events: none;
     
                 @include media (mobile) {
                     min-height: min(70rem, calc(70vh - 6.25rem));
@@ -235,6 +248,10 @@
                             .header-desc {
                                 @include primary-desc;
                             }
+
+                            .btn-component {
+                                pointer-events: all;
+                            }
                         }
                     }
     
@@ -278,6 +295,7 @@
             .header-row-container-x {
                 width: min(100rem, 100% - 3.75rem - 3.75rem);
                 height: auto;
+                pointer-events: none;
     
                 .header-row {
                     width: 100%;
@@ -314,6 +332,7 @@
                             color: $gray-300;
                             font-size: 1.5rem;
                             line-height: 2.2rem;
+                            pointer-events: all;
         
                             &:hover {
                                 color: $gray-100;

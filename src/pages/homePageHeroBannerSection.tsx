@@ -26,9 +26,9 @@ export const HomePageHeroBannerSection: React.FC<Props> = ({
             <div className="image-container-background">
                 <img src={Images.Portrait3Background} />
             </div>
-            {/* <div className="image-container">
+            <div className="image-container">
                 <img src={Images.Portrait3} />
-            </div> */}
+            </div>
             <div className="hero-banner-container">
                 <ContainerX className="hero-banner-desc-container-x">
                     <FadeIn
