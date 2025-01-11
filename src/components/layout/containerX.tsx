@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { forwardRef } from "react";
 import "./_containerX.scss";
 
@@ -14,9 +15,12 @@ export const ContainerX = forwardRef<HTMLDivElement, Props>(
         return (
             <div
                 ref={ref || null}
-                className={`container-x${rightOnly ? "mod__right-only" : ""} ${
-                    leftOnly ? "mod__left-only" : ""
-                } ${className}`}
+                className={classNames(
+                    "container-x",
+                    rightOnly && "mod__right-only",
+                    leftOnly && "mod__left-only",
+                    className
+                )}
             >
                 {children}
             </div>

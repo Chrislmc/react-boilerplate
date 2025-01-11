@@ -31,6 +31,8 @@ import Nx from "./nx.png";
 import Php from "./php.png";
 import Portrait1 from "./portrait-1.png";
 import Portrait2 from "./portrait-2.png";
+import Portrait3Background from "./portrait-3-background.png";
+import Portrait3 from "./portrait-3.png";
 import Postgresql from "./postgresql.png";
 import ReactNative from "./react-native.png";
 import React from "./react.png";
@@ -80,6 +82,8 @@ export const homePageImages = {
     Php,
     Portrait1,
     Portrait2,
+    Portrait3,
+    Portrait3Background,
     Postgresql,
     ReactNative,
     React,
