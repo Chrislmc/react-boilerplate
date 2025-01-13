@@ -12,6 +12,7 @@
 #home-page {
     position: relative;
     background-color: $primary;
+    width: 100%;
 
     .home-page-hero-banner-section,
     .home-page-about-section,
@@ -169,6 +170,10 @@
                         width: unset;
                         object-position: -25rem bottom;
                     }
+                    @include media (tablet) {
+                        // width: 100%;
+                        // height: unset;
+                    }
                 }
 
                 
@@ -176,7 +181,7 @@
                     position: absolute;
                     bottom: 0;
                 
-                    @include media (mobile) {
+                    @include media (mobile, tablet, small-screen) {
                         display: none;
                     }
 
@@ -193,7 +198,7 @@
                     opacity: 0;
                     transition: opacity 0.2s ease-out;
 
-                    @include media(mobile) {
+                    @include media(mobile, tablet, small-screen) {
                         opacity: 1;
                     }
                 }
@@ -423,6 +428,10 @@
                 @include media(mobile) {
                     grid-template-columns: repeat(2, 1fr);
                 }
+
+                @include media(tablet) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
     
                 &.mod__in-transition {
                     opacity: 0;
@@ -486,6 +495,23 @@
                 }
             }
 
+            @include media (tablet) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+                .card-with-hover-effect-component {
+                    height: 20rem;
+                }
+            }
+
+            @include media (small-screen) {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+                .card-with-hover-effect-component {
+                    height: 20rem;
+                }
+            }
 
             .btn-component {
                 padding: 0.625rem 1.25rem;

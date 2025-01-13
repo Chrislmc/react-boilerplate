@@ -11,7 +11,7 @@
     overflow: auto hidden;
     padding-bottom: 1.25rem;
 
-    @include media(mobile) {
+    @include media(mobile, tablet, small-screen) {
         justify-content: flex-start;
     }
 

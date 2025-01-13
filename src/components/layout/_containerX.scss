@@ -21,8 +21,8 @@
     }
 
     @include media(tablet) {
-        max-width: unset;
-        width: 100%;
+        // max-width: unset;
+        // width: 100%;
     }
 
     @include media(mobile) {

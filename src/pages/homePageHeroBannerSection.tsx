@@ -1,5 +1,4 @@
 import { Icons } from "@/assets/icons";
-import { PortraitOutlineComponent } from "@/assets/icons/home-page/portrait-outline.component";
 import { Images } from "@/assets/images";
 import { Button } from "@/components/atoms/button";
 import FadeIn from "@/components/fadeIn";
@@ -7,8 +6,15 @@ import { ContainerX } from "@/components/layout/containerX";
 import useViewport from "@/utils/hooks/useViewport";
 import { i18nHelper } from "@/utils/i18n-helper";
 import classNames from "classnames";
-import { Dispatch, RefObject, SetStateAction, useState } from "react";
+import {
+    Dispatch,
+    RefObject,
+    SetStateAction,
+    useEffect,
+    useState,
+} from "react";
 import { contactMethods } from "./homePageConstant";
+import { PortraitOutlineComponent } from "@/assets/icons/home-page/portrait-outline.component";
 
 interface Props {
     setImageLoaded: Dispatch<SetStateAction<boolean>>;
@@ -20,6 +26,11 @@ export const HomePageHeroBannerSection: React.FC<Props> = ({
     const [, currentElement] = useViewport<HTMLDivElement>(-200);
     const [portraitHover, setPortraitHover] = useState(false);
     const t = i18nHelper("home-page");
+
+    useEffect(() => {
+        const outline = document.getElementById("portrait-outline");
+        console.log("outline", outline);
+    }, []);
 
     return (
         <div
